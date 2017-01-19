@@ -3,7 +3,7 @@ layout: page
 title: About
 published: true
 ---
-## What is this website about?
+# What is this website about?
 
 Chris Jennings teaches at Oxford Brookes University for Undergraduate and Postgraduate modules on Digital Publishing. He also is a consultant specialising in eBook Production.
 

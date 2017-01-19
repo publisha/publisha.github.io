@@ -2,7 +2,7 @@
 layout: page
 title: Repository for Shakespeare Play Web page
 published: true
-categories: web,git
+categories: web, git
 ---
 # The Repository for your Shakespeare Play Web page
 > **Contents**

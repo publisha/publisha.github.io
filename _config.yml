@@ -1,0 +1,28 @@
+# Setup
+permalink:        pretty
+# relative_permalinks: true
+title:            Digital Publisher Guide
+tagline:          'Help for publshers and students of publishing'
+description:      'tutorials and screencasts about digital publishing and eBook Production'
+url:              publisha.github.io
+baseurl: ''
+twitter_username: pageboy
+github_username:  pageboy
+
+author:
+  name:           'Chris Jennings'
+  url:            https://twitter.com/pageboy
+
+paginate:         5
+paginate_path: '/blog/page:num/'
+# Custom vars
+version:          0.09
+
+github:
+  repo:           https://github.com/publisha/publisha.github.io
+
+prose:
+  media: 'images'
+
+  # Gems
+gems: [jekyll-paginate]

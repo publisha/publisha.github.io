@@ -155,7 +155,8 @@ html {
 
 img {
   border:1px solid silver;
-  max-width: 70%;
+  max-width: 99%;
+  max-height:450px;
   margin:12px auto;
 }
 

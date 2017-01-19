@@ -2,11 +2,25 @@
 layout: page
 title: Building the TOC in InDesign
 published: true
+categories: InDesign
 ---
 
 # Building a  Table of Contents in InDesign
-Automating the TOC
+> **Contents**
+><!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+>
+- [The Front Matter pages](#the-front-matter-pages)
+- [Page Numbers (or folio)](#page-numbers-or-folio)
+- [Before you Build the TOC](#before-you-build-the-toc)
+- [What does Automating Mean?](#what-does-automating-mean)
+- [Building the TOC](#building-the-toc)
+	- [Styling the TOC items](#styling-the-toc-items)
+	- [Page Numbers in the TOC](#page-numbers-in-the-toc)
+- [Saving the Table of Contents Style](#saving-the-table-of-contents-style)
+- [Other types of Contents tables](#other-types-of-contents-tables)
+	- [Interactive Table of Contents](#interactive-table-of-contents)
 
+<!-- /TOC -->
 ## The Front Matter pages
 The table of contents (TOC) belongs to, what are normally referrer to as, the front matter. We might also refer to them as the prelim pages.
 
@@ -16,9 +30,7 @@ The flat plan seen above shows the pages you need before you create the TOC.
 
 The TOC will follow the copyright page and (for our example) will be accommodated on one page. The main section heading (for us this is The Life of Shakespeare) falls on a recto (right) page, with a blank opposite.
 
-![Start a new section](../../images/2017/01/start-a-new-section.png)
-
-![New Section with Lowercase Roman](../../images/2017/01/new-section-with-lowercase-roman.png)
+![Numbering and Section options](../../images/2017/01/numbering-and-section-options.jpg)
 
 ## Page Numbers (or folio)
 You will find that publishers actually follow a variety of conventions!
@@ -52,7 +64,7 @@ Make sure that you have switched on ‘More Options’ in this panel. You will s
 ### Styling the TOC items
 This can be quite a complex routine, depending on your needs.
 
-You will notice that (by default), the style being used as the entry style is /[Same Style/]. You, most likely, will need to select a different style. It is very likely that the style used for your headings will be forcing that item to move to the next page. In this scenario, your TOC may never appear, because it will always try to move to the next page for each item.
+You will notice that (by default), the style being used as the entry style is [Same Style]. You, most likely, will need to select a different style. It is very likely that the style used for your headings will be forcing that item to move to the next page. In this scenario, your TOC may never appear, because it will always try to move to the next page for each item.
 
 The default paragraph styles palette will include some TOC styles. You can use these, and then style for your own purpose and document style.
 
@@ -79,7 +91,7 @@ When you are satisfied with your TOC display, you can save this through the Layo
 ## Other types of Contents tables
 You may also create a table of contents for your illustrations, tables and other figures. You will find the location for saving and loading your TOCs from the menu Layout > Table of Contents > Styles.
 
-### Interactive Table of Contents
+### Interactive Table of Contents
 
 When you create the TOC, you will notice the check box ‘Create PDF Bookmarks’ under the ‘Options’ panel. When selected, an interactive PDF exported from the InDesign file will include the TOC on the page (with hyperlinks to the appropriate page) but also, you can invoke a bookmarks panel in your PDF reader.
 

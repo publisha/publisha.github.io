@@ -1,9 +1,11 @@
-## What is the website?
+# What is the website?
 
-This project is to research the genre of island narratives and create an 'archipelago' of islands and cross-reference between them. Some of the islands in this archipelago will be fictitious inventions of writers such as Shakespeare and Stevenson. Some will be legendary and real, documented by explorers and travellers like Dampier, and Slocum and mythical islands such as the Atlantic Isle of Brazil near to Ireland.
+Chris Jennings teaches at Oxford Brookes University for Undergraduate and Postgraduate modules on Digital Publishing. He also is a consultant specialising in eBook Production.
 
-The intention is to 'explore' the 'archipelago' and add new islands to the chart. Some earlier 'visitors' to these islands will be researched and documented.
+You will find here help documents and tutorials and a range of topics including using Adobe InDesign and Apple iBooks Author, as well as using GitHub to edit documents within a repository.
 
->.....My haunting passion was the island. I ransacked libraries for the literature of Islands, the more desolate they were the better I was pleased. I pored over great maps till Polynesia and Melanesia were more familiar than the geography of the county in which I lived. I found that men who had written of Utopia and other impossible things were as mad as I was about Islands, and I loved them all and read their books over and over again. I knew the Hebrides by heart, I was at home in the archipelagoes of the Pacific, I could thread my way through among the smallest groups of the Indies, East and West, and a navigator of the Cyclades might almost have used me for a pilot. Columbus, Magellan, Drake, Dampier, Anson, Cook - these were the names of my familiar spirits; and had I not sailed with Odysseus of many devices over leagues and leagues of the the unharvested seas? It was always the little islands I loved the best, and if they were not only small but remote, like St.KIlda, Kerguelen, or Juan Fernandez, so that the mariner shipwrecked on their shores might have reasonable chance of being unrescued for years, I rejoiced like the man who discovered a treasure hid in a field........ L.P. Jacks - Among the Idol Makers - Williams and Norgate - London 1912
+More documents are being added and you can find the list within the left hand menu. Just click on the icon top left.
+
+The web site is delivered here: https://publisha.github.io
 
 Project maintained by @pageboy

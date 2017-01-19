@@ -11,7 +11,7 @@
 
 # static engine of your blog
 # e.g. one of: general, html, jekyll, octopress, hexo
-siteEngine: "general"
+siteEngine: "jekyll"
 # website URL of your blog
 siteUrl: ""
 
@@ -158,4 +158,4 @@ tableExtraPipes: false
 # template variables is a key-value map used in template string
 # e.g. you can have `posts/{author}/{year}` in newPostFileName after you set author.
 templateVariables:
-  author: "Your Name"
+  author: "Chris Jennings"

@@ -6,5 +6,6 @@ You will find here help documents and tutorials and a range of topics including 
 
 More documents are being added and you can find the list within the left hand menu. Just click on the icon top left.
 
+The web site is delivered here: https://publisha.github.io
 
 Project maintained by @pageboy

@@ -1,0 +1,88 @@
+---
+layout: page
+title: Building the TOC in InDesign
+published: true
+---
+
+# Building a  Table of Contents in InDesign
+Automating the TOC
+
+## The Front Matter pages
+The table of contents (TOC) belongs to, what are normally referrer to as, the front matter. We might also refer to them as the prelim pages.
+
+![The Flatplan of prelim pages](../../images/2017/01/the-flatplan-of-prelim-pages.png)
+
+The flat plan seen above shows the pages you need before you create the TOC.
+
+The TOC will follow the copyright page and (for our example) will be accommodated on one page. The main section heading (for us this is The Life of Shakespeare) falls on a recto (right) page, with a blank opposite.
+
+![Start a new section](../../images/2017/01/start-a-new-section.png)
+
+![New Section with Lowercase Roman](../../images/2017/01/new-section-with-lowercase-roman.png)
+
+## Page Numbers (or folio)
+You will find that publishers actually follow a variety of conventions!
+
+Sometimes you might see small roman numerals for the prelim pages with the first text page with a number 1; sometimes you might find no page numbers displayed until the text begins - and then this will be set with a (1) or possible the number of page counted to that point.
+
+In the example here, small roman numerals are used (counting from the half-title) until we reach the first text, where we begin counting with arabic numbers from 1.
+
+![A Typical TOC](../../images/2017/01/a-typical-toc.png)
+
+## Before you Build the TOC
+
+For InDesign to automatically build the table of contents, it is essential that your headings and sub-headings are structured in the correct order and use a specific style set up in the paragraph styles panel.
+
+It is is critical that you do not use these heading styles anywhere else other than in the correct place as actual headings. Do not be tempted to select a heading style for some other text within your document.
+
+## What does Automating Mean?
+
+InDesign can place your table of contents (TOC) anywhere that you choose, and as you add content or change the text formatting within your pages, so the TOC will expand and add the correct page numbers (when you tell it to do so).
+Where to Place the TOC?
+
+The table of contents will usually be near front of the book, so you may need to add some pages before your other content. In a print book the table of contents comes after the front matter such as the half-title, dedication and copyright page. It should be before the preface, foreword and introduction.
+
+## Building the TOC
+You will find the controls for the Table of Contents under the Layout > Table of Contents menu.
+
+![Choosing the Styles for the TOC](../../images/2017/01/choosing-the-styles-for-the-toc.png)
+
+Make sure that you have switched on ‘More Options’ in this panel. You will see all of your paragraph styles on the right and you need to select each heading style in turn and add to the left panel. Pay attention to the levels (in this example you see 3 levels).
+
+### Styling the TOC items
+This can be quite a complex routine, depending on your needs.
+
+You will notice that (by default), the style being used as the entry style is /[Same Style/]. You, most likely, will need to select a different style. It is very likely that the style used for your headings will be forcing that item to move to the next page. In this scenario, your TOC may never appear, because it will always try to move to the next page for each item.
+
+The default paragraph styles palette will include some TOC styles. You can use these, and then style for your own purpose and document style.
+
+### Page Numbers in the TOC
+You will want the page numbers to appear within the TOC and how these display is controlled by the paragraph style for the TOC items.
+In the example here, we have the page numbers appearing far to the right, at the edge of the margin. This is achieved by using the ‘Right Justified’ paragraph style.
+
+**Tabs and Repeated Markers**
+It is quite common to put a row of dots between the TOC item and the page number. How do we achieve this?
+
+In the TOC panel (see above), we need to add a TAB between the entry and the page number.
+
+Once we have made sure that the item is followed by a tab, we then need to adjust the paragraph style. Make sure that paragraph style is set to ‘Right-Justify’.
+
+For the style (in the case TOC Body text), we need to adjust the tabs and the repeated leader.
+
+![Setting up the tabs](../../images/2017/01/setting-up-the-tabs.png)
+
+Select the Right Justified tab marker and add the dot as the leader. Click on the ruler and then hit repeat.
+
+## Saving the Table of Contents Style
+When you are satisfied with your TOC display, you can save this through the Layout>Table of Contents dialogue. Not only does this mean that you can re-use this style and configuration in other documents, but it also offers you the potential to create alternative TOCs for different content.
+
+## Other types of Contents tables
+You may also create a table of contents for your illustrations, tables and other figures. You will find the location for saving and loading your TOCs from the menu Layout > Table of Contents > Styles.
+
+### Interactive Table of Contents
+
+When you create the TOC, you will notice the check box ‘Create PDF Bookmarks’ under the ‘Options’ panel. When selected, an interactive PDF exported from the InDesign file will include the TOC on the page (with hyperlinks to the appropriate page) but also, you can invoke a bookmarks panel in your PDF reader.
+
+Although this a useful feature it is not something that we need for the print output PDF! Here it serves to illustrate the structure of our completed play book.
+
+![TOC in the PDF](../../images/2017/01/toc-in-the-pdf.png)

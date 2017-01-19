@@ -9,7 +9,7 @@ Right now a lot of my documents are to found on my [PagetoScreen][b016960a] web 
 
 Now it is time (surely) to make all of these helpful documents digiatl and online, so I can update very easily.
 
-  [b016960a]: www.pagetoscreen.net "Lots of useful information"
+  [b016960a]: http://www.pagetoscreen.net "Lots of useful information"
 
 ## Built with Jekyll and Edited with Atom
 

@@ -5,6 +5,7 @@ published: true
 categories: web, git
 ---
 # The Repository for your Shakespeare Play Web page
+
 > **Contents**
 >
 ><!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -28,7 +29,7 @@ Before you do anything with your new GitHub account do this:
 
 ![Change the name of your repo](../../images/2017/01/changethenameofRepo.png)
 
-You don't need GitHub.com for the moment, apart from reading this text, but you will need to recall your username and password during the next steps.
+You don't need GitHub.com for the moment but you will need to recall your username and password during the next steps.
 
 ### Your digital tools
 You will need a text editor that can show and preview web HTML. We now want you to download and install _Atom_. You can find this [free open source editor here][9ef5b049]

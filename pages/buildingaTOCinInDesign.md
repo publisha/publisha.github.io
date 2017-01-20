@@ -22,6 +22,7 @@ categories: InDesign
 
 <!-- /TOC -->
 ## The Front Matter pages
+
 The table of contents (TOC) belongs to, what are normally referrer to as, the front matter. We might also refer to them as the prelim pages.
 
 ![The Flatplan of prelim pages](../../images/2017/01/the-flatplan-of-prelim-pages.png)

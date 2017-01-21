@@ -2,6 +2,7 @@
 layout: page
 title: About
 published: true
+order: 1
 ---
 # What is this website about?
 
@@ -12,3 +13,7 @@ You will find here help documents and tutorials and a range of topics including 
 More documents are being added and you can find the list within the left hand menu. Just click on the icon top left.
 
 Project maintained by @Pageboy
+
+Here is a random photo taken by me.
+
+[![My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester.](../../images/2017/01/fromWittenhamClumps.jpg)](../../images/2017/01/fromWittenhamClumps.jpg)

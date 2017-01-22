@@ -8,6 +8,31 @@ tags: Markup, HTML
 # The basics of HTML and CSS
 This is meant as a very simple introduction to the markup and styling languages for the web.
 
+<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [What is HTML?](#what-is-html)
+	- [Here is some simple markup to show a web page](#here-is-some-simple-markup-to-show-a-web-page)
+- [Structure](#structure)
+- [What does this example of HTML look like in a browser?](#what-does-this-example-of-html-look-like-in-a-browser)
+- [_Classes_ or how to get added control over the HTML markup.](#classes-or-how-to-get-added-control-over-the-html-markup)
+- [Presentation Logic](#presentation-logic)
+- [Types of Mark-up for HTML](#types-of-mark-up-for-html)
+- [Styling the HTML with CSS](#styling-the-html-with-css)
+- [Syntactical Precision Required](#syntactical-precision-required)
+- [Inheritance](#inheritance)
+- [Defining the styles](#defining-the-styles)
+- [Further Details of CSS](#further-details-of-css)
+	- [Selectors](#selectors)
+	- [Reading order](#reading-order)
+	- [Fonts](#fonts)
+		- [Using fonts from elsewhere](#using-fonts-from-elsewhere)
+- [Positioning](#positioning)
+	- [Float](#float)
+	- [Defining by a Position Rule](#defining-by-a-position-rule)
+	- [Examples:](#examples)
+
+<!-- /TOC -->
+
 ## What is HTML?
 
 HTML is a markup language, specifically created to display pages within web browsers such as _Google Chrome_ or _Apple Safari_. The syntax is very specific and elements exist within the grammar that will display content logically _with some basic styling built-in_.

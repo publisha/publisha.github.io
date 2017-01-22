@@ -75,3 +75,15 @@ pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal
 .css .o,
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
+
+.codehilite table {
+  width: 100%;
+}
+
+.codehilite table td.lineno {
+  width: 10%;
+}
+
+.codehilite table td.code {
+  width: 90%;
+}

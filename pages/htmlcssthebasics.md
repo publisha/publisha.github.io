@@ -8,8 +8,9 @@ tags: Markup, HTML
 # The basics of HTML and CSS
 This is meant as a very simple introduction to the markup and styling languages for the web.
 
-<!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
+>**On this page**
+><!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+>
 - [What is HTML?](#what-is-html)
 	- [Here is some simple markup to show a web page](#here-is-some-simple-markup-to-show-a-web-page)
 - [Structure](#structure)

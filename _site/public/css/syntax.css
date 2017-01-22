@@ -1,5 +1,4 @@
-.hll { background-color: #ffffcc }
- /*{ background: #f0f3f3; }*/
+.hll { background-color: #ffffcc; background: #f0f3f3; }
 .c { color: #999; } /* Comment */
 .err { color: #AA0000; background-color: #FFAAAA } /* Error */
 .k { color: #006699; } /* Keyword */
@@ -64,3 +63,31 @@
 .css .o,
 .css .o + .nt,
 .css .nt + .nt { color: #999; }
+/*formatting for code block with line numbers*/
+.lineno { border: none; border-radius: 0; color: #aaa; }
+/*.gutter {width:20px;}*/
+.code pre {
+  border: none;
+  white-space: pre;
+  overflow-x: auto;
+  word-wrap: normal;
+}
+
+/*formatting for code block with no line numbers*/
+pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
+
+.css .o,
+.css .o + .nt,
+.css .nt + .nt { color: #999; }
+
+.codehilite table {
+  width: 100%;
+}
+
+.codehilite table td.lineno {
+  width: 10%;
+}
+
+.codehilite table td.code {
+  width: 90%;
+}

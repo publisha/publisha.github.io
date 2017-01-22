@@ -2,7 +2,7 @@
 layout: page
 title: Using the Book Panel in InDesign
 published: true
-categories: InDesign
+tags: InDesign
 ---
 
 # Using the Book Panel in InDesign

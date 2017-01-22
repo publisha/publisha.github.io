@@ -1,8 +1,9 @@
 # Setup
 permalink:        pretty
+markdown: kramdown
 # relative_permalinks: true
 title:            Digital Publisher Guide
-tagline:          'Help for publshers and students of publishing'
+tagline:          'Help for publishers and students of publishing'
 description:      'tutorials and screencasts about digital publishing and eBook Production'
 url:              publisha.github.io
 baseurl: ''
@@ -16,7 +17,7 @@ author:
 paginate:         5
 paginate_path: '/blog/page:num/'
 # Custom vars
-version:          0.09
+version:          0.095
 
 github:
   repo:           https://github.com/publisha/publisha.github.io
@@ -26,3 +27,20 @@ prose:
 
   # Gems
 gems: [jekyll-paginate]
+
+# More › http://kramdown.gettalong.org/quickref.html
+# Options › http://kramdown.gettalong.org/options.html
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+  # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
+  # span, block element options fall back to global
+  syntax_highlighter_opts:
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'codehilite'
+    # span:
+    #   line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1

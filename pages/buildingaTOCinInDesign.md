@@ -2,7 +2,7 @@
 layout: page
 title: Building the TOC in InDesign
 published: true
-categories: InDesign
+tags: InDesign
 ---
 
 # Building a  Table of Contents in InDesign

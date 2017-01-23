@@ -272,7 +272,7 @@ left:20px;
 top:30px;
 }
 ```
-This will shift the block (_relative to where it should be_) 20 pixels from the left and 30 pixels from the top. Content that follows will shift to accommodate.
+This will shift the block (_relative to where it should be_) 20 pixels from the left and 30 pixels from the top.
 
 **absolute**
 
@@ -284,7 +284,7 @@ left:0;
 }
 ```
 
-In this example the menu block will be set at the top left of the body within the window. It will move, when the user scroll down the page.
+In this example the menu block will be set at the top left of the body within the window. It will move, when the user scrolls down the page.
 
 ```css
 .copyright {
@@ -295,3 +295,32 @@ left:0;
 ```
 
 In this example the copyright block will be fixed at the bottom of the viewport and will stay there even when the user scrolls their window.
+
+## Units of Measure
+
+There are several units that can be used in CSS in order to set font sizes and dimensions of elements.
+
+For example, if you want to set the width of menu in CSS you could use:
+
+```html
+nav.menu {
+  width:100px;
+}
+```
+This means that the navigation menu will be 100 pixels wide.
+
+### The alternatives
+The units that we can use are listed here with an explanation:
+
+ - Pixels
+   - indicated as `px` in the CSS rule, it is the smallest screen unit. Most systems will ignore fractions (such as `4.5px`) by rounding up.
+ - em
+   - The em unit is a relative unit; meaning that it represents the size of the current font. `2em` means twice the size of the font within the parent block of the element.
+ - rem
+   - The rem is also relative, but this time it represents the value of the font size at the root level of the page. So, if the font size for the body is set at `12px` then `2rem` will be `32px`.
+ - %
+   - You can also use the percentage to create a dimension that is relative to the containing element. So if our menu is 100px wide the sub menu could be defined as having a width of 70% - making it 70pixels wide.
+
+There are manny other units that can be used; some are specific for print (such as centimetres and point). Please read [the information here][02888701], for further details.
+
+  [02888701]: http://www.w3schools.com/cssref/css_units.asp "w3 schools will inform you"

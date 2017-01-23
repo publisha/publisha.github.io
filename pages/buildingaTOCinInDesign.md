@@ -17,6 +17,7 @@ tags: InDesign
 - [Other types of Contents tables](#other-types-of-contents-tables)
 
 </section><!-- /TOC -->
+
 # Building a  Table of Contents in InDesign
 
 ## The Front Matter pages

@@ -20,7 +20,9 @@ tags: Markup, HTML
 - [Defining the styles](#defining-the-styles)
 - [Further Details of CSS](#further-details-of-css)
 - [Positioning](#positioning)
-</section>
+- [Units of Measure](#units-of-measure)
+
+</section><!-- /TOC -->
 
 # The basics of HTML and CSS
 This is meant as a very simple introduction to the markup and styling languages for the web.
@@ -302,7 +304,7 @@ There are several units that can be used in CSS in order to set font sizes and d
 
 For example, if you want to set the width of menu in CSS you could use:
 
-```html
+```css
 nav.menu {
   width:100px;
 }
@@ -312,14 +314,10 @@ This means that the navigation menu will be 100 pixels wide.
 ### The alternatives
 The units that we can use are listed here with an explanation:
 
- - Pixels
-   - indicated as `px` in the CSS rule, it is the smallest screen unit. Most systems will ignore fractions (such as `4.5px`) by rounding up.
- - em
-   - The em unit is a relative unit; meaning that it represents the size of the current font. `2em` means twice the size of the font within the parent block of the element.
- - rem
-   - The rem is also relative, but this time it represents the value of the font size at the root level of the page. So, if the font size for the body is set at `12px` then `2rem` will be `32px`.
- - %
-   - You can also use the percentage to create a dimension that is relative to the containing element. So if our menu is 100px wide the sub menu could be defined as having a width of 70% - making it 70pixels wide.
+ - Pixels - indicated as `px` in the CSS rule, it is the smallest screen unit. Most systems will ignore fractions (such as `4.5px`) by rounding up.
+ - **em** - The em unit is a relative unit; meaning that it represents the size of the current font. `2em` means twice the size of the font within the parent block of the element.
+ - **rem** - The rem is also relative, but this time it represents the value of the font size at the root level of the page. So, if the font size for the body is set at `12px` then `2rem` will be `32px`.
+ - **Percentage** - indicated as `%` to create a dimension that is relative to the containing element. So if our menu is 100px wide, the sub menu could be defined as having a width of `70%` - making it `70px` wide.
 
 There are manny other units that can be used; some are specific for print (such as centimetres and point). Please read [the information here][02888701], for further details.
 

@@ -20,26 +20,8 @@ tags: Markup, HTML
 - [Defining the styles](#defining-the-styles)
 - [Further Details of CSS](#further-details-of-css)
 - [Positioning](#positioning)
+</section>
 
-</section><!-- /TOC --><!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
-<section class='toc'>
-## On this Page
-
-- [On this Page](#on-this-page)
-- [What is HTML?](#what-is-html)
-- [Structure](#structure)
-- [What does this example of HTML look like in a browser?](#what-does-this-example-of-html-look-like-in-a-browser)
-- [_Classes_ or how to get added control over the HTML markup.](#classes-or-how-to-get-added-control-over-the-html-markup)
-- [Presentation Logic](#presentation-logic)
-- [Types of Mark-up for HTML](#types-of-mark-up-for-html)
-- [Styling the HTML with CSS](#styling-the-html-with-css)
-- [Syntactical Precision Required](#syntactical-precision-required)
-- [Inheritance](#inheritance)
-- [Defining the styles](#defining-the-styles)
-- [Further Details of CSS](#further-details-of-css)
-- [Positioning](#positioning)
-
-</section><!-- /TOC -->
 # The basics of HTML and CSS
 This is meant as a very simple introduction to the markup and styling languages for the web.
 

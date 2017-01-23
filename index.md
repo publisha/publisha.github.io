@@ -11,10 +11,18 @@ Now it is time (surely) to make all of these helpful documents digital and onlin
 
   [b016960a]: http://www.pagetoscreen.net "Lots of useful information"
 
-## Built with Jekyll and Edited with Atom
-
-This site is built with **jekyll** and delivered on a GitHub repository. My preferred writing tool is Atom 'cos you can customise it!
-
-I based this look and feel on the [Lanyon theme from here][2b9a33ee].
-
-  [2b9a33ee]: http://lanyon.getpoole.com/ "Lanyon"
+<section class='tags'>
+## Contents by Tag
+{% for tag in site.tag-list %}
+### {{ tag }}
+  <ul>
+    {% for page in site.pages %}
+        {% for pc in page.tags %}
+          {% if pc == tag %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</section>

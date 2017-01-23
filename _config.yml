@@ -9,6 +9,7 @@ url:              publisha.github.io
 baseurl: ''
 twitter_username: pageboy
 github_username:  pageboy
+permalink: /:categories/:title/
 
 author:
   name:           'Chris Jennings'
@@ -45,3 +46,7 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
+
+# so that we can make a page that orders by category
+
+tag-list: [InDesign, HTML, CSS, Using GitHub]

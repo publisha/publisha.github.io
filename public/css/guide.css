@@ -199,6 +199,24 @@ section.toc {
   color:white;
 }
 
+
+section.tags {
+  border:1px solid silver;
+  background-color: white;
+  font-size: .85rem;
+  width:50%;
+  padding:8px;
+}
+
+.tags h2 {
+  font-size:.95rem;
+  border-bottom:1px solid silver;
+  background: silver;
+  padding:2px 20px;
+  margin:0 0 12px 0;
+  color:white;
+}
+
 @media (max-width: 48em) {
   /*in here adjust the toc*/
   section.toc {

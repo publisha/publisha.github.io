@@ -17,3 +17,11 @@ Project maintained by @Pageboy
 Here is a random photo taken by me.
 
 [![My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester.](../../images/2017/01/fromWittenhamClumps.jpg)](../../images/2017/01/fromWittenhamClumps.jpg)
+
+## Built with Jekyll and Edited with Atom
+
+This site is built with **jekyll** and delivered on a GitHub repository. My preferred writing tool is Atom 'cos you can customise it!
+
+I based this look and feel on the [Lanyon theme from here][2b9a33ee].
+
+  [2b9a33ee]: http://lanyon.getpoole.com/ "Lanyon"

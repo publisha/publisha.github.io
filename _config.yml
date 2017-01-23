@@ -33,6 +33,7 @@ gems: [jekyll-paginate]
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+  parse_block_html: true
 
   # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
   # span, block element options fall back to global

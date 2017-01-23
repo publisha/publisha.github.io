@@ -4,19 +4,22 @@ title: Repository for Shakespeare Play Web page
 published: true
 tags: html, web, git
 ---
-# The Repository for your Shakespeare Play Web page
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
 
-> **Contents**
->
-><!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+- [On this Page](#on-this-page)
 - [What to do?](#what-to-do)
-	- [Your digital tools](#your-digital-tools)
-	- [What's inside the repository?](#whats-inside-the-repository)
+- [Your digital tools](#your-digital-tools)
+- [What's inside the repository?](#whats-inside-the-repository)
 - [Ok, so what do I do now?](#ok-so-what-do-i-do-now)
-	- [The Play](#the-play)
-	- [The home page cover](#the-home-page-cover)
-	- [Making the web site work](#making-the-web-site-work)
-<!-- /TOC -->
+- [The Play](#the-play)
+- [The home page cover](#the-home-page-cover)
+- [Making the web site work](#making-the-web-site-work)
+
+</section><!-- /TOC -->
+
+# The Repository for your Shakespeare Play Web page
 
 ## What to do?
 If you are reading this within your very own copy of this GitHub repository (because you followed the link from the **github classroom**), then read on. If you are reading this offline, then please set up the Github account before you do anything else.
@@ -31,7 +34,7 @@ Before you do anything with your new GitHub account do this:
 
 You don't need GitHub.com for the moment but you will need to recall your username and password during the next steps.
 
-### Your digital tools
+## Your digital tools
 You will need a text editor that can show and preview web HTML. We now want you to download and install _Atom_. You can find this [free open source editor here][9ef5b049]
 
   [9ef5b049]: https://atom.io "grab Atom"
@@ -48,7 +51,7 @@ Your Applications folder is inside your Home folder; find this by selecting _Go_
 
 Atom will now be available but we now need to move to the next stage.
 
-> #### Configuring Atom
+> ### Configuring Atom
 Atom is open source, so this means there are lots of packages that can be added to provide extra functionality. What follows is **rather advanced**, so don't worry if you can't do this; it is only another option.
 
 > Here are a few packages that will prove useful:
@@ -91,7 +94,7 @@ Once you have done this you can now _clone_ the repository that is in your GitHu
 
 [![Atom editor](../../images/2017/01/atom.png)](../../images/2017/01/atom.png)
 
-### What's inside the repository?
+## What's inside the repository?
 When you download this repository, you will find a variety of files, but the 2 important ones are inside the **docs** folder:
 
 - index.xhtml - this will become the home page for your play. This page will have the cover image.
@@ -119,7 +122,7 @@ Here are the steps to take:
 
 - You will find that you have now got a new file saved wherever your InDesign file was saved. You can drag this file into your working copy of the repo that you have open in Atom.
 
-### The Play
+## The Play
 
 In Atom it will look similar to this:
 
@@ -137,7 +140,7 @@ In Atom it will look similar to this:
 - Validate the XHTML file here: https://validator.w3.org
 - Validate the CSS file here: https://jigsaw.w3.org/css-validator/
 
-### The home page cover
+## The home page cover
 - You now need the cover image from the book.
 - You can open the PDF of the cover in Photoshop and crop down to the front of the cover. In other words, remove the back and spine.
 - The cover image needs to be 1400 pixels wide, because we need this later for the eBook.
@@ -147,7 +150,7 @@ In Atom it will look similar to this:
 - when viewed in a browser, this image will be a link to the play.
 - check that these work.
 
-### Making the web site work
+## Making the web site work
 **When you are happy** with the look of these web pages then you can:
 - Upload these new versions of these files to your GitHub repository
 - You do this by using GitHub Desktop and select _Sync_ top right.

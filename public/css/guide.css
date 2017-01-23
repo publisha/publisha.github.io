@@ -179,3 +179,79 @@ blockquote {
   color: #7a7a7a;
   border-left: .25rem solid #e5e5e5;
 }
+
+
+section.toc {
+  border:1px solid silver;
+  font-size: .65rem;
+  width:35%;
+  float:right;
+  margin-right:-100px;
+  margin-top:-20px;
+  margin-left:8px;
+}
+
+.toc h2 {
+  font-size:.95rem;
+  border-bottom:1px solid silver;
+  background: silver;
+  padding:2px 20px;
+  margin:0 0 12px 0;
+}
+
+/* Code */
+code,
+pre {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+code {
+  padding: .25em .5em;
+  font-size: 85%;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: .8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+}
+
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
+}
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+.highlight pre {
+  margin-bottom: 0;
+}
+
+td, th {
+  vertical-align: top;
+}
+
+td.gl {
+  width:40px;
+  background-color: yellow;
+}
+
+/*formatting for code block with line numbers*/
+.lineno { border: none; border-radius: 0; color: #aaa; }
+/*.gutter {width:20px;}*/
+.code pre, .gutter pre { border: none; white-space: pre; overflow-x: hidden; word-wrap: normal; }
+
+/*formatting for code block with no line numbers*/
+/*pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }*/

@@ -175,11 +175,11 @@ pre code {
   color: inherit;
   background-color: transparent;
 }
-.highlighter-rouge {
+.highlight {
   margin-bottom: 1rem;
   border-radius: 4px;
 }
-.highlighter-rouge pre {
+.highlight pre {
   margin-bottom: 0;
 }
 

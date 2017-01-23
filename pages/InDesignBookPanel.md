@@ -4,18 +4,14 @@ title: Using the Book Panel in InDesign
 published: true
 tags: InDesign
 ---
-
-# Using the Book Panel in InDesign
-
-**Combining sections and chapters into one book**
-
-<!-- TOC depthFrom:2 depthTo:5 withLinks:1 updateOnSave:1 orderedList:0 -->
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
 
 - [Introduction](#introduction)
 - [What is an InDesign Book?](#what-is-an-indesign-book)
 - [The Style Source](#the-style-source)
 - [Creating the Book](#creating-the-book)
-	- [More About the Style Source](#more-about-the-style-source)
 - [Page Numbers](#page-numbers)
 - [Synchronise Options](#synchronise-options)
 - [Master Pages](#master-pages)
@@ -25,7 +21,11 @@ tags: InDesign
 - [How to Number Pages with InDesign Book Panel](#how-to-number-pages-with-indesign-book-panel)
 - [Exporting to PDF](#exporting-to-pdf)
 
-<!-- /TOC -->
+</section><!-- /TOC -->
+
+# Using the Book Panel in InDesign
+
+**Combining sections and chapters into one book**
 
 ## Introduction
 

@@ -4,23 +4,20 @@ title: Building the TOC in InDesign
 published: true
 tags: InDesign
 ---
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
 
-# Building a  Table of Contents in InDesign
-> **Contents**
-><!-- TOC depthFrom:2 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
->
 - [The Front Matter pages](#the-front-matter-pages)
 - [Page Numbers (or folio)](#page-numbers-or-folio)
 - [Before you Build the TOC](#before-you-build-the-toc)
 - [What does Automating Mean?](#what-does-automating-mean)
 - [Building the TOC](#building-the-toc)
-	- [Styling the TOC items](#styling-the-toc-items)
-	- [Page Numbers in the TOC](#page-numbers-in-the-toc)
 - [Saving the Table of Contents Style](#saving-the-table-of-contents-style)
 - [Other types of Contents tables](#other-types-of-contents-tables)
-	- [Interactive Table of Contents](#interactive-table-of-contents)
 
-<!-- /TOC -->
+</section><!-- /TOC -->
+# Building a  Table of Contents in InDesign
 
 ## The Front Matter pages
 

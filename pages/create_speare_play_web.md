@@ -9,6 +9,7 @@ tags: html, web, git
 ## On this Page
 
 - [On this Page](#on-this-page)
+- [On this Page](#on-this-page)
 - [What to do?](#what-to-do)
 - [Your digital tools](#your-digital-tools)
 - [What's inside the repository?](#whats-inside-the-repository)

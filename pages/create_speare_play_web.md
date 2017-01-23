@@ -7,9 +7,6 @@ tags: html, web, git
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
 ## On this Page
-
-- [On this Page](#on-this-page)
-- [On this Page](#on-this-page)
 - [What to do?](#what-to-do)
 - [Your digital tools](#your-digital-tools)
 - [What's inside the repository?](#whats-inside-the-repository)

@@ -3,6 +3,7 @@ layout: page
 title: About
 published: true
 order: 1
+images: full-width
 ---
 # What is this website about?
 

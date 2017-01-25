@@ -50,3 +50,5 @@ kramdown:
 # so that we can make a page that orders by category
 
 tag-list: [InDesign, HTML, CSS, Using GitHub]
+
+categories-list: [InDesign, HTML, CSS, Typography, Using GitHub]

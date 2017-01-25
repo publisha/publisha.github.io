@@ -9,6 +9,11 @@ html {
   }
 }
 
+body {
+  margin-bottom: 30px;
+}
+
+
 
 .container {
   max-width: 60%;
@@ -157,9 +162,9 @@ html {
 
 img {
   border:1px solid silver;
-  max-width: 70%;
+  max-width: 60%;
   max-height:400px;
-  margin:12px auto;
+  margin:2rem auto;
 }
 
 
@@ -173,7 +178,7 @@ h1 {
 /* Quotes */
 blockquote {
   padding: .5rem 1rem;
-  margin: .8rem 0;
+  margin: .8rem 0 1rem 1rem;
   color: #7a7a7a;
   border-left: .25rem solid #e5e5e5;
 }
@@ -200,21 +205,27 @@ section.toc {
 }
 
 
-section.tags {
+section.categories {
   border:1px solid silver;
   background-color: white;
   font-size: .85rem;
   width:50%;
-  padding:8px;
+  padding:0;
 }
-
-.tags h2 {
+/*the heading for the categories box on the home page*/
+.categories h2 {
   font-size:.95rem;
   border-bottom:1px solid silver;
   background: silver;
   padding:2px 20px;
   margin:0 0 12px 0;
   color:white;
+}
+
+.categories h3 {
+  font-size:1em;
+  padding:0 20px;
+  margin:0 0 2px 0;
 }
 
 @media (max-width: 48em) {
@@ -286,5 +297,22 @@ td.gl {
 /*.gutter {width:20px;}*/
 .code pre, .gutter pre { border: none; white-space: pre; overflow-x: hidden; word-wrap: normal; }
 
-/*formatting for code block with no line numbers*/
-/*pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }*/
+
+
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   margin-top:20px;
+   background:#d5f3dc;
+   border-top:1px solid gray;
+}
+
+.cclicense img {
+  border:0;
+  max-width: 100%;
+  margin:0;
+  text-align: left;
+}

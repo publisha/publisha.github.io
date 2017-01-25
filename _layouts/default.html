@@ -19,12 +19,15 @@
 
       <div class="container content">
         {{ content }}
-        {% if page.tags != null %}
-        <p><b>Tagged with:</b> {{page.tags}}</p>
+        {% if page.categories != null %}
+        <p><b>Filed under:</b> {{ page.categories | join: ', ' }}</p>
         {% endif %}
-      </div>
-    </div>
 
+      </div>
+
+    </div>
+<!-- {% include footer.html %} -->
+<!-- now follows items that get the menu working -->
     <label title="the menu" for="sidebar-checkbox" class="sidebar-toggle fa fa-chevron-left fa-lg" aria-hidden="true"></label>
 
     <script>

@@ -11,14 +11,14 @@ Now it is time (surely) to make all of these helpful documents digital and onlin
 
   [b016960a]: http://www.pagetoscreen.net "Lots of useful information"
 
-<section class='tags'>
-## Contents by Tag
-{% for tag in site.tag-list %}
-### {{ tag }}
+<section class='categories'>
+## Contents by Category
+{% for category in site.categories-list %}
+### {{ category }}
   <ul>
     {% for page in site.pages %}
-        {% for pc in page.tags %}
-          {% if pc == tag %}
+        {% for cat in page.categories %}
+          {% if cat == category %}
             <li><a href="{{ page.url }}">{{ page.title }}</a></li>
           {% endif %}
         {% endfor %}

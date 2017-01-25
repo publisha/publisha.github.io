@@ -2,7 +2,7 @@
 layout: page
 title: Building the TOC in InDesign
 published: true
-tags: InDesign
+categories: InDesign
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
@@ -98,3 +98,27 @@ When you create the TOC, you will notice the check box ‘Create PDF Bookmarks�
 Although this a useful feature it is not something that we need for the print output PDF! Here it serves to illustrate the structure of our completed play book.
 
 [![The interactive table of contents in a PDF](../../images/2017/01/toc-in-the-pdf.png)](../../images/2017/01/toc-in-the-pdf.png)
+
+## Creating a Table of Contents for the eBook version
+
+Whichever type of ePub you are making from InDesign, you still have a choice about whether to include the TOC on the page or just within the reader software interface.
+
+### Options for the Fixed-layout ePub.
+
+For a fixed-layout ePub, you can leave off the table of contents altogether (not recommended by me), and then the reader software will simply use thumbnails of each page as a navigator. If you do choose to include the generated table of contents on the page, then you certainly should include the page numbers, since those will be matched correctly. A better option may be to have the generated TOC in the file, but not exported on the page.
+
+### Options for the Re-flowable ePub.
+
+The re-flowable ePub definitely needs the generated table of contents from InDesign, and this will be used in the reader navigation interface. Optionally, you can include the generated table of contents ‘on the page’, but the page numbers should be removed.
+
+### Keeping things simple for pBook and eBook
+
+If your workflow means that you are wanting both print and eBooks from the same file (wouldn’t it be nice?), then you can leave the table of contents on the page with it’s page numbers, but leave it out of the export stage.
+
+>I need the table of contents in the pBook version. How do I leave it off the page for the eBook version?
+
+When you build the TOC from Layout>Table of Contents panel, then you should create this as a separate story. It will then be in it’s own text box. With this in mind we can use the Articles panel, to build the structure of our eBook, but leave off the Article that includes the TOC.
+
+[![Using articles, you can select what is left out of the ePub](../../images/2017/01/articlespanel.png)](../../images/2017/01/articlespanel.png)
+
+The lack of the tick in the box means that the Article named Contents will not be included on export.

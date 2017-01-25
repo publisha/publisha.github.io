@@ -2,7 +2,7 @@
 layout: page
 title: Using the Book Panel in InDesign
 published: true
-tags: InDesign
+categories: InDesign
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

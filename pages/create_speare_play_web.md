@@ -2,8 +2,7 @@
 layout: page
 title: Repository for Shakespeare Play Web page
 published: true
-tags: Using GitHub
-categories: Multi-Platform Publishing
+categories: [Using GitHub]
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

@@ -16,7 +16,8 @@ body {
 
 
 .container {
-  max-width: 60%;
+  width: 60%;
+  max-width: 38rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
@@ -24,14 +25,19 @@ body {
   /*border:1px solid red;*/
 }
 
+.content {
+  border-left:1px solid silver;
+  border-right:1px solid silver;
+}
+
 @media (min-width: 38rem) {
   .container {
-    max-width: 60%;
+    max-width: 38rem;
   }
 }
 @media (min-width: 56rem) {
   .container {
-    max-width: 60%;
+    max-width: 38rem;
   }
 }
 

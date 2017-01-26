@@ -2,41 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Digital Publisher Guide</title>
- <link href="publisha.github.io/atom.xml" rel="self"/>
- <link href="publisha.github.io/"/>
- <updated>2017-01-25T17:23:13+00:00</updated>
- <id>publisha.github.io</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2017-01-26T13:45:57+00:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
    <email></email>
  </author>
 
- 
- <entry>
-   <title>using Git for Islomania</title>
-   <link href="publisha.github.io/usingGit/"/>
-   <updated>2016-07-11T00:00:00+01:00</updated>
-   <id>publisha.github.io/usingGit</id>
-   <content type="html">&lt;h2 id=&quot;using-github-to-host-islomania&quot;&gt;Using GitHub to host Islomania&lt;/h2&gt;
-
-&lt;p&gt;I am now hosting (nearly) Islomania on Github using Prose.io to edit.&lt;/p&gt;
-
-&lt;p&gt;Using Coda to edit locally&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>using Coda for Islomania</title>
-   <link href="publisha.github.io/using-coda/"/>
-   <updated>2016-07-11T00:00:00+01:00</updated>
-   <id>publisha.github.io/using coda</id>
-   <content type="html">&lt;h2 id=&quot;what-would-be-the-advantage-of-using-coda&quot;&gt;What would be the advantage of using Coda?&lt;/h2&gt;
-
-&lt;p&gt;Well I already paid for it.&lt;/p&gt;
-
-&lt;p&gt;Just testing you know.&lt;/p&gt;
-</content>
- </entry>
  
 
 </feed>

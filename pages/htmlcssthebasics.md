@@ -314,7 +314,7 @@ This means that the navigation menu will be 100 pixels wide.
 ### The alternatives
 The units that we can use are listed here with an explanation:
 
- - Pixels - indicated as `px` in the CSS rule, it is the smallest screen unit. Most systems will ignore fractions (such as `4.5px`) by rounding up.
+ - **Pixels** - indicated as `px` in the CSS rule, it is the smallest screen unit. Most systems will ignore fractions (such as `4.5px`) by rounding up.
  - **em** - The em unit is a relative unit; meaning that it represents the size of the current font. `2em` means twice the size of the font within the parent block of the element.
  - **rem** - The rem is also relative, but this time it represents the value of the font size at the root level of the page. So, if the font size for the body is set at `12px` then `2rem` will be `32px`.
  - **Percentage** - indicated as `%` to create a dimension that is relative to the containing element. So if our menu is 100px wide, the sub menu could be defined as having a width of `70%` - making it `70px` wide.

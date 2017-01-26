@@ -1,54 +1,97 @@
-Making XML from InDesign
-Tags, Structure and Styles
+# Making XML from InDesign
+**Tags, Structure and Styles**
 
-Introduction
+## Introduction
+
 Extracting XML from InDesign depends on a number of factors, but if we successfully achieve our goal then we can be pleased that we have styled all of our content and mapped these styles to our document structure.
-What is XML and why do we want it?
+
+## What is XML and why do we want it?
+
 XML is eXtensible Markup Language and is a non-proprietary markup language that can be used as a future-proof way to store content. XML indicates structure rather than style; in fact XML includes no information about appearance, only structure, hierarchy and element taxonomy.
+
 Here is a sample of some XML of ‘A Midsummer Night’s Dream’:
 
 ```xml
 <stage_directions>Enter Egeus</stage_directions> <character>Egeus</character> <verseline>Happy be Theseus, our renowned Duke!</verseline>
 ```
-Tags
+
+## Tags
+
 What we see in this example are various elements of the content surrounded by the markup using tags that (effectively) label the content as to its meaning in the structure.
-For example <stage_directions> marks up the text that is identified as just that; stage directions.
-The naming convention for tags is quite strict and you cannot use spaces in the names, nor can you start a tag name with a number. Certain other characters are not allowed; ampersands, exclamation marks, brackets etc. Also, XML will notice the difference between upper and lower case letters, so <StageDirections> would be different from <stagedirections>.
-How do we create Tags?
-With InDesign there are 2 ways that we can create the tag names. One way is to simply add them to the tags panel, one at a time. The Tags panel is found in the menu Window>Utilities>Tags.
+
+For example `<stage_directions>` marks up the text that is identified as just that; stage directions.
+
+The naming convention for tags is quite strict and you cannot use spaces in the names, nor can you start a tag name with a number. Certain other characters are not allowed; ampersands, exclamation marks, brackets etc. Also, XML will notice the difference between upper and lower case letters, so `<StageDirections>` would be different from `<stagedirections>`.
+
+### How do we create Tags?
+
+With InDesign there are 2 ways that we can create the tag names. One way is to simply add them to the tags panel, one at a time. The Tags panel is found in the menu _Window>Utilities>Tags_.
+
 When naming tags we need to be aware of the kind of content that we have so we can label the tags appropriately.
+
 Another way to add tags to the tag panel is to load them from somewhere else.
-InDesign is clever enough to be able to load the tag names from an XML document. It will locate all markup and make the tag names. Another way is to load a DTD—this will also generate the tag names. Loading a DTD will also effect the Structure panel, but we will explore this later.
-Tag names and Style names
+
+InDesign is clever enough to be able to load the tag names from an XML document. It will locate all markup and make the tag names. Another way is to load a DTD to generate the tag names. Loading a DTD will also effect the Structure panel, but we will explore this later.
+
+## Tag names and Style names
+
 And this is the crucial bit that helps us generate the XML!
-Ultimately, the styles (paragraph and character styles for the moment) need to be ‘mapped’ to the tags. Of course, it is very likely that the elements in our Shakespeare play will be styled differently; character names to look different from stage directions and so on. So, structuring the play is very much tied to how we as typesetters want our play to look.
+
+Ultimately, the styles in InDesign (paragraph and character styles for the moment) need to be ‘mapped’ to the tags. Of course, it is very likely that the elements in our Shakespeare play will be styled differently; character names to look different from stage directions and so on. So, structuring the play is very much tied to how we as typesetters want our play to look.
+
 We should be aware though, that the typesetter may want the stage directions to look the same as the character name (strange, I know) but we should try to give those elements different tag names (and thus style names), so that future editions could easily be re-styled from the XML data.
-What is the difference between style names and tag names?
-If you have already done work with InDesign, you will know that style names (character,paragraph and object names), can have descriptive names such as ‘top red heading’, or ‘underlined sub head 2’. While this may be something that you have got used to, I want to politely suggest that you name the styles the same as you would if you were marking up with XML. In other words, think of a term that identifies its purpose and meaning, rather than its appearance.
+
+### What is the difference between style names and tag names?
+
+If you have already done work with InDesign, you will know that style names (character,paragraph and object names), can have descriptive names such as ‘_top red heading_’, or ‘_underlined sub head 2_’. While this may be something that you have got used to, I want to politely suggest that you name the styles the same as you would if you were marking up with XML. In other words, think of a term that identifies its purpose and meaning, rather than its appearance.
+
 As you will see in a moment, we can map the styles to tags and select each pair in turn, but if the names of styles and tags are the same, then InDesign will map them automatically for us. Cool!
-The Structure Pane
+
+## The Structure Pane
+
 Before we go any further with this, it’s time to introduce the Structure Pane.
-Go to the menu View>Structure>Show Structure
+
+Go to the menu _View>Structure>Show Structure_
+
 What you see is a pane on the left with one item in it called Root.
+
 Every document will have a root.
-From the Structure pane we can also load a DTD. From the top right of the Structure Pane, a drop down menu offers the option of loading a DTD. The result of this operation is that the Tag window is then populated with the the Tags identified in the DTD.
+
+From the Structure pane we can also load a DTD. From the top right of the Structure Pane, a drop down menu offers the option of **loading a DTD**. The result of this operation is that the Tag window is then populated with the the Tags identified in the DTD.
+
 The DTD that has just been loaded looks like this:
+
 A DTD (Document Type Definition) is a set of rules, that sets out what tags can be used in the XML and how they should be arranged in the hierarchy.
-Do I need to use a DTD?
-It is not required that you use a DTD at all. If you want to add tag names to the Tags panel one at a time, this will also work. If you do it this way, then you need to produce a Tag for each element type in the play; characterName, prose,stageDirections — or whatever you wish to call them. You need to analyse the text so that you
-Mapping Styles to Tags
-Once we have our play styled using character and paragraph styles (appropriately), and we have a set of tags that define those same elements, then we can ‘Map Styles to Tags’.
-As you will see from the dialogue box here, there is an option to ‘Map by Name’. This will, of course, automatically get the mapping done if the names are the same! I mentioned that before didn’t I? Not to worry, if you didn’t name the same, because you can go through each one and select the tag name to the appropriate style.
-You will notice here that not all Styles are matched to Tags. This is because some of these tags are ‘Parent Objects’. InDesign does not map objects through the ‘Map by Name’ button, so we need to do this through the structure pane.
+
+## Do I need to use a DTD?
+
+It is not required that you use a DTD at all. If you want to add tag names to the Tags panel one at a time, this will also work. If you do it this way, then you need to produce a Tag for each element type in the play; _characterName_, _prose_, _stageDirections_ — or whatever you wish to call them. You need to analyse the text so that you provide the most appropriate tag.
+
+## Mapping Styles to Tags
+
+Once we have our play styled using character and paragraph styles (appropriately), and we have a set of tags that define those same elements, then we can ‘**Map Styles to Tags**’.
+
+As you will see from the dialogue box here, there is an option to ‘**Map by Name**’. This will, of course, automatically get the mapping done if the names are the same! I mentioned that before didn’t I? Not to worry, if you didn’t name the same, because you can go through each one and select the tag name to the appropriate style.
+
+You will notice here that not all Styles are matched to Tags. This is because some of these tags are ‘Parent Objects’. InDesign **does not map objects** through the ‘Map by Name’ button, so we need to do this through the structure pane.
+
 Here is the structure pane after mapping the tags to the styles.
-The Root and the Story
+
+## The Root and the Story
+
 In the Structure Pane, you now see that we have a ‘Story’ inside the ‘Root’, and then other components inside the Story.
+
 In my example so far, I only have one ‘Story’. All of my text was ‘Placed’ and is threaded together. Later, we will look at breaking the one Story into parts.
+
 To make our XML structure correct, we need to make the Root element become ‘shakespeareplay’ and our one story ‘play’. We do this very easily by selecting ‘Root’ in the structure pane and then click once on ‘shakespeareplay’ in the tag window.
+
 Same with ‘Story’ and the tag ‘play’.
-Split the Story (if you need)
+
+## Split the Story (if you need)
+
 If you want to break the story (all threaded in my example), so that the Dramatis Personae is in a separate parent tag, you can use a Script that comes with InDesign.
-In the Scripts panel (Windows>Utilities>Scripts), you will find a script called ‘breakframe’ under the Samples section. Select the frame that you want to break and double click the script. You now have a separate threaded story.
+
+In the Scripts panel (_Windows>Utilities>Scripts_), you will find a script called ‘breakframe’ under the Samples section. Select the frame that you want to break and double click the script. You now have a separate threaded story.
 This will also be tagged as ‘play’ so select it in the Structure pane and click the ‘dramatis_personae’ tag. It may be in the wrong order — coming to the end of the structure. Simply drag it up in the Structure pane.
 Save your work!
 Exporting the XML

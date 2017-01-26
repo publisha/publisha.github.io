@@ -26,8 +26,8 @@ body {
 }
 
 .content {
-  border-left:1px solid #e3e6e5;
-  border-right:1px solid #e3e6e5;
+  /*border-left:1px solid #e3e6e5;
+  border-right:1px solid #e3e6e5;*/
 }
 
 @media (min-width: 38rem) {
@@ -75,6 +75,11 @@ body {
   }
   .masthead {
     /*padding-bottom: 1.1rem;*/
+}
+
+.code pre, .gutter pre {
+  white-space: pre-wrap;
+  /*word-break: break-all;*/
 }
 }
 
@@ -246,10 +251,14 @@ section.categories {
     margin-left:8px;
   }
 
-
 }
 
 /* Code */
+.codehilite table {
+  /*border:4px solid red;*/
+  width:100%;
+}
+
 code,
 pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
@@ -269,9 +278,9 @@ pre {
   font-size: .8rem;
   line-height: 1.4;
   white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
+  /*white-space: pre-wrap;*/
+  /*word-break: break-all;*/
+  /*word-wrap: break-word;*/
   background-color: #f9f9f9;
 }
 
@@ -291,6 +300,7 @@ pre code {
 
 td, th {
   vertical-align: top;
+  /*padding-right:0;*/
 }
 
 td.gl {
@@ -301,7 +311,14 @@ td.gl {
 /*formatting for code block with line numbers*/
 .lineno { border: none; border-radius: 0; color: #aaa; }
 /*.gutter {width:20px;}*/
-.code pre, .gutter pre { border: none; white-space: pre; overflow-x: hidden; word-wrap: normal; }
+.code pre, .gutter pre {
+  border: none;
+  overflow-x: hidden;
+  /*word-wrap: normal;*/
+  white-space: pre;
+  /*white-space: pre-wrap;*/
+  /*word-break: break-all;*/
+}
 
 
 
@@ -321,4 +338,12 @@ footer {
   max-width: 100%;
   margin:0;
   text-align: left;
+}
+
+
+@media (max-width: 48em) {
+.code pre, .gutter pre {
+  white-space: pre-wrap;
+  /*word-break: break-all;*/
+}
 }

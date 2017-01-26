@@ -26,8 +26,8 @@ body {
 }
 
 .content {
-  border-left:1px solid silver;
-  border-right:1px solid silver;
+  border-left:1px solid #e3e6e5;
+  border-right:1px solid #e3e6e5;
 }
 
 @media (min-width: 38rem) {
@@ -215,7 +215,7 @@ section.categories {
   border:1px solid silver;
   background-color: white;
   font-size: .85rem;
-  width:50%;
+  width:70%;
   padding:0;
 }
 /*the heading for the categories box on the home page*/

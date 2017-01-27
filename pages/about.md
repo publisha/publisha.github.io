@@ -26,3 +26,7 @@ This site is built with **jekyll** and delivered on a GitHub repository. My pref
 I based this look and feel on the [Lanyon theme from here][2b9a33ee].
 
   [2b9a33ee]: http://lanyon.getpoole.com/ "Lanyon"
+
+  Images can be enlarged and use a variation of [Fancybox][f6b39499]{:target="_blank"} using jquery.
+
+  [f6b39499]: http://fancybox.net "Take a look at Fancybox"

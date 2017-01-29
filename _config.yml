@@ -1,11 +1,11 @@
 # Setup
-permalink:        pretty
+permalink: pretty
 markdown: kramdown
 # relative_permalinks: true
 title:            Digital Publisher Guide
 tagline:          'Help for publishers and students of publishing'
 description:      'tutorials and screencasts about digital publishing and eBook Production'
-url:              publisha.github.io
+url:              https://publisha.github.io
 baseurl: ''
 twitter_username: pageboy
 github_username:  pageboy
@@ -21,7 +21,7 @@ paginate_path: '/blog/page:num/'
 version:          0.095
 
 github:
-  repo:           https://publisha.github.io
+  repo:           https://github.com/publisha/publisha.github.io
 
   # Gems
 gems: [jekyll-paginate]

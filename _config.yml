@@ -6,7 +6,7 @@ title:            Digital Publisher Guide
 tagline:          'Help for publishers and students of publishing'
 description:      'tutorials and screencasts about digital publishing and eBook Production'
 url:              https://publisha.github.io
-baseurl: '/'
+baseurl: ''
 twitter_username: pageboy
 github_username:  pageboy
 permalink: /:categories/:title/
@@ -21,7 +21,7 @@ paginate_path: '/blog/page:num/'
 version:          0.095
 
 github:
-  repo:           https://github.com/publisha/publisha.github.io
+  repo:           publisha.github.io
 
   # Gems
 gems: [jekyll-paginate]
@@ -53,7 +53,7 @@ categories-list: [InDesign, HTML, CSS, Typography, Using GitHub]
 # for prose
 
 prose:
-  rooturl: '../_posts'
+  rooturl: '_posts'
   siteurl: 'https://publisha.github.io'
   # relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'images'

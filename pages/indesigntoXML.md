@@ -12,7 +12,8 @@ XML is eXtensible Markup Language and is a non-proprietary markup language that 
 Here is a sample of some XML of ‘A Midsummer Night’s Dream’:
 
 ```xml
-<stage_directions>Enter Egeus</stage_directions> <character>Egeus</character> <verseline>Happy be Theseus, our renowned Duke!</verseline>
+<stage_directions>Enter Egeus</stage_directions><character>Egeus</character>
+<verseline>Happy be Theseus, our renowned Duke!</verseline>
 ```
 
 ## Tags

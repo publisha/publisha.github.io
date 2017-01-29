@@ -64,8 +64,7 @@ prose:
     - /_site
     - LICENCE.md
     - atom.xml
-    - _mdwriter.cson
-    
+    - _mdwriter.cson    
   metadata:
     _posts:
       - name: "layout"

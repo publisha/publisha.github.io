@@ -52,7 +52,7 @@ categories-list: [InDesign, HTML, CSS, Typography, Using GitHub]
 
 # for prose
 prose:
-  rooturl: '_posts'
+  #rooturl: '_posts'
   siteurl: 'https://publisha.github.io'
   # relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'images'

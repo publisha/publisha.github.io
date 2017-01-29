@@ -6,10 +6,10 @@ title:            Digital Publisher Guide
 tagline:          'Help for publishers and students of publishing'
 description:      'tutorials and screencasts about digital publishing and eBook Production'
 url:              https://publisha.github.io
-baseurl: '../'
+baseurl: ''
 twitter_username: pageboy
 github_username:  pageboy
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
 
 author:
   name:           'Chris Jennings'
@@ -51,7 +51,6 @@ tag-list: [InDesign, HTML, CSS, Using GitHub]
 categories-list: [InDesign, HTML, CSS, Typography, Using GitHub]
 
 # for prose
-
 prose:
   rooturl: '_posts'
   siteurl: 'https://publisha.github.io'

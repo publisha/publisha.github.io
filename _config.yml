@@ -62,9 +62,9 @@ prose:
     - /_layouts
     - /_includes
     - /_site
-    - /LICENCE.md
-    - /atom.xml
-    - /_mdwriter.cson
+    - LICENCE.md
+    - atom.xml
+    - _mdwriter.cson
     
   metadata:
     _posts:

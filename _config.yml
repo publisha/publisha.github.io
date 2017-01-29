@@ -81,7 +81,7 @@ prose:
               value: "apples"
             - name: "Bananas"
               value: "bananas"
-       - name: "categories"
+      - name: "categories"
         field:
           element: "multiselect"
           label: "Add Categories"

@@ -97,7 +97,8 @@ prose:
             - name: "Typography"
               value: "Typography"
             - name: "Using GitHub"
-              value: "Using GitHub"           
+              value: "Using GitHub"
+              
     _posts/static:
       - name: "layout"
         field:

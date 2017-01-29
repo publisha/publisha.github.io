@@ -57,10 +57,15 @@ prose:
   # relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'images'
   ignore:
-    - index.md
+    - README.md
     - _config.yml
     - /_layouts
     - /_includes
+    - /_site
+    - /LICENCE.md
+    - /atom.xml
+    - /_mdwriter.cson
+    
   metadata:
     _posts:
       - name: "layout"
@@ -77,6 +82,22 @@ prose:
               value: "apples"
             - name: "Bananas"
               value: "bananas"
+       - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add Categories"
+          placeholder: "Choose Categories"
+          options:
+            - name: "InDesign"
+              value: "InDsign"
+            - name: "HTML"
+              value: "HTML"
+            - name: "CSS"
+              value: "CSS"
+            - name: "Typography"
+              value: "Typography"
+            - name: "Using GitHub"
+              value: "Using GitHub"           
     _posts/static:
       - name: "layout"
         field:

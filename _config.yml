@@ -1,15 +1,15 @@
 # Setup
-permalink:        pretty
+permalink: pretty
 markdown: kramdown
 # relative_permalinks: true
 title:            Digital Publisher Guide
 tagline:          'Help for publishers and students of publishing'
 description:      'tutorials and screencasts about digital publishing and eBook Production'
-url:              publisha.github.io
+url:              https://publisha.github.io
 baseurl: ''
 twitter_username: pageboy
 github_username:  pageboy
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
 
 author:
   name:           'Chris Jennings'
@@ -21,10 +21,7 @@ paginate_path: '/blog/page:num/'
 version:          0.095
 
 github:
-  repo:           https://github.com/publisha/publisha.github.io
-
-prose:
-  media: 'images'
+  repo:           publisha.github.io
 
   # Gems
 gems: [jekyll-paginate]
@@ -52,3 +49,62 @@ kramdown:
 tag-list: [InDesign, HTML, CSS, Using GitHub]
 
 categories-list: [InDesign, HTML, CSS, Typography, Using GitHub]
+
+# for prose
+prose:
+  #rooturl: '_posts'
+  siteurl: 'https://publisha.github.io'
+  # relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'images'
+  ignore:
+    - README.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /_site
+    - LICENCE.md
+    - atom.xml
+    - _mdwriter.cson    
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add Categories"
+          placeholder: "Choose Categories"
+          options:
+            - name: "InDesign"
+              value: "InDsign"
+            - name: "HTML"
+              value: "HTML"
+            - name: "CSS"
+              value: "CSS"
+            - name: "Typography"
+              value: "Typography"
+            - name: "Using GitHub"
+              value: "Using GitHub"
+              
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""

@@ -12,7 +12,8 @@ XML is eXtensible Markup Language and is a non-proprietary markup language that 
 Here is a sample of some XML of ‘A Midsummer Night’s Dream’:
 
 ```xml
-<stage_directions>Enter Egeus</stage_directions> <character>Egeus</character> <verseline>Happy be Theseus, our renowned Duke!</verseline>
+<stage_directions>Enter Egeus</stage_directions><character>Egeus</character>
+<verseline>Happy be Theseus, our renowned Duke!</verseline>
 ```
 
 ## Tags
@@ -93,48 +94,85 @@ If you want to break the story (all threaded in my example), so that the Dramati
 
 In the Scripts panel (_Windows>Utilities>Scripts_), you will find a script called ‘breakframe’ under the Samples section. Select the frame that you want to break and double click the script. You now have a separate threaded story.
 This will also be tagged as ‘play’ so select it in the Structure pane and click the ‘dramatis_personae’ tag. It may be in the wrong order — coming to the end of the structure. Simply drag it up in the Structure pane.
+
 Save your work!
-Exporting the XML
+
+## Exporting the XML
+
 You can Export XML from the menu on the Structure pane or from the InDesign File>Export menu.
+
 The options are these.
+
 If you have used a DTD then you can include a reference to it in the XML. Viewing the XML can be done with various programs but we will deal with that afterwards.
-Inspecting the XML
+
+## Inspecting the XML
+
 We can view our XML with a web browser such as Safari or Google Chrome.
 Editing the XML file
 We can view and edit the XML file with a text editor such as Textwrangler, but when we view with this program we will notice that the text has no line breaks. To help see the way the XML is structured, you can put a break between the closing and opening tags.
-What might be wrong with the XML?
+
+### What might be wrong with the XML?
+
 You will need to check for two possible errors.
-Untagged Content
-If you notice content that is not tagged, then it could mean that you have not used a style for that content. On the other hand, maybe you did not map one style to a tag.
-This portion of XML shows that the word ‘Exit’ is not tagged.
-Empty Tags
-If you find an opening and closing tag with no content between those tags, then you have empty paragraphs.
-This section of XML shows that there must have been an empty paragraph before the stage directions.
-Fixing Errors
+
+- Untagged Content
+- If you notice content that is not tagged, then it could mean that you have not used a style for that content. On the other hand, maybe you did not map one style to a tag.
+- This portion of XML shows that the word ‘Exit’ is not tagged.
+- Empty Tags
+- If you find an opening and closing tag with no content between those tags, then you have empty paragraphs.
+- This section of XML shows that there must have been an empty paragraph before the stage directions.
+-
+### Fixing Errors
+
 Of course you can edit the XML, but it is better to go back to InDesign and make these corrections there and then re-export.
-Other Issues to Note
+
+### Other Issues to Note
+
 Forced line breaks
-Force line breaks (sometimes called ‘softbreaks’) are achieved by using SHIFT-RETURN. They are sometimes used to keep text within a paragraph or heading, putting the line down on the next line. If you are trying to give your headings a more even horizontal distribution then you might try using ‘Balance Ragged Lines’ within the ‘Indents and Spacing’ section of the paragraph style. If you do use a forced line break then we need to be aware of the results in the XML export.
-What happens to forced line breaks within the XML?
+Force line breaks (sometimes called ‘softbreaks’) are achieved by using SHIFT-RETURN. They are sometimes used to keep text within a paragraph or heading, putting the line down on the next line. If you are trying to give your headings a more even horizontal distribution then you might try using ‘Balance Ragged Lines’ within the ‘Indents and Spacing’ section of the paragraph style.
+
+If you do use a forced line break then we need to be aware of the results in the XML export.
+
+### What happens to forced line breaks within the XML?
+
 It depends on 2 things!
 When you enter a forced line break between 2 words, you might be inclined to remove the space.
-If you do so, when you export to XML, the forced line break will not be tagged and the 2 words will not be spaced (putting them together!).
+
+If you do so, when you export to XML, the forced line break will not be tagged and the 2 words will not be spaced (putting them together with no space between!).
+
 However — if on export to XML you select the ‘Remap Break, Whitespace and Special Characters’, checkbox, then the ‘forced line break’ will be replaced by a space.
+
 On the other hand, if you make sure that you have both a space and a forced line break, this will not be necessary.
-Illustrations
+
+## Illustrations
+
 For pictures, and images to appear in the correct location for the XML, you must be sure to anchor them.
-How to anchor images.
+
+## How to anchor images.
+
 The important thing to remember, is that this process is more about the flow of the document rather than the appearance, so we cannot just place the images anywhere and expect them to appear in the right place within the text. The images need to be 'anchored' correctly.
-Note: Images will need ‘alt’ tag information when they are included in the XML. The best way to include this is to add the metadata in Photoshop, by using the ‘File Info’ menu item under the File menu. Currently there is no automatic way to get this out to the XML, So you will need to add the attribute in the structure pane.Place the Image on the Pasteboard first
+
+Note: Images will need ‘alt’ tag information when they are included in the XML. The best way to include this is to add the metadata in Photoshop, by using the ‘File Info’ menu item under the File menu. Currently there is no automatic way to get this out to the XML, So you will need to add the attribute in the structure pane.
+
+Place the Image on the Pasteboard first
+
 In my Shakespeare play book I plan to put a different images with each scene. I intend to place this image below the scene location and before the start of the first stage directions.
+
 Here we see the image on the pasteboard. Notice the small solid blue square on the border of the image. We need to SHIFT-drag this to the end of the line ‘Athens. Quince’s House’. This will anchor it at this point in the text and you should notice an ‘anchor’ symbol in place of the small blue square. Anchoring images may also involve selecting the Anchored Image Options menu item under the Object menu, but for now, we will create a style that will be consistent for all images.
+
 Now we need to create an Object Style for all images that will follow the scene title.
-Object Styles
+
+## Object Styles
+
 Object styles are a very powerful feature of InDesign, and allow you to apply formatting to various attributes of the object.
 With the anchored image selected, find the Object panel, and create a new object style. I will name mine ‘scene_image’. The important style attribute for now is the Anchored Image Options section. You should select ‘Custom’ rather than ‘Inline’.
-Tagging Objects
+
+## Tagging Objects
+
 InDesign does not offer a way to automate the mapping of object styles to tags, so we need to select our graphic object (currently using the “scene_image” object style), and then select the tag: ‘scene_image’.
+
 The object will then appear in the structure pane at the appropriate place.
 Here we see the image anchored with the object style selected in the object styles palette and the tag selected in the tag window.
+
 We can then add the attribute ‘alt’ to this element in the structure panel.
 The resultant XML section will look like this:

@@ -19,10 +19,24 @@ Here is a random photo taken by me.
 
 [![My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester.](../../images/2017/01/fromWittenhamClumps.jpg)](../../images/2017/01/fromWittenhamClumps.jpg)
 
-## Built with Jekyll and Edited with Atom
+## How was this Web site built?
 
-This site is built with **jekyll** and delivered on a GitHub repository. My preferred writing tool is Atom 'cos you can customise it!
+### Jekyll
+The site is built with Jekyll which you can [find out about here][92c344c3]{:target="_blank"}.
 
-I based this look and feel on the [Lanyon theme from here][2b9a33ee].
+It is delivered on a GitHub repository with GitHub pages. My preferred writing tool is Atom 'cos you can customise it!
+
+  [92c344c3]: https://jekyllrb.com "Visit the Jekyll web site"
+
+### Atom
+Atom is the free text editor that comes from GitHub. [You can get it here][f9a83765]{:target="_blank"}.
+
+  [f9a83765]: https://atom.io "Get Atom"
+
+I based this look and feel on the [Lanyon theme from here][2b9a33ee]{:target="_blank"}.
 
   [2b9a33ee]: http://lanyon.getpoole.com/ "Lanyon"
+
+  Images can be enlarged and use a variation of [Fancybox][f6b39499]{:target="_blank"} using jquery.
+
+  [f6b39499]: http://fancybox.net "Take a look at Fancybox"

@@ -1,6 +1,6 @@
 ---
 layout: blog
-published: false
+published: true
 categories:
   - Typography
 ---
@@ -9,4 +9,3 @@ categories:
 Atom is a terrific text editor with lots of features and extensions.
 
 ![Me]({{site.baseurl}}/images/me.jpg)
-

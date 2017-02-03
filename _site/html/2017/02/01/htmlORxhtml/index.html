@@ -10,7 +10,7 @@
 
   <title>
     
-      About
+      HTML, XHTML, HTML5 or XHTML5
     
   </title>
 
@@ -27,12 +27,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <!-- Optionally make the images go full width but put this in the page metadata -->
-
-<style>
-img {
-  max-width: 100%;
-}
-</style>
 
 
 <!-- javascripts for fancybox -->
@@ -78,7 +72,7 @@ img {
     
     
       
-        <a class="sidebar-nav-item active" href="/pages/about/">About</a>
+        <a class="sidebar-nav-item" href="/pages/about/">About</a>
       
     
     
@@ -135,7 +129,7 @@ img {
     
       
         
-          <a class="sidebar-nav-item active" href="/pages/about/">About</a>
+          <a class="sidebar-nav-item" href="/pages/about/">About</a>
         
       
     
@@ -209,39 +203,65 @@ img {
       </div>
 
       <div class="container content">
-        <div class="page">
-  <!-- <h1 class="page-title">About</h1> -->
-  <h1 id="what-is-this-website-about">What is this website about?</h1>
+        <div class="post">
+  <h1 class="post-title">HTML, XHTML, HTML5 or XHTML5</h1>
+  <span class="post-date">01 Feb 2017</span>
+  <p>Goodness me there seem to be so many flavours of HTML. What does this all mean for eBook production and why should we care?</p>
 
-<p>Chris Jennings teaches at Oxford Brookes University for Undergraduate and Postgraduate modules on Digital Publishing. He also is a consultant specialising in eBook Production.</p>
+<h2 id="so-you-thought-it-was-just-html">So you thought it was just ‘HTML’!</h2>
 
-<p>You will find here help documents and tutorials and a range of topics including using Adobe InDesign and Apple iBooks Author, as well as using GitHub to edit documents within a repository.</p>
+<p>HTML5 is the newest version of HTML and is very ‘loose’ and forgiving. In fact when you create HTML5 markup you do not need to close the tags.</p>
 
-<p>More documents are being added and you can find the list within the left hand menu. Just click on the icon top left.</p>
+<p>For example this is acceptable in HTML5:</p>
 
-<p>Project maintained by @Pageboy</p>
+<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre><span class="nt">&lt;h1&gt;</span>This is a heading
+<span class="nt">&lt;p&gt;</span>This is a paragraph
+</pre></td></tr></tbody></table>
+</div>
+</div>
 
-<p>Here is a random photo taken by me.</p>
+<p>eBooks made to ePub3 standard use HTML but the markup is very strict. In fact the markup should conform to <code class="highlighter-rouge">XML</code> standards and this means that the format is actually <code class="highlighter-rouge">XHTML5</code>.</p>
 
-<p><a href="../../images/2017/01/fromWittenhamClumps.jpg"><img src="../../images/2017/01/fromWittenhamClumps.jpg" alt="My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester." /></a></p>
+<p>For the above markup snippet to conform to <code class="highlighter-rouge">XHTML</code> (and thus ePub3) it would need to be:</p>
 
-<h2 id="how-was-this-web-site-built">How was this Web site built?</h2>
+<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre><span class="nt">&lt;h1&gt;</span>This is a heading<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>This is a paragraph<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+</div>
 
-<h3 id="jekyll">Jekyll</h3>
-<p>The site is built with Jekyll which you can <a href="https://jekyllrb.com" title="Visit the Jekyll web site" target="_blank">find out about here</a>.</p>
+<p>In order to validate XHTML you need to name the file with the XHTML extension; thus <code class="highlighter-rouge">recipe.xhtml</code></p>
 
-<p>It is delivered on a GitHub repository with GitHub pages. My preferred writing tool is Atom ‘cos you can customise it!</p>
+<p>There are also some very specific items that need to go at the head of an XHTML file. Here are the required items:</p>
 
-<h3 id="atom">Atom</h3>
-<p>Atom is the free text editor that comes from GitHub. <a href="https://atom.io" title="Get Atom" target="_blank">You can get it here</a>.</p>
+<div class="highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1999/xhtml"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">/&gt;</span>
+and so on
+</pre></td></tr></tbody></table>
+</div>
+</div>
 
-<p>I based this look and feel on the <a href="http://lanyon.getpoole.com/" title="Lanyon" target="_blank">Lanyon theme from here</a>.</p>
-
-<p>Images can be enlarged and use a variation of <a href="http://fancybox.net" title="Take a look at Fancybox" target="_blank">Fancybox</a> using jquery.</p>
-
+<p>As you can see, although the doctype is <code class="highlighter-rouge">html</code>, the namespace (<code class="highlighter-rouge">xmlns</code>) is using the one from the World Wide Web consortium for <code class="highlighter-rouge">xhtml</code>.</p>
 
 </div>
 
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+  </ul>
+</div>
+
+        
+        <p><b>Filed under:</b> HTML</p>
         
 
       </div>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Digital Publisher Guide</title>
- <link href="publisha.github.io/atom.xml" rel="self"/>
- <link href="publisha.github.io/"/>
- <updated>2017-01-29T14:33:41+00:00</updated>
- <id>publisha.github.io</id>
+ <link href="https://publisha.github.io/atom.xml" rel="self"/>
+ <link href="https://publisha.github.io/"/>
+ <updated>2017-02-03T15:15:22+00:00</updated>
+ <id>https://publisha.github.io</id>
  <author>
    <name>Chris Jennings</name>
    <email></email>
@@ -13,15 +13,54 @@
 
  
  <entry>
-   <title>using Git for Islomania</title>
-   <link href="publisha.github.io/usingGit/"/>
-   <updated>2016-07-11T00:00:00+01:00</updated>
-   <id>publisha.github.io/usingGit</id>
-   <content type="html">&lt;h2 id=&quot;using-github-to-host-islomania&quot;&gt;Using GitHub to host Islomania&lt;/h2&gt;
+   <title>HTML, XHTML, HTML5 or XHTML5</title>
+   <link href="https://publisha.github.io/html/2017/02/01/htmlORxhtml/"/>
+   <updated>2017-02-01T11:00:00+00:00</updated>
+   <id>https://publisha.github.io/html/2017/02/01/htmlORxhtml</id>
+   <content type="html">&lt;p&gt;Goodness me there seem to be so many flavours of HTML. What does this all mean for eBook production and why should we care?&lt;/p&gt;
 
-&lt;p&gt;I am now hosting (nearly) Islomania on Github using Prose.io to edit.&lt;/p&gt;
+&lt;h2 id=&quot;so-you-thought-it-was-just-html&quot;&gt;So you thought it was just ‘HTML’!&lt;/h2&gt;
 
-&lt;p&gt;Using Coda to edit locally&lt;/p&gt;
+&lt;p&gt;HTML5 is the newest version of HTML and is very ‘loose’ and forgiving. In fact when you create HTML5 markup you do not need to close the tags.&lt;/p&gt;
+
+&lt;p&gt;For example this is acceptable in HTML5:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;This is a heading
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is a paragraph
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;eBooks made to ePub3 standard use HTML but the markup is very strict. In fact the markup should conform to &lt;code class=&quot;highlighter-rouge&quot;&gt;XML&lt;/code&gt; standards and this means that the format is actually &lt;code class=&quot;highlighter-rouge&quot;&gt;XHTML5&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For the above markup snippet to conform to &lt;code class=&quot;highlighter-rouge&quot;&gt;XHTML&lt;/code&gt; (and thus ePub3) it would need to be:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;This is a heading&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;This is a paragraph&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In order to validate XHTML you need to name the file with the XHTML extension; thus &lt;code class=&quot;highlighter-rouge&quot;&gt;recipe.xhtml&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;There are also some very specific items that need to go at the head of an XHTML file. Here are the required items:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xmlns=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://www.w3.org/1999/xhtml&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+and so on
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As you can see, although the doctype is &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;, the namespace (&lt;code class=&quot;highlighter-rouge&quot;&gt;xmlns&lt;/code&gt;) is using the one from the World Wide Web consortium for &lt;code class=&quot;highlighter-rouge&quot;&gt;xhtml&lt;/code&gt;.&lt;/p&gt;
 </content>
  </entry>
  

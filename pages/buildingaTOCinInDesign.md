@@ -3,6 +3,7 @@ layout: page
 title: Building the TOC in InDesign
 published: true
 categories: InDesign
+tags: [InDesign, Typography]
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

@@ -18,7 +18,7 @@ author:
 paginate:         5
 paginate_path: '/blog/page:num/'
 # Custom vars
-version:          0.095
+version:          0.096
 
 github:
   repo:           publisha.github.io
@@ -48,7 +48,7 @@ kramdown:
 
 tag-list: [InDesign, HTML, CSS, Using GitHub]
 
-categories-list: [InDesign, HTML, CSS, Typography, Using GitHub]
+categories-list: [InDesign, HTML, CSS, Typography, Using GitHub, XML, ePub]
 
 # for prose
 prose:
@@ -64,7 +64,7 @@ prose:
     - /_site
     - LICENCE.md
     - atom.xml
-    - _mdwriter.cson    
+    - _mdwriter.cson
   metadata:
     _posts:
       - name: "layout"
@@ -97,7 +97,7 @@ prose:
               value: "Typography"
             - name: "Using GitHub"
               value: "Using GitHub"
-              
+
     _posts/static:
       - name: "layout"
         field:

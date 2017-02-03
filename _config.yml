@@ -62,7 +62,7 @@ prose:
     - /_layouts
     - /_includes
     - /_site
-    - LICENCE.md
+    - LICENSE.md
     - atom.xml
     - _mdwriter.cson
   metadata:

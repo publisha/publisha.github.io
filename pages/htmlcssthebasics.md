@@ -111,7 +111,7 @@ To work toward this end we need to:
 - Avoid labelling the information with mark-up that presumes a particular appearance
 
 
-## Types of Mark-up for HTML
+## Types of Mark-up for HTML
 
 **Block** elements are those which, by default, will begin on a new line and the content after will start a new line
 
@@ -134,7 +134,7 @@ Mark-up should be semantic and can use existing HTML tags
 **Examples**:
 `<h1 class="authorname">` or `<h2 class="chapter">` or  `<article>` or `<footer>`
 
-All of the HTML elements
+### The are many HTML elements
 
 There is a lot to HTML. If this is your first view of it, don't be too concerned that you don't know all of it!. The best way to explore is by looking at the many web sites. In particular, the [W3 Schools web site][7f45520a] has comprehensive information.
 
@@ -199,6 +199,7 @@ Think about specificity
 `div#content h1 em {font-weight: bold;}` will make `<em>` within `<h1>` within the content block bold as well as italic
 
 Think about the cascade
+
 `body>block>inline`
 
 will define styles from `<body>` down

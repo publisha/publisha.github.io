@@ -30,7 +30,7 @@ siteImagesDir: "images/{year}/{month}/"
 # https://github.com/zhuochun/md-writer/wiki/Settings-for-Front-Matters
 urlForPosts: ""
 urlForTags: "_tags.json"
-urlForCategories: "cats.json"
+urlForCategories: "https://publisha.github.io/.cats.json"
 
 # The front matter key name
 frontMatterNameTags: "tags"

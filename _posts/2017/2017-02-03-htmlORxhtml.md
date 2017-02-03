@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "HTML, XHTML, HTML5 or XHTML5"
-date: "2017-02-01 11:00"
+date: "2017-02-03 11:00"
 published: true
 categories: [HTML]
 ---
@@ -13,7 +13,7 @@ HTML5 is the newest version of HTML and is very 'loose' and forgiving. In fact w
 
 For example this is acceptable in HTML5:
 
- ```html
+```html
 <h1>This is a heading
 <p>This is a paragraph
 ```
@@ -31,7 +31,7 @@ In order to validate XHTML you need to name the file with the XHTML extension; t
 
 There are also some very specific items that need to go at the head of an XHTML file. Here are the required items:
 
-```
+```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

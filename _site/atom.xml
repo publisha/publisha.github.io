@@ -4,7 +4,7 @@
  <title>Digital Publisher Guide</title>
  <link href="https://publisha.github.io/atom.xml" rel="self"/>
  <link href="https://publisha.github.io/"/>
- <updated>2017-02-03T15:15:22+00:00</updated>
+ <updated>2017-02-03T15:32:35+00:00</updated>
  <id>https://publisha.github.io</id>
  <author>
    <name>Chris Jennings</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>HTML, XHTML, HTML5 or XHTML5</title>
-   <link href="https://publisha.github.io/html/2017/02/01/htmlORxhtml/"/>
-   <updated>2017-02-01T11:00:00+00:00</updated>
-   <id>https://publisha.github.io/html/2017/02/01/htmlORxhtml</id>
+   <link href="https://publisha.github.io/html/2017/02/03/htmlORxhtml/"/>
+   <updated>2017-02-03T11:00:00+00:00</updated>
+   <id>https://publisha.github.io/html/2017/02/03/htmlORxhtml</id>
    <content type="html">&lt;p&gt;Goodness me there seem to be so many flavours of HTML. What does this all mean for eBook production and why should we care?&lt;/p&gt;
 
 &lt;h2 id=&quot;so-you-thought-it-was-just-html&quot;&gt;So you thought it was just ‘HTML’!&lt;/h2&gt;
@@ -47,7 +47,7 @@
 
 &lt;p&gt;There are also some very specific items that need to go at the head of an XHTML file. Here are the required items:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4

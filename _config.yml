@@ -97,8 +97,7 @@ prose:
               value: "Typography"
             - name: "Using GitHub"
               value: "Using GitHub"
-
-    _posts/static:
+    pages:
       - name: "layout"
         field:
           element: "hidden"

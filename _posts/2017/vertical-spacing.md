@@ -2,7 +2,7 @@
 layout: post
 title: Vertical Spacing for text; pBook and eBook
 date: '2017-02-04 22:50'
-published: false
+published: true
 categories:
   - InDsign
   - Typography

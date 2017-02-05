@@ -2,7 +2,7 @@
 layout: post
 title: "Vertical Spacing for text; pBook and eBook"
 date: '2017-02-04 22:50'
-published: false
+published: true
 categories:
   - InDesign
   - Typography
@@ -54,17 +54,21 @@ In the brackets at the end of these lines, we reveal what CSS in the ePub packag
 ## In the reflowable eBook
 ### The body text
 
-In the above illustration you see the baseline grid. In this InDesign exmaple, this is set to 13.606 pt. An odd number, yes, but this is because it is set to be an exact 30th of the text block height; this is what the designer wants for print. When we are taking this to the reflowable ePub, the grid is ignored but the leading is not, so, we need to set the leading to something near to this baseline grid setting (13pt).
+In the above illustration you see the baseline grid. In this InDesign example, this is set to 13.606 pt. An odd number, yes, but this is because it is set to be an exact 30th of the text block height; this is what the designer wants for print. When we are taking this to the reflowable ePub, the grid is ignored but the leading is not, so, we need to set the leading to something near to this baseline grid setting (13pt).
 
 ### Other block level elements
 
 Headings and blockquotes are going to interrupt this vertical alignment, so we need to make sure that these elements use vertical space that is a multiple of the body text leading.
 
-> Just to clarify: InDesign will sort this out for print, because the body text will come back to the baseline grid, after these interruptions. But in the eBook, we need to explicitly set the spacing for these 'interruptions' to bring things back to the alignment.
+> **Just to clarify**: InDesign will sort this out for print, because the body text will come back to the baseline grid, after these interruptions. But in the eBook, we need to explicitly set the spacing for these 'interruptions' to bring things back to the alignment.
 
-#### The headings
-Say we have a sub heading that breaks the flow of the body text. We need to add together the space-before and space-after with the leading
+Say we have a sub heading that breaks the flow of the body text. We need to add together the space-before and space-after with the leading to get a multiple of the body-text leading.
 
+> Our sub heading could have a font size of 16pts with leading of 17.5pts
+> The space-before could be 6pts and the space-after 2.5pts. This then computes as follows:
+> 17.5 + 2.5 + 6 = 26 - which a multiple of 13
+
+With this calculation, our body text should be back in alignment after the heading.
 
 ## What about images in the text?
 

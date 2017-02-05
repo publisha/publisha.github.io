@@ -10,7 +10,7 @@
 
   <title>
     
-      Blog Articles
+      Vertical Spacing for text; pBook and eBook
     
   </title>
 
@@ -203,156 +203,10 @@
       </div>
 
       <div class="container content">
-        <div class="posts">
-  
-  <div class="post">
-    <h2 class="post-title">
-      <a href="/html/2017/02/05/validation/">
-        Validation
-      </a>
-    </h2>
-
-    <span class="post-date">05 Feb 2017</span>
-    <!-- <p>Everything needs to be perfect for it to work in the digital domain. Or does it? Can our screens forgive our little markup errors?</p>
-
-<h2 id="checking-for-errors-we-have-to-do-it-so-often">Checking for Errors. We have to do it so often!</h2>
-
-<p>If you create web sites, apps or eBooks then you are sure to have a few mark-up errors. So how can we check for errors?</p>
-
-<h3 id="html">HTML</h3>
-
-<p>In the world <em>wild</em> web there are several flavours of HTML markup in use, and in a previous post we talked of HTML5 and XHTML. At one time it was possible to be able to choose your favourite from HTML3, HTM4 and even transitional versions.</p>
-
-<p>But what does it mean to have different versions? To a certain extent this is really a chronological thing. As you would expect, as time goes by, things improve and new versions make the experience of rendering HTML into a web page gets better. But it wasn’t always so straightforward because web browsers have often interpreted the HTML tags and stylesheets (CSS) in different ways. Oftentimes a web developer would start off by making the markup valid (according to the rules) but then the web browser would deliver the unexpected and hacks would need to be applied.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
-
-<h2 id="forgiveness-is-a-dangerous-beautiful-thing">Forgiveness is a <del>dangerous</del> beautiful thing</h2>
-
-<p>The latest iteration of HTML is known as <code class="highlighter-rouge">HTML5</code> although, in fact some have suggested that we don’t need versions anymore. We’re beyond that now. It’s just HTML. Anyway, HTML5 doesn’t really replace earlier versions, it just builds on them. With HTML5 you get the ability to use some special tags that had previously been needed and were made to work in a ‘roundabout’ way:</p>
-
-<p>Previously:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
-... some menu items
-<span class="nt">&lt;/div&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<p>Now we can just use:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre><span class="nt">&lt;nav&gt;</span>
-... some menu items
-<span class="nt">&lt;/nav&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<p>But also, HTML5 is very forgiving, because you can leave tags unclosed and the browser is supposed to take a jolly good guess at what is supposed to be.</p>
-
-<h2 id="doctypes">Doctypes</h2>
-
-<p>In a pre-HTML5 world, web pages needed a <em>doctype</em> at the head of the markup, so that if you really wanted to deliver to a particular HTML version, the browser <em>was supposed to</em> read that first to interpret correctly. Maybe it did, maybe it didn’t (I won’t go into <strong>quirks</strong> mode).</p>
-
-<p>Still, doctypes are significant if you need to validate the markup (stay with me here, because we <strong>do</strong> need to validate for the ePub).</p>
-
-<p>Let’s have a look at some doctype declarations:</p>
-
-<p>Here is a transitional one:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
-<p>Here is a strict one:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<p>And here is HTML5, pure and simple, no references to data held on the web:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="cp">&lt;!doctype html&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<h2 id="how-can-we-validate">How can we validate?</h2>
-
-<h3 id="html-1">HTML</h3>
-<p>You can validate your web page by <a href="https://validator.w3.org/nu/" title="The online validator" target="_blank">going to this web site</a> and putting in the a link to the file.</p>
-
-<p>There are several options, but be aware that the validation process needs to know what HTML version you are using, and it gets this from the DOCTYPE.</p>
-
-<p>All being well you should see something like this:</p>
-
-<p><a href="/images/2017/02/validation1.png"><img src="/images/2017/02/validation1.png" alt="We succesfully validated this XHTML file" /></a></p>
-
-<p>To validate the CSS <a href="https://jigsaw.w3.org/css-validator/" title="Validate the CSS" target="_blank">go to the Jigsaw validator here</a>.</p>
-
-<p>The sample page that I have produced has validated but we need to aware of a few things:</p>
-
-<p>First the web page must be named with .xhtml. This will inform the validator that we are using XHTML rather than just plain HTML.</p>
-
-<h3 id="why-xhtml-then">Why XHTML then?</h3>
-
-<p>It turns out that ePUB3 (the eBook format that we are targeting) uses the XHTML markup standard, so we want to do the same from the beginning of our learning about these things. HTML5 is just too <em>loose</em> for out requirements.</p>
-
-<h2 id="epub">ePub</h2>
-
-<p>The ePub standard for delivering eBooks is a wrapped-up package of files, consisting (mostly) of HTML and CSS, although, actually the HTML is a particular flavour; <code class="highlighter-rouge">XHTML5</code>. This means that it must conform to a very strict set of rules.</p>
-
-<p>We can also validate the ePub by using an <a href="http://validator.idpf.org" title="Validate the ePub" target="_blank">online service at the IDPF web site</a></p>
-
-<p>However this is limited to 10MB and this is a serious limitation, so you may need to <a href="https://github.com/IDPF/epubcheck/releases" title="Grab the latest version" target="_blank">download a copy of ePubCheck</a> (a java application) and run this locally through the terminal.</p>
-
-<p>With the Mac Terminal application open locate the ePubcheck file that you just downloaded and:</p>
-
-<div class="language-terminal highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2</pre></td><td class="code"><pre><span class="w">$ </span><span class="nc">cd</span><span class="kv"> /Applications/Utilities/ebook_tools/epubcheck-4.0.2
-</span><span class="w">$ </span><span class="nc">java</span><span class="kv"> -jar pubcheck-4.0.2 path to the ePub file
-</span></pre></td></tr></tbody></table>
-</div>
-</div>
-<p>You should see something like this:</p>
-
-<div class="language-terminal highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre><span class="w">$ </span><span class="nc">Validating</span><span class="kv"> using EPUB version 3.0.1 rules.
-</span><span class="w">$ </span><span class="nc">No</span><span class="kv"> errors or warnings detected.
-</span><span class="w">$ </span><span class="nc">epubcheck</span><span class="kv"> completed
-</span></pre></td></tr></tbody></table>
-</div>
-</div>
-<p>All sorts of code will need validating and by <a href="http://codebeautify.org" title="This is very useful indeed" target="_blank">going to CodeBeautify</a> you are bound to find exactly what you need.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Chris Colyer’s Website is the <a href="https://css-tricks.com/snippets/css/browser-specific-hacks/" title="Off to the web" target="_blank">goto place</a> for browser hacks:&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
- -->
-    <p>Everything needs to be perfect for it to work in the digital domain. Or does it? Can our screens forgive our little markup errors?</p>
-
-
-    <p><a href="/html/2017/02/05/validation/">Read more...</a></p>
-  </div>
-  
-  <div class="post">
-    <h2 class="post-title">
-      <a href="/indesign/typography/2017/02/04/vertical-spacing/">
-        Vertical Spacing for text; pBook and eBook
-      </a>
-    </h2>
-
-    <span class="post-date">04 Feb 2017</span>
-    <!-- <p>When we choose a value for <em>leading</em> in InDesign, we are actually defining the distance between the baselines. The more traditional definition of leading is the space between the baseline and top of character container; the term coming from the little slabs of lead put between the type.</p>
+        <div class="post">
+  <h1 class="post-title">Vertical Spacing for text; pBook and eBook</h1>
+  <span class="post-date">04 Feb 2017</span>
+  <p>When we choose a value for <em>leading</em> in InDesign, we are actually defining the distance between the baselines. The more traditional definition of leading is the space between the baseline and top of character container; the term coming from the little slabs of lead put between the type.</p>
 
 <h2 id="baseline-grid-or-doing-the-maths">Baseline Grid or Doing the maths?</h2>
 <p>InDesign has a super useful feature in paragraph styles; <em>Align to Grid</em>.
@@ -425,83 +279,36 @@ The space-before could be 6pts and the space-after 2.5pts. This then computes as
 <h2 id="what-about-images-in-the-text">What about images in the text?</h2>
 
 <p>If we introduce an illustration that has text <strong>before</strong> and <strong>after</strong>, then this will upset the vertical alignment of the body text, unless we can size the vertical dimension of the image with a multiple of the leading.</p>
- -->
-    <p>When we choose a value for <em>leading</em> in InDesign, we are actually defining the distance between the baselines. The more traditional definition of leading is the space between the baseline and top of character container; the term coming from the little slabs of lead put between the type.</p>
 
-
-    <p><a href="/indesign/typography/2017/02/04/vertical-spacing/">Read more...</a></p>
-  </div>
-  
-  <div class="post">
-    <h2 class="post-title">
-      <a href="/html/2017/02/03/htmlORxhtml/">
-        HTML, XHTML, HTML5 or XHTML5
-      </a>
-    </h2>
-
-    <span class="post-date">03 Feb 2017</span>
-    <!-- <p>Goodness me there seem to be so many flavours of HTML. What does this all mean for eBook production and why should we care?</p>
-
-<h2 id="so-you-thought-it-was-just-html">So you thought it was just ‘HTML’!</h2>
-
-<p>HTML5 is the newest version of HTML and is very ‘loose’ and forgiving. In fact when you create HTML5 markup you do not need to close the tags.</p>
-
-<p>For example this is acceptable in HTML5:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2</pre></td><td class="code"><pre><span class="nt">&lt;h1&gt;</span>This is a heading
-<span class="nt">&lt;p&gt;</span>This is a paragraph
-</pre></td></tr></tbody></table>
-</div>
 </div>
 
-<p>eBooks made to ePub3 standard use HTML but the markup is very strict. In fact the markup should conform to <code class="highlighter-rouge">XML</code> standards and this means that the format is actually <code class="highlighter-rouge">XHTML5</code>.</p>
-
-<p>For the above markup snippet to conform to <code class="highlighter-rouge">XHTML</code> (and thus ePub3) it would need to be:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2</pre></td><td class="code"><pre><span class="nt">&lt;h1&gt;</span>This is a heading<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;p&gt;</span>This is a paragraph<span class="nt">&lt;/p&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<p>In order to validate XHTML you need to name the file with the XHTML extension; thus <code class="highlighter-rouge">recipe.xhtml</code></p>
-
-<p>There are also some very specific items that need to go at the head of an XHTML file. Here are the required items:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1999/xhtml"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">/&gt;</span>
-and so on
-</pre></td></tr></tbody></table>
-</div>
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/html/2017/02/05/validation/">
+            Validation
+            <small>05 Feb 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/html/2017/02/03/htmlORxhtml/">
+            HTML, XHTML, HTML5 or XHTML5
+            <small>03 Feb 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
 </div>
 
-<p>As you can see, although the doctype is <code class="highlighter-rouge">html</code>, the namespace (<code class="highlighter-rouge">xmlns</code>) is using the one from the World Wide Web consortium for <code class="highlighter-rouge">xhtml</code>.</p>
- -->
-    <p>Goodness me there seem to be so many flavours of HTML. What does this all mean for eBook production and why should we care?</p>
-
-
-    <p><a href="/html/2017/02/03/htmlORxhtml/">Read more...</a></p>
-  </div>
-  
-</div>
-
-<div class="pagination">
-  
-    <span class="pagination-item older">Older</span>
-  
-  
-    <span class="pagination-item newer">Newer</span>
-  
-</div>
-
+        
+        <p><b>Filed under:</b> InDesign, Typography</p>
         
 
       </div>

@@ -1,8 +1,11 @@
 ---
-layout: "post"
-title: "Vertical Spacing for text; pBook and eBook"
-date: "2017-02-04 22:50"
-published: true
+layout: post
+title: Vertical Spacing for text; pBook and eBook
+date: '2017-02-04 22:50'
+published: false
+categories:
+  - InDsign
+  - Typography
 ---
 When we choose a value for _leading_ in InDesign, we are actually defining the distance between the baselines. The more traditional definition of leading is the space between the baseline and top of character container; the term coming from the little slabs of lead put between the type.
 
@@ -39,7 +42,9 @@ The vertical position of the lines of text are dependent on:
 
 Since your type sizes and leading will use points (pts) then you can set the vertical units in InDesign’s preferences to `pts` also. This will then give you the benefit of being able to ensure that all vertical dimensions follow a multiple of the body text leading. **But beware.** You don’t want to set your preferences generally to use points for vertical units because you cannot (easily) set the page dimensions with points; for this you really need millimetres. So the _trick is to set the vertical units to points **after** you have started the document_ and set the paper size and the margins.
 
-You will see from the first images here that we can interrupt the flow of the body text with sub headings that are spaced with a multiple of the body text leading:
+You will see from the first images here that we can interrupt the flow of the body text with sub headings or blockquotes that are not aligned to the baseline grid, and are positioned with space-before. The body text goes back to the grid after the heading or blockquote.
+
+![Body text is aligned to the grid]({{site.baseurl}}/images/bodytextalignedtogrid.png)
 
 > Our body text uses 13pts leading so the space taken up by the subhead is 26pts, thus keeping the text aligned.
 

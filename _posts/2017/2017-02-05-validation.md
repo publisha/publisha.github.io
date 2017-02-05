@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation
-date: '2017-02-03 15:39'
+title: "Validation"
+date: '2017-02-05 15:39'
 categories:
   - HTML
 ---
@@ -17,7 +17,7 @@ In the world _wild_ web there are several flavours of HTML markup in use, and in
 
 But what does it mean to have different versions? To a certain extent this is really a chronological thing. As you would expect, as time goes by, things improve and new versions make the experience of rendering HTML into a web page gets better. But it wasn't always so straightforward because web browsers have often interpreted the HTML tags and stylesheets (CSS) in different ways. Oftentimes a web developer would start off by making the markup valid (according to the rules) but then the web browser would deliver the unexpected and hacks would need to be applied.[^1]
 
-## Forgiveness is a dangerous thing
+## Forgiveness is a ~~dangerous~~ beautiful thing
 
 The latest iteration of HTML is known as `HTML5` although, in fact some have suggested that we don't need versions anymore. We're beyond that now. It's just HTML. Anyway, HTML5 doesn't really replace earlier versions, it just builds on them. With HTML5 you get the ability to use some special tags that had previously been needed and were made to work in a 'roundabout' way:
 
@@ -67,7 +67,7 @@ And here is HTML5, pure and simple, no references to data held on the web:
 ## How can we validate?
 
 ### HTML
-You can validate your web page by [going to this web site][d2ef4529]{target=_new} and putting in the a link to the file.
+You can validate your web page by [going to this web site][d2ef4529]{:target="_blank"} and putting in the a link to the file.
 
   [d2ef4529]: https://validator.w3.org/nu/ "The online validator"
 
@@ -75,29 +75,52 @@ There are several options, but be aware that the validation process needs to kno
 
 All being well you should see something like this:
 
-[![We succesfully validated this XHTML file](../../images/2017/02/validation1.png)](../../images/2017/02/validation1.png)
+[![We succesfully validated this XHTML file](/images/2017/02/validation1.png)](/images/2017/02/validation1.png)
 
-## ePub
+To validate the CSS [go to the Jigsaw validator here][69928c16]{:target="_blank"}.
 
-The ePub standard for delivering eBooks is a wrapped-up package of files, consisting (mostly) of HTML and CSS, although, actually the HTML is a particular flavour; `XHTML5`. This means that it must conform to a very strict set of rules.
-
-
-We need to validate our web page for both the HTML markup and the CSS. To do this we can use online validation services.
+  [69928c16]: https://jigsaw.w3.org/css-validator/ "Validate the CSS"
 
 The sample page that I have produced has validated but we need to aware of a few things:
 
 First the web page must be named with .xhtml. This will inform the validator that we are using XHTML rather than just plain HTML.
 
-Why is this? Well it turns out that ePUB3 (the eBook format that we are targeting) uses this markup standard, so we want to do the same from the beginning of our learning about these things.
+### Why XHTML then?
 
-One thing I noticed today was that the validator uses a new system and page layout.
+It turns out that ePUB3 (the eBook format that we are targeting) uses the XHTML markup standard, so we want to do the same from the beginning of our learning about these things. HTML5 is just too _loose_ for out requirements.
 
-So, to validate the HTML go here: https://validator.w3.org/
+## ePub
 
-To validate the CSS go here: https://jigsaw.w3.org/css-validator/
+The ePub standard for delivering eBooks is a wrapped-up package of files, consisting (mostly) of HTML and CSS, although, actually the HTML is a particular flavour; `XHTML5`. This means that it must conform to a very strict set of rules.
+
+We can also validate the ePub by using an [online service at the IDPF web site][4a53fecc]{:target="_blank"}
+
+  [4a53fecc]: http://validator.idpf.org "Validate the ePub"
+
+However this is limited to 10MB and this is a serious limitation, so you may need to [download a copy of ePubCheck][898daf9e]{:target="_blank"} (a java application) and run this locally through the terminal.
+
+  [898daf9e]: https://github.com/IDPF/epubcheck/releases "Grab the latest version"
+
+With the Mac Terminal application open locate the ePubcheck file that you just downloaded and:
+
+```terminal
+$ cd /Applications/Utilities/ebook_tools/epubcheck-4.0.2
+$ java -jar pubcheck-4.0.2 path to the ePub file
+```
+You should see something like this:
+
+```terminal
+$ Validating using EPUB version 3.0.1 rules.
+$ No errors or warnings detected.
+$ epubcheck completed
+```
+All sorts of code will need validating and by [going to CodeBeautify][8f71ebe7]{:target="_blank"} you are bound to find exactly what you need.
+
+  [8f71ebe7]: http://codebeautify.org "This is very useful indeed"
 
 
 
-[^1]: Chris Colyer's Website is the [goto place][7faa4e4f] for browser hacks:
+
+[^1]: Chris Colyer's Website is the [goto place][7faa4e4f]{:target="_blank"} for browser hacks:
 
   [7faa4e4f]: https://css-tricks.com/snippets/css/browser-specific-hacks/ "Off to the web"

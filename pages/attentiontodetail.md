@@ -69,7 +69,7 @@ Once we have made a decision about the size of the page, then we need to conside
 
 The basic grid that we use, divides the page 9 horizontally and 9 vertically. You can see the arrangement in the following image from InDesign.
 
-[![Traditional page layout with grid](../../images/2017/01/pagelayout.png)](../../images/2017/01/pagelayout.png)
+[![Traditional page layout with grid](/images/2017/01/pagelayout.png)](/images/2017/01/pagelayout.png)
 
 The margins are calculated by dividing the width and height by nine. Thus we get:
 

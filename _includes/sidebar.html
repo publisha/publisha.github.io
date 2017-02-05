@@ -18,7 +18,6 @@
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
     {% endcomment %}
-
     {% assign sorted_pages = (site.pages | sort: 'title') %}
     {% for node in sorted_pages %}
     {% if node.title != null %}
@@ -41,6 +40,7 @@
     <a class="sidebar-nav-item" href="{{ site.github.url }}archive/v{{ site.version }}.zip">Download</a>
     <a class="sidebar-nav-item" href="{{ site.github.url }}">GitHub project</a>
      {% endcomment %}
+     <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/blog">Blog Articles</a>
     <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     <!-- <a class="sidebar-nav-item" href="http://prose.io/#Pageboy/Islomania">Edit</a> -->
   </nav>

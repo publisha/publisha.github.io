@@ -4,13 +4,145 @@
  <title>Digital Publisher Guide</title>
  <link href="https://publisha.github.io/atom.xml" rel="self"/>
  <link href="https://publisha.github.io/"/>
- <updated>2017-02-04T23:17:48+00:00</updated>
+ <updated>2017-02-05T16:48:45+00:00</updated>
  <id>https://publisha.github.io</id>
  <author>
    <name>Chris Jennings</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Validation</title>
+   <link href="https://publisha.github.io/html/2017/02/05/validation/"/>
+   <updated>2017-02-05T15:39:00+00:00</updated>
+   <id>https://publisha.github.io/html/2017/02/05/validation</id>
+   <content type="html">&lt;p&gt;Everything needs to be perfect for it to work in the digital domain. Or does it? Can our screens forgive our little markup errors?&lt;/p&gt;
+
+&lt;h2 id=&quot;checking-for-errors-we-have-to-do-it-so-often&quot;&gt;Checking for Errors. We have to do it so often!&lt;/h2&gt;
+
+&lt;p&gt;If you create web sites, apps or eBooks then you are sure to have a few mark-up errors. So how can we check for errors?&lt;/p&gt;
+
+&lt;h3 id=&quot;html&quot;&gt;HTML&lt;/h3&gt;
+
+&lt;p&gt;In the world &lt;em&gt;wild&lt;/em&gt; web there are several flavours of HTML markup in use, and in a previous post we talked of HTML5 and XHTML. At one time it was possible to be able to choose your favourite from HTML3, HTM4 and even transitional versions.&lt;/p&gt;
+
+&lt;p&gt;But what does it mean to have different versions? To a certain extent this is really a chronological thing. As you would expect, as time goes by, things improve and new versions make the experience of rendering HTML into a web page gets better. But it wasn’t always so straightforward because web browsers have often interpreted the HTML tags and stylesheets (CSS) in different ways. Oftentimes a web developer would start off by making the markup valid (according to the rules) but then the web browser would deliver the unexpected and hacks would need to be applied.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;forgiveness-is-a-dangerous-thing&quot;&gt;Forgiveness is a dangerous thing&lt;/h2&gt;
+
+&lt;p&gt;The latest iteration of HTML is known as &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML5&lt;/code&gt; although, in fact some have suggested that we don’t need versions anymore. We’re beyond that now. It’s just HTML. Anyway, HTML5 doesn’t really replace earlier versions, it just builds on them. With HTML5 you get the ability to use some special tags that had previously been needed and were made to work in a ‘roundabout’ way:&lt;/p&gt;
+
+&lt;p&gt;Previously:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;navigation&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+... some menu items
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now we can just use:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&amp;gt;&lt;/span&gt;
+... some menu items
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But also, HTML5 is very forgiving, because you can leave tags unclosed and the browser is supposed to take a jolly good guess at what is supposed to be.&lt;/p&gt;
+
+&lt;h2 id=&quot;doctypes&quot;&gt;Doctypes&lt;/h2&gt;
+
+&lt;p&gt;In a pre-HTML5 world, web pages needed a &lt;em&gt;doctype&lt;/em&gt; at the head of the markup, so that if you really wanted to deliver to a particular HTML version, the browser &lt;em&gt;was supposed to&lt;/em&gt; read that first to interpret correctly. Maybe it did, maybe it didn’t (I won’t go into &lt;strong&gt;quirks&lt;/strong&gt; mode).&lt;/p&gt;
+
+&lt;p&gt;Still, doctypes are significant if you need to validate the markup (stay with me here, because we &lt;strong&gt;do&lt;/strong&gt; need to validate for the ePub).&lt;/p&gt;
+
+&lt;p&gt;Let’s have a look at some doctype declarations:&lt;/p&gt;
+
+&lt;p&gt;Here is a transitional one:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Here is a strict one:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And here is HTML5, pure and simple, no references to data held on the web:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;how-can-we-validate&quot;&gt;How can we validate?&lt;/h2&gt;
+
+&lt;h3 id=&quot;html-1&quot;&gt;HTML&lt;/h3&gt;
+&lt;p&gt;You can validate your web page by &lt;a href=&quot;https://validator.w3.org/nu/&quot; title=&quot;The online validator&quot; target=&quot;_blank&quot;&gt;going to this web site&lt;/a&gt; and putting in the a link to the file.&lt;/p&gt;
+
+&lt;p&gt;There are several options, but be aware that the validation process needs to know what HTML version you are using, and it gets this from the DOCTYPE.&lt;/p&gt;
+
+&lt;p&gt;All being well you should see something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/02/validation1.png&quot;&gt;&lt;img src=&quot;/images/2017/02/validation1.png&quot; alt=&quot;We succesfully validated this XHTML file&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To validate the CSS &lt;a href=&quot;https://jigsaw.w3.org/css-validator/&quot; title=&quot;Validate the CSS&quot; target=&quot;_blank&quot;&gt;go to the Jigsaw validator here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The sample page that I have produced has validated but we need to aware of a few things:&lt;/p&gt;
+
+&lt;p&gt;First the web page must be named with .xhtml. This will inform the validator that we are using XHTML rather than just plain HTML.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-xhtml-then&quot;&gt;Why XHTML then?&lt;/h3&gt;
+
+&lt;p&gt;It turns out that ePUB3 (the eBook format that we are targeting) uses the XHTML markup standard, so we want to do the same from the beginning of our learning about these things. HTML5 is just too &lt;em&gt;loose&lt;/em&gt; for out requirements.&lt;/p&gt;
+
+&lt;h2 id=&quot;epub&quot;&gt;ePub&lt;/h2&gt;
+
+&lt;p&gt;The ePub standard for delivering eBooks is a wrapped-up package of files, consisting (mostly) of HTML and CSS, although, actually the HTML is a particular flavour; &lt;code class=&quot;highlighter-rouge&quot;&gt;XHTML5&lt;/code&gt;. This means that it must conform to a very strict set of rules.&lt;/p&gt;
+
+&lt;p&gt;We can also validate the ePub by using an &lt;a href=&quot;http://validator.idpf.org&quot; title=&quot;Validate the ePub&quot; target=&quot;_blank&quot;&gt;online service at the IDPF web site&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;However this is limited to 10MB and this is a serious limitation, so you may need to &lt;a href=&quot;https://github.com/IDPF/epubcheck/releases&quot; title=&quot;Grab the latest version&quot; target=&quot;_blank&quot;&gt;download a copy of ePubCheck&lt;/a&gt; (a java application) and run this locally through the terminal.&lt;/p&gt;
+
+&lt;p&gt;With the Mac Terminal application open locate the ePubcheck file that you just downloaded and:&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;w&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;kv&quot;&gt; /Applications/Utilities/ebook_tools/epubcheck-4.0.2
+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;kv&quot;&gt; -jar pubcheck-4.0.2 path to the ePub file
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;You should see something like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;w&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Validating&lt;/span&gt;&lt;span class=&quot;kv&quot;&gt; using EPUB version 3.0.1 rules.
+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;No&lt;/span&gt;&lt;span class=&quot;kv&quot;&gt; errors or warnings detected.
+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;epubcheck&lt;/span&gt;&lt;span class=&quot;kv&quot;&gt; completed
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;All sorts of code will need validating and by &lt;a href=&quot;http://codebeautify.org&quot; title=&quot;This is very useful indeed&quot; target=&quot;_blank&quot;&gt;going to CodeBeautify&lt;/a&gt; you are bound to find exactly what you need.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Chris Colyer’s Website is the &lt;a href=&quot;https://css-tricks.com/snippets/css/browser-specific-hacks/&quot; title=&quot;Off to the web&quot; target=&quot;_blank&quot;&gt;goto place&lt;/a&gt; for browser hacks:&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>HTML, XHTML, HTML5 or XHTML5</title>

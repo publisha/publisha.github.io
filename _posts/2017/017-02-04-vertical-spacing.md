@@ -73,3 +73,4 @@ With this calculation, our body text should be back in alignment after the headi
 ## What about images in the text?
 
 If we introduce an illustration that has text **before** and **after**, then this will upset the vertical alignment of the body text, unless we can size the vertical dimension of the image with a multiple of the leading.
+

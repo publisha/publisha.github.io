@@ -4,7 +4,7 @@
  <title>Digital Publisher Guide</title>
  <link href="https://publisha.github.io/atom.xml" rel="self"/>
  <link href="https://publisha.github.io/"/>
- <updated>2017-02-05T16:48:45+00:00</updated>
+ <updated>2017-02-05T16:54:22+00:00</updated>
  <id>https://publisha.github.io</id>
  <author>
    <name>Chris Jennings</name>
@@ -29,7 +29,7 @@
 
 &lt;p&gt;But what does it mean to have different versions? To a certain extent this is really a chronological thing. As you would expect, as time goes by, things improve and new versions make the experience of rendering HTML into a web page gets better. But it wasn’t always so straightforward because web browsers have often interpreted the HTML tags and stylesheets (CSS) in different ways. Oftentimes a web developer would start off by making the markup valid (according to the rules) but then the web browser would deliver the unexpected and hacks would need to be applied.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;forgiveness-is-a-dangerous-thing&quot;&gt;Forgiveness is a dangerous thing&lt;/h2&gt;
+&lt;h2 id=&quot;forgiveness-is-a-dangerous-beautiful-thing&quot;&gt;Forgiveness is a &lt;del&gt;dangerous&lt;/del&gt; beautiful thing&lt;/h2&gt;
 
 &lt;p&gt;The latest iteration of HTML is known as &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML5&lt;/code&gt; although, in fact some have suggested that we don’t need versions anymore. We’re beyond that now. It’s just HTML. Anyway, HTML5 doesn’t really replace earlier versions, it just builds on them. With HTML5 you get the ability to use some special tags that had previously been needed and were made to work in a ‘roundabout’ way:&lt;/p&gt;
 

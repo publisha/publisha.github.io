@@ -17,7 +17,7 @@ In the world _wild_ web there are several flavours of HTML markup in use, and in
 
 But what does it mean to have different versions? To a certain extent this is really a chronological thing. As you would expect, as time goes by, things improve and new versions make the experience of rendering HTML into a web page gets better. But it wasn't always so straightforward because web browsers have often interpreted the HTML tags and stylesheets (CSS) in different ways. Oftentimes a web developer would start off by making the markup valid (according to the rules) but then the web browser would deliver the unexpected and hacks would need to be applied.[^1]
 
-## Forgiveness is a dangerous thing
+## Forgiveness is a ~~dangerous~~ beautiful thing
 
 The latest iteration of HTML is known as `HTML5` although, in fact some have suggested that we don't need versions anymore. We're beyond that now. It's just HTML. Anyway, HTML5 doesn't really replace earlier versions, it just builds on them. With HTML5 you get the ability to use some special tags that had previously been needed and were made to work in a 'roundabout' way:
 

@@ -5,9 +5,13 @@ date: "2017-02-04 22:50"
 categories: 
   - InDesign
 ---
+
 When we choose a value for _leading_ in InDesign, we are actually defining the distance between the baselines. The more traditional definition of leading is the space between the baseline and top of character container; the term coming from the little slabs of lead put between the type.
 
-put image of baseline
+put image of baseline grid in here
+
+## How can we insert an image?
+
 
 ## Baseline Grid or Doing the maths?
 InDesign has a super useful feature in paragraph styles; *Align to Grid*.
@@ -20,7 +24,7 @@ InDesign can help control this through the 'align to grid' in the paragraph styl
 
 ## So how can we get the correct alignment for both pBook and eBook?
 
-If a text consisted entirely of body text with no headings or sub headings then no problem exists in making both sides of the spine align, as long as the space between the paragraphs is either nothing or a multiple of the body text leading. All you will need is the text to start from the same position both verso and recto and alignment is achieved. The problem arises when the text is punctuated with other blocks of text for the headings, sub-headings or block quotes, or you separate the paragraphs with a dimension that is not a multiple of the body text leading. If we are only dealing with print, then you can forget about aligning the headings to this grid, because the body text paragraphs will get back into alignment after the heading.
+If a text consisted entirely of body text with no headings or sub headings then no problem exists in making both sides of the spine or column align, as long as the space between the paragraphs is either nothing or a multiple of the body text leading. All you will need is the text to start from the same position both verso and recto and alignment is achieved. The problem arises when the text is punctuated with other blocks of text for the headings, sub-headings or block quotes, or you separate the paragraphs with a dimension that is not a multiple of the body text leading. If we are only dealing with print, then you can forget about aligning the headings to this grid, because the body text paragraphs will get back into alignment after the heading.
 
 InDesign can help us by providing this 'align to grid' feature, but eBooks (being HTML and CSS) do not understand 'align to grid'. eBooks need to use 'line-height' (leading) and margins to achieve this vertical alignment. In transferring vertical spacing from InDesign to the eBook export, leading becomes line-height and space-before and space-after becomes margin-bottom and margin-top in the CSS.
 

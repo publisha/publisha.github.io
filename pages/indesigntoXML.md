@@ -121,15 +121,15 @@ You will need to check for two possible errors.
 - Empty Tags
 - If you find an opening and closing tag with no content between those tags, then you have empty paragraphs.
 - This section of XML shows that there must have been an empty paragraph before the stage directions.
--
+
 ### Fixing Errors
 
 Of course you can edit the XML, but it is better to go back to InDesign and make these corrections there and then re-export.
 
 ### Other Issues to Note
 
-Forced line breaks
-Force line breaks (sometimes called ‘softbreaks’) are achieved by using SHIFT-RETURN. They are sometimes used to keep text within a paragraph or heading, putting the line down on the next line. If you are trying to give your headings a more even horizontal distribution then you might try using ‘Balance Ragged Lines’ within the ‘Indents and Spacing’ section of the paragraph style.
+**Forced line breaks**
+Forced line breaks (sometimes called ‘softbreaks’) are achieved by using `SHIFT-RETURN` They are sometimes used to keep text within a paragraph or heading, putting the line down on the next line. If you are trying to give your headings a more even horizontal distribution then you might try using ‘Balance Ragged Lines’ within the ‘Indents and Spacing’ section of the paragraph style.
 
 If you do use a forced line break then we need to be aware of the results in the XML export.
 

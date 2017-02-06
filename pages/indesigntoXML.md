@@ -7,9 +7,12 @@ XML is eXtensible Markup Language and is a non-proprietary markup language that 
 
 Here is a sample of some XML of ‘A Midsummer Night’s Dream’:
 
+
+```
     <stage_directions>Enter Egeus</stage_directions>
     <character>Egeus</character>
     <verseline>Happy be Theseus, our renowned Duke!</verseline>
+```
 
 ## Tags
 
@@ -24,6 +27,8 @@ The naming convention for tags is quite strict and you cannot use spaces in the 
 With InDesign there are 2 ways that we can create the tag names. One way is to simply add them to the tags panel, one at a time. The Tags panel is found in the menu _Window>Utilities>Tags_.
 
 	Insert image of tags 
+	
+![imgae]()
 
 When naming tags we need to be aware of the kind of content that we have so we can label the tags appropriately.
 

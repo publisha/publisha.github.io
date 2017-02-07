@@ -1,9 +1,5 @@
 # Making XML from InDesign
-**Tags, Structure and Styles**
-
-## Introduction
-
-Extracting XML from InDesign depends on a number of factors, but if we successfully achieve our goal then we can be pleased that we have styled all of our content and mapped these styles to our document structure.
+**Tags, Structure and Styles** - Extracting XML from InDesign depends on a number of factors, but if we successfully achieve our goal then we can be pleased that we have styled all of our content and mapped these styles to our document structure.
 
 ## What is XML and why do we want it?
 
@@ -11,10 +7,9 @@ XML is eXtensible Markup Language and is a non-proprietary markup language that 
 
 Here is a sample of some XML of ‘A Midsummer Night’s Dream’:
 
-```xml
-<stage_directions>Enter Egeus</stage_directions><character>Egeus</character>
-<verseline>Happy be Theseus, our renowned Duke!</verseline>
-```
+    <stage_directions>Enter Egeus</stage_directions>
+    <character>Egeus</character>
+    <verseline>Happy be Theseus, our renowned Duke!</verseline>
 
 ## Tags
 
@@ -28,11 +23,13 @@ The naming convention for tags is quite strict and you cannot use spaces in the 
 
 With InDesign there are 2 ways that we can create the tag names. One way is to simply add them to the tags panel, one at a time. The Tags panel is found in the menu _Window>Utilities>Tags_.
 
+	Insert image of tags 
+
 When naming tags we need to be aware of the kind of content that we have so we can label the tags appropriately.
 
 Another way to add tags to the tag panel is to load them from somewhere else.
 
-InDesign is clever enough to be able to load the tag names from an XML document. It will locate all markup and make the tag names. Another way is to load a DTD to generate the tag names. Loading a DTD will also effect the Structure panel, but we will explore this later.
+InDesign is clever enough to be able to load the tag names from an XML document. It will locate all markup and make the tag names. Another way is to load a `DTD` to generate the tag names. Loading a DTD will also effect the Structure panel, but we will explore this later.
 
 ## Tag names and Style names
 
@@ -46,13 +43,15 @@ We should be aware though, that the typesetter may want the stage directions to 
 
 If you have already done work with InDesign, you will know that style names (character,paragraph and object names), can have descriptive names such as ‘_top red heading_’, or ‘_underlined sub head 2_’. While this may be something that you have got used to, I want to politely suggest that you name the styles the same as you would if you were marking up with XML. In other words, think of a term that identifies its purpose and meaning, rather than its appearance.
 
-As you will see in a moment, we can map the styles to tags and select each pair in turn, but if the names of styles and tags are the same, then InDesign will map them automatically for us. Cool!
+As you will see in a moment, we can map the styles to tags and select each pair in turn, but if the _style names and tag names are the same_, then InDesign will map them automatically for us. Cool!
 
 ## The Structure Pane
 
 Before we go any further with this, it’s time to introduce the Structure Pane.
 
 Go to the menu _View>Structure>Show Structure_
+
+	show structure pane
 
 What you see is a pane on the left with one item in it called Root.
 
@@ -61,6 +60,8 @@ Every document will have a root.
 From the Structure pane we can also load a DTD. From the top right of the Structure Pane, a drop down menu offers the option of **loading a DTD**. The result of this operation is that the Tag window is then populated with the the Tags identified in the DTD.
 
 The DTD that has just been loaded looks like this:
+
+	add the dtd code
 
 A DTD (Document Type Definition) is a set of rules, that sets out what tags can be used in the XML and how they should be arranged in the hierarchy.
 
@@ -72,11 +73,15 @@ It is not required that you use a DTD at all. If you want to add tag names to th
 
 Once we have our play styled using character and paragraph styles (appropriately), and we have a set of tags that define those same elements, then we can ‘**Map Styles to Tags**’.
 
+	show dialogue box here
+
 As you will see from the dialogue box here, there is an option to ‘**Map by Name**’. This will, of course, automatically get the mapping done if the names are the same! I mentioned that before didn’t I? Not to worry, if you didn’t name the same, because you can go through each one and select the tag name to the appropriate style.
 
 You will notice here that not all Styles are matched to Tags. This is because some of these tags are ‘Parent Objects’. InDesign **does not map objects** through the ‘Map by Name’ button, so we need to do this through the structure pane.
 
 Here is the structure pane after mapping the tags to the styles.
+
+	show structure pane again
 
 ## The Root and the Story
 
@@ -103,12 +108,18 @@ You can Export XML from the menu on the Structure pane or from the InDesign File
 
 The options are these.
 
+	show the options panel
+
 If you have used a DTD then you can include a reference to it in the XML. Viewing the XML can be done with various programs but we will deal with that afterwards.
 
 ## Inspecting the XML
 
 We can view our XML with a web browser such as Safari or Google Chrome.
-Editing the XML file
+
+	Show an xml file in chrome
+
+## Editing the XML file
+
 We can view and edit the XML file with a text editor such as Textwrangler, but when we view with this program we will notice that the text has no line breaks. To help see the way the XML is structured, you can put a break between the closing and opening tags.
 
 ### What might be wrong with the XML?
@@ -121,15 +132,15 @@ You will need to check for two possible errors.
 - Empty Tags
 - If you find an opening and closing tag with no content between those tags, then you have empty paragraphs.
 - This section of XML shows that there must have been an empty paragraph before the stage directions.
--
+
 ### Fixing Errors
 
 Of course you can edit the XML, but it is better to go back to InDesign and make these corrections there and then re-export.
 
 ### Other Issues to Note
 
-Forced line breaks
-Force line breaks (sometimes called ‘softbreaks’) are achieved by using SHIFT-RETURN. They are sometimes used to keep text within a paragraph or heading, putting the line down on the next line. If you are trying to give your headings a more even horizontal distribution then you might try using ‘Balance Ragged Lines’ within the ‘Indents and Spacing’ section of the paragraph style.
+**Forced line breaks**
+Forced line breaks (sometimes called ‘softbreaks’) are achieved by using `SHIFT-RETURN` They are sometimes used to keep text within a paragraph or heading, putting the line down on the next line. If you are trying to give your headings a more even horizontal distribution then you might try using ‘Balance Ragged Lines’ within the ‘Indents and Spacing’ section of the paragraph style.
 
 If you do use a forced line break then we need to be aware of the results in the XML export.
 
@@ -146,15 +157,19 @@ On the other hand, if you make sure that you have both a space and a forced line
 
 ## Illustrations
 
-For pictures, and images to appear in the correct location for the XML, you must be sure to anchor them.
+For pictures, and images to appear in the correct location for the XML, you must be sure to anchor them in InDesign.
 
-## How to anchor images.
+## How to anchor images and other objects
 
 The important thing to remember, is that this process is more about the flow of the document rather than the appearance, so we cannot just place the images anywhere and expect them to appear in the right place within the text. The images need to be 'anchored' correctly.
 
-Note: Images will need ‘alt’ tag information when they are included in the XML. The best way to include this is to add the metadata in Photoshop, by using the ‘File Info’ menu item under the File menu. Currently there is no automatic way to get this out to the XML, So you will need to add the attribute in the structure pane.
+**Note**: Images will need ‘alt’ tag information when they are included in the XML. The best way to include this is to add the *metadata* in Photoshop, by using the ‘File Info’ menu item under the File menu. Currently there is no automatic way to get this out to the XML, So you will need to add the attribute in the structure pane. [Is this true?]
 
-Place the Image on the Pasteboard first
+	show the image alt attribute
+
+Place the Image on the Pasteboard first
+
+	show the image on the paste board with the little blue square
 
 In my Shakespeare play book I plan to put a different images with each scene. I intend to place this image below the scene location and before the start of the first stage directions.
 
@@ -172,7 +187,10 @@ With the anchored image selected, find the Object panel, and create a new object
 InDesign does not offer a way to automate the mapping of object styles to tags, so we need to select our graphic object (currently using the “scene_image” object style), and then select the tag: ‘scene_image’.
 
 The object will then appear in the structure pane at the appropriate place.
+
 Here we see the image anchored with the object style selected in the object styles palette and the tag selected in the tag window.
 
 We can then add the attribute ‘alt’ to this element in the structure panel.
 The resultant XML section will look like this:
+
+	show the structure pane again

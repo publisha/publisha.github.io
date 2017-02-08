@@ -4,7 +4,7 @@
  <title>Digital Publisher Guide</title>
  <link href="https://publisha.github.io/atom.xml" rel="self"/>
  <link href="https://publisha.github.io/"/>
- <updated>2017-02-05T18:33:25+00:00</updated>
+ <updated>2017-02-07T19:58:23+00:00</updated>
  <id>https://publisha.github.io</id>
  <author>
    <name>Chris Jennings</name>
@@ -222,6 +222,7 @@ The space-before could be 6pts and the space-after 2.5pts. This then computes as
 &lt;h2 id=&quot;what-about-images-in-the-text&quot;&gt;What about images in the text?&lt;/h2&gt;
 
 &lt;p&gt;If we introduce an illustration that has text &lt;strong&gt;before&lt;/strong&gt; and &lt;strong&gt;after&lt;/strong&gt;, then this will upset the vertical alignment of the body text, unless we can size the vertical dimension of the image with a multiple of the leading.&lt;/p&gt;
+
 </content>
  </entry>
  

@@ -129,7 +129,7 @@ lineStyles:
 
 # image tag template should I add the root
 # adding link to self so that it enlarges
-imageTag: "[![{alt}](..\/..\/{src})](..\/..\/{src})"
+imageTag: "[![{alt}](\/{src})](\/{src})"
 # use relative path to image from the opened file
 relativeImagePath: false
 # rename copyed image based on title/alt

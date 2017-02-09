@@ -63,25 +63,7 @@ body {
   letter-spacing: 0;
 }
 
-@media (max-width: 48em) {
-  .masthead-title {
-    text-align: right;
-    margin-right:-100px;
-    /*line-height: 1;*/
-}
 
-  .masthead-title small {
-    /*display: block;*/
-  }
-  .masthead {
-    /*padding-bottom: 1.1rem;*/
-}
-
-.code pre, .gutter pre {
-  white-space: pre-wrap;
-  /*word-break: break-all;*/
-}
-}
 
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
@@ -145,6 +127,7 @@ body {
   font-size: .775rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
+  opacity:.9;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
@@ -178,12 +161,44 @@ img {
   margin:2rem auto;
 }
 
+/*put the images on the left and let the text flow*/
+
+.sideimage img {
+  border:1px solid silver;
+  width: 180px;
+  width: 30%;
+  /*max-height:100px;*/
+  margin:2rem auto;
+  /*max-width: 75%;*/
+  /*position:relative;
+  right:200px;*/
+  float:left;
+  clear:both;
+  margin-left: -34%;
+  /*margin-top:-250px;
+  margin-bottom: -130px;*/
+  position:relative;
+  top:-250px;
+}
+
+.fancybox-outer img {
+  top:0;
+}
+
 
 h1 {
   width:65%;
   padding-bottom:0px;
   line-height: 1;
   /*border-bottom: 4px solid #e5e5e5;*/
+}
+
+h2,h3 {
+  color:#249a53;
+}
+
+h2 {
+border-bottom: 4px solid #e5e5e5;
 }
 
 /* Quotes */
@@ -358,4 +373,29 @@ a:hover,
 a:focus {
   /*text-decoration: underline;*/
   color: black;
+}
+
+
+@media (max-width: 48em) {
+  .masthead-title {
+    text-align: right;
+    margin-right:-100px;
+    /*line-height: 1;*/
+}
+
+.sideimage img {
+  width:20%;
+}
+
+  .masthead-title small {
+    /*display: block;*/
+  }
+  .masthead {
+    /*padding-bottom: 1.1rem;*/
+}
+
+.code pre, .gutter pre {
+  white-space: pre-wrap;
+  /*word-break: break-all;*/
+}
 }

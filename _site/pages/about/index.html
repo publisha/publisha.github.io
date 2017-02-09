@@ -30,7 +30,12 @@
 
 <style>
 img {
-  max-width: 100%;
+width:auto;
+max-width: 100%;
+float:none;
+clear:both;
+margin-left: 0;
+margin-top:0;
 }
 </style>
 
@@ -243,7 +248,7 @@ img {
 
 <p>Here is a random photo taken by me.</p>
 
-<p><a href="../../images/2017/01/fromWittenhamClumps.jpg"><img src="../../images/2017/01/fromWittenhamClumps.jpg" alt="My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester." /></a></p>
+<p><a href="/images/2017/01/fromWittenhamClumps.jpg"><img src="/images/2017/01/fromWittenhamClumps.jpg" alt="My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester." /></a></p>
 
 <h2 id="how-was-this-web-site-built">How was this Web site built?</h2>
 
@@ -303,7 +308,7 @@ img {
     });
     </script>
     <script>
-        $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
+        $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').attr('class', 'sideimage').fancybox();
     </script>
 
   </body>

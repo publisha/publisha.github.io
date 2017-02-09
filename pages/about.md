@@ -17,7 +17,7 @@ Project maintained by @Pageboy
 
 Here is a random photo taken by me.
 
-[![My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester.](../../images/2017/01/fromWittenhamClumps.jpg)](../../images/2017/01/fromWittenhamClumps.jpg)
+[![My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester.](/images/2017/01/fromWittenhamClumps.jpg)](/images/2017/01/fromWittenhamClumps.jpg)
 
 ## How was this Web site built?
 

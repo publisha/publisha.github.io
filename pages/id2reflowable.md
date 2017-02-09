@@ -7,8 +7,6 @@
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
 ## On this Page
-
-- [On this Page](#on-this-page)
 - [What you need](#what-you-need)
 - [The Content](#the-content)
 - [Margins and Bleeds](#margins-and-bleeds)

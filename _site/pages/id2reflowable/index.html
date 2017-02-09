@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Creating a Reflowable eBook
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/jquery.fancybox.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/guide.css">
+  <!-- Fonts -->
+
+  <!-- can't use google fonts on GitHub unless https -->
+<link href='https://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic' rel='stylesheet'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Optionally make the images go full width but put this in the page metadata -->
+
+
+<!-- javascripts for fancybox -->
+<script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/public/js/jquery.fancybox.pack.js"></script>
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+</head>
+
+
+  <body class="theme-base-0b">
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <nav class="sidebar-nav"  style="border-bottom:none !important;">
+    <a href="/"><i class="sidebar-nav-item fa fa-home fa-2x" aria-hidden="true"></i></a>
+  </nav>
+  <div class="sidebar-item" style="padding-top:0;padding-bottom:.5rem;">
+    <p>tutorials and screencasts about digital publishing and eBook Production</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <!-- <a class="sidebar-nav-item" href="/"><i class="fa fa-home fa-lg" aria-hidden="true"> </i>Home</a> -->
+
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/about/">About</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/attentiontodetail/">Attention to Typographic detail with InDesign</a>
+      
+    
+    
+    
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/buildingaTOCinInDesign/">Building the TOC in InDesign</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item active" href="/pages/id2reflowable/">Creating a Reflowable eBook</a>
+      
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/create_speare_play_web/">Repository for Shakespeare Play Web page</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/htmlcssthebasics/">The basics of HTML and CSS</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/InDesignBookPanel/">Using the Book Panel in InDesign</a>
+      
+    
+    
+
+    <!-- 
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/InDesignBookPanel/">Using the Book Panel in InDesign</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/about/">About</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/attentiontodetail/">Attention to Typographic detail with InDesign</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/buildingaTOCinInDesign/">Building the TOC in InDesign</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/create_speare_play_web/">Repository for Shakespeare Play Web page</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/htmlcssthebasics/">The basics of HTML and CSS</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item active" href="/pages/id2reflowable/">Creating a Reflowable eBook</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+     -->
+<!-- <a class="sidebar-nav-item" href="/blog/">Articles</a> -->
+    
+     <a class="sidebar-nav-item" href="/blog">Blog Articles</a>
+    <span class="sidebar-nav-item">Currently v0.097</span>
+    <!-- <a class="sidebar-nav-item" href="http://prose.io/#Pageboy/Islomania">Edit</a> -->
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright fa-2x" aria-hidden="true"></i> Chris Jennings</a> 2017
+    </p>
+  </div>
+  <div class="sidebar-item">
+    <p>
+      <b>Note:</b> Images can be enlarged by click or touch
+    </p>
+  </div>
+  <!-- <div class="sidebar-item cclicense">
+    <p>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+    </p>
+  </div> -->
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Digital Publisher Guide</a><br />
+            <small>Help for publishers and students of publishing</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="page">
+  <!-- <h1 class="page-title">Creating a Reflowable eBook</h1> -->
+  <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class="toc">
+  <h2 id="on-this-page">On this Page</h2>
+
+  <ul>
+    <li><a href="#on-this-page">On this Page</a></li>
+    <li><a href="#what-you-need">What you need</a></li>
+    <li><a href="#the-content">The Content</a></li>
+    <li><a href="#margins-and-bleeds">Margins and Bleeds</a></li>
+    <li><a href="#colour">Colour</a></li>
+    <li><a href="#paragraph-and-character-styles">Paragraph and Character Styles</a></li>
+    <li><a href="#export-tagging">Export Tagging</a></li>
+    <li><a href="#placing-images">Placing Images</a></li>
+    <li><a href="#object-styles">Object Styles</a></li>
+    <li><a href="#the-alt-text">The ALT text</a></li>
+    <li><a href="#the-title-page">The Title Page</a></li>
+    <li><a href="#the-table-of-contents">The Table of Contents</a></li>
+    <li><a href="#the-cover-image">The Cover Image</a></li>
+    <li><a href="#book-metadata">Book Metadata</a></li>
+    <li><a href="#getting-ready-to-export">Getting Ready to Export</a></li>
+    <li><a href="#prepare-the-styles-for-export">Prepare the Styles for Export</a></li>
+    <li><a href="#chunking-the-ebook">Chunking the eBook</a></li>
+    <li><a href="#from-book-to-epub-reflowable">From Book to ePub (reflowable)</a></li>
+    <li><a href="#export-to-epub">Export to ePub</a></li>
+    <li><a href="#you-have-an-epub-how-does-it-look">You have an ePub; How does it look?</a></li>
+  </ul>
+
+</section>
+<!-- /TOC -->
+
+<h1 id="creating-a-reflowable-ebook-after-a-print-production-workflow">Creating a Reflowable eBook after a print production workflow</h1>
+
+<p>This work follows on from previous workflows in creating a Shakespeare play for print. We should already have an Indesign ‘book’ with at least 2 sections. We will export from InDesign for ePub (reflowable) and then ‘break open’ the ePub file and make some changes to some of the included files.</p>
+
+<h2 id="what-you-need">What you need</h2>
+
+<ul>
+  <li>You will need to be using Photoshop to edit the cover image and edit the pictures and add the metadata.</li>
+  <li>You will need to be using InDesign Creative Cloud (2017). The screen grabs in this document are created from InDesign version 12</li>
+  <li>You may need to edit the ePub file after export from InDesign and I suggest Atom. In order to edit the ePub package, you will need to ‘unpack’ the file and then re-pack. A script is available for this.</li>
+</ul>
+
+<h3 id="prepare">Prepare</h3>
+
+<p>You should keep the original versions the InDesign files and book that you have used the create the print version. We may need to make modifications to the InDesign files, so I suggest that you archive the original work that you have used for the print version</p>
+
+<h2 id="the-content">The Content</h2>
+
+<p>For my example I am working on ‘A Midsummer Night’s Dream’. I have already created a version of my book ready for print. It has the following components.</p>
+
+<ul>
+  <li>The Cover (I need to extract the front from the complete jacket previously designed).</li>
+  <li>A half title page (I will abandon this in the eBook)</li>
+  <li>A copyright page</li>
+  <li>A Title page</li>
+  <li>A Table of contents</li>
+  <li>The Introduction</li>
+  <li>The Dramatis Personae</li>
+  <li>The Play</li>
+  <li>I will also need to add a colophon</li>
+</ul>
+
+<p>Here is a sample double page spread from the print -ready PDF of my book.</p>
+
+<p><a href="/images/2017/02/id2rfl/image1.png"><img src="/images/2017/02/id2rfl/image1.png" alt="Here is a sample spread from our print production" /></a></p>
+
+<p>We will export the ePub (reflowable) from InDesign, but first there are several things we must consider and modify before we are ready to export.</p>
+
+<h3 id="illustrations">Illustrations</h3>
+
+<p>You will want to illustrate your Shakespeare Play, so you need to gather the images in your images folder described above. The plan is to have at least one image for each scene of the play.</p>
+
+<p>You will want to make some adjustments to these images using Photoshop perhaps. The images should be large enough to display in good quality within the eBook. They should be no smaller than 1000pixels wide in 72 PPI. InDesign will create the appropriate format for the eBook later, but, for now you are gathering your assets (text and images) and considering the structure of your eBook and how the play should display.</p>
+
+<p><a href="/images/2017/02/id2rfl/image2.png"><img src="/images/2017/02/id2rfl/image2.png" alt="We have prepared all of the images that we want to use in the eBook" /></a></p>
+
+<h3 id="back-to-work">Back to Work</h3>
+
+<p>The presumption is that you have used the book panel to manage your individual InDesign documents as a collection, so go ahead and open the book panel and view the first of your InDesign sections.</p>
+
+<p>We now need to address the various aspects of our previous work and how this will be affected when we export to the reflowable ePub format.</p>
+
+<p><a href="/images/2017/02/id2rfl/image3.png"><img src="/images/2017/02/id2rfl/image3.png" alt="Here we see the book panel with our 3 InDesign documents" /></a></p>
+
+<h3 id="the-page">The Page</h3>
+
+<p>The page size in my example is (portrait), 164mm x 234mm. This was set up for print and this is a physical dimension. If we were creating an eBook from scratch with no intention to make a print version, then we might use pixel dimensions. However, the print size will not effect the way the eBook is exported, but if we want to get a better idea of how the eBook will look while we are working with InDesign, then having deep margins and single pages rather than spreads is an advantage. When you get more experienced with eBook production, you should be able to work for the print and eBook versions within the same InDesign document. Creating print and eBooks from the same InDesign document is the ultimate goal—some might even say the ‘Holy Grail’!</p>
+
+<p>As you will see, it is often the case that we will need to modify some attributes of the InDesign document to get a better eBook result. For this reason, we tend to ‘fork’ a new version specifically for the eBook edition.</p>
+
+<h3 id="spreads">Spreads</h3>
+
+<p>Although we may have our InDesign set up as spreads, we have no absolute control over the recto and verso pages in a reflowable eBook. In fact we should avoid using those terms since they indicate front and back of the paper, rather than left and right!</p>
+
+<p>Some eBook reader software does provide a double spread view, and some tablets will automatically give you a left and right view when the tablet is used in a landscape/horizontal mode, but these left and right pages may not be the same that you see in the print version of the book.</p>
+
+<p>If our book design depends on the spread view; with images that cross over the spine, or images that bleed right to the edge then we should consider using the fixed-layout eBook format. In this book we are focussing entirely on the reflowable format and the many challenges that we face in getting beautifully designed responsive eBooks. We may need to make compromises but we intend to keep them to a minimum.</p>
+
+<h2 id="margins-and-bleeds">Margins and Bleeds</h2>
+
+<p>Different eBook reader software and devices already provide margins, and some even allow the user to adjust these margins, so your settings may be irrelevant to the eBook.</p>
+
+<p>With a <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>reflowable eBook, there is no way that we can take content right to the edge of the screen. There will always be a margin. Content that goes to the edge for our print version, will be cropped or moved.</p>
+
+<h2 id="colour">Colour</h2>
+
+<p>In a printed book, colour costs money. An eBook does not have that constraint, and so you might consider using colour in your text. You may use colours for the headings or to give emphasis here and there. You should create the swatches for the colours that you will need. Perhaps you could take colour ideas from the cover that you already created.</p>
+
+<p>You should not overuse colour. It is always best to use a limited palette; be consistent and remember, readability is crucial, so good contrast between text and background is essential.</p>
+
+<h3 id="cmyk-or-rgb">CMYK or RGB?</h3>
+
+<p>Where print ready PDFs need to have colour set for the process inks (cyan, magenta, yellow and black <code class="highlighter-rouge">CMYK</code>), eBooks need colour in RGB (red, green and blue). When we export to the ePub format, the colour mode will be transformed automatically. CMYK will become RGB.</p>
+
+<p>If you use colour in the text, then I suggest that you define the colour with RGB values directly, because you will get a better result than if you leave InDesign to make the conversion. Previously, we insisted that colour images for our print version should be in CMYK mode. If this is how your images are set up in the InDesign document, then all will be well when you export to the ePub.</p>
+
+<p>If you are adding images specifically for the eBook version, then they can be left in RGB mode.</p>
+
+<h2 id="paragraph-and-character-styles">Paragraph and Character Styles</h2>
+
+<p>You will already have set up paragraph and character styles for the print production version. It is important that you use styles for every aspect of the typographic design and avoid where possible, overriding text formats.</p>
+
+<p>There are now some very specific details that we need to address for good output to the reflowable ePub format.</p>
+
+<h3 id="styles-become-html-and-css-in-the-epub">Styles become HTML and CSS in the ePub</h3>
+
+<p>When we export to the ePub format, the paragraph and character styles will be resolved into a combination of markup in the HTML and stylesheet definitions in the CSS. We have control over this output by using the Export Tagging section of the style panel.</p>
+
+<h3 id="styles-for-the-headings">Styles for the Headings</h3>
+
+<p>You will notice in the example here that the beginning of the ACT and the beginning of the SCENE in each case begins on a new recto page. This is because I have selected ‘On the Next Odd page’ under the keep options for this style rule. This forces this heading style to move to the top of the next facing page. We used this style setting for our print book.</p>
+
+<p><a href="/images/2017/02/id2rfl/image4.png"><img src="/images/2017/02/id2rfl/image4.png" alt="The keep options for the paragraph style is setting this for the next odd page" /></a></p>
+
+<p>You will need to think carefully about how you want the headings to appear. Do you want to start the ACT at the top of a page? Will the Scene also start a new page, or only when it come after the first scene?</p>
+
+<p>This is an important concept in InDesign, and we would normally use this feature for printable documents. In our ePub though we will need to apply some other settings before we export to ePub. Controlling where pages begin is a challenge. Controlling where pages end is virtually impossible.</p>
+
+<h2 id="export-tagging">Export Tagging</h2>
+
+<p>You need to pay special attention to the Export Tagging panel because it will help you get a successful ePub. Do not rely on InDesign to create the markup for you. Choose the tag and give each a class name. Class names are without spaces, however a tag can have more than one class name by entering a single space between them.</p>
+
+<p><a href="/images/2017/02/id2rfl/image5.png"><img src="/images/2017/02/id2rfl/image5.png" alt="Through export tagging, we set the HTML tag and class name" /></a></p>
+
+<h3 id="splitting-for-the-epub">Splitting for the ePub</h3>
+
+<p>The final attribute panel in the paragraph panel is ‘Export Tagging’. This is where we tell InDesign what HTML tag to use in the ePub file. We also need to consider if our heading is an appropriate place to ‘Split the ePub’ and how this relates to our table of contents.</p>
+
+<p>It is important that we use the correct level tags; h1 through to h6 for the headings but p for the paragraphs.</p>
+
+<h2 id="placing-images">Placing Images</h2>
+
+<p>Images will need to be anchored in the text, so that when the text flows (when the reader has increased the font size), the image stays with the correct text. Images that are not anchored may simply appear at the end of the ebook.</p>
+
+<p>The important thing to remember, is that this process is more about the flow of the document rather than the appearance, so we cannot just place the images anywhere and expect them to appear in the right place within the text. The images need to be ‘anchored’ correctly.</p>
+
+<p><a href="/images/2017/02/id2rfl/image6.png"><img src="/images/2017/02/id2rfl/image6.png" alt="Observe the little blue square, top right on the image object frame" /></a></p>
+
+<h3 id="anchoring-images">Anchoring Images</h3>
+
+<p>In my eBook I plan to put a different images with each scene. I intend to place this image below the Scene heading and before the start of the first stage directions.</p>
+
+<p>Here we see the image on the pasteboard. Notice the small blue square on the border of the image. We need to shift-drag this to the end of the line ‘Athens. Quince’s House’. This will anchor it at this point in the text and you should notice an ‘anchor’ symbol in place of the small blue square.</p>
+
+<p><a href="/images/2017/02/id2rfl/image7.png"><img src="/images/2017/02/id2rfl/image7.png" alt="We should attach the image to an object style for consistency" /></a></p>
+
+<p>Now we need to create an Object Style for all images that will follow the scene title.</p>
+
+<h2 id="object-styles">Object Styles</h2>
+
+<p>Object styles are a very powerful feature of InDesign, and allow you to apply formatting to various attributes of the object.</p>
+
+<p>With the anchored image selected, find the Object panel, and create a new object style. I will name mine ‘scene_image’.</p>
+
+<p><a href="/images/2017/02/id2rfl/image8.png"><img src="/images/2017/02/id2rfl/image8.png" alt="We can set the various options for the Object style through this panel" /></a></p>
+
+<p>As you will see from this Object Style Options panel, there are many features and attributes that you can set. We are particularly interested in the Export Tagging tab and the Export Options for ‘Alt text’ and ‘ePub and HTML’. The settings here will have significant effect on the output to ePub.</p>
+
+<p><a href="/images/2017/02/id2rfl/image9.png"><img src="/images/2017/02/id2rfl/image9.png" alt="In the export options section we need to set the Export tagging to give us a `&lt;div&gt;` or possibly `&lt;figure&gt;` with an appropriate class name" /></a></p>
+
+<p>When we use Object Style Options panel, we are setting some generic features of all objects that use this object style. We can also make some specific style changes to each image individually.</p>
+
+<h3 id="export-tagging-for-objects">Export Tagging for Objects</h3>
+
+<p>In the tag drop down field you will find div and span but because this is a block element rather than inline, we will use div and give this a class name. We can type anything into the tag field, but only some accepted HTML tags will work. We could actually use the HTM5 tag — figure, but not all ePub readers will accept this.</p>
+
+<h2 id="the-alt-text">The ALT text</h2>
+
+<p>In the markup language of HTML for the web, images should have some alternative text so that screen readers for people with visual impairment, can read aloud the text description when the image is encountered in the reading order. So, it is with the ePub format. All images should have some ‘ALT text’. Here is what this would look like in the HTML markup:</p>
+
+<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"image/ancathens.png"</span> <span class="na">alt=</span><span class="s">"Ancient Athens showing the Parthenon"</span> <span class="nt">/&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+</div>
+<p>We can add the ALT text in a variety of ways.</p>
+
+<h3 id="image-metadata">Image Metadata</h3>
+
+<p>If we wish to use the ALT text setting in the Object style panel then we will need to extract this text from the metadata held in each image file. This can only work if you have added the metadata for each image.</p>
+
+<p><a href="/images/2017/02/id2rfl/image10.png"><img src="/images/2017/02/id2rfl/image10.png" alt="We can add metadata for each image separately" /></a></p>
+
+<p>Although you can type some ALT text in the text panel here, this would mean that all images have the same ALT text! This is not acceptable. It is not good practice to use something like ‘Image for the scene’. Using the metadata from each image is the most efficient way, because we can use the Object Style to apply this for all images. Adding metadata for the images can be done with Photoshop under the ‘File Info…’ menu. You can use the title or description fields, but you need to know which to choose in the InDesign ALT text panel.</p>
+
+<p><a href="/images/2017/02/id2rfl/image11.png"><img src="/images/2017/02/id2rfl/image11.png" alt="The text is created in the custom field" /></a></p>
+
+<p>The other way to add the ALT text is to use the ‘Object Export Options’ menu item (under the Object Menu). This method can be used instead of, the above or, we can use it for a particular image where we want to override the Object Style settings.</p>
+
+<h2 id="the-title-page">The Title Page</h2>
+
+<p>Our title page needs special treatment because we have spread out the title, author and sub title down the page, and we want to be sure that this fills the page with no possibility of user changes to font size disturbing this arrangement.</p>
+
+<p>The way to make this happen is to convert the grouped texts into an image. We do this through the Object Export Options Panel, found under the Objects menu.</p>
+
+<p><a href="/images/2017/02/id2rfl/image12.png"><img src="/images/2017/02/id2rfl/image12.png" alt="Choosing an ePub:type for the grouped objects on the title page" /></a></p>
+
+<p>We will invoke this panel after we have grouped all of the objects on this page.</p>
+
+<p>The settings for the Object Export panel are shown here. You can select the correct ePub:type, make sure that you use ‘Rasterise Container’ and also add the ALT text information. Once we have set this up, we will need to make sure that this group is added to the Articles panel in the correct order.</p>
+
+<p><a href="/images/2017/02/id2rfl/image13.png"><img src="/images/2017/02/id2rfl/image13.png" alt="The articles panel showing the title group" /></a></p>
+
+<h2 id="the-table-of-contents">The Table of Contents</h2>
+
+<p>In our previous work for the print production workflows, we have created a table of contents on the one of the front matter pages. We successfully created the TOC and displayed the items from the structure of the book—the headings, acts and scenes from the play. We displayed the page numbers right aligned with tabs marked with dots. This was appropriate for our print ready PDF, but our ePub version needs something slightly different.</p>
+
+<p>Most eBook reader software will use a structured table of contents within its user interface. In most cases we do not need the TOC to be displayed on the page<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>, because this interactive TOC is a navigation aid available from a drop down menu or in a ‘slide-out’ panel.</p>
+
+<p>In iBooks on the iPad, the table of contents is displayed in a particular style that we have no control over. In the landscape view on the iPad (seen here) we also have the cover alongside the table of contents.</p>
+
+<p>We have dealt with the details of building a table of contents with InDesign in an earlier help document, so we don’t need to go through this again, but what issues will we encounter when we export to the reflowable ePub?</p>
+
+<p><a href="/images/2017/02/id2rfl/image14.png"><img src="/images/2017/02/id2rfl/image14.png" alt="In iBooks on iPad the table of contents appears opposite the cover image" /></a></p>
+
+<p>By using the table of contents feature, InDesign has already added the structural TOC into the file. All we need to do is to hide this from the page and then choose it by name at the time of export to ePub.</p>
+
+<p>We have two options to hide the ‘on-page’ version of the TOC:</p>
+
+<ol>
+  <li>We could simply drag the TOC text box to the paste board. Drag it left or right and make sure that no part of the text box is on the page. It will be in the file but NOT on the page.</li>
+</ol>
+
+<p><a href="/images/2017/02/id2rfl/image15.png"><img src="/images/2017/02/id2rfl/image15.png" alt="You can exclude the table of contents that is normally on the printed page, if you use the articles to organise the blocks of content" /></a></p>
+
+<ol>
+  <li>A better way though is to set up the whole of our book using the Articles panel. With this method, we simply disable ‘Include when Exporting’ for the ‘Contents’.</li>
+</ol>
+
+<p>We will look further at the Articles panel before we export to the reflowable ePub, because it is with this that we can order the structure.</p>
+
+<h2 id="the-cover-image">The Cover Image</h2>
+
+<p>Since we have already created a wrap around cover for the print book, we can use some part of this for the eBook cover. We only need the front part of the cover, not the spine nor the back or flaps. Of course, you might want to use any text you have created for the back of the book somewhere in the front matter, so don’t abandon this altogether.</p>
+
+<p>The cover that I have created for the print book is shown below. This is for a paperback edition with a spine and back. I just need the front for the eBook, so I am going to take the PDF into Photoshop and crop down to a portrait image.</p>
+
+<p><a href="/images/2017/02/id2rfl/image16.png"><img src="/images/2017/02/id2rfl/image16.png" alt="We need a portrait cover with a width of 1400 pixels" /></a></p>
+
+<p>There are certain requirements for this image. If we intend to distribute this eBook through the Apple iBooks store, we need an image that is, at least, 1400pixels on the short side. This is the image that you can put into the ePub, although be sure to keep a copy of this, because distribution systems such as Apple’s or Amazon’s will need this large high quality image for marketing purposes.</p>
+
+<p>In my ‘Midsummer Night’s Dream’ eBook I have cropped the cover in Photoshop and saved as a JPEG image ready to be used when we export to ePub from InDesign. Be sure to know where you have saved this image, because we will need to select it at the time of export to ePub..</p>
+
+<p>The cover is a special image and we have certain issues to consider.</p>
+
+<p>Remember, this cover will be seen as a thumbnail image within the eBook delivery system, so make it clear enough to be read at small sizes. Do not use text that is too small or against a complex background. In my example, I am using the same image from the print edition. You don’t have to do this. Design an eBook version if you prefer.</p>
+
+<p>This eBook will be a portrait format eBook and so the cover should be in the proportion of 6x8 although this is not critical.</p>
+
+<p>Even if the cover is reduced in size for the eBook, keep a larger version available for marketing purposes.</p>
+
+<h2 id="book-metadata">Book Metadata</h2>
+
+<p>Every eBook needs metadata. This can include the title, description, publication date, copyright information and so on. When we export the ePub (reflowable), there is a panel to add this information and we will look at this when we go through the export options later.</p>
+
+<p>Even before we get to this point, we can add this metadata information in InDesign, through the File Info… section under the File menu. However, we are using the book panel, so, the question is, where should we enter this information? Which of the section documents? The book panel does not provide metadata input for the whole book!</p>
+
+<p>It turns out that if we enter the metadata information in the File Info… section <em>for the InDesign file that is set as the style source</em>, then it is the information in this file that is used for the metadata in the ePub!</p>
+
+<p>Save the InDesign File, but be sure to save with no spaces in the name. Use underscores or just save using CamelCase.</p>
+
+<p>We will add further metadata to the ePub when we export to ePub.</p>
+
+<h2 id="getting-ready-to-export">Getting Ready to Export</h2>
+
+<p>We are probably ready to export to ePub(reflowable) now, but let us just recap on a few things so we don’t get any nasty surprises. And, by the way, we don’t ruin anything when we export. We can always keep trying and overwrite previous versions of the ePub!</p>
+
+<h3 id="what-features-are-lost-when-we-export-the-epub">What features are lost when we export the ePub?</h3>
+
+<p>There are some aspects of our work for the print version of this book, that will not be carried over to the reflowable ePub. I am going to list them here with a little explanation.</p>
+
+<ul>
+  <li><strong>Master pages</strong> Anything on the master pages such as the page numbers and the headers will be ignored.</li>
+  <li><strong>Margins</strong> If you have set different margins for left and right pages in a spread, these are ignored. The eBook will be created so that each page is the same.</li>
+  <li><strong>Columns</strong> These will be ignored. The reflowable eBook can only have     one column.</li>
+  <li><strong>Alignment to the Baseline Grid</strong> This will be ignored, so you are advised to be sure to set leading for all of your paragraph styles and test these by turning off the Align to Grid option temporarily. The line spacing (leading) in the ePub will only come from the leading setting NOT to the baseline grid.</li>
+  <li>
+    <p><strong>Advanced Character Formats</strong> Any settings for the character or paragraph styles here will be ignored, so if you have set a Baseline Shift, then you may be disappointed that this is not available in the ePub. It may be     possible later to add some CSS style rules to simulate this.</p>
+  </li>
+  <li>
+    <p><strong>Paragraph Rules</strong> If you are using a line above or below (or in any other place), this will be ignored in the ePub. We can add this back in using a border in the CSS. More on this later. If you use the underline rather than rule, this will appear in the ePub, but without any offset or colour change.</p>
+  </li>
+  <li>
+    <p><strong>Footnotes</strong> This won’t be ignored and we can use these to create ‘popup’ notes.</p>
+  </li>
+  <li>
+    <p><strong>Orphans and Widows</strong> These are controlled using the Keep Options and they will not be ignored, however, the concept of orphans and widows is not supported by any eReader software that we know currently. The Keep Options panel also controls when a style starts on a new page. This will be used to force a new page, but not all systems support this feature. More on this later.</p>
+  </li>
+  <li>
+    <p><strong>Text wrap</strong> If you have text wrapping around a shaped object, then this feature will be lost. In my book I have a portrait of Shakespeare in an oval shape with the edge of the text following the curve. Our eBook version simply stops the text either side of this image.</p>
+  </li>
+  <li><strong>And more…</strong> I am sure there will be other aspects that will surprise you such as any tabs that will disappear in the ePub!</li>
+</ul>
+
+<h2 id="prepare-the-styles-for-export">Prepare the Styles for Export</h2>
+
+<p>We have looked already at how we can add tags and class names to the styles. We must be sure to do this before we export.</p>
+
+<p>One handy way to make sure of these is by using the Edit All Export Tags… feature that can be found in the drop down context menu of the paragraph styles palette.</p>
+
+<h2 id="chunking-the-ebook">Chunking the eBook</h2>
+
+<p>The ePub package consists of a number of HTML documents, and for our example we want one separate HTML file for each of our Scenes in the play. We have already simulated this in InDesign, by styling some of the headings to start on the next odd page (see this in a previous section).</p>
+
+<p>If we are using the book panel and have different sections as separate InDesign files; Title, Contents, Introduction, Play —then these will become separate HTML files inside the ePub, when we export. Therefore those sections will always start on a new page.</p>
+
+<p>For each of our heading styles inside these sections, we need to tell InDesign to ‘Split Document’ under the Export Tagging tab of the style palette.</p>
+
+<p>The ‘Export tagging’ panel is where we set up the HTML tags for each of the paragraph, character and object styles. We can configure these setting for each style in turn. We can also conveniently, use the ‘Edit All Export Tags’ panel to configure all of these in one place.</p>
+
+<p><a href="/images/2017/02/id2rfl/image17.png"><img src="/images/2017/02/id2rfl/image17.png" alt="Editing all export tags in one place" /></a></p>
+
+<p>As you can see here, we have given all of the various elements such as verse, prose, act and scene a tag and added our own class names that identify their meaning in the structure of our play or introduction.</p>
+
+<h2 id="from-book-to-epub-reflowable">From Book to ePub (reflowable)</h2>
+
+<p>If you are following along from the previous print workflows, then you will be using the book panel to organise your InDesign sections. If you are using the book panel, you should export to ePub and then choose the correct format - ePub(reflowable).</p>
+
+<p>The dialogue box for the reflowable ePub has several sections and you need to pay attention to each of these in turn.</p>
+
+<p>If you have Adobe Digital Edition software then this may be the default ePub viewer. You can use other ePub viewer software to review your work. MAC users with OSX version 9 and above can use iBooks to view the eBook. Apple iBooks will be our default, since we are working with a MAC.</p>
+
+<p>If you have an iPad, you can view the eBook with iBooks on that device. We will discuss getting the eBook onto your devices later.</p>
+
+<p>The viewer apps can be set up in the final panel when you export the ePub (reflowable).</p>
+
+<h2 id="export-to-epub">Export to ePub</h2>
+
+<p>Now follows instructions for each of the sections of the export to ePub (reflowable). When you make changes to these settings, they will stay with the file, so you don’t need to fill in the details again each time you export.</p>
+
+<h3 id="the-general-section">The General Section</h3>
+
+<p><img src="/images/2017/02/id2rfl/image1.jpeg" alt="The first panel in the export process" /></p>
+
+<p>Select <code class="highlighter-rouge">EPUB3.0</code> we are using the most recent version of the ePub standard.</p>
+
+<p>We should select the cover from the graphic made earlier. This should be a JPEG - not a Photoshop file.</p>
+
+<p>Choose the TOC style from the one we made for our print version. You may find that your saved TOC is not listed, this is because you may have saved it in a different document from the Style source. The solution is to change the style source to the file that contains the TOC. If you haven’t explicitly saved with a name, then you will only have <code class="highlighter-rouge">default</code>.</p>
+
+<p><strong>Content Same as Articles Panel</strong>. This is the best option for us, because we have arranged our content in the Articles panel, and even turned off the page based Table of Contents, so that it doesn’t show on the page.</p>
+
+<p>We want to <em>Split Document</em> based on the Paragraph Style Export Tags. This is so that we can control exactly where the ePub is split into the separated HTML documents. This is often referred to as ‘chunking’.</p>
+
+<h3 id="the-text-section">The Text Section</h3>
+
+<p><a href="/images/2017/02/id2rfl/image20.png"><img src="/images/2017/02/id2rfl/image20.png" alt="The text section of the export options" /></a></p>
+
+<p>If we have used footnotes in our book then these would normally be delivered at the bottom of each page. Here is a sample of what this looks like in InDesign.</p>
+
+<p>If we choose <em>Inside a Pop-up (EPUB3)</em> then we should get a hyperlinked elevated number in the text which will then produce a popup window with the text of our footnote. We may need to make some adjustments later to the style of the numbered reference in the text.</p>
+
+<p><a href="/images/2017/02/id2rfl/image21.png"><img src="/images/2017/02/id2rfl/image21.png" alt="Here is an example footnote on the InDesign page " /></a></p>
+
+<h3 id="the-object-section">The Object Section</h3>
+
+<p><a href="/images/2017/02/id2rfl/image23.png"><img src="/images/2017/02/id2rfl/image23.png" alt="We can adjust the settings for the way the objects are displayed. The is is important for images and how they resize for different devices and orientations" /></a></p>
+
+<p>You might prefer to experiment with some of these settings for yourself, but here are my suggestions</p>
+
+<p>Use preserve Appearance from Layout, so the images will take on the style and approximate size that you have given them.\ When you view your eBook in some software and devices, you can enlarge the image by double tapping. The image file inside the ePub needs to be big enough for this to work, so make sure that your originals are at least 1200pixels wide or tall.</p>
+
+<p>Use ‘Relative to Text Flow’\ What this really means is - resize to fit the space; if we view the eBook in a smaller device or window, then the image should be smaller relative to the overall space.\ The alternative is ‘Fixed’ and this may give us display problems on some devices.</p>
+
+<p>We can Align the images left, right or Centred. However, when aligning left or right, the text will flow around the image and—in some situations this can restrict the text to very narrow widths and produce awkward spacing.</p>
+
+<p>It is possible to add a page break automatically after or before an image (or even for both!)</p>
+
+<h3 id="the-conversion-settings">The Conversion Settings</h3>
+
+<p><a href="/images/2017/02/id2rfl/image24.png"><img src="/images/2017/02/id2rfl/image24.png" alt="Images can be coverted to JPEGS or PNG files with a choice of quality etc." /></a></p>
+
+<p>We can choose the way that InDesign converts the images inside the ePub file.</p>
+
+<p>In this example I have opted to use the JPEG file format, although you can just use the automatic setting or PNG. With the JPEG setting you have more options for reducing the file size by reducing the quality. This setting really needs your full attention and please experiment, so that you can build an eBook that has superb images but is not too big overall. Users will not be happy if they need to wait a long time to download you eBook. The Medium or High quality is probably going to be good enough if you have a lot of images. On the other hand use the Maximum quality if you analyse a few images.</p>
+
+<p>If your images use transparency (such as blended shadows or colour overlays), then you should choose PNG. Be aware, though that not all devices support transparency.</p>
+
+<p>Later on we will learn how to unpack the ePub and modify the images to reduce the amount of space that they take up in the ePub package.</p>
+
+<h3 id="the-css-panel">The CSS panel</h3>
+
+<p><a href="/images/2017/02/id2rfl/image25.png"><img src="/images/2017/02/id2rfl/image25.png" alt="We can include our own CSS file and this will be linked at the top of each page **after** the InDesign generated one." /></a></p>
+
+<p>If you don’t know what we mean by CSS, then you should grab some information from the web or get one of the many books on the subject, but essentially…</p>
+
+<ul>
+  <li>
+    <p>CSS means Cascading Style Sheets and is the associated language that goes along with markup languages such as HTML to apply styles to the elements used in the structure of the content.</p>
+  </li>
+  <li>
+    <p>When we export to ePub, the various styles (paragraph, character and object) need to be converted to these CSS rules. The ePub format uses HTML and CSS inside the package—you knew that of course.</p>
+  </li>
+  <li>
+    <p>Do you remember, that we have set the Export Tagging for each style? This is where we get to use these tags. So, we need to check the box ‘Generate CSS’. We can optionally add a margin around the content.</p>
+  </li>
+  <li>
+    <p>As you will notice you can also turn on or off the local overrides; if you have specifically selected some text and made the style different without applying a style, then InDesign will create a new tag and CSS to try to match your design style. I suggest that you try to avoid using overrides, but this is where you get a second chance to turn them off!</p>
+  </li>
+  <li>
+    <p><strong>Embedding Fonts</strong> This is whole topic that deserves a separate chapter, but you can opt to include embeddable fonts in the ePub. Some font vendors disable the ability to embed fonts, so you may get a warning if embedding is prevented.</p>
+  </li>
+  <li>
+    <p><strong>Additional CSS</strong> Optionally we can add our own CSS file. The idea here is that this     will be linked in the head of each XHTML file in the ePub3 package. Currently version 10.1 of InDesign puts this file before the InDesign generated one. This is wrong—it should come after so you can override some of the style rules that InDesign creates.</p>
+  </li>
+</ul>
+
+<h3 id="the-javascript-panel">The Javascript Panel</h3>
+
+<p><a href="/images/2017/02/id2rfl/image26.png"><img src="/images/2017/02/id2rfl/image26.png" alt="We can also add our own javascript into the mix" /></a></p>
+
+<p>There are some situations where you might want to add javascript to the ePub package. In the example here I have added jQuery and some other routines that help with the display of certain styles.</p>
+
+<p>Using javascript inside the eBook is certainly an advanced topic and you should know that it will have very limited support apart from the Apple iBook software where javascript can be used to great effect on the iPad.</p>
+
+<h3 id="the-metadata-panel">The Metadata Panel</h3>
+
+<p><a href="/images/2017/02/id2rfl/image27.png"><img src="/images/2017/02/id2rfl/image27.png" alt="The metadata for the book is crucial. Put as much in here as possible." /></a></p>
+
+<p>Every eBook must have certain information stored within the package before it can be published. It is essential that all of the fields provided in this panel are completed. If you don’t yet have an ISBN for the eBook, you can use the random identifier that has been added automatically.</p>
+
+<p>Most of these entry fields are self explanatory but the date field will need a special format.</p>
+
+<p>The date must be in the form shown: Year-Month-Day, in numerals like this:</p>
+
+<p><code class="highlighter-rouge">2015-01-23</code></p>
+
+<p>Some further Metadata is added to the eBook automatically:</p>
+
+<ul>
+  <li>Modified date comes from the time that you exported the ePub</li>
+  <li>Language will come from the Dictionary setting in InDesign. This is a generic setting for the whole book, but paragraph and character styles can have different language settings as well, so the metadata can be overridden within the ePub.</li>
+  <li>Cover will be generated when you selected the cover image</li>
+</ul>
+
+<h2 id="you-have-an-epub-how-does-it-look">You have an ePub; How does it look?</h2>
+
+<p>The final panel ‘Viewing Apps’ gives you an opportunity to set your default eReader software. If you are using the MAC then this could be iBooks. Adobe Digital Editions could also be a choice, but, remember, you should test your ePub in a number of environments if possible.</p>
+
+<p>Hopefully, your eReader will show you a cover image and you will be able to observe the table of contents. You may not be happy with some aspects of the visual appearance and so we will now need to make some changes to the CSS that controls the typography and layout.</p>
+
+<p><a href="/images/2017/02/id2rfl/image28.png"><img src="/images/2017/02/id2rfl/image28.png" alt="A sample double page in Apple iBooks" /></a></p>
+
+<p>You will notice in this view with Apple’s iBooks, we seem to have lost the heading for the Act — above Scene 1. This is because we used a white text against a deep offset grey rule with InDesign. This does not get converted to any supported CSS, so we will need to add this back with a background for the style of this heading. We do this with ur very own CSS file like this:</p>
+
+<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="nt">h1</span><span class="nc">.act</span> <span class="p">{</span>
+<span class="nl">background</span><span class="p">:</span> <span class="no">silver</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+</div>
+</div>
+
+<h3 id="blank-pages">Blank Pages</h3>
+
+<p>You may also experience blank pages in the eBook. This is because we have 2 mechanisms that have effected where the pages break. We have a style for the Acts and Scenes that starts on the next odd page and we have also <em>split</em> the eBook by creating a new HTML file for each section. We can easily resolve this by editing the CSS inside the ePub. Here is what would need:</p>
+
+<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre><span class="nt">h1</span><span class="nc">.act</span><span class="o">,</span> <span class="nt">h2</span><span class="nc">.scene</span> <span class="p">{</span>
+<span class="nl">page-break-after</span><span class="p">:</span><span class="nb">auto</span><span class="p">;</span>
+<span class="nl">page-break-before</span><span class="p">:</span><span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>The next help document will focus on how we can edit the insides of the ePub file and what changes we can make to the styles and other view settings.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>There is a project to develop a hybrid ePub format that will allow the mixture of reflowable and fixed-layout pages. If you want to explore this further then you should go to the International Digital Publishing Forum web site.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>If we plan to convert the ePub to the Kindle MOBI format then we may need to display a table of contents somewhere. This is because the Amazon recommend this for their format. However, we can find other ways of resolving this. A topic to be addresses later.&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+        
+        <p><b>Filed under:</b> InDesign, ePub</p>
+        
+
+      </div>
+
+    </div>
+<!-- <footer>
+<p><a style="float:right;" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+&#169; Chris Jennings 2017</p>
+</footer>
+ -->
+<!-- now follows items that get the menu working -->
+    <label title="the menu" for="sidebar-checkbox" class="sidebar-toggle fa fa-chevron-left fa-lg" aria-hidden="true"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.fancybox').fancybox();
+        });
+    </script>
+    <script>
+    jQuery(document).ready(function($) {
+    	$("img:not([title])").each(function() {
+    			if($(this).attr("alt") != '') $(this).parent().attr("title", $(this).attr("alt"))
+    			else $(this).parent().attr("title", $(this).attr("src"));
+    	});
+    });
+    </script>
+    <script>
+        $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
+    </script>
+
+  </body>
+</html>

@@ -335,7 +335,7 @@ Now follows instructions for each of the sections of the export to ePub (reflowa
 
 ### The General Section
 
-![The first panel in the export process](/images/2017/02/id2rfl/image1.jpeg)
+[![The first panel in the export process](/images/2017/02/id2rfl/image1.jpeg)](/images/2017/02/id2rfl/image1.jpeg)
 
 Select `EPUB3.0` we are using the most recent version of the ePub standard.
 

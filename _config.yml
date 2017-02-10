@@ -18,7 +18,7 @@ author:
 paginate:         5
 paginate_path: '/blog/page:num/'
 # Custom vars
-version:          0.097
+version:          0.099
 
 github:
   repo:           publisha.github.io

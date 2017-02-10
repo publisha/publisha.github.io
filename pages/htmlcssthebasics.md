@@ -68,7 +68,7 @@ In the example above, there is another element at the same level as `<body`. Thi
 
 You will notice that there is some basic styling; we can see that the top level heading is the biggest and the next level `h2` is smaller; there is space between the paragraphs and the list has bullets and is set in from the left of the page.
 
-HTML has this styling _built-in_. As long as we use logical elements within the markup then the structure will itself be styled logically by default.
+HTML has this styling _built-in_. As long as we use logical elements within the markup then the structure will itself be styled logically by default.[^1]
 
 ## _Classes_ or how to get added control over the HTML markup.
 We should use this structural logic with the HTML markup, but we can also differentiate between these elements by adding classes to the elements.
@@ -324,3 +324,6 @@ The units that we can use are listed here with an explanation:
 There are manny other units that can be used; some are specific for print (such as centimetres and point). Please read [the information here][02888701], for further details.
 
   [02888701]: http://www.w3schools.com/cssref/css_units.asp "w3 schools will inform you"
+
+
+[^1]: Web developers and designers often use a stylesheet to reset all of the standard styles to a neutral setting so they can, more efficiently, apply styles from a basic setting. In a _reset.css_ stylesheet, all of the margins are set to zero.

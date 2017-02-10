@@ -9,7 +9,7 @@
 ## On this Page
 
 - [On this Page](#on-this-page)
-- [What is XML and why do we want it?](#what-is-xml-and-why-do-we-want-it)
+- [What is XML?](#what-is-xml-and-why-do-we-want-it)
 - [Tags](#tags)
 - [The Structure Pane](#the-structure-pane)
 - [Do I need to use a DTD?](#do-i-need-to-use-a-dtd)

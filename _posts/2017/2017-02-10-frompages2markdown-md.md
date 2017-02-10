@@ -2,6 +2,7 @@
 layout: "post"
 title: "fromPages2Markdown.md"
 date: "2017-02-10 11:40"
+published: false
 ---
 
 I just love this Pandoc. Thanks to [John Macfarlane][d0fed9b6], a Professor of Philosophy at the University of California, we can convert just about any document format to any other with this universal document converter.

@@ -20,8 +20,9 @@
   <link rel="stylesheet" href="/public/css/jquery.fancybox.css">
   <link rel="stylesheet" href="/public/css/syntax.css">
   <link rel="stylesheet" href="/public/css/guide.css">
-  <!-- Fonts -->
+  <link rel="stylesheet" href="/public/css/bigfoot-default.css">
 
+  <!-- Fonts -->
   <!-- can't use google fonts on GitHub unless https -->
 <link href='https://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic' rel='stylesheet'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -39,6 +40,12 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- javascript for the footnote popups -->
+<script type="text/javascript" src="/public/js/bigfoot.js"></script>
+<script type="text/javascript">
+    $.bigfoot();
+</script>
 
 </head>
 
@@ -189,7 +196,7 @@
 <!-- <a class="sidebar-nav-item" href="/blog/">Articles</a> -->
     
      <a class="sidebar-nav-item" href="/blog">Blog Articles</a>
-    <span class="sidebar-nav-item">Currently v0.097</span>
+    <span class="sidebar-nav-item">Currently v0.099</span>
     <!-- <a class="sidebar-nav-item" href="http://prose.io/#Pageboy/Islomania">Edit</a> -->
   </nav>
 
@@ -271,6 +278,87 @@
     <script>
         $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').attr('class', 'sideimage').fancybox();
     </script>
+
+    <!-- now follows the footnote stuff -->
+    <!-- <script>
+    $(document).ready(function() {
+        Footnotes.setup();
+    });
+
+    var Footnotes = {
+        footnotetimeout: false,
+        setup: function() {
+            var footnotelinks = $("a[class='footnote']")
+
+            footnotelinks.unbind('mouseover',Footnotes.footnoteover);
+            footnotelinks.unbind('mouseout',Footnotes.footnoteoout);
+
+            footnotelinks.bind('mouseover',Footnotes.footnoteover);
+            footnotelinks.bind('mouseout',Footnotes.footnoteoout);
+        },
+        footnoteover: function() {
+            clearTimeout(Footnotes.footnotetimeout);
+            $('#footnotediv').stop();
+            $('#footnotediv').remove();
+
+            var id = $(this).attr('href').substr(1);
+            var position = $(this).offset();
+
+            var div = $(document.createElement('div'));
+            div.attr('id','footnotediv');
+            div.bind('mouseover',Footnotes.divover);
+            div.bind('mouseout',Footnotes.footnoteoout);
+
+            var el = document.getElementById(id);
+            div.html($(el).html());
+            div.find("a[class='footnote']").remove();
+
+            div.css({
+                position:'absolute',
+                width:'20em',
+                background:'#F7F6EE',
+                padding:'0em 1em 0em 1em',
+                border:'solid 1px',
+                'font-size':'90%',
+                'font-family': 'Helvetica, Sans-serif',
+                'line-height':1.4,
+                '-moz-border-radius':'.5em',
+                '-webkit-border-radius':'.5em',
+                'border-radius':'.5em',
+                opacity:0.95
+            });
+            $(document.body).append(div);
+
+
+            var left = position.left;
+            if(left + 420  > $(window).width() + $(window).scrollLeft())
+                left = $(window).width() - 420 + $(window).scrollLeft();
+            var top = position.top+20;
+            if(top + div.height() > $(window).height() + $(window).scrollTop())
+                top = position.top - div.height() - 15;
+            div.css({
+                left:left,
+                top:top
+            });
+        },
+        footnoteoout: function() {
+            Footnotes.footnotetimeout = setTimeout(function() {
+                $('#footnotediv').animate({
+                    opacity: 0
+                }, 600, function() {
+                    $('#footnotediv').remove();
+                });
+            },100);
+        },
+        divover: function() {
+            clearTimeout(Footnotes.footnotetimeout);
+            $('#footnotediv').stop();
+            $('#footnotediv').css({
+                    opacity: 0.9
+            });
+        }
+    }
+    </script> -->
 
   </body>
 </html>

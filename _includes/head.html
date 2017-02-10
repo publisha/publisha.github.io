@@ -19,8 +19,9 @@
   <link rel="stylesheet" href="{{site.baseurl}}/public/css/jquery.fancybox.css">
   <link rel="stylesheet" href="{{site.baseurl}}/public/css/syntax.css">
   <link rel="stylesheet" href="{{site.baseurl}}/public/css/guide.css">
-  <!-- Fonts -->
+  <link rel="stylesheet" href="{{site.baseurl}}/public/css/bigfoot-default.css">
 
+  <!-- Fonts -->
   <!-- can't use google fonts on GitHub unless https -->
 <link href='https://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic' rel='stylesheet'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -49,5 +50,11 @@ margin-top:0;
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.github.url }}/atom.xml">
+
+  <!-- javascript for the footnote popups -->
+<script type="text/javascript" src="{{site.baseurl}}/public/js/bigfoot.js"></script>
+<script type="text/javascript">
+    $.bigfoot();
+</script>
 
 </head>

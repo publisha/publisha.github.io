@@ -1,4 +1,9 @@
-# Making XML from InDesign
+---
+  layout: page
+  title: Making XML from InDesign
+  published: false
+  categories: [InDesign, XML]
+---
 **Tags, Structure and Styles** - Extracting XML from InDesign depends on a number of factors, but if we successfully achieve our goal then we can be pleased that we have styled all of our content and mapped these styles to our document structure.
 
 ## What is XML and why do we want it?

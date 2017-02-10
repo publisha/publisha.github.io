@@ -1,4 +1,3 @@
-# Making XML from InDesign
 **Tags, Structure and Styles** - Extracting XML from InDesign depends on a number of factors, but if we successfully achieve our goal then we can be pleased that we have styled all of our content and mapped these styles to our document structure.
 
 ## What is XML and why do we want it?
@@ -23,7 +22,7 @@ The naming convention for tags is quite strict and you cannot use spaces in the 
 
 With InDesign there are 2 ways that we can create the tag names. One way is to simply add them to the tags panel, one at a time. The Tags panel is found in the menu _Window>Utilities>Tags_.
 
-	Insert image of tags 
+	Insert image of tags
 
 When naming tags we need to be aware of the kind of content that we have so we can label the tags appropriately.
 

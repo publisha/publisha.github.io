@@ -41,7 +41,7 @@ This work follows on from previous workflows in creating a Shakespeare play for 
 
 ### Prepare
 
-You should keep the original versions the InDesign files and book that you have used the create the print version. We may need to make modifications to the InDesign files, so I suggest that you archive the original work that you have used for the print version
+You should keep the original versions the InDesign files and book that you have used the create the print version. We may need to make modifications to the InDesign files, so I suggest that you archive the original work that you have used for the print version. We are, effectively _forking_ to a new version of the book.
 
 ## The Content
 

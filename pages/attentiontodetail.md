@@ -31,6 +31,7 @@ categories: [InDesign, Typography]
 ## Introduction
 
 InDesign is a brilliant tool to design the display of type on a page. We have every possible control over the letters, the words, the lines, the paragraphs and how the blocks of type are shaped, spaced and aligned.
+
 To have full control over the typography in our books, we need to become familiar with all aspects of type and be ever critical of the smallest details.
 
 >We should not leave anything to chance!

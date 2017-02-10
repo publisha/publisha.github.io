@@ -4,13 +4,81 @@
  <title>Digital Publisher Guide</title>
  <link href="https://publisha.github.io/atom.xml" rel="self"/>
  <link href="https://publisha.github.io/"/>
- <updated>2017-02-10T11:14:00+00:00</updated>
+ <updated>2017-02-10T21:46:06+00:00</updated>
  <id>https://publisha.github.io</id>
  <author>
    <name>Chris Jennings</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>fromPages2Markdown.md</title>
+   <link href="https://publisha.github.io/2017/02/10/frompages2markdown-md/"/>
+   <updated>2017-02-10T11:40:00+00:00</updated>
+   <id>https://publisha.github.io/2017/02/10/frompages2markdown-md</id>
+   <content type="html">&lt;p&gt;I just love this Pandoc. Thanks to &lt;a href=&quot;http://johnmacfarlane.net/&quot; title=&quot;Read about John MacFarlane&quot;&gt;John Macfarlane&lt;/a&gt;, a Professor of Philosophy at the University of California, we can convert just about any document format to any other with this universal document converter.&lt;/p&gt;
+
+&lt;p&gt;You can read the &lt;a href=&quot;http://pandoc.org&quot; title=&quot;Take a look at the details&quot;&gt;details here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;apple-pages&quot;&gt;Apple pages&lt;/h2&gt;
+
+&lt;p&gt;I think &lt;em&gt;pages&lt;/em&gt; is a very nice word processor and I have been using for some time to build documents for my students, to either print out or convert to PDF for delivery on our Moodle pages.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/02/pagessample.png&quot;&gt;&lt;img src=&quot;/images/2017/02/pagessample.png&quot; alt=&quot;Here is a sample from a Pages document.&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;But I don’t want to print this type of material anymore. Beside, I need to update every year.&lt;/p&gt;
+
+&lt;p&gt;I would rather do this online.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-workflow&quot;&gt;The workflow&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Pages&lt;/em&gt; is good at giving you options for export. You can export to PDF, Word, Plain text and ePub. But, you can’t export to HTML or markdown.&lt;/p&gt;
+
+&lt;p&gt;The challenge then was to take the Pages document and recreate as markdown for use here on this site, so the pages can be easily maintained.&lt;/p&gt;
+
+&lt;h2 id=&quot;pandoc-to-the-rescue&quot;&gt;Pandoc to the rescue&lt;/h2&gt;
+
+&lt;p&gt;Pandoc is great but it does &lt;strong&gt;not&lt;/strong&gt; offer Apple’s Pages as a source file format, so we need to use the Microsoft Word format as an interim. Here is what we do once we have Pandoc installed.&lt;/p&gt;
+
+&lt;p&gt;Export from pages to Word (make sure to use docx - the default)
+Locate the file just exported in the finder and change directory to there.&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;w&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;kv&quot;&gt; documents/myfles
+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;pandoc&lt;/span&gt;&lt;span class=&quot;kv&quot;&gt; --wrap=none --extract-media=images somefile.docx -o mynewfile.md
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will create a a markdown file and then all of the images from the Word document, will be put into the images folder (inside a media folder). The images will be renamed &lt;em&gt;image1.png&lt;/em&gt;, &lt;em&gt;image2.png&lt;/em&gt; etc (if they were originally png files) or &lt;em&gt;image1.jpg&lt;/em&gt; if they were originally JPEG files.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-markdown-file&quot;&gt;The Markdown file&lt;/h2&gt;
+&lt;p&gt;The markdown file will now need some editing. Here is what a portion looks like:&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;Extracting XML from InDesign depends on a number of factors, but if we
+successfully achieve our goal then we can be pleased that we have styled
+all of our content and mapped these styles to our document structure.
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;_Toc1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;anchor&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;What is XML and why do we want
+it?
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Not perfect, but we know that any span tag like this one is a heading, so we simply use a GREP search and replace like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-grep&quot;&gt;&amp;lt;span id=&quot;.+?&quot; class=&quot;anchor&quot;&amp;gt;&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Replaced with &lt;code class=&quot;highlighter-rouge&quot;&gt;## &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We can remove the table of contents.
+The image links will have a width and height set; I am removing this.
+We will need to add the ALT tag inside the []&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Validation</title>

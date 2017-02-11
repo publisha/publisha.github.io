@@ -1,6 +1,6 @@
 ---
   layout: page
-  title: Making XML from InDesign
+  title: Create XML from InDesign
   published: true
   categories: [InDesign, XML]
 ---

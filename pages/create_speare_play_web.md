@@ -153,12 +153,18 @@ In Atom it will look similar to this:
 **When you are happy** with the look of these web pages then you can:
 - Upload these new versions of these files to your GitHub repository
 - You do this by using GitHub Desktop and select _Sync_ top right.
-- In GitHub go to settings for your repository
+
+Make sure that you 'commit' your changes by writing something like first version in the message box.
+
+[![Here you see that we have 1 uncomitted change](/images/2017/02/githubdesktop1.png)](/images/2017/02/githubdesktop1.png)
+
+And then make sure that you have highlighted the far right of the timeline. Please see these 2 images.
+
+[![The change has been committed, so we can click the Sync button near top right.](/images/2017/02/githubdesktop2.png)](/images/2017/02/githubdesktop2.png)
+
 - Under GitHub Pages choose the **docs folder** for the source
 
 [![You are telling GitHub to run the web site from the docs folder](/images/2017/01/choose_docsfolder.png)](/images/2017/01/choose_docsfolder.png)
 
 - Your web page for the play will be live!
 - When you have finished and are ready then post the URL of your site to the moodle assignment location.
-
-**Please note:** all of this will be demonstrated in class and there may also be a screencast available

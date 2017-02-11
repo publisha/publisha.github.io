@@ -1,5 +1,4 @@
-#85a495/*bold;-tnof*/
-;#0f575chtml {
+html {
   font-family: "Cantarell",Geneva,Tahoma,"Trebuchet MS",sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -201,9 +200,8 @@ h2,h3 {
 }
 
 h4 {
-  color:#85a495;
-  /*font-style: italic;*/
-  font-weight: bold;
+  font-weight:bold;
+  color:#6c8680;
   margin-bottom: 0;
 }
 

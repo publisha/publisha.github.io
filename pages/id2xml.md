@@ -22,9 +22,9 @@
 
 **Tags, Structure and Styles** - Extracting XML from InDesign depends on a number of factors, but if we successfully achieve our goal then we can be pleased that we have styled all of our content and mapped these styles to our document structure.
 
-## What is XML and why do we want it?
+## What is XML?
 
-XML is eXtensible Markup Language and is a non-proprietary markup language that can be used as a future-proof way to store content. XML indicates structure rather than style; in fact XML includes no information about appearance, only structure, hierarchy and element taxonomy.
+XML is eXtensible Markup Language and is a non-proprietary markup language that can be used as a future-proof way to store content. XML indicates structure rather than style; in fact XML includes no information about appearance, only structure, hierarchy and element taxonomy.[^3]
 
 Here is a sample of some XML of ‘A Midsummer Night’s Dream’:
 
@@ -138,6 +138,9 @@ This will also be tagged as ‘play’ so select it in the Structure pane and cl
 
 Save your work!
 
+<a class="video fancybox.iframe fa fa-film" title="XML and InDesign" href="https://www.youtube.com/embed/LdWvjWyLjeg?rel=0&amp;showinfo=0"> See a screencast to show XML Tagging with InDesign</a>
+
+
 ## Exporting the XML
 
 You can Export XML from the menu on the Structure pane or from the InDesign File>Export menu.
@@ -242,12 +245,16 @@ We can then add the attribute ‘alt’ to this element in the structure panel.
 
 [![Adding the 'alt' attribute](/images/2017/02/id2xml/image21.png)](/images/2017/02/id2xml/image21.png)
 
-The resultant XML section will look like this:
-
 [![The resultant XML section will look like this](/images/2017/02/id2xml/image22.png)](/images/2017/02/id2xml/image22.png)
+
+
+<a class="video fancybox.iframe fa fa-film" title="XML output from InDesign]" href="https://www.youtube.com/embed/izYu_V-MKeI?rel=0&amp;showinfo=0"> Another screencast to show exporting the XML</a>
 
 
 [^1]: This may be some text that you forgot to apply a style to; maybe styling by using bespoke styles from the style menus.
 
 
 [^2]: Using empty paragraphs to provide space between elements is what may have caused this
+
+
+[^3]: XML and InDesign, Dorothy J. Hoskins, O'Reilly Media on January 2013

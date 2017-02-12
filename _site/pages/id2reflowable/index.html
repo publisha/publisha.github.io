@@ -32,8 +32,10 @@
 
 <!-- javascripts for fancybox -->
 <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="/public/js/jquery.fancybox.pack.js"></script>
-
+<script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
+</script>
+<script type="text/javascript" src="/public/js/jquery.fancybox-media.js">
+</script>
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
   <link rel="shortcut icon" href="/public/favicon.ico">
@@ -344,7 +346,7 @@
 
 <p>Different eBook reader software and devices already provide margins, and some even allow the user to adjust these margins, so your settings may be irrelevant to the eBook.</p>
 
-<p>With a [^1]reflowable eBook, there is no way that we can take content right to the edge of the screen. There will always be a margin. Content that goes to the edge for our print version, will be cropped or moved.</p>
+<p>With a <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>reflowable eBook, there is no way that we can take content right to the edge of the screen. There will always be a margin. Content that goes to the edge for our print version, will be cropped or moved.</p>
 
 <h2 id="colour">Colour</h2>
 
@@ -468,7 +470,7 @@
 
 <p>In our previous work for the print production workflows, we have created a table of contents on the one of the front matter pages. We successfully created the TOC and displayed the items from the structure of the book—the headings, acts and scenes from the play. We displayed the page numbers right aligned with tabs marked with dots. This was appropriate for our print ready PDF, but our ePub version needs something slightly different.</p>
 
-<p>Most eBook reader software will use a structured table of contents within its user interface. In most cases we do not need the TOC to be displayed on the page<sup id="fnref:2"><a href="#fn:2" class="footnote">1</a></sup>, because this interactive TOC is a navigation aid available from a drop down menu or in a ‘slide-out’ panel.</p>
+<p>Most eBook reader software will use a structured table of contents within its user interface. In most cases we do not need the TOC to be displayed on the page<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>, because this interactive TOC is a navigation aid available from a drop down menu or in a ‘slide-out’ panel.</p>
 
 <p>In iBooks on the iPad, the table of contents is displayed in a particular style that we have no control over. In the landscape view on the iPad (seen here) we also have the cover alongside the table of contents.</p>
 
@@ -492,7 +494,7 @@
 
 <p>We will look further at the Articles panel before we export to the reflowable ePub, because it is with this that we can order the structure.</p>
 
-<iframe width="600" height="338" src="https://www.youtube.com/embed/___8OlSVWpE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+<p><a class="video fancybox.iframe fa fa-film" title="Using the Articles panel" href="https://www.youtube.com/embed/cBiOheSPECY?rel=0&amp;showinfo=0"> See a screencast to show the Articles panel in InDesign</a></p>
 
 <h2 id="the-cover-image">The Cover Image</h2>
 
@@ -734,17 +736,11 @@
 
 <p>The next help document will focus on how we can edit the insides of the ePub file and what changes we can make to the styles and other view settings.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>[^1]: There is a project to develop a hybrid ePub format that will allow the mixture of reflowable and fixed-layout pages. If you want to explore this further then you should go to the [International Digital Publishing Forum ](http://idpf.org/epub/31 “EPUB 3.1</td>
-      <td>International Digital Publishing Forum”)web site. The IDPF has now merged with the W3 organisation.</td>
-    </tr>
-  </tbody>
-</table>
-
 <div class="footnotes">
   <ol>
+    <li id="fn:1">
+      <p>There is a project to develop a hybrid ePub format that will allow the mixture of reflowable and fixed-layout pages. If you want to explore this further then you should go to the <a href="http://idpf.org/epub/31" title="EPUB 3.1 - International Digital Publishing Forum">International Digital Publishing Forum </a>web site. The IDPF has now merged with the W3 organisation.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
     <li id="fn:2">
       <p>If we plan to convert the ePub to the Kindle MOBI format then we may need to display a table of contents somewhere. This is because the Amazon recommend this for their format. However, we can find other ways of resolving this. A topic to be addressed later.&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
@@ -799,86 +795,23 @@
         $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').attr('class', 'sideimage').fancybox();
     </script>
 
-    <!-- now follows the footnote stuff -->
-    <!-- <script>
+    <!-- show a video -->
+
+    <script>
     $(document).ready(function() {
-        Footnotes.setup();
+    	$(".video").fancybox({
+    		maxWidth	: 800,
+    		maxHeight	: 600,
+    		fitToView	: false,
+    		width		: '70%',
+    		height		: '70%',
+    		autoSize	: false,
+    		closeClick	: false,
+    		openEffect	: 'none',
+    		closeEffect	: 'none'
+    	});
     });
-
-    var Footnotes = {
-        footnotetimeout: false,
-        setup: function() {
-            var footnotelinks = $("a[class='footnote']")
-
-            footnotelinks.unbind('mouseover',Footnotes.footnoteover);
-            footnotelinks.unbind('mouseout',Footnotes.footnoteoout);
-
-            footnotelinks.bind('mouseover',Footnotes.footnoteover);
-            footnotelinks.bind('mouseout',Footnotes.footnoteoout);
-        },
-        footnoteover: function() {
-            clearTimeout(Footnotes.footnotetimeout);
-            $('#footnotediv').stop();
-            $('#footnotediv').remove();
-
-            var id = $(this).attr('href').substr(1);
-            var position = $(this).offset();
-
-            var div = $(document.createElement('div'));
-            div.attr('id','footnotediv');
-            div.bind('mouseover',Footnotes.divover);
-            div.bind('mouseout',Footnotes.footnoteoout);
-
-            var el = document.getElementById(id);
-            div.html($(el).html());
-            div.find("a[class='footnote']").remove();
-
-            div.css({
-                position:'absolute',
-                width:'20em',
-                background:'#F7F6EE',
-                padding:'0em 1em 0em 1em',
-                border:'solid 1px',
-                'font-size':'90%',
-                'font-family': 'Helvetica, Sans-serif',
-                'line-height':1.4,
-                '-moz-border-radius':'.5em',
-                '-webkit-border-radius':'.5em',
-                'border-radius':'.5em',
-                opacity:0.95
-            });
-            $(document.body).append(div);
-
-
-            var left = position.left;
-            if(left + 420  > $(window).width() + $(window).scrollLeft())
-                left = $(window).width() - 420 + $(window).scrollLeft();
-            var top = position.top+20;
-            if(top + div.height() > $(window).height() + $(window).scrollTop())
-                top = position.top - div.height() - 15;
-            div.css({
-                left:left,
-                top:top
-            });
-        },
-        footnoteoout: function() {
-            Footnotes.footnotetimeout = setTimeout(function() {
-                $('#footnotediv').animate({
-                    opacity: 0
-                }, 600, function() {
-                    $('#footnotediv').remove();
-                });
-            },100);
-        },
-        divover: function() {
-            clearTimeout(Footnotes.footnotetimeout);
-            $('#footnotediv').stop();
-            $('#footnotediv').css({
-                    opacity: 0.9
-            });
-        }
-    }
-    </script> -->
+    </script>
 
   </body>
 </html>

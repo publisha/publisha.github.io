@@ -248,7 +248,7 @@ We can then add the attribute ‘alt’ to this element in the structure panel.
 [![The resultant XML section will look like this](/images/2017/02/id2xml/image22.png)](/images/2017/02/id2xml/image22.png)
 
 
-<a class="video fancybox.iframe fa fa-film" title="XML output from InDesign]" href="https://www.youtube.com/embed/izYu_V-MKeI?rel=0&amp;showinfo=0"> Another screencast to show exporting the XML</a>
+<a class="video fancybox.iframe fa fa-film" title="XML output from InDesign" href="https://www.youtube.com/embed/izYu_V-MKeI?rel=0&amp;showinfo=0"> Another screencast to show exporting the XML</a>
 
 
 [^1]: This may be some text that you forgot to apply a style to; maybe styling by using bespoke styles from the style menus.

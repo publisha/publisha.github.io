@@ -241,6 +241,8 @@ We have two options to hide the ‘on-page’ version of the TOC:
 
 We will look further at the Articles panel before we export to the reflowable ePub, because it is with this that we can order the structure.
 
+<iframe width="600" height="338" src="https://www.youtube.com/embed/___8OlSVWpE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
 ## The Cover Image
 
 Since we have already created a wrap around cover for the print book, we can use some part of this for the eBook cover. We only need the front part of the cover, not the spine nor the back or flaps. Of course, you might want to use any text you have created for the back of the book somewhere in the front matter, so don’t abandon this altogether.
@@ -458,4 +460,4 @@ The next help document will focus on how we can edit the insides of the ePub fil
 
 [^1]: There is a project to develop a hybrid ePub format that will allow the mixture of reflowable and fixed-layout pages. If you want to explore this further then you should go to the [International Digital Publishing Forum ](http://idpf.org/epub/31 "EPUB 3.1 | International Digital Publishing Forum")web site. The IDPF has now merged with the W3 organisation.
 
-[^2]: If we plan to convert the ePub to the Kindle MOBI format then we may need to display a table of contents somewhere. This is because the Amazon recommend this for their format. However, we can find other ways of resolving this. A topic to be addresses later.
+[^2]: If we plan to convert the ePub to the Kindle MOBI format then we may need to display a table of contents somewhere. This is because the Amazon recommend this for their format. However, we can find other ways of resolving this. A topic to be addressed later.

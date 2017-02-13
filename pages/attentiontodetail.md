@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Attention to Typographic detail with InDesign
+title: Typographic detail with InDesign
 published: true
 tags: InDesign
 categories: [InDesign, Typography]

@@ -436,10 +436,10 @@ color:#657569;
 }
 .navigation li.header {
   color: white;
-  padding:4px 12px;
+  padding:8px 15px;
   border: 1px solid #bbb;
-  font-size:1.2rem;
-  background-color: #0f6a41;
+  font-size:.8rem;
+  background: #7f936f
 }
 .navigation li {
   border: 1px solid #bbb;

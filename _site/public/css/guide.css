@@ -162,7 +162,7 @@ body {
 }*/
 
 /*put the images on the left and let the text flow*/
-
+@media screen {
 .sideimage img {
   border:1px solid silver;
   width: 180px;
@@ -180,7 +180,7 @@ body {
   position:relative;
   top:-150px;
 }
-
+}
 .fancybox-outer img {
   top:0;
 }
@@ -218,7 +218,8 @@ blockquote {
 }
 
 
-section.toc {
+@media screen {
+  section.toc {
   border:1px solid silver;
   background-color: white;
   font-size: .65rem;
@@ -227,6 +228,7 @@ section.toc {
   margin-right:-110px;
   margin-top:-57px;
   margin-left:8px;
+}
 }
 
 .toc h2 {
@@ -493,5 +495,36 @@ color:#657569;
   color:white;
 }
 
-/*.navigation .dropdown > a { background: url(/images/arrowdown.png) no-repeat right center; }
-.navigation .dropdown > a:hover { background: #F8F8F8 url(/images/arrowdown.png) no-repeat right center !important; }*/
+@media print {
+section.toc {
+    border:1px solid silver;
+    background-color: white;
+    font-size: .65rem;
+    width:75%;
+    float:none;
+    margin-right:0;
+    margin-top:20px;
+    margin-left:8px;
+  }
+}
+
+  @media print {
+  .sideimage img {
+    border:1px solid silver;
+    width: auto;
+    max-width: 90%;
+    margin:2rem auto;
+    float:none;
+    clear:both;
+    margin-left: 0;
+    /*margin-top:-250px;
+    margin-bottom: -130px;*/
+    position:relative;
+    top:0;
+}
+
+.video {
+  display:none;
+}
+
+  }

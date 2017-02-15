@@ -1,10 +1,10 @@
 @page { margin: 2.5cm; }
-
 html {
   font-family: "Cantarell",Geneva,Tahoma,"Trebuchet MS",sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
+
 @media (min-width: 38rem) {
   html {
     font-size: 16px;
@@ -32,6 +32,7 @@ body {
 @media print {
   .container {
     width: 70%;
+font-size: 70%;
 }
 }
 
@@ -52,7 +53,7 @@ body {
 }
 
 .masthead {
-  padding-top:    1rem;
+  padding-top: 1rem;
   padding-bottom: .1rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid #eee;
@@ -197,7 +198,7 @@ body {
   top:0;
 }
 
-@@media screen {
+@media screen {
 h1 {
   font-size:1.8rem;
   width:67%;

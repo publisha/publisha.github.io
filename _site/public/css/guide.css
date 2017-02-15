@@ -189,20 +189,18 @@ body {
   top:0;
 }
 
-
+@@media screen {
 h1 {
   font-size:1.8rem;
   width:67%;
   padding-bottom:0px;
   line-height: 1.1;
   color:#17544d;
-  /*border-bottom: 4px solid #e5e5e5;*/
-  page-break-after: avoid;
 }
 
 h2,h3 {
   color:#249a53;
-  page-break-after: avoid;
+
 }
 
 h4 {
@@ -210,9 +208,24 @@ h4 {
   color:#6c8680;
   margin-bottom: 0;
 }
+}
+
+@@media print {
+h1,h2,h3 {
+    page-break-after: avoid;
+}
+
+}
 
 h2 {
 border-bottom: 4px solid #e5e5e5;
+}
+
+p,
+h2,
+h3 {
+  orphans: 3;
+  widows: 3;
 }
 
 /* Quotes */
@@ -539,8 +552,8 @@ section.toc {
     top:0;
 }
 
-.video, .sidebar-toggle {
-  display:none;
+a.video, .sidebar-toggle {
+  display:none !important;
 }
 
   }

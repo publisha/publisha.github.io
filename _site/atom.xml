@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Digital Publisher Guide</title>
- <link href="https://publisha.github.io/atom.xml" rel="self"/>
- <link href="https://publisha.github.io/"/>
- <updated>2017-02-15T08:20:04+00:00</updated>
- <id>https://publisha.github.io</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2017-02-15T09:30:32+00:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>From Apple's Pages to Markdown</title>
-   <link href="https://publisha.github.io/conversion/markdown/2017/02/10/frompages2markdown-md/"/>
+   <link href="http://localhost:4000/conversion/markdown/2017/02/10/frompages2markdown-md/"/>
    <updated>2017-02-10T11:40:00+00:00</updated>
-   <id>https://publisha.github.io/conversion/markdown/2017/02/10/frompages2markdown-md</id>
+   <id>http://localhost:4000/conversion/markdown/2017/02/10/frompages2markdown-md</id>
    <content type="html">&lt;p&gt;I have a lot of documents authored with Apple’s Pages. I wanted to convert these to markdown texts with the images (mostly screen grabs). The Pages file format is a proprietary format, and so we are dependent on the limited export features that the program itself provides. So how can we do this?&lt;/p&gt;
 
 &lt;h2 id=&quot;apple-pages&quot;&gt;Apple pages&lt;/h2&gt;
@@ -100,9 +100,9 @@ it?
  
  <entry>
    <title>Validation</title>
-   <link href="https://publisha.github.io/html/2017/02/05/validation/"/>
+   <link href="http://localhost:4000/html/2017/02/05/validation/"/>
    <updated>2017-02-05T15:39:00+00:00</updated>
-   <id>https://publisha.github.io/html/2017/02/05/validation</id>
+   <id>http://localhost:4000/html/2017/02/05/validation</id>
    <content type="html">&lt;p&gt;Everything needs to be perfect for it to work in the digital domain. Or does it? Can our screens forgive our little markup errors?&lt;/p&gt;
 
 &lt;h2 id=&quot;checking-for-errors-we-have-to-do-it-so-often&quot;&gt;Checking for Errors. We have to do it so often!&lt;/h2&gt;
@@ -232,9 +232,9 @@ it?
  
  <entry>
    <title>Vertical Spacing for text; pBook and eBook</title>
-   <link href="https://publisha.github.io/indesign/typography/2017/02/04/vertical-spacing/"/>
+   <link href="http://localhost:4000/indesign/typography/2017/02/04/vertical-spacing/"/>
    <updated>2017-02-04T22:50:00+00:00</updated>
-   <id>https://publisha.github.io/indesign/typography/2017/02/04/vertical-spacing</id>
+   <id>http://localhost:4000/indesign/typography/2017/02/04/vertical-spacing</id>
    <content type="html">&lt;p&gt;When we choose a value for &lt;em&gt;leading&lt;/em&gt; in InDesign, we are actually defining the distance between the baselines. The more traditional definition of leading is the space between the baseline and top of character container; the term coming from the little slabs of lead put between the type.&lt;/p&gt;
 
 &lt;h2 id=&quot;baseline-grid-or-doing-the-maths&quot;&gt;Baseline Grid or Doing the maths?&lt;/h2&gt;
@@ -318,9 +318,9 @@ The space-before could be 6pts and the space-after 2.5pts. This then computes as
  
  <entry>
    <title>HTML, XHTML, HTML5 or XHTML5</title>
-   <link href="https://publisha.github.io/html/2017/02/03/htmlORxhtml/"/>
+   <link href="http://localhost:4000/html/2017/02/03/htmlORxhtml/"/>
    <updated>2017-02-03T11:00:00+00:00</updated>
-   <id>https://publisha.github.io/html/2017/02/03/htmlORxhtml</id>
+   <id>http://localhost:4000/html/2017/02/03/htmlORxhtml</id>
    <content type="html">&lt;p&gt;Goodness me there seem to be so many flavours of HTML. What does this all mean for eBook production and why should we care?&lt;/p&gt;
 
 &lt;h2 id=&quot;so-you-thought-it-was-just-html&quot;&gt;So you thought it was just ‘HTML’!&lt;/h2&gt;

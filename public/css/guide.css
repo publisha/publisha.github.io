@@ -1,4 +1,4 @@
-@page { margin: 1cm; }
+@page { margin: 2.5cm; }
 
 html {
   font-family: "Cantarell",Geneva,Tahoma,"Trebuchet MS",sans-serif;
@@ -16,6 +16,7 @@ body {
 }
 
 
+@media screen {
 
 .container {
   width: 60%;
@@ -25,6 +26,13 @@ body {
   margin-left:  auto;
   margin-right: auto;
   /*border:1px solid red;*/
+}
+}
+
+@media print {
+  .container {
+    width: 70%;
+}
 }
 
 .content {
@@ -196,6 +204,7 @@ h1 {
   padding-bottom:0px;
   line-height: 1.1;
   color:#17544d;
+  float:none;
 }
 
 h2,h3 {
@@ -212,7 +221,7 @@ h4 {
 
 @@media print {
 h1,h2,h3 {
-    page-break-after: avoid;
+    page-break-after: avoid !important;
 }
 
 }
@@ -422,6 +431,12 @@ a:focus {
     /*line-height: 1;*/
 }
 
+@media print {
+  .masthead-title {
+    text-align: left;
+    margin-right:0;
+}
+}
 .sideimage img {
   width:20%;
 }
@@ -528,8 +543,8 @@ color:#657569;
 section.toc {
     border:1px solid silver;
     background-color: white;
-    font-size: .65rem;
-    width:75%;
+    font-size: .6rem;
+    width:90%;
     float:none;
     margin-right:0;
     margin-top:20px;

@@ -54,7 +54,7 @@ Another way to add tags to the tag panel is to load them from somewhere else.
 
 InDesign is clever enough to be able to load the tag names from an XML document. It will locate all markup and make the tag names. Another way is to load a DTD)Document Type Definition — this will also generate the tag names. Loading a DTD will also effect the Structure panel, but we will explore this later.
 
-[![Here we see the option to to laod tags or load a DTD.](/images/2017/02/id2xml/image2.png)](/images/2017/02/id2xml/image2.png)
+[![Here we see the option to to load tags or load a DTD.](/images/2017/02/id2xml/image2.png)](/images/2017/02/id2xml/image2.png)
 
 ### Tag names and Style names
 
@@ -86,7 +86,7 @@ From the Structure pane we can also load a DTD. From the top right of the Struct
 
 [![Tags have been loaded from a DTD](/images/2017/02/id2xml/image4.png)](/images/2017/02/id2xml/image4.png)
 
-The DTD that has just been loaded looks like this:
+The DTD that has just been loaded looks like the image to the left.
 
 [![This is an image of the DTD in the InDesign window](/images/2017/02/id2xml/image5.png)](/images/2017/02/id2xml/image5.png)
 
@@ -108,7 +108,7 @@ As you will see from the dialogue box here, there is an option to ‘Map by Name
 
 You will notice here that not all Styles are matched to Tags. This is because some of these tags are ‘Parent Objects’. InDesign does not map objects through the ‘Map by Name’ button, so we need to do this through the structure pane.
 
-Here is the structure pane after mapping the tags to the styles.
+The structure pane after mapping the tags to the styles is seen here.
 
 [![The dramatis personae is in one story](/images/2017/02/id2xml/image8.png)](/images/2017/02/id2xml/image8.png)
 

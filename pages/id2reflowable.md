@@ -33,8 +33,6 @@
 
 This work follows on from previous workflows in creating a Shakespeare play for print. We should already have an Indesign ‘book’ with at least 2 sections. We will export from InDesign for ePub (reflowable) and then 'break open' the ePub file and make some changes to some of the included files.
 
-## What you need
-
 - You will need to be using Photoshop to edit the cover image and edit the pictures and add the metadata.
 - You will need to be using InDesign Creative Cloud (2017). The screen grabs in this document are created from InDesign version 12
 - You may need to edit the ePub file after export from InDesign and I suggest Atom. In order to edit the ePub package, you will need to ‘unpack’ the file and then re-pack. A script is available for this.
@@ -240,8 +238,6 @@ We have two options to hide the ‘on-page’ version of the TOC:
 2.  A better way though is to set up the whole of our book using the Articles panel. With this method, we simply disable ‘Include when Exporting’ for the ‘Contents’.
 
 We will look further at the Articles panel before we export to the reflowable ePub, because it is with this that we can order the structure.
-
- <a class="video fancybox.iframe fa fa-film" title="Using the Articles panel" href="https://www.youtube.com/embed/cBiOheSPECY?rel=0&amp;showinfo=0"> See a screencast to show the Articles panel in InDesign</a>
 
 ## The Cover Image
 
@@ -455,6 +451,9 @@ page-break-after:auto;
 page-break-before:auto;
 }
 ```
+
+<a class="video fancybox.iframe fa fa-film" title="From InDesign to reflowable ePub" href="https://www.youtube.com/embed/-bXM3_viRoE?rel=0&amp;showinfo=0"> This video shows you what happens when you first export to the reflowable ePub from a print ready InDesign book file. Then we see what we have to change to get better results.</a>
+
 
 The next help document will focus on how we can edit the insides of the ePub file and what changes we can make to the styles and other view settings.
 

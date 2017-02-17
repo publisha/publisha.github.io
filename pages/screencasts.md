@@ -26,3 +26,8 @@ In our InDesign document all content needs to be attached to an appropriate styl
 ## Using the Articles Panel to determine content order in the eBook
 
 When we export our book to the reflowable ePub from InDesign, we have a choice about the content order. Usually we choose 'Based on Page Layout', but if you want to make sure that your front matter pages don't end up at the back of the book, then you need to use the Articles Panel to organise the content.
+
+<a class="video fancybox.iframe" title="Getting better at exporting to the ePub reflowable" href="https://www.youtube.com/embed/5WXSmuyMRRg?autoplay=1;rel=0&amp;showinfo=0"><i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
+## Getting better at exporting to the ePub reflowable
+
+We notice that there a few things that don't seem to match what we have in our print version. Can we make some changes to the InDesign document before we export again?

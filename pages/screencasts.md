@@ -8,6 +8,10 @@ tags: [InDesign, Typography]
 
 # Screencasts
 
+These screencasts are pulled in from my [YouTube channel][fc76014b].
+
+  [fc76014b]: https://www.youtube.com/channel/UCk1bhTLPDzbqm-tEMBYId1w "Subscribe at YouTube"
+
 <a class="video fancybox.iframe" title="XML output from InDesign" href="https://www.youtube.com/embed/izYu_V-MKeI?autoplay=1;rel=0&amp;showinfo=0"><i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
 ## Exporting from InDesign to XML
 

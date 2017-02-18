@@ -11,7 +11,9 @@ These screencasts are pulled in from my [YouTube channel][fc76014b].
   [fc76014b]: https://www.youtube.com/channel/UCk1bhTLPDzbqm-tEMBYId1w "Subscribe at YouTube"
 
 <div class="posts">
-  {% for screencast in site.screencasts %}
+
+{% assign items = site.screencasts | sort: 'date' %}
+  {% for screencast in items reversed limit:6 %}
   <div class="post">
   <a class="video fancybox.iframe" title="{{ screencast.title }}" href="https://www.youtube.com/embed/{{ screencast.YouTube }}?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
   <h2>{{ screencast.title }}</h2>

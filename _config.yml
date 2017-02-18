@@ -1,6 +1,7 @@
 # Setup
 permalink: pretty
 markdown: kramdown
+timezone: Europe/London
 # relative_permalinks: true
 title:            Digital Publisher Guide
 tagline:          'Help for publishers and students of publishing'

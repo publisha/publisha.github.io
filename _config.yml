@@ -56,6 +56,9 @@ collections:
     output: true
     layout: screencast
 
+defaults:
+  date: sys_date
+
 
 # for prose
 prose:

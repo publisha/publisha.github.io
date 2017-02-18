@@ -27,6 +27,9 @@ github:
   # Gems
 gems: [jekyll-paginate]
 
+gems:
+  - jekyll-last-modified-at
+
 # More › http://kramdown.gettalong.org/quickref.html
 # Options › http://kramdown.gettalong.org/options.html
 kramdown:

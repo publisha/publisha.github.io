@@ -1,5 +1,6 @@
 ---
 title: More on XML from InDesign
+date: 2016-11-10
 YouTube: izYu_V-MKeI
 layout: screencast
 categories: [InDesign,XML]

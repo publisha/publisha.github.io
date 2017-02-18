@@ -1,5 +1,6 @@
 ---
 title: Using the Articles Panel
+date: 2017-02-01
 YouTube: cBiOheSPECY
 layout: screencast
 publshed: true

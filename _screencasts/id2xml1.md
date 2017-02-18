@@ -1,5 +1,6 @@
 ---
 title: Structure, Tagging and Export to XML
+date: 2016-09-18
 YouTube: LdWvjWyLjeg
 layout: screencast
 categories: [InDesign,XML]

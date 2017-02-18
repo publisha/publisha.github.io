@@ -50,6 +50,13 @@ tag-list: [InDesign, HTML, CSS, Using GitHub]
 
 categories-list: [InDesign, HTML, CSS, Typography, Using GitHub, XML, ePub]
 
+# collections
+collections:
+  screencasts:
+    output: true
+    layout: screencast
+
+
 # for prose
 prose:
   #rooturl: '_posts'

@@ -458,7 +458,9 @@ a:focus {
 a.video {
 position:relative;
 left:-60px;
-top:4rem;
+top:0;
+float:left;
+margin-right:-60px;
 }
 /*add a line and heading for footnotes*/
 

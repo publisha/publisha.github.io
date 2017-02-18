@@ -1,9 +1,7 @@
 ---
 layout: page
-title: Screencasts from the YouTube Channel
+title: Screencasts from the PagetoScreen YouTube Channel
 published: true
-categories: [Screencasts]
-tags: [InDesign, Typography]
 ---
 
 # Screencasts
@@ -12,7 +10,21 @@ These screencasts are pulled in from my [YouTube channel][fc76014b].
 
   [fc76014b]: https://www.youtube.com/channel/UCk1bhTLPDzbqm-tEMBYId1w "Subscribe at YouTube"
 
-<a class="video fancybox.iframe" title="XML output from InDesign" href="https://www.youtube.com/embed/izYu_V-MKeI?autoplay=1;rel=0&amp;showinfo=0"><i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
+<div class="posts">
+  {% for screencast in site.screencasts %}
+  <div class="post">
+  <a class="video fancybox.iframe" title="{{ screencast.title }}" href="https://www.youtube.com/embed/{{ screencast.YouTube }}?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
+  <h2>{{ screencast.title }}</h2>
+  <span class="post-date">{{ screencast.date | date_to_string }}</span>
+  {{ screencast.content }}
+  {% if screencast.categories != null %}
+  <p><b>Filed under:</b> {{ screencast.categories | join: ', ' }} | <a href="{{ site.baseurl }}{{ screencast.url }}">Permalink to this Screencast</a></p>
+  {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+<!-- <a class="video fancybox.iframe" title="XML output from InDesign" href="https://www.youtube.com/embed/izYu_V-MKeI?autoplay=1;rel=0&amp;showinfo=0"><i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
 ## Exporting from InDesign to XML
 
 Including exporting to XML and viewing in TextWrangler.
@@ -34,4 +46,4 @@ When we export our book to the reflowable ePub from InDesign, we have a choice a
 <a class="video fancybox.iframe" title="Getting better at exporting to the ePub reflowable" href="https://www.youtube.com/embed/5WXSmuyMRRg?autoplay=1;rel=0&amp;showinfo=0"><i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
 ## Getting better at exporting to the ePub reflowable
 
-We notice that there a few things that don't seem to match what we have in our print version. Can we make some changes to the InDesign document before we export again?
+We notice that there a few things that don't seem to match what we have in our print version. Can we make some changes to the InDesign document before we export again? -->

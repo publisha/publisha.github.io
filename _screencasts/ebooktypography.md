@@ -14,4 +14,4 @@ I walk through the issues when creating reflowable eBooks.
 - Special Effects
 - and more
 
-[![eBook Typography. All of this covered in the book and the presentation](/images/2017/02/eBook Typography.png)](/images/2017/02/eBook Typography.png)
+[![eBook Typography. All of this covered in the book and the presentation](/images/2017/02/eBookTypography.png)](/images/2017/02/eBookTypography.png)

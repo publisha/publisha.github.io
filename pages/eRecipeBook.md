@@ -182,13 +182,13 @@ The important thing to remember, is that this process is more about the flow of 
 
 Place the Image on the Pasteboard first
 
-[![The image is 'Placed' on the pasteboar, resized and then anchored into the text.](/images/2017/02/eRecipeBook/image12.png)](/images/2017/02/eRecipeBook/image12.png)
+[![The image is 'Placed' on the pasteboard, resized and then anchored into the text.](/images/2017/02/eRecipeBook/image12.png)](/images/2017/02/eRecipeBook/image12.png)
 
 In my eBook I plan to put a different food image with each recipe. I intend to place this image below the recipe introduction and before the start of the ingredients.
 
 The screen picture here shows the image on the pasteboard. Notice the small blue square on the border of the image. We need to _drag_ this to the end of the last line in the introduction. This will anchor it at this point in the text and you should notice an ‘anchor’ symbol in place of the small blue square.
 
-[![The little blue sqaure has now changed to an anchor symbol](/images/2017/02/eRecipeBook/image13.png)](/images/2017/02/eRecipeBook/image13.png)
+[![The little blue square has now changed to an anchor symbol](/images/2017/02/eRecipeBook/image13.png)](/images/2017/02/eRecipeBook/image13.png)
 
 Now we need to create an Object Style for all images that will follow the recipe introduction.
 
@@ -288,7 +288,7 @@ If all of your text is threaded together (see this image below), then the reflow
 
 If you have some text boxes that are not threaded, then you have a choice; you can link together the text frames by dragging the out-port to the in-port of the following frame.
 
-[![An example of text threading](/images/2017/02/eRecipeBook/threading.png)](/images/2017/02/eRecipeBook/image1.tif)
+[![An example of text threading](/images/2017/02/eRecipeBook/threading.png)](/images/2017/02/eRecipeBook/threading.png)
 
 If you don’t see the thread lines indicating that the text frames are threaded then go to the Extras menu under View.
 
@@ -382,7 +382,7 @@ Most of these entry fields are self explanatory but the date field will need a s
 
 The date must be in the form shown: Year-Month-Day, in numerals like this:
 
-2015-01-23
+`2015-01-23`
 
 ## You have an ePUB; How does it look?
 
@@ -424,7 +424,7 @@ Here are some things that we need to fix.
 
 We have applied a rule underneath our heading styles for both the Introduction heading and the recipe title. This needs adding in the CSS. You can see this happening in the Dreamweaver screen shot on the previous page. In the CSS for the 2 style rules we need to add:
 
-border-bottom: 6px solid \#ADD4E4;
+`border-bottom: 6px solid \#ADD4E4;`
 
 ### Fractions
 

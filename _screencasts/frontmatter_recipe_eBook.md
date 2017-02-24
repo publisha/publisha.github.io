@@ -3,7 +3,7 @@ title: Adding Frontmatter pages to our Recipe eBook
 date: 2015-11-01
 YouTube: JYnHH0PSrqA
 layout: screencast
-categories: [InDesign]
+categories: [InDesign, ePub]
 ---
 We are using an InDesign book to build a recipe eBook. We have added our recipes, now we need the _frontmatter_ pages. We will also need an introdcution to our book; this will come after the table of contents.
 

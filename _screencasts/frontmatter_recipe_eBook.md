@@ -1,11 +1,12 @@
 ---
-title: Adding Frontmatter pages to our Recipe eBook
-date: 2015-11-01
+title: Adding Front matter pages to our Recipe eBook
+date: 2017-02-24
 YouTube: JYnHH0PSrqA
 layout: screencast
-categories: [InDesign, ePub]
+published: true
+categories: [InDesign,ePub]
 ---
-We are using an InDesign book to build a recipe eBook. We have added our recipes, now we need the _frontmatter_ pages. We will also need an introdcution to our book; this will come after the table of contents.
+We are using an InDesign book to build a recipe eBook. We have added our recipes, now we need the _front matter_ pages. We will also need an introduction to our book; this will come after the table of contents.
 
 But do we need to show the table of contents on the page?
 

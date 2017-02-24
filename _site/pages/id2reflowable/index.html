@@ -30,6 +30,7 @@
 <!-- Optionally make the images go full width but put this in the page metadata -->
 
 
+
 <!-- javascripts for fancybox -->
 <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
@@ -104,6 +105,12 @@
     
       
         <a class="sidebar-nav-item active" href="/pages/id2reflowable/">Creating a Reflowable eBook</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/editing_ePub/">Editing inside the ePUB package</a>
       
     
     
@@ -201,6 +208,10 @@
      
           
         
+    
+     
+          
+        
           
         
     
@@ -266,6 +277,10 @@
     
      
           
+        
+    
+     
+          
             <li><a href="/pages/htmlcssthebasics/">The basics of HTML and CSS <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
           
         
@@ -325,6 +340,10 @@
      
           
         
+          
+        
+    
+     
           
         
     
@@ -397,6 +416,10 @@
      
           
         
+    
+     
+          
+        
           
         
     
@@ -455,6 +478,10 @@
      
           
         
+          
+        
+    
+     
           
         
     
@@ -523,6 +550,10 @@
      
           
         
+    
+     
+          
+        
           
         
     
@@ -583,6 +614,12 @@
         
           
             <li><a href="/pages/eRecipeBook/">Making an eBook of Recipes <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+            <li><a href="/pages/editing_ePub/">Editing inside the ePUB package <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
           
         
     
@@ -668,6 +705,12 @@
     
       
         
+          <a class="sidebar-nav-item" href="/pages/editing_ePub/">Editing inside the ePUB package</a>
+        
+      
+    
+      
+        
           <a class="sidebar-nav-item" href="/pages/htmlcssthebasics/">The basics of HTML and CSS</a>
         
       
@@ -702,7 +745,7 @@
     
      <a class="sidebar-nav-item" href="/blog">Blog Articles</a>
      <a class="sidebar-nav-item" href="/pages/screencasts/">Screencasts</a>
-    <span class="sidebar-nav-item">Currently v0.1</span>
+    <span class="sidebar-nav-item">Currently v0.11</span>
     <!-- <a class="sidebar-nav-item" href="http://prose.io/#Pageboy/Islomania">Edit</a> -->
   </nav>
 
@@ -924,9 +967,8 @@
 
 <p>In the markup language of HTML for the web, images should have some alternative text so that screen readers for people with visual impairment, can read aloud the text description when the image is encountered in the reading order. So, it is with the ePub format. All images should have some ‘ALT text’. Here is what this would look like in the HTML markup:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"image/ancathens.png"</span> <span class="na">alt=</span><span class="s">"Ancient Athens showing the Parthenon"</span> <span class="nt">/&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
+<div class="language-html highlighter-rouge"><pre class="codehilite"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"image/ancathens.png"</span> <span class="na">alt=</span><span class="s">"Ancient Athens showing the Parthenon"</span> <span class="nt">/&gt;</span>
+</code></pre>
 </div>
 <p>We can add the ALT text in a variety of ways.</p>
 
@@ -1198,28 +1240,21 @@
 
 <p>You will notice in this view with Apple’s iBooks, we seem to have lost the heading for the Act — above Scene 1. This is because we used a white text against a deep offset grey rule with InDesign. This does not get converted to any supported CSS, so we will need to add this back with a background for the style of this heading. We do this with ur very own CSS file like this:</p>
 
-<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre><span class="nt">h1</span><span class="nc">.act</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><pre class="codehilite"><code><span class="nt">h1</span><span class="nc">.act</span> <span class="p">{</span>
 <span class="nl">background</span><span class="p">:</span> <span class="no">silver</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table>
-</div>
+</code></pre>
 </div>
 
 <h3 id="blank-pages">Blank Pages</h3>
 
 <p>You may also experience blank pages in the eBook. This is because we have 2 mechanisms that have effected where the pages break. We have a style for the Acts and Scenes that starts on the next odd page and we have also <em>split</em> the eBook by creating a new HTML file for each section. We can easily resolve this by editing the CSS inside the ePub. Here is what would need:</p>
 
-<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4</pre></td><td class="code"><pre><span class="nt">h1</span><span class="nc">.act</span><span class="o">,</span> <span class="nt">h2</span><span class="nc">.scene</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><pre class="codehilite"><code><span class="nt">h1</span><span class="nc">.act</span><span class="o">,</span> <span class="nt">h2</span><span class="nc">.scene</span> <span class="p">{</span>
 <span class="nl">page-break-after</span><span class="p">:</span><span class="nb">auto</span><span class="p">;</span>
 <span class="nl">page-break-before</span><span class="p">:</span><span class="nb">auto</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table>
-</div>
+</code></pre>
 </div>
 
 <p><a class="video fancybox.iframe fa fa-film" title="From InDesign to reflowable ePub" href="https://www.youtube.com/embed/-bXM3_viRoE?rel=0&amp;showinfo=0"> This video shows you what happens when you first export to the reflowable ePub from a print ready InDesign book file. Then we see what we have to change to get better results.</a></p>

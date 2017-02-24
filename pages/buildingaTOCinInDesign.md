@@ -25,13 +25,13 @@ tags: [InDesign, Typography, ePub]
 
 The table of contents (TOC) belongs to, what are normally referrer to as, the front matter. We might also refer to them as the prelim pages.
 
-[![The Flatplan of prelim pages](../../images/2017/01/the-flatplan-of-prelim-pages.png)](../../images/2017/01/the-flatplan-of-prelim-pages.png)
+[![The Flatplan of prelim pages](/images/2017/01/the-flatplan-of-prelim-pages.png)](/images/2017/01/the-flatplan-of-prelim-pages.png)
 
 The flat plan seen above shows the pages you need before you create the TOC.
 
 The TOC will follow the copyright page and (for our example) will be accommodated on one page. The main section heading (for us this is The Life of Shakespeare) falls on a recto (right) page, with a blank opposite.
 
-[![Numbering and Section options](../../images/2017/01/numbering-and-section-options.jpg)](../../images/2017/01/numbering-and-section-options.jpg)
+[![Numbering and Section options](/images/2017/01/numbering-and-section-options.jpg)](/images/2017/01/numbering-and-section-options.jpg)
 
 ## Page Numbers (or folio)
 You will find that publishers actually follow a variety of conventions!
@@ -40,7 +40,7 @@ Sometimes you might see small roman numerals for the prelim pages with the first
 
 In the example here, small roman numerals are used (counting from the half-title) until we reach the first text, where we begin counting with arabic numbers from 1.
 
-[![A Typical Table of Contents with page numbers](../../images/2017/01/a-typical-toc.png)](../../images/2017/01/a-typical-toc.png)
+[![A Typical Table of Contents with page numbers](/images/2017/01/a-typical-toc.png)](/images/2017/01/a-typical-toc.png)
 
 ## Before you Build the TOC
 
@@ -58,7 +58,7 @@ The table of contents will usually be near front of the book, so you may need to
 ## Building the TOC
 You will find the controls for the Table of Contents under the Layout > Table of Contents menu.
 
-[![Choosing the Styles for the TOC in the Table of Contents Panel](../../images/2017/01/choosing-the-styles-for-the-toc.png)](../../images/2017/01/choosing-the-styles-for-the-toc.png)
+[![Choosing the Styles for the TOC in the Table of Contents Panel](/images/2017/01/choosing-the-styles-for-the-toc.png)](/images/2017/01/choosing-the-styles-for-the-toc.png)
 
 Make sure that you have switched on ‘More Options’ in this panel. You will see all of your paragraph styles on the right and you need to select each heading style in turn and add to the left panel. Pay attention to the levels (in this example you see 3 levels).
 
@@ -82,7 +82,7 @@ Once we have made sure that the item is followed by a tab, we then need to adjus
 
 For the style (in the case TOC Body text), we need to adjust the tabs and the repeated leader.
 
-[![Setting up the tabs to style a row of dots ahead of the page number](../../images/2017/01/setting-up-the-tabs.png)](../../images/2017/01/setting-up-the-tabs.png)
+[![Setting up the tabs to style a row of dots ahead of the page number](/images/2017/01/setting-up-the-tabs.png)](/images/2017/01/setting-up-the-tabs.png)
 
 Select the Right Justified tab marker and add the dot as the leader. Click on the ruler and then hit repeat.
 
@@ -98,7 +98,7 @@ When you create the TOC, you will notice the check box ‘Create PDF Bookmarks�
 
 Although this a useful feature it is not something that we need for the print output PDF! Here it serves to illustrate the structure of our completed play book.
 
-[![The interactive table of contents in a PDF](../../images/2017/01/toc-in-the-pdf.png)](../../images/2017/01/toc-in-the-pdf.png)
+[![The interactive table of contents in a PDF](/images/2017/01/toc-in-the-pdf.png)](/images/2017/01/toc-in-the-pdf.png)
 
 ## Creating a Table of Contents for the eBook version
 
@@ -120,6 +120,6 @@ If your workflow means that you are wanting both print and eBooks from the same 
 
 When you build the TOC from Layout>Table of Contents panel, then you should create this as a separate story. It will then be in it’s own text box. With this in mind we can use the Articles panel, to build the structure of our eBook, but leave off the Article that includes the TOC.
 
-[![Using articles, you can select what is left out of the ePub](../../images/2017/01/articlespanel.png)](../../images/2017/01/articlespanel.png)
+[![Using articles, you can select what is left out of the ePub](/images/2017/01/articlespanel.png)](/images/2017/01/articlespanel.png)
 
 The lack of the tick in the box means that the Article named Contents will not be included on export.

@@ -30,6 +30,7 @@
 <!-- Optionally make the images go full width but put this in the page metadata -->
 
 
+
 <!-- javascripts for fancybox -->
 <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
@@ -104,6 +105,12 @@
     
       
         <a class="sidebar-nav-item" href="/pages/id2reflowable/">Creating a Reflowable eBook</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/editing_ePub/">Editing inside the ePUB package</a>
       
     
     
@@ -201,6 +208,10 @@
      
           
         
+    
+     
+          
+        
           
         
     
@@ -266,6 +277,10 @@
     
      
           
+        
+    
+     
+          
             <li><a href="/pages/htmlcssthebasics/">The basics of HTML and CSS <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
           
         
@@ -325,6 +340,10 @@
      
           
         
+          
+        
+    
+     
           
         
     
@@ -397,6 +416,10 @@
      
           
         
+    
+     
+          
+        
           
         
     
@@ -455,6 +478,10 @@
      
           
         
+          
+        
+    
+     
           
         
     
@@ -523,6 +550,10 @@
      
           
         
+    
+     
+          
+        
           
         
     
@@ -583,6 +614,12 @@
         
           
             <li><a href="/pages/eRecipeBook/">Making an eBook of Recipes <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+            <li><a href="/pages/editing_ePub/">Editing inside the ePUB package <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
           
         
     
@@ -668,6 +705,12 @@
     
       
         
+          <a class="sidebar-nav-item" href="/pages/editing_ePub/">Editing inside the ePUB package</a>
+        
+      
+    
+      
+        
           <a class="sidebar-nav-item active" href="/pages/htmlcssthebasics/">The basics of HTML and CSS</a>
         
       
@@ -702,7 +745,7 @@
     
      <a class="sidebar-nav-item" href="/blog">Blog Articles</a>
      <a class="sidebar-nav-item" href="/pages/screencasts/">Screencasts</a>
-    <span class="sidebar-nav-item">Currently v0.1</span>
+    <span class="sidebar-nav-item">Currently v0.11</span>
     <!-- <a class="sidebar-nav-item" href="http://prose.io/#Pageboy/Islomania">Edit</a> -->
   </nav>
 
@@ -770,23 +813,7 @@
 
 <h3 id="here-is-some-simple-markup-to-show-a-web-page">Here is some simple markup to show a web page</h3>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17</pre></td><td class="code"><pre><span class="nt">&lt;html&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="codehilite"><code><span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;head&gt;</span>
 <span class="nt">&lt;title&gt;</span>My Page<span class="nt">&lt;/title&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
@@ -803,8 +830,7 @@
 <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
+</code></pre>
 </div>
 
 <p>There is a hierarchy here with <code class="highlighter-rouge">html</code> being the top level (or parent) with <code class="highlighter-rouge">body</code> being the next level. All of these elements (shown in blue here) need to be closed; that is each element opening tag <code class="highlighter-rouge">&lt;body&gt;</code> needs to have a <code class="highlighter-rouge">&lt;/body&gt;</code>.</p>
@@ -828,23 +854,7 @@
 
 <p>Here is that same markup from before but with a couple of classes added:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17</pre></td><td class="code"><pre><span class="nt">&lt;html&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="codehilite"><code><span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;head&gt;</span>
 <span class="nt">&lt;title&gt;</span>My Page<span class="nt">&lt;/title&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
@@ -861,8 +871,7 @@
 <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
+</code></pre>
 </div>
 
 <h2 id="presentation-logic">Presentation Logic</h2>
@@ -923,19 +932,7 @@ emphasised (<code class="highlighter-rouge">&lt;em&gt;</code>) or bold (<code cl
 
 <p>Here is an example of some CSS:</p>
 
-<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13</pre></td><td class="code"><pre><span class="nt">body</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><pre class="codehilite"><code><span class="nt">body</span> <span class="p">{</span>
 <span class="nl">font-family</span><span class="p">:</span> <span class="n">verdana</span><span class="p">,</span><span class="nb">sans-serif</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">h1</span><span class="o">,</span><span class="nt">h2</span><span class="o">,</span><span class="nt">h3</span> <span class="p">{</span>
@@ -948,15 +945,13 @@ emphasised (<code class="highlighter-rouge">&lt;em&gt;</code>) or bold (<code cl
 <span class="nt">p</span> <span class="p">{</span>
 <span class="nl">margin-bottom</span><span class="p">:</span><span class="m">4px</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table>
-</div>
+</code></pre>
 </div>
 
 <p>Each element can have many style attributes within the curly brackets. Each style rule must be separated with a semi-colon. This can be written in different ways; the example above puts each rule on a separate line, but it can be written like this:</p>
 
-<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">h1</span> <span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="no">red</span><span class="p">;</span><span class="nl">border-bottom</span><span class="p">:</span><span class="m">1px</span> <span class="nb">solid</span> <span class="no">gray</span><span class="p">;}</span>
-</pre></td></tr></tbody></table>
-</div>
+<div class="language-css highlighter-rouge"><pre class="codehilite"><code><span class="nt">h1</span> <span class="p">{</span><span class="nl">color</span><span class="p">:</span><span class="no">red</span><span class="p">;</span><span class="nl">border-bottom</span><span class="p">:</span><span class="m">1px</span> <span class="nb">solid</span> <span class="no">gray</span><span class="p">;}</span>
+</code></pre>
 </div>
 
 <h2 id="syntactical-precision-required">Syntactical Precision Required</h2>
@@ -1014,19 +1009,13 @@ Using internal styles can be useful for developing page designs</p>
 
 <p>Take this example:</p>
 
-<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6</pre></td><td class="code"><pre><span class="nt">h1</span><span class="o">,</span><span class="nt">h2</span><span class="o">,</span><span class="nt">h3</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><pre class="codehilite"><code><span class="nt">h1</span><span class="o">,</span><span class="nt">h2</span><span class="o">,</span><span class="nt">h3</span> <span class="p">{</span>
 <span class="nl">border-bottom</span><span class="p">:</span><span class="m">1px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">h3</span> <span class="p">{</span>
 <span class="nl">border-color</span><span class="p">:</span><span class="no">red</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table>
-</div>
+</code></pre>
 </div>
 <p>The border under the h3 heading will be red because this was the last rule delivered.</p>
 
@@ -1034,13 +1023,10 @@ Using internal styles can be useful for developing page designs</p>
 
 <p>Fonts need to be defined in a list, as a family, so that when a font is not available on the user’s device, the next available font will be used. Here is an example of that syntax:</p>
 
-<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre><span class="nt">body</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><pre class="codehilite"><code><span class="nt">body</span> <span class="p">{</span>
 <span class="nl">font-family</span><span class="p">:</span> <span class="n">Georgia</span><span class="p">,</span> <span class="s1">"Times New Roman"</span><span class="p">,</span> <span class="n">Times</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table>
-</div>
+</code></pre>
 </div>
 <p>The optimal font desired is <em>Georgia</em> but is this is not available then <em>Times New Roman</em> will be used. <strong>Note:</strong> When a font name has spaces then it must be enclosed in quotes.</p>
 
@@ -1075,48 +1061,33 @@ Using internal styles can be useful for developing page designs</p>
 
 <p><strong>relative</strong></p>
 
-<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5</pre></td><td class="code"><pre><span class="nc">.chapter_intro</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><pre class="codehilite"><code><span class="nc">.chapter_intro</span> <span class="p">{</span>
 <span class="nl">position</span><span class="p">:</span><span class="nb">relative</span>
 <span class="nb">left</span><span class="p">:</span><span class="m">20px</span><span class="p">;</span>
 <span class="nl">top</span><span class="p">:</span><span class="m">30px</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table>
-</div>
+</code></pre>
 </div>
 <p>This will shift the block (<em>relative to where it should be</em>) 20 pixels from the left and 30 pixels from the top.</p>
 
 <p><strong>absolute</strong></p>
 
-<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5</pre></td><td class="code"><pre><span class="nc">.menu</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><pre class="codehilite"><code><span class="nc">.menu</span> <span class="p">{</span>
 <span class="nl">position</span><span class="p">:</span><span class="nb">absolute</span><span class="p">;</span>
 <span class="nl">top</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
 <span class="nl">left</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table>
-</div>
+</code></pre>
 </div>
 
 <p>In this example the menu block will be set at the top left of the body within the window. It will move, when the user scrolls down the page.</p>
 
-<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5</pre></td><td class="code"><pre><span class="nc">.copyright</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><pre class="codehilite"><code><span class="nc">.copyright</span> <span class="p">{</span>
 <span class="nl">position</span><span class="p">:</span><span class="nb">fixed</span><span class="p">;</span>
 <span class="nl">bottom</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
 <span class="nl">left</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table>
-</div>
+</code></pre>
 </div>
 
 <p>In this example the copyright block will be fixed at the bottom of the viewport and will stay there even when the user scrolls their window.</p>
@@ -1127,13 +1098,10 @@ Using internal styles can be useful for developing page designs</p>
 
 <p>For example, if you want to set the width of menu in CSS you could use:</p>
 
-<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre><span class="nt">nav</span><span class="nc">.menu</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><pre class="codehilite"><code><span class="nt">nav</span><span class="nc">.menu</span> <span class="p">{</span>
   <span class="nl">width</span><span class="p">:</span><span class="m">100px</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table>
-</div>
+</code></pre>
 </div>
 <p>This means that the navigation menu will be 100 pixels wide.</p>
 

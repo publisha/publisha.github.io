@@ -30,6 +30,7 @@
 <!-- Optionally make the images go full width but put this in the page metadata -->
 
 
+
 <!-- javascripts for fancybox -->
 <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
@@ -104,6 +105,12 @@
     
       
         <a class="sidebar-nav-item" href="/pages/id2reflowable/">Creating a Reflowable eBook</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/editing_ePub/">Editing inside the ePUB package</a>
       
     
     
@@ -201,6 +208,10 @@
      
           
         
+    
+     
+          
+        
           
         
     
@@ -266,6 +277,10 @@
     
      
           
+        
+    
+     
+          
             <li><a href="/pages/htmlcssthebasics/">The basics of HTML and CSS <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
           
         
@@ -325,6 +340,10 @@
      
           
         
+          
+        
+    
+     
           
         
     
@@ -397,6 +416,10 @@
      
           
         
+    
+     
+          
+        
           
         
     
@@ -455,6 +478,10 @@
      
           
         
+          
+        
+    
+     
           
         
     
@@ -523,6 +550,10 @@
      
           
         
+    
+     
+          
+        
           
         
     
@@ -583,6 +614,12 @@
         
           
             <li><a href="/pages/eRecipeBook/">Making an eBook of Recipes <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+            <li><a href="/pages/editing_ePub/">Editing inside the ePUB package <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
           
         
     
@@ -668,6 +705,12 @@
     
       
         
+          <a class="sidebar-nav-item" href="/pages/editing_ePub/">Editing inside the ePUB package</a>
+        
+      
+    
+      
+        
           <a class="sidebar-nav-item" href="/pages/htmlcssthebasics/">The basics of HTML and CSS</a>
         
       
@@ -702,7 +745,7 @@
     
      <a class="sidebar-nav-item" href="/blog">Blog Articles</a>
      <a class="sidebar-nav-item" href="/pages/screencasts/">Screencasts</a>
-    <span class="sidebar-nav-item">Currently v0.1</span>
+    <span class="sidebar-nav-item">Currently v0.11</span>
     <!-- <a class="sidebar-nav-item" href="http://prose.io/#Pageboy/Islomania">Edit</a> -->
   </nav>
 
@@ -756,7 +799,7 @@
   </ul>
 </section>
 <!-- /TOC -->
-
+<h1 id="create-xml-from-indesign">Create XML from InDesign</h1>
 <p><strong>Tags, Structure and Styles</strong> - Extracting XML from InDesign depends on a number of factors, but if we successfully achieve our goal then we can be pleased that we have styled all of our content and mapped these styles to our document structure.</p>
 
 <h2 id="what-is-xml">What is XML?</h2>
@@ -765,13 +808,10 @@
 
 <p>Here is a sample of some XML of ‘A Midsummer Night’s Dream’:</p>
 
-<div class="language-xml highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre>    <span class="nt">&lt;stage_directions&gt;</span>Enter Egeus<span class="nt">&lt;/stage_directions&gt;</span>
+<div class="language-xml highlighter-rouge"><pre class="codehilite"><code>    <span class="nt">&lt;stage_directions&gt;</span>Enter Egeus<span class="nt">&lt;/stage_directions&gt;</span>
     <span class="nt">&lt;character&gt;</span>Egeus<span class="nt">&lt;/character&gt;</span>
     <span class="nt">&lt;verseline&gt;</span>Happy be Theseus, our renowned Duke!<span class="nt">&lt;/verseline&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
+</code></pre>
 </div>
 
 <h2 id="tags">Tags</h2>

@@ -39,7 +39,17 @@ margin-top:0;
 top:0;
 }
 
-
+</style>
+{% endif %}
+{% if page.code == "wrap" %}
+<style>
+code {
+  white-space: pre-wrap;
+}
+.code pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 </style>
 {% endif %}
 

@@ -19,7 +19,7 @@
 - [Illustrations](#illustrations)
 - [Object Styles](#object-styles)
 </section><!-- /TOC -->
-
+# Create XML from InDesign
 **Tags, Structure and Styles** - Extracting XML from InDesign depends on a number of factors, but if we successfully achieve our goal then we can be pleased that we have styled all of our content and mapped these styles to our document structure.
 
 ## What is XML?

@@ -790,30 +790,39 @@
 
 <p>For example this is acceptable in HTML5:</p>
 
-<div class="language-html highlighter-rouge"><pre class="codehilite"><code><span class="nt">&lt;h1&gt;</span>This is a heading
+<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre><span class="nt">&lt;h1&gt;</span>This is a heading
 <span class="nt">&lt;p&gt;</span>This is a paragraph
-</code></pre>
+</pre></td></tr></tbody></table>
+</div>
 </div>
 
 <p>eBooks made to ePub3 standard use HTML but the markup is very strict. In fact the markup should conform to <code class="highlighter-rouge">XML</code> standards and this means that the format is actually <code class="highlighter-rouge">XHTML5</code>.</p>
 
 <p>For the above markup snippet to conform to <code class="highlighter-rouge">XHTML</code> (and thus ePub3) it would need to be:</p>
 
-<div class="language-html highlighter-rouge"><pre class="codehilite"><code><span class="nt">&lt;h1&gt;</span>This is a heading<span class="nt">&lt;/h1&gt;</span>
+<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre><span class="nt">&lt;h1&gt;</span>This is a heading<span class="nt">&lt;/h1&gt;</span>
 <span class="nt">&lt;p&gt;</span>This is a paragraph<span class="nt">&lt;/p&gt;</span>
-</code></pre>
+</pre></td></tr></tbody></table>
+</div>
 </div>
 
 <p>In order to validate XHTML you need to name the file with the XHTML extension; thus <code class="highlighter-rouge">recipe.xhtml</code></p>
 
 <p>There are also some very specific items that need to go at the head of an XHTML file. Here are the required items:</p>
 
-<div class="language-html highlighter-rouge"><pre class="codehilite"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1999/xhtml"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;head&gt;</span>
 <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">/&gt;</span>
 and so on
-</code></pre>
+</pre></td></tr></tbody></table>
+</div>
 </div>
 
 <p>As you can see, although the doctype is <code class="highlighter-rouge">html</code>, the namespace (<code class="highlighter-rouge">xmlns</code>) is using the one from the World Wide Web consortium for <code class="highlighter-rouge">xhtml</code>.</p>

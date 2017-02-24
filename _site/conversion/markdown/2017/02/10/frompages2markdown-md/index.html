@@ -809,10 +809,13 @@
 <p>Export from pages to Word (make sure to use docx - the default)
 Locate the file just exported in the finder and change directory to there.</p>
 
-<div class="language-terminal highlighter-rouge"><pre class="codehilite"><code><span class="w">$ </span><span class="nc">cd</span><span class="kv"> documents/myfles
+<div class="language-terminal highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="w">$ </span><span class="nc">cd</span><span class="kv"> documents/myfles
 </span><span class="w">$ </span><span class="nc">pandoc</span><span class="kv"> --wrap=none --extract-media=images somefile.docx
 </span> -o mynewfile.md
-</code></pre>
+</pre></td></tr></tbody></table>
+</div>
 </div>
 <p>Here is an explanation of this terminal command:</p>
 
@@ -832,12 +835,17 @@ Locate the file just exported in the finder and change directory to there.</p>
 <h2 id="the-markdown-file">The Markdown file</h2>
 <p>The markdown file will now need some editing. Here is what a portion looks like:</p>
 
-<div class="language-markdown highlighter-rouge"><pre class="codehilite"><code>Extracting XML from InDesign depends on a number of factors, but if we
+<div class="language-markdown highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="code"><pre>Extracting XML from InDesign depends on a number of factors, but if we
 successfully achieve our goal then we can be pleased that we have styled
 all of our content and mapped these styles to our document structure.
 <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"_Toc1"</span> <span class="na">class=</span><span class="s">"anchor"</span><span class="nt">&gt;&lt;/span&gt;</span>What is XML and why do we want
 it?
-</code></pre>
+</pre></td></tr></tbody></table>
+</div>
 </div>
 <p>The reason that we are not seeing markdown headings with <code class="highlighter-rouge">##</code> is because our pages document did not have named styles that could be converted. Not perfect, but we know that any span tag like this one is a heading, so we simply use a GREP search and replace like this:</p>
 

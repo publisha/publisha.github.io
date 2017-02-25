@@ -515,7 +515,7 @@ Then we add the following javascript files at the time we export the ePUB3:
 
 ## Adding Content with Javascript
 
-jQuery also gives us an easy way to add content to pages.
+jQuery also gives us an easy way to add content to pages.[^4]
 
 For example, suppose we want to take a heading and the first paragraph that follows it, and wrap this in a <div> so that we can apply a style to the whole block. We can create a javascript file that includes the following:
 
@@ -573,3 +573,5 @@ Until that time — have fun!
 [^2]: You might consider using a Git repository for this process so that you edits can be shared
 
 [^3]: The guide section may be required when you convert this ePub to the MOBI format for the Kindle
+
+[^4]: Some features of InDesign (such as animation) will automatically generate JavaScript inside the exported ePub. More on this topic when we explore the fixed-layout eBook.

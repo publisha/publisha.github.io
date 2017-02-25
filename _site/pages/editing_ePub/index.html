@@ -825,7 +825,7 @@ code {
 
 <p>Some text editors have the functionality to edit the components of the ePUB package even without unpacking. BBedit is the one I have used, but Oxygen XML will also give you that ability. Oxygen is more sophisticated and expensive; it will allow you to remove and add files into the package, so if you wanted replace a picture, Oxygen will do it!</p>
 
-<p>These days I use Atom as my text editor and so, although you can view the insides of the ePub package, you need to unpack before editing.</p>
+<p>These days I use <em>Atom</em> as my text editor and so, although you can view the insides of the ePub package, you need to unpack before editing.</p>
 
 <p><a href="/images/2017/02/editing_ePub/atomfilelist.png"><img src="/images/2017/02/editing_ePub/atomfilelist.png" alt="Here we see the files within the ePub package using Atom" /></a></p>
 
@@ -839,7 +839,7 @@ code {
 
 <h2 id="repacking">Repacking</h2>
 
-<p>To achieve this re-packing correctly we need to use a script that will add items back into a new ePUB package. If you are working within the MAC environment then I suggest downloading <em>ePub Zip/Unzip</em> - a script that will, not only, unpack the ePUB but repackage after editing. On a PC (Windows), this is slightly more complex; you will need first to rename the file, with .zip instead of .epub. Then use an unzip utility, to extract the files. You can then edit the components, but to repack, you cannot simply re-ZIP. You need to download a utility called <em>ePubPack.</em></p>
+<p>To achieve this re-packing correctly we need to use a script that will add items back into a new ePUB package. If you are working within the MAC environment then I suggest downloading <em>ePub Zip/Unzip</em> - a script that will, not only, unpack the ePUB but repackage after editing. On a PC (Windows), this is slightly more complex; you will need first to rename the file, with .zip instead of .epub. Then use an unzip utility, to extract the files. You can then edit the components, but to repack, you cannot simply re-ZIP. Windows users need to download a utility called <em>ePubPack.</em></p>
 
 <h3 id="mac-users">MAC Users</h3>
 
@@ -880,14 +880,14 @@ code {
 <p>The reason for this error is that InDesign does not export the rules (lines) above or below the paragraphs from the paragraph style settings, and our tex is white so it disappears.</p>
 
 <blockquote>
-  <p><strong>Version alert:</strong> Since InDesign 2015 edition it is possible to use <code class="highlighter-rouge">background Shading</code> in a paragraph style, so we might us this instead of offsetting a paragraph rule.</p>
+  <p><strong>Version alert:</strong> Since InDesign 2015 edition it is possible to use <code class="highlighter-rouge">Background Shading</code> in a paragraph style, so we might us this instead of offsetting a paragraph rule.</p>
 </blockquote>
 
 <p>The correction we need to make is in</p>
 
 <p><code class="highlighter-rouge">idGeneratedStyles_0.css</code></p>
 
-<p>In our Export Tagging setting we configured the paragraph style called act to use the tag - h1 with a class name of ‘act’. We then look for and find this block in the CSS:</p>
+<p>In our Export Tagging setting we configured the paragraph style called act to use the tag - h1 with a class name of ‘act’. We then look for and find this block in the CSS.</p>
 
 <p><a href="/images/2017/02/editing_ePub/image4.png"><img src="/images/2017/02/editing_ePub/image4.png" alt="The setting for the paragraph rule that gives a background to the text." /></a></p>
 
@@ -895,7 +895,7 @@ code {
 
 <p><code class="highlighter-rouge">background-color:#a196a0;</code></p>
 
-<p>I grabbed the hexadecimal value of the colour from InDesign.</p>
+<p>I grabbed the hexadecimal value of the colour from the swatch in InDesign.</p>
 
 <p>We can make adjustments to the height of this block of colour by adjusting the leading – in CSS this is the line-height:</p>
 
@@ -911,7 +911,7 @@ code {
 
 <h3 id="roundtrip-to-indesign">Roundtrip to InDesign</h3>
 
-<p>If we need to return to InDesign then we will lose these corrections that we make to the CSS, because InDesign will generate the same ones again. We have 2 approaches to solving this:</p>
+<p>If we need to return to InDesign then we will lose these corrections that we make to the CSS, because InDesign will generate the same ones again.</p>
 
 <p>Once you have made the corrections that solve the style and display issues, then you can take a copy of the CSS file and save this somewhere in your working files with a logical name (mine is dream.css). The next time that you export the ePUB, we can then select this external CSS file (see the CSS panel when exporting), and this will be added in the head of each XHTML file.</p>
 
@@ -983,7 +983,7 @@ code {
 
 <p>In our print book we have 2 columns in the introduction text and we have set this to be justified.</p>
 
-<p><a href="/images/2017/02/editing_ePub/image10.png"><img src="/images/2017/02/editing_ePub/image10.png" alt="preint version shows 2 coloumns" /></a></p>
+<p><a href="/images/2017/02/editing_ePub/image10.png"><img src="/images/2017/02/editing_ePub/image10.png" alt="print version shows 2 coloumns" /></a></p>
 
 <p>When this arrives in the ePUB (reflowable), we find only one column but the text is justified. Maybe we are happy with this, but if not we need to change the CSS in the body text rule from:</p>
 
@@ -995,9 +995,9 @@ code {
 
 <p>If you delete the line altogether, the user will control the text alignment, in their eReader software settings.</p>
 
-<p>If the intention is to go back to InDesign in this workflow / editorial cycle, then you should avoid editing anything other than the CSS. Your objective (wherever possible) is to avoid editing the XHTML pages. Once you edit any other files inside the ePUB package, then roundtrip to InDesign will be difficult.</p>
+<p>If the intention is to go back to InDesign in this workflow / editorial cycle, then you should avoid editing anything other than the CSS. Your objective (wherever possible) is to avoid editing the XHTML pages. Once you edit any other files inside the ePUB package, then roundtrip to InDesign will be very difficult.</p>
 
-<p>If your workflow requires that you edit the ePUB in order to consult the other members of your creative team or even a client, then you should copy and record the changes that you make so you can wind these changes back int a new version.</p>
+<p>If your workflow requires that you edit the ePUB in order to consult the other members of your creative team or even a client, then you should copy and record the changes that you make so you can wind these changes back int a new version.<sup id="fnref:2"><a href="#fn:2" class="footnote">1</a></sup></p>
 
 <p>The other modifications that you may need to make are as follows.</p>
 
@@ -1080,7 +1080,7 @@ code {
 
 <h2 id="the-guide-section">The Guide Section</h2>
 
-<p>You will notice that under the spine items you will find the Guide section and this is only here for backwards compatibility.</p>
+<p>You will notice that under the spine items you will find the Guide section and this is only here for backwards compatibility.<sup id="fnref:3"><a href="#fn:3" class="footnote">2</a></sup></p>
 
 <p>The Guide Section of the package OPF file provides a similar function to the Landmarks section of the ePUB3 navigation document (see later), but harks back to the ePUB2 format.</p>
 
@@ -1124,13 +1124,13 @@ code {
 </div>
 </div>
 
-<p>InDesign has put this line into the <code class="highlighter-rouge">content.opf</code> file at the same time as encrypting the fonts that you chose in your paragraph styles. There could be a situation where you want to add this line in to the <code class="highlighter-rouge">&lt;metadata&gt;</code> block. This would be a situation where you are only targeting the Apple devices and you want to use some fonts that are present on the iPad/iOS devices<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. You don’t need to embed those fonts but you do need to switch on the ‘specified fonts’. So, if you plan to use the fonts that are available on the iOS systems, then do NOT tell InDesign to embed the fonts (when you export, but rather, add this line into the opf file.</p>
+<p>InDesign has put this line into the <code class="highlighter-rouge">content.opf</code> file at the same time as encrypting the fonts that you chose in your paragraph styles. There could be a situation where you want to add this line in to the <code class="highlighter-rouge">&lt;metadata&gt;</code> block. This would be a situation where you are only targeting the Apple devices and you want to use some fonts that are present on the iPad/iOS devices<sup id="fnref:1"><a href="#fn:1" class="footnote">3</a></sup>. You don’t need to embed those fonts but you do need to switch on the ‘specified fonts’. So, if you plan to use the fonts that are available on the iOS systems, then do NOT tell InDesign to embed the fonts (when you export, but rather, add this line into the opf file.</p>
 
 <h3 id="let-me-offer-an-example">Let me offer an example.</h3>
 
 <p>So, let’s say that you decide to use avenir-next.</p>
 
-<p>So, build your ePUB with InDesign, with that font used in the paragraph styles.</p>
+<p>Build your ePUB with InDesign, with that font used in the paragraph styles.</p>
 
 <p>When you export the ePUB, you can opt to NOT embed the fonts. Then, you will need to add the above line into the content.opf file.</p>
 
@@ -1381,7 +1381,7 @@ code {
 
 <h2 id="adding-content-with-javascript">Adding Content with Javascript</h2>
 
-<p>jQuery also gives us an easy way to add content to pages.</p>
+<p>jQuery also gives us an easy way to add content to pages.<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup></p>
 
 <p>For example, suppose we want to take a heading and the first paragraph that follows it, and wrap this in a &lt;div&gt; so that we can apply a style to the whole block. We can create a javascript file that includes the following:</p>
 
@@ -1452,8 +1452,17 @@ code {
 
 <div class="footnotes">
   <ol>
+    <li id="fn:2">
+      <p>You might consider using a Git repository for this process so that you edits can be shared&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>The guide section may be required when you convert this ePub to the MOBI format for the Kindle&nbsp;<a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
     <li id="fn:1">
       <p>The fonts that are available on the iOS devices are listed here: <em><a href="http://iosfonts.com">iosfonts.com</a></em>&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>Some features of InDesign (such as animation) will automatically generate JavaScript inside the exported ePub. More on this topic when we explore the fixed-layout eBook.&nbsp;<a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

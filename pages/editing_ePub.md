@@ -41,7 +41,7 @@ When we have created a reflowable ePub by exporting from InDesign, we may find t
 
 Some text editors have the functionality to edit the components of the ePUB package even without unpacking. BBedit is the one I have used, but Oxygen XML will also give you that ability. Oxygen is more sophisticated and expensive; it will allow you to remove and add files into the package, so if you wanted replace a picture, Oxygen will do it!
 
-These days I use Atom as my text editor and so, although you can view the insides of the ePub package, you need to unpack before editing.
+These days I use *Atom* as my text editor and so, although you can view the insides of the ePub package, you need to unpack before editing.
 
 [![Here we see the files within the ePub package using Atom](/images/2017/02/editing_ePub/atomfilelist.png)](/images/2017/02/editing_ePub/atomfilelist.png)
 
@@ -55,7 +55,7 @@ There are some particular features of the way this file is compressed into a pac
 
 ## Repacking
 
-To achieve this re-packing correctly we need to use a script that will add items back into a new ePUB package. If you are working within the MAC environment then I suggest downloading *ePub Zip/Unzip* - a script that will, not only, unpack the ePUB but repackage after editing. On a PC (Windows), this is slightly more complex; you will need first to rename the file, with .zip instead of .epub. Then use an unzip utility, to extract the files. You can then edit the components, but to repack, you cannot simply re-ZIP. You need to download a utility called *ePubPack.*
+To achieve this re-packing correctly we need to use a script that will add items back into a new ePUB package. If you are working within the MAC environment then I suggest downloading *ePub Zip/Unzip* - a script that will, not only, unpack the ePUB but repackage after editing. On a PC (Windows), this is slightly more complex; you will need first to rename the file, with .zip instead of .epub. Then use an unzip utility, to extract the files. You can then edit the components, but to repack, you cannot simply re-ZIP. Windows users need to download a utility called *ePubPack.*
 
 ### MAC Users
 
@@ -95,13 +95,13 @@ You will remember from our previous chapter that we found that an offer rule tha
 
 The reason for this error is that InDesign does not export the rules (lines) above or below the paragraphs from the paragraph style settings, and our tex is white so it disappears.
 
-> **Version alert:** Since InDesign 2015 edition it is possible to use `background Shading` in a paragraph style, so we might us this instead of offsetting a paragraph rule.
+> **Version alert:** Since InDesign 2015 edition it is possible to use `Background Shading` in a paragraph style, so we might us this instead of offsetting a paragraph rule.
 
 The correction we need to make is in
 
 `idGeneratedStyles_0.css`
 
-In our Export Tagging setting we configured the paragraph style called act to use the tag - h1 with a class name of ‘act’. We then look for and find this block in the CSS:
+In our Export Tagging setting we configured the paragraph style called act to use the tag - h1 with a class name of ‘act’. We then look for and find this block in the CSS.
 
 [![The setting for the paragraph rule that gives a background to the text.](/images/2017/02/editing_ePub/image4.png)](/images/2017/02/editing_ePub/image4.png)
 
@@ -109,7 +109,7 @@ We need to add the following line:
 
 `background-color:#a196a0;`
 
-I grabbed the hexadecimal value of the colour from InDesign.
+I grabbed the hexadecimal value of the colour from the swatch in InDesign.
 
 We can make adjustments to the height of this block of colour by adjusting the leading – in CSS this is the line-height:
 
@@ -125,7 +125,7 @@ If you want to view one of your XHTML files when open in Atom, you should obtain
 
 ### Roundtrip to InDesign
 
-If we need to return to InDesign then we will lose these corrections that we make to the CSS, because InDesign will generate the same ones again. We have 2 approaches to solving this:
+If we need to return to InDesign then we will lose these corrections that we make to the CSS, because InDesign will generate the same ones again.
 
 Once you have made the corrections that solve the style and display issues, then you can take a copy of the CSS file and save this somewhere in your working files with a logical name (mine is dream.css). The next time that you export the ePUB, we can then select this external CSS file (see the CSS panel when exporting), and this will be added in the head of each XHTML file.
 
@@ -184,7 +184,7 @@ span.reference {
 
 In our print book we have 2 columns in the introduction text and we have set this to be justified.
 
-[![preint version shows 2 coloumns](/images/2017/02/editing_ePub/image10.png)](/images/2017/02/editing_ePub/image10.png)
+[![print version shows 2 coloumns](/images/2017/02/editing_ePub/image10.png)](/images/2017/02/editing_ePub/image10.png)
 
 When this arrives in the ePUB (reflowable), we find only one column but the text is justified. Maybe we are happy with this, but if not we need to change the CSS in the body text rule from:
 
@@ -196,9 +196,9 @@ to
 
 If you delete the line altogether, the user will control the text alignment, in their eReader software settings.
 
-If the intention is to go back to InDesign in this workflow / editorial cycle, then you should avoid editing anything other than the CSS. Your objective (wherever possible) is to avoid editing the XHTML pages. Once you edit any other files inside the ePUB package, then roundtrip to InDesign will be difficult.
+If the intention is to go back to InDesign in this workflow / editorial cycle, then you should avoid editing anything other than the CSS. Your objective (wherever possible) is to avoid editing the XHTML pages. Once you edit any other files inside the ePUB package, then roundtrip to InDesign will be very difficult.
 
-If your workflow requires that you edit the ePUB in order to consult the other members of your creative team or even a client, then you should copy and record the changes that you make so you can wind these changes back int a new version.
+If your workflow requires that you edit the ePUB in order to consult the other members of your creative team or even a client, then you should copy and record the changes that you make so you can wind these changes back int a new version.[^2]
 
 The other modifications that you may need to make are as follows.
 
@@ -265,7 +265,7 @@ Here is my spine section:
 
 ## The Guide Section
 
-You will notice that under the spine items you will find the Guide section and this is only here for backwards compatibility.
+You will notice that under the spine items you will find the Guide section and this is only here for backwards compatibility.[^3]
 
 The Guide Section of the package OPF file provides a similar function to the Landmarks section of the ePUB3 navigation document (see later), but harks back to the ePUB2 format.
 
@@ -305,7 +305,7 @@ InDesign has put this line into the `content.opf` file at the same time as encry
 
 So, let’s say that you decide to use avenir-next.
 
-So, build your ePUB with InDesign, with that font used in the paragraph styles.
+Build your ePUB with InDesign, with that font used in the paragraph styles.
 
 When you export the ePUB, you can opt to NOT embed the fonts. Then, you will need to add the above line into the content.opf file.
 
@@ -569,3 +569,7 @@ Until that time — have fun!
 
 
 [^1]: The fonts that are available on the iOS devices are listed here: *[iosfonts.com](http://iosfonts.com)*
+
+[^2]: You might consider using a Git repository for this process so that you edits can be shared
+
+[^3]: The guide section may be required when you convert this ePub to the MOBI format for the Kindle

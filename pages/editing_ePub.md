@@ -3,8 +3,7 @@ layout: page
 title: Editing inside the ePUB package
 published: true
 categories: [ePub]
-tags: [ePub]
-code: wrap
+tags: [ePub, InDesign, CSS]
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

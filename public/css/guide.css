@@ -311,14 +311,22 @@ section.categories {
 .codehilite table {
   /*border:4px solid red;*/
   width:100%;
+  margin:0;
+}
+
+.codehilite {
+  width:100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
 }
 
 code,
 pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
 }
-@@media screen {
-}
+@media screen {
+
 code {
   padding: .25em .5em;
   font-size: 85%;
@@ -328,8 +336,8 @@ code {
   page-break-inside: avoid;
 }
 }
-@@media print {
-}
+@media print {
+
 code {
   page-break-inside: avoid;
 }
@@ -345,7 +353,8 @@ pre {
   /*white-space: pre-wrap;*/
   /*word-break: break-all;*/
   /*word-wrap: break-word;*/
-  background-color: #f9f9f9;
+  /*background-color: #f9f9f9;
+  background-color: black;*/
 }
 
 pre code {
@@ -454,6 +463,7 @@ a:focus {
   /*word-break: break-all;*/
 }
 }
+
 
 a.video {
 position:relative;

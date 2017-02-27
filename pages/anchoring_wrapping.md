@@ -53,7 +53,7 @@ Avoiding this is achieved by **anchoring the image** in it’s context.
 
 Once we decide where the image should go we can anchor the image (previously placed on the pasteboard), by dragging the little coloured square seen top right of the image frame.
 
-> **Note: **it is blue because the layer is coloured blue - it could be a different colour, if the layer is set to a different colour in the layers setting.
+> **Note:** It is blue because the layer is coloured blue - it could be a different colour, if the layer is set to a different colour in the layers setting.
 
 [![Here we see the little square (blue if the layer is coloured as that)](/images/2017/02/anchor_wrap/image3.png)](/images/2017/02/anchor_wrap/image3.png)
 

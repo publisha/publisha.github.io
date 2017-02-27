@@ -49,7 +49,7 @@ When you place an image on the page and move the text to accommodate that image,
 
 Avoiding this is achieved by **anchoring the image** in it’s context.
 
-> **Note: **Anchoring images (and other objects) at the appropriate point in the text, is crucial when you intend to create a reflowable eBook from InDesign.
+> **Note:** Anchoring images (and other objects) at the appropriate point in the text, is crucial when you intend to create a reflowable eBook from InDesign.
 
 Once we decide where the image should go we can anchor the image (previously placed on the pasteboard), by dragging the little coloured square seen top right of the image frame.
 
@@ -95,6 +95,6 @@ You will notice that the text wrap does not behave as you might expect *above* t
 
 If you have a design that requires an image opposite the text then you may need to anchor at the beginning of the line opposite. The image here shows an example.
 
-> **Note: **It is not possible to anchor an image in this way unless your pages are arranged as spreads. You cannot anchor to another page that is not part of the spread.
+> **Note:** It is not possible to anchor an image in this way unless your pages are arranged as spreads. You cannot anchor to another page that is not part of the spread.
 
 [![Anchoring an image to be used on the opposite page in the spread.](/images/2017/02/anchoropposite.png)](/images/2017/02/anchoropposite.png)

@@ -4,6 +4,7 @@ title: Anchoring and Wrapping
 published: true
 tags: InDesign
 categories: [InDesign]
+screencast: [anchoringimages]
 ---
 # Placing images - Anchoring and wrapping
 

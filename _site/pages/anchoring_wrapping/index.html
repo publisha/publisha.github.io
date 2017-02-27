@@ -821,13 +821,17 @@
   <!-- <h1 class="page-title">Anchoring and Wrapping</h1> -->
   <h1 id="placing-images---anchoring-and-wrapping">Placing images - Anchoring and wrapping</h1>
 
-<p>In this page we look at how to ‘place’ images on the page, and the issues that we might encounter along the way.</p>
+<p>We look at how to ‘place’ images on the page, and the issues that we might encounter along the way.</p>
 
 <p>Images can be put on the InDesign pages in a a number of ways, but before we explore these methods, we need to prepare our workspace and the images that we intend to use.</p>
 
 <h2 id="links">Links</h2>
 
 <p>It is most likely that our images will be linked to the InDesign document, so it is important to be working within a certain folder structure and to have saved the InDesign document before we begin the process of adding the pictures.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> I do not recommend pasting images into InDesign, because when you use this method, the image will become embedded and it will be very difficult to edit the original unless you use a script to extract.</p>
+</blockquote>
 
 <p>InDesign, maintains a link to the image files, and so we should try to build a folder structure that places the images below the parent InDesign file. This way, we can carry the parent folder to another location when required.</p>
 
@@ -847,11 +851,11 @@
 
 <p>When you place an image into InDesign is is good practice to switch on the ‘Show Import Options’, in case you want to take limited layers from Photoshop images.</p>
 
-<p><a href="/images/2017/02/anchor_wrap/image1.png"><img src="/images/2017/02/anchor_wrap/image1.png" alt="put some text here" /></a></p>
+<p><a href="/images/2017/02/anchor_wrap/image1.png"><img src="/images/2017/02/anchor_wrap/image1.png" alt="If you tick on 'Show Import Options' then with some images you can control various aspects before bringing to InDesign " /></a></p>
 
 <p>I advise placing images on the pasteboard first, so that you can make modifications before you place on the page.</p>
 
-<p><a href="/images/2017/02/anchor_wrap/image2.png"><img src="/images/2017/02/anchor_wrap/image2.png" alt="put some text here" /></a></p>
+<p><a href="/images/2017/02/anchor_wrap/image2.png"><img src="/images/2017/02/anchor_wrap/image2.png" alt="Image placed on the pasteboard before placing on a page" /></a></p>
 
 <h2 id="anchoring-images">Anchoring Images</h2>
 
@@ -861,38 +865,66 @@
 
 <p>Avoiding this is achieved by <strong>anchoring the image</strong> in it’s context.</p>
 
-<p>Once we decide where the image should go we can anchor the image (previously placed on the pasteboard), by dragging the little blue square seen top right of the image frame.</p>
+<blockquote>
+  <p><strong>Note:</strong> Anchoring images (and other objects) at the appropriate point in the text, is crucial when you intend to create a reflowable eBook from InDesign.</p>
+</blockquote>
 
-<p><a href="/images/2017/02/anchor_wrap/image3.png"><img src="/images/2017/02/anchor_wrap/image3.png" alt="put some text here" /></a></p>
+<p>Once we decide where the image should go we can anchor the image (previously placed on the pasteboard), by dragging the little coloured square seen top right of the image frame.</p>
 
-<p>We need to drag this blue square to the end of a paragraph. We cannot (or should not) anchor in the middle of a line or word.</p>
+<blockquote>
+  <p><strong>Note:</strong> It is blue because the layer is coloured blue - it could be a different colour, if the layer is set to a different colour in the layers setting.</p>
+</blockquote>
+
+<p><a href="/images/2017/02/anchor_wrap/image3.png"><img src="/images/2017/02/anchor_wrap/image3.png" alt="Here we see the little square (blue if the layer is coloured as that)" /></a></p>
+
+<p>We need to drag this coloured square to the end of a paragraph. We cannot (or should not) anchor in the middle of a line or word.</p>
 
 <p>Once we let go of the mouse we may find that the image jumps to an unexpected position. This because we need to set certain parameters for this anchored image, but just like paragraph and character styles we will also need to make an object style to fulfil the desired relationship to the text.</p>
 
 <h2 id="anchored-object-options">Anchored Object Options</h2>
 
-<p><a href="/images/2017/02/anchor_wrap/image4.png"><img src="/images/2017/02/anchor_wrap/image4.png" alt="put some text here" /></a></p>
+<p><a href="/images/2017/02/anchor_wrap/image4.png"><img src="/images/2017/02/anchor_wrap/image4.png" alt="Anchored object options" /></a></p>
 
 <p>The position needs to be a custom one rather than inline and you will see in this image that the object has a top centre reference point and the position reference point is also centre. We can move the image into the desired place relative to the anchor point in the text, but we must also set up the text wrap options.</p>
 
-<p><a href="/images/2017/02/anchor_wrap/image5.png"><img src="/images/2017/02/anchor_wrap/image5.png" alt="put some text here" /></a></p>
+<p><a href="/images/2017/02/anchor_wrap/image5.png"><img src="/images/2017/02/anchor_wrap/image5.png" alt="The text wrap options" /></a></p>
 
 <h2 id="object-styles">Object Styles</h2>
 
-<p>We can (and should) use Object Styles wherever possible, so that we can use seeing consistently throughout the publication. In the image here, you can see that the selected object uses an object style called <em>scene_image</em> because this example book design uses an image to illustrate where the scene takes place.</p>
+<p>We can (and should) use Object Styles wherever possible, so that we can use seeing consistently throughout the publication. In the image here, you can see that the selected object uses an object style called <strong>scene_image</strong> because this example book design uses an image to illustrate where the scene takes place.</p>
 
-<p><a href="/images/2017/02/anchor_wrap/image6.png"><img src="/images/2017/02/anchor_wrap/image6.png" alt="put some text here" /></a></p>
+<p><a href="/images/2017/02/anchor_wrap/image6.png"><img src="/images/2017/02/anchor_wrap/image6.png" alt="Anchored to the end of a line of text" /></a></p>
 
 <p>You may also notice that we can confirm that the image is anchored by the ‘anchor’ symbol that has now replaced the little blue square. Also, because we have ‘Show Text Threads’ the link between the image and the anchor point is indicated with a dashed line.</p>
 
 <p>Perhaps we want a different style and placement for an image within the play; an image that has a shape and bleeds off the page.</p>
 
-<p><a href="/images/2017/02/anchor_wrap/image7.png"><img src="/images/2017/02/anchor_wrap/image7.png" alt="put some text here" /></a></p>
+<p><a href="/images/2017/02/anchor_wrap/image7.png"><img src="/images/2017/02/anchor_wrap/image7.png" alt="A shaped image that is bled off the page" /></a></p>
 
 <p>We can adjust the parameters and then create a style for this object. We can also make the position relative to the spine; a kind of mirror alignment.</p>
 
-<p><a href="/images/2017/02/anchor_wrap/image8.png"><img src="/images/2017/02/anchor_wrap/image8.png" alt="put some text here" /></a></p>
+<p><a href="/images/2017/02/anchor_wrap/image8.png"><img src="/images/2017/02/anchor_wrap/image8.png" alt="Here we see the results of this text wrapping. " /></a></p>
 
+<h2 id="text-wrap-and-anchoring">Text wrap and Anchoring</h2>
+
+<p>There are some particular aspects of text wrap that are peculiar to objects that are anchored.</p>
+
+<p>You will notice that the text wrap does not behave as you might expect <em>above</em> the anchor point in the text. For this reason you must only expect to wrap below the anchor point. If you have encountered this issue, then you will need to <em>release</em> the object from anchoring and then re-anchor above the text that you wish to wrap around the image.</p>
+
+<h2 id="anchoring-across-page-spreads">Anchoring across Page spreads</h2>
+
+<p>If you have a design that requires an image opposite the text then you may need to anchor at the beginning of the line opposite. The image here shows an example.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> It is not possible to anchor an image in this way unless your pages are arranged as spreads. You cannot anchor to another page that is not part of the spread.</p>
+</blockquote>
+
+<p><a href="/images/2017/02/anchoropposite.png"><img src="/images/2017/02/anchoropposite.png" alt="Anchoring an image to be used on the opposite page in the spread." /></a></p>
+
+
+  
+<p><a href="/screencasts/anchoringimages">There is a Screencast that may help <i style="vertical-align:middle;" title="Show this screencast" class="fa fa-youtube-play fa-2x" aria-hidden="true"> </i></a></p>
+  
 </div>
 
         

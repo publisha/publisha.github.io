@@ -1,9 +1,10 @@
 ---
 layout: page
+Date: 2017-02-28
 title: Enhancing an eBook with interactivity, multimedia and animation
-published: false
+published: true
 tags: InDesign
-categories: [InDesign, Typography]
+categories: [InDesign, ePub]
 ---
 # Enhancing an eBook with interactivity, multimedia and animation
 
@@ -14,31 +15,29 @@ There are some ways we can creatively enhance the eBook version to provide some 
 -   **Multimedia**
     We can add audio and video inline with the text
     Audio can be used to provide a soundtrack (music and sound while we read)
-    Audio can be used to synchronise with text (fixed-layout only)
+    Audio narration can be played back to synchronise with text (fixed-layout only)
 
 -   **Non-linear content**
-    Meaning items that are not in the flow of the text but will appear on on a hyperlink
+    Items that are not in the flow of the text but can appear through a hyperlink
 
 -   **Popup notes**
-    We can convert footnotes into popup notes. We can also show and hide objects that include text and image
+    We can convert footnotes into popup notes in a reflowable ePub. We can also show and hide objects that include text and image.
 
 -   **Animation**
-    InDesign has some inbuilt features that can deliver move and deliver objects dynamically, on page open or activated by interaction with buttons
+    InDesign has some inbuilt features that can  move and deliver objects dynamically, on page open or activated by interaction with buttons
 
 -   **Read Aloud**
-    Although complex to build and implement, it is possible to have text synchronised with and audio narration.
+    Although complex to build and implement, it is possible to have text synchronised with and audio narration. This only possible in a fixed layout ePub.
 
 ## Adding Multimedia
 
 In a reflowable eBook we can add audio and video to the pages, but this content will need to be placed and anchored just as we have learnt to do with the images. In the context of our example Shakespeare play, we could place a video before the play begins.
 
-I am using Max Reinhardt’s 1935 production of _A Midsummer Night’s Dream_ with Mickey Rooney as Puck.
+In the example I am using Max Reinhardt’s 1935 production of _A Midsummer Night’s Dream_ with Mickey Rooney as Puck.
 
 ## File Size
 
-It is worth pointing out that the video mentioned above will add 470MB to the eBook, so we should consider this carefully before add the complete video. There is software available to compress video down to a smaller file size and you should take advantage of these. Milo Video Converter for the MAC is useful and can be found at *http://www.mirovideoconverter.com*.
-
-Adobe Creative Cloud users can also try the Media Encoder to reduce the file size.
+It is worth pointing out that the video mentioned above will add 470MB to the eBook, so we should consider this carefully before we add the complete video. There is software available to compress video down to a smaller file size and you should take advantage of these. [http://www.mirovideoconverter.com](Milo Video Converter) for the MAC is useful for this. Adobe Creative Cloud users can also try the Media Encoder to reduce the file size.
 
 ## Placing the Video
 
@@ -86,7 +85,7 @@ As of this writing, the read aloud feature whereby audio can be synchronised to 
 
 If we use the current method that InDesign provides for exporting the the ePUB(fixed-layout) form, then each word in the HTML is marked-up with a span tag. Now, actually, this is exactly what we need for read-aloud, but then we are committed to highlight every word and also analyse our audio to pick out every word. We will find it very difficult to change the HTML markup to tag each line instead.
 
-The basic principle is that each word, line or paragraph needs to relate to a time sequence within a longer audio file. A SMIL (Synchronized Multimedia Integration Language) file is constructed so as to mirror the text that is then marked up with the appropriate tags that will tell the text on screen what to highlight as the audio plays.
+The basic principle is that each word spoken and written needs to relate to a time sequence within a longer audio file. A SMIL (Synchronized Multimedia Integration Language) file is constructed so as to mirror the text that is then marked up with the appropriate tags that will tell the text on screen what to highlight as the audio plays.
 
 Building something like this by hand coding would be virtually impossible for the whole of the play, and would also depend on the level of granularity that you want to be highlighted; word, line, sentence, or paragraph etc.
 
@@ -163,26 +162,6 @@ and then we build the SMIL file with some GREP, giving us this:
 </smil>
 ```
 
-Finally we need to add the audio and the SMIL file into the ePUB package and then make sure that they are both included in the manifest section of the package.opf document.
-
-We should have this:
-
-```xml
-<item id="act1scene1_clip01.mp3" href="audio/act1scene1_clip01.mp3" media-type="audio/mpeg" />
-```
-
-and then add the SMIL file:
-
-```html
-<item id="act1scene1_clip01" href="dream-5.smil" media-type="application/smil+xml"/>
-```
-
-and modify the line for the XHTML file to include the media overlay switch:
-
-```html
-<item id="dream-5" href="dream-5.xhtml" media-type="application/xhtml+xml" media-overlay="act1scene1_clip01"/>
-```
-
 ## Additions to the package file (content.opf)
 
 We now need to make changes and additions to the content.opf file. The manifest needs to include the following:
@@ -232,7 +211,7 @@ We have seen how it is possible to convert footnotes into popup notes, when usin
 
 We can also build more advanced popups (or ‘out of flow’ content’) in the reflowable ePUB format, by adding ‘non-linear’ content. This method only has limited support, but is worth considering if your target device is Apple’s iPad.
 
-## Non-Linear Content
+## Non-Linear Content in a Reflowable ePub
 
 You can create a single HTML5 web page and then create a hyperlink within the text of your eBook. This web page will then display in an overlaid window. When adding this kind of content, there are some steps which must be followed:
 
@@ -250,7 +229,9 @@ Add the named file into the <spine> section but add the attribute ‘linear’
 <itemref idref="lambs" linear="no"/>
 ```
 
-It is also possible to add a PDF into the eBook and have a hyperlink open this file, but once again this must be set to ‘linear-“no”’
+It is also possible to add a PDF into the eBook and have a hyperlink open this file, but once again this must be set to ‘linear-“no”’.
+
+> **Note:** It is not currently possible to get non linear content to work in a fixed-layout ePub.
 
 ## Scrolling Text in the Fixed Layout ePUB
 
@@ -260,7 +241,7 @@ It is not possible to add scrolling text fields in a reflowable ePUB, but with t
 
 [![put some text here](/images/2017/02/enhanced_eBook/image13.png)](/images/2017/02/enhanced_eBook/image13.png)
 
-Here are the instructions to create a vertical scrolling text for the ePUB(Fixed Layout).
+## How to create a vertical scrolling text field
 
 Start a new document in InDesign with a very long vertical page size (maximum height is about 5000pixels). This really just depends on the length of your text!
 
@@ -272,7 +253,7 @@ In your target InDesign file create an empty text field wider that the one you c
 
 Select the text field and ‘Paste Into’ this selected text box.You can select all of this text and style accordingly.
 
-With the parent text box selected, create an Object Style and set the export tagging for HTML and ePUB to a <div> with a class of ‘scroller’.
+With the parent text box selected, create an Object Style and set the export tagging for HTML and ePUB to a `<div>` with a class of ‘scroller’.
 
 Create a CSS file with the following:
 
@@ -283,9 +264,6 @@ div.scroller {
 position: relative;
 border:1px solid silver;
 }
-```
-
-```css
 div.scroller > div {
 overflow: auto;
 overflow-y:scroll;
@@ -305,7 +283,7 @@ As an alternative to using InDesign to create a nested text field, you could als
 
 ## Adding Popup Information with InDesign for fixed-layout ePUB
 
-Any combination of text and image can be made into a button, and so to make a popup text, you can group a text box with a drawn speech bubble and then make this into a button. You then need a transparent frame laid over the text that you want to be interactive – this then becomes the button that performs the action. You can make the popup speech bubble also have an action to hide itself when clicked.
+Popup notes cannot be created from footnotes in the fixed layout ePub. However, any combination of text and image can be made into a button, and so to make a popup text, you can group a text box with a drawn speech bubble and then make this into a button. You then need a transparent frame laid over the text that you want to be interactive – this then becomes the button that performs the action. You can make the popup speech bubble also have an action to hide itself when clicked.
 
 [![Here we see an object that can be set to show on click](/images/2017/02/enhanced_eBook/image15.png)](/images/2017/02/enhanced_eBook/image15.png)
 

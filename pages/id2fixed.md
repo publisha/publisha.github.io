@@ -1,7 +1,7 @@
 ---
 layout: page
 title: InDesign to the Fixed Layout ePub
-published: false
+published: true
 tags: InDesign
 categories: [InDesign, ePub]
 # screencast: [anchoringimages]
@@ -26,13 +26,10 @@ This fixed-layout format can be considered almost the same as an interactive PDF
 
 InDesign Creative Cloud 2014 introduced the ability to export the ePUB3 as a fixed-format package, and we can use this method to create a perfect acceptable ePUB3. However, it should be pointed out that the controls for the way certain aspects work in the export process, are limited:
 
-- There is no way to include footnotes as popups (they will simply be at the bottom of the page - as in your print version)
--
-- You cannot use the Articles panel to order content, or even prevent some objects from exporting.
--
-- All items will be delivered as they appear, including the master page items.
--
-- Post editing the CSS is almost impossible, because every single word on the page is positioned with the CSS, so you dare not make any adjustments.
+ - There is no way to include footnotes as popups (they will simply be at the bottom of the page - as in your print version)
+ - You cannot use the Articles panel to order content, or even prevent some objects from exporting.
+ - All items will be delivered as they appear, including the master page items.
+ - Post editing the CSS is almost impossible, because every single word on the page is positioned with the CSS, so you dare not make any adjustments.
 
 ## InDesign export to ePUB (fixed layout)
 

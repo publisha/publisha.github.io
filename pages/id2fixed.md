@@ -136,4 +136,6 @@ The table of contents can be on the page and also as a logical TOC (provided in 
 
 When the heading item in the TOC is present in the cell of a table and the cell spans the spread (which then becomes a forced landscape page), the item is repeated in the TOC. You can only resolve this by editing the `toc.xhtml` file inside the ePub package.
 
-Other noted issue: if your print ready InDesign has objects outside the page, then if you export the fixed-layout as _Based on Document setup_ -  and you have 2 pages portrait as spread, then you may observe scrollbars in the eBook.
+### Export Options and Bleeding Objects
+
+If your print ready InDesign has objects outside the page (ie. bleed), then,  if you export the fixed-layout as _Based on Document setup_ -  and you have 2 pages portrait as spread, then you may observe scrollbars in the eBook. This will also give you scrollbars where an object is spread across a 2 page spread.

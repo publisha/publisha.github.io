@@ -14,8 +14,10 @@ categories: [InDesign, ePub]
 - [InDesign export to ePUB (fixed layout)](#indesign-export-to-epub-fixed-layout)
 - [Export ePUB (Fixed Layout)](#export-epub-fixed-layout)
 - [How Does our Fixed-Layout ePUB look?](#how-does-our-fixed-layout-epub-look)
+- [Some further Notes on the Fixed Layout ePub](#some-further-notes-on-the-fixed-layout-epub)
 
 </section><!-- /TOC -->
+
 # InDesign to the Fixed Layout ePub
 
 The fixed-layout format ePUB3 format provides a way to deliver every single page in your print book laid out just as it was in the print version.
@@ -102,3 +104,36 @@ Now have a look at the XHTML of one page in the eBook.
 [![The complexity of the markup is overwhelming](/images/2017/02/id2fxlePub/image3.png)](/images/2017/02/id2fxlePub/image3.png)
 
 If you look carefully, you will see that every word on the page is wrapped in a span tag with a position set through an inline style rule. This is the way that InDesign has exported the content and it works to precisely position all content on the page. The problem comes when you want to make any edits after-export. We have little hope of making any changes to the CSS other than possibly adding a background colour to the pages.
+
+## Some further Notes on the Fixed Layout ePub
+
+### Adding HTML to InDesign
+
+When adding local HTML to page in InDesign:
+ > If you are adding style or script information you may find that the ePub does not validate. There are 2 reasons for this:
+>   - you will find a tag 'object' wrapping the item that you added
+>   - InDesign export also adds 'scope' to the enclosing div.
+
+### The fix
+You will need to post edit the ePub to do the following:
+ - remove the `<object>` tag altogether
+ - add the value to the scope attribute like this:
+	  `scope='scope'`
+
+### Bookmarks
+Bookmarks or hyperlinks (and hyperlink destinations) are the way to make links between documents in a ‘book’. But, the bookmark or hyperlink destination needs to be made by selecting the **whole** heading
+
+### Fixed layout options from InDesign
+To make a fixed-layout landscape where the print book is portrait spreads, choose _Convert Spread to Landscape page_
+
+If you choose this option then you will fail if you try to convert to Kindle KF8 because KindleGen cannot locate the proper pages in the TOC.
+
+### Table of Contents
+
+The table of contents can be on the page and also as a logical TOC (provided in the UI of the eReader software). InDesign proves the option of more than one TOC, but the one you choose for the logical TOC would normally be provided on the pasteboard. The reason for this, is that you might want to make some edits to this before exporting to the ePub:
+
+#### Possible issues with the logical TOC
+
+When the heading item in the TOC is present in the cell of a table and the cell spans the spread (which then becomes a forced landscape page), the item is repeated in the TOC. You can only resolve this by editing the `toc.xhtml` file inside the ePub package.
+
+Other noted issue: if your print ready InDesign has objects outside the page, then if you export the fixed-layout as _Based on Document setup_ -  and you have 2 pages portrait as spread, then you may observe scrollbars in the eBook.

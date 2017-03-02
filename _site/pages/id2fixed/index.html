@@ -122,6 +122,12 @@
     
     
       
+        <a class="sidebar-nav-item" href="/pages/enhanced_eBook/">Enhancing an eBook with interactivity, multimedia and animation</a>
+      
+    
+    
+    
+      
     
     
     
@@ -227,6 +233,14 @@
     
      
           
+            <li><a href="/pages/enhanced_eBook/">Enhancing an eBook with interactivity, multimedia and animation <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+          
+        
+    
+     
+          
         
           
         
@@ -309,6 +323,12 @@
     
      
           
+        
+          
+        
+    
+     
+          
             <li><a href="/pages/htmlcssthebasics/">The basics of HTML and CSS <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
           
         
@@ -382,6 +402,12 @@
         
     
      
+          
+        
+    
+     
+          
+        
           
         
     
@@ -490,6 +516,12 @@
         
     
      
+          
+        
+          
+        
+    
+     
     
      
     
@@ -540,6 +572,12 @@
         
     
      
+          
+        
+    
+     
+          
+        
           
         
     
@@ -641,6 +679,12 @@
           
         
           
+        
+    
+     
+          
+        
+          
             <li><a href="/pages/id2xml/">Create XML from InDesign <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
           
         
@@ -698,6 +742,14 @@
      
           
             <li><a href="/pages/editing_ePub/">Editing inside the ePUB package <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+        
+          
+            <li><a href="/pages/enhanced_eBook/">Enhancing an eBook with interactivity, multimedia and animation <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
           
         
     
@@ -803,6 +855,12 @@
     
       
         
+          <a class="sidebar-nav-item" href="/pages/enhanced_eBook/">Enhancing an eBook with interactivity, multimedia and animation</a>
+        
+      
+    
+      
+        
           <a class="sidebar-nav-item" href="/pages/htmlcssthebasics/">The basics of HTML and CSS</a>
         
       
@@ -886,10 +944,12 @@
     <li><a href="#indesign-export-to-epub-fixed-layout">InDesign export to ePUB (fixed layout)</a></li>
     <li><a href="#export-epub-fixed-layout">Export ePUB (Fixed Layout)</a></li>
     <li><a href="#how-does-our-fixed-layout-epub-look">How Does our Fixed-Layout ePUB look?</a></li>
+    <li><a href="#some-further-notes-on-the-fixed-layout-epub">Some further Notes on the Fixed Layout ePub</a></li>
   </ul>
 
 </section>
 <!-- /TOC -->
+
 <h1 id="indesign-to-the-fixed-layout-epub">InDesign to the Fixed Layout ePub</h1>
 
 <p>The fixed-layout format ePUB3 format provides a way to deliver every single page in your print book laid out just as it was in the print version.</p>
@@ -982,6 +1042,47 @@
 <p><a href="/images/2017/02/id2fxlePub/image3.png"><img src="/images/2017/02/id2fxlePub/image3.png" alt="The complexity of the markup is overwhelming" /></a></p>
 
 <p>If you look carefully, you will see that every word on the page is wrapped in a span tag with a position set through an inline style rule. This is the way that InDesign has exported the content and it works to precisely position all content on the page. The problem comes when you want to make any edits after-export. We have little hope of making any changes to the CSS other than possibly adding a background colour to the pages.</p>
+
+<h2 id="some-further-notes-on-the-fixed-layout-epub">Some further Notes on the Fixed Layout ePub</h2>
+
+<h3 id="adding-html-to-indesign">Adding HTML to InDesign</h3>
+
+<p>When adding local HTML to page in InDesign:</p>
+<blockquote>
+  <p>If you are adding style or script information you may find that the ePub does not validate. There are 2 reasons for this:</p>
+  <ul>
+    <li>you will find a tag ‘object’ wrapping the item that you added</li>
+    <li>InDesign export also adds ‘scope’ to the enclosing div.</li>
+  </ul>
+</blockquote>
+
+<h3 id="the-fix">The fix</h3>
+<p>You will need to post edit the ePub to do the following:</p>
+<ul>
+  <li>remove the <code class="highlighter-rouge">&lt;object&gt;</code> tag altogether</li>
+  <li>add the value to the scope attribute like this:
+   <code class="highlighter-rouge">scope='scope'</code></li>
+</ul>
+
+<h3 id="bookmarks">Bookmarks</h3>
+<p>Bookmarks or hyperlinks (and hyperlink destinations) are the way to make links between documents in a ‘book’. But, the bookmark or hyperlink destination needs to be made by selecting the <strong>whole</strong> heading</p>
+
+<h3 id="fixed-layout-options-from-indesign">Fixed layout options from InDesign</h3>
+<p>To make a fixed-layout landscape where the print book is portrait spreads, choose <em>Convert Spread to Landscape page</em></p>
+
+<p>If you choose this option then you will fail if you try to convert to Kindle KF8 because KindleGen cannot locate the proper pages in the TOC.</p>
+
+<h3 id="table-of-contents">Table of Contents</h3>
+
+<p>The table of contents can be on the page and also as a logical TOC (provided in the UI of the eReader software). InDesign proves the option of more than one TOC, but the one you choose for the logical TOC would normally be provided on the pasteboard. The reason for this, is that you might want to make some edits to this before exporting to the ePub:</p>
+
+<h4 id="possible-issues-with-the-logical-toc">Possible issues with the logical TOC</h4>
+
+<p>When the heading item in the TOC is present in the cell of a table and the cell spans the spread (which then becomes a forced landscape page), the item is repeated in the TOC. You can only resolve this by editing the <code class="highlighter-rouge">toc.xhtml</code> file inside the ePub package.</p>
+
+<h3 id="export-options-and-bleeding-objects">Export Options and Bleeding Objects</h3>
+
+<p>If your print ready InDesign has objects outside the page (ie. bleed), then,  if you export the fixed-layout as <em>Based on Document setup</em> -  and you have 2 pages portrait as spread, then you may observe scrollbars in the eBook. This will also give you scrollbars where an object is spread across a 2 page spread.</p>
 
 
   

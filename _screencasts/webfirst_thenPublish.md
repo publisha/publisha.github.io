@@ -1,6 +1,6 @@
 ---
 title: Web First Workflow System for Publishing
-date: 2015-07-016
+date: 2015-07-16
 YouTube: Z-cXw9p6QQk
 layout: screencast
 categories: [InDesign]

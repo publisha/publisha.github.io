@@ -45,3 +45,17 @@ I based this look and feel on the [Lanyon theme from here][2b9a33ee]{:target="_b
 Images can be enlarged and use a variation of [Fancybox][f6b39499]{:target="_blank"} using jquery.
 
 [f6b39499]: http://fancybox.net "Take a look at Fancybox"
+
+<section class="categories">
+<h2 class="header">Pages by Category</h2>
+{% for category in site.categories-list %}
+  <h2><a href="#">{{ category }} <i class="fa fa-caret-down" aria-hidden="true"></i></a></h2>
+    {% for page in site.pages %}
+     {% for cat in page.categories %}
+          {% if cat == category %}
+            <h3><a href="{{ page.url }}">{{ page.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></h3>
+          {% endif %}
+        {% endfor %}
+    {% endfor %}
+      {% endfor %}
+</section>

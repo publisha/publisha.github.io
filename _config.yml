@@ -59,6 +59,8 @@ collections:
   screencasts:
     output: true
     layout: screencast
+    permalink: /:screencasts/:title/
+
 
 
 # for prose

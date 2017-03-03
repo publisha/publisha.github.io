@@ -4,7 +4,7 @@
  <title>Digital Publisher Guide</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-03-03T16:48:54+00:00</updated>
+ <updated>2017-03-03T18:05:16+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
@@ -37,19 +37,19 @@
 
 &lt;p&gt;&lt;a href=&quot;/images/2017/03/Screenshot 2017-03-03 15.46.14.png&quot;&gt;&lt;img src=&quot;/images/2017/03/Screenshot 2017-03-03 15.46.14.png&quot; alt=&quot;Markdown previewer shows this text&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;ok-but-what-else-can-i-do-with-the-text&quot;&gt;Ok But what else can I do with the text?&lt;/h2&gt;
+&lt;h2 id=&quot;ok-but-what-else-can-i-do-with-the-text&quot;&gt;OK. But what else can I do with the text?&lt;/h2&gt;
 
 &lt;p&gt;Alight, I know. Your publisher wants a Word file.&lt;/p&gt;
 
-&lt;p&gt;No problem. Just follow these steps and all will be well withe the world:&lt;/p&gt;
+&lt;p&gt;No problem. Just follow these steps and all will be well with the world:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Download a copy of Pandoc (a universal text converter) &lt;a href=&quot;http://pandoc.org&quot; title=&quot;Brilliant work&quot;&gt;from here&lt;/a&gt; and install it.&lt;/li&gt;
   &lt;li&gt;Extend Atom with the Pandoc-Convert package&lt;/li&gt;
-  &lt;li&gt;When ready to convert, use the Atom command palette and type &lt;code class=&quot;highlighter-rouge&quot;&gt;convert&lt;/code&gt; and find &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;When ready to convert, use the Atom command palette and type &lt;code class=&quot;highlighter-rouge&quot;&gt;convert&lt;/code&gt; and then find &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;what-about-just-writing-with-no-distraction&quot;&gt;What about just writing with no distraction?&lt;/h2&gt;
+&lt;h2 id=&quot;what-about-just-writing-with-no-distractions&quot;&gt;What about just writing with no distractions?&lt;/h2&gt;
 
 &lt;p&gt;What you see in the above example is a little more complex that the normal writing, since i have lots of links and images. But I didn’t write that code; I just tapped the link icon on the toolbar.&lt;/p&gt;
 
@@ -57,7 +57,7 @@
 
 &lt;p&gt;&lt;a href=&quot;/images/2017/03/Screenshot 2017-03-03 16.29.05.png&quot;&gt;&lt;img src=&quot;/images/2017/03/Screenshot 2017-03-03 16.29.05.png&quot; alt=&quot;See no distractions&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Try the Zen package to add to Atom, and then with a hotkey combination you can get to your writing without any distractions.&lt;/p&gt;
+&lt;p&gt;Try the Zen package to add to Atom, and then with a hotkey combination you can get to your writing without any distractions. You won’t even see Facebook.&lt;/p&gt;
 
 &lt;h3 id=&quot;like-what-you-see-or-not&quot;&gt;Like what you see? Or Not?&lt;/h3&gt;
 

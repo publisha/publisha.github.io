@@ -31,19 +31,19 @@ OK, so you want to see the results? Again, just add the Markdown previewer to At
 
 [![Markdown previewer shows this text](/images/2017/03/Screenshot 2017-03-03 15.46.14.png)](/images/2017/03/Screenshot 2017-03-03 15.46.14.png)
 
-## Ok But what else can I do with the text?
+## OK. But what else can I do with the text?
 
 Alight, I know. Your publisher wants a Word file.
 
-No problem. Just follow these steps and all will be well withe the world:
+No problem. Just follow these steps and all will be well with the world:
 
 1. Download a copy of Pandoc (a universal text converter) [from here][57e586b0] and install it.
 2. Extend Atom with the Pandoc-Convert package
-3. When ready to convert, use the Atom command palette and type `convert` and find `docx`.
+3. When ready to convert, use the Atom command palette and type `convert` and then find `docx`.
 
   [57e586b0]: http://pandoc.org "Brilliant work"
 
-## What about just writing with no distraction?
+## What about just writing with no distractions?
 
 What you see in the above example is a little more complex that the normal writing, since i have lots of links and images. But I didn't write that code; I just tapped the link icon on the toolbar.
 
@@ -51,7 +51,7 @@ What you see in the above example is a little more complex that the normal writi
 
 [![See no distractions](/images/2017/03/Screenshot 2017-03-03 16.29.05.png)](/images/2017/03/Screenshot 2017-03-03 16.29.05.png)
 
-Try the Zen package to add to Atom, and then with a hotkey combination you can get to your writing without any distractions.
+Try the Zen package to add to Atom, and then with a hotkey combination you can get to your writing without any distractions. You won't even see Facebook.
 
 ### Like what you see? Or Not?
 

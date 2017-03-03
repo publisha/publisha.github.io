@@ -220,7 +220,7 @@ h4 {
 }
 }
 
-@@media print {
+@media print {
 h1,h2,h3 {
     page-break-after: avoid !important;
 }
@@ -543,18 +543,32 @@ color:#657569;
   display: block;
   /*padding-left: 33px;*/
   background:#8faa7a;
-  color:white;
+  color:white !important;
 }
 .navigation li ul li a:hover {
   background: #a2bd95;
   color:black;
+  color:white !important;
 }
 
 .navigation i {
   float:right;
   color:#657569;
-  color:white;
+
 }
+
+.categories .navigation {
+  color:gray !important;
+}
+
+.categories .navigation i {
+    color:green !important;
+}
+
+.categories .navigation li ul li i:hover {
+    color:white !important;
+}
+
 
 @media print {
 section.toc {

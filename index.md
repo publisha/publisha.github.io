@@ -14,9 +14,13 @@ Now it is time (surely) to make all of these helpful documents digital and onlin
 
 [b016960a]: http://www.pagetoscreen.net "Lots of useful information"
 
-You will find here help documents and tutorials and a range of topics including using Adobe InDesign and Apple iBooks Author, as well as using GitHub to edit documents within a repository.
+You will [find here help documents and tutorials][182881a3] and a range of topics including using Adobe InDesign and Apple iBooks Author, as well as using GitHub to edit documents within a repository.
 
-More documents are being added and you can find the list within the left hand menu. Just click on the icon top left.
+  [182881a3]: /contents "See all contents in a menu"
+
+More documents are being added and you can find the list within the left hand menu. Just click on the icon top left or [see the contents page][d78d4ed1].
+
+  [d78d4ed1]: /contents "Open the contents page"
 
 Project maintained by @Pageboy
 
@@ -45,17 +49,3 @@ I based this look and feel on the [Lanyon theme from here][2b9a33ee]{:target="_b
 Images can be enlarged and use a variation of [Fancybox][f6b39499]{:target="_blank"} using jquery.
 
 [f6b39499]: http://fancybox.net "Take a look at Fancybox"
-
-<section class="categories">
-<h2 class="header">Pages by Category</h2>
-{% for category in site.categories-list %}
-  <h2><a href="#">{{ category }} <i class="fa fa-caret-down" aria-hidden="true"></i></a></h2>
-    {% for page in site.pages %}
-     {% for cat in page.categories %}
-          {% if cat == category %}
-            <h3><a href="{{ page.url }}">{{ page.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></h3>
-          {% endif %}
-        {% endfor %}
-    {% endfor %}
-      {% endfor %}
-</section>

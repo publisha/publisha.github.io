@@ -3,6 +3,7 @@ title: Fixed Layout eBook Part 3
 date: 2016-03-20
 YouTube: tdjNXbmY6s0
 layout: screencast
+published: true
 categories: [InDesign, ePub]
 ---
 **This is a 3 part screencast (please view parts 1 and 2 first)**

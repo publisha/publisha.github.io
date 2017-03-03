@@ -1,6 +1,5 @@
 ---
 layout: page
-Date: 2017-02-28
 title: Enhancing an eBook with interactivity, multimedia and animation
 published: true
 tags: InDesign

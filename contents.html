@@ -1,0 +1,53 @@
+---
+layout: default
+title: Categories
+published: true
+---
+<section class="categories">
+  <ul class="navigation">
+  <li class="header">Content</li>
+  <li class="dropdown"><a href="#">Screencasts <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+  <ul>
+  {% assign items = site.screencasts | sort: 'date' %}
+  {% for screencast in items reversed limit:30 %}
+  {% if screencast.categories != null %}
+
+  <li><a href="{{ site.baseurl }}{{ screencast.url }}">{{ screencast.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+
+  {% endif %}
+  {% endfor %}
+  </ul>
+  {% for category in site.categories-list %}
+    <li class="dropdown"><a href="#">{{ category }} <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <ul>
+      {% for page in site.pages %}
+       {% for cat in page.categories %}
+            {% if cat == category %}
+              <li><a href="{{ page.url }}">{{ page.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+            {% endif %}
+          {% endfor %}
+      {% endfor %}
+      </ul>
+    </li>
+        {% endfor %}
+
+  </ul>
+</section>
+
+
+<!-- <section class="categories">
+  <ul class="navigation">
+  <li class="dropdown">Screencasts</li>
+  <ul>
+  {% assign items = site.screencasts | sort: 'date' %}
+  {% for screencast in items reversed limit:30 %}
+  {% if screencast.categories != null %}
+
+  <li><a href="{{ site.baseurl }}{{ screencast.url }}">{{ screencast.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+
+  {% endif %}
+  {% endfor %}
+</ul>
+</ul>
+
+</section> -->

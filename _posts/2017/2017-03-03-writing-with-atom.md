@@ -3,7 +3,7 @@ layout: "post"
 title: "Writing with Atom"
 date: "2017-03-03 15:25"
 published: true
-categories: [Conversion, Markdown]
+categories: [Markdown]
 ---
 I just think that [Atom][86aa3b11] is a brilliant text editor, and I now use it all the time. It's good for code / HTML, CSS and all that, but it is also really good for writing and here's why.
 

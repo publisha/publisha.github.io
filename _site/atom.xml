@@ -4,7 +4,7 @@
  <title>Digital Publisher Guide</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-03-03T16:44:58+00:00</updated>
+ <updated>2017-03-03T16:48:54+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Writing with Atom</title>
-   <link href="http://localhost:4000/conversion/markdown/2017/03/03/writing-with-atom/"/>
+   <link href="http://localhost:4000/markdown/2017/03/03/writing-with-atom/"/>
    <updated>2017-03-03T15:25:00+00:00</updated>
-   <id>http://localhost:4000/conversion/markdown/2017/03/03/writing-with-atom</id>
+   <id>http://localhost:4000/markdown/2017/03/03/writing-with-atom</id>
    <content type="html">&lt;p&gt;I just think that &lt;a href=&quot;https://atom.io&quot; title=&quot;Get Atom for yourself&quot;&gt;Atom&lt;/a&gt; is a brilliant text editor, and I now use it all the time. It’s good for code / HTML, CSS and all that, but it is also really good for writing and here’s why.&lt;/p&gt;
 
 &lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;

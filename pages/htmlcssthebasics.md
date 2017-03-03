@@ -64,7 +64,7 @@ In the example above, there is another element at the same level as `<body`. Thi
 
 ## What does this example of HTML look like in a browser?
 
-[![A sample web page showing simple styles](../../images/2017/01/samplewebpage.png)](../../images/2017/01/samplewebpage.png)
+[![A sample web page showing simple styles](/images/2017/01/samplewebpage.png)](/images/2017/01/samplewebpage.png)
 
 You will notice that there is some basic styling; we can see that the top level heading is the biggest and the next level `h2` is smaller; there is space between the paragraphs and the list has bullets and is set in from the left of the page.
 

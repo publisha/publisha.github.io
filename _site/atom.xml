@@ -4,13 +4,76 @@
  <title>Digital Publisher Guide</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-03-03T10:35:55+00:00</updated>
+ <updated>2017-03-03T16:44:58+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Writing with Atom</title>
+   <link href="http://localhost:4000/conversion/markdown/2017/03/03/writing-with-atom/"/>
+   <updated>2017-03-03T15:25:00+00:00</updated>
+   <id>http://localhost:4000/conversion/markdown/2017/03/03/writing-with-atom</id>
+   <content type="html">&lt;p&gt;I just think that &lt;a href=&quot;https://atom.io&quot; title=&quot;Get Atom for yourself&quot;&gt;Atom&lt;/a&gt; is a brilliant text editor, and I now use it all the time. It’s good for code / HTML, CSS and all that, but it is also really good for writing and here’s why.&lt;/p&gt;
+
+&lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;
+
+&lt;p&gt;You need to learn it. But so easy. And anyway Atom can help.&lt;/p&gt;
+
+&lt;p&gt;I won’t repeat here what you can find online about Markdown, like who invented it (&lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot; title=&quot;Take a look here&quot;&gt;John Gruber&lt;/a&gt;) and what it &lt;a href=&quot;http://commonmark.org/help/&quot; title=&quot;Get the lowdown&quot;&gt;actually means&lt;/a&gt;, and &lt;a href=&quot;https://www.google.co.uk/?gfe_rd=cr&amp;amp;ei=aYy5WJfXMIOFaIP7pqAM#q=love+markdown&quot; title=&quot;Google helps here&quot;&gt;who loves it&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;atom-can-help&quot;&gt;Atom Can Help&lt;/h2&gt;
+
+&lt;p&gt;As you will see, the point of Markdown is that it keeps you focussed on the words and not the style. It also keeps you disciplined to use a limited number of structural elements in your writing; headings (h1 - h6), paragraph, lists and inline emphasise with &lt;strong&gt;bold&lt;/strong&gt; and &lt;em&gt;italics&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, once you learn how to tag these elements it all gets as easy as falling off a log. However, if you need that extra bit of support (a lifejacket I suppose), then you can download the Markdown writer package and toolbar to extend Atom; then you get a line-up of icons that will make life even easier.&lt;/p&gt;
+
+&lt;h2 id=&quot;but-what-does-it-look-like-when-im-done&quot;&gt;But what does it look like when I’m done?&lt;/h2&gt;
+
+&lt;p&gt;OK, so you want to see the results? Again, just add the Markdown previewer to Atom, and you see the results right alongside. Check out the screenshot alongside here.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/Screenshot 2017-03-03 15.46.14.png&quot;&gt;&lt;img src=&quot;/images/2017/03/Screenshot 2017-03-03 15.46.14.png&quot; alt=&quot;Markdown previewer shows this text&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ok-but-what-else-can-i-do-with-the-text&quot;&gt;Ok But what else can I do with the text?&lt;/h2&gt;
+
+&lt;p&gt;Alight, I know. Your publisher wants a Word file.&lt;/p&gt;
+
+&lt;p&gt;No problem. Just follow these steps and all will be well withe the world:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Download a copy of Pandoc (a universal text converter) &lt;a href=&quot;http://pandoc.org&quot; title=&quot;Brilliant work&quot;&gt;from here&lt;/a&gt; and install it.&lt;/li&gt;
+  &lt;li&gt;Extend Atom with the Pandoc-Convert package&lt;/li&gt;
+  &lt;li&gt;When ready to convert, use the Atom command palette and type &lt;code class=&quot;highlighter-rouge&quot;&gt;convert&lt;/code&gt; and find &lt;code class=&quot;highlighter-rouge&quot;&gt;docx&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;what-about-just-writing-with-no-distraction&quot;&gt;What about just writing with no distraction?&lt;/h2&gt;
+
+&lt;p&gt;What you see in the above example is a little more complex that the normal writing, since i have lots of links and images. But I didn’t write that code; I just tapped the link icon on the toolbar.&lt;/p&gt;
+
+&lt;h3 id=&quot;zen&quot;&gt;Zen&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/Screenshot 2017-03-03 16.29.05.png&quot;&gt;&lt;img src=&quot;/images/2017/03/Screenshot 2017-03-03 16.29.05.png&quot; alt=&quot;See no distractions&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Try the Zen package to add to Atom, and then with a hotkey combination you can get to your writing without any distractions.&lt;/p&gt;
+
+&lt;h3 id=&quot;like-what-you-see-or-not&quot;&gt;Like what you see? Or Not?&lt;/h3&gt;
+
+&lt;p&gt;You can change the theme and get an entirely different environment.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/Screenshot 2017-03-03 16.43.40.png&quot;&gt;&lt;img src=&quot;/images/2017/03/Screenshot 2017-03-03 16.43.40.png&quot; alt=&quot;Youcan choose a light theme if you prefer&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;and-web-sites&quot;&gt;And web sites&lt;/h2&gt;
+
+&lt;p&gt;Well that a whole different story, but this web site is entirely created and edited with Atom. I use a static web generator called Jekyll; Atom can directly create content and load up to the site repository when ready.&lt;/p&gt;
+
+&lt;p&gt;Like now!&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading…&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>From Apple's Pages to Markdown</title>

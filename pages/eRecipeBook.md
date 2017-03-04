@@ -424,7 +424,7 @@ Here are some things that we need to fix.
 
 We have applied a rule underneath our heading styles for both the Introduction heading and the recipe title. This needs adding in the CSS. You can see this happening in the Dreamweaver screen shot on the previous page. In the CSS for the 2 style rules we need to add:
 
-`border-bottom: 6px solid \#ADD4E4;`
+`border-bottom: 6px solid #ADD4E4;`
 
 ### Fractions
 
@@ -432,15 +432,15 @@ Indesign helped us add fractions such as ½ with the OpenType features. Unfortun
 
 Here are some common fractions with their HTML entities.
 
-> ½   `&\#189;`
+> ½   `&#189;`
 >
-> ⅓   `&\#8531;`
+> ⅓   `&#8531;`
 >
-> ⅔   `&\#8532;`
+> ⅔   `&#8532;`
 >
-> ¼   `&\#188;`
+> ¼   `&#188;`
 >
-> ¾   `&\#190;`
+> ¾   `&#190;`
 
 
 ## Back to InDesign

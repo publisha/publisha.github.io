@@ -10,6 +10,6 @@ Our eBook production workflow involves perfecting for the ePub3 format first by 
 
 We may learn that there are some shortcomings and we may still need to return to the ePub for some adjustments before (once again) using a conversion tool.
 
-In this screencast we also edit the opf file to include the TOC on the page for the Kindle version.
+In this screencast we also edit the `opf` file to include the TOC on the page for the Kindle version.
 
 Amazon make available the tools for the [conversion on the web site here](https://www.amazon.com/gp/feature.html?docId=1000765261 "Kindle Previewer").

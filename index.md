@@ -33,7 +33,7 @@ Here is a random photo taken by me.
 ### Jekyll
 The site is built with Jekyll which you can [find out about here][92c344c3]{:target="_blank"}.
 
-It is delivered on a GitHub repository with GitHub pages. My preferred writing tool is Atom 'cos you can customise it!
+It is delivered on a GitHub repository with GitHub pages. My preferred writing tool is Atom 'cos you can customise it! I also use *Editorial* on my iPad.
 
 [92c344c3]: https://jekyllrb.com "Visit the Jekyll web site"
 

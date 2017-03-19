@@ -105,7 +105,7 @@ With the Mac Terminal application open locate the ePubcheck file that you just d
 
 ```terminal
 $ cd /Applications/Utilities/ebook_tools/epubcheck-4.0.2
-$ java -jar pubcheck-4.0.2 path to the ePub file
+$ java -jar pubcheck-4.0.2 <path to the ePub file>
 ```
 You should see something like this:
 

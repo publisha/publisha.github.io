@@ -10,7 +10,7 @@
 
   <title>
     
-      Using the Book Panel in InDesign
+      Blog Articles
     
   </title>
 
@@ -182,7 +182,7 @@
     
     
       
-        <a class="sidebar-nav-item active" href="/pages/InDesignBookPanel/">Using the Book Panel in InDesign</a>
+        <a class="sidebar-nav-item" href="/pages/InDesignBookPanel/">Using the Book Panel in InDesign</a>
       
     
      -->
@@ -887,7 +887,7 @@
     
       
         
-          <a class="sidebar-nav-item active" href="/pages/InDesignBookPanel/">Using the Book Panel in InDesign</a>
+          <a class="sidebar-nav-item" href="/pages/InDesignBookPanel/">Using the Book Panel in InDesign</a>
         
       
     
@@ -1023,179 +1023,80 @@
       </div>
 
       <div class="container content">
-        <div class="page">
-  <!-- <h1 class="page-title">Using the Book Panel in InDesign</h1> -->
-  <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
-<section class="toc">
-  <h2 id="on-this-page">On this Page</h2>
-
-  <ul>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#what-is-an-indesign-book">What is an InDesign Book?</a></li>
-    <li><a href="#the-style-source">The Style Source</a></li>
-    <li><a href="#creating-the-book">Creating the Book</a></li>
-    <li><a href="#page-numbers">Page Numbers</a></li>
-    <li><a href="#synchronise-options">Synchronise Options</a></li>
-    <li><a href="#master-pages">Master Pages</a></li>
-    <li><a href="#the-table-of-contents">The Table of Contents</a></li>
-    <li><a href="#editing-individual-files">Editing individual files</a></li>
-    <li><a href="#pages-and-spreads">Pages and Spreads</a></li>
-    <li><a href="#how-to-number-pages-with-indesign-book-panel">How to Number Pages with InDesign Book Panel</a></li>
-    <li><a href="#exporting-to-pdf">Exporting to PDF</a></li>
-  </ul>
-
-</section>
-<!-- /TOC -->
-
-<h1 id="using-the-book-panel-in-indesign">Using the Book Panel in InDesign</h1>
-
-<p><strong>Combining sections and chapters into one book</strong></p>
-
-<h2 id="introduction">Introduction</h2>
-
-<p>Quite often we will be working with very long publications that will benefit from the concept of separate files for separate sections or chapters. There are also advantages from having individuals in a team, work on different InDesign files (with common styles), and then bring them all together inside one book.
-InDesign uses the concept of a ‘book’ that comprises of separate InDesign files; the ‘book’ is a parent file that ‘ties’ together the various individual components.</p>
-
-<h2 id="what-is-an-indesign-book">What is an InDesign Book?</h2>
-
-<p>An InDesign book (the file ends in .indb), is nothing without at least 2 InDesign files. You can initiate the book file when you have some InDesign files to place into it, or you can leave this part of the workflow, when you are ready to create the table of contents and output the file for print or digital.</p>
-
-<h2 id="the-style-source">The Style Source</h2>
-
-<p>When you create an InDesign book, you are going to combine different files within the same book, and potentially these files will share styles, master pages and colour swatches.</p>
-
-<p><a href="../../images/2017/01/load-the-styles-from-on-file-to-another.png"><img src="../../images/2017/01/load-the-styles-from-on-file-to-another.png" alt="Load the styles from on file to another" /></a></p>
-
-<p>Only one of these InDesign files will become the style source, so you should be advised that there could be a conflict of style names, when you synchronise the book.</p>
-
-<p>One easy way to remove the risk of loosing some styles in any of the InDesign files, is to load styles from one document into another before you put together in the book. You can do this from the context menu within the paragraph style palette. This will give you a chance to resolve the conflicts and decide which style to keep in the receiving document.</p>
-
-<h2 id="creating-the-book">Creating the Book</h2>
-
-<p>When you start an InDesign Book from the File menu, it is simply empty of content. To add  files you can drag and drop onto the panel, or click the + sign and chooses from the finder.</p>
-
-<p>One file will need to be the Style Source and the styles in that document will override the styles built in any other documents. Once you have decided on the Style Source, only the styles changed there will matter to the whole book.</p>
-
-<p><a href="../../images/2017/01/a-book-panel-with-2-files-showing-style-source.png"><img src="../../images/2017/01/a-book-panel-with-2-files-showing-style-source.png" alt="A Book panel with 2 files showing style source" /></a></p>
-
-<h3 id="more-about-the-style-source">More About the Style Source</h3>
-
-<p>If you need to change a style that is only in one particular section of the book, then you can change the Style Source to that file just while you make the change to the style (so you can see what you are doing). All styles should be present in the Style Source, but you may need to move the Style Source to help you when you get a visual handle on the style in question.</p>
-
-<p>In my example, the Play includes a <em>verseline</em> paragraph style that is not used in dream_preface (the Style Source), so I need to change the Style Source to the play (dream), temporarily.</p>
-
-<h2 id="page-numbers">Page Numbers</h2>
-
-<p>Of course you are presuming that InDesign will take care of page numbers throughout the book. You would be correct, and you will find that you can customise the way the page numbers continue.</p>
-
-<p><a href="../../images/2017/01/bookpagenumberingoptions.png"><img src="../../images/2017/01/bookpagenumberingoptions.png" alt="Page Numbering Options in the book" /></a></p>
-
-<h2 id="synchronise-options">Synchronise Options</h2>
-
-<p>When the InDesign files are synchronised through the Book Panel context menu, there are many features that can be combined and you can choose which aspects to synchronise and which to keep within the separate book files.</p>
-
-<p>How much you change here depends on how important it is for you to maintain consistency throughout the book. As you can see from the Options panel above it would be possible to switch off paragraph and character styles during the synchronising procedure. However, it would be better to maintain consistency throughout the book, and just keep the styles attached to the Style Source.</p>
-
-<p><a href="../../images/2017/01/mergelayersonexport.png"><img src="../../images/2017/01/mergelayersonexport.png" alt="Layers can be merged as an option" /></a></p>
-
-<h2 id="master-pages">Master Pages</h2>
-
-<p>Master Pages (that use the same name) are prioritised from the Style Source document. This is true unless you turn this off in the Synchronise Options.</p>
-
-<p><a href="../../images/2017/01/synchroniseOptions.png"><img src="../../images/2017/01/synchroniseOptions.png" alt="You may want to turn off Mster Pages in the synchronise options because you may have different headers" /></a></p>
-
-<h2 id="the-table-of-contents">The Table of Contents</h2>
-
-<p>Building the TOC can happen in a new InDesign file, that uses the same page size as the other files in the book — or you can simply add to the first page of the from matter.</p>
-
-<p>When creating the table of contents (menu&gt;Layout&gt;Table of Contents), be sure to select ‘Include Book Documents’</p>
-
-<p><a href="../../images/2017/01/includebookdocs.png"><img src="../../images/2017/01/includebookdocs.png" alt="Incude the book documents when making the table of contents" /></a></p>
-
-<h2 id="editing-individual-files">Editing individual files</h2>
-
-<p>One advantage of the book method of working, is that you can divide long books into individual chapters or sections and work on them independently. If you are working in a team, then individuals can save their own workflows and then bring together later.</p>
-
-<p>If individual files are changed outside of the book environment, then a warning will appear alongside the file in the book panel. Opening the InDesign file, will remove this warning icon.</p>
-
-<p><a href="../../images/2017/01/edittingeachfile.png"><img src="../../images/2017/01/edittingeachfile.png" alt="Here we see warning signs that the files are changed outside the book" /></a></p>
-
-<h2 id="pages-and-spreads">Pages and Spreads</h2>
-
-<p>When you combine InDesign documents into a single book, the relationship between the pages at the point of joining may need to change.
-A single InDesign document that is intended as a double page spread will always start with a single page. If the number of pages is an even number then it will also end with a single page.</p>
-
-<p>If this document is part of an InDesign book, and you add a file before this existing one, then different things will happen, depending on the number of pages in the new document.</p>
-
-<p>If the number is even, then it will end with a single page. In this situation the pages will ‘dovetail’ and no pages will be added to the second document in the book panel.</p>
-
-<p>If, on the other hand, the incoming document has an odd number of pages (and, therefore ends with 2 pages in a spread), then the existing document will have pages add so as to start on a double page spread.</p>
-
-<p><a href="../../images/2017/01/firstandlastpage.png"><img src="../../images/2017/01/firstandlastpage.png" alt="This image shows the last pages in the Preface and the first pages in the main text" /></a></p>
-
-<p>This image shows the last pages in the Preface and the first pages in the main text.</p>
-
-<p>You can see from these thumbnail pages that when combined there will be a fit of the end to the beginning.</p>
-
-<p>If we do not have the final page in the preface (this is a blank page), then we will get the following:</p>
-
-<p><a href="../../images/2017/01/firstamdlastspread.png"><img src="../../images/2017/01/firstamdlastspread.png" alt="The end of the Preface has 2 pages side-by-side" /></a></p>
-
-<p>The end of the Preface has 2 pages side-by-side. The beginning of the Main text also must start with a double page spread. When documents are combined in a book panel, then you may get some changes to the pagination and you may need to reorganise the content appropriately.Page Numbering and ordering of Pages
-You will notice from the images above, that we have different page numbers for the Front Matter, to the rest of the book.</p>
-
-<p>The order of sections and the way they are numbered follows certain conventions in book publishing.</p>
-
-<p>What follows is the way we can number the pages in our example Shakespeare Play book.</p>
-
-<p>First point: all pages after the endpapers are counted, whether or not the page numbers are displayed. The half-title page would be the first to be counted.
-Second Point: The usual way to number Front Matter pages is to use lower case Roman numerals (i,ii,iii,iv). The Foreword and Table of Contents is part of the Front Matter. Our Life of Shakespeare text is probably, part of the front matter, because it is NOT about the play, but supplementary to it.</p>
-
-<p>The Dramatis Personae (the list of characters) is often included in the front matter, but, again, you may see this differently in some editions.
-Third Point: The play should be numbered from page 1 in Arabic numerals.
-Fourth Point: The Table of Contents comes after the copyright page. This means it is likely to be starting on page v. Table of Contents pages are NOT numbered but are counted.</p>
-
-<p>Finally: Your pages are likely to be as follows:</p>
-<ul>
-  <li>Half Title (Just the title of the play)(<em>recto</em>)</li>
-  <li>Blank</li>
-  <li>Full Title (Title of the Play, Author, maybe date, and maybe including <em>with a brief Life of Shakespeare</em> - and name of publisher (<em>recto</em>)</li>
-  <li>Copyright Page (you can leave blank)</li>
-  <li>Table of Contents (<em>starts on recto</em>)</li>
-  <li>Life of Shakespeare (or whatever you called it) - (<em>starts on recto</em>)</li>
-  <li>Another half-title (<em>recto</em>)</li>
-  <li>Dramatis Personae - (<em>starts on recto</em>)</li>
-  <li>The Play (<em>starts on recto</em>)</li>
-</ul>
-
-<p><strong>Note:</strong> <em>recto</em> means the right hand page when the book spread is open.</p>
-
-<h2 id="how-to-number-pages-with-indesign-book-panel">How to Number Pages with InDesign Book Panel</h2>
-
-<p>If you are trying to figure out how to display page numbers on the pages, then you need to refer to a different section about ‘Master Pages’, since this is where this is explained.</p>
-
-<p>Page numbering is defined in the Numbering &amp; Section Options Panel. This is invoked by Right-Clicking over the thumbnail of the page where you wish to begin a section. In fact every InDesign document has, at least one section. Sections are indicated by the small downwards facing triangle at the top of the thumbnail image. You will see from the following image that this section is numbered automatically but using the lowercase Roman numerals.</p>
-
-<p><a href="../../images/2017/01/numberingoptions.png"><img src="../../images/2017/01/numberingoptions.png" alt="At the bottom of this panel you may note that there is a Book Name" /></a></p>
-
-<p>At the bottom of this panel you may note that there is a Book Name, showing that the section numbering algorithm is aware that the document is part of a Book.</p>
-
-<p>We can also configure whole book numbering options from the Book panel menu.</p>
-
-<p><a href="../../images/2017/01/lastpage.png"><img src="../../images/2017/01/lastpage.png" alt="A finished page" /></a></p>
-
-<h2 id="exporting-to-pdf">Exporting to PDF</h2>
-
-<p>When you are ready to export for print, then you should do this through the book panel context menu &gt; Export Book to PDF. You will only see this item on the menu, if you have either selected all InDesign files in the book panel, or — you have selected none.</p>
-
-<p><a href="../../images/2017/01/spreadsinPDF.png"><img src="../../images/2017/01/spreadsinPDF.png" alt="When you export to PDF as spreads there may be single pages where the seperate files are joined." /></a></p>
-
-<!-- We can only show one screencast at the moment -->
+        <div class="posts">
+  
+  <div class="post">
+    <h2 class="post-title">
+      <a href="/html/2017/02/03/htmlORxhtml/">
+        HTML, XHTML, HTML5 or XHTML5
+      </a>
+    </h2>
+
+    <span class="post-date">03 Feb 2017</span>
+    <!-- <p>Goodness me there seem to be so many flavours of HTML. What does this all mean for eBook production and why should we care?</p>
+
+<h2 id="so-you-thought-it-was-just-html">So you thought it was just ‘HTML’!</h2>
+
+<p>HTML5 is the newest version of HTML and is very ‘loose’ and forgiving. In fact when you create HTML5 markup you do not need to close the tags.</p>
+
+<p>For example this is acceptable in HTML5:</p>
+
+<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre><span class="nt">&lt;h1&gt;</span>This is a heading
+<span class="nt">&lt;p&gt;</span>This is a paragraph
+</pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>eBooks made to ePub3 standard use HTML but the markup is very strict. In fact the markup should conform to <code class="highlighter-rouge">XML</code> standards and this means that the format is actually <code class="highlighter-rouge">XHTML5</code>.</p>
+
+<p>For the above markup snippet to conform to <code class="highlighter-rouge">XHTML</code> (and thus ePub3) it would need to be:</p>
+
+<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre><span class="nt">&lt;h1&gt;</span>This is a heading<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;p&gt;</span>This is a paragraph<span class="nt">&lt;/p&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>In order to validate XHTML you need to name the file with the XHTML extension; thus <code class="highlighter-rouge">recipe.xhtml</code></p>
+
+<p>There are also some very specific items that need to go at the head of an XHTML file. Here are the required items:</p>
+
+<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1999/xhtml"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">/&gt;</span>
+and so on
+</pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>As you can see, although the doctype is <code class="highlighter-rouge">html</code>, the namespace (<code class="highlighter-rouge">xmlns</code>) is using the one from the World Wide Web consortium for <code class="highlighter-rouge">xhtml</code>.</p>
+ -->
+    <p>Goodness me there seem to be so many flavours of HTML. What does this all mean for eBook production and why should we care?</p>
+
+
+    <p><a href="/html/2017/02/03/htmlORxhtml/">Read more...</a></p>
+  </div>
   
 </div>
 
-        
-        <p><b>Filed under:</b> InDesign</p>
+<div class="pagination">
+  
+    <span class="pagination-item older">Older</span>
+  
+  
+    
+      <a class="pagination-item newer" href="/blog">Newer</a>
+    
+  
+</div>
+
         
 
       </div>

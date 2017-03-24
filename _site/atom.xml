@@ -4,13 +4,100 @@
  <title>Digital Publisher Guide</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-03-11T12:42:06+00:00</updated>
+ <updated>2017-03-24T13:07:03+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Page size in InDesign for eBook?</title>
+   <link href="http://localhost:4000/indesign/epub/css/2017/03/24/page-size-in-indesign-for-ebook/"/>
+   <updated>2017-03-24T12:39:00+00:00</updated>
+   <id>http://localhost:4000/indesign/epub/css/2017/03/24/page-size-in-indesign-for-ebook</id>
+   <content type="html">&lt;p&gt;We’re creating an eBook in InDesign. We’re not planning a print book at all - just straight to an eBook; what size page should we choose?&lt;/p&gt;
+
+&lt;h2 id=&quot;why-should-you-care&quot;&gt;Why should you care?&lt;/h2&gt;
+
+&lt;p&gt;When we create an eBook (reflowable) users get to change the font size. This is how it is in all eReader devices although the range of sizes varies considerably.&lt;/p&gt;
+
+&lt;p&gt;Let’s use the iPad with Apple’s iOS as an example. Let’s have a look at iBooks (the standard app on the iPad for viewing eBooks).&lt;/p&gt;
+
+&lt;h2 id=&quot;ibooks&quot;&gt;iBooks&lt;/h2&gt;
+
+&lt;p&gt;On any MAC with iBooks, a reflowable eBook provides the user with a font size ‘adjuster’ symbolised as a small and large capital &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt;. You can see the image alongside here.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/ibooksfontsize.png&quot;&gt;&lt;img src=&quot;/images/2017/03/ibooksfontsize.png&quot; alt=&quot;The appearance controller for iBooks on the MAC&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The range of choices is extreme: There are 11 steps from when the little &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; is greyed out to when the large &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; is greyed out. As you see from the nest image here, the large size is - well, kind of ridiculous.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/ibooksenlargedtext.png&quot;&gt;&lt;img src=&quot;/images/2017/03/ibooksenlargedtext.png&quot; alt=&quot;The largest text size with iBooks&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-target-size-for-the-body-text-font&quot;&gt;The target size for the body text font?&lt;/h2&gt;
+
+&lt;p&gt;Whatever you think you want, you may not get it! The problem is that the reader may have adjusted the font size when they read another book before yours, so you don’t know what they will see at first.&lt;/p&gt;
+
+&lt;p&gt;When you create a reflowable ePub from InDesign, the relationship between the InDesign page and what you see in the ePub (I’m using Apple’s iBooks here) is non existent; that is, the page size in InDesign is not relevant. What is relevant is the font size. Let me explain further by showing some simple sample pages.&lt;/p&gt;
+
+&lt;h2 id=&quot;point-size-to-css-em&quot;&gt;Point size to CSS em&lt;/h2&gt;
+
+&lt;p&gt;Let’s focus on the body text. By that I mean the main paragraphs; not the headings or list items or captions. Just the paragraphs.&lt;/p&gt;
+
+&lt;p&gt;You must have a point size for this text. InDesign expects you to have a value for the point size. The default point size is &lt;code class=&quot;highlighter-rouge&quot;&gt;12pts&lt;/code&gt;. This is how you should find it if you use the &lt;code class=&quot;highlighter-rouge&quot;&gt;[Basic Paragraph]&lt;/code&gt; style.&lt;/p&gt;
+
+&lt;p&gt;When you export to the ePub Reflowable format, the CSS that controls the font size will be:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.basic-paragraph&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;In other words the default font size for the HTML element &lt;code class=&quot;highlighter-rouge&quot;&gt;p&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-about-the-page-size-then&quot;&gt;What about the page size then?&lt;/h2&gt;
+
+&lt;p&gt;If you accept that the reflowable ePub will not necessarily look &lt;em&gt;exactly&lt;/em&gt; like the InDesign page, then you can make the page size whatever you want, but –— maybe we really want to see the InDesign page layout so that it &lt;em&gt;almost nearly&lt;/em&gt; reflects the view that will be seen in the eBook.&lt;/p&gt;
+
+&lt;p&gt;To establish this, we need to conduct some experiments.&lt;/p&gt;
+
+&lt;h3 id=&quot;starting-a-new-indesign-document-beware-of-the-intent-trap&quot;&gt;Starting a New InDesign document (beware of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Intent&lt;/code&gt; trap)&lt;/h3&gt;
+
+&lt;p&gt;You might be tempted, when creating a new InDesign document to select &lt;code class=&quot;highlighter-rouge&quot;&gt;Intent&lt;/code&gt; and choose &lt;code class=&quot;highlighter-rouge&quot;&gt;Mobile&lt;/code&gt;, and then choose &lt;code class=&quot;highlighter-rouge&quot;&gt;iPad&lt;/code&gt;. Depending on which you choose, you might get a page size of 1024x768 pixels. If you have a body text font size of &lt;code class=&quot;highlighter-rouge&quot;&gt;12pts&lt;/code&gt;, then your text will appear very small, when working with InDesign. See the image to the left.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/ipadsize12pts.png&quot;&gt;&lt;img src=&quot;/images/2017/03/ipadsize12pts.png&quot; alt=&quot;This portrait page is 768 wide x 1024 tall&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s try something else; if we imagine that the &lt;em&gt;spread&lt;/em&gt; needs to be 1024 pixels together then the page should be 768 pixels tall and 512 pixels wide.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/pagesize768512.png&quot;&gt;&lt;img src=&quot;/images/2017/03/pagesize768512.png&quot; alt=&quot;View in InDesign of 12pt text on 512x768 page&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we see what the 12pt text looks like in InDesign. Not bad. Good measure with a manageable page size.&lt;/p&gt;
+
+&lt;p&gt;How near is this to the eventual view in the eBook. We need to export as reflowable and then look at this in Apple’s iBooks, but with the text size set one size larger than the smallest.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/pagesize768512_epub2.png&quot;&gt;&lt;img src=&quot;/images/2017/03/pagesize768512_epub2.png&quot; alt=&quot;Here we compare the eBook with what we see in InDesign.&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We can continue to try other options until the best choice is found; let’s just see a different size in InDesign. This time we choose for Web Intent and choose the &lt;code class=&quot;highlighter-rouge&quot;&gt;640 x 480&lt;/code&gt; size.&lt;/p&gt;
+
+&lt;p&gt;We have InDesign show us the page at &lt;code class=&quot;highlighter-rouge&quot;&gt;actual size&lt;/code&gt; and we compare this to iBooks (actual size) but enlarge the text up one notch.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/640480_iBook_2ndstep.png&quot;&gt;&lt;img src=&quot;/images/2017/03/640480_iBook_2ndstep.png&quot; alt=&quot;InDesign actual size and iBooks with text up one notch&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;The reflowable eBook should have the default size for for body text (that means 1em or 12pts), so that users can increase the text size if they prefer. In fact, Apple recommends that the there is &lt;strong&gt;no&lt;/strong&gt; text size set for the body text, so that it automatically defers to the default size. InDesign does not give us this option, so setting at 12pts is the best choice.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: You can, of course post-edit the ePub and remove the font-size CSS from the style rules for your body text.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;After much experimenting then, we find that in a situation where we are creating a reflowable ePub from InDesign &lt;em&gt;without wanting the print version first&lt;/em&gt; then the best page size choice is &lt;strong&gt;480 pixels wide and 640 pixels high after selecting the intent for web&lt;/strong&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Writing with Atom</title>
@@ -267,7 +354,7 @@ it?
 
 &lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;w&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;kv&quot;&gt; /Applications/Utilities/ebook_tools/epubcheck-4.0.2
-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;kv&quot;&gt; -jar pubcheck-4.0.2 path to the ePub file
+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;kv&quot;&gt; -jar pubcheck-4.0.2 &amp;lt;path to the ePub file&amp;gt;
 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -287,6 +374,92 @@ it?
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
       &lt;p&gt;Chris Colyer’s Website is the &lt;a href=&quot;https://css-tricks.com/snippets/css/browser-specific-hacks/&quot; title=&quot;Off to the web&quot; target=&quot;_blank&quot;&gt;goto place&lt;/a&gt; for browser hacks:&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Vertical Spacing for text: pBook and eBook</title>
+   <link href="http://localhost:4000/indesign/typography/2017/02/04/vertical-spacing/"/>
+   <updated>2017-02-04T22:50:00+00:00</updated>
+   <id>http://localhost:4000/indesign/typography/2017/02/04/vertical-spacing</id>
+   <content type="html">&lt;p&gt;When we choose a value for &lt;em&gt;leading&lt;/em&gt; in InDesign, we are actually defining the distance between the baselines. The more traditional definition of leading is the space between the baseline and top of character container; the term coming from the little slabs of lead put between the type.&lt;/p&gt;
+
+&lt;h2 id=&quot;baseline-grid-or-doing-the-maths&quot;&gt;Baseline Grid or Doing the maths?&lt;/h2&gt;
+&lt;p&gt;InDesign has a super useful feature in paragraph styles; &lt;em&gt;Align to Grid&lt;/em&gt;.
+If you set this up correctly for your body text, then you will be guaranteed to get the lines of text to align across the spine and to ‘back up’ through the paper. Where the paper has any transparency at all, the lines of the body text should coincide back to back.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/01/baseline.png&quot;&gt;&lt;img src=&quot;/images/2017/01/baseline.png&quot; alt=&quot;Here we see the baseline&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Text should always align across the spine of a double page spread, whether for print or eBook. In print, text should also align where columns are used. To be be more specific, the main text or body text must align to an imaginary baseline across the spread. In print the lines of text should coincide through the page when held up to the light.&lt;/p&gt;
+
+&lt;p&gt;InDesign can help control this through the ‘align to grid’ in the paragraph style settings, however care must be taken with this method since it may not achieve the desired result for a double page view for a &lt;strong&gt;reflowable&lt;/strong&gt; eBook.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-how-can-we-get-the-correct-alignment-for-both-pbook-and-ebook&quot;&gt;So how can we get the correct alignment for both pBook and eBook?&lt;/h2&gt;
+
+&lt;p&gt;If a text consisted entirely of body text with no headings or sub headings then no problem exists in making both sides of the spine align, as long as the space between the paragraphs is either nothing or a multiple of the body text leading. All you will need is the text to start from the same position both &lt;em&gt;verso&lt;/em&gt; and &lt;em&gt;recto&lt;/em&gt; and alignment is achieved. The problem arises when the text is punctuated with other blocks of text for the headings, sub-headings or block quotes, or – you separate the paragraphs with a dimension that is not a multiple of the &lt;em&gt;body text leading&lt;/em&gt;. If we are only dealing with print, then you can forget about aligning the headings to this grid, because the body text paragraphs will get back into alignment after the heading.&lt;/p&gt;
+
+&lt;p&gt;Since your type sizes and leading will use points (pts) then you can set the vertical units in InDesign’s preferences to &lt;code class=&quot;highlighter-rouge&quot;&gt;pts&lt;/code&gt; also. This will then give you the benefit of being able to ensure that all vertical dimensions follow a multiple of the body text leading. &lt;strong&gt;But beware.&lt;/strong&gt; You don’t want to set your preferences generally to use points for vertical units because you cannot (easily) set the page dimensions with points; for this you really need millimetres. So the &lt;em&gt;trick is to set the vertical units to points &lt;strong&gt;after&lt;/strong&gt; you have started the document&lt;/em&gt; and set the paper size and the margins.&lt;/p&gt;
+
+&lt;p&gt;You will see from the first images here that we can interrupt the flow of the body text with sub headings or blockquotes that are not aligned to the baseline grid, and are positioned with space-before. The body text goes back to the grid after the heading or blockquote.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/bodytextalignedtogrid.png&quot;&gt;&lt;img src=&quot;/images/bodytextalignedtogrid.png&quot; alt=&quot;Body text is aligned to the grid&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Our body text uses 13pts leading so the space taken up by the subhead is 26pts, thus keeping the text aligned.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;what-about-the-reflowable-ebook&quot;&gt;What about the reflowable eBook?&lt;/h2&gt;
+
+&lt;p&gt;InDesign can help us by providing this ‘align to grid’ feature, but eBooks (being HTML and CSS) do &lt;strong&gt;not&lt;/strong&gt; understand ‘align to grid’. eBooks need to use ‘line-height’ (leading) and margins to achieve this vertical alignment. In transferring vertical spacing from InDesign to the eBook export, leading becomes line-height and space-before and space-after becomes margin-bottom and margin-top in the CSS.&lt;/p&gt;
+
+&lt;h3 id=&quot;maths-but-dont-panic&quot;&gt;Maths, but don’t panic.&lt;/h3&gt;
+
+&lt;p&gt;Getting the alignment correct for the body text will involve some maths and a consideration of vertical units.&lt;/p&gt;
+
+&lt;p&gt;The first problem that we encounter with &lt;em&gt;InDesign&lt;/em&gt; is the units in use. Type is measured in points, whereas other dimensions (vertical and horizontal) are measured in more worldly units such as millimetres or inches. Since 1 point measures 0.352777778 millimetres, we don’t want to have to keep making this conversion!&lt;/p&gt;
+
+&lt;p&gt;The vertical position of the lines of text are dependent on:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;type size (font-size)&lt;/li&gt;
+  &lt;li&gt;the leading (line-height)&lt;/li&gt;
+  &lt;li&gt;space before the paragraph (margin-top)&lt;/li&gt;
+  &lt;li&gt;space after the paragraph (margin-bottom)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the brackets at the end of these lines, we reveal what CSS in the ePub package is used to control the vertical space.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-the-reflowable-ebook&quot;&gt;In the reflowable eBook&lt;/h2&gt;
+
+&lt;h3 id=&quot;the-body-text&quot;&gt;The body text&lt;/h3&gt;
+
+&lt;p&gt;In the above illustration you see the baseline grid. In this InDesign example, this is set to 13.606 pt. An odd number, yes, but this is because it is set to be an exact 30th of the text block height; this is what the designer wants for print. When we are taking this to the reflowable ePub, the grid is ignored but the leading is not, so, we need to set the leading to something near to this baseline grid setting (13pt).&lt;/p&gt;
+
+&lt;h3 id=&quot;other-block-level-elements&quot;&gt;Other block level elements&lt;/h3&gt;
+
+&lt;p&gt;Headings and blockquotes are going to interrupt this vertical alignment, so we need to make sure that these elements use vertical space that is a multiple of the body text leading.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Say we have a sub heading that breaks the flow of the body text. We need to add together the space-before and space-after with the leading to get a multiple of the body-text leading.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Our sub heading could have a font size of 16pts with leading of 17.5pts
+The space-before could be 6pts and the space-after 2.5pts. This then computes as follows:
+17.5 + 2.5 + 6 = 26 - which a multiple of 13&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;With this calculation, our body text should be back in alignment after the heading.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-about-images-in-the-text&quot;&gt;What about images in the text?&lt;/h2&gt;
+
+&lt;p&gt;If we introduce an illustration that has text &lt;strong&gt;before&lt;/strong&gt; and &lt;strong&gt;after&lt;/strong&gt;, then this will upset the vertical alignment of the body text, unless we can size the vertical dimension of the image with a multiple of the leading.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Just to clarify&lt;/strong&gt;: InDesign will sort this out for print, because the body text will come back to the baseline grid, after these interruptions. But in the eBook, we need to explicitly set the spacing for these ‘interruptions’ to bring things back to the alignment.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;

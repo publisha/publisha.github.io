@@ -6,6 +6,10 @@ layout: screencast
 published: true
 categories: [InDesign]
 ---
-I am slowly working on a project to construct a publishing system that uses a web first interface to provide an editing environment which then leads to XML that can then be exported ready to be imported into a ready prepared InDesign template.
+This screencast demonstrates a web-first publishing system. It uses a web interface to provide an editing environment which, when ready for page layout publishing ready, can be exported to XML.
+
+ The XML can then be imported into a ready prepared InDesign template.
 
 This screencast demonstrates the building of an international recipe book with contributions from various editors.
+
+The final objective in this project was to create an eBook, but this system is equally appropriate for a print version.

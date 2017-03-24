@@ -31,6 +31,16 @@
 
 
 
+
+<style>
+section.toc {
+  display:none;
+}
+</style>
+
+
+
+
 <!-- javascripts for fancybox -->
 <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
@@ -83,6 +93,10 @@
     
       
         <a class="sidebar-nav-item" href="/pages/anchoring_wrapping/">Anchoring and Wrapping</a>
+      
+    
+    
+    
       
     
     
@@ -293,6 +307,8 @@
     
      
     
+     
+    
     </ul>
   </li>
       
@@ -378,6 +394,8 @@
         
           
         
+    
+     
     
      
     
@@ -477,6 +495,8 @@
     
      
     
+     
+    
     </ul>
   </li>
       
@@ -562,6 +582,8 @@
         
           
         
+    
+     
     
      
     
@@ -661,6 +683,8 @@
     
      
     
+     
+    
     </ul>
   </li>
       
@@ -746,6 +770,8 @@
             <li><a href="/pages/id2xml/">Create XML from InDesign <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
           
         
+    
+     
     
      
     
@@ -848,6 +874,8 @@
         
           
         
+    
+     
     
      
     
@@ -970,6 +998,10 @@
       
         
       
+    
+      
+        
+      
      -->
     
      <a class="sidebar-nav-item" href="/blog">Blog Articles</a>
@@ -1002,6 +1034,100 @@
 
       <div class="container content">
         <div class="posts">
+  
+  <div class="post">
+    <h2 class="post-title">
+      <a href="/indesign/epub/css/2017/03/24/page-size-in-indesign-for-ebook/">
+        Page size in InDesign for eBook?
+      </a>
+    </h2>
+
+    <span class="post-date">24 Mar 2017</span>
+    <!-- <p>We’re creating an eBook in InDesign. We’re not planning a print book at all - just straight to an eBook; what size page should we choose?</p>
+
+<h2 id="why-should-you-care">Why should you care?</h2>
+
+<p>When we create an eBook (reflowable) users get to change the font size. This is how it is in all eReader devices although the range of sizes varies considerably.</p>
+
+<p>Let’s use the iPad with Apple’s iOS as an example. Let’s have a look at iBooks (the standard app on the iPad for viewing eBooks).</p>
+
+<h2 id="ibooks">iBooks</h2>
+
+<p>On any MAC with iBooks, a reflowable eBook provides the user with a font size ‘adjuster’ symbolised as a small and large capital <code class="highlighter-rouge">A</code>. You can see the image alongside here.</p>
+
+<p><a href="/images/2017/03/ibooksfontsize.png"><img src="/images/2017/03/ibooksfontsize.png" alt="The appearance controller for iBooks on the MAC" /></a></p>
+
+<p>The range of choices is extreme: There are 11 steps from when the little <code class="highlighter-rouge">A</code> is greyed out to when the large <code class="highlighter-rouge">A</code> is greyed out. As you see from the nest image here, the large size is - well, kind of ridiculous.</p>
+
+<p><a href="/images/2017/03/ibooksenlargedtext.png"><img src="/images/2017/03/ibooksenlargedtext.png" alt="The largest text size with iBooks" /></a></p>
+
+<h2 id="the-target-size-for-the-body-text-font">The target size for the body text font?</h2>
+
+<p>Whatever you think you want, you may not get it! The problem is that the reader may have adjusted the font size when they read another book before yours, so you don’t know what they will see at first.</p>
+
+<p>When you create a reflowable ePub from InDesign, the relationship between the InDesign page and what you see in the ePub (I’m using Apple’s iBooks here) is non existent; that is, the page size in InDesign is not relevant. What is relevant is the font size. Let me explain further by showing some simple sample pages.</p>
+
+<h2 id="point-size-to-css-em">Point size to CSS em</h2>
+
+<p>Let’s focus on the body text. By that I mean the main paragraphs; not the headings or list items or captions. Just the paragraphs.</p>
+
+<p>You must have a point size for this text. InDesign expects you to have a value for the point size. The default point size is <code class="highlighter-rouge">12pts</code>. This is how you should find it if you use the <code class="highlighter-rouge">[Basic Paragraph]</code> style.</p>
+
+<p>When you export to the ePub Reflowable format, the CSS that controls the font size will be:</p>
+
+<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="nt">p</span><span class="nc">.basic-paragraph</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span><span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table>
+</div>
+</div>
+<p>In other words the default font size for the HTML element <code class="highlighter-rouge">p</code>.</p>
+
+<h2 id="what-about-the-page-size-then">What about the page size then?</h2>
+
+<p>If you accept that the reflowable ePub will not necessarily look <em>exactly</em> like the InDesign page, then you can make the page size whatever you want, but –— maybe we really want to see the InDesign page layout so that it <em>almost nearly</em> reflects the view that will be seen in the eBook.</p>
+
+<p>To establish this, we need to conduct some experiments.</p>
+
+<h3 id="starting-a-new-indesign-document-beware-of-the-intent-trap">Starting a New InDesign document (beware of the <code class="highlighter-rouge">Intent</code> trap)</h3>
+
+<p>You might be tempted, when creating a new InDesign document to select <code class="highlighter-rouge">Intent</code> and choose <code class="highlighter-rouge">Mobile</code>, and then choose <code class="highlighter-rouge">iPad</code>. Depending on which you choose, you might get a page size of 1024x768 pixels. If you have a body text font size of <code class="highlighter-rouge">12pts</code>, then your text will appear very small, when working with InDesign. See the image to the left.</p>
+
+<p><a href="/images/2017/03/ipadsize12pts.png"><img src="/images/2017/03/ipadsize12pts.png" alt="This portrait page is 768 wide x 1024 tall" /></a></p>
+
+<p>Let’s try something else; if we imagine that the <em>spread</em> needs to be 1024 pixels together then the page should be 768 pixels tall and 512 pixels wide.</p>
+
+<p><a href="/images/2017/03/pagesize768512.png"><img src="/images/2017/03/pagesize768512.png" alt="View in InDesign of 12pt text on 512x768 page" /></a></p>
+
+<p>Now we see what the 12pt text looks like in InDesign. Not bad. Good measure with a manageable page size.</p>
+
+<p>How near is this to the eventual view in the eBook. We need to export as reflowable and then look at this in Apple’s iBooks, but with the text size set one size larger than the smallest.</p>
+
+<p><a href="/images/2017/03/pagesize768512_epub2.png"><img src="/images/2017/03/pagesize768512_epub2.png" alt="Here we compare the eBook with what we see in InDesign." /></a></p>
+
+<p>We can continue to try other options until the best choice is found; let’s just see a different size in InDesign. This time we choose for Web Intent and choose the <code class="highlighter-rouge">640 x 480</code> size.</p>
+
+<p>We have InDesign show us the page at <code class="highlighter-rouge">actual size</code> and we compare this to iBooks (actual size) but enlarge the text up one notch.</p>
+
+<p><a href="/images/2017/03/640480_iBook_2ndstep.png"><img src="/images/2017/03/640480_iBook_2ndstep.png" alt="InDesign actual size and iBooks with text up one notch" /></a></p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>The reflowable eBook should have the default size for for body text (that means 1em or 12pts), so that users can increase the text size if they prefer. In fact, Apple recommends that the there is <strong>no</strong> text size set for the body text, so that it automatically defers to the default size. InDesign does not give us this option, so setting at 12pts is the best choice.</p>
+
+<blockquote>
+  <p>Note: You can, of course post-edit the ePub and remove the font-size CSS from the style rules for your body text.</p>
+</blockquote>
+
+<p>After much experimenting then, we find that in a situation where we are creating a reflowable ePub from InDesign <em>without wanting the print version first</em> then the best page size choice is <strong>480 pixels wide and 640 pixels high after selecting the intent for web</strong>.</p>
+ -->
+    <p>We’re creating an eBook in InDesign. We’re not planning a print book at all - just straight to an eBook; what size page should we choose?</p>
+
+
+    <p><a href="/indesign/epub/css/2017/03/24/page-size-in-indesign-for-ebook/">Read more...</a></p>
+  </div>
   
   <div class="post">
     <h2 class="post-title">
@@ -1275,7 +1401,7 @@ it?
 
 <div class="language-terminal highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2</pre></td><td class="code"><pre><span class="w">$ </span><span class="nc">cd</span><span class="kv"> /Applications/Utilities/ebook_tools/epubcheck-4.0.2
-</span><span class="w">$ </span><span class="nc">java</span><span class="kv"> -jar pubcheck-4.0.2 path to the ePub file
+</span><span class="w">$ </span><span class="nc">java</span><span class="kv"> -jar pubcheck-4.0.2 &lt;path to the ePub file&gt;
 </span></pre></td></tr></tbody></table>
 </div>
 </div>
@@ -1305,70 +1431,11 @@ it?
     <p><a href="/html/2017/02/05/validation/">Read more...</a></p>
   </div>
   
-  <div class="post">
-    <h2 class="post-title">
-      <a href="/html/2017/02/03/htmlORxhtml/">
-        HTML, XHTML, HTML5 or XHTML5
-      </a>
-    </h2>
-
-    <span class="post-date">03 Feb 2017</span>
-    <!-- <p>Goodness me there seem to be so many flavours of HTML. What does this all mean for eBook production and why should we care?</p>
-
-<h2 id="so-you-thought-it-was-just-html">So you thought it was just ‘HTML’!</h2>
-
-<p>HTML5 is the newest version of HTML and is very ‘loose’ and forgiving. In fact when you create HTML5 markup you do not need to close the tags.</p>
-
-<p>For example this is acceptable in HTML5:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2</pre></td><td class="code"><pre><span class="nt">&lt;h1&gt;</span>This is a heading
-<span class="nt">&lt;p&gt;</span>This is a paragraph
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<p>eBooks made to ePub3 standard use HTML but the markup is very strict. In fact the markup should conform to <code class="highlighter-rouge">XML</code> standards and this means that the format is actually <code class="highlighter-rouge">XHTML5</code>.</p>
-
-<p>For the above markup snippet to conform to <code class="highlighter-rouge">XHTML</code> (and thus ePub3) it would need to be:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2</pre></td><td class="code"><pre><span class="nt">&lt;h1&gt;</span>This is a heading<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;p&gt;</span>This is a paragraph<span class="nt">&lt;/p&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<p>In order to validate XHTML you need to name the file with the XHTML extension; thus <code class="highlighter-rouge">recipe.xhtml</code></p>
-
-<p>There are also some very specific items that need to go at the head of an XHTML file. Here are the required items:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1999/xhtml"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">/&gt;</span>
-and so on
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<p>As you can see, although the doctype is <code class="highlighter-rouge">html</code>, the namespace (<code class="highlighter-rouge">xmlns</code>) is using the one from the World Wide Web consortium for <code class="highlighter-rouge">xhtml</code>.</p>
- -->
-    <p>Goodness me there seem to be so many flavours of HTML. What does this all mean for eBook production and why should we care?</p>
-
-
-    <p><a href="/html/2017/02/03/htmlORxhtml/">Read more...</a></p>
-  </div>
-  
 </div>
 
 <div class="pagination">
   
-    <span class="pagination-item older">Older</span>
+    <a class="pagination-item older" href="/blog/page2">Older</a>
   
   
     <span class="pagination-item newer">Newer</span>

@@ -53,6 +53,16 @@ code {
 </style>
 {% endif %}
 
+{% if page.type == "blog" %}
+<style>
+section.toc {
+  display:none;
+}
+</style>
+{% endif %}
+
+
+
 <!-- javascripts for fancybox -->
 <script type="text/javascript" src="{{site.baseurl}}/public/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="{{site.baseurl}}/public/js/jquery.fancybox.pack.js">

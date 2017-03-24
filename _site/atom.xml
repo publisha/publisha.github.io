@@ -4,13 +4,100 @@
  <title>Digital Publisher Guide</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-03-19T17:45:09+00:00</updated>
+ <updated>2017-03-24T13:07:03+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Page size in InDesign for eBook?</title>
+   <link href="http://localhost:4000/indesign/epub/css/2017/03/24/page-size-in-indesign-for-ebook/"/>
+   <updated>2017-03-24T12:39:00+00:00</updated>
+   <id>http://localhost:4000/indesign/epub/css/2017/03/24/page-size-in-indesign-for-ebook</id>
+   <content type="html">&lt;p&gt;We’re creating an eBook in InDesign. We’re not planning a print book at all - just straight to an eBook; what size page should we choose?&lt;/p&gt;
+
+&lt;h2 id=&quot;why-should-you-care&quot;&gt;Why should you care?&lt;/h2&gt;
+
+&lt;p&gt;When we create an eBook (reflowable) users get to change the font size. This is how it is in all eReader devices although the range of sizes varies considerably.&lt;/p&gt;
+
+&lt;p&gt;Let’s use the iPad with Apple’s iOS as an example. Let’s have a look at iBooks (the standard app on the iPad for viewing eBooks).&lt;/p&gt;
+
+&lt;h2 id=&quot;ibooks&quot;&gt;iBooks&lt;/h2&gt;
+
+&lt;p&gt;On any MAC with iBooks, a reflowable eBook provides the user with a font size ‘adjuster’ symbolised as a small and large capital &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt;. You can see the image alongside here.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/ibooksfontsize.png&quot;&gt;&lt;img src=&quot;/images/2017/03/ibooksfontsize.png&quot; alt=&quot;The appearance controller for iBooks on the MAC&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The range of choices is extreme: There are 11 steps from when the little &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; is greyed out to when the large &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt; is greyed out. As you see from the nest image here, the large size is - well, kind of ridiculous.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/ibooksenlargedtext.png&quot;&gt;&lt;img src=&quot;/images/2017/03/ibooksenlargedtext.png&quot; alt=&quot;The largest text size with iBooks&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-target-size-for-the-body-text-font&quot;&gt;The target size for the body text font?&lt;/h2&gt;
+
+&lt;p&gt;Whatever you think you want, you may not get it! The problem is that the reader may have adjusted the font size when they read another book before yours, so you don’t know what they will see at first.&lt;/p&gt;
+
+&lt;p&gt;When you create a reflowable ePub from InDesign, the relationship between the InDesign page and what you see in the ePub (I’m using Apple’s iBooks here) is non existent; that is, the page size in InDesign is not relevant. What is relevant is the font size. Let me explain further by showing some simple sample pages.&lt;/p&gt;
+
+&lt;h2 id=&quot;point-size-to-css-em&quot;&gt;Point size to CSS em&lt;/h2&gt;
+
+&lt;p&gt;Let’s focus on the body text. By that I mean the main paragraphs; not the headings or list items or captions. Just the paragraphs.&lt;/p&gt;
+
+&lt;p&gt;You must have a point size for this text. InDesign expects you to have a value for the point size. The default point size is &lt;code class=&quot;highlighter-rouge&quot;&gt;12pts&lt;/code&gt;. This is how you should find it if you use the &lt;code class=&quot;highlighter-rouge&quot;&gt;[Basic Paragraph]&lt;/code&gt; style.&lt;/p&gt;
+
+&lt;p&gt;When you export to the ePub Reflowable format, the CSS that controls the font size will be:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;codehilite&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.basic-paragraph&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;In other words the default font size for the HTML element &lt;code class=&quot;highlighter-rouge&quot;&gt;p&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-about-the-page-size-then&quot;&gt;What about the page size then?&lt;/h2&gt;
+
+&lt;p&gt;If you accept that the reflowable ePub will not necessarily look &lt;em&gt;exactly&lt;/em&gt; like the InDesign page, then you can make the page size whatever you want, but –— maybe we really want to see the InDesign page layout so that it &lt;em&gt;almost nearly&lt;/em&gt; reflects the view that will be seen in the eBook.&lt;/p&gt;
+
+&lt;p&gt;To establish this, we need to conduct some experiments.&lt;/p&gt;
+
+&lt;h3 id=&quot;starting-a-new-indesign-document-beware-of-the-intent-trap&quot;&gt;Starting a New InDesign document (beware of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Intent&lt;/code&gt; trap)&lt;/h3&gt;
+
+&lt;p&gt;You might be tempted, when creating a new InDesign document to select &lt;code class=&quot;highlighter-rouge&quot;&gt;Intent&lt;/code&gt; and choose &lt;code class=&quot;highlighter-rouge&quot;&gt;Mobile&lt;/code&gt;, and then choose &lt;code class=&quot;highlighter-rouge&quot;&gt;iPad&lt;/code&gt;. Depending on which you choose, you might get a page size of 1024x768 pixels. If you have a body text font size of &lt;code class=&quot;highlighter-rouge&quot;&gt;12pts&lt;/code&gt;, then your text will appear very small, when working with InDesign. See the image to the left.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/ipadsize12pts.png&quot;&gt;&lt;img src=&quot;/images/2017/03/ipadsize12pts.png&quot; alt=&quot;This portrait page is 768 wide x 1024 tall&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s try something else; if we imagine that the &lt;em&gt;spread&lt;/em&gt; needs to be 1024 pixels together then the page should be 768 pixels tall and 512 pixels wide.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/pagesize768512.png&quot;&gt;&lt;img src=&quot;/images/2017/03/pagesize768512.png&quot; alt=&quot;View in InDesign of 12pt text on 512x768 page&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we see what the 12pt text looks like in InDesign. Not bad. Good measure with a manageable page size.&lt;/p&gt;
+
+&lt;p&gt;How near is this to the eventual view in the eBook. We need to export as reflowable and then look at this in Apple’s iBooks, but with the text size set one size larger than the smallest.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/pagesize768512_epub2.png&quot;&gt;&lt;img src=&quot;/images/2017/03/pagesize768512_epub2.png&quot; alt=&quot;Here we compare the eBook with what we see in InDesign.&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We can continue to try other options until the best choice is found; let’s just see a different size in InDesign. This time we choose for Web Intent and choose the &lt;code class=&quot;highlighter-rouge&quot;&gt;640 x 480&lt;/code&gt; size.&lt;/p&gt;
+
+&lt;p&gt;We have InDesign show us the page at &lt;code class=&quot;highlighter-rouge&quot;&gt;actual size&lt;/code&gt; and we compare this to iBooks (actual size) but enlarge the text up one notch.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/640480_iBook_2ndstep.png&quot;&gt;&lt;img src=&quot;/images/2017/03/640480_iBook_2ndstep.png&quot; alt=&quot;InDesign actual size and iBooks with text up one notch&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;The reflowable eBook should have the default size for for body text (that means 1em or 12pts), so that users can increase the text size if they prefer. In fact, Apple recommends that the there is &lt;strong&gt;no&lt;/strong&gt; text size set for the body text, so that it automatically defers to the default size. InDesign does not give us this option, so setting at 12pts is the best choice.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: You can, of course post-edit the ePub and remove the font-size CSS from the style rules for your body text.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;After much experimenting then, we find that in a situation where we are creating a reflowable ePub from InDesign &lt;em&gt;without wanting the print version first&lt;/em&gt; then the best page size choice is &lt;strong&gt;480 pixels wide and 640 pixels high after selecting the intent for web&lt;/strong&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Writing with Atom</title>

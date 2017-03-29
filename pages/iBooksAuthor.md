@@ -1,7 +1,7 @@
 ---
 layout: page
 title: iBooks Author
-published: false
+published: true
 tags: iBooks Author
 categories: [InDesign, iBooks Author]
 ---
@@ -176,7 +176,7 @@ If you have not invested in Badia Export Tools, then you can use 2 scripts to ge
 First of all we need to split the story into separate stories. The script we need is called `SplitBeforeHere` [and you can get it here][2979f002].
 
   [2979f002]: https://gist.github.com/Pageboy/b58b457f7f141ab86c48c17d0954d940 "Get this script"
-  
+
 With this script you will need to first go to each page where you want to begin a new threaded story, select the text frame, invoke the script and then choose ‘Split before’. Each of these in turn through the play, so you will have separated stories.
 
 ### Page Extractor

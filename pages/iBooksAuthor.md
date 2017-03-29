@@ -29,11 +29,11 @@ There is no way to start a template from scratch. You have to start with one of 
 
 Make a decision first about the orientation that you will give your eBook. You can choose ‘Landscape’ or ‘Portrait’. It is possible to select the ‘Landscape’ option and then later turn on the **scrolling** view; effectively creating a Landscape with a portrait view.
 
-[![Your choice of templates](/images/2017/03/iBooksAuthor/image1.png)](/images/2017/03/iBooksAuthor/images/image1.png)
+[![Your choice of templates](/images/2017/03/iBooksAuthor/image1.png)](/images/2017/03/iBooksAuthor/image1.png)
 
 If you are confused by this, you should experiment with a few of the template options, to get a better feel for the choices.
 
-[![The type styles](/images/2017/03/iBooksAuthor/image2.png)](/images/2017/03/iBooksAuthor/images/image2.png)
+[![The type styles](/images/2017/03/iBooksAuthor/image2.png)](/images/2017/03/iBooksAuthor/image2.png)
 
 ## The Styling Options
 
@@ -49,13 +49,13 @@ IBA provides you with a basic structure using the terms ‘Chapters’ and the f
 
 Some books may have sections as the top level with chapters inside those sections. Anything is possible, although in terms of IBA’s automatic construction of the table of contents, you can only have 2 levels, so by default you have Pages within Sections within Chapters although you can dispense with Sections altogether.
 
-[![The structure of the iBooks Author multi-touch eBook](/images/2017/03/iBooksAuthor/image3.png)](/images/2017/03/iBooksAuthor/images/image3.png)
+[![The structure of the iBooks Author multi-touch eBook](/images/2017/03/iBooksAuthor/image3.png)](/images/2017/03/iBooksAuthor/image3.png)
 
 In my example book that that I have created for print we can look at the table of contents to try to establish the structure. We do only have 2 levels to work with but this should not be a serious limitation.
 
 The TOC shows that the Heading ‘Shakespeare’s Life’ is at the same level as the Dramatis Personae and the Act heading. The section within ‘Shakepeare’s Life’ (examples: Stratford, Marriage) is at the same level as the Scene headings within the Acts of the play.
 
-[![Table of contents as seen in the print version](/images/2017/03/iBooksAuthor/image4.png)](/images/2017/03/iBooksAuthor/images/image4.png)
+[![Table of contents as seen in the print version](/images/2017/03/iBooksAuthor/image4.png)](/images/2017/03/iBooksAuthor/image4.png)
 
 We need to equate these headings with the structural items of iBooks Author.
 
@@ -67,7 +67,7 @@ With this idea in mind we can construct a template that serves this structure. I
 
 On the left hand side of the display window you will see the sample blank pages - a Chapter Heading page and beneath this (set in), a Section heading page. To see the layouts we need to expand the the collapsed window by dragging down the menu indicator to the right of the word ‘Book’.
 
-[![The layouts part of the iBooks Author toolset](/images/2017/03/iBooksAuthor/image5.png)](/images/2017/03/iBooksAuthor/images/image5.png)
+[![The layouts part of the iBooks Author toolset](/images/2017/03/iBooksAuthor/image5.png)](/images/2017/03/iBooksAuthor/image5.png)
 
 Alternatively you can select ‘Show Layouts’ from the View Menu.
 
@@ -91,7 +91,7 @@ The Section start page includes the ‘Section 1’ header which I don’t want 
 
 My pages ‘2 column’ and ‘blank’ are available for me to modify further.
 
-[![Here we see the full page chapter start](/images/2017/03/iBooksAuthor/image7.png)](/images/2017/03/iBooksAuthor/images/image7.png)
+[![Here we see the full page chapter start](/images/2017/03/iBooksAuthor/image7.png)](/images/2017/03/iBooksAuthor/image7.png)
 
 ### Adding Layouts
 
@@ -117,7 +117,7 @@ Only in the most recent versions of iBooks Author have the following features be
 
 Neither of the 2 options described below are without their difficulties, and your decision as to which is better for you, will depend on the amount of work you would rather do in iBooks Author or back in InDesign.
 
-[![The text flow in iBooks Author is similar to InDesign's threaded text](/images/2017/03/iBooksAuthor/image8.png)](/images/2017/03/iBooksAuthor/images/image8.png)
+[![The text flow in iBooks Author is similar to InDesign's threaded text](/images/2017/03/iBooksAuthor/image8.png)](/images/2017/03/iBooksAuthor/image8.png)
 
 ### From ePUB to iBooks Author
 
@@ -129,13 +129,13 @@ But before going through this process, let me just point out some facts.
 
 The Table of Contents is where IBA gets its information for the structure – you know – Chapters, Sections, Pages etc. So, you really must be sure that the logical TOC, is going to provide that information. Take a look at your beautifully formed reflowable ePUB3 and analyse the TOC, before building the IBA file from it. iBooks Author only transfers 2 levels of the TOC to build the structure.
 
-[![Choosing a template when importing the ePub](/images/2017/03/iBooksAuthor/image9.png)](/images/2017/03/iBooksAuthor/images/image9.png)
+[![Choosing a template when importing the ePub](/images/2017/03/iBooksAuthor/image9.png)](/images/2017/03/iBooksAuthor/image9.png)
 
 ## Typographic Styles
 
 Creating a new iBooks Author file from an ePUB (reflowable) will bring into the template the correct appearance of the paragraph and character styles, but they will not have the names you gave them in InDesign. They will only have generic names such as heading 1, heading 2, etc. Furthermore, the many other styles that you have in your InDesign file (in my example: verse line, prose, location etc), will all become Free Form styles. Now, this may not be a problem, but it will be very difficult to modify these styles.
 
-[![The InDesign styles do not remain with the same names.](/images/2017/03/iBooksAuthor/image10.png)](/images/2017/03/iBooksAuthor/images/image10.png)
+[![The InDesign styles do not remain with the same names.](/images/2017/03/iBooksAuthor/image10.png)](/images/2017/03/iBooksAuthor/image10.png)
 
 ## Insert Chapter from InDesign (IDML)
 
@@ -147,7 +147,7 @@ Using this technique is far from straightforward but if we are careful we can ge
 
 Apple IBA will take everything that is in the `IDML` file and put it on its own pages. We expect the IDML file to include everything, but there is one thing that we do not want in the IBA file; the master page items. This means the header and the footers (page number especially).
 
-[![You should hide the page numbers and headers before exporting the IDML](/images/2017/03/iBooksAuthor/image11.png)](/images/2017/03/iBooksAuthor/images/image11.png)
+[![You should hide the page numbers and headers before exporting the IDML](/images/2017/03/iBooksAuthor/image11.png)](/images/2017/03/iBooksAuthor/image11.png)
 
 Since the book you are reading proposes a workflow that retains the print elements and yet successfully produce eBooks, we will simply hide the master page items by putting them on their own layer and hiding that layer.
 
@@ -163,7 +163,7 @@ On the other hand there are scripts that can work, but you will need to pay part
 
 ### Smart Text Flow?
 
-[![Turn off smart text flow](/images/2017/03/iBooksAuthor/image12.png)](/images/2017/03/iBooksAuthor/images/image12.png)
+[![Turn off smart text flow](/images/2017/03/iBooksAuthor/image12.png)](/images/2017/03/iBooksAuthor/image12.png)
 
 If you have this switched on in your preferences, then be sure to disable this before you try to split the long file, otherwise you may end up with lots of overset text in each of the separated files.
 
@@ -188,11 +188,11 @@ The Extract Pages script was originally created by Loic Aigon, but I have simpli
 
 #### Page Numbers
 
-[![Using the IDML extractor](/images/2017/03/iBooksAuthor/image13.png)](/images/2017/03/iBooksAuthor/images/image13.png)
+[![Using the IDML extractor](/images/2017/03/iBooksAuthor/image13.png)](/images/2017/03/iBooksAuthor/image13.png)
 
 This might be tricky! The page extractor script can get confused about page numbers, if you have different sections in the InDesign file, so I advise you (for simplicity), to temporarily make the whole document into one section with page numbers starting at 1. This way you will know what page numbers (start and end) to provide for the extract routine.
 
-[![The result shows IDML files and InDesign files](/images/2017/03/iBooksAuthor/image14.png)](/images/2017/03/iBooksAuthor/images/image14.png)
+[![The result shows IDML files and InDesign files](/images/2017/03/iBooksAuthor/image14.png)](/images/2017/03/iBooksAuthor/image14.png)
 
 ### Split, Repeat, Split, Repeat
 
@@ -206,15 +206,15 @@ We are now ready to insert into the iBooks Author Template.
 
 With our template open we now need to choose the first of our IDML files and after opting to include text, media and graphics, paragraph and character styles, we select the Section. Note: NOT the chapter, because we are entering the chapter in selectively for each Any of the play (abd front mater sections later.
 
-[![The choices when you import from IDML](/images/2017/03/iBooksAuthor/image15.png)](/images/2017/03/iBooksAuthor/images/image15.png)
+[![The choices when you import from IDML](/images/2017/03/iBooksAuthor/image15.png)](/images/2017/03/iBooksAuthor/image15.png)
 
 ### Some broken features
 
 We are going to experience some very strange anomalies with this process, and I am afraid you just need to accept that getting the content into iBooks Author this way does throw up some artefacts such as repeated pages, ghost text frames, that were not in the InDesign file and images that seem smaller than they were in InDesign.
 
-[![Choose the layout](/images/2017/03/iBooksAuthor/image16.png)](/images/2017/03/iBooksAuthor/images/image16.png)
+[![Choose the layout](/images/2017/03/iBooksAuthor/image16.png)](/images/2017/03/iBooksAuthor/image16.png)
 
-[![The chapter will start on a new page in iBooks Author](/images/2017/03/iBooksAuthor/image17.png)](/images/2017/03/iBooksAuthor/images/image17.png)
+[![The chapter will start on a new page in iBooks Author](/images/2017/03/iBooksAuthor/image17.png)](/images/2017/03/iBooksAuthor/image17.png)
 
 The good thing is that you should not be missing anything, you just need to delete some pages and move top level heading to the Chapter start page.
 
@@ -224,7 +224,7 @@ To add a chapter (in our example so far this is an Act of the play), we just nee
 
 If you want to give your users an option to read the book in a scrolling view then you will need to look at the scrolling view and make adjustments to a variety of places and settings.
 
-[![Optionally you can include a scrolling view](/images/2017/03/iBooksAuthor/image19.png)](/images/2017/03/iBooksAuthor/images/image19.png)
+[![Optionally you can include a scrolling view](/images/2017/03/iBooksAuthor/image19.png)](/images/2017/03/iBooksAuthor/image19.png)
 
 The Scrolling View is an **opt-out** setting. You will find that in the Document inspector panel, the ‘Disable scrolling view’ tick box is off by default. You must tick this box if you have done nothing to style for the scrolling view as well as the landscape view. We can only view the book in a scrolling view with an iPad; you cannot see the scrolling view with iBooks on the MAC, although you can see the scrolling view in iBooks Author.
 
@@ -248,7 +248,7 @@ All of the styling will be carried across to the scrolling view, and this may no
 
 There are 2 kinds of images in our eBook; content (images that are provide information relevant to the text) and decorative images (images that serve to make the book more attractive). The latter are often in the background, or help inform the arrival of a new chapter or section. We need to look at both types.
 
-[![An image used as a banner and an image in the content](/images/2017/03/iBooksAuthor/image20.png)](/images/2017/03/iBooksAuthor/images/image20.png)
+[![An image used as a banner and an image in the content](/images/2017/03/iBooksAuthor/image20.png)](/images/2017/03/iBooksAuthor/image20.png)
 
 #### Decorative Images
 
@@ -258,13 +258,13 @@ We can only decorate the headers for the Chapter and Section start; unlike the l
 
 You could have a shock when you view the Scrolling View, because you may not see any images at all. This is because images placed on the pages in the landscape view need to be turned into Widgets. This isn’t really as complicated as it sounds. With an image selected (in the landscape view), find the small widget icon and check the ‘Goes full-screen’ tick box. This will mean that the image in the landscape view can be enlarged, and in the portrait view it will become a thumbnail image in the left margin (Apple calls this the _thumbnail track_), also available for enlargement.
 
-[![an image in the scrolling view](/images/2017/03/iBooksAuthor/image21.png)](/images/2017/03/iBooksAuthor/images/image21.png)
+[![an image in the scrolling view](/images/2017/03/iBooksAuthor/image21.png)](/images/2017/03/iBooksAuthor/image21.png)
 
 You can optionally add a caption and/or a title for the image. This will also then appear in the enlarged view.
 
 We can also add images as thumbnails into the content
 
-[![We can also add images as thumbnails into the content](/images/2017/03/iBooksAuthor/image22.png)](/images/2017/03/iBooksAuthor/images/image22.png)
+[![We can also add images as thumbnails into the content](/images/2017/03/iBooksAuthor/image22.png)](/images/2017/03/iBooksAuthor/image22.png)
 
 ## Further Details
 
@@ -300,4 +300,4 @@ The results are reasonably good and anomalies are easily edited, since all named
 
 You really can only use this technique if you have split a complete InDesign document into constituent parts (such as chapters and sections), because you are only able to add the IDML file into a chapter not a complete book.
 
-[![Adding the cover](/images/2017/03/iBooksAuthor/image23.png)](/images/2017/03/iBooksAuthor/images/image23.png)
+[![Adding the cover](/images/2017/03/iBooksAuthor/image23.png)](/images/2017/03/iBooksAuthor/image23.png)

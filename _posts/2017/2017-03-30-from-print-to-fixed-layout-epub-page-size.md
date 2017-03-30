@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Print book to fixed-layout ePub: Page Size"
+title: "Page Size Issues in fixed-layout ePub"
 date: "2017-03-30 11:37"
 published: true
 ---

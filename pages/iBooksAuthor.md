@@ -5,7 +5,8 @@ published: true
 tags: iBooks Author
 categories: [InDesign, iBooks Author]
 ---
-# iBooks Author: An Authoring tool for an  _Apple-only_ hybrid format eBook
+# iBooks Author: An Authoring tool for an
+ _Apple-only_ hybrid format eBook
 
 iBooks Author was released by Apple in 2012 and is an authoring tool that runs on any Apple computer that operates underMAC OS x 10.9 or later. The software is freely available and has gone through several version changes since first released.
 
@@ -274,6 +275,8 @@ For a multi-touch eBook created with iBooks Author, the cover needs to be a very
 
 To place a cover in iBooks Author, select the Book icon in the left pane. This will show a box that will have the title of the book. You can, optionally construct the cover from text and a background image. I usually, create the cover as a graphic and drag it into this cover space.
 
+[![Adding the cover](/images/2017/03/iBooksAuthor/image23.png)](/images/2017/03/iBooksAuthor/image23.png)
+
 The image needs to be in portrait orientation and sized precisely as:
 
 `1004 x 768 pixels`
@@ -299,5 +302,3 @@ The most significant difficulty is that all styles below Heading 1 and Heading 2
 The results are reasonably good and anomalies are easily edited, since all named styles will correctly translate from InDesign.
 
 You really can only use this technique if you have split a complete InDesign document into constituent parts (such as chapters and sections), because you are only able to add the IDML file into a chapter not a complete book.
-
-[![Adding the cover](/images/2017/03/iBooksAuthor/image23.png)](/images/2017/03/iBooksAuthor/image23.png)

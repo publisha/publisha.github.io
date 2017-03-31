@@ -4,7 +4,7 @@ title: From InDesign to iBooks Author
 published: true
 tags: iBooks Author
 categories: [InDesign, iBooks Author]
-screencats: [introducing_iBooksAuthor]
+screencast: [introducing_iBooksAuthor]
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

@@ -10,7 +10,7 @@ Following on from page size in the reflowable eBook, how about the fixed-layout 
 
 Our print book spreads will become landscape in the fixed-layout eBook. So, we will get the following proportions:
 
-`width:138x2 = 278`
+`width:138 x 2 = 278`
 `height = 216`
 
 `Proportion = 216/278 = 0.7777`
@@ -36,8 +36,7 @@ This tells the ereader that the size is 782x591. The proportion, therefore is `0
 
 ### Let's not edit the ePub
 
-We don't need to edit the XHTML code inside the ePub. No, we just need to adjust the InDEsign file to use pixel units. Here's how:
-
+We don't need to edit the XHTML code inside the ePub. No, we just need to adjust the InDesign file to use pixel units. Here's how:
 ### Unit Preferences
 
 In Indesign, go to the preferences panel and find the `units and increments` section. Change the Ruler units for both vertical and horizontal to **pixels**.

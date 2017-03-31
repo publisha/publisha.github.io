@@ -1,12 +1,33 @@
 ---
 layout: page
-title: iBooks Author
+title: From InDesign to iBooks Author
 published: true
 tags: iBooks Author
 categories: [InDesign, iBooks Author]
+screencats: [introducing_iBooksAuthor]
 ---
-# iBooks Author: An Authoring tool for an
- _Apple-only_ hybrid format eBook
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
+
+- [The iBooks Format](#the-ibooks-format)
+- [Orientation Options](#orientation-options)
+- [The Styling Options](#the-styling-options)
+- [The Layouts](#the-layouts)
+- [Full Page Chapter Headings?](#full-page-chapter-headings)
+- [From InDesign to iBooks Author](#from-indesign-to-ibooks-author)
+- [Typographic Styles](#typographic-styles)
+- [Insert Chapter from InDesign (IDML)](#insert-chapter-from-indesign-idml)
+- [Chapter by chapter](#chapter-by-chapter)
+- [Splitting Up; Two Stages](#splitting-up-two-stages)
+- [Insert Chapter from IDML file](#insert-chapter-from-idml-file)
+- [Scrolling View](#scrolling-view)
+- [Further Details](#further-details)
+- [Summary](#summary)
+
+</section><!-- /TOC -->
+
+# iBooks Author: An Authoring tool for an _Apple-only_ hybrid format eBook
 
 iBooks Author was released by Apple in 2012 and is an authoring tool that runs on any Apple computer that operates underMAC OS x 10.9 or later. The software is freely available and has gone through several version changes since first released.
 

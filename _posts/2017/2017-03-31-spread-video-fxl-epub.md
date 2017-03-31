@@ -22,7 +22,7 @@ Before we go ahead and show those changes you are advised to keep the spread whe
 
 ## Why do we need to edit the XHTML?
 
-Blame Adobe! When the ePub is exported to fixed-layout specifying `Convert Spread to Landscape` a single XHTML document is created for the pair of pages, however, a `<div>` for each page is created with _inline styling_ but **no** id or class name. This means we cannot target this with our own CSS.
+Blame Adobe! When the ePub is exported to fixed-layout specifying `Convert Spread to Landscape` a single XHTML document is created for the pair of pages, however, a `<div>` for each page is created with _inline styling_ but **no** id or class name. [^1].
 
 ## Here are the steps then.
 
@@ -58,8 +58,9 @@ The width should be changed from `396.00px` to `792px`
 
 The next change is to hide the second `<div>`. Find the second block that also has a width set to half the overall viewport width and add (within the inline style):
 
-```html
-;display:none;
-```
+`;display:none;`
 
 > Note: These changes will be reversed if you re-export from InDesign, so you should only do this at the end of your workflow or copy this code somewhere and paste back in at the end.
+
+
+[^1]: It may be possible to use javascript to change the markup on the page dynamically and thereby allowing us to change this even if we have made further edits in InDesign. Let me know if you find a way. 

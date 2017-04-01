@@ -73,7 +73,7 @@ By simply adding `display:none;` we have hidden the second copy of the video, bu
 We could remove the 'autoplay' in the HTML for the video.
 
 ```html
-<video id="_idVideo000" poster="image/80.png" ~~autoplay="autoplay"~~>
+<video id="_idVideo000" poster="image/80.png" autoplay="autoplay">
   <source src="video/msnd01.mp4" type="video/mp4" />
 </video>
 ```

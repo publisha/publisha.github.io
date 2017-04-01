@@ -77,7 +77,7 @@ We could remove the 'autoplay' in the HTML for the video.
   <source src="video/msnd01.mp4" type="video/mp4" />
 </video>
 ```
-However, this is not enough, because InDesign has [^2] and you will need to disable for second video by removing this:
+However, this is not enough, because InDesign has used javascript to start the video [^2] and you will need to disable for second video by removing this:
 
 ```data-mediaOnPageLoadActions="onMediaStart(selfContainerID,0.00,0);"```
 

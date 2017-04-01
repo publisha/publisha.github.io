@@ -79,7 +79,9 @@ We could remove the 'autoplay' in the HTML for the video.
 ```
 However, this is not enough, because InDesign has used javascript to start the video [^2] and you will need to disable for second video by removing this:
 
-```data-mediaOnPageLoadActions="onMediaStart(selfContainerID,0.00,0);"```
+```javascript
+data-mediaOnPageLoadActions="onMediaStart(selfContainerID,0.00,0);"
+```
 
 I suppose you might just as well delete all of the last <div> or use HTML comment tags to remove.
 

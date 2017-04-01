@@ -60,7 +60,33 @@ The next change is to hide the second `<div>`. Find the second block that also h
 
 `;display:none;`
 
-> Note: These changes will be reversed if you re-export from InDesign, so you should only do this at the end of your workflow or copy this code somewhere and paste back in at the end.
+## Autoplaying the Video
+
+InDesign does provide a tick box on the media panel to play on page load. This effectively gets the video going straight away. In this situation there is a danger that using the above method to display the video fully across the spread may result in the video playing twice, and with sound this may result in an unpleasant echo.
+
+[![The play on page load tick box](/images/2017/04/autoplayvideo.png)](/images/2017/04/autoplayvideo.png)
+
+### How to solve this?
+
+By simply adding `display:none;` we have hidden the second copy of the video, but it will still play if told to do so with 'autoplay'.
+
+We could remove the 'autoplay' in the HTML for the video.
+
+```html
+<video id="_idVideo000" poster="image/80.png" ~~autoplay="autoplay"~~>
+  <source src="video/msnd01.mp4" type="video/mp4" />
+</video>
+```
+However, this is not enough, because InDesign has [^2] and you will need to disable for second video by removing this:
+
+```data-mediaOnPageLoadActions="onMediaStart(selfContainerID,0.00,0);"```
+
+I suppose you might just as well delete all of the last <div> or use HTML comment tags to remove.
+
+> Note: Any of these changes will be reversed if you re-export from InDesign, so you should only do this at the end of your workflow or copy this code somewhere and paste back in at the end.
 
 
-[^1]: It may be possible to use javascript to change the markup on the page dynamically and thereby allowing us to change this even if we have made further edits in InDesign. Let me know if you find a way. 
+[^1]: It may be possible to use javascript to change the markup on the page dynamically and thereby allowing us to change this even if we have made further edits in InDesign. Let me know if you find a way.
+
+
+[^2]: The reason that there is javascript to autoplay the video rather than just using 'autoplay' is that Apple iOS devices do not support the HTML5 video autostart attribute.

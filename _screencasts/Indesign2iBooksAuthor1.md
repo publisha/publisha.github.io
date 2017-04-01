@@ -5,8 +5,6 @@ YouTube: RgqVkg_OmBs
 layout: screencast
 categories: [iBooks Author, InDesign]
 ---
-# InDesign to iBooks Author
-
 This is a 2 part screencast
 
 iBooks Author provides some ways to get content from InDesign. The best way is to export from InDesign to the IDML format but we need to do this section by section.

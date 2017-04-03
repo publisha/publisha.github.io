@@ -1,6 +1,6 @@
 ---
-title: Introducing iBooks Author (Part 1)
-date: 2017-03-31
+title: Indesign to iBooks Author (Part 1)
+date: 2017-04-01
 YouTube: McvpN6hv5Uc
 layout: screencast
 categories: [iBooks Author]

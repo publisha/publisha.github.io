@@ -27,7 +27,7 @@ screencast: [introducing_iBooksAuthor, introducing_iBooksAuthor2]
 
 </section><!-- /TOC -->
 
-# iBooks Author: An Authoring tool for an _Apple-only_ hybrid format eBook
+# iBooks Author: An Authoring tool for an _Apple-only_ hybrid format eBook[^1]
 
 iBooks Author was released by Apple in 2012 and is an authoring tool that runs on any Apple computer that operates underMAC OS x 10.9 or later. The software is freely available and has gone through several version changes since first released.
 
@@ -323,3 +323,5 @@ The most significant difficulty is that all styles below Heading 1 and Heading 2
 The results are reasonably good and anomalies are easily edited, since all named styles will correctly translate from InDesign.
 
 You really can only use this technique if you have split a complete InDesign document into constituent parts (such as chapters and sections), because you are only able to add the IDML file into a chapter not a complete book.
+
+[^1]: Recent versions of iBooks Author, can create reflowable ePub format eBooks from a particular choice of template

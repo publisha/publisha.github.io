@@ -11,12 +11,12 @@ iBooks Author provides some ways to get content from InDesign. The best way is t
 
 This first screencast episode shows you how to divide the InDesign file into separated files using a couple of scripts.
 
-## Further Information
+### Further Information
 
 The 2 InDesign scripts used are:
 
-**splitbeforehere** (this is based on a script called StorySplitter with modifications by Naomi Kennedy and then myself)
+**splitbeforehere** (this is based on a script called StorySplitter with modifications by Naomi Kennedy and then myself). This script will split the threaded story *before* the selected text frame.
 
-**extractpagesandIDML** (this is based on a script by Loïc Aigon, much simplified with additional components to export IDML)
+**extractpagesandIDML** (this is based on a script by Loïc Aigon, much simplified with additional components to export IDML). This script will extract both an InDesign file and an `IDML` file from the pages specified during the operation of the script.
 
-These 2 scripts are available as Gists and the links Ito then can [be found on this page](https://publisha.github.io/pages/iBooksAuthor/ "From InDesign to iBooks Author").
+These 2 scripts are available as Gists and the links to them can [be found on this page](https://publisha.github.io/pages/iBooksAuthor/ "From InDesign to iBooks Author").

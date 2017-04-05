@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      InDesign to iBooks Author (Part 2)
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/jquery.fancybox.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/guide.css">
+  <link rel="stylesheet" href="/public/css/bigfoot-default.css">
+
+  <!-- Fonts -->
+  <!-- can't use google fonts on GitHub unless https -->
+<link href='https://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic' rel='stylesheet'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Optionally make the images go full width but put this in the page metadata -->
+
+
+
+
+
+
+
+<!-- javascripts for fancybox -->
+<script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
+</script>
+<script type="text/javascript" src="/public/js/jquery.fancybox-media.js">
+</script>
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- javascript for the footnote popups -->
+<script type="text/javascript" src="/public/js/bigfoot.js"></script>
+<script type="text/javascript">
+    $.bigfoot();
+</script>
+
+</head>
+
+
+  <body class="theme-base-0b">
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <nav class="sidebar-nav"  style="border-bottom:none !important;">
+    <a href="/"><i class="sidebar-nav-item fa fa-home fa-2x" aria-hidden="true"></i></a>
+  </nav>
+  <div class="sidebar-item" style="padding-top:0;padding-bottom:.5rem;">
+    <p>tutorials and screencasts about digital publishing and eBook Production</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <!-- <a class="sidebar-nav-item" href="/"><i class="fa fa-home fa-lg" aria-hidden="true"> </i>Home</a> -->
+
+    
+
+    <!-- 
+    
+    
+    
+    
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/anchoring_wrapping/">Anchoring and Wrapping</a>
+      
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/buildingaTOCinInDesign/">Building the TOC in InDesign</a>
+      
+    
+    
+    
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/id2xml/">Create XML from InDesign</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/id2reflowable/">Creating a Reflowable eBook</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/editing_ePub/">Editing inside the ePUB package</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/enhanced_eBook/">Enhancing an eBook with interactivity, multimedia and animation</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/iBooksAuthor/">From InDesign to iBooks Author</a>
+      
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+    
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/id2fixed_recipes/">InDesign to the Fixed Layout Recipe eBook</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/id2fixed/">InDesign to the Fixed Layout ePub</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/eRecipeBook/">Making an eBook of Recipes</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/create_speare_play_web/">Repository for Shakespeare Play Web page</a>
+      
+    
+    
+    
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/htmlcssthebasics/">The basics of HTML and CSS</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/attentiontodetail/">Typographic detail with InDesign</a>
+      
+    
+    
+    
+      
+        <a class="sidebar-nav-item" href="/pages/InDesignBookPanel/">Using the Book Panel in InDesign</a>
+      
+    
+     -->
+
+<ul class="navigation">
+<li class="header">Pages by Category</li>
+
+  <li class="dropdown"><a href="#">InDesign <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    <ul>
+    
+     
+    
+     
+          
+            <li><a href="/pages/InDesignBookPanel/">Using the Book Panel in InDesign <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+    
+     
+    
+     
+          
+            <li><a href="/pages/anchoring_wrapping/">Anchoring and Wrapping <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+    
+     
+          
+            <li><a href="/pages/attentiontodetail/">Typographic detail with InDesign <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+          
+        
+    
+     
+          
+            <li><a href="/pages/buildingaTOCinInDesign/">Building the TOC in InDesign <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+    
+     
+          
+        
+    
+     
+          
+            <li><a href="/pages/eRecipeBook/">Making an eBook of Recipes <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+          
+        
+    
+     
+          
+        
+    
+     
+          
+            <li><a href="/pages/enhanced_eBook/">Enhancing an eBook with interactivity, multimedia and animation <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+            <li><a href="/pages/iBooksAuthor/">From InDesign to iBooks Author <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+          
+        
+    
+     
+          
+            <li><a href="/pages/id2fixed/">InDesign to the Fixed Layout ePub <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+          
+        
+    
+     
+          
+            <li><a href="/pages/id2fixed_recipes/">InDesign to the Fixed Layout Recipe eBook <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+          
+        
+    
+     
+          
+            <li><a href="/pages/id2reflowable/">Creating a Reflowable eBook <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+          
+        
+    
+     
+          
+            <li><a href="/pages/id2xml/">Create XML from InDesign <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+          
+        
+    
+     
+    
+     
+    
+     
+    
+     
+    
+    </ul>
+  </li>
+      
+  <li class="dropdown"><a href="#">HTML <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    <ul>
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+    
+     
+    
+     
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+            <li><a href="/pages/htmlcssthebasics/">The basics of HTML and CSS <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+    
+     
+    
+     
+    
+     
+    
+    </ul>
+  </li>
+      
+  <li class="dropdown"><a href="#">CSS <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    <ul>
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+    
+     
+    
+     
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+            <li><a href="/pages/htmlcssthebasics/">The basics of HTML and CSS <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+    
+     
+    
+     
+    
+     
+    
+    </ul>
+  </li>
+      
+  <li class="dropdown"><a href="#">Typography <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    <ul>
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+          
+        
+          
+            <li><a href="/pages/attentiontodetail/">Typographic detail with InDesign <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+        
+    
+     
+    
+     
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+    
+     
+    
+     
+    
+     
+    
+    </ul>
+  </li>
+      
+  <li class="dropdown"><a href="#">Using GitHub <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    <ul>
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+    
+     
+    
+     
+          
+            <li><a href="/pages/create_speare_play_web/">Repository for Shakespeare Play Web page <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+    
+     
+    
+     
+    
+     
+    
+    </ul>
+  </li>
+      
+  <li class="dropdown"><a href="#">XML <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    <ul>
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+    
+     
+    
+     
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+            <li><a href="/pages/id2xml/">Create XML from InDesign <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+    
+     
+    
+     
+    
+     
+    
+    </ul>
+  </li>
+      
+  <li class="dropdown"><a href="#">ePub <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    <ul>
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+    
+     
+    
+     
+          
+        
+    
+     
+          
+        
+          
+            <li><a href="/pages/eRecipeBook/">Making an eBook of Recipes <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+            <li><a href="/pages/editing_ePub/">Editing inside the ePUB package <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+        
+          
+            <li><a href="/pages/enhanced_eBook/">Enhancing an eBook with interactivity, multimedia and animation <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+            <li><a href="/pages/id2fixed/">InDesign to the Fixed Layout ePub <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+        
+          
+            <li><a href="/pages/id2fixed_recipes/">InDesign to the Fixed Layout Recipe eBook <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+        
+          
+            <li><a href="/pages/id2reflowable/">Creating a Reflowable eBook <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+    
+     
+    
+     
+    
+     
+    
+    </ul>
+  </li>
+      
+  <li class="dropdown"><a href="#">iBooks Author <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    <ul>
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+    
+     
+          
+        
+    
+     
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+    
+     
+    
+     
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+            <li><a href="/pages/iBooksAuthor/">From InDesign to iBooks Author <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+          
+        
+          
+        
+    
+     
+    
+     
+    
+     
+    
+     
+    
+    </ul>
+  </li>
+      
+</ul>
+
+
+    <!-- 
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/InDesignBookPanel/">Using the Book Panel in InDesign</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/anchoring_wrapping/">Anchoring and Wrapping</a>
+        
+      
+    
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/attentiontodetail/">Typographic detail with InDesign</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/buildingaTOCinInDesign/">Building the TOC in InDesign</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/create_speare_play_web/">Repository for Shakespeare Play Web page</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/eRecipeBook/">Making an eBook of Recipes</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/editing_ePub/">Editing inside the ePUB package</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/enhanced_eBook/">Enhancing an eBook with interactivity, multimedia and animation</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/htmlcssthebasics/">The basics of HTML and CSS</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/iBooksAuthor/">From InDesign to iBooks Author</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/id2fixed/">InDesign to the Fixed Layout ePub</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/id2fixed_recipes/">InDesign to the Fixed Layout Recipe eBook</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/id2reflowable/">Creating a Reflowable eBook</a>
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/id2xml/">Create XML from InDesign</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+     -->
+    
+     <a class="sidebar-nav-item" href="/blog">Blog Articles</a>
+     <a class="sidebar-nav-item" href="/pages/screencasts/">Screencasts</a>
+      <a class="sidebar-nav-item" href="/contents">Contents</a>
+  </nav>
+  <div class="sidebar-item">
+    <p>
+      <b>Note:</b> Images can be enlarged by click or touch
+    </p>
+  </div>
+  <div class="sidebar-item">
+    <p>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.12 2017
+    </p>
+  </div>
+</div>
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Digital Publisher Guide</a><br />
+            <small>Help for publishers and students of publishing</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <!-- 
+
+
+
+
+
+<div id="post-nav">
+    <div >
+        
+        <a class="prev" href="/screencasts/Indesign2iBooksAuthor1/">
+            <span>&lt; InDesign to iBooks Author (Part 1)</span>
+        </a>
+        
+        
+    </div>
+</div>
+ -->
+
+<div class="post">
+<h1>InDesign to iBooks Author (Part 2)</h1>
+<span class="post-date">03 Apr 2017</span>
+<!-- <span class="post-date"></span> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M7DqBi8VxYY?rel=0" frameborder="0" allowfullscreen></iframe>
+  <p>Part 2 of the 2 part screencast
+Now we have created seperate IDML files from InDesign we need to import these into an iBooks Author template.</p>
+
+<p>We need to understand something about the structure of an iBooks Author file and how this relates to the structure of the content we have in InDesign.</p>
+
+<p>This screencast is almost 30 minutes long…. sorry!</p>
+
+  <p><a href="/pages/screencasts/"><i class="fa fa-chevron-left" aria-hidden="true"></i> See all Screencasts</a></p>
+</div>
+
+        
+        <p><b>Filed under:</b> iBooks Author, InDesign</p>
+        
+
+      </div>
+
+    </div>
+<!-- <footer>
+<p><a style="float:right;" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+&#169; Chris Jennings 2017</p>
+</footer>
+ -->
+<!-- now follows items that get the menu working -->
+    <label title="the menu" for="sidebar-checkbox" class="sidebar-toggle fa fa-chevron-left fa-lg" aria-hidden="true"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.fancybox').fancybox();
+        });
+    </script>
+    <script>
+    jQuery(document).ready(function($) {
+    	$("img:not([title])").each(function() {
+    			if($(this).attr("alt") != '') $(this).parent().attr("title", $(this).attr("alt"))
+    			else $(this).parent().attr("title", $(this).attr("src"));
+    	});
+    });
+    </script>
+    <script>
+        $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').attr('class', 'sideimage').fancybox();
+    </script>
+
+    <!-- show a video -->
+
+
+    <script>
+    $(document).ready(function() {
+    	$(".video").fancybox({
+    		maxWidth	: 800,
+    		maxHeight	: 600,
+    		fitToView	: false,
+    		width		: '70%',
+    		height		: '70%',
+    		autoSize	: false,
+    		closeClick	: false,
+    		openEffect	: 'none',
+    		closeEffect	: 'none'
+    	});
+    });
+    </script>
+
+    <!-- navigation -->
+    <script>
+    jQuery(document).ready(function(){
+
+    $(".navigation > li > a").on("click", function(e){
+
+    	if(!$(this).hasClass("active")) {
+
+          // hide any open menus and remove all other classes
+    		$(".navigation li ul").slideUp(350);
+    		$(".navigation li a").removeClass("active");
+
+    		// open our new menu and add the open class
+    		$(this).next("ul").slideDown(350);
+    		$(this).addClass("active");
+
+    	}else if($(this).hasClass("active")) {
+
+    		$(this).removeClass("active");
+    		$(this).next("ul").slideUp(350);
+    	}
+       e.preventDefault();
+    });
+
+    });
+    </script>
+  </body>
+</html>

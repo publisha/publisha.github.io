@@ -3,6 +3,7 @@ title: Ambient Sound in a Fixed-Layout ePub
 date: 2017-04-05
 YouTube: tdZT2DkI8Rk
 layout: screencast
+published: true
 categories: [InDesign,ePub]
 ---
 **Just for Apple iBooks**

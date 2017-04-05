@@ -27,9 +27,9 @@ screencast: [introducing_iBooksAuthor, introducing_iBooksAuthor2]
 
 </section><!-- /TOC -->
 
-# iBooks Author: An Authoring tool for an _Apple-only_ hybrid format eBook[^1]
+# iBooks Author: An Authoring tool for an _Apple-only_ hybrid format eBook
 
-iBooks Author was released by Apple in 2012 and is an authoring tool that runs on any Apple computer that operates underMAC OS x 10.9 or later. The software is freely available and has gone through several version changes since first released.
+iBooks Author[^1] was released by Apple in 2012 and is an authoring tool that runs on any Apple computer that operates underMAC OS x 10.9 or later. The software is freely available and has gone through several version changes since first released.
 
 eBooks created with iBooks Author (described by Apple as ‘multi-touch’ books) can only be experienced on Apple iOS devices (iPad) or MAC with iBooks eReader software. Apple’s licensing restrictions mean that it is only possible distribute through the Apple iBookstore or (for free) through your own web site.
 

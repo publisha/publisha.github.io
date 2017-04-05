@@ -132,8 +132,8 @@ font-size: 70%;
   position: fixed;
   top: 0;
   bottom: 0;
-  left: -11rem;
-  width: 11rem;
+  left: -15rem;
+  width: 15rem;
   visibility: hidden;
   overflow-y: auto;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
@@ -153,15 +153,9 @@ font-size: 70%;
 
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  -webkit-transform: translateX(11rem);
-      -ms-transform: translateX(11rem);
-          transform: translateX(11rem);
-}
-
-#sidebar-checkbox:checked ~ .sidebar-toggle {
-  -webkit-transform: translateX(11rem);
-      -ms-transform: translateX(11rem);
-          transform: translateX(11rem);
+  -webkit-transform: translateX(15rem);
+      -ms-transform: translateX(15rem);
+          transform: translateX(15rem);
 }
 
 /*Only move the wrap by  small amount*/

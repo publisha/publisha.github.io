@@ -34,6 +34,20 @@
 
 
 
+<style>
+.video {
+  display:none;
+}
+
+@media screen and (max-width: 768px) {
+  .video {
+    display:block;
+  }
+}
+</style>
+
+
+
 
 <!-- javascripts for fancybox -->
 <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
@@ -1197,11 +1211,16 @@
         </a>
         
         
+        <a class="next" href="/screencasts/ambientsoundinepub/">
+            <span>Ambient Sound in a Fixed-Layout ePub &gt;</span>
+        </a>
+        
     </div>
 </div>
  -->
 
 <div class="post">
+  <a class="video fancybox.iframe" title="" href="https://www.youtube.com/embed/M7DqBi8VxYY?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
 <h1>InDesign to iBooks Author (Part 2)</h1>
 <span class="post-date">03 Apr 2017</span>
 <!-- <span class="post-date"></span> -->
@@ -1230,6 +1249,9 @@ Now we have created seperate IDML files from InDesign we need to import these in
  -->
 <!-- now follows items that get the menu working -->
     <label title="the menu" for="sidebar-checkbox" class="sidebar-toggle fa fa-chevron-left fa-lg" aria-hidden="true"></label>
+<!-- this next item will be shown on small screens -->
+    <div class="contents"><a href="/contents" title="contents"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+    </div>
 
     <script>
       (function(document) {

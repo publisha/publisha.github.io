@@ -61,6 +61,20 @@ section.toc {
 </style>
 {% endif %}
 
+{% if page.layout == "screencast" %}
+<style>
+.video {
+  display:none;
+}
+
+@media screen and (max-width: 768px) {
+  .video {
+    display:block;
+  }
+}
+</style>
+{% endif %}
+
 
 
 <!-- javascripts for fancybox -->

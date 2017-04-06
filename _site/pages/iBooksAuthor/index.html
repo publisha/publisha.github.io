@@ -35,6 +35,8 @@
 
 
 
+
+
 <!-- javascripts for fancybox -->
 <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
@@ -1211,7 +1213,7 @@
 
 <h1 id="ibooks-author-an-authoring-tool-for-an-apple-only-hybrid-format-ebook">iBooks Author: An Authoring tool for an <em>Apple-only</em> hybrid format eBook</h1>
 
-<p>iBooks Author was released by Apple in 2012 and is an authoring tool that runs on any Apple computer that operates underMAC OS x 10.9 or later. The software is freely available and has gone through several version changes since first released.</p>
+<p>iBooks Author<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> was released by Apple in 2012 and is an authoring tool that runs on any Apple computer that operates underMAC OS x 10.9 or later. The software is freely available and has gone through several version changes since first released.</p>
 
 <p>eBooks created with iBooks Author (described by Apple as ‘multi-touch’ books) can only be experienced on Apple iOS devices (iPad) or MAC with iBooks eReader software. Apple’s licensing restrictions mean that it is only possible distribute through the Apple iBookstore or (for free) through your own web site.</p>
 
@@ -1501,6 +1503,14 @@
 
 <p>You really can only use this technique if you have split a complete InDesign document into constituent parts (such as chapters and sections), because you are only able to add the IDML file into a chapter not a complete book.</p>
 
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Recent versions of iBooks Author, can create reflowable ePub format eBooks from a particular choice of template&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
 <!-- We can only show one screencast at the moment -->
   
 <p><a href="/screencasts/introducing_iBooksAuthorintroducing_iBooksAuthor2">There is a Screencast that may help <i style="vertical-align:middle;" title="Show this screencast" class="fa fa-youtube-play fa-2x" aria-hidden="true"> </i></a></p>
@@ -1521,6 +1531,9 @@
  -->
 <!-- now follows items that get the menu working -->
     <label title="the menu" for="sidebar-checkbox" class="sidebar-toggle fa fa-chevron-left fa-lg" aria-hidden="true"></label>
+<!-- this next item will be shown on small screens -->
+    <div class="contents"><a href="/contents" title="contents"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+    </div>
 
     <script>
       (function(document) {

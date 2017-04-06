@@ -35,6 +35,8 @@
 
 
 
+
+
 <!-- javascripts for fancybox -->
 <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
@@ -1190,6 +1192,82 @@
 <div class="posts">
 
   <div class="post">
+    <p><a class="video fancybox.iframe" title="Ambient Sound in a Fixed-Layout ePub" href="https://www.youtube.com/embed/tdZT2DkI8Rk?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a></p>
+    <h2>Ambient Sound in a Fixed-Layout ePub</h2>
+    <p><span class="post-date">05 Apr 2017</span></p>
+    <p><strong>Just for Apple iBooks</strong></p>
+
+    <p>When we place audio on the page of a fixed-layout eBook, we cannot expect it to continue to play when the page is turned. Each page is a new XHTML document, so audio (or any media) will stop on leaving that page.</p>
+
+    <p>If we want to get audio to continue to play as we turn the pages, we need to modify the markup inside the ePub package after we have exported from InDesign<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+    <h3 id="further-details">Further Details</h3>
+
+    <p>ibooks on Apple devices supports this ambient sound feature and we need to add a reference to the iBooks extensions in the HTML tag at the top of the pages that need this audio. We also need to modify the audio tag inside the HTML markup.</p>
+
+    <p>We can use InDesign to add the audio file (we can do this on the master pages), but there are some very specific issues to be aware of:</p>
+
+    <p>Each HTML page will have the HTML tag thus:</p>
+
+    <div class="language-html highlighter-rouge">
+      <div class="codehilite">
+        <table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1999/xhtml"</span> <span class="na">xmlns:epub=</span><span class="s">"http://www.idpf.org/2007/ops"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table>
+      </div>
+    </div>
+
+    <p>we need this instead:</p>
+
+    <div class="language-html highlighter-rouge">
+      <div class="codehilite">
+        <table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1999/xhtml"</span> <span class="na">xmlns:epub=</span><span class="s">"http://www.idpf.org/2007/ops"</span> <span class="na">epub:prefix=</span><span class="s">"ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/"</span><span class="nt">&gt;</span>;
+</pre></td></tr></tbody></table>
+      </div>
+    </div>
+
+    <p>When we place audio on an InDesign page it will create HTML for audio like this:</p>
+
+    <div class="language-html highlighter-rouge">
+      <div class="codehilite">
+        <table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="nt">&lt;audio</span> <span class="na">id=</span><span class="s">"_idAudio000"</span> <span class="na">controls=</span><span class="s">"controls"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"audio/dreamambient.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/audio&gt;</span>
+</pre></td></tr></tbody></table>
+      </div>
+    </div>
+
+    <p>This is perfectly valid but we need this:</p>
+
+    <div class="language-html highlighter-rouge">
+      <div class="codehilite">
+        <table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;audio</span> <span class="na">epub:type=</span><span class="s">"ibooks:soundtrack"</span> <span class="na">src=</span><span class="s">"audio/dreamambient.mp3"</span><span class="nt">/&gt;</span>
+</pre></td></tr></tbody></table>
+      </div>
+    </div>
+
+    <p>You will want to hide the audio somewhere on the InDesign page, by putting it behind an image.</p>
+
+    <p>I do hope the screencast explains this.</p>
+
+    <blockquote>
+      <p><strong>Note</strong>: iBooks on the MAC has a few anomolies; the soundtrack switch does not always display and the audio icon in the menu bar shows even if there id no audio on that page.</p>
+    </blockquote>
+
+    <div class="footnotes">
+      <ol>
+    <li id="fn:1">
+      <p>Always remember that once we edit the HTML inside the book package then we lose the ability to go back to InDesign for further edits&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+    </div>
+
+    <p><b>Filed under:</b> InDesign, ePub | <a href="/screencasts/ambientsoundinepub/">Permalink to this Screencast</a></p>
+
+  </div>
+
+  <div class="post">
     <p><a class="video fancybox.iframe" title="InDesign to iBooks Author (Part 2)" href="https://www.youtube.com/embed/M7DqBi8VxYY?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a></p>
     <h2>InDesign to iBooks Author (Part 2)</h2>
     <p><span class="post-date">03 Apr 2017</span></p>
@@ -1214,17 +1292,39 @@ Now we have created seperate IDML files from InDesign we need to import these in
 
     <p>This first screencast episode shows you how to divide the InDesign file into separated files using a couple of scripts.</p>
 
-    <h2 id="further-information">Further Information</h2>
+    <h3 id="further-information">Further Information</h3>
 
     <p>The 2 InDesign scripts used are:</p>
 
-    <p><strong>splitbeforehere</strong> (this is based on a script called StorySplitter with modifications by Naomi Kennedy and then myself)</p>
+    <p><strong>splitbeforehere</strong> (this is based on a script called StorySplitter with modifications by Naomi Kennedy and then myself). This script will split the threaded story <em>before</em> the selected text frame.</p>
 
-    <p><strong>extractpagesandIDML</strong> (this is based on a script by Loïc Aigon, much simplified with additional components to export IDML)</p>
+    <p><strong>extractpagesandIDML</strong> (this is based on a script by Loïc Aigon, much simplified with additional components to export IDML). This script will extract both an InDesign file and an <code class="highlighter-rouge">IDML</code> file from the pages specified during the operation of the script.</p>
 
-    <p>These 2 scripts are available as Gists and the links Ito then can <a href="https://publisha.github.io/pages/iBooksAuthor/" title="From InDesign to iBooks Author">be found on this page</a>.</p>
+    <p>These 2 scripts are available as Gists and the links to them can <a href="https://publisha.github.io/pages/iBooksAuthor/" title="From InDesign to iBooks Author">be found on this page</a>.</p>
 
     <p><b>Filed under:</b> iBooks Author, InDesign | <a href="/screencasts/Indesign2iBooksAuthor1/">Permalink to this Screencast</a></p>
+
+  </div>
+
+  <div class="post">
+    <p><a class="video fancybox.iframe" title="Introducing iBooks Author (Part 2)" href="https://www.youtube.com/embed/m1IDhKHGyq4?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a></p>
+    <h2>Introducing iBooks Author (Part 2)</h2>
+    <p><span class="post-date">31 Mar 2017</span></p>
+    <p>We look at creating the Shakespeare play with iBooks Author.</p>
+
+    <p>iBooks Author is Apple’s free software for creating eBooks for their own iBooks reader software for the iPad and iBooks on the MAC.</p>
+
+    <p>The software is very easy to use but does have some limitations and encourages you to use an existing template for your design and layout.</p>
+
+    <p>Once you understand how you can modify a template for your own purposes then a great deal of flexibility is available to you.</p>
+
+    <p>If you choose to offer both landscape and portrait modes to viewers of your eBook, then you will need to pay special attention to the layouts for both views, and the relationship between the text and the images. You can disable the portrait view and if you do, then you have more freedom to place content on the pages without limitations.</p>
+
+    <blockquote>
+      <p>Note: Since this screencast, iBooks Author no longer refers to a Portrait View, but rather a scrolling view which can be invoked in either landscape or portrait view on the iPad with iBooks.</p>
+    </blockquote>
+
+    <p><b>Filed under:</b> iBooks Author | <a href="/screencasts/introducing_iBooksAuthor2/">Permalink to this Screencast</a></p>
 
   </div>
 
@@ -1288,28 +1388,6 @@ Now we have created seperate IDML files from InDesign we need to import these in
     <p>As an alternative to using InDesign to create a nested text field, you could also consider leaving a blank page and then adding the text directly into the HTML after unpacking the ePUB package. Just create a web page and then copy the content from within the &lt;body&gt; tag and paste into the ePUB page. With additional styling you can then achieve the same as before.</p>
 
     <p><b>Filed under:</b> InDesign, ePub | <a href="/screencasts/scrollingtextfield/">Permalink to this Screencast</a></p>
-
-  </div>
-
-  <div class="post">
-    <p><a class="video fancybox.iframe" title="Introducing iBooks Author (Part 2)" href="https://www.youtube.com/embed/m1IDhKHGyq4?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a></p>
-    <h2>Introducing iBooks Author (Part 2)</h2>
-    <p><span class="post-date">31 Mar 2017</span></p>
-    <p>We look at creating the Shakespeare play with iBooks Author.</p>
-
-    <p>iBooks Author is Apple’s free software for creating eBooks for their own iBooks reader software for the iPad and iBooks on the MAC.</p>
-
-    <p>The software is very easy to use but does have some limitations and encourages you to use an existing template for your design and layout.</p>
-
-    <p>Once you understand how you can modify a template for your own purposes then a great deal of flexibility is available to you.</p>
-
-    <p>If you choose to offer both landscape and portrait modes to viewers of your eBook, then you will need to pay special attention to the layouts for both views, and the relationship between the text and the images. You can disable the portrait view and if you do, then you have more freedom to place content on the pages without limitations.</p>
-
-    <blockquote>
-      <p>Note: Since this screencast, iBooks Author no longer refers to a Portrait View, but rather a scrolling view which can be invoked in either landscape or portrait view on the iPad with iBooks.</p>
-    </blockquote>
-
-    <p><b>Filed under:</b> iBooks Author | <a href="/screencasts/introducing_iBooksAuthor2/">Permalink to this Screencast</a></p>
 
   </div>
 
@@ -1586,6 +1664,9 @@ I walk through the issues when creating reflowable eBooks.</p>
  -->
 <!-- now follows items that get the menu working -->
     <label title="the menu" for="sidebar-checkbox" class="sidebar-toggle fa fa-chevron-left fa-lg" aria-hidden="true"></label>
+<!-- this next item will be shown on small screens -->
+    <div class="contents"><a href="/contents" title="contents"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+    </div>
 
     <script>
       (function(document) {

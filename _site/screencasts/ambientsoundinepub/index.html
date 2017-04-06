@@ -10,7 +10,7 @@
 
   <title>
     
-      Digital Publisher Guide
+      Ambient Sound in a Fixed-Layout ePub
     
   </title>
 
@@ -29,23 +29,22 @@
 
 <!-- Optionally make the images go full width but put this in the page metadata -->
 
+
+
+
+
+
 <style>
-.sideimage img {
-width:auto;
-max-width: 100%;
-float:none;
-clear:both;
-margin-left: 0;
-margin-top:0;
-top:0;
+.video {
+  display:none;
 }
 
+@media screen and (max-width: 768px) {
+  .video {
+    display:block;
+  }
+}
 </style>
-
-
-
-
-
 
 
 
@@ -76,7 +75,7 @@ top:0;
     <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
 
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"checked>
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <nav class="sidebar-nav"  style="border-bottom:none !important;">
@@ -87,7 +86,7 @@ top:0;
   </div>
 
   <nav class="sidebar-nav">
-    <!-- <a class="sidebar-nav-item active" href="/"><i class="fa fa-home fa-lg" aria-hidden="true"> </i>Home</a> -->
+    <!-- <a class="sidebar-nav-item" href="/"><i class="fa fa-home fa-lg" aria-hidden="true"> </i>Home</a> -->
 
     
 
@@ -1198,39 +1197,95 @@ top:0;
       </div>
 
       <div class="container content">
-        <h1 id="what-is-this-website-about">What is this website about?</h1>
-
-<p>Chris Jennings teaches at Oxford Brookes University for Undergraduate and Postgraduate modules on Digital Publishing. He also is a consultant specialising in eBook Production.</p>
-
-<p>Right now a lot of my documents are to found on my <a href="http://www.pagetoscreen.net" title="Lots of useful information">PagetoScreen</a> web site. I also have created lots of PDFs for my students and often printed these out (sometime 70 copies!).</p>
-
-<p>Now it is time (surely) to make all of these helpful documents digital and online, so I can update very easily.</p>
-
-<p>You will find here help documents and tutorials and a range of topics including using Adobe InDesign and Apple iBooks Author, as well as using GitHub to edit documents within a repository.</p>
-
-<p>More documents are being added and you can find the list within the left hand menu. Just click on the icon top left.</p>
-
-<p>Project maintained by @Pageboy</p>
-
-<p>Here is a random photo taken by me.</p>
-
-<p><a href="/images/2017/01/fromWittenhamClumps.jpg"><img src="/images/2017/01/fromWittenhamClumps.jpg" alt="My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester." /></a></p>
-
-<h2 id="how-was-this-web-site-built">How was this Web site built?</h2>
-
-<h3 id="jekyll">Jekyll</h3>
-<p>The site is built with Jekyll which you can <a href="https://jekyllrb.com" title="Visit the Jekyll web site" target="_blank">find out about here</a>.</p>
-
-<p>It is delivered on a GitHub repository with GitHub pages. My preferred writing tool is Atom ‘cos you can customise it!</p>
-
-<h3 id="atom">Atom</h3>
-<p>Atom is the free text editor that comes from GitHub. <a href="https://atom.io" title="Get Atom" target="_blank">You can get it here</a>.</p>
-
-<p>I based this look and feel on the <a href="http://lanyon.getpoole.com/" title="Lanyon" target="_blank">Lanyon theme from here</a>.</p>
-
-<p>Images can be enlarged and use a variation of <a href="http://fancybox.net" title="Take a look at Fancybox" target="_blank">Fancybox</a> using jquery.</p>
+        <!-- 
 
 
+
+
+
+<div id="post-nav">
+    <div >
+        
+        <a class="prev" href="/screencasts/Indesign2iBooksAuthor2/">
+            <span>&lt; InDesign to iBooks Author (Part 2)</span>
+        </a>
+        
+        
+    </div>
+</div>
+ -->
+
+<div class="post">
+  <a class="video fancybox.iframe" title="" href="https://www.youtube.com/embed/tdZT2DkI8Rk?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
+<h1>Ambient Sound in a Fixed-Layout ePub</h1>
+<span class="post-date">05 Apr 2017</span>
+<!-- <span class="post-date"></span> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tdZT2DkI8Rk?rel=0" frameborder="0" allowfullscreen></iframe>
+  <p><strong>Just for Apple iBooks</strong></p>
+
+<p>When we place audio on the page of a fixed-layout eBook, we cannot expect it to continue to play when the page is turned. Each page is a new XHTML document, so audio (or any media) will stop on leaving that page.</p>
+
+<p>If we want to get audio to continue to play as we turn the pages, we need to modify the markup inside the ePub package after we have exported from InDesign<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<h3 id="further-details">Further Details</h3>
+
+<p>ibooks on Apple devices supports this ambient sound feature and we need to add a reference to the iBooks extensions in the HTML tag at the top of the pages that need this audio. We also need to modify the audio tag inside the HTML markup.</p>
+
+<p>We can use InDesign to add the audio file (we can do this on the master pages), but there are some very specific issues to be aware of:</p>
+
+<p>Each HTML page will have the HTML tag thus:</p>
+
+<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1999/xhtml"</span> <span class="na">xmlns:epub=</span><span class="s">"http://www.idpf.org/2007/ops"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>we need this instead:</p>
+
+<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1999/xhtml"</span> <span class="na">xmlns:epub=</span><span class="s">"http://www.idpf.org/2007/ops"</span> <span class="na">epub:prefix=</span><span class="s">"ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/"</span><span class="nt">&gt;</span>;
+</pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>When we place audio on an InDesign page it will create HTML for audio like this:</p>
+
+<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="nt">&lt;audio</span> <span class="na">id=</span><span class="s">"_idAudio000"</span> <span class="na">controls=</span><span class="s">"controls"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"audio/dreamambient.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/audio&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>This is perfectly valid but we need this:</p>
+
+<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;audio</span> <span class="na">epub:type=</span><span class="s">"ibooks:soundtrack"</span> <span class="na">src=</span><span class="s">"audio/dreamambient.mp3"</span><span class="nt">/&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>You will want to hide the audio somewhere on the InDesign page, by putting it behind an image.</p>
+
+<p>I do hope the screencast explains this.</p>
+
+<blockquote>
+  <p><strong>Note</strong>: iBooks on the MAC has a few anomolies; the soundtrack switch does not always display and the audio icon in the menu bar shows even if there id no audio on that page.</p>
+</blockquote>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Always remember that once we edit the HTML inside the book package then we lose the ability to go back to InDesign for further edits&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  <p><a href="/pages/screencasts/"><i class="fa fa-chevron-left" aria-hidden="true"></i> See all Screencasts</a></p>
+</div>
+
+        
+        <p><b>Filed under:</b> InDesign, ePub</p>
         
 
       </div>

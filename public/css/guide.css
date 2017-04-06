@@ -74,7 +74,26 @@ font-size: 70%;
   letter-spacing: 0;
 }
 
-
+/*put the images on the left and let the text flow*/
+@media screen {
+.sideimage img {
+  border:1px solid silver;
+  width: 180px;
+  width: 30%;
+  /*max-height:100px;*/
+  margin:2rem auto;
+  /*max-width: 75%;*/
+  /*position:relative;
+  right:200px;*/
+  float:left;
+  clear:both;
+  margin-left: -34%;
+  /*margin-top:-250px;
+  margin-bottom: -130px;*/
+  position:relative;
+  top:-150px;
+}
+}
 
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 @media screen {
@@ -151,6 +170,8 @@ font-size: 70%;
 }
 
 
+
+
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   -webkit-transform: translateX(15rem);
@@ -167,6 +188,64 @@ font-size: 70%;
 
 }
 
+/*this is shown when the screen is small*/
+.contents {
+  position: absolute;
+  font-size: 24px;
+  top:  .8rem;
+  left: 2rem;
+  display: none;
+  width: 2.2rem;
+  /*padding: .5rem .65rem;*/
+  color: #505050;
+  /*background-color: #fff;*/
+  cursor: pointer;
+
+  /*border:3px solid green;*/
+}
+
+/*here we try to display things well on smaller devices*/
+@media screen and (max-width: 768px) {
+  .sidebar, .sidebar-toggle:active, #sidebar-checkbox:checked ~ .sidebar,
+  #sidebar-checkbox:checked ~ .sidebar-toggle, .sidebar-toggle:before, section.toc {
+    display:none;
+  }
+
+  #sidebar-checkbox:checked ~ .wrap {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+
+  }
+
+  .contents {
+    display: block;
+}
+
+  body {
+    font-size:80% !important;
+  }
+
+  .sideimage img {
+    border:1px solid silver;
+    width: auto;
+    max-width: 90%;
+    margin:2rem auto;
+    float:none;
+    clear:both;
+    margin-left: 0;
+    /*margin-top:-250px;
+    margin-bottom: -130px;*/
+    position:relative;
+    top:0;
+}
+
+iframe {
+  display:none;
+}
+
+}
+
 /*img {
   border:1px solid silver;
   max-width: 75%;
@@ -174,26 +253,7 @@ font-size: 70%;
   margin:2rem auto;
 }*/
 
-/*put the images on the left and let the text flow*/
-@media screen {
-.sideimage img {
-  border:1px solid silver;
-  width: 180px;
-  width: 30%;
-  /*max-height:100px;*/
-  margin:2rem auto;
-  /*max-width: 75%;*/
-  /*position:relative;
-  right:200px;*/
-  float:left;
-  clear:both;
-  margin-left: -34%;
-  /*margin-top:-250px;
-  margin-bottom: -130px;*/
-  position:relative;
-  top:-150px;
-}
-}
+
 .fancybox-outer img {
   top:0;
 }
@@ -448,7 +508,7 @@ a:focus {
 }
 }
 .sideimage img {
-  width:20%;
+  /*width:20%;*/
 }
 
   .masthead-title small {

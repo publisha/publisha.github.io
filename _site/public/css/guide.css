@@ -163,7 +163,7 @@ font-size: 70%;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
-@media (min-width: 30em) {
+@media (min-width: 30rem) {
   .sidebar {
     font-size: .75rem; /* 14px */
   }
@@ -188,7 +188,31 @@ font-size: 70%;
 
 }
 
-/*this is shown when the screen is small*/
+section.categories {
+  border:none;
+  background-color: white;
+  font-size: .85rem;
+  width:70%;
+  padding:0;
+}
+/*the heading for the categories box on the home page*/
+.categories h2 {
+  font-size:.95rem;
+  border-bottom:1px solid silver;
+  background: silver;
+  padding:2px 20px;
+  margin:0 0 12px 0;
+  color:white;
+}
+
+.categories h3 {
+  font-size:1em;
+  padding:0 20px;
+  margin:0 0 2px 0;
+}
+
+
+/*this bar icon is shown when the screen is small*/
 .contents {
   position: absolute;
   font-size: 24px;
@@ -244,7 +268,23 @@ iframe {
   display:none;
 }
 
+.masthead-title {
+  text-align:left;
+  margin-right:8px !important;
+  /*line-height: 1;*/
 }
+
+.container {
+  width: 80%;
+}
+
+section.categories {
+  font-size: .95rem;
+  width:100%;
+}
+
+}
+
 
 /*img {
   border:1px solid silver;
@@ -261,7 +301,7 @@ iframe {
 @media screen {
 h1 {
   font-size:1.8rem;
-  width:67%;
+  /*width:67%;*/
   padding-bottom:0px;
   line-height: 1.1;
   color:#17544d;
@@ -315,7 +355,7 @@ blockquote {
   width:35%;
   float:right;
   margin-right:-110px;
-  margin-top:-57px;
+  margin-top:-20px;
   margin-left:8px;
 }
 }
@@ -330,30 +370,8 @@ blockquote {
 }
 
 
-section.categories {
-  border:none;
-  background-color: white;
-  font-size: .85rem;
-  width:70%;
-  padding:0;
-}
-/*the heading for the categories box on the home page*/
-.categories h2 {
-  font-size:.95rem;
-  border-bottom:1px solid silver;
-  background: silver;
-  padding:2px 20px;
-  margin:0 0 12px 0;
-  color:white;
-}
 
-.categories h3 {
-  font-size:1em;
-  padding:0 20px;
-  margin:0 0 2px 0;
-}
-
-@media (max-width: 48em) {
+@media (max-width: 48rem) {
   /*in here adjust the toc*/
   section.toc {
     border:1px solid silver;
@@ -494,11 +512,10 @@ a:focus {
 }
 
 
-@media (max-width: 48em) {
+@media (max-width: 70rem) {
   .masthead-title {
     text-align: right;
     margin-right:-100px;
-    /*line-height: 1;*/
 }
 
 @media print {

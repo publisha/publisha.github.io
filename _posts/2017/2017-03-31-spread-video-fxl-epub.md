@@ -3,6 +3,7 @@ layout: "post"
 title: "Video across a 2 page spread"
 date: "2017-03-31 23:30"
 published: true
+categories: [InDesign, ePub, HTML]
 ---
 There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width.
 

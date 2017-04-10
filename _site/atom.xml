@@ -4,7 +4,7 @@
  <title>Digital Publisher Guide</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-04-07T10:47:41+01:00</updated>
+ <updated>2017-04-10T12:06:17+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Video across a 2 page spread</title>
-   <link href="http://localhost:4000/2017/03/31/spread-video-fxl-epub/"/>
+   <link href="http://localhost:4000/indesign/epub/html/2017/03/31/spread-video-fxl-epub/"/>
    <updated>2017-03-31T23:30:00+01:00</updated>
-   <id>http://localhost:4000/2017/03/31/spread-video-fxl-epub</id>
+   <id>http://localhost:4000/indesign/epub/html/2017/03/31/spread-video-fxl-epub</id>
    <content type="html">&lt;p&gt;There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width.&lt;/p&gt;
 
 &lt;h2 id=&quot;there-are-really-2-videos-one-on-each-half&quot;&gt;There are really 2 videos (one on each half)&lt;/h2&gt;

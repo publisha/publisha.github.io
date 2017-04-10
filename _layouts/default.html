@@ -11,7 +11,7 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>{% if page.layout == "post" %} | <a href="{{ site.baseurl }}/blog" title="Blog Articles">Blog</a>{% endif %}<br />
+            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>{% if page.layout == "post" %} | <a href="{{ site.baseurl }}/blog" title="Blog Articles">Blog</a>{% endif %}{% if page.title == "Contents" %} | <a href="{{ site.baseurl }}/blog" title="Blog Articles">Blog</a>{% endif %}<br />
             <small>{{ site.tagline }}</small>
           </h3>
         </div>

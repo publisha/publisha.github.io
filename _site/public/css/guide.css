@@ -647,6 +647,88 @@ color:#657569;
 }
 
 
+/*for those items that are not expandable in the toc*/
+/*navigationtoc*/
+.navigationtoc {
+  list-style: none;
+  /*font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;*/
+  font-size:.75rem;
+  margin:0;
+  padding:0;
+}
+.navigationtoc li.header {
+  color: white;
+  padding:8px 15px;
+  border: 1px solid #bbb;
+  font-size:.8rem;
+  background: #7f936f
+}
+.navigationtoc li {
+  border: 1px solid #bbb;
+  border-top:0;
+  margin: 0;
+  /*background:#F0F0F0;*/
+  background:transparent;
+}
+.navigationtoc li a {
+  text-decoration:none;
+  color:white;
+  display:block;
+  padding:8px 15px;
+}
+.navigationtoc li a:hover {
+  background: #7f936f;
+  color:#bdffb8;
+  text-decoration:none;
+}
+.navigationtoc li ul {
+  list-style: none;
+  /*background: #d3d3d3;*/
+  display: none;
+  margin:0;
+  padding:0;
+}
+.navigationtoc li ul li {
+  margin:0;
+  border:0;
+  border-bottom:1px solid #bbb;
+  border-top:1px solid #bbb;
+}
+.navigationtoc li ul li:last-child {
+  border-bottom:0;
+}
+.navigationtoc li ul li a {
+  padding: 8px 15px;
+  display: block;
+  /*padding-left: 33px;*/
+  background:#8faa7a;
+  color:white !important;
+}
+.navigationtoc li ul li a:hover {
+  background: #a2bd95;
+  color:black;
+  color:white !important;
+}
+
+.navigationtoc i {
+  float:right;
+  color:#657569;
+
+}
+
+.categories .navigationtoc {
+  color:gray !important;
+}
+
+.categories .navigationtoc i {
+    color:green !important;
+}
+
+.categories .navigationtoc li ul li i:hover {
+    color:white !important;
+}
+
+
 @media print {
 section.toc {
     border:1px solid silver;
@@ -685,3 +767,46 @@ a.video, .sidebar-toggle {
     border:1px solid silver;
     margin-bottom: 30px;
   }
+
+
+/* really small screens */
+@media screen and (max-width: 414px) {
+
+ .masthead {
+ font-size: 1rem;
+ color: red !important;
+ }
+
+ }
+
+ .pagination {
+   overflow: hidden; /* clearfix */
+   margin-left: -1rem;
+   margin-right: -1rem;
+   font-family: "PT Sans", Helvetica, Arial, sans-serif;
+   color: #ccc;
+   text-align: center;
+ }
+
+ /* Pagination items can be `span`s or `a`s */
+ .pagination-item {
+   display: block;
+   padding: .3rem .8rem;
+   border: 1px solid #a2bd95;
+ }
+
+ .older {
+   text-align: left;
+ }
+
+ .newer {
+   text-align: right;
+ }
+
+ .newer i {
+   padding-left: 20px;
+ }
+
+ .older i {
+   padding-right: 20px;
+ }

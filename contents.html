@@ -32,21 +32,8 @@ published: true
         {% endfor %}
   </ul>
 </section>
-
-
-<!-- <section class="categories">
-  <ul class="navigation">
-  <li class="dropdown">Screencasts</li>
-  <ul>
-  {% assign items = site.screencasts | sort: 'date' %}
-  {% for screencast in items reversed limit:30 %}
-  {% if screencast.categories != null %}
-
-  <li><a href="{{ site.baseurl }}{{ screencast.url }}">{{ screencast.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
-
-  {% endif %}
-  {% endfor %}
+<section class="categories">
+<ul class="navigationtoc">
+<li><a href="{{ site.baseurl }}/blog">Blog Articles <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
 </ul>
-</ul>
-
-</section> -->
+</section>

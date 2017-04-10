@@ -272,7 +272,6 @@ iframe {
   text-align:left;
   margin-right:8px !important;
   /*line-height: 1;*/
-  font-size:80%;
 }
 
 .container {
@@ -686,3 +685,12 @@ a.video, .sidebar-toggle {
     border:1px solid silver;
     margin-bottom: 30px;
   }
+  
+  @media screen and (max-width: 600px) {
+  
+  h3.masthead-title {
+ font-size: .5rem;
+ }
+ 
+ }
+  

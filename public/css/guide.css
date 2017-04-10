@@ -686,7 +686,7 @@ a.video, .sidebar-toggle {
     margin-bottom: 30px;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 375px) {
   
   h3.masthead-title {
  font-size: .5rem;

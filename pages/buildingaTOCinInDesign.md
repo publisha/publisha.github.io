@@ -19,7 +19,7 @@ tags: [InDesign, Typography, ePub]
 
 </section><!-- /TOC -->
 
-# Building a  Table of Contents in InDesign
+# Building a Table of Contents in InDesign
 
 ## The Front Matter pages
 

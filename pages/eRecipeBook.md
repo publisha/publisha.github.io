@@ -34,7 +34,9 @@
 
 </section><!-- /TOC -->
 
-The objective here is to create a reflowable ePub from InDesign. The intent is _just_ to make en eBook, with _no_ intent to create a print version.
+# Making an eBook of Recipes
+
+The objective here is to create a **reflowable** ePub from InDesign. The intent is _just_ to make en eBook, with _no_ intent to create a print version.
 
 From text and pictures, we are going to create an InDesign document, export for ePub3 (reflowable) and then 'break open' the ePub file, check out the CSS and then make our own stylesheet to go into the ePub package.
 

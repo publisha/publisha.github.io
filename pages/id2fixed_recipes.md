@@ -28,6 +28,8 @@ screencast: [fixedlayout_recipes1]
 
 </section><!-- /TOC -->
 
+# Indesign to Fixed Layout Recipe eBook
+
 The fixed-layout format ePUB3 format provides a way to deliver every single page in your print book laid out just as it was in the print version.
 
 This fixed-layout format can be considered almost the same as an interactive PDF, however, as you will see, the ePUB can have much more interactivity and, you, the designer can control the way the eBook is displayed.
@@ -53,7 +55,7 @@ I suggest that you duplicate your InDesign documents and book, because you might
 
 Go through all the pages, and satisfy yourself that each page is how you want it to be. You can make adjustments to fix widows and orphans. You should be certain that the master page items display correctly.
 
-Items can bleed off the page.
++ Items can bleed off the page.
 
 You will need an InDesign document set up as if for a re-flowable eBook.
 

@@ -48,11 +48,12 @@ the usability somewhat.
 Notes are often placed at the end of the chapter or even at the end of
 the book (before the index). This approach means that the reader will
 need to 'hunt down' the note referred to in the text. This usually means
-that the endnotes will be sectioned by chapter or section.
+that the endnotes will be organised by chapter or section.
 
-The advantage of endnotes is that the page composition in the vertical
-plane is not compromised for the sake of the note space. Where there are
-lots of references in the text, this must be the best approach.
+The advantage of endnotes over footnotes is that the page composition in the vertical plane is not compromised for the sake of the note space.
+
+Where there are lots of references in the text, this must be the best approach.
+
 Ridiculous as this seems, we have seen books with footnotes that take
 more page space than the main text itself!
 
@@ -62,7 +63,7 @@ Clearly the page layout needs to provide the space in the margins for
 this to be an option. Unless this is a large-format book, the measure of
 the notes (width of the text), is likely to be narrow, so don't design
 for this option if the notes are long or there are lots of them – and,
-the book is small.[^2]
+the book is small.[^1]
 
 **Sidenotes** fall outside the text block – unlike footnotes that will be
 inside the text block.
@@ -88,7 +89,7 @@ As you can see from the first example spread the footnote list figure is
 aligned to the left edge of the text box. You will often see this in the
 books on your shelves, however, a more attractive arrangement is to
 'outdent' these listed figures so that the footnotes are are aligned to
-the text and the figures are offset from this text box.
+the text and the number figures are offset from this text box.
 
 [![The layout of the footnotes is controlled through the second tab](/images/2017/04/secondtab.png)](/images/2017/04/secondtab.png)
 
@@ -107,14 +108,17 @@ endnotes; for this we need a script.
 
 ## Endnotes with a Script
 
-To do this we need to turn to Peter Kahrel (www.kahrel.plus.com) who
+To do this we need to turn to [Peter Kahrel][2502ca9b] who
 provides many useful scripts. The one that I use here is called 'convert
 footnotes to (dynamic) endnotes' – meaning that the numbering will
 change if further notes are added.
 
+  [2502ca9b]: www.kahrel.plus.com "see this web site for scripting InDesign"
+
 As always when using scripts to change content, save your work first!
 Scripts will often run through a long sequence of actions; you can
 always use 'revert' (from the file menu), to get back to the previous.
+
 You will see from the image here that the endnotes have their own
 page(s) with a heading that matches other heading styles. You may need
 to tweak the paragraph styles for the notes and their listed numbers.
@@ -130,7 +134,7 @@ in it's own text frame which is anchored at the reference point. You will
 see in the example spread given here that I have turned off the
 numbering. This is an option in the script dialogue. There may be the
 need to move text boxes vertically, where references are near to one
-another; some degree of hand crafting will be required.[^1]
+another; some degree of hand crafting will be required.[^2]
 
 [![A spread with side notes. You see that the text alignment (left or right), is automatic depending on recto or verso achieved by the paragraph style using Towards the Spine.](/images/2017/04/spreadsidenotes.png)](/images/2017/04/spreadsidenotes.png)
 
@@ -231,8 +235,6 @@ hyperlinked number will take us to the notes section at the end of the
 chapter. If we want to get pop-up notes working on those systems that
 support it we will need to crack open the ePUB and make some changes.
 
-[![Showing both pop-up and list of notes at the end of the chapter.](/images/2017/04/popupandendofchapter.png)](/images/2017/04/popupandendofchapter.png)
-
 #### Editing the ePUB from the Endnotes Version
 
 Once you have unpacked the ePUB (actually I prefer to do this with
@@ -246,6 +248,8 @@ and replace with:
 
 If you do this then the pop-up will work BUT you will also see that the
 notes are still listed at the end of the chapter. Personally I actually prefer this, because we can get a second chance to read through the notes.
+
+[![Showing both pop-up and list of notes at the end of the chapter.](/images/2017/04/popupandendofchapter.png)](/images/2017/04/popupandendofchapter.png)
 
 If you prefer **not** to see this list of notes, then you will need to wrap
 each note in the `<aside>` tag, and we can do this by search and
@@ -338,7 +342,10 @@ chapter, and also the numbers are gone.
 This is one of those situations where forking a slightly different
 version of the ePub for the Kindle may be necessary.
 
+## iBooks Author
 
-[^1]: If you use the scripts mentioned here to put the notes in the margin or at the end of the book or chapter then your pop-up notes will not work in the reflowable eBook.
+We can't finish this article without mentioning iBooks Author.
 
-[^2]: see Edward Tufte and [this thread on sidenotes](http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000ld)
+[^1]: see Edward Tufte and [this thread on sidenotes](http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000ld)
+
+[^2]: If you use the scripts mentioned here to put the notes in the margin or at the end of the book or chapter then your pop-up notes will not work in the reflowable eBook.

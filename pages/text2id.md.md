@@ -1,10 +1,28 @@
 ---
 layout: page
 title: Text to InDesign
-published: false
+published: true
 tags: InDesign
 categories: [InDesign, Typography]
 ---
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
+
+- [Un-styled text](#un-styled-text)
+- [A Replacement Strategy](#a-replacement-strategy)
+- [Placing the play text in InDesign](#placing-the-play-text-in-indesign)
+- [Templates](#templates)
+- [Show the hidden characters](#show-the-hidden-characters)
+- [Let’s get styling](#lets-get-styling)
+- [Find and Change](#find-and-change)
+- [GREP](#grep)
+- [The Character Names](#the-character-names)
+- [Changing Styles with GREP](#changing-styles-with-grep)
+- [UPPERCASE or Not?](#uppercase-or-not)
+- [How to add a script to your copy of InDesign](#how-to-add-a-script-to-your-copy-of-indesign)
+
+</section><!-- /TOC -->
 # Text to InDesign
 **Processing the Text and applying styles with Find and GREP**
 

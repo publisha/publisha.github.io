@@ -23,11 +23,11 @@ categories: [InDesign, Typography, ePub]
 
 # Footnotes, Endnotes, Sidenotes and Popup Notes
 
-I start with a quote from Robert Bringhurst in his The Elements of Typographic Style:
+I start with a quote from Robert Bringhurst in his _The Elements of Typographic Style_ [^3]:
 
 > “...the academic habit of relegating notes to the foot of the page or the end of the book is a mirror of Victorian social and domestic practice, in which the kitchen was kept out of sight and the servants were kept below stairs. If the notes are permitted to move around in the margins – as they were in Renaissance books – they can be present where needed and at the same time enrich the life of the page.”
 
-In The Elements of Typographic Style, the notes are held in the side margins – thus putting the information near and even alongside the reference in the text. Robert Bringhurst doesn't need to bother with those little superscript numbers because the supplementary information is very much nearby for the reader.
+In _The Elements of Typographic Style_, the notes are held in the side margins – thus putting the information near and even alongside the reference in the text. Robert Bringhurst doesn't need to bother with those little superscript numbers because the supplementary information is very much nearby for the reader.
 
 Still, tradition dictates that in some books, there are footnotes and some there are endnotes (either at the end of the chapter or the end of the book). Putting notes in the side margins is nice if you can afford the space. Let's face it, book design and usability does not often win-out over commercial considerations. Robert Bringhurst's book is exceptional and – it is a beautiful thing. Lots of space for the text to breath.
 
@@ -374,3 +374,5 @@ The glossary term is provided in a popup box and the text can be styled. Once a 
 [^1]: see Edward Tufte and [this thread on sidenotes](http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000ld)
 
 [^2]: If you use the scripts mentioned here to put the notes in the margin or at the end of the book or chapter then your pop-up notes will not work in the reflowable eBook.
+
+[^3]: The Elements of Typographic Style, Bringhurst, Robert, Hartley & Marks, Publishers, 2012

@@ -10,7 +10,7 @@
 
   <title>
     
-      Video across a 2 page spread
+      Text to InDesign
     
   </title>
 
@@ -56,28 +56,23 @@
     $.bigfoot();
 </script>
 <!-- Begin Jekyll SEO tag v2.2.0 -->
-<title>Video across a 2 page spread | Digital Publisher Guide</title>
-<meta property="og:title" content="Video across a 2 page spread" />
+<title>Text to InDesign | Digital Publisher Guide</title>
+<meta property="og:title" content="Text to InDesign" />
 <meta name="author" content="Chris Jennings" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width." />
-<meta property="og:description" content="There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width." />
-<link rel="canonical" href="http://localhost:4000/indesign/epub/html/2017/03/31/spread-video-fxl-epub/" />
-<meta property="og:url" content="http://localhost:4000/indesign/epub/html/2017/03/31/spread-video-fxl-epub/" />
+<meta name="description" content="tutorials and screencasts about digital publishing and eBook Production" />
+<meta property="og:description" content="tutorials and screencasts about digital publishing and eBook Production" />
+<link rel="canonical" href="http://localhost:4000/pages/text2id/" />
+<meta property="og:url" content="http://localhost:4000/pages/text2id/" />
 <meta property="og:site_name" content="Digital Publisher Guide" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-03-31T23:30:00+01:00" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
-"@type": "BlogPosting",
-"headline": "Video across a 2 page spread",
+"@type": "WebPage",
+"headline": "Text to InDesign",
 "author": {"@type": "Person",
 "name": {"name":"Chris Jennings","url":"https://twitter.com/pageboy"}},
-"datePublished": "2017-03-31T23:30:00+01:00",
-"description": "There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width.",
-"mainEntityOfPage": {"@type": "WebPage",
-"@id": "http://localhost:4000/indesign/epub/html/2017/03/31/spread-video-fxl-epub/"},
-"url": "http://localhost:4000/indesign/epub/html/2017/03/31/spread-video-fxl-epub/"}</script>
+"description": "tutorials and screencasts about digital publishing and eBook Production",
+"url": "http://localhost:4000/pages/text2id/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -212,7 +207,7 @@
     
     
       
-        <a class="sidebar-nav-item" href="/pages/text2id/">Text to InDesign</a>
+        <a class="sidebar-nav-item active" href="/pages/text2id/">Text to InDesign</a>
       
     
     
@@ -1317,7 +1312,7 @@
     
       
         
-          <a class="sidebar-nav-item" href="/pages/text2id/">Text to InDesign</a>
+          <a class="sidebar-nav-item active" href="/pages/text2id/">Text to InDesign</a>
         
       
     
@@ -1348,168 +1343,183 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/" title="Home">Digital Publisher Guide</a> | <a class="blogLink" href="/blog" title="Blog Articles">Blog</a><br />
+            <a href="/" title="Home">Digital Publisher Guide</a><br />
             <small>Help for publishers and students of publishing</small>
           </h3>
         </div>
       </div>
 
       <div class="container content">
-        <div class="post">
-  <h1 class="post-title">Video across a 2 page spread</h1>
-  <span class="post-date">31 Mar 2017</span>
-  <p>There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width.</p>
+        <div class="page">
+  <!-- <h1 class="page-title">Text to InDesign</h1> -->
+  <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class="toc">
+  <h2 id="on-this-page">On this Page</h2>
 
-<h2 id="there-are-really-2-videos-one-on-each-half">There are really 2 videos (one on each half)</h2>
+  <ul>
+    <li><a href="#un-styled-text">Un-styled text</a></li>
+    <li><a href="#a-replacement-strategy">A Replacement Strategy</a></li>
+    <li><a href="#placing-the-play-text-in-indesign">Placing the play text in InDesign</a></li>
+    <li><a href="#templates">Templates</a></li>
+    <li><a href="#show-the-hidden-characters">Show the hidden characters</a></li>
+    <li><a href="#lets-get-styling">Let’s get styling</a></li>
+    <li><a href="#find-and-change">Find and Change</a></li>
+    <li><a href="#grep">GREP</a></li>
+    <li><a href="#the-character-names">The Character Names</a></li>
+    <li><a href="#changing-styles-with-grep">Changing Styles with GREP</a></li>
+    <li><a href="#uppercase-or-not">UPPERCASE or Not?</a></li>
+    <li><a href="#how-to-add-a-script-to-your-copy-of-indesign">How to add a script to your copy of InDesign</a></li>
+  </ul>
 
-<p><a href="/images/2017/03/videoover2_broke.png"><img src="/images/2017/03/videoover2_broke.png" alt="In iBooks, the video is split" /></a></p>
+</section>
+<!-- /TOC -->
+<h1 id="text-to-indesign">Text to InDesign</h1>
+<p><strong>Processing the Text and applying styles with Find and GREP</strong></p>
 
-<p>When you export to the fixed-layout ePub from InDesign – and you choose the <code class="highlighter-rouge">Convert Spread to Landscape</code> option. The process takes the pair of pages and creates one XHTML file (in the ePub package) with a viewport dimension based on the overall width of 2 pages. But, it also creates a 2 divisions with a width obtained from the width of the page. Inside these <code class="highlighter-rouge">&lt;div&gt;</code>s, it puts a copy of the video; there are 2 videos on the ePub page.</p>
+<p>When working with text from sources outside InDesign, we are likely to find that we want to make changes as soon as we ‘place’ in InDesign.</p>
 
-<h2 id="can-we-fix">Can we fix?</h2>
+<p>Our example is a public domain text (Shakespeare play) that has been created by scanning printed pages. This means that the text is a facsimile of the printed version. What we will find in the text are lots of spaces that move the text across the page and paragraph breaks where lines were artificially broken at the end of a line.</p>
 
-<p>Yes, but only by editing the XHTML inside the ePub package!</p>
+<h2 id="un-styled-text">Un-styled text</h2>
 
-<p>Before we go ahead and show those changes you are advised to keep the spread where the video sits very simple; remove page numbers and headers and any empty text boxes that are sitting around on those pages.</p>
+<p>For my example I am working on ‘A Midsummer Night’s Dream’.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> I have collected my text and I need to keep the original somewhere and even research how the the play is displayed in print.</p>
 
-<blockquote>
-  <p>Note: When you edit the XHTML inside the ePub package you will lose the ability to <em>round-trip</em> to InDesign, so leave these changes to the last in your workflow.</p>
-</blockquote>
+<p><a href="/images/2017/04/text2id/image1.png"><img src="/images/2017/04/text2id/image1.png" alt="Spaces are represented by red dots" /></a></p>
 
-<h2 id="why-do-we-need-to-edit-the-xhtml">Why do we need to edit the XHTML?</h2>
+<p>Here is an image that shows a sample extract of a scene in my text editor (Textwrangler). I have switched on the invisible characters; you will notice spaces and line breaks. It looks as if the first line includes the name of the speaker and this spoken text is in verse. The stage directions are displaying as centred, but this is achieved by spaces added. This is because my text is a facsimile of a printed edition. I need to be aware of this. I can leave this alone before I place the whole text into InDesign, but eventually, I need to remove these spaces, and get the spacing needed by creating a style in InDesign.</p>
 
-<p>Blame Adobe! When the ePub is exported to fixed-layout specifying <code class="highlighter-rouge">Convert Spread to Landscape</code> a single XHTML document is created for the pair of pages, however, a <code class="highlighter-rouge">&lt;div&gt;</code> for each page is created with <em>inline styling</em> but <strong>no</strong> id or class name. <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+<p>You can optionally prepare the text in a word processor and use the styles to create your basic layout. I prefer to leave this aspect until the text is placed in InDesign.</p>
 
-<h2 id="here-are-the-steps-then">Here are the steps then.</h2>
+<p>We could remove these spaces and paragraph breaks, but my advice is to leave spaces alone until we have placed into out InDesign document.</p>
 
-<ul>
-  <li>The spread where you have the video needs to be simplified; that is, get rid of page numbers, headers and even empty text frames. The reason for this, is that you will be editing the XHTML, and you want to keep this simple!</li>
-  <li>You will need to unpack the ePub after you have exported.</li>
-  <li>You now need to find the XHTML file that contains the video.</li>
-  <li>You now need to make 2 changes to this file.</li>
-</ul>
+<h2 id="a-replacement-strategy">A Replacement Strategy</h2>
 
-<p>Look at this line:</p>
+<p>The reason for leaving these unwanted spaces in the text, is that we will be looking for patterns in the text, to help us use Search and Replace across the whole of the Shakespeare play text. We can remove breaks (or carriage returns) between the paragraphs when we ‘Place’ the text. Switch this feature on when we place the text.</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=792,height=594"</span> <span class="nt">/&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+<p><a href="/images/2017/04/text2id/image2.png"><img src="/images/2017/04/text2id/image2.png" alt="Options when placing raw unstyled text." /></a></p>
 
-<p>Take a note of the width (yours may be different to mine). Now <strong>change</strong> the width on the first <code class="highlighter-rouge">&lt;div&gt;</code>, because this will have a width that is half of the width above; You see that this is an inline CSS - this is why we cannot change in our own CSS.</p>
+<h2 id="placing-the-play-text-in-indesign">Placing the play text in InDesign</h2>
 
-<p><a href="/images/2017/03/editHTML2videos.png"><img src="/images/2017/03/editHTML2videos.png" alt="This shows the HTML where the video is displayed across 2 pages" /></a></p>
+<p><a href="/images/2017/04/text2id/image3.png"><img src="/images/2017/04/text2id/image3.png" alt="Use show options" /></a></p>
 
-<p>Here is mine:</p>
+<p>After we choose ‘Show Import Options’ we can opt to remove the unwanted paragraph breaks between paragraphs.</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"position:absolute;
-overflow:hidden;
-left:0px;
-top:0px;
--webkit-transform:translate(0.00px,0.00px);
--ms-transform:translate(0.00px,0.00px);
-transform:translate(0.00px,0.00px);
-width:396.00px;
-height:594.00px"</span><span class="nt">&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
-<p>The width should be changed from <code class="highlighter-rouge">396.00px</code> to <code class="highlighter-rouge">792px</code></p>
+<p>I am presuming that you have prepared an InDesign document with the page size, margins and master pages. It would also make sense to prepare paragraph and character styles.</p>
 
-<p>The next change is to hide the second <code class="highlighter-rouge">&lt;div&gt;</code>. Find the second block that also has a width set to half the overall viewport width and add (within the inline style):</p>
+<h2 id="templates">Templates</h2>
 
-<p><code class="highlighter-rouge">;display:none;</code></p>
+<p>Now is not the place to discuss the idea of templates, but I should mention that preparing a template with your styles is an excellent strategy for your workflow.</p>
 
-<h2 id="autoplaying-the-video">Autoplaying the Video</h2>
+<h2 id="show-the-hidden-characters">Show the hidden characters</h2>
 
-<p>InDesign does provide a tick box on the media panel to play on page load. This effectively gets the video going straight away. In this situation there is a danger that using the above method to display the video fully across the spread may result in the video playing twice, and with sound this may result in an unpleasant echo.</p>
+<p>It is important to let InDesign show you the characters that do not print. You can view these by going to the Type menu and then at the very bottom select ‘Show Hidden Characters.</p>
 
-<p><a href="/images/2017/04/autoplayvideo.png"><img src="/images/2017/04/autoplayvideo.png" alt="The play on page load tick box" /></a></p>
+<p><a href="/images/2017/04/text2id/image4.png"><img src="/images/2017/04/text2id/image4.png" alt="Turn on the hidden characters" /></a></p>
 
-<h3 id="how-to-solve-this">How to solve this?</h3>
+<p>You want to be able to see spaces and paragraph breaks, because you may need to replace those with the spacing rules in the paragraph styles.</p>
 
-<p>By simply adding <code class="highlighter-rouge">display:none;</code> we have hidden the second copy of the video, but it will still play if told to do so with ‘autoplay’.</p>
+<p>Having placed (and flowed) our Shakespeare text into InDesign can observe the unwanted spaces and begin to look for patterns that will help us make changes and even apply styles.</p>
 
-<p>We could remove the ‘autoplay’ in the HTML for the video.</p>
+<h2 id="lets-get-styling">Let’s get styling</h2>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre><span class="nt">&lt;video</span> <span class="na">id=</span><span class="s">"_idVideo000"</span> <span class="na">poster=</span><span class="s">"image/80.png"</span> <span class="na">autoplay=</span><span class="s">"autoplay"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"video/msnd01.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;/video&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
-<p>However, this is not enough, because InDesign has used javascript to start the video <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> and you will need to disable for second video by removing this:</p>
+<p>With the text tool select all of the text and with the paragraph styles showing select the <code class="highlighter-rouge">verseline</code> style created above. Everything will begin to look better. Now with nothing selected make your adjustments to the style as you see fit.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nx">data</span><span class="o">-</span><span class="nx">mediaOnPageLoadActions</span><span class="o">=</span><span class="s2">"onMediaStart(selfContainerID,0.00,0);"</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+<p>Put your text cursor in one of the verse lines. Adjust the style to your liking. Same with the stage directions, ACT and Scene.</p>
 
-<p>I suppose you might just as well delete all of the last &lt;div&gt; or use HTML comment tags to remove.</p>
+<p>You can see here that I have now created some styles for the headings and stage directions. I have created a style for the lines of verse but have only applied to one line so far. I now want to apply this to all lines, so I will use GREP to help with this. The spaces that you see are not acceptable for the eBook; but I will use the pattern to help me match the text to the styles.</p>
 
-<blockquote>
-  <p>Note: Any of these changes will be reversed if you re-export from InDesign, so you should only do this at the end of your workflow or copy this code somewhere and paste back in at the end.</p>
-</blockquote>
+<p><a href="/images/2017/04/text2id/image6.png"><img src="/images/2017/04/text2id/image6.png" alt="We need to style each different type of content; paragraph and character styles" /></a></p>
+
+<h2 id="find-and-change">Find and Change</h2>
+
+<p>Rather that go through the text by hand and apply the styles, I will use search and replace to make global changes. The question is, how do I locate the text to change? Can I apply a style to all lines of verse without changing the stage direction style?</p>
+
+<h2 id="grep">GREP</h2>
+
+<p><a href="/images/2017/04/text2id/image7.png"><img src="/images/2017/04/text2id/image7.png" alt="Using the Find/Change panel and selecting the GREP tab" /></a></p>
+
+<p>GREP (<em>globally search a regular expression and print</em>) is a technique available within InDesign that uses regular expressions to find patterns within the text. Looking at my text with hidden characters showing I can see that if I search for 4 blank spaces followed by an uppercase character, this will capture the line of verse. Then I can remove the spaces and also apply my style throughout.</p>
+
+<p>I have searched for <code class="highlighter-rouge">\^ (\\u)</code> and I replaced with <code class="highlighter-rouge">\$1</code> (the contents of the bracket in the Find what box. I also changed to the paragraph style needed.</p>
+
+<p>More GREP is used to locate and change the stage directions, ACT and scene. The false spaces that are within my text help me identify these patterns even though I plan to be rid of them!</p>
+
+<h2 id="the-character-names">The Character Names</h2>
+
+<p>There is great variety in the way the character names are displayed in Shakespeare play texts. Some texts only have an abbreviation for the name. Many have the name in uppercase and in the same line as the first line of the speech. We have lots of choices.</p>
+
+<p>My plan is to put the character names on their own line, change the style and also put in as title case rather than all in uppercase.</p>
+
+<p>There are several steps.</p>
+
+<p>Here is the GREP that use to find the character names in the text:</p>
+
+<p><code class="highlighter-rouge">\^ (\\u\\u+)\\.</code></p>
+
+<p>This means: beginning of paragraph, at least 2 spaces, 2 or more capital letters followed by a full stop and a space. I want to keep what I find inside the brackets.</p>
+
+<p>If your Shakespeare play has characters with more than one name with a space between the words (such as ‘FIRST FAIRY’) then you will need to use a second search term:</p>
+
+<p><code class="highlighter-rouge">\^ (\\u\\u+) (\\u\\u+)\\.</code></p>
+
+<p>If you want to type the pattern matching codes into the Find/Change dialogue box, then you will need to learn the syntax.</p>
+
+<p>For further help on <a href="https://helpx.adobe.com/indesign/using/find-change.html" title="Adobe have some help">Find and Change see the Adobe web site</a>.</p>
+
+<p>There are many good books on Regular Expressions. I suggest reading about InDesign and GREP in: <a href="http://shop.oreilly.com/product/9780596156015.do" title="See the Publisher web site"><em>GREP in InDesign</em>, Peter Kahrel, O’Reilly Media</a></p>
+
+<p><a href="/images/2017/04/text2id/image8.png"><img src="/images/2017/04/text2id/image8.png" alt="The panel provides GREP syntax through the menus. Here we see this menu where we select ‘Any White Space’." /></a></p>
+
+<p>To the right of the Find What and Change To text fields the @ sign will take you to a number of choices which will enter these pattern matching codes for you.</p>
+
+<p>Here we see this menu where we select ‘Any White Space’.</p>
+
+<p>The ‘Change To’ menu choices are different, because we will want to keep some parts of the text and add other items. In this case we want to keep what is in the brackets and add a paragraph break.</p>
+
+<p>Our ‘Change To’ field becomes:</p>
+
+<p><code class="highlighter-rouge">\$1\\r</code></p>
+
+<h2 id="changing-styles-with-grep">Changing Styles with GREP</h2>
+
+<p>The next step is to apply a paragraph style to these character names that are now on their own line. We can use the Find/Change method again but this time use the Change Format selector tool.</p>
+
+<p><a href="/images/2017/04/text2id/image9.png"><img src="/images/2017/04/text2id/image9.png" alt="Changing formats" /></a></p>
+
+<p>You may wonder why we cannot do this at the same time as the first Find/Change. The reason is that have added the paragraph break, and because this will be selected with the successful change, the following line will also be styled. This, we do not want!</p>
+
+<h2 id="uppercase-or-not">UPPERCASE or Not?</h2>
+
+<p>In my source text all of the character names are in UPPERCASE. That is they have been set with UPPERCASE letters. I really don’t want this; I want to control the case by style rule. Maybe I even want to use small-caps?</p>
+
+<p>GREP in InDesign is great, but it doesn’t replace letters with a change of case. Text editors outside of InDesign can do this (TextWrangler for example), but to achieve this within InDesign we need to use a script. We need to use a script in combination with a GREP search.</p>
+
+<p>The script that I plan to use does not come with a released version of InDesign, so you will need to locate one and add it to your copy of InDesign. The script that I have found works best is <a href="http://www.kahrel.plus.com/indesign/grep_change_case.html" title="See Peter's site">Search and change case by Peter Kahrel</a>.</p>
+
+<h2 id="how-to-add-a-script-to-your-copy-of-indesign">How to add a script to your copy of InDesign</h2>
+
+<p>You will find the Scripts panel under the Window&gt;Utilities menu. When you have this open locate the User item; right click and then reveal in the finder (MAC only). You will need to place your script inside the Scripts Panel folder.</p>
+
+<p><a href="/images/2017/04/text2id/image10.png"><img src="/images/2017/04/text2id/image10.png" alt="Using this script to change the case" /></a></p>
+
+<p>We can make use of this again to change the case of other occurrences of the character names in the play or the Dramatis Personae.</p>
+
+<p><a href="/images/2017/04/text2id/image11.png"><img src="/images/2017/04/text2id/image11.png" alt="After changing the uppercase to title case" /></a></p>
 
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>It may be possible to use javascript to change the markup on the page dynamically and thereby allowing us to change this even if we have made further edits in InDesign. Let me know if you find a way.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>The reason that there is javascript to autoplay the video rather than just using ‘autoplay’ is that Apple iOS devices do not support the HTML5 video autostart attribute.&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>Most public domain texts of Shakespeare’s plays are created from print copies that have been scanned.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
 
-</div>
-
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/2017/03/30/from-print-to-fixed-layout-epub-page-size/">
-            Page Size Issues in fixed-layout ePub
-            <small>30 Mar 2017</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/indesign/epub/css/2017/03/24/page-size-in-indesign-for-ebook/">
-            Page size in InDesign for eBook?
-            <small>24 Mar 2017</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="/markdown/2017/03/03/writing-with-atom/">
-            Writing with Atom
-            <small>03 Mar 2017</small>
-          </a>
-        </h3>
-      </li>
-    
-  </ul>
+<!-- We can only show one screencast at the moment -->
+  
 </div>
 
         
-        <p><b>Filed under:</b> InDesign, ePub, HTML</p>
+        <p><b>Filed under:</b> InDesign, Typography</p>
         
 
       </div>

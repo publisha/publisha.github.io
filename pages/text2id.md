@@ -58,7 +58,7 @@ I am presuming that you have prepared an InDesign document with the page size, m
 
 ## Templates
 
-Now is not the place to discuss the idea of templates, but I should mention that preparing a template with your styles is an excellent strategy for your workflow.
+Now is not the place to discuss the idea of templates, but I should mention that preparing an InDesign template with your styles is an excellent strategy for your workflow.
 
 ## Show the hidden characters
 
@@ -89,7 +89,7 @@ Rather that go through the text by hand and apply the styles, I will use search 
 
 [![Using the Find/Change panel and selecting the GREP tab](/images/2017/04/text2id/image7.png)](/images/2017/04/text2id/image7.png)
 
-GREP (_globally search a regular expression and print_) is a technique available within InDesign that uses regular expressions to find patterns within the text. Looking at my text with hidden characters showing I can see that if I search for 4 blank spaces followed by an uppercase character, this will capture the line of verse. Then I can remove the spaces and also apply my style throughout.
+GREP (_globally search a regular expression and print_) is a technique available within InDesign that uses regular expressions to find patterns within the text. Looking at my text with hidden characters showing,  I can see that if I search for 4 blank spaces followed by an uppercase character, this will capture the line of verse. Then I can remove the spaces and also apply my style throughout.
 
 I have searched for `\^ (\\u)` and I replaced with `\$1` (the contents of the bracket in the Find what box. I also changed to the paragraph style needed.
 

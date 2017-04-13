@@ -1,10 +1,26 @@
 ---
 layout: page
 title: Footnotes, Endnotes, Sidenotes and Popup Notes
-published: false
+published: true
 tags: InDesign
 categories: [InDesign, Typography, ePub]
 ---
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
+
+- [Footnotes](#footnotes)
+- [Endnotes](#endnotes)
+- [Sidenotes (sometimes called Margin Notes)](#sidenotes-sometimes-called-margin-notes)
+- [Footnotes with InDesign](#footnotes-with-indesign)
+- [Endnotes with a Script](#endnotes-with-a-script)
+- [Sidenotes with a Script](#sidenotes-with-a-script)
+- [Notes in eBooks](#notes-in-ebooks)
+- [Notes for the Fixed Layout eBook](#notes-for-the-fixed-layout-ebook)
+- [iBooks Author](#ibooks-author)
+
+</section><!-- /TOC -->
+
 # Footnotes, Endnotes, Sidenotes and Popup Notes
 
 I start with a quote from Robert Bringhurst in his The Elements of Typographic Style:
@@ -180,14 +196,13 @@ We do this:
 With some further adjustments to the `CSS` for the reference class of
 hyperlink, we can see the result.
 
-[![Now we have a complte line of text to touch on for the popup reference.](/images/2017/04/popupbetterfromtext.png)](/images/2017/04/popupbetterfromtext.png)
+[![The hyperlink now comes from text not just a reference number](/images/2017/04/popupfromtext.png)](/images/2017/04/popupfromtext.png)
 
 This really is much better that our original superscript numbers. What
 we have done here could equally apply to the reflowable form of the
 ePUB3 format.
 
-**Note:** It is not possible currently to modify the style of the popup
-text in Apple iBooks.
+> **Note:** It is not possible currently to modify the style of the popup text in Apple iBooks.
 
 In other eReaders such as Adobe Digital Editions the hyperlink works as
 expected, by taking the reader to the notes page.
@@ -344,7 +359,17 @@ version of the ePub for the Kindle may be necessary.
 
 ## iBooks Author
 
-We can't finish this article without mentioning iBooks Author.
+We can't finish this article without mentioning _iBooks Author_.
+
+iBooks Author is free software from Apple for iOS designed to create 'multi-touch' ebooks. You can read more about using this software [here][7f18ef77], but regarding adding notes; you will need to familerise yourself with the Glossary feature, which allows the direct input of text (and images) to provide popup references.
+
+  [7f18ef77]: /pages/iBooksAuthor/ "This page will help"
+
+[![Here we see entry for glossary that becomes a popup](/images/2017/04/glossaryinputIBA.png)](/images/2017/04/glossaryinputIBA.png)
+
+The glossary term is provided in a popup box and the text can be styled. Once a glossary term has been created, other references can be made to the same glossary term.
+
+[![This glossary term is long so a scrollbar appears.](/images/2017/04/glossaryItemiBooks.png)](/images/2017/04/glossaryItemiBooks.png)
 
 [^1]: see Edward Tufte and [this thread on sidenotes](http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000ld)
 

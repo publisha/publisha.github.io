@@ -6,7 +6,7 @@ images: full-width
 ---
 # What is this website about?
 
-Chris Jennings teaches at Oxford Brookes University for Undergraduate and Postgraduate modules on Digital Publishing. He also is a consultant specialising in eBook Production.
+Chris Jennings teaches Undergraduate and Postgraduate modules on Digital Publishing at Oxford Brookes University. He also is a consultant specialising in eBook production.
 
 Right now a lot of my documents are to found on my [PagetoScreen][b016960a] web site. I also have created lots of PDFs for my students and often printed these out (sometime 70 copies!).
 
@@ -33,7 +33,7 @@ Here is a random photo taken by me.
 ### Jekyll
 The site is built with Jekyll which you can [find out about here][92c344c3]{:target="_blank"}.
 
-It is delivered on a GitHub repository with GitHub pages. My preferred writing tool is Atom 'cos you can customise it! I also use *Editorial* on my iPad.
+It is delivered on a **GitHub** repository with GitHub pages. My preferred writing tool is Atom 'cos you can customise it! I also use *Editorial* on my iPad.
 
 [92c344c3]: https://jekyllrb.com "Visit the Jekyll web site"
 

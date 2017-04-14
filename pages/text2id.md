@@ -28,7 +28,7 @@ categories: [InDesign, Typography]
 
 When working with text from sources outside InDesign, we are likely to find that we want to make changes as soon as we ‘place’ in InDesign.
 
-Our example is a public domain text (Shakespeare play) that has been created by scanning printed pages. This means that the text is a facsimile of the printed version. What we will find in the text are lots of spaces that move the text across the page and paragraph breaks where lines were artificially broken at the end of a line.
+Our example is a public domain text (Shakespeare play) that has been created by scanning printed pages. This means that the text is a facsimile of a printed version. What we will find in the text are lots of spaces that move the text across the page and paragraph breaks where lines were artificially broken at the end of a line.
 
 ## Un-styled text
 
@@ -36,15 +36,15 @@ For my example I am working on ‘A Midsummer Night’s Dream’.[^1] I have col
 
 [![Spaces are represented by red dots](/images/2017/04/text2id/image1.png)](/images/2017/04/text2id/image1.png)
 
-Here is an image that shows a sample extract of a scene in my text editor (Textwrangler). I have switched on the invisible characters; you will notice spaces and line breaks. It looks as if the first line includes the name of the speaker and this spoken text is in verse. The stage directions are displaying as centred, but this is achieved by spaces added. This is because my text is a facsimile of a printed edition. I need to be aware of this. I can leave this alone before I place the whole text into InDesign, but eventually, I need to remove these spaces, and get the spacing needed by creating a style in InDesign.
+Find here an image that shows a sample extract of a scene in my text editor (Textwrangler). I have switched on the *Show Hidden Characters* so you can see spaces and line breaks. It looks as if the first line includes the name of the speaker and this spoken text is in verse. The stage directions are displaying as centred, but this is achieved by spaces added to the left of the text. This is because my text is a facsimile of a printed edition. I need to be aware of this. I can leave this alone [^2]before I place the whole text into InDesign, but eventually, I need to remove these spaces, and get the spacing needed by creating a style in InDesign.
 
-You can optionally prepare the text in a word processor and use the styles to create your basic layout. I prefer to leave this aspect until the text is placed in InDesign.
+You can optionally prepare the text in a word processor and use the styles to create your basic layout but I prefer to leave this aspect until the text is placed in InDesign.
 
-We could remove these spaces and paragraph breaks, but my advice is to leave spaces alone until we have placed into out InDesign document.
+We could remove these spaces and paragraph breaks, but my advice is to leave spaces alone until we have placed into the InDesign document.
 
 ## A Replacement Strategy
 
-The reason for leaving these unwanted spaces in the text, is that we will be looking for patterns in the text, to help us use Search and Replace across the whole of the Shakespeare play text. We can remove breaks (or carriage returns) between the paragraphs when we ‘Place’ the text. Switch this feature on when we place the text.
+The reason for leaving these unwanted spaces in the text, is that we will be looking for patterns in the text, to help us use Search and Replace across the whole of the Shakespeare play text. We can remove extra breaks (or carriage returns) between the paragraphs when we ‘Place’ the text. Switch this feature on when we place the text.
 
 [![Options when placing raw unstyled text.](/images/2017/04/text2id/image2.png)](/images/2017/04/text2id/image2.png)
 
@@ -52,32 +52,31 @@ The reason for leaving these unwanted spaces in the text, is that we will be loo
 
 [![Use show options](/images/2017/04/text2id/image3.png)](/images/2017/04/text2id/image3.png)
 
-After we choose ‘Show Import Options’ we can opt to remove the unwanted paragraph breaks between paragraphs.
+After we choose ‘Show Import Options’ we can opt to remove the unwanted paragraph breaks between paragraphs.[^3]
 
-I am presuming that you have prepared an InDesign document with the page size, margins and master pages. It would also make sense to prepare paragraph and character styles.
+I am presuming that you have prepared an InDesign document with the page size, margins and master pages. It would also make sense to prepare paragraph and character styles for each element needed.
 
-## Templates
+### Templates
 
 Now is not the place to discuss the idea of templates, but I should mention that preparing an InDesign template with your styles is an excellent strategy for your workflow.
 
 ## Show the hidden characters
 
-It is important to let InDesign show you the characters that do not print. You can view these by going to the Type menu and then at the very bottom select ‘Show Hidden Characters.
+It is important to let InDesign show you the characters that do not print. You can view these by going to the Type menu and then at the very bottom select `Show Hidden Characters`.
 
 [![Turn on the hidden characters](/images/2017/04/text2id/image4.png)](/images/2017/04/text2id/image4.png)
 
 You want to be able to see spaces and paragraph breaks, because you may need to replace those with the spacing rules in the paragraph styles.
 
-Having placed (and flowed) our Shakespeare text into InDesign can observe the unwanted spaces and begin to look for patterns that will help us make changes and even apply styles.
+Having placed (and flowed) our Shakespeare text into InDesign we can observe the unwanted spaces and begin to look for patterns that will help us make changes and even apply styles.
 
 ## Let’s get styling
 
-With the text tool select all of the text and with the paragraph styles showing select the `verseline` style created above. Everything will begin to look better. Now with nothing selected make your adjustments to the style as you see fit.
+Any InDesign document will always have a [basic paragraph] style. It would be a good idea to set this paragraph style to your 'root' style. Set this to be a style that would suit the body text. With the text tool, select all of the text and with the paragraph styles showing select the `[basic paragraph]` style created above. Everything will begin to look better. Now with nothing selected make your adjustments to the styles for each element (Act, Scene, stage directions etc.) as you see fit.
 
 Put your text cursor in one of the verse lines. Adjust the style to your liking. Same with the stage directions, ACT and Scene.
 
-You can see here that I have now created some styles for the headings and stage directions. I have created a style for the lines of verse but have only applied to one line so far. I now want to apply this to all lines, so I will use GREP to help with this. The spaces that you see are not acceptable for the eBook; but I will use the pattern to help me match the text to the styles.
-
+You can see in the image here that I have now created some styles for the headings and stage directions. I have created a style for the lines of verse but have only applied to one line so far. I now want to apply this to all lines, so I will use GREP to help with this. The spaces that you see are not acceptable for the eBook; but I will use the pattern to help me match the text to the styles.
 
 [![We need to style each different type of content; paragraph and character styles](/images/2017/04/text2id/image6.png)](/images/2017/04/text2id/image6.png)
 
@@ -164,3 +163,7 @@ We can make use of this again to change the case of other occurrences of the cha
 [![After changing the uppercase to title case](/images/2017/04/text2id/image11.png)](/images/2017/04/text2id/image11.png)
 
 [^1]: Most public domain texts of Shakespeare's plays are created from print copies that have been scanned.
+
+[^2]: The spacing throughout the text reveals a pattern - a certain number of spaces for each element. This will help us in out 'Find and Replace' strategy.
+
+[^3]: You should only see one break between paragraphs.

@@ -175,9 +175,11 @@ Remember that the audio will stop when the user moves to another page.
 
 InDesign does give you some basic controls over the way objects are dynamically drawn on the screen, and by selecting an object and then the Animation panel (under Window>Interactive), you can invoke an event on page load. Here we see that an image is set to drop down from the top of the page when that page is reached.
 
-[![Here we are setting this image to drify down when the page opens](/images/2017/03/id2fixed_recipes/image2.jpeg)](/images/2017/03/id2fixed_recipes/image2.jpeg)
+[![Here we are setting this image to drop down when the page opens](/images/2017/03/id2fixed_recipes/image2.jpeg)](/images/2017/03/id2fixed_recipes/image2.jpeg)
 
-Note. Animation is not supported on anchored objects, so you will need to release any previously anchored images.
+>**Note**. Animation is not supported on anchored objects, so you will need to release any previously anchored images.
+
+The fixed-layout ePub does not automatically provide image enlargement, but you can make this happen by using a larger version of the image and making this animate to the centre of the screen, invoked by making the smaller version into a button.
 
 ## Creating a Slide Show in InDesign
 

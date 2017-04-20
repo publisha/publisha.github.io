@@ -181,6 +181,27 @@ InDesign does give you some basic controls over the way objects are dynamically 
 
 The fixed-layout ePub does not automatically provide image enlargement, but you can make this happen by using a larger version of the image and making this animate to the centre of the screen, invoked by making the smaller version into a button.
 
+### Image Enlargement on Click (or touch)
+
+The image itself must large enough to be viewed full screen. If the image is linked (and not embedded) you can copy and paste to a new layer. The advantage of using another layer, is that you can hide this when you need to get access to the under lying layers. Here are the steps:
+
+* Make a new layer above the current one
+* Copy the image on your page
+* Paste into the new layer
+* Resize and position this image where you want it to appear
+* With this image selected invoke the animation panel
+* Choose an animation (could be simply fade up)
+* Make sure to tick *Hide Until Animated*
+* Now hide this layer so you can see the image below
+* Select this image and make into a button
+* Make the action on the button invoke the animation previously created
+* Show the hidden layer again
+* Select the large version of the image
+* In the animation panel, turn off the 'on page load' action - There should only be 'on button action'
+* With the image selected make this into a button
+* Make the action to 'Show/Hide' and select itself and hide by selecting the eye icon that has a line through it
+* Test this now with the ePub Preview window
+
 ## Creating a Slide Show in InDesign
 
 There is no direct way to create a sequence of images in InDesign (as of this writing), but you can use a `multi-state object` and then create a button that will provide the controls to move through the image sequence.

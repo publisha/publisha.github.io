@@ -26,7 +26,8 @@ screencast: [fixedlayout_recipes1]
 - [Creating a Slide Show in InDesign](#creating-a-slide-show-in-indesign)
 - [ePUB Interactivity Preview](#epub-interactivity-preview)
 
-</section><!-- /TOC -->
+</section>
+<!-- /TOC -->
 
 # Indesign to Fixed Layout Recipe eBook
 
@@ -191,13 +192,13 @@ The image itself must large enough to be viewed full screen. If the image is lin
 * Resize and position this image where you want it to appear
 * With this image selected invoke the animation panel
 * Choose an animation (could be simply fade up)
-* Make sure to tick *Hide Until Animated*
+* Make sure to tick `Hide Until Animated`
 * Now hide this layer so you can see the image below
 * Select this image and make into a button
 * Make the action on the button invoke the animation previously created
 * Show the hidden layer again
 * Select the large version of the image
-* In the animation panel, turn off the 'on page load' action - There should only be 'on button action'
+* In the animation panel, turn off the `On Page Load` event - There should only be `On Button Event` in the events list
 * With the image selected make this into a button
 * Make the action to 'Show/Hide' and select itself and hide by selecting the eye icon that has a line through it
 * Test this now with the ePub Preview window

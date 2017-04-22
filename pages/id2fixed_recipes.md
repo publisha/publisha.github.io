@@ -221,7 +221,7 @@ Now duplicate this frame for the number of images you want in the sequence. Use 
 
 [![The image frames are offset initially, then we can align so that they sit at the same place](/images/2017/03/id2fixed_recipes/image3.jpeg)](/images/2017/03/id2fixed_recipes/image3.jpeg)
 
-Use the Place command and select all of your images and click each frame in turn to populate the frames with the images. They should automatically resize and crop to fit. When placing images you can select more than one and all we be loaded onto your cursor.
+Use the Place command and select all[^1] of your images and click each frame in turn to populate the frames with the images. They should automatically resize and crop to fit. When placing images you can select more than one and all we be loaded onto your cursor.
 
 Use the align toolbar to make the frames sit on top of each other. You need to align horizontally first and then vertically.
 
@@ -238,3 +238,6 @@ The easiest way to create the controls for a slide show / sequence is to add ove
 Under the Window>Interactivity menu you will find the EPUB Interactivity Window. With this, you can test your fixed pages (or indeed the whole book) before exporting to the fixed layout ePUB. Not all features can be previewed but certainly the animation, multimedia and interactivity will show as expected.
 
 [![We can preview the ePub before we export](/images/2017/03/id2fixed_recipes/image6.jpeg)](/images/2017/03/id2fixed_recipes/image6.jpeg)
+
+
+[^1]: Yes, it's true, when you Place, you can select a bunch of images. These will be loaded onto the cursor and can be placed one at a time; in this case, in each empty frame.

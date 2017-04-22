@@ -197,6 +197,12 @@
     
     
       
+        <a class="sidebar-nav-item" href="/pages/masterpages/">Master Pages in InDesign</a>
+      
+    
+    
+    
+      
         <a class="sidebar-nav-item" href="/pages/create_speare_play_web/">Repository for Shakespeare Play Web page</a>
       
     
@@ -357,6 +363,12 @@
      
     
      
+          
+            <li><a href="/pages/masterpages/">Master Pages in InDesign <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+          
+        
+    
+     
     
      
           
@@ -473,6 +485,10 @@
      
     
      
+          
+        
+    
+     
     
      
           
@@ -585,6 +601,10 @@
      
     
      
+    
+     
+          
+        
     
      
     
@@ -703,6 +723,10 @@
      
     
      
+          
+        
+    
+     
     
      
           
@@ -819,6 +843,10 @@
      
     
      
+          
+        
+    
+     
     
      
           
@@ -931,6 +959,10 @@
      
     
      
+    
+     
+          
+        
     
      
     
@@ -1059,6 +1091,10 @@
      
     
      
+          
+        
+    
+     
     
      
           
@@ -1171,6 +1207,10 @@
      
     
      
+    
+     
+          
+        
     
      
     
@@ -1303,6 +1343,12 @@
       
     
       
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/pages/masterpages/">Master Pages in InDesign</a>
         
       
     
@@ -1522,9 +1568,36 @@
 
 <p>InDesign does give you some basic controls over the way objects are dynamically drawn on the screen, and by selecting an object and then the Animation panel (under Window&gt;Interactive), you can invoke an event on page load. Here we see that an image is set to drop down from the top of the page when that page is reached.</p>
 
-<p><a href="/images/2017/03/id2fixed_recipes/image2.jpeg"><img src="/images/2017/03/id2fixed_recipes/image2.jpeg" alt="Here we are setting this image to drify down when the page opens" /></a></p>
+<p><a href="/images/2017/03/id2fixed_recipes/image2.jpeg"><img src="/images/2017/03/id2fixed_recipes/image2.jpeg" alt="Here we are setting this image to drop down when the page opens" /></a></p>
 
-<p>Note. Animation is not supported on anchored objects, so you will need to release any previously anchored images.</p>
+<blockquote>
+  <p><strong>Note</strong>. Animation is not supported on anchored objects, so you will need to release any previously anchored images.</p>
+</blockquote>
+
+<p>The fixed-layout ePub does not automatically provide image enlargement, but you can make this happen by using a larger version of the image and making this animate to the centre of the screen, invoked by making the smaller version into a button.</p>
+
+<h3 id="image-enlargement-on-click-or-touch">Image Enlargement on Click (or touch)</h3>
+
+<p>The image itself must large enough to be viewed full screen. If the image is linked (and not embedded) you can copy and paste to a new layer. The advantage of using another layer, is that you can hide this when you need to get access to the under lying layers. Here are the steps:</p>
+
+<ul>
+  <li>Make a new layer above the current one</li>
+  <li>Copy the image on your page</li>
+  <li>Paste into the new layer</li>
+  <li>Resize and position this image where you want it to appear</li>
+  <li>With this image selected invoke the animation panel</li>
+  <li>Choose an animation (could be simply fade up)</li>
+  <li>Make sure to tick <code class="highlighter-rouge">Hide Until Animated</code></li>
+  <li>Now hide this layer so you can see the image below</li>
+  <li>Select this image and make into a button</li>
+  <li>Make the action on the button invoke the animation previously created</li>
+  <li>Show the hidden layer again</li>
+  <li>Select the large version of the image</li>
+  <li>In the animation panel, turn off the <code class="highlighter-rouge">On Page Load</code> event - There should only be <code class="highlighter-rouge">On Button Event</code> in the events list</li>
+  <li>With the image selected make this into a button</li>
+  <li>Make the action to ‘Show/Hide’ and select itself and hide by selecting the eye icon that has a line through it</li>
+  <li>Test this now with the ePub Preview window</li>
+</ul>
 
 <h2 id="creating-a-slide-show-in-indesign">Creating a Slide Show in InDesign</h2>
 
@@ -1544,7 +1617,7 @@
 
 <p><a href="/images/2017/03/id2fixed_recipes/image3.jpeg"><img src="/images/2017/03/id2fixed_recipes/image3.jpeg" alt="The image frames are offset initially, then we can align so that they sit at the same place" /></a></p>
 
-<p>Use the Place command and select all of your images and click each frame in turn to populate the frames with the images. They should automatically resize and crop to fit. When placing images you can select more than one and all we be loaded onto your cursor.</p>
+<p>Use the Place command and select all<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> of your images and click each frame in turn to populate the frames with the images. They should automatically resize and crop to fit. When placing images you can select more than one and all we be loaded onto your cursor.</p>
 
 <p>Use the align toolbar to make the frames sit on top of each other. You need to align horizontally first and then vertically.</p>
 
@@ -1561,6 +1634,14 @@
 <p>Under the Window&gt;Interactivity menu you will find the EPUB Interactivity Window. With this, you can test your fixed pages (or indeed the whole book) before exporting to the fixed layout ePUB. Not all features can be previewed but certainly the animation, multimedia and interactivity will show as expected.</p>
 
 <p><a href="/images/2017/03/id2fixed_recipes/image6.jpeg"><img src="/images/2017/03/id2fixed_recipes/image6.jpeg" alt="We can preview the ePub before we export" /></a></p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Yes, it’s true, when you Place, you can select a bunch of images. These will be loaded onto the cursor and can be placed one at a time; in this case, in each empty frame.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 <!-- We can only show one screencast at the moment -->
   

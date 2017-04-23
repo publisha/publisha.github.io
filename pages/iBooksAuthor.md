@@ -45,7 +45,7 @@ Since the objective of our work is developing a strategy for publishing for both
 
 iBooks Author comes with many templates and, for many teachers and self publishers the options available are enough, but for us – we have to take control of the design by creating our own template.
 
-There is no way to start a template from scratch. You have to start with one of the provided templates. It really makes sense to spend some time exploring the templates so that you can get a feeling for the way the structure of the iBooks Author environment works. As you will see from the list of templates there is one blank template, that you can use to build from but have a look through the others to get a sense of what id possible.
+There is no way to start a template from scratch. You have to start with one of the provided templates. It really makes sense to spend some time exploring the templates so that you can get a feeling for the way the structure of the iBooks Author environment works. As you will see from the list of templates there is one blank template, that you can use to build from but have a look through the others to get a sense of what is possible.
 
 ## Orientation Options
 
@@ -61,13 +61,15 @@ If you are confused by this, you should experiment with a few of the template op
 
 Just like in any other design for publication toolset, there are 2 variables that you need to control; the layout and the typography.
 
-The typography is controlled with a style palette and in iBooks Author this is known as the ‘style drawer’. Paragraph styles, character styles and list styles can be modified through the Text panel and the Fonts Panel. You can also create new styles by building those on the page and then, on selection, add as a new style.
+The typography is controlled with a style palette and in iBooks Author this is known as the `style drawer`. Paragraph styles, character styles and list styles can be modified through the Text panel and the Fonts Panel. You can also create new styles by building those on the page and then, on selection, add as a new style.
 
 Some of your decisions at this stage also depend on how you planning to get content into IBA. We are using InDesign, so we have already made some typographic choices. We will be able to use the paragraph and character styles. More on this later, first we need to deal with structure.
 
 ### The iBooks Author Structure
 
 IBA provides you with a basic structure using the terms ‘Chapters’ and the further ‘child’ elements as the ‘Sections’. You don’t actually need to use these terms nor do you need to use Sections within Chapters. Indeed your book can be one ‘Chapter’ with many sections! You can even rename the Chapters and Sections so that Sections become Chapters and Chapters become sections.
+
+[![The image here shows that the name of `Chapter` has been changed to `Recipe`.](/images/2017/04/recipetemplate.png)](/images/2017/04/recipetemplate.png)
 
 Some books may have sections as the top level with chapters inside those sections. Anything is possible, although in terms of IBA’s automatic construction of the table of contents, you can only have 2 levels, so by default you have Pages within Sections within Chapters although you can dispense with Sections altogether.
 
@@ -137,7 +139,7 @@ We can modify these styles or create new ones, however in our workflow from InDe
 
 Only in the most recent versions of iBooks Author have the following features been added. These features give us the possibility to get our content (styled and structured) within InDesign into iBooks Author. We must thank Apple for these additions, because prior to version 2.1 we could only copy and paste our content from InDesign and paste into iBooks Author (still an option, of course).
 
-Neither of the 2 options described below are without their difficulties, and your decision as to which is better for you, will depend on the amount of work you would rather do in iBooks Author or back in InDesign.
+Neither of the 2 options described here are without their difficulties, and your decision as to which is better for you, will depend on the amount of work you would rather do in iBooks Author or back in InDesign.
 
 [![The text flow in iBooks Author is similar to InDesign's threaded text](/images/2017/03/iBooksAuthor/image8.png)](/images/2017/03/iBooksAuthor/image8.png)
 
@@ -149,13 +151,13 @@ You will find this option on the File menu.
 
 But before going through this process, let me just point out some facts.
 
-The Table of Contents is where IBA gets its information for the structure – you know – Chapters, Sections, Pages etc. So, you really must be sure that the logical TOC, is going to provide that information. Take a look at your beautifully formed reflowable ePUB3 and analyse the TOC, before building the IBA file from it. iBooks Author only transfers 2 levels of the TOC to build the structure.
+The Table of Contents is where IBA gets its information for the structure – you know – Chapters, Sections, Pages etc. So, you really must be sure that the logical TOC, is going to provide that information. Take a look at your beautifully formed reflowable ePub3 and analyse the TOC, before building the IBA file from it. iBooks Author **only** transfers 2 levels of the TOC to build the structure.
 
 [![Choosing a template when importing the ePub](/images/2017/03/iBooksAuthor/image9.png)](/images/2017/03/iBooksAuthor/image9.png)
 
 ## Typographic Styles
 
-Creating a new iBooks Author file from an ePUB (reflowable) will bring into the template the correct appearance of the paragraph and character styles, but they will not have the names you gave them in InDesign. They will only have generic names such as heading 1, heading 2, etc. Furthermore, the many other styles that you have in your InDesign file (in my example: verse line, prose, location etc), will all become Free Form styles. Now, this may not be a problem, but it will be very difficult to modify these styles.
+Creating a new iBooks Author file from an ePUB (reflowable) will bring into the template the correct appearance of the paragraph and character styles, but they will not have the names you gave them in InDesign. They will only have generic names such as heading 1, heading 2, etc. Furthermore, the many other styles that you have in your InDesign file (in my example: verse line, prose, location etc), **will all become Free Form styles**. Now, this may not be a problem, but it will be very difficult to modify these styles.
 
 [![The InDesign styles do not remain with the same names.](/images/2017/03/iBooksAuthor/image10.png)](/images/2017/03/iBooksAuthor/image10.png)
 
@@ -167,7 +169,7 @@ Using this technique is far from straightforward but if we are careful we can ge
 
 ### What is in the IDML File?
 
-Apple IBA will take everything that is in the `IDML` file and put it on its own pages. We expect the IDML file to include everything, but there is one thing that we do not want in the IBA file; the master page items. This means the header and the footers (page number especially).
+Apple IBA will take everything that is in the `IDML` file and put it on its own pages. We expect the IDML file to include everything, but there is one thing that we do not want in the IBA file; _the master page items_. This means the header and the footers (page number especially).
 
 [![You should hide the page numbers and headers before exporting the IDML](/images/2017/03/iBooksAuthor/image11.png)](/images/2017/03/iBooksAuthor/image11.png)
 
@@ -177,7 +179,7 @@ Since the book you are reading proposes a workflow that retains the print elemen
 
 IDML files can only be created from the individual InDesign files, not from the book panel. From within each document you will need to use the `File>Export` and choose `IDML`.
 
-In order for this work successfully, you really need to break the InDesign documents into their individual chapters and then export one IDML for each of those. The reason for this is that when you move back to iBooks Author, you are only able to insert one chapter at a time to get the correct structure. If you export one IDML file for the whole book (or section within the book), then it will become one chapter in IBA. If your workflow habits involve using the book panel and keeping chapters in individual files, then you are one step ahead of all the other eBook producers!
+In order for this work successfully, you really need to break the InDesign documents into their individual chapters and then export one IDML for each of those. The reason for this is that when you move back to iBooks Author, you are only able to insert one chapter at a time to get the correct structure. If you export one IDML file for the whole book (or section within the book), then it will become one chapter in IBA. If your workflow habits involve using the book panel and keeping chapters in individual files, then you are one step ahead of all the other eBook producers![^2]
 
 It is possible to split the InDesign document into smaller files, and there are tools to help with this. Badia Software (*http://exportools.badiasoftware.com*) have a program that is perfect for this, I recommend using this if your budget allows. Since our goal is to produce IDML files for each section (in my case a Scene of the play), Badia Export Tools will do this directly.
 
@@ -325,3 +327,6 @@ The results are reasonably good and anomalies are easily edited, since all named
 You really can only use this technique if you have split a complete InDesign document into constituent parts (such as chapters and sections), because you are only able to add the IDML file into a chapter not a complete book.
 
 [^1]: Recent versions of iBooks Author, can create reflowable ePub format eBooks from a particular choice of template
+
+
+[^2]: In fact if you have everything broken down into separate InDesign files and you are using the book panel, you can `Package for Print` from the book panel and you will get an IDML file for each InDesign file in the book.

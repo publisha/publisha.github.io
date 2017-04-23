@@ -14,7 +14,7 @@ The image here shows that the name of `Chapter` has been changed to `Recipe`.
 
 [![The image here shows that the name of `Chapter` has been changed to `Recipe`.](/images/2017/04/recipetemplate.png)](/images/2017/04/recipetemplate.png)
 
-We have seen with the creation of the Shakespeare play book, that we have the Act and then the Scene within this. For that project, the Act become the iBooks Author chapter and the Scene become the Section.
+We have seen with the creation of the Shakespeare play book (in other screencasts), that we had the Act and then the Scene within this. For that project, the Act became the iBooks Author chapter and the Scene became the Section.
 
 ### Let us consider the recipe book.
 
@@ -29,3 +29,5 @@ Breakfast  |  Lunch |  Dinner
 Fried Eggs and Bacon  | Tomato Salad  |  Seared Tuna and Potato Salad
 Porridge  | Fishcakes  |  Lamb Burgers and Sweet Potato Fries
 Muesli  | Omelette  |  Chicken Risotto with Asparagus
+
+In this type of recipe book, you have 3 Sections (InDesign calls them Chapters) called Breakfast, Lunch, Dinner and then the recipes are inside those. For this situation you can rename the `Sections` as recipes.

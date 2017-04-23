@@ -58,7 +58,6 @@ collections:
     output: true
     layout: screencast
 
-exclude: [resources]
 
 # for prose
 prose:

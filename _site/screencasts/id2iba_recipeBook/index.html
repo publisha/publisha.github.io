@@ -10,7 +10,7 @@
 
   <title>
     
-      Ambient Sound in a Fixed-Layout ePub
+      From InDesign to iBooks Author Recipe Book
     
   </title>
 
@@ -68,28 +68,28 @@
     $.bigfoot();
 </script>
 <!-- Begin Jekyll SEO tag v2.2.0 -->
-<title>Ambient Sound in a Fixed-Layout ePub | Digital Publisher Guide</title>
-<meta property="og:title" content="Ambient Sound in a Fixed-Layout ePub" />
+<title>From InDesign to iBooks Author Recipe Book | Digital Publisher Guide</title>
+<meta property="og:title" content="From InDesign to iBooks Author Recipe Book" />
 <meta name="author" content="Chris Jennings" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Just for Apple iBooks" />
-<meta property="og:description" content="Just for Apple iBooks" />
-<link rel="canonical" href="http://localhost:4000/screencasts/ambientsoundinepub/" />
-<meta property="og:url" content="http://localhost:4000/screencasts/ambientsoundinepub/" />
+<meta name="description" content="When we use iBooks Author, it is essential to consider the structure of our content." />
+<meta property="og:description" content="When we use iBooks Author, it is essential to consider the structure of our content." />
+<link rel="canonical" href="http://localhost:4000/screencasts/id2iba_recipeBook/" />
+<meta property="og:url" content="http://localhost:4000/screencasts/id2iba_recipeBook/" />
 <meta property="og:site_name" content="Digital Publisher Guide" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-04-05T00:00:00+01:00" />
+<meta property="article:published_time" content="2017-04-23T00:00:00+01:00" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "BlogPosting",
-"headline": "Ambient Sound in a Fixed-Layout ePub",
+"headline": "From InDesign to iBooks Author Recipe Book",
 "author": {"@type": "Person",
 "name": {"name":"Chris Jennings","url":"https://twitter.com/pageboy"}},
-"datePublished": "2017-04-05T00:00:00+01:00",
-"description": "Just for Apple iBooks",
+"datePublished": "2017-04-23T00:00:00+01:00",
+"description": "When we use iBooks Author, it is essential to consider the structure of our content.",
 "mainEntityOfPage": {"@type": "WebPage",
-"@id": "http://localhost:4000/screencasts/ambientsoundinepub/"},
-"url": "http://localhost:4000/screencasts/ambientsoundinepub/"}</script>
+"@id": "http://localhost:4000/screencasts/id2iba_recipeBook/"},
+"url": "http://localhost:4000/screencasts/id2iba_recipeBook/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -1422,90 +1422,65 @@
 <div id="post-nav">
     <div >
         
-        <a class="prev" href="/screencasts/Indesign2iBooksAuthor2/">
-            <span>&lt; InDesign to iBooks Author (Part 2)</span>
+        <a class="prev" href="/screencasts/ambientsoundinepub/">
+            <span>&lt; Ambient Sound in a Fixed-Layout ePub</span>
         </a>
         
-        
-        <a class="next" href="/screencasts/id2iba_recipeBook/">
-            <span>From InDesign to iBooks Author Recipe Book &gt;</span>
-        </a>
         
     </div>
 </div>
  -->
 
 <div class="post">
-  <a class="video fancybox.iframe" title="" href="https://www.youtube.com/embed/tdZT2DkI8Rk?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
-<h1>Ambient Sound in a Fixed-Layout ePub</h1>
-<span class="post-date">05 Apr 2017</span>
+  <a class="video fancybox.iframe" title="" href="https://www.youtube.com/embed/B0NJ-KOT2-Y?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
+<h1>From InDesign to iBooks Author Recipe Book</h1>
+<span class="post-date">23 Apr 2017</span>
 <!-- <span class="post-date"></span> -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tdZT2DkI8Rk?rel=0" frameborder="0" allowfullscreen></iframe>
-  <p><strong>Just for Apple iBooks</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B0NJ-KOT2-Y?rel=0" frameborder="0" allowfullscreen></iframe>
+  <p>When we use iBooks Author, it is essential to consider the structure of our content.</p>
 
-<p>When we place audio on the page of a fixed-layout eBook, we cannot expect it to continue to play when the page is turned. Each page is a new XHTML document, so audio (or any media) will stop on leaving that page.</p>
+<p>iBooks Author has (potentially) 2 structural levels; the <code class="highlighter-rouge">Chapter</code> and –within this– the <code class="highlighter-rouge">Section</code>. We do not need to use both of these and, indeed, we do not need to refer to them with these terms.</p>
 
-<p>If we want to get audio to continue to play as we turn the pages, we need to modify the markup inside the ePub package after we have exported from InDesign<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+<p>We have seen with the creation of the Shakespeare play book, that we have the Act and then the Scene within this. For that project, the Act become the iBooks Author chapter and the Scene become the Section.</p>
 
-<h3 id="further-details">Further Details</h3>
+<h2 id="let-us-consider-the-recipe-book">Let us consider the recipe book.</h2>
 
-<p>ibooks on Apple devices supports this ambient sound feature and we need to add a reference to the iBooks extensions in the HTML tag at the top of the pages that need this audio. We also need to modify the audio tag inside the HTML markup.</p>
+<p>In my example, I simply have one recipe for each Chapter, and so I will use a template that only needs the Chapter (recipe) title page and then further pages for the recipe details and pictures etc.</p>
 
-<p>We can use InDesign to add the audio file (we can do this on the master pages), but there are some very specific issues to be aware of:</p>
+<p>If your recipe book needs another level, then use a template that needs the Section pages also. A good example of this, would be a recipe book that has meals for Breakfast, Lunch and Dinner.</p>
 
-<p>Each HTML page will have the HTML tag thus:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1999/xhtml"</span> <span class="na">xmlns:epub=</span><span class="s">"http://www.idpf.org/2007/ops"</span><span class="nt">&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<p>we need this instead:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;html</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/1999/xhtml"</span> <span class="na">xmlns:epub=</span><span class="s">"http://www.idpf.org/2007/ops"</span> <span class="na">epub:prefix=</span><span class="s">"ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/"</span><span class="nt">&gt;</span>;
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<p>When we place audio on an InDesign page it will create HTML for audio like this:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre><span class="nt">&lt;audio</span> <span class="na">id=</span><span class="s">"_idAudio000"</span> <span class="na">controls=</span><span class="s">"controls"</span><span class="nt">&gt;</span>
-         <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"audio/dreamambient.mp3"</span> <span class="na">type=</span><span class="s">"audio/mpeg"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;/audio&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<p>This is perfectly valid but we need this:</p>
-
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;audio</span> <span class="na">epub:type=</span><span class="s">"ibooks:soundtrack"</span> <span class="na">src=</span><span class="s">"audio/dreamambient.mp3"</span><span class="nt">/&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<p>You will want to hide the audio somewhere on the InDesign page, by putting it behind an image.</p>
-
-<p>I do hope the screencast explains this.</p>
-
-<blockquote>
-  <p><strong>Note</strong>: iBooks on the MAC has a few anomolies; the soundtrack switch does not always display and the audio icon in the menu bar shows even if there id no audio on that page.</p>
-</blockquote>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Always remember that once we edit the HTML inside the book package then we lose the ability to go back to InDesign for further edits&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>Breakfast</th>
+      <th>Lunch</th>
+      <th>Dinner</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fried Eggs and Bacon</td>
+      <td>Tomato Salad</td>
+      <td>Seared Tuna and Potato Salad</td>
+    </tr>
+    <tr>
+      <td>Porridge</td>
+      <td>Fishcakes</td>
+      <td>Lamb Burgers and Sweet Potato Fries</td>
+    </tr>
+    <tr>
+      <td>Muesli</td>
+      <td>Omelette</td>
+      <td>Chicken Risotto with Asparagus</td>
+    </tr>
+  </tbody>
+</table>
 
   <p><a href="/pages/screencasts/"><i class="fa fa-chevron-left" aria-hidden="true"></i> See all Screencasts</a></p>
 </div>
 
         
-        <p><b>Filed under:</b> InDesign, ePub</p>
+        <p><b>Filed under:</b> InDesign, iBooks Author</p>
         
 
       </div>

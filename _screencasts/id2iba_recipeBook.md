@@ -12,7 +12,7 @@ iBooks Author has (potentially) 2 structural levels; the `Chapter` and –within
 
 We have seen with the creation of the Shakespeare play book, that we have the Act and then the Scene within this. For that project, the Act become the iBooks Author chapter and the Scene become the Section.
 
-## Let us consider the recipe book.
+### Let us consider the recipe book.
 
 In my example, I simply have one recipe for each Chapter, and so I will use a template that only needs the Chapter (recipe) title page and then further pages for the recipe details and pictures etc.
 

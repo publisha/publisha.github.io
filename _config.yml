@@ -18,7 +18,7 @@ author:
 
 
 # Custom vars
-version:          0.17
+version:          0.18
 
 github:
   repo:           publisha.github.io
@@ -58,7 +58,7 @@ collections:
     output: true
     layout: screencast
 
-
+exclude: [resources]
 
 # for prose
 prose:

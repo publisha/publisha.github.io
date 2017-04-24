@@ -1,5 +1,5 @@
 # Introduction
-In a previous eBook *eBook Typography* I dealt purely with the standard re-flowable eBook, in which the user can adjust the font size, typeface and other typographic details. In some ways this earlier work was just one detail in the ever increasing complexity and alternative options in creating eBooks. My eBook *From pBook to eBook* gives an overview of the various options open to publishers when they create eBooks as part of the workflow from print production.
+In a previous eBook *eBook Typography* I dealt purely with the standard re-flowable eBook, in which the user can adjust the font size, typeface and other typographic details. In some ways this earlier work was just one detail in the ever increasing complexity and alternative options in creating eBooks. My eBook *From Print Book to eBook* gives an overview of the various options open to publishers when they create eBooks as part of the workflow from print production.
 
 [![The cover image for eBook Typography - a reflowable eBook](/images/2017/04/ebooktypography6s.jpg)](/images/2017/04/ebooktypography6s.jpg)
 
@@ -15,6 +15,8 @@ The fixed-layout eBook is essentially the same as the printed page or the PDF. H
 
 This book describes our choices and strategies and then the workflow that leads through the process towards the final delivery of an eBook that can be tested on a number of devices.
 
+
+
 Before we begin, there are some aspects that I need to draw attention to, so that your expectations don't get too high!
 
 - I will be covering all the enhancements that you can add to a fixed-layout eBook but understand that the more you add to an eBook the larger it gets; video will significantly bloat the file and you may find that some ecosystems limit the file size supported (see Google Playbooks).
@@ -22,3 +24,5 @@ Before we begin, there are some aspects that I need to draw attention to, so tha
 - Software never stays still; I will endeavour to continue to release new versions of this book, but what you read here may not be correct if you are using later software or the eBook reader software changes after this book goes public.
 
 Let's get down to it then; I will presume that you will read this book in the sequence that I provide, but if you feel that you already know certain basics then feel free to skip. However, as I tell my students on a publishing masters course, maybe you have learnt some bad habits that you need to unlearn!
+
+Refer to website and students

@@ -1,7 +1,11 @@
 # Introduction
 In a previous eBook *eBook Typography* I dealt purely with the standard re-flowable eBook, in which the user can adjust the font size, typeface and other typographic details. In some ways this earlier work was just one detail in the ever increasing complexity and alternative options in creating eBooks. My eBook *From pBook to eBook* gives an overview of the various options open to publishers when they create eBooks as part of the workflow from print production.
 
-In *From pBook to eBook* one option was to create a fixed-layout eBook using Adobe InDesign. An eBook using this method results in an ePub to the ePub3 standard and provides more distribution options than the *multi-touch* eBook that is delivered using Apple's iBooks Author software. This latter was also covered in *From pBook to eBook*, which itself was created with iBooks Author.
+[![The cover image for eBook Typography - a reflowable eBook](/images/2017/04/ebooktypography6s.jpg)](/images/2017/04/ebooktypography6s.jpg)
+
+In *From Print Book to eBook* one option was to create a fixed-layout eBook using Adobe InDesign. An eBook using this method results in an ePub to the ePub3 standard and provides more distribution options than the *multi-touch* eBook that is delivered using Apple's iBooks Author software. This latter was also covered in *From Print Book to eBook*, which itself was created with iBooks Author.
+
+[![The cover for 'From Print Book to eBook'](/images/2017/04/cover12s.jpg)](/images/2017/04/cover12s.jpg)
 
 **iBooks Author** is a terrific piece of software and really offers a great number of techniques for adding interactivity and dynamic effects, however, eBooks created with this software can only be delivered through Apple or distributed for free. On the other hand, ePub files that conform to the correct standard can be distributed via a variety of systems; as well as through the Apple Store.
 

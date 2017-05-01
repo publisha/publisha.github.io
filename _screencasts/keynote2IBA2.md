@@ -12,6 +12,6 @@ Sure, we can make cool slide shows to accompany our lectures and talks, but we c
 
 In this screencast we show how to generate an attractive and dynamic application with images and text. We can use various transitions and animations to enhance the quality and then add to the iBooks Author eBook.
 
-[![Export as a Keynote 9 file](/images/2017/05/keynote9.png)](/images/2017/05/keynote9.png)
+> **Please note:** The presentation in Keynote needs to be set to `Links Only` so that the slides don't go forward wherever you touch. **However** this only works properly (in iBooks Author) if you export the Keynote for version 9.
 
-> **Please note:** The presentation in Keynote needs to be set to `Links-Only` so that the slides don't go forward wherever you touch. **However** this only works properly (in iBooks Author) if you export the Keynote for version 9.
+[![Export as a Keynote 9 file](/images/2017/05/keynote9.png)](/images/2017/05/keynote9.png)

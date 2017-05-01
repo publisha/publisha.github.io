@@ -6,7 +6,9 @@ layout: screencast
 published: true
 categories: [iBooks Author,Keynote]
 ---
-Apple's Keynote application (on MacOS and iOS) is fabulous! Of course, it's main purpose is a a presentation tool (familiar with Powerpoint? It is similar). Sure, we can make cool slide shows to accompany our lectures and talks, but we can also create self-running, interactive screen shows that can be added to our 'multi-touch' ebooks generated with Apple's iBooks Author.
+Apple's Keynote application (on MacOS and iOS) is fabulous! Of course, it's main purpose is a presentation tool (familiar with Powerpoint? It is similar).
+
+Sure, we can make cool slide shows to accompany our lectures and talks, but we can also create self-running, interactive screen shows that can be added to our 'multi-touch' ebooks generated with Apple's iBooks Author.
 
 In this screencast we show how to generate an attractive and dynamic application with images and text. We can use various transitions and animations to enhance the quality and then add to the iBooks Author eBook.
 

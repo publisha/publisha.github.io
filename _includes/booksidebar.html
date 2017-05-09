@@ -1,7 +1,7 @@
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
 
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"{% if page.title =="About" %}checked{% endif %}>
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <nav class="sidebar-nav"  style="border-bottom:none !important;">
@@ -32,9 +32,9 @@
 <li class="header">Chapters</li>
 {% assign items = site.eBookPublishing | sort: 'order' %}
 {% for chapter in items limit:30 %}
-
+{% if chapter.title != "About" %}
 <li><a href="{{ site.baseurl }}{{ chapter.url }}">{{ chapter.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
-
+{% endif %}
 {% endfor %}
 <!-- <li><a href="{{ site.baseurl }}/contents/">Contents</a></li> -->
 </ul>

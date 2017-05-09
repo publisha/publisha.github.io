@@ -2,7 +2,9 @@
   {% assign posts = (site[page.collection] | where:"layout", "book" | sort: 'order') %}
 
   {% if posts.size > 1 %}
+  {% if page.title != 'About' %}
     {% assign prevurl = posts.last.url %}
+  {% endif %}
     {% assign nexturl = posts.first.url %}
   {% endif %}
 
@@ -21,7 +23,9 @@
 
   <p class="prevnext">
       {% if posts.size > 1 %}
-        {% if prevurl %}<a title="Previous Chapter" href="{{prevurl}}" class="prev"><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></a>{% endif %}
+        {% if prevurl %}
+        <a title="Previous Chapter" href="{{prevurl}}" class="prev"><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></a>
+        {% endif %}
         {% if nexturl %}<a title="Next Chapter" href="{{nexturl}}" class="nxt"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></a>{% endif %}
       {% endif %}
   </p>

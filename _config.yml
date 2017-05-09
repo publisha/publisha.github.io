@@ -58,6 +58,13 @@ collections:
     output: true
     layout: screencast
 
+  eBookPublishing:
+    output: true
+    title: 'eBook Publishing'
+    description: 'A chapter by chapter run through about all digital techniques for creating eBooks'
+    defaults:
+      layout: book
+
 
 # for prose
 prose:

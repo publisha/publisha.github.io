@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>resolutionData</key>
+	<dict>
+		<key>sheetClusters</key>
+		<dict>
+			<key>Book Ideas.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>496509032.869654</real>
+				<key>lastModification</key>
+				<real>496509032.869654</real>
+				<key>version</key>
+				<dict>
+					<key>5e12710991f90237d656ddaf87fa9d61e3f976b95cb15bedf2d7a05735391829</key>
+					<integer>5</integer>
+				</dict>
+			</dict>
+			<key>Chapter ideas.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>496509032.86966503</real>
+				<key>lastModification</key>
+				<real>496509032.86966503</real>
+				<key>version</key>
+				<dict>
+					<key>5e12710991f90237d656ddaf87fa9d61e3f976b95cb15bedf2d7a05735391829</key>
+					<integer>5</integer>
+				</dict>
+			</dict>
+			<key>References.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>496448711.84257001</real>
+				<key>version</key>
+				<dict>
+					<key>5e12710991f90237d656ddaf87fa9d61e3f976b95cb15bedf2d7a05735391829</key>
+					<integer>3</integer>
+				</dict>
+			</dict>
+		</dict>
+		<key>userIconName</key>
+		<real>492868271.40523303</real>
+	</dict>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>Book Ideas.md</string>
+		</array>
+		<array>
+			<string>References.md</string>
+		</array>
+		<array>
+			<string>Chapter ideas.md</string>
+		</array>
+	</array>
+	<key>storeFormatVersion</key>
+	<integer>1</integer>
+	<key>userIconName</key>
+	<string>Sheets</string>
+	<key>versioning</key>
+	<dict>
+		<key>sheetClusters</key>
+		<dict>
+			<key>5e12710991f90237d656ddaf87fa9d61e3f976b95cb15bedf2d7a05735391829</key>
+			<integer>5</integer>
+		</dict>
+		<key>userIconName</key>
+		<dict>
+			<key>D6119C28-AF07-4277-A40E-6C873896B959</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

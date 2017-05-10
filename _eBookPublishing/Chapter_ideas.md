@@ -1,0 +1,31 @@
+# Chapter ideas
+In no particular order *yet*.
+
+- The objectives
+- A little history of digital publishing
+- The platforms for publishing
+- Targeting one or many platforms
+- The workflow alternatives
+- Version control
+- Managing the content
+- Metadata
+- The eBook types and standards
+- Re-flowable or sometimes called _flowable_
+- Fixed-layout eBooks
+- Enhancements for eBooks
+- From print to eBook: issues and approaches
+- Future proofing
+- Some case studies
+- Distribution of eBooks
+- Customer satisfaction
+- Thanks Adobe: InDesign
+- Reading on Screen
+- Typography for eBooks
+- Editing the ePub
+- Converting between formats
+- eBook critique: a look at some purchased eBooks
+- The Content Continuum: from author to publisher
+- Writing with Markdown
+  - Other tools
+  - ATOM
+  - Git

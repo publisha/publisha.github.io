@@ -3,7 +3,7 @@ layout: book
 title: About
 published: true
 images: full-width
-permalink: ebookPublishing/index.html
+permalink: eBookPublishing/index.html
 ---
 # About this Book
 

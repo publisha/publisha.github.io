@@ -22,12 +22,6 @@ More documents are being added and you can find the list within the left hand me
 
   [d78d4ed1]: /contents "Open the contents page"
 
-Project maintained by @Pageboy
-
-Here is a random photo taken by me.
-
-[![My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester.](/images/2017/01/fromWittenhamClumps.jpg)](/images/2017/01/fromWittenhamClumps.jpg)
-
 ## How was this Web site built?
 
 ### Jekyll
@@ -42,6 +36,22 @@ Atom is the free text editor that comes from GitHub. [You can get it here][f9a83
 
 [f9a83765]: https://atom.io "Get Atom"
 
+### Workflow
+
+If you are lucky enough to own an iPad, then here is a description of my workflow to edit this web site and write a book etc:
+
+On the desktop / laptop I edit text and add images with Atom. Atom needs various packages added in such as *Git Plus*, *Markdown Writer*, *markdown TOC* and a few more. [Read about my use of Atom in the blog article][2ac1fae1].
+
+  [2ac1fae1]: https://publisha.github.io/markdown/2017/03/03/writing-with-atom/ "Open up the blog post"
+
+If working on the iPad then I use *Working Copy* to get the assets from the GitHub repository. This is a [fantastic app][eaf957b6] from Anders Borum. You can't do without it if you want to use GitHub repos from your mobile device.
+
+  [eaf957b6]: https://workingcopyapp.com "This is an iOS Apple app"
+
+Once you have your repo mirrored on your iPad then you need to edit the content. I have tried a variety of tools which I won't mention but, in the end the best (IMHO) is *Editorial* from Ole Zorn. This iOS app is a first class markdown editor, but can be extended through Python scripts. [Take a look at the web site for a full description](http://omz-software.com/editorial/).
+
+### Design of the site
+
 I based this look and feel on the [Lanyon theme from here][2b9a33ee]{:target="_blank"}.
 
 [2b9a33ee]: http://lanyon.getpoole.com/ "Lanyon"
@@ -49,3 +59,15 @@ I based this look and feel on the [Lanyon theme from here][2b9a33ee]{:target="_b
 Images can be enlarged and use a variation of [Fancybox][f6b39499]{:target="_blank"} using jquery.
 
 [f6b39499]: http://fancybox.net "Take a look at Fancybox"
+
+Footnotes are turned into popup notes using 'Bigfoot' jquery. You can [find out about this here][736ed6d1].
+
+  [736ed6d1]: http://www.bigfootjs.com "Thanks to Chris Sauve for this!"
+
+And to finish off this home page, here is a photo taken by me during a trip on [my boat that plies up and down the Thames][9f8e628f].
+
+  [9f8e628f]: http://avivaboat.weebly.com "AViVA"
+
+[![My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester.](/images/2017/01/fromWittenhamClumps.jpg)](/images/2017/01/fromWittenhamClumps.jpg)
+
+Project maintained by @Pageboy

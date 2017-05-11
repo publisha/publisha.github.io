@@ -4,6 +4,7 @@
   published: true
   categories: [InDesign, XML]
   screencast: [id2xml1]
+  date: 2017-05-11
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

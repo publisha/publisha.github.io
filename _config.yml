@@ -24,7 +24,7 @@ github:
   repo:           publisha.github.io
 
   # Gems
-gems: [jekyll-paginate, jekyll-gist, jekyll-sitemap, jekyll-seo-tag]
+gems: [jekyll-paginate, jekyll-gist, jekyll-sitemap, jekyll-seo-tag, jekyll-last-modified-at]
 
 paginate:         4
 paginate_path: '/blog/page:num/'

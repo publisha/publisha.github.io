@@ -138,6 +138,7 @@ This will also be tagged as ‘play’ so select it in the Structure pane and cl
 
 Save your work!
 
+
 <a class="video fancybox.iframe fa fa-film" title="XML and InDesign" href="https://www.youtube.com/embed/LdWvjWyLjeg?rel=0&amp;showinfo=0"> See a screencast to show XML Tagging with InDesign</a>
 
 

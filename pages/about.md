@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-published: true
+published: false
 images: full-width
 ---
 # What is this website about?

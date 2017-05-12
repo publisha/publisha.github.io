@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: page
 title: Home
 published: true
-images: full-width
+# images: full-width
+date: 2017-05-12
 ---
 # What is this website about?
 
@@ -36,6 +37,8 @@ Atom is the free text editor that comes from GitHub. [You can get it here][f9a83
 
 [f9a83765]: https://atom.io "Get Atom"
 
+[![Here is Atom in use to edit a markdown page with a preview on the right](/images/atominuse.png)](/images/atominuse.png)
+
 ### Workflow
 
 If you are lucky enough to own an iPad, then here is a description of my workflow to edit this web site and write a book etc:
@@ -48,7 +51,11 @@ If working on the iPad then I use *Working Copy* to get the assets from the GitH
 
   [eaf957b6]: https://workingcopyapp.com "This is an iOS Apple app"
 
+[![Working Copy allows you to connect to your GitHub respository](/images/workingcopy.jpg)](/images/workingcopy.jpg)
+
 Once you have your repo mirrored on your iPad then you need to edit the content. I have tried a variety of tools which I won't mention but, in the end the best (IMHO) is *Editorial* from Ole Zorn. This iOS app is a first class markdown editor, but can be extended through Python scripts. [Take a look at the web site for a full description](http://omz-software.com/editorial/).
+
+[![Anything in 'Working Copy' can be edited in 'Editorial', an app on the iPad.](/images/editorial.jpg)](/images/editorial.jpg)
 
 ### Design of the site
 
@@ -60,14 +67,18 @@ Images can be enlarged and use a variation of [Fancybox][f6b39499]{:target="_bla
 
 [f6b39499]: http://fancybox.net "Take a look at Fancybox"
 
-Footnotes are turned into popup notes using 'Bigfoot' jquery. You can [find out about this here][736ed6d1].
+Footnotes are turned into popup notes[^1] using 'Bigfoot' jquery. You can [find out about this here][736ed6d1].
 
   [736ed6d1]: http://www.bigfootjs.com "Thanks to Chris Sauve for this!"
+
+  [![My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester.](/images/2017/01/fromWittenhamClumps.jpg)](/images/2017/01/fromWittenhamClumps.jpg)
+
 
 And to finish off this home page, here is a photo taken by me during a trip on [my boat that plies up and down the Thames][9f8e628f].
 
   [9f8e628f]: http://avivaboat.weebly.com "AViVA"
 
-[![My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester.](/images/2017/01/fromWittenhamClumps.jpg)](/images/2017/01/fromWittenhamClumps.jpg)
-
 Project maintained by @Pageboy
+
+
+[^1]: Thanks to Chris Sauve for this!

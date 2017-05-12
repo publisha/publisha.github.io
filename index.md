@@ -2,7 +2,7 @@
 layout: page
 title: Home
 published: true
-images: small
+images: medium
 date: 2017-05-12
 ---
 # What is this website about?

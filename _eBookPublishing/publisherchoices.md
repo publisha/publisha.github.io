@@ -2,7 +2,7 @@
 layout: book
 title: Publishing Choice and Strategy
 published: true
-images: full-width
+images: medium
 order: 3
 ---
 # Publisher Strategy and Choices

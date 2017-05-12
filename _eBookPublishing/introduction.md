@@ -2,7 +2,7 @@
 layout: book
 title: Introduction
 published: true
-images: full-width
+images: medium
 order: 1
 ---
 # Introduction

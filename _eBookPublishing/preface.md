@@ -2,7 +2,7 @@
 layout: book
 title: Preface
 published: true
-images: full-width
+images: medium
 order: 2
 ---
 # Preface

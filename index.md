@@ -7,9 +7,7 @@ date: 2017-05-12
 ---
 # What is this website about?
 
-Chris Jennings teaches Undergraduate and Postgraduate modules on Digital Publishing at Oxford Brookes University. He also is a consultant specialising in eBook production.
-
-Right now a lot of my documents are to found on my [PagetoScreen][b016960a] web site. I also have created lots of PDFs for my students and often printed these out (sometime 70 copies!).
+Right now a lot of my documents[^2] are to found on my [PagetoScreen][b016960a] web site. I also have created lots of PDFs for my students and often printed these out (sometime 70 copies!).
 
 Now it is time (surely) to make all of these helpful documents digital and online, so I can update very easily.
 
@@ -82,3 +80,5 @@ Project maintained by @Pageboy
 
 
 [^1]: Thanks to Chris Sauve for this!
+
+[^2]: Chris Jennings teaches Undergraduate and Postgraduate modules on Digital Publishing at Oxford Brookes University. He also is a consultant specialising in eBook production.

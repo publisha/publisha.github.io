@@ -5,7 +5,23 @@ published: true
 tags: InDesign
 categories: [InDesign]
 screencast: [anchoringimages]
+date: 2017-05-17
 ---
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
+
+- [Links](#links)
+- [Image Formats](#image-formats)
+- [Placing Image](#placing-image)
+- [Anchoring Images](#anchoring-images)
+- [Anchored Object Options](#anchored-object-options)
+- [Object Styles](#object-styles)
+- [Text wrap and Anchoring](#text-wrap-and-anchoring)
+- [Anchoring across Page spreads](#anchoring-across-page-spreads)
+
+</section><!-- /TOC -->
+
 # Placing images - Anchoring and wrapping
 
 We look at how to ‘place’ images on the page, and the issues that we might encounter along the way.

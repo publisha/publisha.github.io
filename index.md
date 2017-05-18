@@ -7,15 +7,13 @@ date: 2017-05-12
 ---
 # What is this website about?
 
-You will [find here help documents and tutorials][182881a3] and a range of topics including using Adobe InDesign and Apple iBooks Author, as well as using GitHub to edit documents within a repository.
-
-  [182881a3]: /contents "See all contents in a menu"
+You will find here help documents and tutorials (written by @pageboy) [^2] on a range of topics including using Adobe InDesign and Apple iBooks Author, as well as using GitHub to edit documents within a repository.
 
 More documents are being added and you can find the list within the left hand menu. Just click on the icon top left or [see the contents page][d78d4ed1].
 
   [d78d4ed1]: /contents "Open the contents page"
 
-## How did Chris Jennings[^2] build this web site?
+## How was this web site built?
 
 ### Jekyll
 The site is built with Jekyll which you can [find out about here][92c344c3]{:target="_blank"}.
@@ -77,4 +75,4 @@ A lot of my documents are also to found on my legacy site:  [PagetoScreen][b0169
 
 [^1]: Thanks to Chris Sauve for this!
 
-[^2]: Chris Jennings teaches Undergraduate and Postgraduate modules on Digital Publishing at Oxford Brookes University. He also is a consultant specialising in eBook production.
+[^2]: @pageboy is Chris Jennings and he teaches Undergraduate and Postgraduate modules on Digital Publishing at Oxford Brookes University. He also is a consultant specialising in eBook production.

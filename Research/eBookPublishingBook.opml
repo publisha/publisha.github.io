@@ -1,10 +1,9 @@
 <opml version="2.0">
   <head>
-    <title>eBookProductionBook</title>
+    <title>eBook Publishing</title>
     <expansionState>1,2,6,12,14</expansionState>
   </head>
   <body>
-    <outline id="Q1eYGs7QFz" text="eBook Publishing">
       <outline id="mk-FfimmFz" text="Introduction">
         <outline id="myMFfi77KM" text="How this book is structured"/>
       </outline>
@@ -84,6 +83,5 @@
         <outline id="Q1sfYGimmtf" text="Creating a fixed-layout eBook with Indesign"/>
         <outline id="my2GFGoXQYf" text="Adding multimedia"/>
       </outline>
-    </outline>
   </body>
 </opml>

@@ -31,12 +31,12 @@
 <ul class="navigation">
 <li class="header">Pages by Category</li>
 {% for category in site.categories-list %}
-  <li class="dropdown"><a href="#">{{ category }} <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+  <li class="dropdown"><a title="expand to see all pages about {{ category }}" href="#">{{ category }} <i style="color:white;" class="fa fa-caret-down" aria-hidden="true"></i></a>
     <ul>
     {% for page in site.pages %}
      {% for cat in page.categories %}
           {% if cat == category %}
-            <li><a href="{{ page.url }}">{{ page.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+            <li><a title="go to this page" href="{{ page.url }}">{{ page.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
           {% endif %}
         {% endfor %}
     {% endfor %}
@@ -54,13 +54,19 @@
         {% endif %}
       {% endif %}
     {% endfor %} -->
+    <ul class="navigation">
+      <li class="header">Other Items</li>
     {% comment %}
-    <a class="sidebar-nav-item" href="{{ site.github.url }}archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.url }}">GitHub project</a>
+    <li><a class="sidebar-nav-item" href="{{ site.github.url }}archive/v{{ site.version }}.zip">Download</a></li>
+    <li><a class="sidebar-nav-item" href="{{ site.github.url }}">GitHub project</a></li>
      {% endcomment %}
-     <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/blog">Blog Articles</a>
-     <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/pages/screencasts/">Screencasts</a>
-      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/contents">Contents</a>
+     <li><a title="regular blog articles" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/blog">Blog Articles <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+     <li><a title="screencasts from the YouTube channel" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/pages/screencasts/">Screencasts <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+      <li><a title="see all contents listed" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/contents">Contents <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+      </li>
+    </ul>
   </nav>
   <div class="sidebar-item">
     <p>

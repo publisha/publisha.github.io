@@ -2,13 +2,13 @@
 layout: book
 title: Useful Software
 published: true
-images: full-width
+images: medium
 order: 4
 ---
 # A review of Useful Software
 
 ## InDesign
-Although this is expensive, if you are creating print books as well as an eBook version then this is essential. It is important to have a subscription to Creative Cloud because the software is often updated, and many of the recent updates (since InDesign CS6) have been to the functions that export to the ePub formats.
+Although this is expensive, if you are creating print books as well as eBook versions then this is essential. It is important to have a subscription to Creative Cloud because the software is often updated, and many of the recent updates (since InDesign CS6) have been to the functions that export to the ePub formats.
 
 ## ePubCheck
 It is essential to validate the finished ePub file before distribution. ePubcheck is a java application and can be found here: https://github.com/IDPF/epubcheck

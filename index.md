@@ -7,12 +7,6 @@ date: 2017-05-12
 ---
 # What is this website about?
 
-Right now a lot of my documents[^2] are to found on my [PagetoScreen][b016960a] web site. I also have created lots of PDFs for my students and often printed these out (sometime 70 copies!).
-
-Now it is time (surely) to make all of these helpful documents digital and online, so I can update very easily.
-
-[b016960a]: http://www.pagetoscreen.net "Lots of useful information"
-
 You will [find here help documents and tutorials][182881a3] and a range of topics including using Adobe InDesign and Apple iBooks Author, as well as using GitHub to edit documents within a repository.
 
   [182881a3]: /contents "See all contents in a menu"
@@ -21,7 +15,7 @@ More documents are being added and you can find the list within the left hand me
 
   [d78d4ed1]: /contents "Open the contents page"
 
-## How was this Web site built?
+## How did Chris Jennings[^2] build this web site?
 
 ### Jekyll
 The site is built with Jekyll which you can [find out about here][92c344c3]{:target="_blank"}.
@@ -71,13 +65,15 @@ Footnotes are turned into popup notes[^1] using 'Bigfoot' jquery. You can [find 
 
   [![My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester.](/images/2017/01/fromWittenhamClumps.jpg)](/images/2017/01/fromWittenhamClumps.jpg)
 
-
 And to finish off this home page, here is a photo taken by me during a trip on [my boat that plies up and down the Thames][9f8e628f].
 
   [9f8e628f]: http://avivaboat.weebly.com "AViVA"
 
 Project maintained by @Pageboy
 
+A lot of my documents are also to found on my legacy site:  [PagetoScreen][b016960a].
+
+[b016960a]: http://www.pagetoscreen.net "Lots of useful information"
 
 [^1]: Thanks to Chris Sauve for this!
 

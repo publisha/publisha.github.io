@@ -815,3 +815,14 @@ a.video, .sidebar-toggle {
  .older i {
    padding-right: 20px;
  }
+
+ .prevnext {
+   padding-top:16px;
+ }
+ .prevnext i {
+ color: #c7c7c7;
+ }
+ .nxt {
+   float:right;
+
+ }

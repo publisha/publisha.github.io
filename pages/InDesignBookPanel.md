@@ -3,6 +3,7 @@ layout: page
 title: Using the Book Panel in InDesign
 published: true
 categories: InDesign
+date: 2017-05-19
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
@@ -148,18 +149,19 @@ Finally: Your pages are likely to be as follows:
 
 If you are trying to figure out how to display page numbers on the pages, then you need to refer to a different section about ‘Master Pages’, since this is where this is explained.
 
-Page numbering is defined in the Numbering & Section Options Panel. This is invoked by Right-Clicking over the thumbnail of the page where you wish to begin a section. In fact every InDesign document has, at least one section. Sections are indicated by the small downwards facing triangle at the top of the thumbnail image. You will see from the following image that this section is numbered automatically but using the lowercase Roman numerals.
-
 [![At the bottom of this panel you may note that there is a Book Name](../../images/2017/01/numberingoptions.png)](../../images/2017/01/numberingoptions.png)
+
+Page numbering is defined in the Numbering & Section Options Panel. This is invoked by Right-Clicking over the thumbnail of the page where you wish to begin a section. In fact every InDesign document has, at least one section. Sections are indicated by the small downwards facing triangle at the top of the thumbnail image. You will see from the following image that this section is numbered automatically but using the lowercase Roman numerals.
 
 At the bottom of this panel you may note that there is a Book Name, showing that the section numbering algorithm is aware that the document is part of a Book.
 
+[![A finished page](../../images/2017/01/lastpage.png)](../../images/2017/01/lastpage.png)
+
 We can also configure whole book numbering options from the Book panel menu.
 
-[![A finished page](../../images/2017/01/lastpage.png)](../../images/2017/01/lastpage.png)
+[![When you export to PDF as spreads there may be single pages where the seperate files are joined.](../../images/2017/01/spreadsinPDF.png)](../../images/2017/01/spreadsinPDF.png)
+
 
 ## Exporting to PDF
 
 When you are ready to export for print, then you should do this through the book panel context menu > Export Book to PDF. You will only see this item on the menu, if you have either selected all InDesign files in the book panel, or — you have selected none.
-
-[![When you export to PDF as spreads there may be single pages where the seperate files are joined.](../../images/2017/01/spreadsinPDF.png)](../../images/2017/01/spreadsinPDF.png)

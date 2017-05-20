@@ -2,8 +2,8 @@
 layout: page
 title: The basics of HTML and CSS
 published: true
-categories: [HTML, CSS]
-tags: [HTML, CSS]
+categories: [HTML and CSS]
+tags: [HTML and CSS]
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

@@ -47,6 +47,8 @@ Once you have your repo mirrored on your iPad then you need to edit the content.
 
 [![Anything in 'Working Copy' can be edited in 'Editorial', an app on the iPad.](/images/editorial.jpg)](/images/editorial.jpg)
 
+> **Note**: This image is taken with an external keyboard attached, so the soft keyboard is not showing 
+
 ### Design of the site
 
 I based this look and feel on the [Lanyon theme from here][2b9a33ee]{:target="_blank"}.

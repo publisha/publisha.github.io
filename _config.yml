@@ -61,7 +61,7 @@ collections:
   eBookPublishing:
     output: true
     title: 'eBook Publishing'
-    description: 'A chapter by chapter run through about all digital techniques for creating eBooks'
+    description: 'Workflow and techniques for designing, creating and publishing eBooks'
     defaults:
       layout: book
 

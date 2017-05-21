@@ -3,7 +3,7 @@ layout: book
 title: Introduction
 published: true
 images: medium
-order: 1
+order: 2
 ---
 # Introduction
 

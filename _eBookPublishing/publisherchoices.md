@@ -1,11 +1,11 @@
 ---
 layout: book
-title: Publishing Choice and Strategy
+title: Chapter 2 - Publishers' Choices
 published: true
 images: medium
-order: 3
+order: 4
 ---
-# Publisher Strategy and Choices
+# Chapter 2 - Publishers' Choices
 
 ## I'm a Publisher; what kind of eBooks should I make?
 

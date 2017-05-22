@@ -7,7 +7,7 @@ order: 2
 ---
 # Introduction
 
-This book describes our choices and strategies and then the workflow that leads through the process towards the final delivery of an eBook that can be delivered on a number of devices.
+This book describes our choices and strategies and then the workflow that leads through the process towards the final production of an eBook that can be delivered on a number of devices.
 
 Before we begin with the Choices chapter, there are some aspects that I need to draw to your attention.
 

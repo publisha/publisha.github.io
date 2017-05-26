@@ -21,7 +21,7 @@ It is common practice amongst traditional print book publishers to orientate the
 
 When an eBook is created it simply consists of a file. As an example, in this book we will create an ePub of the Shakespeare play and the result will be a file named thus:
 
-``lifeofspeare.epub``
+`lifeofspeare.epub`
 
 The name of the file is arbitrary and chosen by the creator. In this case 'lifeofspeare' is used as a shortened acronym for 'The Life of Skakespeare'. Further information about the file and eBook is held within the **metadata**. We will learn how to add the metadata to the eBook later during the various chapters.
 

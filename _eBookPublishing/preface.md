@@ -3,7 +3,7 @@ layout: book
 title: Preface
 published: true
 images: medium
-order: 1
+order: 2
 ---
 # Preface
 In a previous eBook *eBook Typography* I dealt purely with the standard re-flowable eBook, in which the user can adjust the font size, typeface and other typographic details. In some ways this earlier work was just one detail in the ever increasing complexity and alternative options in creating eBooks. My eBook *From Print Book to eBook* gives an overview of the various options open to publishers when they create eBooks as part of the workflow from print production.

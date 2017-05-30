@@ -4,7 +4,7 @@
  <title>Digital Publisher Guide</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-05-21T18:08:30+01:00</updated>
+ <updated>2017-05-30T09:31:24+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
@@ -198,9 +198,9 @@ not really significant because all computer displays vary in proportion. However
  <entry>
    <title>Page size in InDesign for eBook?</title>
    <link href="http://localhost:4000/indesign/epub/css/2017/03/24/page-size-in-indesign-for-ebook/"/>
-   <updated>2017-03-24T12:39:00+00:00</updated>
+   <updated>2017-03-24T15:48:00+00:00</updated>
    <id>http://localhost:4000/indesign/epub/css/2017/03/24/page-size-in-indesign-for-ebook</id>
-   <content type="html">&lt;p&gt;We’re creating an eBook in InDesign. We’re not planning a print book at all - just straight to an eBook; what size page should we choose?&lt;/p&gt;
+   <content type="html">&lt;p&gt;We’re creating a &lt;strong&gt;reflowable&lt;/strong&gt; eBook in InDesign. We’re not planning a print book at all - just straight to an eBook; what size page should we choose when we use Adobe InDesign?&lt;/p&gt;
 
 &lt;h2 id=&quot;why-should-you-care&quot;&gt;Why should you care?&lt;/h2&gt;
 

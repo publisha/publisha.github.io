@@ -4,6 +4,8 @@ title: Useful Software
 published: false
 images: medium
 order: 4
+date: 2017-06-13 19:03
+status: needs review of links
 ---
 # A review of Useful Software
 

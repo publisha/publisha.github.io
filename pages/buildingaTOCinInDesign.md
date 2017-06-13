@@ -4,6 +4,7 @@ title: Building the TOC in InDesign
 published: true
 categories: InDesign
 tags: [InDesign, Typography, ePub]
+date: 2017-06-13
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

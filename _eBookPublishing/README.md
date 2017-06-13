@@ -4,6 +4,7 @@ title: About
 published: true
 images: full-width
 permalink: eBookPublishing/index.html
+date: 2017-06-13
 ---
 # About this Book
 

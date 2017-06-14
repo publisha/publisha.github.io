@@ -2,8 +2,11 @@
 layout: book
 title: Introduction
 published: true
+date: 2017-06-14
+version: 0.2
 images: medium
 order: 1
+status: [expand]
 ---
 # Introduction
 

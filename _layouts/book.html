@@ -18,6 +18,13 @@
       </div>
 
       <div class="container content">
+        {% if page.status != null %}
+        <p class="editor"><strong>Status of this page:</strong> {{page.status}}
+        {% endif %}
+        {% if page.date != null %}
+        {% if page.version != null %}<span class="version"><strong>Version:</strong> {{page.version}}{% endif %} | {{ page.date | date: '%B %d, %Y' }}</span>
+        </p>
+        {% endif %}
         {{ content }}
 {% include prevnextchapter.html %}
 

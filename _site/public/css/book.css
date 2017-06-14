@@ -902,3 +902,13 @@ color: #c7c7c7;
   float:right;
 
 }
+
+.editor {
+  border:1px solid silver;
+  padding:6px;
+  font-size: .9rem;
+}
+
+span.version {
+  float:right;
+}

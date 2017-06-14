@@ -4,6 +4,8 @@ title: Chapter 1 - What is eBook Publishing?
 published: true
 images: medium
 order: 3
+date: 2017-06-14 20:10
+status: [expand]
 ---
 # Chapter 1 - What is eBook Publishing?
 

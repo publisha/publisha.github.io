@@ -1,3 +1,14 @@
+---
+layout: book
+title: Chapter 5a - Fixed Layout
+published: false
+images: medium
+date: 2017-06-14
+version: 0.11
+order: null
+status: [needs to be a section]
+---
+
 # Notes on Fixed Layout
 ## Adding HTML to InDesign
 When adding local HTML to page in InDesign:

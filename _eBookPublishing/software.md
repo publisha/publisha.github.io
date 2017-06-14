@@ -3,9 +3,10 @@ layout: book
 title: Useful Software
 published: false
 images: medium
+version: 0.3
 order: 4
 date: 2017-06-13 19:03
-status: needs review of links
+status: [needs review of links]
 ---
 # A review of Useful Software
 

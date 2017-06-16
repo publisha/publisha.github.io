@@ -7,7 +7,7 @@ Version: 0.5
 
 ## Abstract
 
-Why do publishing students (or indeed publishers), save their files with such names as *finalversion1*? Of course, it can't be the final version - you just hoped that it would be - didn't you?
+Why do publishing students (or indeed publishers), save their files with such names as *finalversion1*? Of course, we all know that it can't be the final version - they just hoped that it would be!
 
 Books like other created artefacts go through a number of iterations before being ready for public display. The question is, can we observe and record what those changes are and when they happened, and by whom?
 
@@ -31,24 +31,25 @@ Apple are very strict when you want to update an eBook on the iBookstoe. Here ar
 
 >In general, the first number of the version number represents a major revision; the second number would be used for a revision containing several changes/new information; the third number would be used to indicate minor changes, such as fixing a typo or formatting issues. For example, if the first version of the book was 1.0, a subsequent minor revision could be 1.0.1; a more substantial revision could be 1.1; a total rewrite could be 2.0.
 
+These 2 quotes set the scene for what is to follow; what do we know about versioning in print and digital publishing and how might we borrow from practices in software development workflows.
+
 ## Part 1: Public Facing Versions
 
 ### In Print
 
 There are a number of conventions that have been used over the years, and some style guides do attempt to keep this under some kind of order.
 
-In _The Chicago Manual of Style_ we do find:
+In _The Chicago Manual of Style_[^4] we do find:
 
 >The publishing history of a book, which usually follows the copyright notice, begins with the date (year) of original publication, followed by the number and date of any new edition. In books with a long publishing history, it is acceptable to present only the original edition and the latest edition in the publishing history.
 
-and
+and also from _The Chicago Manual of Style_ with reference to impression numbers:
 
 > Impression lines work to the advantage of readers and publishers both—a new impression not only reflects the sales record of a book but also signals that corrections may have been made.
 
+When it comes to marketing advantage, there must always be a benefit it proclaiming *New Edition*, just as there is when we see a food package on the supermarket shelf that announces with a corner stripe *new improved Recipe*.
 
-About me
-## Part 1: Public Facing Versioning
-Images of title versus
+
 ## Part 2: New Paradigms / Mostly Digital
 oreilly
 ## Part 3: Workflow Versioning
@@ -62,3 +63,6 @@ Cloud
 [^2]: https://www.jvandemo.com/a-simple-guide-to-semantic-versioning/
 
 [^3]: https://help.apple.com/itc/booksassetguide/
+
+
+[^4]: http://press.uchicago.edu/ucp/books/book/chicago/C/bo8540260.html

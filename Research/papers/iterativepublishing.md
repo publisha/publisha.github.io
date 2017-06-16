@@ -88,7 +88,7 @@ Oxford University Press have followed this convention until their *Microeconomic
 
 As in the previous section, we can refer to the way authors worked in the past. You can see here a typed manuscript of *The Waste Land*, T.S. Eliot[^5], with notes and edits by himself, his wife Vivien Eliot and Ezra Pound. There is no timeline for the notes; in which order they were applied.
 
-This is also the case when proof-readers use standard notation to markup corrections to a printed copy. The British standard (BS 5261) is adopted beyond the UK, but rarely provides times or staging for the corrections.
+This is also the case when proof-readers use standard notation to markup corrections to a printed copy. The British standard (BS 5261)[^6] is adopted beyond the UK, but rarely provides times or staging for the corrections.
 
 ### Digital Tools
 
@@ -128,3 +128,6 @@ Systems can be built and customised for revision control using Content Managemen
 
 
 [^5]: _The Waste Land Facsimile_, T.S. Eliot  (Author), Valerie Eliot (Editor) - Faber and Faber 2011
+
+
+[^6]: Further details can be found on the Society for Editors and Proofreaders web site:  https://www.sfep.org.uk/standards/standards-in-proofreading/

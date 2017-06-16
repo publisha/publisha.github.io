@@ -37,7 +37,15 @@ Apple are very strict when you want to update an eBook on the iBookstoe. Here ar
 
 There are a number of conventions that have been used over the years, and some style guides do attempt to keep this under some kind of order.
 
-In _The Chicago Manual of Style_ we do find
+In _The Chicago Manual of Style_ we do find:
+
+>The publishing history of a book, which usually follows the copyright notice, begins with the date (year) of original publication, followed by the number and date of any new edition. In books with a long publishing history, it is acceptable to present only the original edition and the latest edition in the publishing history.
+
+and
+
+> Impression lines work to the advantage of readers and publishers both—a new impression not only reflects the sales record of a book but also signals that corrections may have been made.
+
+
 About me
 ## Part 1: Public Facing Versioning
 Images of title versus

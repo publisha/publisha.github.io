@@ -66,7 +66,7 @@ Some changes were made to the book between 2012 and 2017. So, *edition* is equiv
 
 A **Reprint** may be the same book but with some changes, although unless you see something like "with a new preface by ...", then you may not know. A reprint could be same content but reset with new type. It is different from a **facsimile** which is an exact copy (page-by-page).
 
-**Errata** are corrections to a book when it has already been printed. The corrections are printed on a slip of paper and then glued into the frontmatter of the book before distribution. This happens very rarely, since this give a negative impression of the quality of the book. Since many books now have a companion web site, these corrections are often to found listed there.
+**Errata** are corrections to a book when it has already been printed. The corrections are printed on a slip of paper and then glued into the front matter of the book before distribution. This happens very rarely, since this give a negative impression of the quality of the book. Since many books now have a companion web site, these corrections are often to found listed there.
 
 ### Imprint pages (title page verso)
 
@@ -102,7 +102,7 @@ I add this as a slight deviation, but in my own experience, publishers of eBooks
 
 #### Editing in the the cloud
 
-Cloud services such as **Google Drive** and **DropBox** do provide some version control although Google do provide apps that allow direct editing of files (Google Docs and Google Sheets), when those documents are shared for editing.
+Cloud services such as **Google Drive** and **DropBox** do provide some version control although Google do provide apps that allow direct editing of files (Google Docs and Google Sheets), when those documents are shared for editing. Sharing documents is a nod forward to `Part 5: Collaborative Editing.`
 
 Systems can be built and customised for revision control using Content Management Systems. Illustrated here are screens from an application that I have used to manage remote authors contributing to a global cookery book. Authors can input and edit their own recipes, with overall editorial control given to this author, who then exports the data out as XML for use in page layout software for final 'print-ready' output.
 

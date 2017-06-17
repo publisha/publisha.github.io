@@ -73,7 +73,6 @@ A **Reprint** may be the same book but with some changes, although unless you se
 When we explore imprint pages in the books on our shelves we find some interesting publishing strategies.
 
 
-
 Book collectors, of course, prefer to own fist editions, so in their collections there will be limited information; just the first publication date. On the other hand, popular titles (see here 'Treasure Island'), will have many reprints and new editions up to the date of the edition you have. Many reprints are a gauge of the popularity of the title, although imprint pages do not tell us how many were printed. One could argue that many reprints show that the publisher was not confident enough for longer print runs.
 
 As an alternative to taking a lot of space on the page, you see here from the 1949 edition of *Winnie the Pooh*, that it had been reprinted 38 times (presumably in that first edition), before this "Thirty-ninth edition".

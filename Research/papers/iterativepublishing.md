@@ -104,7 +104,7 @@ I add this as a slight deviation, but in my own experience, publishers of eBooks
 
 Cloud services such as **Google Drive** and **DropBox** do provide some version control although Google do provide apps that allow direct editing of files (Google Docs and Google Sheets), when those documents are shared for editing. Sharing documents is a nod forward to `Part 5: Collaborative Editing.`
 
-Systems can be built and customised for revision control using Content Management Systems. Illustrated here are screens from an application that I have used to manage remote authors contributing to a global cookery book. Authors can input and edit their own recipes, with overall editorial control given to this author, who then exports the data out as XML for use in page layout software for final 'print-ready' output.
+Systems can be built and customised for revision control using Content Management Systems. Illustrated here are screens from an application that I have used to manage remote authors contributing to a global cookery book. Authors can input and edit their own recipes, with overall editorial control given to the chief editor, who then exports the data out as XML for use in page layout software for final 'print-ready' output.
 
 
 

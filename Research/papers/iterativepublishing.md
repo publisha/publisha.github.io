@@ -109,13 +109,45 @@ Cloud services such as **Google Drive** and **DropBox** do provide some version 
 
 Systems can be built and customised for revision control using Content Management Systems. Illustrated here are screens from an application that I have used to manage remote authors contributing to a global cookery book. Authors can input and edit their own recipes, with overall editorial control given to the chief editor, who then exports the data out as XML for use in page layout software for final 'print-ready' output.
 
+Not only do these systems provide the means to see versions but also they provide multi-author access. This is something to look at later in this article.
 
 
 ## Part 3: Publishing Incrementally
 
+### In Progress Publishing
+
+There are some publishers who provide the tools for their authors to write and edit their own work directly. Not only is this a good strategy to manage the workflow but it can also give potential to the idea of *in progress* publishing. Authors and publishers can engage with the public before the work is finished.
+
+**O'Reilly Publishers** have an authoring system called *Atlas* [^7] that authors and editors have access to. At some stage in the workflow, it is aggreed to make the book available as an *Early Release* title. You can see in the accompanying image from the O'Reilly web site[^8] a title that was available with some chapters completed.
+
+**LeanPub** is a self publishing system[^9]. Authors use the online authoring and editing tools to create the book and then decide when to make available. You can see from the image here that this book is only 20% complete, but the author makes this much of the book available.
+
+### Authoring Incrementally
+
+So, these systems do offer the author and their editors ways to keep track of the workflow from writing to publish. The key, here is that each set of staged additions and changes need to have attached some metadata that will indicate the status of the work in progress. Is the work *under review*, *a release candidate* or *needs checking* etc.
+
+The authoring tools needs to give an indication of the status and there might even be alerts displayed to communicate tasks for completion.
+
+#### eBooks Only
+
+This approach to publishing can only be implemented for digital products that use an online distribution system.
+
+eBooks published through Apple's iBooks store can be updated with some limitations. Apple are very strict about how much an eBook can be modified and how a version must be identified. You can see in this image how a purchaser of an eBook is notified of a new version and the display of the version history that has been provided by the publisher / author.
+
+#### In Print
+
+It is really very difficult to update books in print, and from the customers' point of view, it can represent an impact on budgets. We see here that when Adobe release new versions of their software, they then re-version their printed manuals.
+
 
 ## Part 4: Editing Incrementally
 
+### Versioning for Software Code
+
+Software engineers have used version control for a long time, so we should look at a few examples of how this works. The point is though, that these systems are wrapped-up with a `working in teams` model. Version Control systems for coding solve a problem, that individual writers don't have. Having said that, it is incredibly useful for *this* author to be able *roll-back* to a previous version of a text. It should also be said that most publishing will involve more that the author. There are the copy-editors and proof readers.
+
+We can see how the version control model works from the diagram illustrated here. When a new writing session is started, a new branch is created. Then when this version is ready a *pull request* is made asking effectively `can I merge my version with your`, then, after discussion with the team, this is agreed and the merge happens.
+
+Images here show what this looks like with a version control system like GitHub.
 
 ## Part 5: Collaborative Editing
 
@@ -145,3 +177,12 @@ An Introduction to Version Control Using GitHub Desktop
 By Daniel van Strien
 
 http://programminghistorian.org/lessons/getting-started-with-github-desktop
+
+
+[^7]: https://atlas.oreilly.com
+
+
+[^8]: http://shop.oreilly.com/product/0636920028482.do
+
+
+[^9]: https://leanpub.com/about

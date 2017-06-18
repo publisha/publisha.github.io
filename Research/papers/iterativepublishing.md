@@ -2,8 +2,8 @@
 **Iterative Publishing**
 
 Author: Chris Jennings
-Date: 2017-06-15
-Version: 0.5
+Date: 2017-06-18
+Version: 0.6
 
 ## Abstract
 

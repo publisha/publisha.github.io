@@ -167,6 +167,18 @@ Images here show what this looks like with a version control system like GitHub.
 
 [^6]: Further details can be found on the Society for Editors and Proofreaders web site:  https://www.sfep.org.uk/standards/standards-in-proofreading/
 
+
+[^7]: https://atlas.oreilly.com
+
+
+[^8]: http://shop.oreilly.com/product/0636920028482.do
+
+
+[^9]: https://leanpub.com/about
+
+---
+## Notes
+
 Version control for ebook publishing
 Pierre Thierry July 2013
 
@@ -177,12 +189,3 @@ An Introduction to Version Control Using GitHub Desktop
 By Daniel van Strien
 
 http://programminghistorian.org/lessons/getting-started-with-github-desktop
-
-
-[^7]: https://atlas.oreilly.com
-
-
-[^8]: http://shop.oreilly.com/product/0636920028482.do
-
-
-[^9]: https://leanpub.com/about

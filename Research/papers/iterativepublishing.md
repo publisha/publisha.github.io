@@ -98,7 +98,7 @@ Another approach may be to annotate a PDF of the pages. **Adobe's Acrobat Reader
 
 #### eBook Editing
 
-I add this as a slight deviation, but in my own experience, publishers of eBooks really need a good method of proof reading and annotating eBooks ready for distribution. Apple's iBooks software, does provide annotation tools (see in this attached figure from my own book), but sharing these annotations is not currently so easy. The annotations are nicely overlaid, but you can (as a write) only email the annotations as a text; detached from the pages themselves.
+I add this as a slight deviation, but in my own experience, publishers of eBooks really need a good method of proof reading and annotating eBooks ready for distribution. Apple's iBooks software, does provide annotation tools (see in this attached figure from my own book), but sharing these annotations is not currently so easy. The annotations are nicely overlaid, but you can (as I write this) only email the annotations as a text; detached from the pages themselves.
 
 #### Editing in the the cloud
 

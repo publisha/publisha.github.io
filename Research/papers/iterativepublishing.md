@@ -72,9 +72,12 @@ A **Reprint** may be the same book but with some changes, although unless you se
 
 When we explore imprint pages in the books on our shelves we find some interesting publishing strategies.
 
+
 Book collectors, of course, prefer to own fist editions, so in their collections there will be limited information; just the first publication date. On the other hand, popular titles (see here 'Treasure Island'), will have many reprints and new editions up to the date of the edition you have. Many reprints are a gauge of the popularity of the title, although imprint pages do not tell us how many were printed. One could argue that many reprints show that the publisher was not confident enough for longer print runs.
 
 As an alternative to taking a lot of space on the page, you see here from the 1949 edition of *Winnie the Pooh*, that it had been reprinted 38 times (presumably in that first edition), before this "Thirty-ninth edition".
+
+
 
 **Impression Lines** are a string of numbers on the imprint page, that are incrementally erased, to show the current printing. It is interesting again, to flip over the title pages of our books to see this little cryptic message that is there for us to interpret. The publisher needs to first decide the highest number, because this suggests how many reprints might possible happen; a _pessimism / optimism_ indicator, I suppose.
 
@@ -131,3 +134,14 @@ Systems can be built and customised for revision control using Content Managemen
 
 
 [^6]: Further details can be found on the Society for Editors and Proofreaders web site:  https://www.sfep.org.uk/standards/standards-in-proofreading/
+
+Version control for ebook publishing
+Pierre Thierry July 2013
+
+https://www.w3.org/2012/12/global-publisher/statements-of-interest/34-vc.pdf
+
+An Introduction to Version Control Using GitHub Desktop
+
+By Daniel van Strien
+
+http://programminghistorian.org/lessons/getting-started-with-github-desktop

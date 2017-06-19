@@ -38,7 +38,7 @@ Apple are very strict when you want to update an eBook on the iBookstoe. Here ar
 
 >In general, the first number of the version number represents a major revision; the second number would be used for a revision containing several changes/new information; the third number would be used to indicate minor changes, such as fixing a typo or formatting issues. For example, if the first version of the book was 1.0, a subsequent minor revision could be 1.0.1; a more substantial revision could be 1.1; a total rewrite could be 2.0.
 
-These 2 quotes set the scene for what is to follow. 
+These 2 quotes set the scene for what is to follow.
 
 What do we know about versioning in print and digital publishing and how might we borrow from practices in software development workflows?
 
@@ -86,6 +86,8 @@ As an alternative to taking a lot of space on the page, you see here from the 19
 **Impression Lines** are a string of numbers on the imprint page, that are incrementally erased, to show the current printing. It is interesting again, to flip over the title pages of our books to see this little cryptic message that is there for us to interpret. The publisher needs to first decide the highest number, because this suggests how many reprints might possible happen; a _pessimism / optimism_ indicator, I suppose.
 
 For each printing the lowest number is erased.
+
+The convention is different in the USA; publishers there tend to include the date as well as the impression number.
 
 You will see in the illustrations here that Oxford University Press have used impression numbers, and the popular *Economics* title in their *Very Short Introductions* series has lost all numbers 1 through 8, an indication that my copy is the 9th printing.
 

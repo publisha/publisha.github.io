@@ -18,7 +18,7 @@ author:
 
 
 # Custom vars
-version:          0.19
+version:          0.2.0
 
 github:
   repo:           publisha.github.io
@@ -65,6 +65,11 @@ collections:
     defaults:
       layout: book
 
+  papers:
+    output: true
+    title: 'Articles and Conference papers'
+    defaults:
+      layout: paper
 
 # for prose
 prose:

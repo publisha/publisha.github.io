@@ -156,10 +156,62 @@ Software engineers have used version control for a long time, so we should look 
 
 We can see how the version control model works from the diagram illustrated here. When a new writing session is started, a new branch is created. Then when this version is ready a *pull request* is made asking effectively `can I merge my version with yours`, then, after a possible discussion with the team, this is agreed and the merge happens.
 
-Images here show what this looks like with a version control system like GitHub.
+Images here show what this looks like with a version control system like **GitHub**.
+
+**Git** is known as a distributed version control system (DVCS), because the edits take place remotely from the master copy. Each collaborator owns their own version (a fork) and makes a request to merge their changes to the master. Centralised version control systems keep only one copy that is *checked-out* by an editor, and thus, locked until they have completed their session.
 
 ## Part 5: Collaborative Editing
 
+Using a version control system means collaboration.
+
+A distributed version control system like Git, hosted at GitHub.com, is robust and reliable. Repositories can be public or private, with access controlled by primary owners or teams.
+
+Content can be *forked* and then worked on by individuals and then *pulled* back in to the master copy. Edits or *commits* are recorded and can be accepted. Every committed change represents a different version.
+
+Essentially the file has many different states which can be retrieved. Git is a set of tools to help manage change. [^10]
+
+### Student Example with _The Student Guide to Oxford_
+
+Git can be hosted anywhere, since the software, itself is Open Source.
+
+For a student project where 30 students are contributing to a guide book about Oxford, we used a free system called **Penflip** (www.penflip.com).
+
+You can see in the images here that the complexity of having a lot of editors is handled perfectly by this kind of system.
+
+In terms of the actual workflow and details of the process, the text is edited with *markdown* [^11]
+
+Once the edit process was complete (a milestone previously set) the text was converted to `ICML` for InDesign using Pandoc.[^12]
+
+
+## Some Further Options under consideration
+
+We can find several places where version control for text authors and editors has been developed to try to make these process easier.
+
+**Prose.io** is a server based *markdown* tool that can be used to edit text held in a GitHub repository. While this system is effective and very easy to uses, the prime focus is editing for a web site, rather than for other platforms. [^13]
+
+**GitBook**, as the name suggests is built edit (also with *markdown*) a book under revision control within a Git repository. This goes beyond the prose.io instance described above, because the content can be exported as PDF or eBook. The management of the edits by multiple authors can be hard to resolve. [^14]
+
+**OmniBook** is based on an open source system developed under the name of
+**BookType**. The OmniBook instance is free up to a point. The *BookType* software can be installed on a server but requires technical knowledge to do so.[^15]
+
+**Editoria** is a *Editoria™ is a web-based open source, end-to-end, authoring, editing and workflow tool* [^16]. As I write this article, this software is under development.
+
+### Version Control Systems
+
+ + Git
+ + GitHub
+ + Gitlab
+ + Bitbucket
+ + Perforce
+ + Plastic
+ + Subversion
+ + Mercurial
+
+## Conclusion
+
+ + Should publishers use clever version control software?
+ + Should publishers adopt semantic versioning?
+ + Can media and publishing students benefit from using clever version control  as individuals or in teams.
 
 [^1]: semver.org
 
@@ -184,6 +236,27 @@ Images here show what this looks like with a version control system like GitHub.
 
 
 [^9]: https://leanpub.com/about
+
+
+[^10]: *Git for Humans*, David Demaree, A Book Apart, 2016
+
+
+[^11]: First created by John Gruber: https://daringfireball.net/projects/markdown/syntax
+
+
+[^12]: Pandoc is an open source universal document converter created by John MacFarlane. http://pandoc.org
+
+
+[^13]: http://prose.io/#about
+
+
+[^14]: https://www.gitbook.com
+
+
+[^15]: BookType is open source software. http://sourcefabric.booktype.pro/booktype-22-for-authors-and-publishers/what-is-booktype/
+
+
+[^16]: https://editoria.pub
 
 ---
 ## Notes

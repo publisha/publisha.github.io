@@ -47,21 +47,6 @@ These 2 quotes set the scene for what is to follow.
 What do we know about versioning in print and digital publishing and how might we borrow from practices in software development workflows?
 
 ## Part 1: Public Facing Versions
-
-### In Print
-
-There are a number of conventions that have been used over the years, and some style guides do attempt to establish some kind of standard, if only for their own processes.
-
-In _The Chicago Manual of Style_[^4] we do find:
-
->The publishing history of a book, which usually follows the copyright notice, begins with the date (year) of original publication, followed by the number and date of any new edition. In books with a long publishing history, it is acceptable to present only the original edition and the latest edition in the publishing history.
-
-and also from _The Chicago Manual of Style_ with reference to impression numbers:
-
-> Impression lines work to the advantage of readers and publishers both—a new impression not only reflects the sales record of a book but also signals that corrections may have been made.
-
-When it comes to marketing advantage, there must always be a benefit it proclaiming *New Edition*, just as there is when we see a food package on the supermarket shelf that announces with a flourish: *new improved Recipe*.
-
 ### Definition of Terms
 
 **Edition** is used together with a date (just the year), to indicate the version of the book. So, if you are reading a later edition of the book then it might say so with the date; thus:
@@ -78,6 +63,20 @@ Some changes were made to the book between 2012 and 2017. So, *edition* is equiv
 A **Reprint** may be the same book but with some changes, although unless you see something like "with a new preface by ...", then you may not know. A reprint could be same content but reset with new type. It is different from a **facsimile** which is an exact copy (page-by-page), often used to re-publish legacy content that can only be taken from printed pages.
 
 **Errata** are corrections to a book when it has already been printed. The corrections are printed on a slip of paper and then glued into the front matter of the book before distribution. This happens very rarely, since this give a negative impression of the quality of the book. Since many books now have a companion web site, these corrections are often to found listed there.
+
+### In Print
+
+There are a number of conventions that have been used over the years, and some style guides do attempt to establish some kind of standard, if only for their own processes.
+
+In _The Chicago Manual of Style_[^4] we do find:
+
+>The publishing history of a book, which usually follows the copyright notice, begins with the date (year) of original publication, followed by the number and date of any new edition. In books with a long publishing history, it is acceptable to present only the original edition and the latest edition in the publishing history.
+
+and also from _The Chicago Manual of Style_ with reference to impression numbers:
+
+> Impression lines work to the advantage of readers and publishers both—a new impression not only reflects the sales record of a book but also signals that corrections may have been made.
+
+When it comes to marketing advantage, there must always be a benefit it proclaiming *New Edition*, just as there is when we see a food package on the supermarket shelf that announces with a flourish: *new improved Recipe*.
 
 ### Imprint pages (title page verso)
 

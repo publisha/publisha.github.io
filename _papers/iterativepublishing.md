@@ -1,10 +1,10 @@
 ---
 layout: paper
 title: Is this the Final Version?
-date: 2017-06-19
+date: 2017-06-23
 images: full-width
 Published: true
-version: 0.09
+version: 0.5
 Author: Chris Jennings
 status: [needs conclusion]
 ---
@@ -92,8 +92,6 @@ As an alternative to taking a lot of space on the page, you see here from the 19
 
 **Impression Lines** are a string of numbers on the imprint page, that are incrementally erased, to show the current printing. It is interesting again, to flip over the title pages of our books to see this little cryptic message that is there for us to interpret. The publisher needs to first decide the highest number, because this suggests how many reprints might possible happen; a _pessimism / optimism_ indicator, I suppose.
 
-[![*The Elements of Typographic Style*, Robert Bringhurst, 2012](/images/iterativePublishing.010.jpeg)](/images/iterativePublishing.010.jpeg)
-
 For each printing the lowest number is erased.
 
 [![A Harper Collins imprint page](/images/iterativePublishing.011.jpeg)](/images/iterativePublishing.011.jpeg)
@@ -111,6 +109,10 @@ You will see in the illustrations here that Oxford University Press have used im
 Oxford University Press have followed this convention until their *Microeconomics* title, in this same series. This now uses the less cryptic notation; my copy: *Impression: 4*. A rather sensible strategy, because the purchaser gets clear evidence that this is a popular title and must be good.
 
 [![Microeconomics](/images/iterativePublishing.016.jpeg)](/images/iterativePublishing.016.jpeg)
+
+A more adventurous and even contemporary approach is found on a new edition of *The Elements of Typographic Style*, Robert Bringhurst, 2012. What has inspired the publisher to label this (even on the title page) "Version 4.0".  
+
+[![*The Elements of Typographic Style*, Robert Bringhurst, 2012](/images/iterativePublishing.010.jpeg)](/images/iterativePublishing.010.jpeg)
 
 ## Part 2: Workflow Versioning
 

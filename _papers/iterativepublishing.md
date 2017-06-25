@@ -1,10 +1,14 @@
 ---
 layout: paper
 title: Is this the Final Version?
-date: 2017-06-19
+date: 2017-06-23
 images: full-width
 Published: true
+<<<<<<< HEAD
 version: 0.1
+=======
+version: 0.5
+>>>>>>> 2266472eac822dfbd6d7166e90864270bda5af9b
 Author: Chris Jennings
 status: [needs conclusion]
 ---
@@ -47,21 +51,6 @@ These 2 quotes set the scene for what is to follow.
 What do we know about versioning in print and digital publishing and how might we borrow from practices in software development workflows?
 
 ## Part 1: Public Facing Versions
-
-### In Print
-
-There are a number of conventions that have been used over the years, and some style guides do attempt to establish some kind of standard, if only for their own processes.
-
-In _The Chicago Manual of Style_[^4] we do find:
-
->The publishing history of a book, which usually follows the copyright notice, begins with the date (year) of original publication, followed by the number and date of any new edition. In books with a long publishing history, it is acceptable to present only the original edition and the latest edition in the publishing history.
-
-and also from _The Chicago Manual of Style_ with reference to impression numbers:
-
-> Impression lines work to the advantage of readers and publishers both—a new impression not only reflects the sales record of a book but also signals that corrections may have been made.
-
-When it comes to marketing advantage, there must always be a benefit it proclaiming *New Edition*, just as there is when we see a food package on the supermarket shelf that announces with a flourish: *new improved Recipe*.
-
 ### Definition of Terms
 
 **Edition** is used together with a date (just the year), to indicate the version of the book. So, if you are reading a later edition of the book then it might say so with the date; thus:
@@ -79,6 +68,20 @@ A **Reprint** may be the same book but with some changes, although unless you se
 
 **Errata** are corrections to a book when it has already been printed. The corrected errors are printed on a slip of paper and then glued into the front matter of the book before distribution. This happens very rarely, since this give a negative impression of the quality of the book. Since many books now have a companion web site, these corrections are often to found listed there.
 
+### In Print
+
+There are a number of conventions that have been used over the years, and some style guides do attempt to establish some kind of standard, if only for their own processes.
+
+In _The Chicago Manual of Style_[^4] we do find:
+
+>The publishing history of a book, which usually follows the copyright notice, begins with the date (year) of original publication, followed by the number and date of any new edition. In books with a long publishing history, it is acceptable to present only the original edition and the latest edition in the publishing history.
+
+and also from _The Chicago Manual of Style_ with reference to impression numbers:
+
+> Impression lines work to the advantage of readers and publishers both—a new impression not only reflects the sales record of a book but also signals that corrections may have been made.
+
+When it comes to marketing advantage, there must always be a benefit it proclaiming *New Edition*, just as there is when we see a food package on the supermarket shelf that announces with a flourish: *new improved Recipe*.
+
 ### Imprint pages (title page verso)
 
 When we explore imprint pages in the books on our shelves we find some interesting publishing messages.
@@ -92,8 +95,6 @@ Book collectors, of course, prefer to own first editions, so in their collection
 As an alternative to taking a lot of space on the page, you see here from the 1949 edition of *Winnie the Pooh*, that it had been reprinted 38 times (presumably in that first edition), before this "Thirty-ninth edition".
 
 **Impression Lines** are a string of numbers on the imprint page, that are incrementally erased, to show the current printing. It is interesting again, to flip over the title pages of our books to see this little cryptic message that is there for us to interpret. The publisher needs to first decide the highest number, because this suggests how many reprints might possible happen; a _pessimism / optimism_ indicator, I suppose.
-
-[![*The Elements of Typographic Style*, Robert Bringhurst, 2012](/images/iterativePublishing.010.jpeg)](/images/iterativePublishing.010.jpeg)
 
 For each printing the lowest number is erased.
 
@@ -112,6 +113,10 @@ You will see in the illustrations here that Oxford University Press have used im
 Oxford University Press have followed this convention until their *Microeconomics* title, in this same series. This now uses the less cryptic notation; my copy: *Impression: 4*. A rather sensible strategy, because the purchaser gets clear evidence that this is a popular title and must be good.
 
 [![Microeconomics](/images/iterativePublishing.016.jpeg)](/images/iterativePublishing.016.jpeg)
+
+A more adventurous and even contemporary approach is found on a new edition of *The Elements of Typographic Style*, Robert Bringhurst, 2012. What has inspired the publisher to label this (even on the title page) "Version 4.0".  
+
+[![*The Elements of Typographic Style*, Robert Bringhurst, 2012](/images/iterativePublishing.010.jpeg)](/images/iterativePublishing.010.jpeg)
 
 ## Part 2: Workflow Versioning
 

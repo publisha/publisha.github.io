@@ -4,7 +4,7 @@ title: Is this the Final Version?
 date: 2017-06-19
 images: full-width
 Published: true
-version: 0.09
+version: 0.1
 Author: Chris Jennings
 status: [needs conclusion]
 ---
@@ -18,7 +18,7 @@ Author: Chris Jennings
 
 Why do publishing students (or indeed publishers), save their files with such names as *finalversion1*?
 
-Of course, we all know that it can't be the final version - they just hoped that it would be!
+Of course, we all know that it can't be the final version - we all just hoped that it would be!
 
 Books like other created artefacts go through a number of iterations before being ready for public display. The question is, can we observe and record what those changes are and when they happened, and by whom?
 
@@ -30,7 +30,7 @@ We should start by announcing a couple of quotes.
 
 ### Semantic Versioning
 
-First from the organisation known as *semver* - short for Semantic Versioning. The Semantic Versioning[^1] specification is authored by Tom Preston-Werner, inventor of Gravatars and co-founder of GitHub. Here is the quote from Jurgen Van de Moere[^2], who explains semantic versioning better than I can:
+The first is from the organisation known as *semver* - short for Semantic Versioning. The Semantic Versioning[^1] specification is authored by Tom Preston-Werner, inventor of Gravatars and co-founder of GitHub. Here is the quote from Jurgen Van de Moere[^2], who explains semantic versioning better than I can:
 
 > In essence a semantic version looks like this:
 > **Major.Minor.Patch**
@@ -77,7 +77,7 @@ Some changes were made to the book between 2012 and 2017. So, *edition* is equiv
 
 A **Reprint** may be the same book but with some changes, although unless you see something like "with a new preface by ...", then you may not know. A reprint could be same content but reset with new type. It is different from a **facsimile** which is an exact copy (page-by-page), often used to re-publish legacy content that can only be taken from printed pages.
 
-**Errata** are corrections to a book when it has already been printed. The corrections are printed on a slip of paper and then glued into the front matter of the book before distribution. This happens very rarely, since this give a negative impression of the quality of the book. Since many books now have a companion web site, these corrections are often to found listed there.
+**Errata** are corrections to a book when it has already been printed. The corrected errors are printed on a slip of paper and then glued into the front matter of the book before distribution. This happens very rarely, since this give a negative impression of the quality of the book. Since many books now have a companion web site, these corrections are often to found listed there.
 
 ### Imprint pages (title page verso)
 

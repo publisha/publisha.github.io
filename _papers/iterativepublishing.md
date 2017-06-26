@@ -4,11 +4,7 @@ title: Is this the Final Version?
 date: 2017-06-23
 images: full-width
 Published: true
-<<<<<<< HEAD
-version: 0.1
-=======
-version: 0.5
->>>>>>> 2266472eac822dfbd6d7166e90864270bda5af9b
+version: [0.5]
 Author: Chris Jennings
 status: [needs conclusion]
 ---
@@ -114,7 +110,7 @@ Oxford University Press have followed this convention until their *Microeconomic
 
 [![Microeconomics](/images/iterativePublishing.016.jpeg)](/images/iterativePublishing.016.jpeg)
 
-A more adventurous and even contemporary approach is found on a new edition of *The Elements of Typographic Style*, Robert Bringhurst, 2012. What has inspired the publisher to label this (even on the title page) "Version 4.0".  
+A more adventurous and even contemporary approach is found on a new edition of *The Elements of Typographic Style*, Robert Bringhurst, 2012. What has inspired the publisher to label this (even on the title page) "Version 4.0".
 
 [![*The Elements of Typographic Style*, Robert Bringhurst, 2012](/images/iterativePublishing.010.jpeg)](/images/iterativePublishing.010.jpeg)
 

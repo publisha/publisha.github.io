@@ -4,7 +4,7 @@ title: Is this the Final Version?
 date: 2017-07-02
 images: full-width
 Published: true
-annotation: true
+annotate: true
 version: [0.6]
 Author: Chris Jennings
 status: [needs conclusion]

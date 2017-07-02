@@ -110,5 +110,15 @@ section.toc {
 <script type="text/javascript">
     $.bigfoot();
 </script>
+
+{% if page.annotate == "yes" %}
+<!-- annotations -->
+<script type="application/json" class="js-hypothesis-config">
+  {
+    "openSidebar": false
+  }
+</script>
+<script async src="https://hypothes.is/embed.js"></script>
+{% endif %}
 {% seo %}
 </head>

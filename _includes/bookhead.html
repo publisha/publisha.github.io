@@ -111,5 +111,17 @@ background:#a2a2a2;
 <script type="text/javascript">
     $.bigfoot();
 </script>
+
+<!-- annotations -->
+
+{% if page.annotation != null %}
+<script type="application/json" class="js-hypothesis-config">
+  {
+    "openSidebar": true
+  }
+</script>
+<script async src="https://hypothes.is/embed.js"></script>
+{% endif %}
+
 {% seo %}
 </head>

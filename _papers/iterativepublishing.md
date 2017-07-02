@@ -1,10 +1,11 @@
 ---
 layout: paper
 title: Is this the Final Version?
-date: 2017-06-23
+date: 2017-07-02
 images: full-width
 Published: true
-version: [0.5]
+annotation: true
+version: [0.6]
 Author: Chris Jennings
 status: [needs conclusion]
 ---
@@ -38,7 +39,7 @@ The first is from the organisation known as *semver* - short for Semantic Versio
 
 ### Apple's Rules for eBook Versions
 
-Apple are very strict when you want to update an eBook on the iBookstoe. Here are the rules from the iBooks Asset Guide[^3]
+Apple are very strict when you want to update an eBook on the iBookstore. Here are the rules from the iBooks Asset Guide[^3]
 
 >In general, the first number of the version number represents a major revision; the second number would be used for a revision containing several changes/new information; the third number would be used to indicate minor changes, such as fixing a typo or formatting issues. For example, if the first version of the book was 1.0, a subsequent minor revision could be 1.0.1; a more substantial revision could be 1.1; a total rewrite could be 2.0.
 
@@ -114,6 +115,9 @@ A more adventurous and even contemporary approach is found on a new edition of *
 
 [![*The Elements of Typographic Style*, Robert Bringhurst, 2012](/images/iterativePublishing.010.jpeg)](/images/iterativePublishing.010.jpeg)
 
+By using the term **Version 4.0** the publishers are making a nod towards the digital world as well as giving a positive marketing message.
+
+
 ## Part 2: Workflow Versioning
 
 As in the previous section, we can refer to the way authors worked in the past. You can see here a typed manuscript of *The Waste Land*, T.S. Eliot[^5], with notes and edits by himself, his wife Vivien Eliot and Ezra Pound. There is no timeline for the notes; in which order they were applied.
@@ -128,7 +132,7 @@ This is also the case when proof-readers use standard notation to markup correct
 
 Many authors and editors will use **Microsoft Word** and the *track changes* feature of that software has become the often used method to get changes, additions or corrections approved. The system provides the means to edit the text and leave comments. Individuals involved in the process are named with their comments. There is no hierarchical control; we can can each accept changes or not with no overall approval workflow. It does work up to a point, but can get very complex when changes overlay one another.
 
-[![Tracking the chakges with Microsoft Word](/images/iterativePublishing.020.jpeg)](/images/iterativePublishing.020.jpeg)
+[![Tracking the changes with Microsoft Word](/images/iterativePublishing.020.jpeg)](/images/iterativePublishing.020.jpeg)
 
 Another approach may be to annotate a PDF of the pages. **Adobe's Acrobat Reader** software (there are others on the market) provides sophisticated annotation tools, as you can see here in the images. Not all software can easily edit the text within the PDF, so the proof reader is simply making suggestions for the editor to make in the original text.
 
@@ -171,7 +175,7 @@ There are some publishers who provide the tools for their authors to write and e
 
 ### Authoring Incrementally
 
-So, these systems do offer the author and their editors ways to keep track of the workflow from writing to public release. The key, here is that each set of staged additions and changes need to have attached some metadata that will indicate the status of the work in progress. Is the work *under review*, *a release candidate* or *needs checking* etc.
+So these systems do offer the author and their editors ways to keep track of the workflow from writing to public release. The key here is that each set of staged additions and changes need to have attached some metadata that will indicate the status of the work in progress. Is the work *under review*, *a release candidate* or *needs checking* etc.
 
 The authoring tools needs to give an indication of the status and there might even be alerts displayed to communicate tasks for completion.
 
@@ -248,7 +252,7 @@ We can find several places where version control for text authors and editors ha
 
 [![Prose.io](/images/iterativePublishing.044.jpeg)](/images/iterativePublishing.044.jpeg)
 
-**GitBook**, as the name suggests is built edit (also with *markdown*) a book under revision control within a Git repository. This goes beyond the prose.io instance described above, because the content can be exported as PDF or eBook. The management of the edits by multiple authors can be hard to resolve. [^14]
+**GitBook**, as the name suggests is built to edit (also with *markdown*) a book under revision control within a Git repository. This goes beyond the prose.io instance described above, because the content can be exported as PDF or eBook. The management of the edits by multiple authors can be hard to resolve. [^14]
 
 [![GitBook with an alert to the chief editor](/images/iterativePublishing.045.jpeg)](/images/iterativePublishing.045.jpeg)
 
@@ -257,9 +261,25 @@ We can find several places where version control for text authors and editors ha
 
 [![OminBook uses the BookType open source code](/images/iterativePublishing.046.jpeg)](/images/iterativePublishing.046.jpeg)
 
-**Editoria** is a *Editoria™ is a web-based open source, end-to-end, authoring, editing and workflow tool* [^16]. As I write this article, this software is under development.
+**Editoria** is a web-based open source, end-to-end, authoring, editing and workflow tool [^16]. As I write this article, this software is under development.
 
 [![editoria](/images/iterativePublishing.047.jpeg)](/images/iterativePublishing.047.jpeg)
+
+### Social Reading
+
+It has to be mentioned that there are also some eBook reading platforms/systems that do provide an online space for sharing comments and annotations. While these systems are devised for the concept of shared reading, there is a potential to use these systems to suggest corrections to `work in progress` texts. Here are some examples:
+
+**Glose** is a website[^17] that requires account authentication, where you can read existing books or upload your own.
+
+**SocialBook** is a collaborative reading platform[^18], where readers can share annotations as they read and observe other readers annotations. As I write this, SocialBook only seems to support ePub2 and not ePub3 format eBooks.
+
+There are also annotation tools available for web sites, and **The Hypothesis Project** is one such tool[^19]. This open platform provides bookmarking for your browser, so you can annotate web pages.
+
+[![Here is hypothes.is in use](/images/Screenshot 2017-07-02 17.42.56.png)](/images/Screenshot 2017-07-02 17.42.56.png)
+
+hypothes.is and several other projects use an open source javascript library called **Annotator** which is freely available[^20] to add to web sites.
+
+> **Note:** This page now uses hypothes.is annotation - see top right.
 
 ### Version Control Systems
 
@@ -276,7 +296,7 @@ We can find several places where version control for text authors and editors ha
 
  + Should publishers use clever version control software?
  + Should publishers adopt semantic versioning?
- + Can media and publishing students benefit from using clever version control  as individuals or in teams.
+ + Can media and publishing students benefit from using clever version control as individuals or in teams?
 
 [^1]: semver.org
 
@@ -336,3 +356,15 @@ An Introduction to Version Control Using GitHub Desktop
 By Daniel van Strien
 
 http://programminghistorian.org/lessons/getting-started-with-github-desktop
+
+
+[^17]: https://glose.com
+
+
+[^18]: http://www.livemargin.com/socialbook/
+
+
+[^19]: https://web.hypothes.is
+
+
+[^20]: http://annotatorjs.org

@@ -19,8 +19,8 @@ body {
 @media screen {
 
 .container {
-  width: 60%;
-  max-width: 38rem;
+  width: 59%;
+  max-width: 36rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
@@ -831,5 +831,3 @@ a.video, .sidebar-toggle {
    border:1px solid silver;
    padding:6px;
  }
-
- 

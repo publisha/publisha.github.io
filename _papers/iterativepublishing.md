@@ -1,15 +1,30 @@
 ---
 layout: paper
 title: Is this the Final Version?
-date: 2017-07-02
+date: 2017-07-03
 images: full-width
 Published: true
 annotate: true
-version: [0.6]
+version: [0.7]
 Author: Chris Jennings
 status: [needs conclusion]
 ---
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
 
+- [Abstract](#abstract)
+- [Introduction](#introduction)
+- [Part 1: Public Facing Versions](#part-1-public-facing-versions)
+- [Part 2: Workflow Versioning](#part-2-workflow-versioning)
+- [Part 3: Publishing Incrementally](#part-3-publishing-incrementally)
+- [Part 4: Editing Incrementally](#part-4-editing-incrementally)
+- [Part 5: Collaborative Editing](#part-5-collaborative-editing)
+- [Some Further Options under consideration](#some-further-options-under-consideration)
+- [Conclusion](#conclusion)
+- [Notes](#notes)
+
+</section><!-- /TOC -->
 # Is this the Final Version?
 **Iterative Publishing**
 
@@ -167,7 +182,9 @@ There are some publishers who provide the tools for their authors to write and e
 
 **O'Reilly Publishers** have an authoring system called *Atlas* [^7] that authors and editors have access to. At some stage in the workflow, the book available as an *Early Release* title. You can see in the accompanying image from the O'Reilly web site[^8] a title that was available with some chapters completed.
 
-[![Early Release](/images/iterativePublishing.028.jpeg)](/images/iterativePublishing.028.jpeg)
+[![Early Release - now only available throigh the subscription service - SafariBooksOnline](/images/iterativePublishing.028.jpeg)](/images/iterativePublishing.028.jpeg)
+
+> **Note:** Since this article was started, O'Reilly Publishers have stopped selling books from their web site. The early release eBooks are only available through their Safari Books Online subscription service.[^21]
 
 **LeanPub** is a self publishing system[^9]. Authors use the online authoring and editing tools to create the book and then decide when to make available. You can see from the image here that this book is only 20% complete, but the author makes this much of the book available.
 
@@ -243,7 +260,6 @@ In terms of the actual workflow and details of the process, the text is edited w
 
 Once the edit process was complete (a milestone previously set) the text was converted to `ICML` for InDesign using Pandoc.[^12]
 
-
 ## Some Further Options under consideration
 
 We can find several places where version control for text authors and editors has been developed to try to make these process easier.
@@ -265,7 +281,7 @@ We can find several places where version control for text authors and editors ha
 
 [![editoria](/images/iterativePublishing.047.jpeg)](/images/iterativePublishing.047.jpeg)
 
-### Social Reading
+### Social Reading and Annotation
 
 It has to be mentioned that there are also some eBook reading platforms/systems that do provide an online space for sharing comments and annotations. While these systems are devised for the concept of shared reading, there is a potential to use these systems to suggest corrections to `work in progress` texts. Here are some examples:
 
@@ -367,3 +383,6 @@ http://programminghistorian.org/lessons/getting-started-with-github-desktop
 
 
 [^20]: http://annotatorjs.org
+
+
+[^21]: https://www.safaribooksonline.com

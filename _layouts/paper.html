@@ -2,7 +2,7 @@
 <html lang="en-gb">
 
   {% include bookhead.html %}
-  
+
   <title>
   {{ page.title }}
   </title>
@@ -12,7 +12,7 @@
     <div class="wrap">
       <div class="container content">
         {% if page.status != null %}
-        <p class="editor"><strong>Status of this page:</strong> {{page.status}}
+        <p class="editor"><strong>Page status:</strong> {{page.status}}
         {% endif %}
         {% if page.date != null %}
         {% if page.version != null %}<span class="version"><strong>Version:</strong> {{page.version}}{% endif %} | {{ page.date | date: '%B %d, %Y' }}</span>

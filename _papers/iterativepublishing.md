@@ -89,7 +89,7 @@ Book collectors, of course, prefer to own first editions, so in their collection
 
 [![Winnie the Pooh](/images/iterativePublishing.009.jpeg)](/images/iterativePublishing.009.jpeg)
 
-As an alternative to taking a lot of space on the page, you see here from the 1949 edition of *Winnie the Pooh*, that it had been reprinted 38 times (presumably in that first edition), before this "Thirty-ninth edition".
+As an alternative to taking a lot of space on the page, you see here from the 1949 edition of *Winnie the Pooh*, that it had been reprinted 38 times before this "Thirty-ninth edition". This seems to be a misinterpretation of the term "edition", since a reprint is not usually regarded as a new edition.
 
 **Impression Lines** are a string of numbers on the imprint page, that are incrementally erased, to show the current printing. It is interesting again, to flip over the title pages of our books to see this little cryptic message that is there for us to interpret. The publisher needs to first decide the highest number, because this suggests how many reprints might possible happen; a _pessimism / optimism_ indicator, I suppose.
 

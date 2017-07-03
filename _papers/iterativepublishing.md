@@ -85,7 +85,7 @@ When we explore imprint pages in the books on our shelves we find some interesti
 
 [![Treasure Island, Cassell](/images/iterativePublishing.008.jpeg)](/images/iterativePublishing.008.jpeg)
 
-Book collectors, of course, prefer to own first editions, so in their collections there will be limited information; just the first publication date. On the other hand, popular titles (see here 'Treasure Island'), will have many reprints and new editions up to the date of the edition you have. Many reprints could be an indication of the popularity of the title, although imprint pages do not tell us how many were printed. One could argue that many reprints show that the publisher was not confident enough for longer print runs.
+Book collectors, of course, prefer to own first editions, so in their collections there will be limited information; just the first publication date. On the other hand, popular titles (see here 'Treasure Island'), will have many reprints and new editions up to the date of the edition you have. Many reprints could be an indication of the popularity of the title, although imprint pages do not tell us how many were printed. One could argue that many reprints show that the publisher was not confident enough for a longer print run in the first place.
 
 [![Winnie the Pooh](/images/iterativePublishing.009.jpeg)](/images/iterativePublishing.009.jpeg)
 
@@ -279,7 +279,6 @@ There are also annotation tools available for web sites, and **The Hypothesis Pr
 
 hypothes.is and several other projects use an open source javascript library called **Annotator** which is freely available[^20] to add to web sites.
 
-> **Note:** This page now uses hypothes.is annotation - see top right.
 
 ### Version Control Systems
 

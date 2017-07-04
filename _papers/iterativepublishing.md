@@ -30,6 +30,10 @@ status: [needs conclusion]
 
 Author: Chris Jennings
 
+`[eBook Version available here][4b37f934]`
+
+  [4b37f934]: iterativepublishing07.epub "get this ebook"
+
 ## Abstract
 
 Why do publishing students (or indeed publishers), save their files with such names as *finalversion1*?

@@ -5,9 +5,9 @@ date: 2017-07-04
 images: full-width
 Published: true
 annotate: true
-version: [0.7b]
+version: [0.8]
 Author: Chris Jennings
-status: [needs conclusion]
+status: [add to conclusion]
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
@@ -315,8 +315,12 @@ hypothes.is and several other projects use an open source javascript library cal
 ## Conclusion
 
  + Should publishers use clever version control software?
+   + Version control for text is possible with open source tools like **git**, but versioning large binary files need enterprise systems such as [Perforce](https://www.perforce.com) or [Plastic](https://www.plasticscm.com).
  + Should publishers adopt semantic versioning?
+   + When publishing eBooks to the Apple ecosystem, then yes, versions need to be labelled correctly according to Apple's rules.
  + Can media and publishing students benefit from using clever version control as individuals or in teams?
+   + I have used collaborative editing methods for text with my students.
+   + We need to encourage a more robust approach to version control to avoid the confusion that comes from using arbitrary file naming, such as *finalversion*.
 
 [^1]: semver.org
 

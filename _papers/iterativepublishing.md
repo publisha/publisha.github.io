@@ -30,6 +30,8 @@ status: [needs conclusion]
 
 **Author:** Chris Jennings
 
+[![eBook Available](/images/iterativepublishingMini.jpg)](iterativepublishing07.epub)
+
 [eBook Version available here][4b37f934]
 
   [4b37f934]: iterativepublishing07.epub "get this ebook"

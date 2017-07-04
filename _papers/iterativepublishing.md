@@ -5,7 +5,7 @@ date: 2017-07-04
 images: full-width
 Published: true
 annotate: true
-version: [0.7a]
+version: [0.7b]
 Author: Chris Jennings
 status: [needs conclusion]
 ---

@@ -5,7 +5,7 @@ date: 2017-07-04
 images: full-width
 Published: true
 annotate: true
-version: [0.7a]
+version: [0.7b]
 Author: Chris Jennings
 status: [needs conclusion]
 ---
@@ -33,7 +33,7 @@ status: [needs conclusion]
 [![eBook Available](/images/iterativepublishingMini.jpg)](/resources/iterativepublishing07.epub)
 
 eBook Version available here
-cover image uses detail from fresco at Museo San Marco, Florence, Italy
+`cover image uses detail from fresco at Museo San Marco, Florence, Italy`
 
 ## Abstract
 

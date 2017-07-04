@@ -231,13 +231,13 @@ Images here show what this looks like with a version control system like **GitHu
 
 **Git** is known as a distributed version control system (DVCS), because the edits take place remotely from the master copy. Each collaborator owns their own version (a fork) and makes a request to merge their changes to the master. Centralised version control systems keep only one copy that is *checked-out* by an editor, and thus, locked until they have completed their session.
 
+[![Version Control explained in a diagram](/images/iterativePublishing.036.jpeg)](/images/iterativePublishing.036.jpeg)
+
 ## Part 5: Collaborative Editing
 
 Using a version control system means collaboration.
 
 A distributed version control system like Git, hosted at GitHub.com, is robust and reliable. Repositories can be public or private, with access controlled by primary owners or teams.
-
-[![Version Control explained in a diagram](/images/iterativePublishing.036.jpeg)](/images/iterativePublishing.036.jpeg)
 
 Content can be *forked* and then worked on by individuals and then *pulled* back in to the master copy. Edits or *commits* are recorded and can be accepted. Every committed change represents a different version.
 

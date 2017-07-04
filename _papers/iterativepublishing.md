@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Is this the Final Version?
-date: 2017-07-03
+date: 2017-07-04
 images: full-width
 Published: true
 annotate: true
@@ -33,6 +33,7 @@ status: [needs conclusion]
 [![eBook Available](/images/iterativepublishingMini.jpg)](/resources/iterativepublishing07.epub)
 
 eBook Version available here
+cover image uses detail from fresco at Museo San Marco, Florence, Italy
 
 ## Abstract
 

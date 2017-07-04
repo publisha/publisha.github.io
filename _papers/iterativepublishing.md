@@ -33,7 +33,7 @@ status: [needs conclusion]
 [![eBook Available](/images/iterativepublishingMini.jpg)](/resources/iterativepublishing07.epub)
 
 eBook Version available here
-`cover image uses detail from fresco at Museo San Marco, Florence, Italy`
+`cover image uses detail from a fresco in the Museo San Marco, Florence, Italy`
 
 ## Abstract
 

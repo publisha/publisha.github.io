@@ -28,9 +28,9 @@ status: [needs conclusion]
 # Is this the Final Version?
 **Iterative Publishing**
 
-**Author: **Chris Jennings
+**Author:** Chris Jennings
 
-`[eBook Version available here][4b37f934]`
+[eBook Version available here][4b37f934]
 
   [4b37f934]: iterativepublishing07.epub "get this ebook"
 

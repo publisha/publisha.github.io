@@ -30,7 +30,7 @@ status: [add to conclusion]
 
 **Author:** Chris Jennings
 
-[![eBook Available](/images/iterativepublishingMini.jpg)](/resources/iterativepublishing07.epub)
+[![eBook Available](/images/iterativepublishingMini.jpg)](/resources/iterativepublishing08.epub)
 
 eBook Version available here
 `cover image uses detail from a fresco in the Museo San Marco, Florence, Italy`

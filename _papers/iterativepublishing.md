@@ -1,11 +1,11 @@
 ---
 layout: paper
 title: Is this the Final Version?
-date: 2017-07-04
+date: 2017-07-05
 images: full-width
 Published: true
 annotate: true
-version: [0.8]
+version: [0.81]
 Author: Chris Jennings
 status: [add to conclusion]
 ---

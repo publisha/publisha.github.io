@@ -1,0 +1,60 @@
+pandoc -s -S something.md -t epub3 -o something.epub
+
+pandoc -f markdown -t epub3 -s /Users/chrisjennings/Dropbox/ebook_work/papers/iterativepublishing/iterativepublishing\ copy.md -o ite.epub --epub-chapter-level=2
+
+
+---
+title:
+- type: main
+  text: My Book
+- type: subtitle
+  text: An investigation of metadata
+creator:
+- role: author
+  text: John Smith
+- role: editor
+  text: Sarah Jones
+identifier:
+- scheme: DOI
+  text: doi:10.234234.234/33
+publisher:  My Press
+rights: © 2007 John Smith, CC BY-NC
+...
+
+---
+
+
+The following fields are recognized:
+
+identifier
+Either a string value or an object with fields text and scheme. Valid values for scheme are ISBN-10, GTIN-13, UPC, ISMN-10, DOI, LCCN, GTIN-14, ISBN-13, Legal deposit number, URN, OCLC, ISMN-13, ISBN-A, JP, OLCC.
+title
+Either a string value, or an object with fields file-as and type, or a list of such objects. Valid values for type are main, subtitle, short, collection, edition, extended.
+creator
+Either a string value, or an object with fields role, file-as, and text, or a list of such objects. Valid values for role are MARC relators, but pandoc will attempt to translate the human-readable versions (like “author” and “editor”) to the appropriate marc relators.
+contributor
+Same format as creator.
+date
+A string value in YYYY-MM-DD format. (Only the year is necessary.) Pandoc will attempt to convert other common date formats.
+lang (or legacy: language)
+A string value in BCP 47 format. Pandoc will default to the local language if nothing is specified.
+subject
+A string value or a list of such values.
+description
+A string value.
+type
+A string value.
+format
+A string value.
+relation
+A string value.
+coverage
+A string value.
+rights
+A string value.
+cover-image
+A string value (path to cover image).
+stylesheet
+A string value (path to CSS stylesheet).
+page-progression-direction
+Either ltr or rtl. Specifies the page-progression-direction attribute for the spine element.

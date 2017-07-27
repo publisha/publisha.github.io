@@ -34,7 +34,7 @@ We will need some assets, such as images and text and we will use Photoshop to m
 
 > **Note**: It is presumed that you have downloaded the files from the [GitHub repository here](https://github.com/publisha/shakespeare_repo).
 
-Your task (once you decide on your play to uses) is to design a cover with these steps:
+Your task (once you decide on the play to use) is to design a cover with the following steps:
 
 - Use a blank Photoshop file with the size 198mm x 129mm (portrait and 300dpi)
 - Arrange in that space the title of the play
@@ -45,7 +45,8 @@ Your task (once you decide on your play to uses) is to design a cover with these
 - Optionally add further text (Shakespeare, quotes from the play etc)
 - Add this image to the InDesign template for the whole Cover
 - Add spine text
-- Add text for blurb on back of CoverAdd images etc.
+- Add text for blurb on back of Cover
+- Add images etc.
 
 ## Our page size
 

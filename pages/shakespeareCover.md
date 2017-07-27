@@ -52,11 +52,7 @@ You will find a Photoshop template in the module repository for this.
 
 Here are some images that show how you can use the suggested Photoshop blank to try different options for your play title typography.
 
-[![Using a blank Photoshop file to try typographic styles and layouts](/images/2017/07/shakespeareCover/image1.png)](/images/2017/07/shakespeareCover/image1.png)
-
-[![Using a blank Photoshop file to try typographic styles and layouts](/images/2017/07/shakespeareCover/image2.png)](/images/2017/07/shakespeareCover/image2.png)
-
-[![Using a blank Photoshop file to try typographic styles and layouts](/images/2017/07/shakespeareCover/image3.png)](/images/2017/07/shakespeareCover/image3.png)
+[![Using a blank Photoshop file to try typographic styles and layouts](/images/dreamtrials.jpg)](/images/dreamtrials.jpg)
 
 ## Prepare our main image in Photoshop
 

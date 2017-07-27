@@ -28,11 +28,24 @@ date: 2017-07-27
 
 ## Objectives
 
-We need a print ready PDF of the full cover for a paperback book with image and title on the front and some blurb on the back.
+We need a print ready PDF of the full cover for a paperback book with image (optional) and title on the front and some blurb on the back.
 
 We will need some assets, such as images and text and we will use Photoshop to modify any images that we intend to use. We will use InDesign to prepare the PDF ready for print.
 
 > **Note**: It is presumed that you have downloaded the files from the [GitHub repository here](https://github.com/publisha/shakespeare_repo).
+
+Your task (once you decide on your play to uses) is to design a cover with these steps:
+
+- Use a blank Photoshop file with the size 198mm x 129mm (portrait)
+- Arrange in that space the title of the play
+- Keep it simple at first and use layers to try different versions
+- Try colour for the text
+- Possibly add an image on another layer
+- Make sure that there is enough contrast between the image and the text
+- Optionally add further text (Shakespeare, quotes from the play etc)
+- Add this image to the InDesign template for the whole Cover
+- Add spine text
+- Add text for blurb on back of CoverAdd images etc.
 
 ## Our page size
 

@@ -4,7 +4,7 @@ title: Using Photoshop and InDesign to Create a Cover for Print
 published: true
 tags: [InDesign, Photoshop]
 categories: [InDesign, Typography]
-date: 2017-07-24
+date: 2017-07-27
 ---
 # Using Photoshop and InDesign to Create a Cover for Print
 
@@ -31,6 +31,8 @@ date: 2017-07-24
 We need a print ready PDF of the full cover for a paperback book with image and title on the front and some blurb on the back.
 
 We will need some assets, such as images and text and we will use Photoshop to modify any images that we intend to use. We will use InDesign to prepare the PDF ready for print.
+
+> **Note**: It is presumed that you have downloaded the files from the [GitHub repository here](https://github.com/publisha/shakespeare_repo).
 
 ## Our page size
 

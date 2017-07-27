@@ -36,7 +36,7 @@ We will need some assets, such as images and text and we will use Photoshop to m
 
 Your task (once you decide on your play to uses) is to design a cover with these steps:
 
-- Use a blank Photoshop file with the size 198mm x 129mm (portrait)
+- Use a blank Photoshop file with the size 198mm x 129mm (portrait and 300dpi)
 - Arrange in that space the title of the play
 - Keep it simple at first and use layers to try different versions
 - Try colour for the text

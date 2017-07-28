@@ -6,7 +6,7 @@ layout: screencast
 published: true
 categories: [InDesign, GREP]
 ---
-## Using GREP and a Script
+### Using GREP and a Script
 We have our play (A Midsummer Night's Dream) placed in InDesign, but we have some changes we want to make to the text.
 
 We don't want the character names on the same line as the first line of their speech.

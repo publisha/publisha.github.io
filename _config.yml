@@ -18,7 +18,7 @@ author:
 
 
 # Custom vars
-version:          0.2.1
+version:          0.2.2
 
 github:
   repo:           publisha.github.io
@@ -52,6 +52,10 @@ tag-list: [InDesign, HTML, CSS, Using GitHub]
 
 categories-list: [InDesign, "HTML and CSS", Typography, Using GitHub, XML, ePub, iBooks Author]
 
+# for Brookes
+
+class-list: ["Design and Production", "Multi-Platform Publishing", "Digital Product"]
+
 # collections
 collections:
   screencasts:
@@ -70,6 +74,7 @@ collections:
     title: 'Articles and Conference papers'
     defaults:
       layout: paper
+
 
 # for prose
 prose:

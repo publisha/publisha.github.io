@@ -20,13 +20,16 @@ published: true
   {% for category in site.categories-list %}
     <li class="dropdown"><a href="#">{{ category }} <i class="fa fa-caret-down" aria-hidden="true"></i></a>
       <ul>
-      {% for page in site.pages %}
-       {% for cat in page.categories %}
-            {% if cat == category %}
-              <li><a href="{{ page.url }}">{{ page.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
-            {% endif %}
+        {% assign pageitems = site.pages | sort: 'title' %}
+          {% for page in pageitems %}
+
+
+            {% for cat in page.categories %}
+              {% if cat == category %}
+                <li><a href="{{ page.url }}">{{ page.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+              {% endif %}
+            {% endfor %}
           {% endfor %}
-      {% endfor %}
       </ul>
     </li>
         {% endfor %}

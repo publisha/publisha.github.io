@@ -3,8 +3,9 @@ layout: page
 title: Building the TOC in InDesign
 published: true
 categories: InDesign
-tags: [InDesign, Typography, ePub]
+tags: [InDesign, Typography, ePub, "Design and Production"]
 date: 2017-06-13
+blurb: The table of contents (TOC) belongs to, what are normally referrer to as, the front matter. We might also refer to them as the prelim pages.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

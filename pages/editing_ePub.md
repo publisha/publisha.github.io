@@ -3,7 +3,8 @@ layout: page
 title: Editing inside the ePUB package
 published: true
 categories: [ePub]
-tags: [ePub, InDesign, CSS]
+tags: [ePub, InDesign, CSS, "Multi-Platform Publishing"]
+blurb: When we have created a reflowable ePub by exporting from InDesign, we may find that there are some stylistic details that need tidying up, changing or even correcting. Not all aspects of our wonderfully crafted typographic design work will give perfect results in the ePub.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

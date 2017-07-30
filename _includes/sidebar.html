@@ -11,14 +11,7 @@
     <p>{{ site.description }}</p>
   </div>
 
-  <nav class="sidebar-nav">
-    <!-- <a class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}" href="{{site.baseurl}}/"><i class="fa fa-home fa-lg" aria-hidden="true"> </i>Home</a> -->
-
-    {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
-
+<nav class="sidebar-nav">
 <ul class="navigation">
 <li class="header">Pages by Category</li>
 {% for category in site.categories-list %}
@@ -26,8 +19,6 @@
       <ul>
         {% assign pageitems = site.pages | sort: 'title' %}
           {% for page in pageitems %}
-
-
             {% for cat in page.categories %}
               {% if cat == category %}
                 <li><a href="{{ page.url }}">{{ page.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>

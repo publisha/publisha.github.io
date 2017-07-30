@@ -2,7 +2,9 @@
   layout: page
   title: Creating a Reflowable eBook
   published: true
-  categories: [InDesign, ePub]
+  categories: [InDesign, ePub, "Multi-Platform Publishing"]
+  date: 2017-07-30
+  blurb: This work follows on from previous workflows in creating a Shakespeare play for print. We should already have an Indesign ‘book’ with at least 2 sections. We will export from InDesign for ePub (reflowable) and then 'break open' the ePub file and make some changes to some of the included files.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

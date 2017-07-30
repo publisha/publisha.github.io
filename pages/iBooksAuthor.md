@@ -3,8 +3,10 @@ layout: page
 title: From InDesign to iBooks Author
 published: true
 tags: iBooks Author
-categories: [InDesign, iBooks Author]
+categories: [InDesign, "iBooks Author", "Multi-Platform Publishing"]
 screencast: [introducing_iBooksAuthor]
+date: 2017-07-30
+blurb: Since the objective of our work is developing a strategy for publishing for both print and eBook, we will focus on taking content from InDesign and pushing it into the iBooks Author environment.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

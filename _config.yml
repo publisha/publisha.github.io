@@ -18,7 +18,7 @@ author:
 
 
 # Custom vars
-version:          0.2.2
+version:          0.3
 
 github:
   repo:           publisha.github.io
@@ -74,6 +74,12 @@ collections:
     title: 'Articles and Conference papers'
     defaults:
       layout: paper
+
+  sections:
+    output: true
+    title: 'Arranged by Topic'
+    defaults:
+      layout: page
 
 
 # for prose

@@ -831,3 +831,19 @@ a.video, .sidebar-toggle {
    border:1px solid silver;
    padding:6px;
  }
+
+
+/*for the listings pages*/
+article.snippet {
+border-bottom:1px solid #287e4a;
+margin-bottom:2px;
+}
+.snippet h3 {
+   font-size:99%;
+   margin-top:3px;
+}
+
+.snippet p.details {
+   font-size:70%;
+   margin-top:0;
+}

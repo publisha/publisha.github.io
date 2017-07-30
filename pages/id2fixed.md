@@ -3,8 +3,9 @@ layout: page
 title: InDesign to the Fixed Layout ePub
 published: true
 tags: InDesign
-categories: [InDesign, ePub]
-# screencast: [anchoringimages]
+categories: [InDesign, ePub, "Multi-Platform Publishing"]
+date: 2017-07-30
+blurb: The fixed-layout format ePUB3 format provides a way to deliver every single page in your print book laid out just as it was in the print version.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

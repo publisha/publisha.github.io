@@ -2,8 +2,10 @@
 layout: page
 title: Repository for Shakespeare Play Web page
 published: true
-categories: [Using GitHub]
+categories: ["Using GitHub", "Multi-Platform Publishing"]
 tags: [Using GitHub]
+date: 2017-07-30
+blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
@@ -19,6 +21,8 @@ tags: [Using GitHub]
 </section><!-- /TOC -->
 
 # The Repository for your Shakespeare Play Web page
+
+We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 
 ## What to do?
 If you are reading this within your very own copy of this GitHub repository (because you followed the link from the **github classroom**), then read on. If you are reading this offline, then please set up the Github account before you do anything else.

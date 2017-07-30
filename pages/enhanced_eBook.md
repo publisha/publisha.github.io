@@ -3,7 +3,8 @@ layout: page
 title: Enhancing an eBook with interactivity, multimedia and animation
 published: true
 tags: InDesign
-categories: [InDesign, ePub]
+categories: [InDesign, ePub, "Multi-Platform Publishing"]
+blurb: There are some ways we can creatively enhance the eBook version to provide some interactivity and multimedia that can go beyond the traditional book page.
 ---
 
 # Enhancing an eBook with interactivity, multimedia and animation

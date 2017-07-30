@@ -1,10 +1,14 @@
 ---
 layout: page
-title: Footnotes, Endnotes, Sidenotes and Popup Notes
+title: "Footnotes, Endnotes, Sidenotes and Popup Notes"
 published: true
 tags: InDesign
-categories: [InDesign, Typography, ePub]
+categories: [InDesign, Typography, ePub, "Design and Production"]
+date: 2017-07-30
+blurb: "These need to be separated from the main body of the text, and are best set with a smaller size and possibly event a different typeface and colour. The idea of any notes is that it is supplementary information and it is entirely optional that the reader even bothers to look, so setting in a style that does not distract from the flow of the reading
+experience is important."
 ---
+
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
 ## On this Page
@@ -23,70 +27,47 @@ categories: [InDesign, Typography, ePub]
 
 # Footnotes, Endnotes, Sidenotes and Popup Notes
 
-I start with a quote from Robert Bringhurst in his _The Elements of Typographic Style_ [^3]:
+I start with a quote from Robert Bringhurst in his _The Elements of Typographic Style_ [^3]
 
-> “...the academic habit of relegating notes to the foot of the page or the end of the book is a mirror of Victorian social and domestic practice, in which the kitchen was kept out of sight and the servants were kept below stairs. If the notes are permitted to move around in the margins – as they were in Renaissance books – they can be present where needed and at the same time enrich the life of the page.”
+> ...the academic habit of relegating notes to the foot of the page or the end of the book is a mirror of Victorian social and domestic practice, in which the kitchen was kept out of sight and the servants were kept below stairs. If the notes are permitted to move around in the margins  as they were in Renaissance books  they can be present where needed and at the same time enrich the life of the page.
 
-In _The Elements of Typographic Style_, the notes are held in the side margins – thus putting the information near and even alongside the reference in the text. Robert Bringhurst doesn't need to bother with those little superscript numbers because the supplementary information is very much nearby for the reader.
+In _The Elements of Typographic Style_, the notes are held in the side margins  thus putting the information near and even alongside the reference in the text. Robert Bringhurst doesn't need to bother with those little superscript numbers because the supplementary information is very much nearby for the reader.
 
-Still, tradition dictates that in some books, there are footnotes and some there are endnotes (either at the end of the chapter or the end of the book). Putting notes in the side margins is nice if you can afford the space. Let's face it, book design and usability does not often win-out over commercial considerations. Robert Bringhurst's book is exceptional and – it is a beautiful thing. Lots of space for the text to breath.
+Still, tradition dictates that in some books, there are footnotes and some there are endnotes (either at the end of the chapter or the end of the book). Putting notes in the side margins is nice if you can afford the space. Let's face it, book design and usability does not often win-out over commercial considerations. Robert Bringhurst's book is exceptional and  it is a beautiful thing. Lots of space for the text to breath.
 
 How I dislike some books that give me less than a centimetre of margin.
 
 ## Footnotes
 
-These need to be separated from the main body of the text, and are best
-set with a smaller size and possibly event a different typeface and
-colour. The idea of any notes is that it is supplementary information
-and it is entirely optional that the reader even bothers to look, so
-setting in a style that does not distract from the flow of the reading
+These need to be separated from the main body of the text, and are best set with a smaller size and possibly event a different typeface and colour. The idea of any notes is that it is supplementary information and it is entirely optional that the reader even bothers to look, so setting in a style that does not distract from the flow of the reading
 experience is important.
 
 [![Here we see the example of the first footnote in the chapter and the reference number  in the text.](/images/2017/04/firstfootnoteinchapter.png)](/images/2017/04/firstfootnoteinchapter.png)
 
 Footnotes are best numbered with an outdented figure, although (for
-technical reasons) the numbers are most often aligned to the main text
-block. These numbers refer to the superscript number within the text
-itself. Most publishers will favour the numbers to begin again for each
-chapter, otherwise the numbers could get unwieldy (superscript numbers
-of more than two digits could look ugly). If there are very few
-references in the text, symbols can be used instead of numbers (\* or
-†).
+technical reasons) the numbers are most often aligned to the main text block. These numbers refer to the superscript number within the text itself. Most publishers will favour the numbers to begin again for each chapter, otherwise the numbers could get unwieldy (superscript numbers of more than two digits could look ugly). If there are very few references in the text, symbols can be used instead of numbers (\* or ).
 
-The listed footnotes will look best when separated from the main body
-with a partial line; giving the reader a strong clue that these notes
-are not following on from the text above. Where footnotes are long, they
-can be split across more than one page, although this will compromise
-the usability somewhat.
+The listed footnotes will look best when separated from the main body with a partial line; giving the reader a strong clue that these notes are not following on from the text above. Where footnotes are long, they can be split across more than one page, although this will compromise the usability somewhat.
 
 ## Endnotes
 
-Notes are often placed at the end of the chapter or even at the end of
-the book (before the index). This approach means that the reader will
-need to 'hunt down' the note referred to in the text. This usually means
-that the endnotes will be organised by chapter or section.
+Notes are often placed at the end of the chapter or even at the end of the book (before the index). This approach means that the reader will need to 'hunt down' the note referred to in the text.
+
+This usually means that the endnotes will be organised by chapter or section.
 
 The advantage of endnotes over footnotes is that the page composition in the vertical plane is not compromised for the sake of the note space.
 
 Where there are lots of references in the text, this must be the best approach.
 
-Ridiculous as this seems, we have seen books with footnotes that take
-more page space than the main text itself!
+Ridiculous as this seems, we have seen books with footnotes that take more page space than the main text itself!
 
 ## Sidenotes (sometimes called Margin Notes)
 
-Clearly the page layout needs to provide the space in the margins for
-this to be an option. Unless this is a large-format book, the measure of
-the notes (width of the text), is likely to be narrow, so don't design
-for this option if the notes are long or there are lots of them – and,
-the book is small.[^1]
+Clearly the page layout needs to provide the space in the margins for this to be an option. Unless this is a large-format book, the measure of the notes (width of the text), is likely to be narrow, so don't design for this option if the notes are long or there are lots of them  and, the book is small.[^1]
 
-**Sidenotes** fall outside the text block – unlike footnotes that will be
-inside the text block.
+**Sidenotes** fall outside the text block  unlike footnotes that will be inside the text block.
 
-Sidenotes do not necessarily need superscript numbers within the text
-(and they themselves do not need to be numbered), if it is obvious what
-the sidenote refers to.
+Sidenotes do not necessarily need superscript numbers within the text (and they themselves do not need to be numbered), if it is obvious what the sidenote refers to.
 
 ## Footnotes with InDesign
 
@@ -124,9 +105,9 @@ endnotes; for this we need a script.
 
 ## Endnotes with a Script
 
-To do this we need to turn to [Peter Kahrel][2502ca9b] who
+To do this we need to turn to[Peter Kahrel][2502ca9b] who
 provides many useful scripts. The one that I use here is called 'convert
-footnotes to (dynamic) endnotes' – meaning that the numbering will
+footnotes to (dynamic) endnotes'  meaning that the numbering will
 change if further notes are added.
 
   [2502ca9b]: www.kahrel.plus.com "see this web site for scripting InDesign"
@@ -143,7 +124,7 @@ to tweak the paragraph styles for the notes and their listed numbers.
 
 ## Sidenotes with a Script
 
-Once again, Peter Kahrel will help us (please make a donation on his
+Once again,Peter Kahrel will help us (please make a donation on his
 site) with a set of scripts. Using these we can control the width and
 position as the footnotes are converted to side notes. Each note comes
 in it's own text frame which is anchored at the reference point. You will
@@ -165,7 +146,7 @@ the proposed platform and the pBook to eBook workflow.
 When you export from InDesgn to ePub (reflowable), you have an option to
 convert your *footnotes* to pop-up notes. This will take the notes from
 the foot of the page, wrap them in an HTML tag `<aside>` and add
-the necessary ePub3 classes in the XHTML code. In fact you will get an
+thenecessaryePub3 classes in the XHTML code. In fact you will get an
 attribute added to the hyperlinked number:
 
 `epub:type="noteref"`
@@ -190,7 +171,7 @@ So instead of this:
 We do this:
 
 ```html
-<p><a class=“reference” epub:type="noteref" href="dream-116.xhtml#footnote-002">To death, or to a vow of single life. </a></p>
+<p><a class=reference epub:type="noteref" href="dream-116.xhtml#footnote-002">To death, or to a vow of single life. </a></p>
 ```
 
 With some further adjustments to the `CSS` for the reference class of
@@ -216,7 +197,7 @@ It is also supported on later models of the Kindle when an ePub is converted to 
 
 Other devices and software that cannot support pop-up notes will simply
 function as hyperlinks to the list of notes at the end of the chapter or
-section. InDesign does not do us any favours though, because the list
+section.InDesign does not do us any favours though, because the list
 of notes loses it's numbering and the backlink does not work.
 
 What can we do about this?
@@ -230,8 +211,8 @@ ePub file by adding the numbers into the notes list. You will find XHTML
 markup that looks something like the following:
 
 ```html
-<aside id="footnote-003" class="_idFootnote" epub:type="footnote"> <p class="footnotes"><a class="_idFootnoteAnchor _idGenColorInherit" href="introduction.xhtml#footnote-003-backlink"></a>
-  John Shakespeare’s father, Richard Shakespeare, was a tenant farmer, who was in 1550 renting his little farm at Snitterfield,  four miles north of Stratford, from another farmer, Robert Arden of Wilmcote.</p>
+<asideid="footnote-003"class="_idFootnote"epub:type="footnote"> <pclass="footnotes"><aclass="_idFootnoteAnchor_idGenColorInherit"href="introduction.xhtml#footnote-003-backlink"></a>
+  JohnShakespearesfather,RichardShakespeare,wasatenant farmer,whowasin1550rentinghislittlefarmatSnitterfield, fourmilesnorthofStratford,fromanotherfarmer,RobertArdenofWilmcote.</p>
 </aside>
 ```
 
@@ -253,13 +234,13 @@ support it we will need to crack open the ePUB and make some changes.
 #### Editing the ePUB from the Endnotes Version
 
 Once you have unpacked the ePUB (actually I prefer to do this with
-BBedit – no unpacking required), you can search for:
+BBedit  no unpacking required), you can search for:
 
 `<a class="_idFootnoteLink`
 
 and replace with:
 
-`<a epub:type="noteref" class="_idFootnoteLink`
+`<a epub:type="noteref"class="_idFootnoteLink`
 
 If you do this then the pop-up will work BUT you will also see that the
 notes are still listed at the end of the chapter. Personally I actually prefer this, because we can get a second chance to read through the notes.
@@ -285,7 +266,7 @@ notes list.
 
 If you are an InDesign CC user planning to export a fixed-layout ePUB and you have footnotes in your document, you might be disappointed to notice that there is no option to make these footnotes become popup notes using the ePUB3 standard `epub:type`.
 
-In the export to ePUB(reflowable) options we can select the popup type, but not for the fixed layout. Your footnotes will remain exactly where they are – on the page. Disappointing no?
+In the export to ePUB(reflowable) options we can select the popup type, but not for the fixed layout. Your footnotes will remain exactly where they are  on the page. Disappointing no?
 
 InDesign will expect the footnotes to be in the same XHTML file where they are referenced. There are some settings in InDesign, but nothing will help us convert them to invisible notes that are only seen in a popup.
 
@@ -300,8 +281,8 @@ their own page at the end of the book.
 
 InDesign does not have any configuration that provides this so we need
 to use a script. There is one available from Peter Kahrel. On his site
-he credits others too, but the one you need is called ‘Footnotes to
-Endnotes’. [You can grab it here][cfc60044].
+he credits others too, but the one you need is called Footnotes to
+Endnotes. [You can grab it here][cfc60044].
 
   [cfc60044]: http://www.kahrel.plus.com/indesign/footnotes.html "Thanks to Peter Kahrel"
 
@@ -335,11 +316,11 @@ The next step is to locate the hyperlinked references in the text. If
 you have correctly exported a reliable tag name from InDesign, then you
 can use your editor (I use Atom) to search for
 
-`<span class="reference `
+`<span class="reference`
 
 We now need to go through this markup in turn and add the following:
 
-`<a epub:type="noteref" href=“dream-116.xhtml#footnote-001">`
+`<a epub:type="noteref" href=dream-116.xhtml#footnote-001">`
 
 in the place of the empty `<a>` tag.
 

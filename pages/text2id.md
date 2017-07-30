@@ -3,7 +3,9 @@ layout: page
 title: Text to InDesign
 published: true
 tags: InDesign
-categories: [InDesign, Typography]
+categories: [InDesign, Typography, "Design and Production"]
+date: 2017-07-30
+blurb: When working with text from sources outside InDesign, we are likely to find that we want to make changes as soon as we ‘place’ in InDesign.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

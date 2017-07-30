@@ -2,8 +2,9 @@
 layout: page
 title: Using the Book Panel in InDesign
 published: true
-categories: InDesign
+categories: [InDesign, "Design and Production"]
 date: 2017-05-19
+blurb: Quite often we will be working with very long publications that will benefit from the concept of separate files for separate sections or chapters. There are also advantages from having individuals in a team, work on different InDesign files (with common styles), and then bring them all together inside one book.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
@@ -31,6 +32,7 @@ date: 2017-05-19
 ## Introduction
 
 Quite often we will be working with very long publications that will benefit from the concept of separate files for separate sections or chapters. There are also advantages from having individuals in a team, work on different InDesign files (with common styles), and then bring them all together inside one book.
+
 InDesign uses the concept of a ‘book’ that comprises of separate InDesign files; the ‘book’ is a parent file that ‘ties’ together the various individual components.
 
 ## What is an InDesign Book?

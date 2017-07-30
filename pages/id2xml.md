@@ -2,9 +2,10 @@
   layout: page
   title: Create XML from InDesign
   published: true
-  categories: [InDesign, XML]
+  categories: [InDesign, XML, "Design and Production"]
   screencast: [id2xml1]
   date: 2017-05-11
+  blurb: XML is eXtensible Markup Language and is a non-proprietary markup language that can be used as a future-proof way to store content. XML indicates structure rather than style; in fact XML includes no information about appearance, only structure, hierarchy and element taxonomy.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

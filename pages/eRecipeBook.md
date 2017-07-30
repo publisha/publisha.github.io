@@ -3,6 +3,7 @@
   title: Making an eBook of Recipes
   published: true
   categories: [InDesign, ePub]
+  blurb: From text and pictures, we are going to create an InDesign document, export for ePub3 (reflowable) and then 'break open' the ePub file, check out the CSS and then make our own stylesheet to go into the ePub package.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

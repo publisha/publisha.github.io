@@ -10,6 +10,10 @@ layout: default
 <p><a href="{{site.baseurl}}/screencasts/{{ page.screencast }}">There is a Screencast that may help <i style="vertical-align:middle;" title="Show this screencast" class="fa fa-youtube-play fa-2x" aria-hidden="true"> </i></a></p>
   {% endif %}
 </div>
+{% if page.categories != null %}
+<p><b>Filed under:</b> {{ page.categories | join: ', ' }}</p>
+{% endif %}
+
 {% if page.date != null %}
 <p>This page last edited on: {{page.date}}</p>
 {% endif %}

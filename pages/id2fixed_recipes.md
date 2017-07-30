@@ -5,6 +5,8 @@ published: true
 tags: InDesign
 categories: [InDesign, ePub]
 screencast: [fixedlayout_recipes1]
+date: 2017-07-30
+blurb: This fixed-layout format can be considered almost the same as an interactive PDF, however, as you will see, the ePUB can have much more interactivity and, you, the designer can control the way the eBook is displayed.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

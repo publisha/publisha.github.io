@@ -2,8 +2,7 @@
 layout: page
 title: Building the TOC in InDesign
 published: true
-categories: InDesign
-tags: [InDesign, Typography, ePub, "Design and Production"]
+categories: [InDesign, Typography, ePub, "Design and Production"]
 date: 2017-06-13
 blurb: The table of contents (TOC) belongs to, what are normally referrer to as, the front matter. We might also refer to them as the prelim pages.
 ---
@@ -81,8 +80,7 @@ It is quite common to put a row of dots between the TOC item and the page number
 In the TOC panel (see above), we need to add a TAB between the entry and the page number.
 
 Once we have made sure that the item is followed by a tab, we then need to adjust the paragraph style. Make sure that paragraph style is set to ‘Right-Justify’.
-
-For the style (in the case TOC Body text), we need to adjust the tabs and the repeated leader.
+For the style (in this case the TOC Body text), we need to adjust the tabs and the repeated leader.
 
 [![Setting up the tabs to style a row of dots ahead of the page number](/images/2017/01/setting-up-the-tabs.png)](/images/2017/01/setting-up-the-tabs.png)
 
@@ -101,6 +99,8 @@ When you create the TOC, you will notice the check box ‘Create PDF Bookmarks�
 Although this a useful feature it is not something that we need for the print output PDF! Here it serves to illustrate the structure of our completed play book.
 
 [![The interactive table of contents in a PDF](/images/2017/01/toc-in-the-pdf.png)](/images/2017/01/toc-in-the-pdf.png)
+
+> **Note**: The information below is for those who intend to deliver eBook versions of their texts.
 
 ## Creating a Table of Contents for the eBook version
 

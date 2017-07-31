@@ -211,8 +211,8 @@ ePub file by adding the numbers into the notes list. You will find XHTML
 markup that looks something like the following:
 
 ```html
-<asideid="footnote-003"class="_idFootnote"epub:type="footnote"> <pclass="footnotes"><aclass="_idFootnoteAnchor_idGenColorInherit"href="introduction.xhtml#footnote-003-backlink"></a>
-  JohnShakespearesfather,RichardShakespeare,wasatenant farmer,whowasin1550rentinghislittlefarmatSnitterfield, fourmilesnorthofStratford,fromanotherfarmer,RobertArdenofWilmcote.</p>
+<aside id="footnote-003"class="_idFootnote" epub:type="footnote"> <p class="footnotes"><a class="_idFootnoteAnchor_idGenColorInherit" href="introduction.xhtml#footnote-003-backlink"></a>
+  John Shakespeare's father, Richard Shakespeare, was a tenant farmer,who wasin1550 renting his little farm at Snitterfield, four miles north of Stratford,from another farmer, Robert Arden of Wilmcote.</p>
 </aside>
 ```
 

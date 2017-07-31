@@ -6,6 +6,7 @@ tags: InDesign
 categories: [InDesign, "Design and Production"]
 date: 2017-07-30
 blurb: The Pages panel will show you the pages in your document as thumbnails. You can configure the way this displays through the Panel Options from the context menu in the Pages panel.
+order: 2
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

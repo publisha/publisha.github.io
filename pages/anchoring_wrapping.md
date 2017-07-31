@@ -7,6 +7,7 @@ categories: [InDesign, "Design and Production"]
 screencast: [anchoringimages]
 date: 2017-05-17
 blurb: We look at how to ‘place’ images on the page, and the issues that we might encounter along the way.
+order: 3
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

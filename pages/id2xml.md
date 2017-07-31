@@ -6,6 +6,7 @@
   screencast: [id2xml1]
   date: 2017-05-11
   blurb: XML is eXtensible Markup Language and is a non-proprietary markup language that can be used as a future-proof way to store content. XML indicates structure rather than style; in fact XML includes no information about appearance, only structure, hierarchy and element taxonomy.
+  order: 7
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

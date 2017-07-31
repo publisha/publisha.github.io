@@ -5,6 +5,7 @@ published: true
 categories: [InDesign, "Design and Production"]
 date: 2017-05-19
 blurb: Quite often we will be working with very long publications that will benefit from the concept of separate files for separate sections or chapters. There are also advantages from having individuals in a team, work on different InDesign files (with common styles), and then bring them all together inside one book.
+order: 9
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

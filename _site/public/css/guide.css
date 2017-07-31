@@ -328,8 +328,8 @@ h4 {
 @media print {
 h1,h2,h3 {
     page-break-after: avoid !important;
+    page-break-inside:avoid;
 }
-
 }
 
 h2 {

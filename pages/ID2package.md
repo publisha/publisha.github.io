@@ -5,7 +5,7 @@ published: true
 categories: [InDesign, "Design and Production"]
 date: 2017-07-31
 blurb: At some point during our workflow and design process we want to send something to the proof printer. Normally the best approach to this is to output to PDF from InDesign and then print from this file.
-order: 5
+order: 6
 ---
 
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->

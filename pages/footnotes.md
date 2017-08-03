@@ -7,7 +7,7 @@ categories: [InDesign, Typography, ePub, "Design and Production"]
 date: 2017-07-30
 blurb: "These need to be separated from the main body of the text, and are best set with a smaller size and possibly event a different typeface and colour. The idea of any notes is that it is supplementary information and it is entirely optional that the reader even bothers to look, so setting in a style that does not distract from the flow of the reading
 experience is important."
-order: 4
+order: 2
 ---
 
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->

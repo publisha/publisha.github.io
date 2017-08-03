@@ -6,7 +6,7 @@ tags: InDesign
 categories: [InDesign, Typography, "Design and Production"]
 date: 2017-06-13
 blurb: InDesign is a brilliant tool to design the display of type on a page. We have every possible control over the letters, the words, the lines, the paragraphs and how the blocks of type are shaped, spaced and aligned.
-order: 8
+order: 9
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

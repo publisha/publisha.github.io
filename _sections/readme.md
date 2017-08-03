@@ -15,7 +15,7 @@ eBook Production towards the ePub standard
 
 ## For Oxford Brookes module classes
 ### [Design and Production](/sections/designandproduction)
-This is an alphabetical list of all the help documents for this first semester module.
+This is an chronological list of all the help documents for this first semester module.
 
 ### [Multi-Platform Publishing](/sections/multiplatform)
 This is an alphabetical list of all the help documents for the second semester module.

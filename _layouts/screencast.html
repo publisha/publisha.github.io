@@ -2,65 +2,6 @@
 layout: default
 type: screencast
 ---
-<!-- {% for c in site.screencasts %}
-{% if c.title == page.title %}
-  {% assign thisPost = c %}
-  {% if forloop.index == 1 %}
-    {% assign prevflag = 0 %}
-    {% assign nextflag = 1 %}
-  {% elsif forloop.index == forloop.length %}
-    {% assign prevflag = 1 %}
-    {% assign nextflag = 0 %}
-  {% else %}
-    {% assign prevflag = 1 %}
-    {% assign nextflag = 1 %}
-  {% endif %}
-{% endif %}
-{% endfor %}
-
-{% for c in site.screencasts %}
-  {% if c.title == page.title %}
-    {% assign prevflag = 0 %}
-  {% endif %}
-  {% if prevflag == 1 %}
-    {% assign prevPost = c %}
-    {% assign page.previous = c %}
-  {% endif %}
-{% endfor %}
-
-{% if nextflag == 1 %}
-  {% for c in site.screencasts %}
-    {% if foundPost == 1 %}
-      {% assign getNext = 1 %}
-    {% endif %}
-    {% if c.title == page.title %}
-      {% assign foundPost = 1 %}
-    {% endif %}
-    {% if getNext == 1%}
-      {% assign nextPost = c %}
-      {% assign page.next = c %}
-      {% assign foundPost = 0 %}
-      {% assign getNext = 0 %}
-    {% endif %}
-  {% endfor %}
-{% endif %}
-
-<div id="post-nav">
-    <div >
-        {% if prevPost.url %}
-        <a class="prev" href="{{prevPost.url}}">
-            <span>&lt; {{prevPost.title}}</span>
-        </a>
-        {% endif %}
-        {% if nextPost.url %}
-        <a class="next" href="{{nextPost.url}}">
-            <span>{{nextPost.title}} &gt;</span>
-        </a>
-        {% endif %}
-    </div>
-</div>
- -->
-
 <div class="post">
   <a class="video fancybox.iframe" title="{{ screencast.title }}" href="https://www.youtube.com/embed/{{ page.YouTube }}?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
 <h1>{{ page.title }}</h1>
@@ -69,5 +10,5 @@ type: screencast
 <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.YouTube }}?rel=0" frameborder="0" allowfullscreen></iframe>
   {{ content }}
   {% include prevnextscreencast.html %}
-  <p><a href="{{ site.baseurl }}/pages/screencasts/"><i class="fa fa-chevron-left" aria-hidden="true"></i> See all Screencasts</a></p>
+  <p><a href="{{ site.baseurl }}/screencasts/"><i class="fa fa-chevron-left" aria-hidden="true"></i> See all Screencasts</a></p>
 </div>

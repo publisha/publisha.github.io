@@ -81,6 +81,11 @@ collections:
     defaults:
       layout: page
 
+  presentations:
+    output: true
+    title: 'Presentations from Apple Keynote'
+    defaults:
+      layout: presentation
 
 # for prose
 prose:

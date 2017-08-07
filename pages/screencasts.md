@@ -2,6 +2,7 @@
 layout: default
 title: Screencasts from the PagetoScreen YouTube Channel
 published: true
+permalink: screencasts/index.html
 ---
 
 <h1>Screencasts</h1>

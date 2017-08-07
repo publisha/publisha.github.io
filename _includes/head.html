@@ -55,6 +55,14 @@ top:0;
 </style>
 {% endif %}
 
+{% if page.images == "none" %}
+<style>
+.sideimage img {
+display:none;
+}
+</style>
+{% endif %}
+
 
 {% if page.code == "wrap" %}
 <style>

@@ -7,10 +7,13 @@ folder: XML
 categories: [XML, InDesign]
 images: none
 image: /images/XML2017.001.jpeg
+excerpt_separator: <!--more-->
 ---
 An introduction to XML and how it applies to our Shakespeare play
 
 [![First slide](/images/XML2017.001.jpeg)](/images/XML2017.001.jpeg)
+
+<!--more-->
 
 - what is XML
 - XML in publishing

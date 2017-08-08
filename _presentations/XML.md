@@ -6,6 +6,7 @@ date: 2017-08-06
 folder: XML
 categories: [XML, InDesign]
 images: none
+image: /images/XML2017.001.jpeg
 ---
 An introduction to XML and how it applies to our Shakespeare play
 

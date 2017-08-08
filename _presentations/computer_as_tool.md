@@ -6,6 +6,7 @@ date: 2017-08-06
 folder: Computer_as_Tool
 categories: [GREP, InDesign]
 images: none
+image: /images/tools_to_help_ID.001.jpeg
 ---
 Using Search and Replace to process text
 

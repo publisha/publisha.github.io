@@ -6,8 +6,9 @@ date: 2017-07-01
 folder: iterative_publishing
 categories: [Publishing, GitHub]
 images: none
+image: /images/iterativePublishing.001.jpeg
 ---
-## Is this the Final Version?
+### Is this the Final Version?
 
 [![The first frame of the presentation](/images/iterativePublishing.001.jpeg)](/images/iterativePublishing.001.jpeg)
 

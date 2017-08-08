@@ -102,9 +102,7 @@ When you download this repository, you will find a variety of files, but the 2 i
 
 You can also have a look at the sample scene inside the **sampleScene** folder
 
-- Also inside the resources folder you will find various InDesign scripts. These scripts needs to go into your copy of InDesign. [The instructions are available here][8a498dac].
-
-  [8a498dac]: /resources/README.md "help with the scripts"
+- Also inside the resources folder you will find various InDesign scripts. These scripts needs to go into your copy of InDesign. The instructions are found in the readme for that folder.
 
 ## Ok, so what do I do now?
 Here are the steps to take:

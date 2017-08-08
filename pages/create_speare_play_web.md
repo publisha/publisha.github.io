@@ -4,7 +4,7 @@ title: Repository for Shakespeare Play Web page
 published: true
 categories: ["Using GitHub", "Multi-Platform Publishing"]
 tags: [Using GitHub]
-date: 2017-07-30
+date:  2017-08-08
 blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -38,13 +38,13 @@ Before you do anything with your new GitHub account do this:
 You don't need GitHub.com for the moment but you will need to recall your username and password during the next steps.
 
 ## Your digital tools
-You will need a text editor that can show and preview web HTML. We now want you to download and install _Atom_. You can find this [free open source editor here][9ef5b049]
+You will need a text editor that can show and preview HTML. We now want you to download and install _Atom_. You can find this [free open source editor here][9ef5b049]
 
   [9ef5b049]: https://atom.io "grab Atom"
 
 [![Download Atom](/images/2017/01/downloadAtom.png)](/images/2017/01/downloadAtom.png)
 
-This application will be placed inside your downloads folder, so you need to copy to your _Applications_ folder inside you user account on the MAC. This means that you should try to use the same MAC in Tonge whenever possible.
+This application will be placed inside your downloads folder, so you need to copy to your _Applications_ folder inside your user account on the MAC. This means that you should try to use the same MAC in the IT suite whenever possible.
 
 You can also install this on your own computer at home.
 
@@ -62,17 +62,15 @@ Atom is open source, so this means there are lots of packages that can be added 
 > - Atom HTML Preview
 - toolbar (suda)
 
-> You can optionally use Atom to update your GitHub repository that is online. To do this you need to install this package:
+> You can also use Atom to update your GitHub repository that is online. 
 
-> - Git-Plus
-
-> Then in the terminal window copy and paste this:
+> In the terminal window copy and paste this:
 
 > `git config --global credential.helper osxkeychain`
 
 > You should now be able to _push_ your updates direct to GitHub and see the results on your web site.
 
-The MACs have installed an application called _GitHub Desktop_. Find this in the launchpad. If you want to install this on your own computer, it is free and [comes from here][c6de3c27]
+The MACs, in the IT studio, have an application called _GitHub Desktop_. Find this in the launchpad. If you want to install this on your own computer, it is free and [comes from here][c6de3c27]
 
   [c6de3c27]: https://desktop.github.com "grab GithUb Desktop"
 
@@ -80,13 +78,11 @@ The MACs have installed an application called _GitHub Desktop_. Find this in the
 - It will show a tutorial that you can come back to if you wish.
 - You now need to login with your GitHub account
 
-
 [![Login Details from GitHub are needed to login to GitHub Desktop](/images/2017/01/providetourLoginDetailsfromGitHub.png)](/images/2017/01/providetourLoginDetailsfromGitHub.png)
 
 Once you have done this you can now _clone_ the repository that is in your GitHub account online by selecting the **+** sign. All being well you should see something similar to this here:
 
 [![Choose your repo](/images/2017/01/clone.png)](/images/2017/01/clone.png)
-
 
 - You will be asked where to put it…. your Google drive is best! Stay in the GitHub desktop app:
 - In the GitHub desktop right-click over the repo name in the left sidebar and select **Open in Atom**
@@ -108,18 +104,18 @@ You can also have a look at the sample scene inside the **sampleScene** folder
 
 - Also inside the resources folder you will find various InDesign scripts. These scripts needs to go into your copy of InDesign. [The instructions are available here][8a498dac].
 
-  [8a498dac]: resources/README.md "help with the scripts"
+  [8a498dac]: /resources/README.md "help with the scripts"
 
 ## Ok, so what do I do now?
 Here are the steps to take:
 
 - Open InDesign and find your final version of the play (**only the play - not the Introduction**)
 - Make any corrections that you like (consider the comments from the previous assignment)
-- If you created any new styles you will need to go to the style panel and configure the _Export Tags_ feature.
+- If you created any new styles you will need to go to the style panel and configure the _Export Tags_ feature, making sure that each style will export with an HTML tag.
 
 [![The Export tagging panel in the paragraph styles](/images/2017/01/export_tagging.png)](/images/2017/01/export_tagging.png)
 
-- Now run the script (export_XHTML). You should see something like this:
+- Now run the provided script (export_XHTML). You should see something like this:
 
 [![Running the script export to XHTML - you will need to get this from the repo](/images/2017/01/export_toXHTML.png)](/images/2017/01/export_toXHTML.png)
 
@@ -134,7 +130,6 @@ In Atom it will look similar to this:
 - Copy all of the lines including the `<body>` opening and closing tag. You can make this easier by _collapsing_ the body tag:
 
 [![Copy the body tag when collapsed](/images/2017/01/copycollapsedBody_tag.png)](/images/2017/01/copycollapsedBody_tag.png)
-
 
 - Open the _play.xhtml_ file that is inside the docs folder (that you have from your repository) with **Atom**
 - Paste into this file and overwrite the `<body>` tag as per the instructions in that file.

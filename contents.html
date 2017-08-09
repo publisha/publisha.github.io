@@ -3,7 +3,7 @@ layout: default
 title: Contents
 published: true
 ---
-<section class="categories">
+<section class="categories allcontents">
   <ul class="navigation">
   <li class="header">Contents (Click or touch to expand)</li>
   <li class="dropdown"><a href="#">Screencasts <i class="fa fa-caret-down" aria-hidden="true"></i></a>
@@ -22,8 +22,6 @@ published: true
       <ul>
         {% assign pageitems = site.pages | sort: 'title' %}
           {% for page in pageitems %}
-
-
             {% for cat in page.categories %}
               {% if cat == category %}
                 <li><a href="{{ page.url }}">{{ page.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
@@ -36,16 +34,19 @@ published: true
     <li class="dropdown"><a href="#">Blog Articles <i class="fa fa-caret-down" aria-hidden="true"></i></a>
       <ul>
         {% for post in site.posts %}
-        <li><a title="{{ post.date | date_to_string }}" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}  <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+        <li><a title="{{ post.date | date_to_string }}" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}  <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
         {% endfor %}
       </ul>
     </li>
   </ul>
 </section>
-{% comment %}
-<section class="categories">
+<section class="categories allcontents">
 <ul class="navigationtoc">
-<li><a href="{{ site.baseurl }}/blog">Blog Articles <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+<li><a href="{{ site.baseurl }}/presentations">Presentations <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
 </ul>
 </section>
-{% endcomment %}
+<section class="categories allcontents">
+<ul class="navigationtoc">
+<li><a href="{{ site.baseurl }}/sections">Sections <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+</ul>
+</section>

@@ -1,7 +1,7 @@
 ---
 layout: paper
-title: Is this the Final Version?
-date: 2017-07-05
+title: Iterative Publishing
+date: 2017-08-09
 images: full-width
 Published: true
 annotate: true
@@ -25,8 +25,8 @@ status: [add to conclusion]
 - [Notes](#notes)
 
 </section><!-- /TOC -->
-# Is this the Final Version?
-**Iterative Publishing**
+# Iterative Publishing
+**Is this the Final Version?**
 
 **Author:** Chris Jennings
 

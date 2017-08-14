@@ -4,13 +4,32 @@
  <title>Digital Publisher Guide</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-08-14T13:12:59+01:00</updated>
+ <updated>2017-08-14T17:55:30+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Reading Progress</title>
+   <link href="http://localhost:4000/html/css/epub/2017/08/14/reading-progress/"/>
+   <updated>2017-08-14T17:07:00+01:00</updated>
+   <id>http://localhost:4000/html/css/epub/2017/08/14/reading-progress</id>
+   <content type="html">&lt;p&gt;Some time ago I wrote a post over on &lt;a href=&quot;http://www.pagetoscreen.net/journal/item/page_numbers&quot; title=&quot;read this piece from a while ago&quot;&gt;pagetoscreen.net&lt;/a&gt; about a progress bar in a fixed-layout eBook.&lt;/p&gt;
+
+&lt;p&gt;More recently, I was grateful to have been shared a link to an article by &lt;a href=&quot;https://css-tricks.com/reading-position-indicator/&quot; title=&quot;Reading Position Indicator&quot;&gt;Pankaj Parashar&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The idea is that when scrolling through a long article in a web browser, the scroll bar on the right is not really a strong enough indicator to the user, as to the amount of text that has been read, and how much remains.&lt;/p&gt;
+
+&lt;p&gt;Some discussions do suggest that the usual scroll bar is enough, but, there agin, the scrollbar disappears when the current window is not active. Of course, this varies over different browsers and platforms.&lt;/p&gt;
+
+&lt;p&gt;Pankaj Parashar’s article demonstrates the indicator at the top of the current window, but I agreed with some comments that this might be mistaken for some &lt;em&gt;content still loading&lt;/em&gt;, so I have implemented on this web site at the bottom of the window.&lt;/p&gt;
+
+&lt;p&gt;You will observe this &lt;strong&gt;reading position indicator&lt;/strong&gt; on some pages of this web site, although, I suspect, not on the article that you are reading, because it is (after all), rather short. The indicator is made to be very slightly transparent, to show the content underneath. I have also made the colour suitably adjusted to blend nicely with the overall scheme of the site.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Video across a 2 page spread</title>

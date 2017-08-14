@@ -9,7 +9,7 @@ Some time ago I wrote a post over on [pagetoscreen.net][e7c525bd] about a progre
 
   [e7c525bd]: http://www.pagetoscreen.net/journal/item/page_numbers "read this piece from a while ago"
 
-More recently, I was grateful to have been shared a link to an article by the very same [Pankaj Parashar][28dc5a67]
+More recently, I was grateful to have been shared a link to an article by the very same [Pankaj Parashar][28dc5a67].
 
   [28dc5a67]: https://css-tricks.com/reading-position-indicator/ "Reading Position Indicator"
 

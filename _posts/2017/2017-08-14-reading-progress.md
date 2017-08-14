@@ -1,15 +1,15 @@
 ---
 layout: "post"
-title: "Reading Progress"
+title: "Reading Progress Indicator"
 date: "2017-08-14 17:07"
 published: true
 categories: [HTML, CSS, ePub]
 ---
-Some time ago I wrote a post over on [pagetoscreen.net][e7c525bd] about a progress bar in a fixed-layout eBook.
+Some time ago I wrote a post over on [pagetoscreen.net][e7c525bd] about a progress bar in a fixed-layout eBook. In that article I also made a link to a web site that spoke about implementing the progress bar in HTML5.
 
   [e7c525bd]: http://www.pagetoscreen.net/journal/item/page_numbers "read this piece from a while ago"
 
-More recently, I was grateful to have been shared a link to an article by [Pankaj Parashar][28dc5a67]
+More recently, I was grateful to have been shared a link to an article by the very same [Pankaj Parashar][28dc5a67]
 
   [28dc5a67]: https://css-tricks.com/reading-position-indicator/ "Reading Position Indicator"
 

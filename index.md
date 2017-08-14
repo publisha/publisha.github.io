@@ -47,7 +47,7 @@ Once you have your repo mirrored on your iPad then you need to edit the content.
 
 [![Anything in 'Working Copy' can be edited in 'Editorial', an app on the iPad.](/images/editorial.jpg)](/images/editorial.jpg)
 
-> **Note**: This image is taken with an external keyboard attached, so the soft keyboard is not showing 
+> **Note**: This image is taken with an external keyboard attached, so the soft keyboard is not showing
 
 ### Design of the site
 
@@ -62,6 +62,12 @@ Images can be enlarged and use a variation of [Fancybox][f6b39499]{:target="_bla
 Footnotes are turned into popup notes[^1] using 'Bigfoot' jquery. You can [find out about this here][736ed6d1].
 
   [736ed6d1]: http://www.bigfootjs.com "Thanks to Chris Sauve for this!"
+
+The reading position indicator (see the green bar at the top of the page) is a modification of the code from Pankaj Parashar's version at [CodePen][3ba77385].
+
+  [3ba77385]: https://codepen.io/pankajparashar/pen/towxF "Check out this Code."
+
+  ---
 
   [![My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester.](/images/2017/01/fromWittenhamClumps.jpg)](/images/2017/01/fromWittenhamClumps.jpg)
 

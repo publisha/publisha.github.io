@@ -4,6 +4,11 @@
   {% include head.html %}
 
   <body class="theme-base-0b">
+    <progress value="0" id="progressBar">
+  <div class="progress-container">
+    <span class="progress-bar"></span>
+  </div>
+</progress>
     {% include sidebar.html %}
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
@@ -19,7 +24,7 @@
 
       <div class="container content">
         {{ content }}
-    
+
       </div>
 
     </div>
@@ -106,6 +111,8 @@
 
     });
     </script>
+
+    <script src="{{site.baseurl}}/public/js/progress.js"></script>
 
   </body>
 </html>

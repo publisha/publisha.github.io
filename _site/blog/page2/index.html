@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="/public/css/syntax.css">
   <link rel="stylesheet" href="/public/css/guide.css">
   <link rel="stylesheet" href="/public/css/bigfoot-default.css">
+  <link rel="stylesheet" href="/public/css/progressbar.css">
 
   <!-- Fonts -->
   <!-- can't use google fonts on GitHub unless https -->
@@ -69,7 +70,7 @@ section.toc {
 </script>
 
 
-<!-- Begin Jekyll SEO tag v2.2.0 -->
+<!-- Begin Jekyll SEO tag v2.2.3 -->
 <title>Blog Articles | Digital Publisher Guide</title>
 <meta property="og:title" content="Blog Articles" />
 <meta name="author" content="Chris Jennings" />
@@ -81,19 +82,18 @@ section.toc {
 <meta property="og:site_name" content="Digital Publisher Guide" />
 <link rel="prev" href="http://localhost:4000/blog/">
 <script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "WebPage",
-"headline": "Blog Articles",
-"author": {"@type": "Person",
-"name": {"name":"Chris Jennings","url":"https://twitter.com/pageboy"}},
-"description": "tutorials and screencasts about digital publishing and eBook Production",
-"url": "http://localhost:4000/blog/page2/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Blog Articles","author":{"@type":"Person","name":"Chris Jennings"},"description":"tutorials and screencasts about digital publishing and eBook Production","url":"http://localhost:4000/blog/page2/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
 
   <body class="theme-base-0b">
+    <progress value="0" id="progressBar">
+  <div class="progress-container">
+    <span class="progress-bar"></span>
+  </div>
+</progress>
     <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
 
@@ -1741,7 +1741,7 @@ and so on
   
 </div>
 
-    
+
       </div>
 
     </div>
@@ -1832,6 +1832,8 @@ and so on
 
     });
     </script>
+
+    <script src="/public/js/progress.js"></script>
 
   </body>
 </html>

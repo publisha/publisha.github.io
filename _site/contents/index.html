@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="/public/css/syntax.css">
   <link rel="stylesheet" href="/public/css/guide.css">
   <link rel="stylesheet" href="/public/css/bigfoot-default.css">
+  <link rel="stylesheet" href="/public/css/progressbar.css">
 
   <!-- Fonts -->
   <!-- can't use google fonts on GitHub unless https -->
@@ -63,7 +64,7 @@
 </script>
 
 
-<!-- Begin Jekyll SEO tag v2.2.0 -->
+<!-- Begin Jekyll SEO tag v2.2.3 -->
 <title>Contents | Digital Publisher Guide</title>
 <meta property="og:title" content="Contents" />
 <meta name="author" content="Chris Jennings" />
@@ -74,19 +75,18 @@
 <meta property="og:url" content="http://localhost:4000/contents/" />
 <meta property="og:site_name" content="Digital Publisher Guide" />
 <script type="application/ld+json">
-{"@context": "http://schema.org",
-"@type": "WebPage",
-"headline": "Contents",
-"author": {"@type": "Person",
-"name": {"name":"Chris Jennings","url":"https://twitter.com/pageboy"}},
-"description": "tutorials and screencasts about digital publishing and eBook Production",
-"url": "http://localhost:4000/contents/"}</script>
+{"@context":"http://schema.org","@type":"WebPage","headline":"Contents","author":{"@type":"Person","name":"Chris Jennings"},"description":"tutorials and screencasts about digital publishing and eBook Production","url":"http://localhost:4000/contents/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
 
   <body class="theme-base-0b">
+    <progress value="0" id="progressBar">
+  <div class="progress-container">
+    <span class="progress-bar"></span>
+  </div>
+</progress>
     <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
 
@@ -1315,7 +1315,7 @@
       <b>Note:</b> Images can be enlarged by click or touch
     </p>
   </div>
-  <div class="sidebar-item commons">
+  <div class="sidebar-item">
     <p>
     <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.4 2017
     </p>
@@ -2733,7 +2733,7 @@
 </ul>
 </section>
 
-    
+
       </div>
 
     </div>
@@ -2824,6 +2824,8 @@
 
     });
     </script>
+
+    <script src="/public/js/progress.js"></script>
 
   </body>
 </html>

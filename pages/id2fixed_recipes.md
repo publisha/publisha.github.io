@@ -3,7 +3,7 @@ layout: page
 title: InDesign to the Fixed Layout Recipe eBook
 published: true
 tags: InDesign
-categories: [InDesign, ePub]
+categories: [InDesign, ePub, "Digital Product"]
 screencast: [fixedlayout_recipes1]
 date: 2017-07-30
 blurb: This fixed-layout format can be considered almost the same as an interactive PDF, however, as you will see, the ePUB can have much more interactivity and, you, the designer can control the way the eBook is displayed.

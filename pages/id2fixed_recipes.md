@@ -39,6 +39,8 @@ This fixed-layout format can be considered almost the same as an interactive PDF
 
 ## Creative Cloud
 
+> Note: This section needs editing to bring up to date with InDesign CC 2017
+
 InDesign Creative Cloud 2014 introduced the ability to export the ePUB3 as a fixed-format package, and we can use this method to create a perfect acceptable ePUB3. However, it should be pointed out that the controls for the way certain aspects work in the export process (in the current version), are very limited:
 
  - There is no way to include footnotes as popups (they will simply be at the bottom of the page - as in your print version)

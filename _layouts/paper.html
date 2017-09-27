@@ -8,7 +8,11 @@
   </title>
 
   <body class="theme-base-book">
-
+    <progress value="0" id="progressBar">
+    <div class="progress-container">
+    <span class="progress-bar"></span>
+    </div>
+    </progress>
     <div class="wrap">
       <div class="container content">
         {% if page.status != null %}
@@ -19,7 +23,9 @@
         </p>
         {% endif %}
         {{ content }}
-
+        {% if page.comments %}
+          {% include disqus.html %}
+        {% endif %}
       </div>
 
     </div>
@@ -102,5 +108,6 @@
 
     });
     </script>
+    <script src="{{site.baseurl}}/public/js/progress.js"></script>
   </body>
 </html>

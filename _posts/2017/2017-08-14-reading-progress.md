@@ -4,6 +4,7 @@ title: "Reading Progress Indicator"
 date: "2017-08-14 17:07"
 published: true
 categories: [HTML, CSS, ePub]
+comments: true
 ---
 Some time ago I wrote a post over on [pagetoscreen.net][e7c525bd] about a progress bar in a fixed-layout eBook. In that article I also made a link to a web site that spoke about implementing the progress bar in HTML5.
 

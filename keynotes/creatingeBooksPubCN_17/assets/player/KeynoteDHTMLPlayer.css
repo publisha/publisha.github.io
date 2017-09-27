@@ -19,7 +19,7 @@ body
 {
     body
     {
-        background-color: black;
+        background-color: #0065C1;
     }
 }
 
@@ -31,7 +31,7 @@ div.bigBlackSquare
     width: 1024px;
     height: 1024px;
     visibility: hidden;
-    background-color: black;
+    background-color: #0065C1;
 }
 
 /* Debug Status Display */

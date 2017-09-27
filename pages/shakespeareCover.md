@@ -12,7 +12,7 @@ order: 1
 
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
-## On this Page
+## Contents
 
 - [Objectives](#objectives)
 - [Our page size](#our-page-size)

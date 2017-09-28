@@ -24,6 +24,6 @@ Here are some references given in the talk:
 
 [Medea](http://www.pagetoscreen.net/journal/item/medea_a_performance_history "PagetoScreen - Medea, a performance history") - a Fixed layout ePub with animation and interactivity
 
-[eBook Typography](http://www.pagetoscreen.net/ebooks/item/ebook_typography_for_flowable_ebooks "PagetoScreen | eBook | eBook Typography for Flowable eBooks") - an ebook authored by me
+[eBook Typography](http://www.pagetoscreen.net/ebooks/item/ebook_typography_for_flowable_ebooks) - an ebook authored by me
 
-[From Print Book to eBook](http://www.pagetoscreen.net/ebooks/item/from_print_book_to_ebook "PagetoScreen | eBook | From Print Book to eBook") - an eBook in iBooks Author from me
+[From Print Book to eBook](http://www.pagetoscreen.net/ebooks/item/from_print_book_to_ebook) - an eBook in iBooks Author from me

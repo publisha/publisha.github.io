@@ -106,6 +106,9 @@ KNWebGLUtil.bindTextureWithImage = function(gl, image) {
     // bind WebGLTexture object to gl.TEXTURE_2D target
     gl.bindTexture(gl.TEXTURE_2D, texture);
 
+    gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, true);
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+
     gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, image);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
@@ -232,7 +235,7 @@ WebGraphics.multiplyPoint3DByScalar = function(point, scalar) {
     var obj = {};
     obj.x = point.x * scalar;
     obj.y = point.y * scalar;
-    obj.z = point.y * scalar;
+    obj.z = point.z * scalar;
     return obj;
 };
 
@@ -792,6 +795,63 @@ function TwistFX(location, percent) {
         return TSUSineMap(x);
     }
 }
+
+// CGRectIntersection
+function CGRectIntersection(r1, r2) {
+    var r = {
+        "origin": {
+            "x": 0,
+            "y": 0
+        },
+        "size": {
+            "width": 0,
+            "height": 0
+        }
+    };
+
+    var x1, x2, y1, y2;
+
+    x1 = Math.max(r1.origin.x, r2.origin.x);
+    x2 = Math.min(r1.origin.x + r1.size.width, r2.origin.x + r2.size.width);
+
+    if (x1 > x2) {
+        return r;
+    }
+
+    y1 = Math.max(r1.origin.y, r2.origin.y);
+    y2 = Math.min(r1.origin.y + r1.size.height, r2.origin.y + r2.size.height);
+
+    if (y1 > y2) {
+        return r;
+    }
+
+    r.origin.x = x1;
+    r.size.width = x2 - x1;
+    r.origin.y = y1;
+    r.size.height = y2 - y1;
+
+    return r;
+};
+
+// CGRectIntegral
+function CGRectIntegral(rect) {
+    var r = {
+        "origin": {
+            "x": 0,
+            "y": 0
+        },
+        "size": {
+            "width": 0,
+            "height": 0
+        }
+    };
+
+    r.origin.x = Math.floor(rect.origin.x);
+    r.origin.y = Math.floor(rect.origin.y);
+    r.size.width = Math.ceil(rect.origin.x + rect.size.width) - r.origin.x;
+    r.size.height = Math.ceil(rect.origin.y + rect.size.height) - r.origin.y;
+    return r;
+};
 
 window.requestAnimFrame = (function() {
     return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame

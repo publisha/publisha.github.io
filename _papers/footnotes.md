@@ -30,3 +30,22 @@ When Edward Gibbons published his 6 volume *The History of the Decline and Fall 
 
 
 The History of the Decline and Fall of the Roman Empire by Edward Gibbon. Third Edition. Copy scanned from John Adams Library at the Boston Public Library.
+
+Annotations
+User annotations
+
+Text to image
+Image to text
+Multimedia
+
+Translations
+Hyperlinks
+Online citations
+Digital sources urls or doi
+
+Multimedia diversions
+Slide shows
+
+Addendum
+
+EBook standards

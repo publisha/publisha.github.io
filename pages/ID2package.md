@@ -3,7 +3,7 @@ layout: page
 title: Preflight and Package for Print and Output to PDF
 published: true
 categories: [InDesign, "Design and Production"]
-date: 2017-07-31
+date: 2017-10-12
 blurb: At some point during our workflow and design process we want to send something to the proof printer. Normally the best approach to this is to output to PDF from InDesign and then print from this file.
 order: 6
 ---
@@ -98,6 +98,12 @@ Make sure you have selected PDF for print and not interactive.
 
 Under Marks and Bleeds, select crop marks and use the Document Bleed settings.
 
+### What is the slug?
+
+If your PDF needs it, you might wish to add some notes outside the page but within the print area of the PDF.  A slug can be added on any, or all sides of the page.
+
+If you are working on the cover, you may want to add fold marks that align with the spine or even the flaps if your cover includes those. The fold marks must be within the slug but outside the document area.
+
 Once you have the correct settings, use ‘Save Preset’ and give these settings a name.
 
 [![The package panel shows errors. There are none in this file.](/images/2017/07/ID2package/image1.jpeg)](/images/2017/07/ID2package/image1.jpeg)
@@ -118,7 +124,8 @@ When you create the package you will asked to add some information to an `instru
 
 You should add your name to the appropriate field, and add the extent, size and colour in the blank fields at the bottom as in this image. You may need to edit this text file since this dialogue box is rather limited in space given. You will find the text file ‘instructions.txt’ (unless you renamed), in the package folder.
 
-> Note: It is important that you get an extent (number of pages) that is even and divisible by 8 for this project.
+> Note: It is important that you get an extent (number of pages) that is even and divisible by 8 or 16 for this project. In a real project, the printer would advise about the signature. 
 
+Don’t forget to count the total number of pages rather than just observe the page numbers.
 
 > Be very careful to count all pages from the half-title to the end. Add blanks if necessary but always end the InDesign file with a left (recto) page.

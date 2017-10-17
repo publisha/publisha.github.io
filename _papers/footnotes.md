@@ -29,7 +29,7 @@ This paper sets out to explore the relationship between the footnote in the prin
 
 What are the conventions in print publishing to display footnotes, side notes and other forms of deviations from the narrative flow? We will look at some examples of the way information is cross linked and where this information is  typically displayed in the printed work.
 
-The paper will be divided into 3 parts:
+The paper will be divided into 4 parts:
 
 ### Footnotes and other deviations in print, past and present
 A review of footnotes in history and how publishers have implemented in the printed work. We look at the conventions from the past and what standards are adopted in publishing today.
@@ -39,6 +39,9 @@ In the screen based medium, we can adopt other methods for linking references in
 
 ### Beyond the narrative flow: interactivity as a way to supplement the content on the page
 On the pages of some print books (particularly text books), information is arranged in panels in a very busy arrangement. Popup interactivity can help bring this chaos to order and provide more space for the _root_ information.
+
+### Supplementing a Shakespeare Play in Digital form
+Footnotes, glossaries and added media using examples from student work on the MA Publishing Media course at Oxford Brookes University
 
 
 

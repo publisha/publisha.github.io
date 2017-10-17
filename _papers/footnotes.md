@@ -16,9 +16,11 @@ comments: true
 **Author:** Chris Jennings
 
 ## Abstract
-When Edward Gibbon published his 6 volume *The History of the Decline and Fall of the Roman Empire* towards the end of the 18th Century, he included almost  8,000 footnotes. He wasn’t the first to incorporate supplementary information but  Gibbon’s work established the standard for academic publications.
+When Edward Gibbon published his 6 volume *The History of the Decline and Fall of the Roman Empire* towards the end of the 18th Century, he included almost  8,000 footnotes. He wasn’t the first to incorporate supplementary information but Gibbon’s work established the standard for academic publications.
 
-Footnotes are marvellous things. They can provide extra information that helps to elaborate or to cite sources. Publishers don’t like footnotes;  they prefer endnotes, because they are far easier to manage. But endnotes become a burden for reader who need to memorise the reference number, page number and even the chapter number before heading off to the back of the book to track down the elusive note.
+Footnotes are marvellous things. They can provide extra information that helps to elaborate or to cite sources. Publishers don’t like footnotes;  they prefer endnotes, because they are far easier to manage and encourage buyers to purchase the complete book rather than download a sample.
+
+Endnotes become a burden for reader who need to memorise the reference number, page number and even the chapter number before heading off to the back of the book to track down the elusive note.
 
 Footnotes are an endangered species. With the coming of the 21st century, the hyperlink was thought to solve many of these conundrums. They don’t. But  what about the eBook. Can authors be creative with the interactive note in the eBook? What can the  popup note and the scrolling *excursus* add to an author’s work?
 
@@ -27,7 +29,18 @@ This paper sets out to explore the relationship between the footnote in the prin
 
 What are the conventions in print publishing to display footnotes, side notes and other forms of deviations from the narrative flow? We will look at some examples of the way information is cross linked and where this information is  typically displayed in the printed work.
 
-Examples of the way footnotes 
+The paper will be divided into 3 parts:
+
+### Footnotes and other deviations in print, past and present
+A review of footnotes in history and how publishers have implemented in the printed work. We look at the conventions from the past and what standards are adopted in publishing today.
+
+### Out of the flow in Digital products
+In the screen based medium, we can adopt other methods for linking references in the text to footnote content. Of course we can't call them footnotes anymore and they may be _hyperlinks_ or _popups_.
+
+### Beyond the narrative flow: interactivity as a way to supplement the content on the page
+On the pages of some print books (particularly text books), information is arranged in panels in a very busy arrangement. Popup interactivity can help bring this chaos to order and provide more space for the _root_ information.
+
+
 
 
 The History of the Decline and Fall of the Roman Empire by Edward Gibbon. Third Edition. Copy scanned from John Adams Library at the Boston Public Library.

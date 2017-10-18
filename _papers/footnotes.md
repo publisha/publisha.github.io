@@ -22,10 +22,15 @@ Footnotes are marvellous things. They can provide extra information that helps t
 
 However, endnotes are a burden for the reader who need to memorise the reference number, page number and even the chapter number before heading off to the back of the book to track down the elusive note.
 
-Footnotes are an endangered species. With the coming of the 21st century, the hyperlink was thought to solve many of these conundrums. They don’t. But  what about the eBook. Can authors be creative with the interactive note in the eBook? What can the  popup note and the scrolling *excursus* add to an author’s work?
+Footnotes are an endangered species; notes are often relegated to end of the chapter or at the end of the book. The internet gave us to the _hyperlink_ and it was thought to solve the referencing paradigm.
+
+The hyperlink introduces another problem; the _back button_.
+
+### Along Comes the eBook
+Can authors be creative with the interactive note in the eBook? What can the  popup note and the scrolling *excursus* add to an author’s work?
 
 ## Introduction
-This paper sets out to explore the relationship between the footnote in the printed work and  equivalent devices in screen based medium.
+This paper sets out to explore the relationship between the footnote in the printed work and equivalent devices in screen based medium.
 
 What are the conventions in print publishing to display footnotes, side notes and other forms of deviations from the narrative flow? We will look at some examples of the way information is cross linked and where this information is  typically displayed in the printed work.
 

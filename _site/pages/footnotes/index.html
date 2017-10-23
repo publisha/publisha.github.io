@@ -64,7 +64,7 @@
 </script>
 
 
-<!-- Begin Jekyll SEO tag v2.2.3 -->
+<!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>Footnotes, Endnotes, Sidenotes and Popup Notes | Digital Publisher Guide</title>
 <meta property="og:title" content="Footnotes, Endnotes, Sidenotes and Popup Notes" />
 <meta name="author" content="Chris Jennings" />
@@ -77,7 +77,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-07-30T00:00:00+01:00" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"BlogPosting","headline":"Footnotes, Endnotes, Sidenotes and Popup Notes","author":{"@type":"Person","name":"Chris Jennings"},"datePublished":"2017-07-30T00:00:00+01:00","dateModified":"2017-07-30T00:00:00+01:00","description":"tutorials and screencasts about digital publishing and eBook Production","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/footnotes/"},"url":"http://localhost:4000/pages/footnotes/"}</script>
+{"name":null,"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/pages/footnotes/","publisher":null,"image":null,"headline":"Footnotes, Endnotes, Sidenotes and Popup Notes","dateModified":"2017-07-30T00:00:00+01:00","datePublished":"2017-07-30T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/footnotes/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -1361,7 +1361,7 @@
   </div>
   <div class="sidebar-item">
     <p>
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.4 2017
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.5 2017
     </p>
   </div>
 </div>
@@ -1539,17 +1539,15 @@ would improve usability.</p>
 
 <p>So instead of this:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;p&gt;</span>To death, or to a vow of single life.<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"reference"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;</span>To death, or to a vow of single life.<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"reference"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>We do this:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;p&gt;&lt;a</span> <span class="na">class=</span><span class="s">reference</span> <span class="na">epub:type=</span><span class="s">"noteref"</span> <span class="na">href=</span><span class="s">"dream-116.xhtml#footnote-002"</span><span class="nt">&gt;</span>To death, or to a vow of single life. <span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;p&gt;&lt;a</span> <span class="na">class=</span><span class="s">reference</span> <span class="na">epub:type=</span><span class="s">"noteref"</span> <span class="na">href=</span><span class="s">"dream-116.xhtml#footnote-002"</span><span class="nt">&gt;</span>To death, or to a vow of single life. <span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>With some further adjustments to the <code class="highlighter-rouge">CSS</code> for the reference class of
 hyperlink, we can see the result.</p>
@@ -1589,14 +1587,13 @@ of notes loses it’s numbering and the backlink does not work.</p>
 ePub file by adding the numbers into the notes list. You will find XHTML
 markup that looks something like the following:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3</pre></td><td class="code"><pre><span class="nt">&lt;aside</span> <span class="na">id=</span><span class="s">"footnote-003"</span><span class="na">class=</span><span class="s">"_idFootnote"</span> <span class="na">epub:type=</span><span class="s">"footnote"</span><span class="nt">&gt;</span> <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"footnotes"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"_idFootnoteAnchor_idGenColorInherit"</span> <span class="na">href=</span><span class="s">"introduction.xhtml#footnote-003-backlink"</span><span class="nt">&gt;&lt;/a&gt;</span>
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;aside</span> <span class="na">id=</span><span class="s">"footnote-003"</span><span class="na">class=</span><span class="s">"_idFootnote"</span> <span class="na">epub:type=</span><span class="s">"footnote"</span><span class="nt">&gt;</span> <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"footnotes"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"_idFootnoteAnchor_idGenColorInherit"</span> <span class="na">href=</span><span class="s">"introduction.xhtml#footnote-003-backlink"</span><span class="nt">&gt;&lt;/a&gt;</span>
   John Shakespeare's father, Richard Shakespeare, was a tenant farmer,who wasin1550 renting his little farm at Snitterfield, four miles north of Stratford,from another farmer, Robert Arden of Wilmcote.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/aside&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>If you look carefully, you will see that the link tag ends before any
 content. It should be wrapping around the number. We can add the number
@@ -1677,17 +1674,15 @@ signals for the eBook format to get the correct message!</p>
 <p>So, in the final page we need to have a look at the destination
 references and where we find this:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"footnotes-numbered"</span><span class="nt">&gt;&lt;a</span> <span class="na">id=</span><span class="s">"_idTextAnchor032"</span><span class="nt">&gt;&lt;/a&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"footnotes-numbered"</span><span class="nt">&gt;&lt;a</span> <span class="na">id=</span><span class="s">"_idTextAnchor032"</span><span class="nt">&gt;&lt;/a&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>We need to add the <code class="highlighter-rouge">&lt;aside&gt;</code> block inside the list item like this:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"footnotes-numbered"</span><span class="nt">&gt;&lt;a</span> <span class="na">id=</span><span class="s">"_idTextAnchor032"</span><span class="nt">&gt;&lt;/a&gt;</span> <span class="nt">&lt;aside</span> <span class="na">id=</span><span class="s">"footnote-001"</span> <span class="na">epub:type=</span><span class="s">"footnote"</span><span class="nt">&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"footnotes-numbered"</span><span class="nt">&gt;&lt;a</span> <span class="na">id=</span><span class="s">"_idTextAnchor032"</span><span class="nt">&gt;&lt;/a&gt;</span> <span class="nt">&lt;aside</span> <span class="na">id=</span><span class="s">"footnote-001"</span> <span class="na">epub:type=</span><span class="s">"footnote"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>Not forgetting to close the <code class="highlighter-rouge">&lt;aside&gt;</code> tag before the <code class="highlighter-rouge">&lt;/li&gt;</code>.</p>
 
@@ -1735,13 +1730,13 @@ version of the ePub for the Kindle may be necessary.</p>
 <div class="footnotes">
   <ol>
     <li id="fn:3">
-      <p>The Elements of Typographic Style, Bringhurst, Robert, Hartley &amp; Marks, Publishers, 2012&nbsp;<a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+      <p>The Elements of Typographic Style, Bringhurst, Robert, Hartley &amp; Marks, Publishers, 2012 <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:1">
-      <p>see Edward Tufte and <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000ld">this thread on sidenotes</a>&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>see Edward Tufte and <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000ld">this thread on sidenotes</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>If you use the scripts mentioned here to put the notes in the margin or at the end of the book or chapter then your pop-up notes will not work in the reflowable eBook.&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>If you use the scripts mentioned here to put the notes in the margin or at the end of the book or chapter then your pop-up notes will not work in the reflowable eBook. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

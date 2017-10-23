@@ -64,7 +64,7 @@
 </script>
 
 
-<!-- Begin Jekyll SEO tag v2.2.3 -->
+<!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>Creating a Reflowable eBook | Digital Publisher Guide</title>
 <meta property="og:title" content="Creating a Reflowable eBook" />
 <meta name="author" content="Chris Jennings" />
@@ -77,7 +77,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-07-30T00:00:00+01:00" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"BlogPosting","headline":"Creating a Reflowable eBook","author":{"@type":"Person","name":"Chris Jennings"},"datePublished":"2017-07-30T00:00:00+01:00","dateModified":"2017-07-30T00:00:00+01:00","description":"tutorials and screencasts about digital publishing and eBook Production","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/id2reflowable/"},"url":"http://localhost:4000/pages/id2reflowable/"}</script>
+{"name":null,"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/pages/id2reflowable/","publisher":null,"image":null,"headline":"Creating a Reflowable eBook","dateModified":"2017-07-30T00:00:00+01:00","datePublished":"2017-07-30T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/id2reflowable/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -1361,7 +1361,7 @@
   </div>
   <div class="sidebar-item">
     <p>
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.4 2017
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.5 2017
     </p>
   </div>
 </div>
@@ -1567,10 +1567,9 @@
 
 <p>In the markup language of HTML for the web, images should have some alternative text so that screen readers for people with visual impairment, can read aloud the text description when the image is encountered in the reading order. So, it is with the ePub format. All images should have some ‘ALT text’. Here is what this would look like in the HTML markup:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"image/ancathens.png"</span> <span class="na">alt=</span><span class="s">"Ancient Athens showing the Parthenon"</span> <span class="nt">/&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"image/ancathens.png"</span> <span class="na">alt=</span><span class="s">"Ancient Athens showing the Parthenon"</span> <span class="nt">/&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 <p>We can add the ALT text in a variety of ways.</p>
 
 <h3 id="image-metadata">Image Metadata</h3>
@@ -1841,29 +1840,27 @@
 
 <p>You will notice in this view with Apple’s iBooks, we seem to have lost the heading for the Act — above Scene 1. This is because we used a white text against a deep offset grey rule with InDesign. This does not get converted to any supported CSS, so we will need to add this back with a background for the style of this heading. We do this with ur very own CSS file like this:</p>
 
-<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3</pre></td><td class="code"><pre><span class="nt">h1</span><span class="nc">.act</span> <span class="p">{</span>
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">h1</span><span class="nc">.act</span> <span class="p">{</span>
 <span class="nl">background</span><span class="p">:</span> <span class="no">silver</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <h3 id="blank-pages">Blank Pages</h3>
 
 <p>You may also experience blank pages in the eBook. This is because we have 2 mechanisms that have effected where the pages break. We have a style for the Acts and Scenes that starts on the next odd page and we have also <em>split</em> the eBook by creating a new HTML file for each section. We can easily resolve this by editing the CSS inside the ePub. Here is what would need:</p>
 
-<div class="language-css highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-4</pre></td><td class="code"><pre><span class="nt">h1</span><span class="nc">.act</span><span class="o">,</span> <span class="nt">h2</span><span class="nc">.scene</span> <span class="p">{</span>
+4
+</pre></td><td class="rouge-code"><pre><span class="nt">h1</span><span class="nc">.act</span><span class="o">,</span> <span class="nt">h2</span><span class="nc">.scene</span> <span class="p">{</span>
 <span class="nl">page-break-after</span><span class="p">:</span><span class="nb">auto</span><span class="p">;</span>
 <span class="nl">page-break-before</span><span class="p">:</span><span class="nb">auto</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p><a class="video fancybox.iframe fa fa-film" title="From InDesign to reflowable ePub" href="https://www.youtube.com/embed/-bXM3_viRoE?rel=0&amp;showinfo=0"> This video shows you what happens when you first export to the reflowable ePub from a print ready InDesign book file. Then we see what we have to change to get better results.</a></p>
 
@@ -1872,10 +1869,10 @@
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>There is a project to develop a hybrid ePub format that will allow the mixture of reflowable and fixed-layout pages. If you want to explore this further then you should go to the <a href="http://idpf.org/epub/31" title="EPUB 3.1 - International Digital Publishing Forum">International Digital Publishing Forum </a>web site. The IDPF has now merged with the W3 organisation.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>There is a project to develop a hybrid ePub format that will allow the mixture of reflowable and fixed-layout pages. If you want to explore this further then you should go to the <a href="http://idpf.org/epub/31" title="EPUB 3.1 - International Digital Publishing Forum">International Digital Publishing Forum </a>web site. The IDPF has now merged with the W3 organisation. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>If we plan to convert the ePub to the Kindle MOBI format then we may need to display a table of contents somewhere. This is because the Amazon recommend this for their format. However, we can find other ways of resolving this. A topic to be addressed later.&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>If we plan to convert the ePub to the Kindle MOBI format then we may need to display a table of contents somewhere. This is because the Amazon recommend this for their format. However, we can find other ways of resolving this. A topic to be addressed later. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

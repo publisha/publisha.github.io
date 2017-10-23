@@ -70,7 +70,7 @@ section.toc {
 </script>
 
 
-<!-- Begin Jekyll SEO tag v2.2.3 -->
+<!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>Blog Articles | Digital Publisher Guide</title>
 <meta property="og:title" content="Blog Articles" />
 <meta name="author" content="Chris Jennings" />
@@ -83,7 +83,7 @@ section.toc {
 <link rel="prev" href="http://localhost:4000/blog/">
 <link rel="next" href="http://localhost:4000/blog/page3/">
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebPage","headline":"Blog Articles","author":{"@type":"Person","name":"Chris Jennings"},"description":"tutorials and screencasts about digital publishing and eBook Production","url":"http://localhost:4000/blog/page2/"}</script>
+{"name":null,"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"WebPage","url":"http://localhost:4000/blog/page2/","publisher":null,"image":null,"headline":"Blog Articles","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -1367,7 +1367,7 @@ section.toc {
   </div>
   <div class="sidebar-item">
     <p>
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.4 2017
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.5 2017
     </p>
   </div>
 </div>
@@ -1492,14 +1492,13 @@ section.toc {
 <p>Export from pages to Word (make sure to use docx - the default)
 Locate the file just exported in the finder and change directory to there.</p>
 
-<div class="language-terminal highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3</pre></td><td class="code"><pre><span class="w">$ </span><span class="nc">cd</span><span class="kv"> documents/myfles
-</span><span class="w">$ </span><span class="nc">pandoc</span><span class="kv"> --wrap=none --extract-media=images somefile.docx
-</span> -o mynewfile.md
-</pre></td></tr></tbody></table>
-</div>
-</div>
+3
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span> <span class="nb">cd </span>documents/myfles
+<span class="gp">$</span> pandoc <span class="nt">--wrap</span><span class="o">=</span>none <span class="nt">--extract-media</span><span class="o">=</span>images somefile.docx
+<span class="go"> -o mynewfile.md
+</span></pre></td></tr></tbody></table></code></pre></div></div>
 <p>Here is an explanation of this terminal command:</p>
 
 <ul>
@@ -1518,18 +1517,17 @@ Locate the file just exported in the finder and change directory to there.</p>
 <h2 id="the-markdown-file">The Markdown file</h2>
 <p>The markdown file will now need some editing. Here is what a portion looks like:</p>
 
-<div class="language-markdown highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
-5</pre></td><td class="code"><pre>Extracting XML from InDesign depends on a number of factors, but if we
+5
+</pre></td><td class="rouge-code"><pre>Extracting XML from InDesign depends on a number of factors, but if we
 successfully achieve our goal then we can be pleased that we have styled
 all of our content and mapped these styles to our document structure.
 <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"_Toc1"</span> <span class="na">class=</span><span class="s">"anchor"</span><span class="nt">&gt;&lt;/span&gt;</span>What is XML and why do we want
 it?
-</pre></td></tr></tbody></table>
-</div>
-</div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 <p>The reason that we are not seeing markdown headings with <code class="highlighter-rouge">##</code> is because our pages document did not have named styles that could be converted. Not perfect, but we know that any span tag like this one is a heading, so we simply use a GREP search and replace like this:</p>
 
 <pre><code class="language-grep">&lt;span id=".+?" class="anchor"&gt;&lt;/span&gt;
@@ -1576,25 +1574,23 @@ it?
 
 <p>Previously:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
 ... some menu items
 <span class="nt">&lt;/div&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>Now we can just use:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3</pre></td><td class="code"><pre><span class="nt">&lt;nav&gt;</span>
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;nav&gt;</span>
 ... some menu items
 <span class="nt">&lt;/nav&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>But also, HTML5 is very forgiving, because you can leave tags unclosed and the browser is supposed to take a jolly good guess at what is supposed to be.</p>
 
@@ -1608,23 +1604,20 @@ it?
 
 <p>Here is a transitional one:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 <p>Here is a strict one:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>And here is HTML5, pure and simple, no references to data held on the web:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="cp">&lt;!doctype html&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="cp">&lt;!doctype html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <h2 id="how-can-we-validate">How can we validate?</h2>
 
@@ -1657,28 +1650,26 @@ it?
 
 <p>With the Mac Terminal application open locate the ePubcheck file that you just downloaded and:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2</pre></td><td class="code"><pre><span class="w">$ </span><span class="nc">cd</span><span class="kv"> /Applications/Utilities/ebook_tools/epubcheck-4.0.2
-</span><span class="w">$ </span><span class="nc">java</span><span class="kv"> -jar pubcheck-4.0.2 &lt;path to the ePub file&gt;
-</span></pre></td></tr></tbody></table>
-</div>
-</div>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span> <span class="nb">cd</span> /Applications/Utilities/ebook_tools/epubcheck-4.0.2
+<span class="gp">$</span> java <span class="nt">-jar</span> pubcheck-4.0.2 &lt;path to the ePub file&gt;
+</pre></td></tr></tbody></table></code></pre></div></div>
 <p>You should see something like this:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3</pre></td><td class="code"><pre><span class="w">$ </span><span class="nc">Validating</span><span class="kv"> using EPUB version 3.0.1 rules.
-</span><span class="w">$ </span><span class="nc">No</span><span class="kv"> errors or warnings detected.
-</span><span class="w">$ </span><span class="nc">epubcheck</span><span class="kv"> completed
-</span></pre></td></tr></tbody></table>
-</div>
-</div>
+3
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span> Validating using EPUB version 3.0.1 rules.
+<span class="gp">$</span> No errors or warnings detected.
+<span class="gp">$</span> epubcheck completed
+</pre></td></tr></tbody></table></code></pre></div></div>
 <p>All sorts of code will need validating and by <a href="http://codebeautify.org" title="This is very useful indeed" target="_blank">going to CodeBeautify</a> you are bound to find exactly what you need.</p>
 
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>Chris Colyer’s Website is the <a href="https://css-tricks.com/snippets/css/browser-specific-hacks/" title="Off to the web" target="_blank">goto place</a> for browser hacks:&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>Chris Colyer’s Website is the <a href="https://css-tricks.com/snippets/css/browser-specific-hacks/" title="Off to the web" target="_blank">goto place</a> for browser hacks: <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -1771,7 +1762,7 @@ The space-before could be 6pts and the space-after 2.5pts. This then computes as
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p><strong>Just to clarify</strong>: InDesign will sort this out for print, because the body text will come back to the baseline grid, after these interruptions. But in the eBook, we need to explicitly set the spacing for these ‘interruptions’ to bring things back to the alignment.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p><strong>Just to clarify</strong>: InDesign will sort this out for print, because the body text will come back to the baseline grid, after these interruptions. But in the eBook, we need to explicitly set the spacing for these ‘interruptions’ to bring things back to the alignment. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

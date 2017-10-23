@@ -64,7 +64,7 @@
 </script>
 
 
-<!-- Begin Jekyll SEO tag v2.2.3 -->
+<!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>Video across a 2 page spread | Digital Publisher Guide</title>
 <meta property="og:title" content="Video across a 2 page spread" />
 <meta name="author" content="Chris Jennings" />
@@ -77,7 +77,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-03-31T23:30:00+01:00" />
 <script type="application/ld+json">
-{"@context":"http://schema.org","@type":"BlogPosting","headline":"Video across a 2 page spread","author":{"@type":"Person","name":"Chris Jennings"},"datePublished":"2017-03-31T23:30:00+01:00","dateModified":"2017-03-31T23:30:00+01:00","description":"There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/indesign/epub/html/2017/03/31/spread-video-fxl-epub/"},"url":"http://localhost:4000/indesign/epub/html/2017/03/31/spread-video-fxl-epub/"}</script>
+{"name":null,"description":"There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width.","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/indesign/epub/html/2017/03/31/spread-video-fxl-epub/","publisher":null,"image":null,"headline":"Video across a 2 page spread","dateModified":"2017-03-31T23:30:00+01:00","datePublished":"2017-03-31T23:30:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/indesign/epub/html/2017/03/31/spread-video-fxl-epub/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -1361,7 +1361,7 @@
   </div>
   <div class="sidebar-item">
     <p>
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.4 2017
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.5 2017
     </p>
   </div>
 </div>
@@ -1415,10 +1415,9 @@
 
 <p>Look at this line:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=792,height=594"</span> <span class="nt">/&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=792,height=594"</span> <span class="nt">/&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>Take a note of the width (yours may be different to mine). Now <strong>change</strong> the width on the first <code class="highlighter-rouge">&lt;div&gt;</code>, because this will have a width that is half of the width above; You see that this is an inline CSS - this is why we cannot change in our own CSS.</p>
 
@@ -1426,7 +1425,7 @@
 
 <p>Here is mine:</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
@@ -1434,7 +1433,8 @@
 6
 7
 8
-9</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"position:absolute;
+9
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"position:absolute;
 overflow:hidden;
 left:0px;
 top:0px;
@@ -1443,9 +1443,7 @@ top:0px;
 transform:translate(0.00px,0.00px);
 width:396.00px;
 height:594.00px"</span><span class="nt">&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 <p>The width should be changed from <code class="highlighter-rouge">396.00px</code> to <code class="highlighter-rouge">792px</code></p>
 
 <p>The next change is to hide the second <code class="highlighter-rouge">&lt;div&gt;</code>. Find the second block that also has a width set to half the overall viewport width and add (within the inline style):</p>
@@ -1464,20 +1462,18 @@ height:594.00px"</span><span class="nt">&gt;</span>
 
 <p>We could remove the ‘autoplay’ in the HTML for the video.</p>
 
-<div class="language-html highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3</pre></td><td class="code"><pre><span class="nt">&lt;video</span> <span class="na">id=</span><span class="s">"_idVideo000"</span> <span class="na">poster=</span><span class="s">"image/80.png"</span> <span class="na">autoplay=</span><span class="s">"autoplay"</span><span class="nt">&gt;</span>
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;video</span> <span class="na">id=</span><span class="s">"_idVideo000"</span> <span class="na">poster=</span><span class="s">"image/80.png"</span> <span class="na">autoplay=</span><span class="s">"autoplay"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"video/msnd01.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+</pre></td></tr></tbody></table></code></pre></div></div>
 <p>However, this is not enough, because InDesign has used javascript to start the video <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> and you will need to disable for second video by removing this:</p>
 
-<div class="language-javascript highlighter-rouge"><div class="codehilite"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nx">data</span><span class="o">-</span><span class="nx">mediaOnPageLoadActions</span><span class="o">=</span><span class="s2">"onMediaStart(selfContainerID,0.00,0);"</span>
-</pre></td></tr></tbody></table>
-</div>
-</div>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nx">data</span><span class="o">-</span><span class="nx">mediaOnPageLoadActions</span><span class="o">=</span><span class="s2">"onMediaStart(selfContainerID,0.00,0);"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 <p>I suppose you might just as well delete all of the last &lt;div&gt; or use HTML comment tags to remove.</p>
 
@@ -1488,10 +1484,10 @@ height:594.00px"</span><span class="nt">&gt;</span>
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>It may be possible to use javascript to change the markup on the page dynamically and thereby allowing us to change this even if we have made further edits in InDesign. Let me know if you find a way.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>It may be possible to use javascript to change the markup on the page dynamically and thereby allowing us to change this even if we have made further edits in InDesign. Let me know if you find a way. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>The reason that there is javascript to autoplay the video rather than just using ‘autoplay’ is that Apple iOS devices do not support the HTML5 video autostart attribute.&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+      <p>The reason that there is javascript to autoplay the video rather than just using ‘autoplay’ is that Apple iOS devices do not support the HTML5 video autostart attribute. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>

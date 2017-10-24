@@ -1,10 +1,11 @@
 ---
 title: Images of Books in Paintings and Sculpture
-date: 18-10-2017
+date: 2017-10-23
 flickr_album: 72157687532719080
 layout: flickr
 published: true
 categories: [Books and Typography]
 ---
 
-## This is a gallery of images from Flickr
+## This is a gallery of images from my Flickr stream
+The image of the book in art.

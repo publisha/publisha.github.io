@@ -37,7 +37,7 @@
       options = this.options;
       element = $(this.element);
       domId = "fancyPhotoset-" + options.photosetId;
-      jsonUrl = "https://api.flickr.com/services/rest/?" + "method=flickr.photosets.getPhotos&" + ("api_key=" + options.apiKey + "&") + ("photoset_id=" + options.photosetId + "&") + ("user_id=" + options.flickrId + "&") + "extras=url_sq,url_t,url_s,url_m,url_o&" + "format=json&jsoncallback=?";
+      jsonUrl = "https://api.flickr.com/services/rest/?" + "method=flickr.photosets.getPhotos&" + ("api_key=" + options.apiKey + "&") + ("photoset_id=" + options.photosetId + "&") + ("user_id=" + options.flickrId + "&") + "extras=description,url_sq,url_t,url_s,url_m,url_o&" + "format=json&jsoncallback=?";
       element.append(($("<ul/>")).attr("id", domId).addClass("fancyPhotoset"));
       return $.getJSON(jsonUrl, function(data) {
         $.each(data.photoset.photo, function(index, photo) {
@@ -54,10 +54,11 @@
               size: options.large
             }),
             rel: "flickr-" + options.photosetId,
-            title: photo.title
+            title: photo.title + " | " + photo.description._content
           });
           anchor.html(image).fancybox(options.fancybox);
           if (options.captions) {
+            image.after(($("<p/>")).addClass("caption").text(photo.description._content));
             image.after(($("<p/>")).addClass("caption").text(photo.title));
           }
           return element.find("ul").append(($("<li/>")).html(anchor));

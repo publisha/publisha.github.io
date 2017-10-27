@@ -46,11 +46,9 @@ In the screen based medium, we can adopt other methods for linking references in
 On the pages of some print books (particularly text books), information is structured in panels in a very busy arrangement. Interactive popups can help bring this chaos to order and provide more space for the _root_ information. Glossaries, definitions and asides can all be hidden until needed.
 
 ### 4. Supplementing a Shakespeare Play in Digital form
-Footnotes, glossaries and added media are used in project work by students  on the MA Publishing Media course at Oxford Brookes University. What can we learn from these examples?
+Footnotes, glossaries and added media are used in project work by students on the MA Publishing Media course at Oxford Brookes University. What can we learn from these examples?
 
-
-
-
+<!--
 The History of the Decline and Fall of the Roman Empire by Edward Gibbon. Third Edition. Copy scanned from John Adams Library at the Boston Public Library.
 
 Annotations
@@ -72,4 +70,5 @@ Addendum
 
 EBook standards
 
+-->
 [^1]: Chuck Zerby, *The Devil’s Details: A History of Footnotes* (Touchstone 2002)

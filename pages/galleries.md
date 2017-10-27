@@ -15,6 +15,7 @@ permalink: galleries/index.html
   {% for gallery in items limit:30 %}
   <div class="post">
   <h2><a href="{{ site.baseurl }}{{ gallery.url }}">{{ gallery.title }}</a></h2>
+  
   <span class="post-date">{{ gallery.date | date_to_string }}</span>
   <p><a href="{{ site.baseurl }}{{ gallery.url }}">Permalink to this Gallery page</a></p>
   </div>

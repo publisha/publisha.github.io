@@ -52,4 +52,5 @@ progress::-webkit-progress-bar {
   display: block;
   height: inherit;
   opacity: .7;
+  overflow: auto !important;
 }

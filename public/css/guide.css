@@ -20,6 +20,13 @@ body {
   margin-bottom: 30px;
 }
 
+body {
+  /*try to deal with scrollbar on header*/
+  /*overflow: hidden !important;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+}
+
 
 @media screen {
 
@@ -30,7 +37,6 @@ body {
   padding-right: 1rem;
   margin-left:  auto;
   margin-right: auto;
-  /*border:1px solid red;*/
 }
 
 }
@@ -58,12 +64,32 @@ font-size: 70%;
   }
 }
 
+/*style="overflow:hidden;
+border-bottom:1px solid gray;
+position:fixed !important;
+top:0;
+left:0;
+width:100% !important;
+z-index:1;
+height:60px;"*/
+
+/*masthead is now fixed*/
+
 .masthead {
   padding-top: 1rem;
   padding-bottom: .1rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid gray;
+  position:fixed !important;
+  top:0;
+  left:0;
+  width:100% !important;
+  z-index:1;
+  height:68px;
+  overflow:hidden;
+  background:white;
 }
+
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -78,6 +104,10 @@ font-size: 70%;
   font-weight: 400;
   color: #c0c0c0;
   letter-spacing: 0;
+}
+
+.masthead .container {
+  padding:0 18px 0 18px;
 }
 
 /*put the images on the left and let the text flow*/
@@ -115,6 +145,7 @@ font-size: 70%;
   background-color: #fff;
   border-radius: 4px;
   cursor: pointer;
+  z-index:100;
 
   /*border:3px solid green;*/
 }
@@ -185,13 +216,12 @@ font-size: 70%;
           transform: translateX(15rem);
 }
 
-/*Only move the wrap by  small amount*/
+/*Only move the content by  small amount*/
 
-#sidebar-checkbox:checked ~ .wrap {
+#sidebar-checkbox:checked ~ .wrap > .content, #sidebar-checkbox:checked ~ .masthead {
   -webkit-transform: translateX(5rem);
       -ms-transform: translateX(5rem);
           transform: translateX(5rem);
-
 }
 
 section.categories {
@@ -220,7 +250,7 @@ section.categories {
 
 /*this bar icon is shown when the screen is small*/
 .contents {
-  position: absolute;
+  position: fixed;
   font-size: 24px;
   top:  .8rem;
   left: 2rem;
@@ -230,6 +260,7 @@ section.categories {
   color: #505050;
   /*background-color: #fff;*/
   cursor: pointer;
+  z-index:100;
 
   /*border:3px solid green;*/
 }
@@ -241,7 +272,7 @@ section.categories {
     display:none;
   }
 
-  #sidebar-checkbox:checked ~ .wrap {
+  #sidebar-checkbox:checked ~ .wrap > .content {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);
@@ -532,7 +563,7 @@ a:focus {
 @media (max-width: 70rem) {
   .masthead-title {
     text-align: right;
-    margin-right:-100px;
+    margin-right:-50px;
 }
 
 @media print {
@@ -595,6 +626,10 @@ color:#657569;
 /* but on the full contents page we need the border on the left */
 .allcontents .navigation, .allcontents .navigationtoc {
   border-left: 1px solid #bbb;
+}
+
+.allcontents .navigation {
+  margin-top:2rem;
 }
 .navigation li.header {
   color: white;
@@ -884,4 +919,18 @@ border:1px solid silver;
   position: absolute;
   bottom: 10px;
   left: 0
+}
+
+
+/*large image on home page*/
+
+#pageimage {
+  display:block;
+  background-image: url('https://c1.staticflickr.com/5/4466/36866050894_aa545b9661_o_d.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size:cover;
+  width:100%;
+  height:260px;
 }

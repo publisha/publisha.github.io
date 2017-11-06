@@ -925,8 +925,9 @@ border:1px solid silver;
 /*large image on home page*/
 
 #pageimage {
+border:1px solid silver;
   display:block;
-  background-image: url('https://farm5.staticflickr.com/4466/36866050894_e95e506569.jpg');
+  background-image: url("https://farm5.staticflickr.com/4466/36866050894_e95e506569.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:auto;

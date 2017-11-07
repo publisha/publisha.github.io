@@ -456,6 +456,7 @@ code {
   page-break-inside: avoid;
 }
 }
+
 @media print {
 
 code {
@@ -560,7 +561,7 @@ a:focus {
 }
 
 
-@media (max-width: 70rem) {
+@media (max-width: 60rem) {
   .masthead-title {
     text-align: right;
     margin-right:-50px;

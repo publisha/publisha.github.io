@@ -561,7 +561,7 @@ a:focus {
 }
 
 
-@media (max-width: 80rem) {
+@media (max-width: 100rem) {
   .masthead-title {
     text-align: right;
     margin-right:-50px;

@@ -75,9 +75,9 @@
 <meta property="og:url" content="http://localhost:4000/pages/text2id/" />
 <meta property="og:site_name" content="Digital Publisher Guide" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-07-30T00:00:00+01:00" />
+<meta property="article:published_time" content="2017-11-08T00:00:00+00:00" />
 <script type="application/ld+json">
-{"name":null,"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/pages/text2id/","publisher":null,"image":null,"headline":"Text to InDesign","dateModified":"2017-07-30T00:00:00+01:00","datePublished":"2017-07-30T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/text2id/"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/pages/text2id/","publisher":null,"image":null,"headline":"Text to InDesign","dateModified":"2017-11-08T00:00:00+00:00","datePublished":"2017-11-08T00:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/text2id/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -1487,7 +1487,7 @@
 
 <p>GREP (<em>globally search a regular expression and print</em>) is a technique available within InDesign that uses regular expressions to find patterns within the text. Looking at my text with hidden characters showing,  I can see that if I search for 4 blank spaces followed by an uppercase character, this will capture the line of verse. Then I can remove the spaces and also apply my style throughout.</p>
 
-<p>I have searched for <code class="highlighter-rouge">\^ (\\u)</code> and I replaced with <code class="highlighter-rouge">\$1</code> (the contents of the bracket in the Find what box. I also changed to the paragraph style needed.</p>
+<p>I have searched for <code class="highlighter-rouge">^ (\u)</code> and I replaced with <code class="highlighter-rouge">$1</code> (the contents of the bracket in the Find what box. I also changed to the paragraph style needed.</p>
 
 <p>More GREP is used to locate and change the stage directions, ACT and scene. The false spaces that are within my text help me identify these patterns even though I plan to be rid of them!</p>
 
@@ -1501,13 +1501,13 @@
 
 <p>Here is the GREP that use to find the character names in the text:</p>
 
-<p><code class="highlighter-rouge">\^ (\\u\\u+)\\.</code></p>
+<p><code class="highlighter-rouge">^ (\u\u+)\.</code></p>
 
 <p>This means: beginning of paragraph, at least 2 spaces, 2 or more capital letters followed by a full stop and a space. I want to keep what I find inside the brackets.</p>
 
 <p>If your Shakespeare play has characters with more than one name with a space between the words (such as ‘FIRST FAIRY’) then you will need to use a second search term:</p>
 
-<p><code class="highlighter-rouge">\^ (\\u\\u+) (\\u\\u+)\\.</code></p>
+<p><code class="highlighter-rouge">^ (\u\u+) (\u\u+)\.</code></p>
 
 <p>If you want to type the pattern matching codes into the Find/Change dialogue box, then you will need to learn the syntax.</p>
 
@@ -1525,7 +1525,7 @@
 
 <p>Our ‘Change To’ field becomes:</p>
 
-<p><code class="highlighter-rouge">\$1\\r</code></p>
+<p><code class="highlighter-rouge">$1\r</code></p>
 
 <h2 id="changing-styles-with-grep">Changing Styles with GREP</h2>
 
@@ -1575,7 +1575,7 @@
 
 
 
-<p>This page last edited on: 2017-07-30</p>
+<p>This page last edited on: 2017-11-08</p>
 
 
       </div>

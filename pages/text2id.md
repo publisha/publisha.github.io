@@ -4,7 +4,7 @@ title: Text to InDesign
 published: true
 tags: InDesign
 categories: [InDesign, Typography, "Design and Production"]
-date: 2017-07-30
+date: 2017-11-08
 blurb: When working with text from sources outside InDesign, we are likely to find that we want to make changes as soon as we ‘place’ in InDesign.
 order: 7
 ---
@@ -93,7 +93,7 @@ Rather that go through the text by hand and apply the styles, I will use search 
 
 GREP (_globally search a regular expression and print_) is a technique available within InDesign that uses regular expressions to find patterns within the text. Looking at my text with hidden characters showing,  I can see that if I search for 4 blank spaces followed by an uppercase character, this will capture the line of verse. Then I can remove the spaces and also apply my style throughout.
 
-I have searched for `\^ (\\u)` and I replaced with `\$1` (the contents of the bracket in the Find what box. I also changed to the paragraph style needed.
+I have searched for `^ (\u)` and I replaced with `$1` (the contents of the bracket in the Find what box. I also changed to the paragraph style needed.
 
 More GREP is used to locate and change the stage directions, ACT and scene. The false spaces that are within my text help me identify these patterns even though I plan to be rid of them!
 
@@ -107,13 +107,13 @@ There are several steps.
 
 Here is the GREP that use to find the character names in the text:
 
-`\^ (\\u\\u+)\\.`
+`^ (\u\u+)\.`
 
 This means: beginning of paragraph, at least 2 spaces, 2 or more capital letters followed by a full stop and a space. I want to keep what I find inside the brackets.
 
 If your Shakespeare play has characters with more than one name with a space between the words (such as ‘FIRST FAIRY’) then you will need to use a second search term:
 
-`\^ (\\u\\u+) (\\u\\u+)\\.`
+`^ (\u\u+) (\u\u+)\.`
 
 If you want to type the pattern matching codes into the Find/Change dialogue box, then you will need to learn the syntax.
 
@@ -135,7 +135,7 @@ The ‘Change To’ menu choices are different, because we will want to keep som
 
 Our ‘Change To’ field becomes:
 
-`\$1\\r`
+`$1\r`
 
 ## Changing Styles with GREP
 

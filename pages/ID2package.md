@@ -47,7 +47,7 @@ Go to Window/Output/Preflight to display the Preflight dialogue box.
 
 Select Define Profiles from the context menu
 
-On the left list of categories, you will see Print. Select this and open all the triangles that point to the right that have either a dash or a tick along side them. This opens the topic and reveals its contents:
+On the left list of categories, you may see some existing profiles. You need to create a new one and open all the triangles that point to the right that have either a dash or a tick along side them. This opens the topic and reveals its contents:
 
 [![See the preflight panel](/images/2017/07/ID2package/image1.png)](/images/2017/07/ID2package/image1.png)
 
@@ -70,7 +70,7 @@ Starting at the top we will go through the options and explain them.
   - Type scaling
   - Minimum type size
 
-[![Preflight can check a number od aspects of the file.](/images/2017/07/ID2package/image3.png)](/images/2017/07/ID2package/image3.png)
+[![Preflight can check a number of aspects of the file.](/images/2017/07/ID2package/image3.png)](/images/2017/07/ID2package/image3.png)
 
 Look through the digital profile and check you understand the selections relevant to this preflight check.
 
@@ -124,7 +124,7 @@ When you create the package you will asked to add some information to an `instru
 
 You should add your name to the appropriate field, and add the extent, size and colour in the blank fields at the bottom as in this image. You may need to edit this text file since this dialogue box is rather limited in space given. You will find the text file ‘instructions.txt’ (unless you renamed), in the package folder.
 
-> Note: It is important that you get an extent (number of pages) that is even and divisible by 8 or 16 for this project. In a real project, the printer would advise about the signature. 
+> Note: It is important that you get an extent (number of pages) that is even and divisible by 8 or 16 for this project. In a real project, the printer would advise about the signature.
 
 Don’t forget to count the total number of pages rather than just observe the page numbers.
 

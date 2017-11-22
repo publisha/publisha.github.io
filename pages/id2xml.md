@@ -4,7 +4,7 @@
   published: true
   categories: [InDesign, XML, "Design and Production"]
   screencast: [id2xml1]
-  date: 2017-05-11
+  date: 2017-11-22
   blurb: XML is eXtensible Markup Language and is a non-proprietary markup language that can be used as a future-proof way to store content. XML indicates structure rather than style; in fact XML includes no information about appearance, only structure, hierarchy and element taxonomy.
   order: 8
 ---
@@ -98,7 +98,7 @@ A `DTD` (Document Type Definition) is a set of rules, that sets out what tags ca
 
 ## Do I need to use a DTD?
 
-It is not required that you use a DTD at all. If you want to add tag names to the Tags panel one at a time, this will also work. If you do it this way, then you need to produce a Tag for each element type in the play; characterName, prose, stageDirections — or whatever you wish to call them. You need to analyse the text so that you
+It is not required that you use a DTD at all. If you want to add tag names to the Tags panel one at a time, this will also work. If you do it this way, then you need to produce a Tag for each element type in the play; characterName, prose, stageDirections — or whatever you wish to call them. You need to analyse the text so that you can create tags that match the content. 
 
 ## Mapping Styles to Tags
 

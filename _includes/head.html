@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="{{site.baseurl}}/public/css/bigfoot-default.css">
   <link rel="stylesheet" href="{{site.baseurl}}/public/css/progressbar.css">
 
+
   <!-- Fonts -->
   <!-- can't use google fonts on GitHub unless https -->
 <link href='https://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic' rel='stylesheet'>
@@ -100,13 +101,41 @@ section.toc {
 {% endif %}
 
 
-
 <!-- javascripts for fancybox -->
 <script type="text/javascript" src="{{site.baseurl}}/public/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="{{site.baseurl}}/public/js/jquery.fancybox.pack.js">
 </script>
 <script type="text/javascript" src="{{site.baseurl}}/public/js/jquery.fancybox-media.js">
 </script>
+
+{% if page.title == "Home" %}
+<!-- for slides on home page -->
+  <script src="{{site.baseurl}}/public/js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+
+      $("#pageimage").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: false,
+        speed: 500,
+        timeout: 6000,
+        random: true,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+
+  <link rel="stylesheet" href="{{site.baseurl}}/public/css/responsiveslides.css">
+{% endif %}
+
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.github.url }}/public/apple-touch-icon-144-precomposed.png">
   <link rel="shortcut icon" href="{{ site.github.url }}/public/favicon.ico">
@@ -119,6 +148,8 @@ section.toc {
 <script type="text/javascript">
     $.bigfoot();
 </script>
+
+
 
 {% if page.annotate == "yes" %}
 <!-- annotations -->

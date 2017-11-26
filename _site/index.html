@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="/public/css/bigfoot-default.css">
   <link rel="stylesheet" href="/public/css/progressbar.css">
 
+
   <!-- Fonts -->
   <!-- can't use google fonts on GitHub unless https -->
 <link href='https://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic' rel='stylesheet'>
@@ -55,13 +56,41 @@ top:0;
 
 
 
-
 <!-- javascripts for fancybox -->
 <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
 </script>
 <script type="text/javascript" src="/public/js/jquery.fancybox-media.js">
 </script>
+
+
+<!-- for slides on home page -->
+  <script src="/public/js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+
+      $("#pageimage").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: false,
+        speed: 500,
+        timeout: 6000,
+        random: true,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+
+  <link rel="stylesheet" href="/public/css/responsiveslides.css">
+
+
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
   <link rel="shortcut icon" href="/public/favicon.ico">
@@ -74,6 +103,8 @@ top:0;
 <script type="text/javascript">
     $.bigfoot();
 </script>
+
+
 
 
 <!-- Begin Jekyll SEO tag v2.3.0 -->
@@ -1406,9 +1437,37 @@ top:0;
     </div>
 
     <div class="wrap">
-      
-        <div id="pageimage"></div>
-      
+
+
+    <div class="callbacks_container">
+        <ul class="rslides" id="pageimage">
+            <li><img src="images/homegallery/img_00123.jpg" alt="">
+          <!-- <p class="caption">This is a caption</p> -->
+            </li>
+          <li><img src="images/homegallery/img_00124.jpg" alt="">
+      <!-- <p class="caption">This is another caption</p> -->
+    </li>
+    <li>
+      <img src="images/homegallery/img_00125.jpg" alt="">
+      <!-- <p class="caption">The third caption</p> -->
+    </li>
+    <li>
+      <img src="images/homegallery/img_00126.jpg" alt="">
+      <!-- <p class="caption">The third caption</p> -->
+    </li>
+    <li>
+      <img src="images/homegallery/img_00127.jpg" alt="">
+      <!-- <p class="caption">The third caption</p> -->
+    </li>
+    <li>
+      <img src="images/homegallery/img_1894.jpg" alt="">
+      <!-- <p class="caption">The third caption</p> -->
+    </li>
+  </ul>
+</div>
+
+        <!-- <div id="pageimage"></div> -->
+
       <!-- masthead was here -->
       <div class="container content">
         <div class="page">

@@ -22,9 +22,37 @@
     </div>
 
     <div class="wrap">
-      {% if page.title == "Home" %}
-        <div id="pageimage"></div>
-      {% endif %}
+
+{% if page.title == "Home" %}
+    <div class="callbacks_container">
+        <ul class="rslides" id="pageimage">
+            <li><img src="images/homegallery/img_00123.jpg" alt="">
+          <!-- <p class="caption">This is a caption</p> -->
+            </li>
+          <li><img src="images/homegallery/img_00124.jpg" alt="">
+      <!-- <p class="caption">This is another caption</p> -->
+    </li>
+    <li>
+      <img src="images/homegallery/img_00125.jpg" alt="">
+      <!-- <p class="caption">The third caption</p> -->
+    </li>
+    <li>
+      <img src="images/homegallery/img_00126.jpg" alt="">
+      <!-- <p class="caption">The third caption</p> -->
+    </li>
+    <li>
+      <img src="images/homegallery/img_00127.jpg" alt="">
+      <!-- <p class="caption">The third caption</p> -->
+    </li>
+    <li>
+      <img src="images/homegallery/img_1894.jpg" alt="">
+      <!-- <p class="caption">The third caption</p> -->
+    </li>
+  </ul>
+</div>
+
+        <!-- <div id="pageimage"></div> -->
+{% endif %}
       <!-- masthead was here -->
       <div class="container content">
         {{ content }}

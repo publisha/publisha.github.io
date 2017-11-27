@@ -927,13 +927,14 @@ border:1px solid silver;
 
 #pageimage {
   display:block;
-  background-image: url("https://farm5.staticflickr.com/4466/36866050894_e95e506569.jpg");
+  /*background-image: url("https://farm5.staticflickr.com/4466/36866050894_e95e506569.jpg");*/
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
   background-position: center;
   background-size:cover;
   width:100%;
   max-height:300px;
+  margin-bottom:10px;
 }
 
 #pageimage img {

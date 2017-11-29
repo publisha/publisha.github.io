@@ -25,6 +25,20 @@
 
 {% if page.title == "Home" %}
     <div class="callbacks_container">
+<script>
+      $.getJSON("https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=15d0e5a14c22ab06ab29dd73b3610df3&photoset_id=72157687532719080&user_id=55648661%40N00&extras=url_o&format=json&nojsoncallback=1&auth_token=72157689705271104-876233c9aa26a2f3&api_sig=79b454f4e99a94f7c7a0a7a615f4d337", function(data){
+        $.each(data.items, function(i,item){
+          $("<img/>").attr("src", item.url.o).appendTo("#ipageimage")
+            .wrap("<a href='" + item.link + "'></a>");
+        });
+      });
+
+</script>
+
+
+
+
+
         <ul class="rslides" id="pageimage">
             <li><img src="images/homegallery/img_00123.jpg" alt="">
           <!-- <p class="caption">This is a caption</p> -->

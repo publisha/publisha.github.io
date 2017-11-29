@@ -940,3 +940,16 @@ border:1px solid silver;
 #pageimage img {
 width:100%;
 }
+
+/*centre the rolling images*/
+
+  #callbacks_container {
+    display:inline-block;
+      margin-bottom: 8px;
+      margin-top:0;
+      max-height:300px;
+      overflow: hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+  }

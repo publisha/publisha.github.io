@@ -3,7 +3,7 @@ layout: page
 title: Using the Book Panel in InDesign
 published: true
 categories: [InDesign, "Design and Production"]
-date: 2017-05-19
+date: 2017-11-29
 blurb: Quite often we will be working with very long publications that will benefit from the concept of separate files for separate sections or chapters. There are also advantages from having individuals in a team, work on different InDesign files (with common styles), and then bring them all together inside one book.
 order: 10
 ---
@@ -86,7 +86,7 @@ Master Pages (that use the same name) are prioritised from the Style Source docu
 
 ## The Table of Contents
 
-Building the TOC can happen in a new InDesign file, that uses the same page size as the other files in the book — or you can simply add to the first page of the from matter.
+Building the TOC can happen in a new InDesign file, that uses the same page size as the other files in the book — or you can simply add to the first page of the frontmatter.
 
 When creating the table of contents (menu>Layout>Table of Contents), be sure to select ‘Include Book Documents’
 
@@ -128,12 +128,15 @@ The order of sections and the way they are numbered follows certain conventions 
 
 What follows is the way we can number the pages in our example Shakespeare Play book.
 
-First point: all pages after the endpapers are counted, whether or not the page numbers are displayed. The half-title page would be the first to be counted.
-Second Point: The usual way to number Front Matter pages is to use lower case Roman numerals (i,ii,iii,iv). The Foreword and Table of Contents is part of the Front Matter. Our Life of Shakespeare text is probably, part of the front matter, because it is NOT about the play, but supplementary to it.
+**First point**: all pages after the endpapers are counted, whether or not the page numbers are displayed. The half-title page would be the first to be counted.
+
+**Second Point**: The usual way to number Front Matter pages is to use lower case Roman numerals (i,ii,iii,iv). The Foreword and Table of Contents is part of the Front Matter. Our Life of Shakespeare text is probably, part of the front matter, because it is NOT about the play, but supplementary to it.
 
 The Dramatis Personae (the list of characters) is often included in the front matter, but, again, you may see this differently in some editions.
-Third Point: The play should be numbered from page 1 in Arabic numerals.
-Fourth Point: The Table of Contents comes after the copyright page. This means it is likely to be starting on page v. Table of Contents pages are NOT numbered but are counted.
+
+**Third Point**: The play should be numbered from page 1 in Arabic numerals.
+
+**Fourth Point**: The Table of Contents comes after the copyright page. This means it is likely to be starting on page v. Table of Contents pages are NOT numbered but are counted.
 
 Finally: Your pages are likely to be as follows:
 - Half Title (Just the title of the play)(_recto_)
@@ -168,3 +171,5 @@ We can also configure whole book numbering options from the Book panel menu.
 ## Exporting to PDF
 
 When you are ready to export for print, then you should do this through the book panel context menu > Export Book to PDF. You will only see this item on the menu, if you have either selected all InDesign files in the book panel, or — you have selected none.
+
+**Note**: If you select 'Spreads' when exporting to PDF and you have single pages at the beginning or end of the chapters, then those pages will NOT be combined to spreads in the PDF. Printers usually require pages exported as single pages because they will conduct their own 'imposition' to put the pages into a printing order and signature.

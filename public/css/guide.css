@@ -566,12 +566,12 @@ a:focus {
     text-align: right;
     margin-right:-50px;
 }
+}
 
 @media print {
   .masthead-title {
     text-align: left;
     margin-right:0;
-}
 }
 .sideimage img {
   /*width:20%;*/

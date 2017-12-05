@@ -292,7 +292,7 @@ If you do use hyphenation then the typesetting software can control certain aspe
 - InDesign has a sophisticated hyphenation controller; you can decide how long a word needs to be before you allow to hyphenate.
 
 ## Typographer's Quotes and Apostrophes
-In a text coming from a scanned source or an author's work from simple word processors, the quotes around speech or citations may be unacceptable straight marks. They might look like "this". Whereas they should look like “this”. Apostrophes have a similar problem because they might be straight like `I've`, they should look like this `I‘ve`.
+In a text coming from a scanned source or an author's work from simple word processors, the quotes around speech or citations may be unacceptable straight marks. They might look like `"this"`. Whereas they should look like `“this”`. Apostrophes have a similar problem because they might be straight like `I've`, they should look like this `I‘ve`.
 
 InDesign can resolve this 2 ways.
 

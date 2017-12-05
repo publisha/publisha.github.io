@@ -4,7 +4,7 @@ title: Typographic detail with InDesign
 published: true
 tags: InDesign
 categories: [InDesign, Typography, "Design and Production"]
-date: 2017-06-13
+date: 2017-12-05
 blurb: InDesign is a brilliant tool to design the display of type on a page. We have every possible control over the letters, the words, the lines, the paragraphs and how the blocks of type are shaped, spaced and aligned.
 order: 9
 ---
@@ -12,6 +12,7 @@ order: 9
 <section class='toc'>
 ## On this Page
 
+- [On this Page](#on-this-page)
 - [Introduction](#introduction)
 - [Units of measure](#units-of-measure)
 - [InDesign preferences](#indesign-preferences)
@@ -25,6 +26,9 @@ order: 9
 - [Poetry, Verse and Song](#poetry-verse-and-song)
 - [Keep Options](#keep-options)
 - [Widows and Orphans](#widows-and-orphans)
+- [Further Details in the text](#further-details-in-the-text)
+- [Typographer's Quotes and Apostrophes](#typographers-quotes-and-apostrophes)
+- [OpenType features](#opentype-features)
 
 </section><!-- /TOC -->
 
@@ -255,3 +259,59 @@ We need to look carefully again at the Keep Options part of the paragraph styles
 Using these features can be rather disconcerting, because small changes may move our text in a very dramatic way. My advise is that you work from the beginning of your text in InDesign and try to resolve these issues from the first pages. If you are previewing changes at a later page, your visible text, will suddenly disappear as earlier text is forced to shift on to new pages!
 
 [![A finished spread](/images/2017/01/finalExample.png)](/images/2017/01/finalExample.png)
+
+## Further Details in the text
+### Hyphens and Dashes
+
+When text is typed or is scanned from a book, the hyphens are likely to be simple dashes or minus-signs. Like this `-`. This may be OK for some situations but there are other forms of dashes that are used in different contexts.
+
+Hyphens are used to join words together making a _compound_ word. An examples might be `Love-lost` or `milk-white`. The hyphen is also used when words are broken through hyphenation across 2 lines. This is usually and setting in our typesetting software, so that the hyphens are generated automatically. Hyphens do not have space around then but they can be slanted in some typefaces.
+
+The `en dash` is a line slightly longer than a hyphen and used to indicate between as in `1979–80`. It can have space around it as in `1979 – 80`. The `en dash` can also be used to indicate a parenthesis as in `we hoped for a white Christmas – rare in England – so we could make a snow-man`.
+
+The `em dash` can be used in the same way as the last item above. The `em dash` is longer and is used in a variety of contexts but often used at the end of a line to signify a pause before the next line is spoken or read.
+
+An example from '_A Midsummer Night's Dream_':
+
+> Of great revenue, and she hath no child—
+
+> From Athens is her house remote seven leagues—
+
+### Hyphenation
+It is important to realise that hyphenation should be used in InDesign with attention to detail. Here are some issues to consider:
+
+Hyphenation is only really necessary when the line lengths are short and justified alignment is used. Hyphenation can help avoid large spaces between words. When text is set to justified, then the typesetting software will adjust the word spacing (line-by-line) so as to make the paragraphs align both left and right. If your text is left aligned then hyphenation is usually unnecessary.
+
+**Hyphenation should not be used in headings.**
+
+If you do use hyphenation then the typesetting software can control certain aspects of this.
+
+- You should turn off hyphenation for capitalised words, so that countries and person's names are not broken between lines.
+- You should turn off hyphenation across columns (pages), so that words are not broken across page breaks.
+- You will want to be sure that the last word in a paragraph does not hyphenate.
+- InDesign has a sophisticated hyphenation controller; you can decide how long a word needs to be before you allow to hyphenate.
+
+## Typographer's Quotes and Apostrophes
+In a text coming from a scanned source or an author's work from simple word processors, the quotes around speech or citations may be unacceptable straight marks. They might look like "this". Whereas they should look like “this”. Apostrophes have a similar problem because they might be straight like `I've`, they should look like this `I‘ve`.
+
+InDesign can resolve this 2 ways.
+
+1. When you place the text, be sure to switch on `Typographer’s` quotes before placing (use the Options panel).
+1. You can use the 'Find/Replace' dialogue box and find the ready-made query that will replace all straight quotes with curly ones and straight single-quotes to single curly ones.
+
+## OpenType features
+If the font you are using is of the `Opentype` variety, you will be able to invoke some more appropriate characters and glyphs. One example is numbers. Numbers will look better as 'proportional old-style' if they are within the text. The numbers will align themselves to the lowercase of the font rather than use the same height as the uppercase letters.
+
+[![Lining numbers](/images/Screenshot 2017-12-05 19.50.54.png)](/images/Screenshot 2017-12-05 19.50.54.png)
+
+In the illustration seen here, the font used in the paragraph text is Minion Pro; this is an opentype font and so we can use proportional old style numbers.
+
+Other aspects of the font they you may wish to use (for even greater attention detail) are _Ligatures_ and _Kerning_.
+
+[![Ligatures in action](/images/Screenshot 2017-12-05 21.52.15.png)](/images/Screenshot 2017-12-05 21.52.15.png)
+
+**Ligatures** are essentially special glyphs that exist within the font that are characters put together. The example shown here includes the letters `s` and `t` that in their special form are joined together. You can see the available ligatures in the _glyph_ table of the font. Only well prepared fonts will have a full set of ligatures. Here we see the example of Adobe Jenson Pro in use.
+
+[![Glyph Table for Jenson](/images/Screenshot 2017-12-05 22.08.05.png)](/images/Screenshot 2017-12-05 22.08.05.png)
+
+**Kerning** is a setting within InDesign for the paragraph style that will adjust letter spacing for certain characters. The letters `A` and `v`, for example, should be optically set rather than using the metrics setting.

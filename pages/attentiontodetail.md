@@ -12,7 +12,6 @@ order: 9
 <section class='toc'>
 ## On this Page
 
-- [On this Page](#on-this-page)
 - [Introduction](#introduction)
 - [Units of measure](#units-of-measure)
 - [InDesign preferences](#indesign-preferences)
@@ -193,7 +192,7 @@ Under the Justification section of the paragraph style panel you can choose whic
 
 Hyphenation can be used to break some longer words between lines. Using hyphens can resolve some spacing problems between the words, however, hyphenation comes with its own issues such as visual unpleasantness when too many lines of text end with a hyphen.
 
-InDesign can use more sophisticated algorithms to calculate where to best place the hyphens and under the Hyphenation menu, you will see many choices.
+InDesign can use more sophisticated algorithms to calculate where to best place the hyphens and under the Hyphenation menu, you will see many choices. See below for further information on hyphens.
 
 [![Hypenation settings](/images/2017/01/hyphenation.png)](/images/2017/01/hyphenation.png)
 
@@ -274,7 +273,6 @@ The `em dash` can be used in the same way as the last item above. The `em dash` 
 An example from '_A Midsummer Night's Dream_':
 
 > Of great revenue, and she hath no child—
-
 > From Athens is her house remote seven leagues—
 
 ### Hyphenation

@@ -223,6 +223,8 @@ height:60px;"*/
   -webkit-transform: translateX(5rem);
       -ms-transform: translateX(5rem);
           transform: translateX(5rem);
+          width:100%;
+          z-index:1;
 }
 
 section.categories {

@@ -944,6 +944,12 @@ border:1px solid silver;
 
 #pageimage img {
 min-height:300px;
+background-image:url("/images/homegallery/img_00127.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: 100%;
+background-color: silver;
 }
 
 /*centre the rolling images*/

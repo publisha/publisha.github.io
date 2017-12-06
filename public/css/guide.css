@@ -191,6 +191,7 @@ height:60px;"*/
   left: -15rem;
   width: 15rem;
   visibility: hidden;
+  z-index:300;
   overflow-y: auto;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: .775rem; /* 15px */

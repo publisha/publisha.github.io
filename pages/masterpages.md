@@ -74,20 +74,25 @@ In order to achieve the display of the current chapter, we need to use ‘Text V
 
 In the ‘A-Master’, we should first add a text box as before, but this time we need to insert the Text Variable>Running Header.
 
-
 [![Insering or editing the Text Variables'](/images/2017/04/masterpages/image8.png)](/images/2017/04/masterpages/image8.png)
 
 Now we need to define where this variable gets its value, by going to:
 
 Type>Text Variables>Define. Select the Running Header and then in the dialogue box here, we need to select the paragraph style that the chapter heading is using.
 
-
 [!['Running Header' is default named Text Variable ](/images/2017/04/masterpages/image9.png)](/images/2017/04/masterpages/image9.png)
 
 As you can see there are other changes we can make to the text, if we need.
 
-
 [![You will see the name of the Text variable displayed on the master page](/images/2017/04/masterpages/image10.png)](/images/2017/04/masterpages/image10.png)
+
+###Multiple Running Headers
+
+The description above will cover a running header delivered from a paragraph style (typically a heading style) but there may be the need to take a variable from a character style.
+
+In our Shakespeare play, we want the Act and Scene to be available in the header. The Act variable is straightforward, because this is a paragraph style and we can use the instructions above. The running header for the Scene can also use a paragraph style, however in our work we use 2 different paragraph styles for this;  `scene` is the general style but `firstscene` is used for Scene heading after the Act heading. In this scenario we need to add a _character style_ to those elements. This character style is merely a named style, it does not need to be used to present a different appearance.
+
+Once the character style has been created it is very easy to use the `search/replace`method to look for the paragraph styles (scene and firstscene) and then replace the found content with the new character style. This character style can then be used as a new variable alongside our variable for the Act.
 
 ## Overriding Master Page Items
 

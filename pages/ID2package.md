@@ -3,7 +3,7 @@ layout: page
 title: Preflight and Package for Print and Output to PDF
 published: true
 categories: [InDesign, "Design and Production"]
-date: 2017-10-12
+date: 2017-12-08
 blurb: At some point during our workflow and design process we want to send something to the proof printer. Normally the best approach to this is to output to PDF from InDesign and then print from this file.
 order: 6
 ---
@@ -82,13 +82,19 @@ Look through the digital profile and check you understand the selections relevan
 - Select the correct profile for checking this file. (Print)
 - With the profile selected, InDesign displays any errors in the Info box of the Preflight panel.
 
+[![Load a preflight profile](/images/Screenshot 2017-12-08 12.57.18.png)](/images/Screenshot 2017-12-08 12.57.18.png)
+
+**Note:** [You can download the configured Preflight Profile][ed212a6e] that I created for you here; once downloaded you can load into InDesign from the Preflight Panel > Define Profiles.
+
+  [ed212a6e]: resources/ShakepeareBook.idpp "Grab this Preflight Profile"
+
 You should correct the errors and recheck the file.
 
 ## Creating print ready PDFs
 
 First make sure that there are no preflight errors.
 
-In Indesign go File&gt;Export&gt;PDF
+In Indesign go to File>Export>PDF
 
 [![Settings for the PDF](/images/2017/07/ID2package/image5.png)](/images/2017/07/ID2package/image5.png)
 
@@ -112,7 +118,13 @@ Once you have the correct settings, use ‘Save Preset’ and give these setting
 
 For your assignments you need to create a package from InDesign. This process creates a folder with all of the assets (linked files), fonts, and the print ready PDF with the created preset.
 
-To create the package go to File&gt;Package and go through the settings, making sure that you include the print ready PDF. This should be created from the preset that you previously saved.
+To create the package go to File>Package and go through the settings, making sure that you include the print ready PDF. This should be created from the preset that you previously saved.
+
+[![Define an Adobe PDF Preset](/images/Screenshot 2017-12-08 11.59.40.png)](/images/Screenshot 2017-12-08 11.59.40.png)
+
+**Note: **You can create the `Adobe PDF preset` before you create the package, so that it is available when reach that point in the package creation dialogue. To create the Adobe PDF preset go to the File menu and find Adobe PDF presets > Define. [Alternatively you can download the one I have created here][2066b844].
+
+  [2066b844]: resources/ShakespearePlay.joboptions "Grab this PDF profile before you create the package"
 
 ### Final Steps for creating the InDesign Package
 
@@ -124,8 +136,12 @@ When you create the package you will asked to add some information to an `instru
 
 You should add your name to the appropriate field, and add the extent, size and colour in the blank fields at the bottom as in this image. You may need to edit this text file since this dialogue box is rather limited in space given. You will find the text file ‘instructions.txt’ (unless you renamed), in the package folder.
 
-> Note: It is important that you get an extent (number of pages) that is even and divisible by 8 or 16 for this project. In a real project, the printer would advise about the signature.
+> Note: It is important that you get an extent (number of pages) that is even and divisible by 16 or possibly 8 for this project. In a real project, the printer would advise about the working requirements; in other words, you would normally discuss this with the printer.
 
 Don’t forget to count the total number of pages rather than just observe the page numbers.
 
 > Be very careful to count all pages from the half-title to the end. Add blanks if necessary but always end the InDesign file with a left (recto) page.
+
+## Creating the Package from an InDesign Book
+
+If you are using the book panel to combine chapters then the package creation happens from the context menu of the `book panel`. You can only select 'package Book for Print' when you have no InDesign file selected within hte book panel itself.

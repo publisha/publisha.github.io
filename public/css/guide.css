@@ -197,7 +197,7 @@ height:60px;"*/
   font-size: .775rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #202020;
-  opacity:.9;
+  opacity:1;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }

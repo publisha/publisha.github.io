@@ -122,7 +122,7 @@ To create the package go to File>Package and go through the settings, making sur
 
 [![Define an Adobe PDF Preset](/images/Screenshot 2017-12-08 11.59.40.png)](/images/Screenshot 2017-12-08 11.59.40.png)
 
-**Note: **You can create the `Adobe PDF preset` before you create the package, so that it is available when reach that point in the package creation dialogue. To create the Adobe PDF preset go to the File menu and find Adobe PDF presets > Define. [Alternatively you can download the one I have created here][2066b844].
+**Note:** You can create the `Adobe PDF preset` before you create the package, so that it is available when reach that point in the package creation dialogue. To create the Adobe PDF preset go to the File menu and find Adobe PDF presets > Define. [Alternatively you can download the one I have created here][2066b844].
 
   [2066b844]: resources/ShakespearePlay.joboptions "Grab this PDF profile before you create the package"
 

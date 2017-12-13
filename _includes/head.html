@@ -4,13 +4,12 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
   <title>
-    {% if page.title == "Home" %}
+    {%- if page.title == "Home" -%}
       {{ site.title }}
-    {% else %}
+    {%- else -%}
       {{ page.title }}
-    {% endif %}
+    {%- endif -%}
   </title>
 
   <!-- CSS -->
@@ -29,7 +28,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <!-- Optionally make the images go full width but put this in the page metadata -->
-{% if page.images == "full-width" %}
+{%- if page.images == "full-width" -%}
 <style>
 .sideimage img {
 width:auto;
@@ -41,9 +40,9 @@ margin-top:0;
 top:0;
 }
 </style>
-{% endif %}
+{%- endif -%}
 
-{% if page.images == "medium" %}
+{%- if page.images == "medium" -%}
 <style>
 .sideimage img {
 width:auto;
@@ -55,18 +54,18 @@ margin-top:0;
 top:0;
 }
 </style>
-{% endif %}
+{%- endif -%}
 
-{% if page.images == "none" %}
+{%- if page.images == "none" -%}
 <style>
 .sideimage img {
 display:none;
 }
 </style>
-{% endif %}
+{%- endif -%}
 
 
-{% if page.code == "wrap" %}
+{%- if page.code == "wrap" -%}
 <style>
 code {
   white-space: pre-wrap;
@@ -76,17 +75,17 @@ code {
   word-wrap: break-word;
 }
 </style>
-{% endif %}
+{%- endif -%}
 
-{% if page.type == "blog" %}
+{%- if page.type == "blog" -%}
 <style>
 section.toc {
   display:none;
 }
 </style>
-{% endif %}
+{%- endif -%}
 
-{% if page.layout == "screencast" %}
+{%- if page.layout == "screencast" -%}
 <style>
 .video {
   display:none;
@@ -98,7 +97,7 @@ section.toc {
   }
 }
 </style>
-{% endif %}
+{%- endif -%}
 
 
 <!-- javascripts for fancybox -->
@@ -108,7 +107,7 @@ section.toc {
 <script type="text/javascript" src="{{site.baseurl}}/public/js/jquery.fancybox-media.js">
 </script>
 
-{% if page.title == "Home" %}
+{%- if page.title == "Home" -%}
 <!-- for slides on home page -->
   <script src="{{site.baseurl}}/public/js/responsiveslides.min.js"></script>
 <script>
@@ -134,7 +133,7 @@ section.toc {
   </script>
 
   <link rel="stylesheet" href="{{site.baseurl}}/public/css/responsiveslides.css">
-{% endif %}
+{%- endif -%}
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.github.url }}/public/apple-touch-icon-144-precomposed.png">
@@ -151,7 +150,7 @@ section.toc {
 
 
 
-{% if page.annotate == "yes" %}
+{%- if page.annotate == "yes" -%}
 <!-- annotations -->
 <script type="application/json" class="js-hypothesis-config">
   {
@@ -159,6 +158,6 @@ section.toc {
   }
 </script>
 <script async src="https://hypothes.is/embed.js"></script>
-{% endif %}
-{% seo %}
+{%- endif -%}
+{%- seo -%}
 </head>

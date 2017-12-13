@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 
-  {% include bookhead.html %}
+  {%- include bookhead.html -%}
 
   <body class="theme-base-book">
-    {% include booksidebar.html %}
+    {%- include booksidebar.html -%}
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
@@ -18,20 +18,20 @@
       </div>
 
       <div class="container content">
-        {% if page.status != null %}
+        {%- if page.status != null -%}
         <p class="editor"><strong>Status of this page:</strong> {{page.status}}
-        {% endif %}
-        {% if page.date != null %}
-        {% if page.version != null %}<span class="version"><strong>Version:</strong> {{page.version}}{% endif %} | {{ page.date | date: '%B %d, %Y' }}</span>
+        {%- endif -%}
+        {%- if page.date != null -%}
+        {%- if page.version != null -%}<span class="version"><strong>Version:</strong> {{page.version}}{%- endif -%} | {{ page.date | date: '%B %d, %Y' }}</span>
         </p>
-        {% endif %}
+        {%- endif -%}
         {{ content }}
-{% include prevnextchapter.html %}
+{%- include prevnextchapter.html -%}
 
       </div>
 
     </div>
-<!-- {% include footer.html %} -->
+<!-- {%- include footer.html -%} -->
 <!-- now follows items that get the menu working -->
     <label title="the menu" for="sidebar-checkbox" class="sidebar-toggle fa fa-chevron-left fa-lg" aria-hidden="true"></label>
 <!-- this next item will be shown on small screens -->

@@ -24,7 +24,7 @@ eBook Publishing - {{ page.title }}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <!-- Optionally make the images go full width but put this in the page metadata -->
-{% if page.images == "full-width" %}
+{%- if page.images == "full-width" -%}
 <style>
 .sideimage img {
 width:auto;
@@ -36,9 +36,9 @@ margin-top:0;
 top:0;
 }
 </style>
-{% endif %}
+{%- endif -%}
 
-{% if page.images == "medium" %}
+{%- if page.images == "medium" -%}
 <style>
 .sideimage img {
 width:auto;
@@ -50,9 +50,9 @@ margin-top:0;
 top:0;
 }
 </style>
-{% endif %}
+{%- endif -%}
 
-{% if page.code == "wrap" %}
+{%- if page.code == "wrap" -%}
 <style>
 code {
   white-space: pre-wrap;
@@ -62,17 +62,17 @@ code {
   word-wrap: break-word;
 }
 </style>
-{% endif %}
+{%- endif -%}
 
-{% if page.type == "blog" %}
+{%- if page.type == "blog" -%}
 <style>
 section.toc {
   display:none;
 }
 </style>
-{% endif %}
+{%- endif -%}
 
-{% if page.layout == "screencast" %}
+{%- if page.layout == "screencast" -%}
 <style>
 .video {
   display:none;
@@ -84,7 +84,7 @@ section.toc {
   }
 }
 </style>
-{% endif %}
+{%- endif -%}
 <style>
 li.ur_here{{ page.order}} {
 background:#a2a2a2;
@@ -112,14 +112,14 @@ background:#a2a2a2;
 
 <!-- annotations -->
 
-<!-- {% if page.annotate != null %}
+<!-- {%- if page.annotate != null -%}
 <script type="application/json" class="js-hypothesis-config">
   {
     "openSidebar": false
   }
 </script>
 <script type='text/javascript' src='https://hypothes.is/embed.js?ver=4.8'></script>
-{% endif %} -->
+{%- endif -%} -->
 
-{% seo %}
+{%- seo -%}
 </head>

@@ -3,7 +3,7 @@ permalink: pretty
 markdown: kramdown
 timezone: Europe/London
 # relative_permalinks: true
-title:            Digital Publisher Guide
+title:            Digital Publisher Hub
 tagline:          'Help for publishers and students of publishing'
 description:      'tutorials and screencasts about digital publishing and eBook Production'
 url:              https://publisha.github.io
@@ -22,7 +22,7 @@ author:
 
 
 # Custom vars
-version:          0.56
+version:          0.6
 
 github:
   repo:           publisha.github.io

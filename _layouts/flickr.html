@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 
-  {% include galleryhead.html %}
+  {%- include galleryhead.html -%}
 
   <body class="theme-base-0b">
-    {% include sidebar.html %}
+    {%- include sidebar.html -%}
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>{% if page.layout == "post" %} | <a class="blogLink" href="{{ site.baseurl }}/blog" title="Blog Articles">Blog</a>{% endif %}<br />
+            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>{%- if page.layout == "post" -%} | <a class="blogLink" href="{{ site.baseurl }}/blog" title="Blog Articles">Blog</a>{%- endif -%}<br />
             <small>{{ site.tagline }}</small>
           </h3>
         </div>
@@ -44,7 +44,7 @@ $(function() {
       </div>
 
     </div>
-<!-- {% include footer.html %} -->
+<!-- {%- include footer.html -%} -->
 <!-- now follows items that get the menu working should it be fa-chevron-left fa-lg -->
     <label title="the menu" for="sidebar-checkbox" class="sidebar-toggle fa fa-bars fa-lg" aria-hidden="true"></label>
 <!-- this next item will be shown on small screens -->

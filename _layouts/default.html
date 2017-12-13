@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 
-  {% include head.html %}
+  {%- include head.html -%}
 
   <body class="theme-base-0b">
     <progress value="0" id="progressBar">
@@ -9,13 +9,13 @@
     <span class="progress-bar"></span>
   </div>
 </progress>
-    {% include sidebar.html %}
+    {%- include sidebar.html -%}
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
 
     <div class="masthead">
       <div class="container">
         <h3 class="masthead-title">
-          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>{% if page.layout == "post" %} | <a class="blogLink" href="{{ site.baseurl }}/blog" title="Blog Articles">Blog</a>{% endif %}<br />
+          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>{%- if page.layout == "post" -%} | <a class="blogLink" href="{{ site.baseurl }}/blog" title="Blog Articles">Blog</a>{%- endif -%}<br />
           <small>{{ site.tagline }}</small>
         </h3>
       </div>
@@ -23,7 +23,7 @@
 
     <div class="wrap">
 
-{% if page.title == "Home" %}
+{%- if page.title == "Home" -%}
     <div id="callbacks_container">
 <!-- <script>
       $.getJSON("https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=15d0e5a14c22ab06ab29dd73b3610df3&photoset_id=72157687532719080&user_id=55648661%40N00&extras=url_o&format=json&nojsoncallback=1&auth_token=72157689705271104-876233c9aa26a2f3&api_sig=79b454f4e99a94f7c7a0a7a615f4d337", function(data){
@@ -66,13 +66,13 @@
 </div>
 
         <!-- <div id="pageimage"></div> -->
-{% endif %}
+{%- endif -%}
       <!-- masthead was here -->
       <div class="container content">
         {{ content }}
       </div>
     </div>
-<!-- {% include footer.html %} -->
+<!-- {%- include footer.html -%} -->
 <!-- now follows items that get the menu working should it be fa-chevron-left fa-lg -->
     <label title="the menu" for="sidebar-checkbox" class="sidebar-toggle fa fa-bars fa-lg" aria-hidden="true"></label>
 <!-- this next item will be shown on small screens -->

@@ -16,36 +16,36 @@
   <nav class="sidebar-nav">
 <ul class="navigation">
 <li class="header">Pages by Category</li>
-{% for category in site.categories-list %}
+{%- for category in site.categories-list -%}
   <li class="dropdown"><a title="expand to see all pages about {{ category }}" href="#">{{ category }} <i style="color:white;" class="fa fa-caret-down" aria-hidden="true"></i></a>
       <ul>
-        {% assign pageitems = site.pages | sort: 'title' %}
-          {% for page in pageitems %}
-            {% for cat in page.categories %}
-              {% if cat == category %}
+        {%- assign pageitems = site.pages | sort: 'title' -%}
+          {%- for page in pageitems -%}
+            {%- for cat in page.categories -%}
+              {%- if cat == category -%}
                 <li><a href="{{ page.url }}">{{ page.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endfor -%}
       </ul>
   </li>
-      {% endfor %}
+      {%- endfor -%}
 </ul>
     <ul class="navigationtoc">
       <li class="header"><b>Other Items</b></li>
-    {% comment %}
+    {%- comment -%}
     <li><a class="sidebar-nav-item" href="{{ site.github.url }}archive/v{{ site.version }}.zip">Download</a></li>
     <li><a class="sidebar-nav-item" href="{{ site.github.url }}">GitHub project</a></li>
-     {% endcomment %}
-     <li><a title="regular blog articles" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/blog">Blog Articles <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     {%- endcomment -%}
+     <li><a title="regular blog articles" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/blog">Blog Articles <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
      </li>
-     <li><a title="screencasts from the YouTube channel" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/screencasts/">Screencasts <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     <li><a title="screencasts from the YouTube channel" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/screencasts/">Screencasts <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
      </li>
-{% comment %}
-     <li><a title="presentations generated from Keynote" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/presentations/">Presentations <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+{%- comment -%}
+     <li><a title="presentations generated from Keynote" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/presentations/">Presentations <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
      </li>
-{% endcomment %}
-      <li><a title="see all contents listed" class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/contents">List all Contents <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+{%- endcomment -%}
+      <li><a title="see all contents listed" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/contents">List all Contents <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
       </li>
     </ul>
   </nav>

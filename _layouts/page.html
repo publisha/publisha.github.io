@@ -6,14 +6,14 @@ layout: default
   <!-- <h1 class="page-title">{{ page.title }}</h1> -->
   {{ content }}
 <!-- We can only show one screencast at the moment -->
-  {% if page.screencast != null %}
+  {%- if page.screencast != null --%}
 <p><a href="{{site.baseurl}}/screencasts/{{ page.screencast }}">There is a Screencast that may help <i style="vertical-align:middle;" title="Show this screencast" class="fa fa-youtube-play fa-2x" aria-hidden="true"> </i></a></p>
-  {% endif %}
+  {%- endif -%}
 </div>
-{% if page.categories != null %}
+{%- if page.categories != null -%}
 <p><b>Filed under:</b> {{ page.categories | join: ', ' }}</p>
-{% endif %}
+{%- endif -%}
 
-{% if page.date != null %}
+{%- if page.date != null -%}
 <p>This page last edited on: {{page.date}}</p>
-{% endif %}
+{%- endif -%}

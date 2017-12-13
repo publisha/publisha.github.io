@@ -7,12 +7,12 @@ permalink: eBookPublishing/contents.html
 <section class="categories">
   <ul class="booknavigation">
   <li class="header">Contents</li>
-  {% assign items = site.eBookPublishing | sort: 'order' %}
-  {% for chapter in items limit:30 %}
+  {%- assign items = site.eBookPublishing | sort: 'order' -%}
+  {%- for chapter in items limit:30 -%}
 
   <li><a href="{{ site.baseurl }}{{ chapter.url }}">{{ chapter.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
 
-  {% endfor %}
+  {%- endfor -%}
   </ul>
 
 

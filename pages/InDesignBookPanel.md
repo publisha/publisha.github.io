@@ -3,7 +3,7 @@ layout: page
 title: Using the Book Panel in InDesign
 published: true
 categories: [InDesign, "Design and Production"]
-date: 2017-11-29
+date: 2017-12-08
 blurb: Quite often we will be working with very long publications that will benefit from the concept of separate files for separate sections or chapters. There are also advantages from having individuals in a team, work on different InDesign files (with common styles), and then bring them all together inside one book.
 order: 10
 ---
@@ -140,7 +140,7 @@ The Dramatis Personae (the list of characters) is often included in the front ma
 
 Finally: Your pages are likely to be as follows:
 - Half Title (Just the title of the play)(_recto_)
-- Blank
+- Blank or include a frontispiece 
 - Full Title (Title of the Play, Author, maybe date, and maybe including _with a brief Life of Shakespeare_ - and name of publisher (_recto_)
 - Copyright Page (you can leave blank)
 - Table of Contents (_starts on recto_)
@@ -171,5 +171,6 @@ We can also configure whole book numbering options from the Book panel menu.
 ## Exporting to PDF
 
 When you are ready to export for print, then you should do this through the book panel context menu > Export Book to PDF. You will only see this item on the menu, if you have either selected all InDesign files in the book panel, or — you have selected none.
-
 **Note**: If you select 'Spreads' when exporting to PDF and you have single pages at the beginning or end of the chapters, then those pages will NOT be combined to spreads in the PDF. Printers usually require pages exported as single pages because they will conduct their own 'imposition' to put the pages into a printing order and signature.
+
+See also ‘ [Preflight  and Package for Print and Output to PDF](https://publisha.github.io/pages/ID2package/ "Preflight and Package for Print and Output to PDF")’

@@ -86,7 +86,7 @@ Look through the digital profile and check you understand the selections relevan
 
 **Note:** [You can download the configured Preflight Profile][ed212a6e] that I created for you here; once downloaded you can load into InDesign from the Preflight Panel > Define Profiles.
 
-  [ed212a6e]: resources/ShakepeareBook.idpp "Grab this Preflight Profile"
+  [ed212a6e]: /resources/ShakepeareBook.idpp "Grab this Preflight Profile"
 
 You should correct the errors and recheck the file.
 
@@ -124,7 +124,7 @@ To create the package go to File>Package and go through the settings, making sur
 
 **Note:** You can create the `Adobe PDF preset` before you create the package, so that it is available when reach that point in the package creation dialogue. To create the Adobe PDF preset go to the File menu and find Adobe PDF presets > Define. [Alternatively you can download the one I have created here][2066b844].
 
-  [2066b844]: resources/ShakespearePlay.joboptions "Grab this PDF profile before you create the package"
+  [2066b844]: /resources/ShakespearePlay.joboptions "Grab this PDF profile before you create the package"
 
 ### Final Steps for creating the InDesign Package
 

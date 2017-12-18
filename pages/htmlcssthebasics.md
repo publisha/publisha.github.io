@@ -122,6 +122,22 @@ To work toward this end we need to:
 >**Examples**:
 paragraphs `<p>` and headings `<h1>`,`<h2>` etc)
 
+There are also box elements, that can surround other elements  and provide structural control of blocks of content.
+
+Here are some examples:
+
+* `<div>` - short for division and a general purpose block element
+* `<section>`-  this acts like `div` but expects certain internal elements like headings.
+* `<nav>` - we would expect that to be a menu of some navigational components
+* `<header>` -  at the top of the page
+* `<footer>` - at the bottom of the page
+
+In addition there are list items:
+
+* `<ul>` - an unordered list (often a bulleted list)
+* `<ol>` - ordered list (numbered)
+* `<li>` - these are the list items inside those above
+
 **Inline** elements are contained within a line
 
 >**Examples**:

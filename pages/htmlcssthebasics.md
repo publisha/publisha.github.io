@@ -4,6 +4,7 @@ title: The basics of HTML and CSS
 published: true
 categories: ["HTML and CSS", "Multi-Platform Publishing"]
 tags: [HTML and CSS]
+date:2017-12-18
 order:3
 blurb: This is a very simple explanation of HTML with some examples.
 ---
@@ -16,7 +17,7 @@ blurb: This is a very simple explanation of HTML with some examples.
 - [What does this example of HTML look like in a browser?](#what-does-this-example-of-html-look-like-in-a-browser)
 - [_Classes_ or how to get added control over the HTML markup.](#classes-or-how-to-get-added-control-over-the-html-markup)
 - [Presentation Logic](#presentation-logic)
-- [Types of Mark-up for HTML](#types-of-mark-up-for-html)
+- [Types of Mark-up for HTML](#types-of-mark-up-for-html)
 - [Styling the HTML with CSS](#styling-the-html-with-css)
 - [Syntactical Precision Required](#syntactical-precision-required)
 - [Inheritance](#inheritance)

@@ -3,13 +3,14 @@ layout: page
 title: The basics of HTML and CSS
 published: true
 categories: ["HTML and CSS", "Multi-Platform Publishing"]
-tags: [HTML and CSS]
+tags: ["HTML and CSS"]
 date:2017-12-18
 order:3
 blurb: This is a very simple explanation of HTML with some examples.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
+
 ## On this Page
 
 - [What is HTML?](#what-is-html)

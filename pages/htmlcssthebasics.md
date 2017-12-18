@@ -2,7 +2,7 @@
 layout: page
 title: The basics of HTML and CSS
 published: true
-categories: [HTML and CSS, “Multi-Platform Publishing”]
+categories: [“HTML and CSS”, “Multi-Platform Publishing”]
 tags: [HTML and CSS]
 order:3
 blurb: This is a very simple explanation of HTML with some examples.
@@ -134,7 +134,8 @@ Text elements within block level elements can be marked up with <span> tags or d
 Mark-up should be semantic and can use existing HTML tags
 
 **Examples**:
-`<h1 class="authorname">` or `<h2 class="chapter">` or  `<article>` or `<footer>`
+`<h1 class="authorname">` or `<h2 class="chapter">` or
+ `<article>` or `<footer>`
 
 ### The are many HTML elements
 

@@ -4,7 +4,8 @@ title: Repository for Shakespeare Play Web page
 published: true
 categories: ["Using GitHub", "Multi-Platform Publishing"]
 tags: [Using GitHub]
-date:  2017-08-08
+date:  2017-12-18
+order: 2
 blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->

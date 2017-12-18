@@ -2,7 +2,7 @@
 layout: page
 title: The basics of HTML and CSS
 published: true
-categories: [“HTML and CSS”, “Multi-Platform Publishing”]
+categories: ["HTML and CSS", "Multi-Platform Publishing"]
 tags: [HTML and CSS]
 order:3
 blurb: This is a very simple explanation of HTML with some examples.

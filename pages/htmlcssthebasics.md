@@ -5,7 +5,7 @@ published: true
 categories: ["HTML and CSS", "Multi-Platform Publishing"]
 tags: ["HTML and CSS"]
 date: 2017-12-18
-order: 3
+order: 2
 blurb: This is a very simple explanation of HTML with some examples.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -281,7 +281,8 @@ When an element is set to float (left or right), then it will shift away, allowi
 - Blocks can also have a z-index defined to accomplish stacking
 
 ### Defining by a Position Rule
-There are 3 type of positioning available:
+There are 4 type of positioning available:
+1. static (this is same as no position set)
 1. relative
 1. absolute
 1. fixed
@@ -320,6 +321,9 @@ left:0;
 ```
 
 In this example the copyright block will be fixed at the bottom of the viewport and will stay there even when the user scrolls their window.
+
+>**Note:** We would only use `static` if we need to reset the position to the default
+
 
 ## Units of Measure
 

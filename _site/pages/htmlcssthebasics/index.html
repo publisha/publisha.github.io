@@ -48,8 +48,10 @@
 <link rel="canonical" href="http://localhost:4000/pages/htmlcssthebasics/" />
 <meta property="og:url" content="http://localhost:4000/pages/htmlcssthebasics/" />
 <meta property="og:site_name" content="Digital Publisher Hub" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-12-18T00:00:00+00:00" />
 <script type="application/ld+json">
-{"name":null,"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"WebPage","url":"http://localhost:4000/pages/htmlcssthebasics/","publisher":null,"image":null,"headline":"The basics of HTML and CSS","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+{"name":null,"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/pages/htmlcssthebasics/","publisher":null,"image":null,"headline":"The basics of HTML and CSS","dateModified":"2017-12-18T00:00:00+00:00","datePublished":"2017-12-18T00:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/htmlcssthebasics/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 </head>
 <body class="theme-base-0b">
@@ -125,6 +127,7 @@
   <!-- <h1 class="page-title">The basics of HTML and CSS</h1> -->
   <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class="toc">
+
   <h2 id="on-this-page">On this Page</h2>
 
   <ul>
@@ -133,7 +136,7 @@
     <li><a href="#what-does-this-example-of-html-look-like-in-a-browser">What does this example of HTML look like in a browser?</a></li>
     <li><a href="#classes-or-how-to-get-added-control-over-the-html-markup"><em>Classes</em> or how to get added control over the HTML markup.</a></li>
     <li><a href="#presentation-logic">Presentation Logic</a></li>
-    <li><a href="#types-of-mark-up-for-html">Types of Mark-up for HTML</a></li>
+    <li><a href="#types-of-mark-up-for-html">Types of Mark-up for HTML</a></li>
     <li><a href="#styling-the-html-with-css">Styling the HTML with CSS</a></li>
     <li><a href="#syntactical-precision-required">Syntactical Precision Required</a></li>
     <li><a href="#inheritance">Inheritance</a></li>
@@ -276,6 +279,26 @@
 paragraphs <code class="highlighter-rouge">&lt;p&gt;</code> and headings <code class="highlighter-rouge">&lt;h1&gt;</code>,<code class="highlighter-rouge">&lt;h2&gt;</code> etc)</p>
 </blockquote>
 
+<p>There are also box elements, that can surround other elements  and provide structural control of blocks of content.</p>
+
+<p>Here are some examples:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">&lt;div&gt;</code> - short for division and a general purpose block element</li>
+  <li><code class="highlighter-rouge">&lt;section&gt;</code>-  this acts like <code class="highlighter-rouge">div</code> but expects certain internal elements like headings.</li>
+  <li><code class="highlighter-rouge">&lt;nav&gt;</code> - we would expect that to be a menu of some navigational components</li>
+  <li><code class="highlighter-rouge">&lt;header&gt;</code> -  at the top of the page</li>
+  <li><code class="highlighter-rouge">&lt;footer&gt;</code> - at the bottom of the page</li>
+</ul>
+
+<p>In addition there are list items:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">&lt;ul&gt;</code> - an unordered list (often a bulleted list)</li>
+  <li><code class="highlighter-rouge">&lt;ol&gt;</code> - ordered list (numbered)</li>
+  <li><code class="highlighter-rouge">&lt;li&gt;</code> - these are the list items inside those above</li>
+</ul>
+
 <p><strong>Inline</strong> elements are contained within a line</p>
 
 <blockquote>
@@ -294,7 +317,8 @@ emphasised (<code class="highlighter-rouge">&lt;em&gt;</code>) or bold (<code cl
 <p>Mark-up should be semantic and can use existing HTML tags</p>
 
 <p><strong>Examples</strong>:
-<code class="highlighter-rouge">&lt;h1 class="authorname"&gt;</code> or <code class="highlighter-rouge">&lt;h2 class="chapter"&gt;</code> or  <code class="highlighter-rouge">&lt;article&gt;</code> or <code class="highlighter-rouge">&lt;footer&gt;</code></p>
+<code class="highlighter-rouge">&lt;h1 class="authorname"&gt;</code> or <code class="highlighter-rouge">&lt;h2 class="chapter"&gt;</code> or
+ <code class="highlighter-rouge">&lt;article&gt;</code> or <code class="highlighter-rouge">&lt;footer&gt;</code></p>
 
 <h3 id="the-are-many-html-elements">The are many HTML elements</h3>
 
@@ -443,8 +467,9 @@ Using internal styles can be useful for developing page designs</p>
 </ul>
 
 <h3 id="defining-by-a-position-rule">Defining by a Position Rule</h3>
-<p>There are 3 type of positioning available:</p>
+<p>There are 4 type of positioning available:</p>
 <ol>
+  <li>static (this is same as no position set)</li>
   <li>relative</li>
   <li>absolute</li>
   <li>fixed</li>
@@ -497,6 +522,10 @@ Using internal styles can be useful for developing page designs</p>
 
 <p>In this example the copyright block will be fixed at the bottom of the viewport and will stay there even when the user scrolls their window.</p>
 
+<blockquote>
+  <p><strong>Note:</strong> We would only use <code class="highlighter-rouge">static</code> if we need to reset the position to the default</p>
+</blockquote>
+
 <h2 id="units-of-measure">Units of Measure</h2>
 
 <p>There are several units that can be used in CSS in order to set font sizes and dimensions of elements.</p>
@@ -532,7 +561,7 @@ Using internal styles can be useful for developing page designs</p>
   </ol>
 </div>
 
-<!-- We can only show one screencast at the moment --></div><p><b>Filed under:</b> HTML and CSS</p>
+<!-- We can only show one screencast at the moment --></div><p><b>Filed under:</b> HTML and CSS, Multi-Platform Publishing</p><p>This page last edited on: 2017-12-18</p>
       </div>
     </div>
 <!--<footer>

@@ -76,9 +76,15 @@ margin:0;
 
 
 #gallery ul {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 
@@ -90,7 +96,9 @@ margin:0;
   border:1px solid silver;
   vertical-align: top;
   /* flex-basis: 200px; */
-  flex: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
   width: 200px;
 }
 

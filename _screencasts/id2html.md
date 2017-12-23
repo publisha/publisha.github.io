@@ -10,4 +10,6 @@ We can generate good quality, sensible HTML(5) markup from InDesign so long as w
 
 We can also build an interactive table of contents that gives us a navigation block at the top of the web page.
 
+[![The table of contents](//images/Screenshot 2017-12-23 12.36.38.png)](//images/Screenshot 2017-12-23 12.36.38.png)
+
 In this screencast we also make use of the XML structure that we have previously created.

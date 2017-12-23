@@ -3,7 +3,7 @@
   published: false
   categories: [InDesign, HTML, “Multi-Platform Publishing”]
   screencast:
-  date: 2017-11-22
+  date: 2017-12-23
   blurb: HTML is the language for the web; delivering content for our various types of screens. InDesign is a *page layout* tool; presuming for the printed page, but we can still generate HTML from our content and with some attention to detail, we can can get good HTML markup ready for further styling and attention to a responsive design.
   order: 2
 ---
@@ -27,12 +27,13 @@ We will generate the HTML *based on the XML Structure* so only those elements wi
 
 >**Note**: There are other options to use for the layout of the exported HTML; you can use the *existing layout*, however, there is a degree of unpredictability in the order of the components, with stories arranged according to order of creation. Content can also be arranged with *Articles*, and export to HTML can use this feature too.
 
-### Build the Table of contents
+## Build the Table of contents
 
 If you don't have a TOC then get InDesign to build one. You don't need to worry about how this looks but use an unordered list to style. You'll need the nesting sorted (Scenes inside Acts).
 
-#### Lists
-Let’s take a moment to explore the concept of list— both in InDesign and HTML.
+Let’s take a moment to explore the concept of lists— both in InDesign and HTML.
+
+### Lists in InDesign
 
 In InDesign we would use a bulleted list, although we do not need to style with bullets, but we do need to construct as a structure so that the items follow along and are indented if they are sub listed items. In our Shakespeare play example the **Scene** is a sub-section of the **Act**, so in our table of contents (TOC) we will want to reflect this structure; we normally do this by indenting the second level further than the parent level like this:
 
@@ -48,10 +49,33 @@ Act II
 
 Achieving this structure in InDesign is very easy with styles, however, getting an appropriate structure for HTML is more involved because levels can only be set when the list is *ordered*, ie *numbered*. We can only explain this with the use of images from InDesign. We will use the included styles (TOC Level 1 and TOC level 2) and reformat as a list.
 
-The first image here shows how we select the  bullets 
+Define a List
 
+We first have to tell InDesign that we need a list and we do this through the Type > Bullets & Numbering panel:
 
-In HTML the unordered list is presented with the following tag structure.
+[![Define the list](/images/Screenshot 2017-12-23 13.12.47.png)](/images/Screenshot 2017-12-23 13.12.47.png)
+
+[![Define a list - here we create one called 'Contents'](/images/Screenshot 2017-12-23 12.47.55.png)](/images/Screenshot 2017-12-23 12.47.55.png)
+
+Now we can set the paragraph styles to use this list. We first need to set this as a Numbered list (only this way can we select the previously created list.)
+
+[![Use the Numbers list and choose the previously created List](/images/Screenshot 2017-12-23 13.26.33.png)](/images/Screenshot 2017-12-23 13.26.33.png)
+
+Once we have chosen the previously defined list then we can set the list type back to 'Bullets'. We don't need to display bullets on the page if we don't want to, but we do need to select the correct HTML tag for this style under the 'Export Tagging' panel option.
+
+[![Here is a view of our table of contents on the page in InDesign](/images/Screenshot 2017-12-23 12.36.38.png)](/images/Screenshot 2017-12-23 12.36.38.png)
+
+[![Under Export Tagging we can add the tag name `li`.](/images/Screenshot 2017-12-23 13.30.00.png)](/images/Screenshot 2017-12-23 13.30.00.png)
+
+InDesign provides a list of block level HTML tags to use but the `<li>` is not amongst them- we need to type this in ourselves. We can also provide a class name (or more than one) to help in the later styling of the web oage with `CSS`.
+
+When we export to HTML (File > Export > HTML), we need to be sure that our lists are exported as HTML lists.
+
+[![Formatting options - mapping the Bullets](/images/Screenshot 2017-12-23 14.11.56.png)](/images/Screenshot 2017-12-23 14.11.56.png)
+
+### Lists in HTML
+
+In HTML the _unordered_ list is presented with the following tag structure.
 
 ```HTML
 <ul class="contents">
@@ -63,9 +87,41 @@ In HTML the unordered list is presented with the following tag structure.
 
 So, `<ul>` is the parent and `<li>` are the list items.
 
+Here is what our HTML list looks like in it's *raw* state.
 
-see the page for the toc
-do i need to explain the lists (or another page?)
+[![Default styling for HTML nested list.](/images/Screenshot 2017-12-23 12.54.25.png)](/images/Screenshot 2017-12-23 12.54.25.png)
+
+## Interactive TOC
+
+Because we built this list using the table of Contents feature of InDesign, the results that we get in the HTML also include the hyperlinks to the appropriate places in the text. Here follows a short example from the HTML markup, with some tidying to make easier to understand.
+
+```html
+<nav id="_idContainer000" class="contents">
+<ul>
+	<li class="toc_act"><a href="play.html#_idTextAnchor000">Dramatis Personae</a></li>
+	<li class="toc_act"><a href="play.html#_idTextAnchor001">Act I</a>
+	 <ul><li class="toc_scene"><a href="play.html#_idTextAnchor002">Scene I</a></li>
+	 <li class="toc_scene"><a href="play.html#_idTextAnchor003">Scene II</a></li>
+	 </ul></li>
+	<li class="toc_act"><a href="play.html#_idTextAnchor004">Act Ii</a>
+    <ul><li class="toc_scene"><a href="play.html#_idTextAnchor005">Scene I</a></li>
+	 <li class="toc_scene"><a href="play.html#_idTextAnchor006">Scene II</a></li>
+	 </ul></li>
+	<li class="toc_act"><a href="play.html#_idTextAnchor007">Act III</a>
+    <ul><li class="toc_scene"><a href="play.html#_idTextAnchor008">Scene I</a></li>
+	 <li class="toc_scene"><a href="play.html#_idTextAnchor009">Scene II</a></li>
+	 </ul></li>
+	<li class="toc_act"><a href="play.html#_idTextAnchor010">Act Iv</a>
+    <ul><li class="toc_scene"><a href="play.html#_idTextAnchor011">Scene I</a></li>
+	 <li class="toc_scene"><a href="play.html#_idTextAnchor012">Scene II</a></li>
+	 </ul></li>
+	<li class="toc_act"><a href="play.html#_idTextAnchor013">Act V</a>
+  <ul><li class="toc_scene"><a href="play.html#_idTextAnchor014">Scene I</a></li>
+  </ul></li>
+</ul>
+</nav>
+```
+Now that we have resolved the interactive table of contents we should now look at the other elements in InDesign and how we turn these into correctly formed HTML.
 
 ## HTML tags
 
@@ -75,16 +131,27 @@ In the style settings for each element (paragraph or character), there is a sect
 
 We can makes this setting for each style in turn or we can use the InDesign panel for `Edit All Export Tags` that helps us makes these settings in one place.
 
+[![Look for Edit All Export Tags... in the paragraph styles menu](/images/Screenshot 2017-12-20 16.18.27.png)](/images/Screenshot 2017-12-20 16.18.27.png)
 
+You can go through all of the styles and make sure that you set an appropriate style and class name. If you leave this to InDesign then you may find that you have problems later when you try to edit the style with `CSS`.
 
 ### Class names
 
 HTML tags can also have class names that will give us even more control over the styling in the web page that we are going to construct.
 
+## Export to HTML
+
+There are a number of settings to go through when we choose to export the InDesign document to HTML.
+
+For this project we will base the layout on the XML structure and so we must make sure that the newly added table of Contents is included in the XML structure by mapping the `Style to the Tags` once more with the new list styles mapped to an appropriate tag.
+
+In the third panel of the `Export to HTML` we will need to choose a CSS file that we can edit and turn off the one that InDesign generates.
+
+[The CSS is provided here as a GitHub Gist](https://gist.github.com/Pageboy/a72c76438b924b2cce734f5219fe291f)
+
 ## HTML and CSS
 
-Styles are applied to HTML Elements
-with CSS rules
+Styles are applied to HTML Elements with CSS rules
 
 ## InDesign Styles
 

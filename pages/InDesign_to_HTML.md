@@ -59,6 +59,8 @@ We first have to tell InDesign that we need a list and we do this through the Ty
 
 Now we can set the paragraph styles to use this list. We first need to set this as a Numbered list (only this way can we select the previously created list.)
 
+>**Note**: We can also Define a new list directly from the paragraph style panel within the Bullets & Numbering section.
+
 [![Use the Numbers list and choose the previously created List](/images/Screenshot 2017-12-23 13.26.33.png)](/images/Screenshot 2017-12-23 13.26.33.png)
 
 Once we have chosen the previously defined list then we can set the list type back to 'Bullets'. We don't need to display bullets on the page if we don't want to, but we do need to select the correct HTML tag for this style under the 'Export Tagging' panel option.
@@ -103,7 +105,7 @@ Because we built this list using the table of Contents feature of InDesign, the 
 	 <ul><li class="toc_scene"><a href="play.html#_idTextAnchor002">Scene I</a></li>
 	 <li class="toc_scene"><a href="play.html#_idTextAnchor003">Scene II</a></li>
 	 </ul></li>
-	<li class="toc_act"><a href="play.html#_idTextAnchor004">Act Ii</a>
+	<li class="toc_act"><a href="play.html#_idTextAnchor004">Act II</a>
     <ul><li class="toc_scene"><a href="play.html#_idTextAnchor005">Scene I</a></li>
 	 <li class="toc_scene"><a href="play.html#_idTextAnchor006">Scene II</a></li>
 	 </ul></li>
@@ -111,7 +113,7 @@ Because we built this list using the table of Contents feature of InDesign, the 
     <ul><li class="toc_scene"><a href="play.html#_idTextAnchor008">Scene I</a></li>
 	 <li class="toc_scene"><a href="play.html#_idTextAnchor009">Scene II</a></li>
 	 </ul></li>
-	<li class="toc_act"><a href="play.html#_idTextAnchor010">Act Iv</a>
+	<li class="toc_act"><a href="play.html#_idTextAnchor010">Act IV</a>
     <ul><li class="toc_scene"><a href="play.html#_idTextAnchor011">Scene I</a></li>
 	 <li class="toc_scene"><a href="play.html#_idTextAnchor012">Scene II</a></li>
 	 </ul></li>
@@ -153,9 +155,9 @@ In the third panel of the `Export to HTML` we will need to choose a CSS file tha
 
 Styles are applied to HTML Elements with CSS rules
 
-## InDesign Styles
+## InDesign Styles become HTML tags
 
-- Paragraph styles
-- Character Styles
-- Object Styles
-- Table styles
+- Paragraph styles become block level tags such as `<p>`, `<h1>` and `<li>`
+- Character Styles become inline tags such as `<bold>` and `<span>`
+- Object Styles become box elements such as `<div>` and `<section>`
+- Table styles will become  HTML tables with `<table>`,  `<td>` and `<tr>`

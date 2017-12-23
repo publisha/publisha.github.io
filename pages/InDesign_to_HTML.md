@@ -25,9 +25,44 @@ Of course we have developed good habits and have made sure that all content has 
 
 We will generate the HTML *based on the XML Structure* so only those elements will appear in the HTML. You *can* base the export on the layout but this may give some unwanted elements.
 
+>**Note**: There are other options to use for the layout of the exported HTML; you can use the *existing layout*, however, there is a degree of unpredictability in the order of the components, with stories arranged according to order of creation. Content can also be arranged with *Articles*, and export to HTML can use this feature too.
+
 ### Build the Table of contents
 
 If you don't have a TOC then get InDesign to build one. You don't need to worry about how this looks but use an unordered list to style. You'll need the nesting sorted (Scenes inside Acts).
+
+#### Lists
+Let’s take a moment to explore the concept of list— both in InDesign and HTML.
+
+In InDesign we would use a bulleted list, although we do not need to style with bullets, but we do need to construct as a structure so that the items follow along and are indented if they are sub listed items. In our Shakespeare play example the **Scene** is a sub-section of the **Act**, so in our table of contents (TOC) we will want to reflect this structure; we normally do this by indenting the second level further than the parent level like this:
+
+```
+Act I
+	Scene I
+	Scene II
+Act II
+	Scene I
+	Scene II
+	Scene III
+```
+
+Achieving this structure in InDesign is very easy with styles, however, getting an appropriate structure for HTML is more involved because levels can only be set when the list is *ordered*, ie *numbered*. We can only explain this with the use of images from InDesign. We will use the included styles (TOC Level 1 and TOC level 2) and reformat as a list.
+
+The first image here shows how we select the  bullets 
+
+
+In HTML the unordered list is presented with the following tag structure.
+
+```HTML
+<ul class="contents">
+	<li>some item</li>
+	<li>another item</li>
+	<li>yet another item</li>
+</ul>
+```
+
+So, `<ul>` is the parent and `<li>` are the list items.
+
 
 see the page for the toc
 do i need to explain the lists (or another page?)
@@ -39,6 +74,8 @@ You should know what HTML tags can be used. Please do read up on the basic intro
 In the style settings for each element (paragraph or character), there is a section **Export Tagging**.
 
 We can makes this setting for each style in turn or we can use the InDesign panel for `Edit All Export Tags` that helps us makes these settings in one place.
+
+
 
 ### Class names
 

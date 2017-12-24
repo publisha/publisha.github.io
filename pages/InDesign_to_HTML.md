@@ -3,7 +3,7 @@
   title: InDesign to HTML and CSS
   published: true
   categories: [InDesign, "HTML and CSS", "Multi-Platform Publishing"]
-  screencast: [rj2BRNfdsbY]
+  screencast: [id2html]
   date: 2017-12-24
   blurb: HTML is the language for the web; delivering content for our various types of screens. InDesign is a *page layout* tool; presuming for the printed page, but we can still generate HTML from our content and with some attention to detail, we can can get good HTML markup ready for further styling and attention to a responsive design.
   order: 2

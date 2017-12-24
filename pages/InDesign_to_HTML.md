@@ -98,7 +98,7 @@ When we export to HTML (File > Export > HTML), we need to be sure that our lists
 
 In HTML the _unordered_ list is presented with the following tag structure.
 
-```HTML
+```html
 <ul class="contents">
 	<li>some item</li>
 	<li>another item</li>

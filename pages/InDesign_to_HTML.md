@@ -1,13 +1,12 @@
 ---
   title: InDesign to HTML and CSS
   published: true
-  categories: [InDesign, HTML, "Multi-Platform Publishing"]
+  categories: [InDesign, "HTML and CSS", "Multi-Platform Publishing"]
   screencast: [rj2BRNfdsbY]
   date: 2017-12-24
   blurb: HTML is the language for the web; delivering content for our various types of screens. InDesign is a *page layout* tool; presuming for the printed page, but we can still generate HTML from our content and with some attention to detail, we can can get good HTML markup ready for further styling and attention to a responsive design.
   order: 2
 ---
-# InDesign to HTML and CSS
 
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
@@ -25,6 +24,8 @@
 - [Not to Forget](#not-to-forget)
 
 </section><!-- /TOC -->
+
+# From InDesign to HTML and CSS
 
 When we export InDesign to ePub, content is marked-up as HTML and styles are converted to CSS. We can also export to HTML and same thing happens, but what should we do to make sure our HTML and CSS are perfectly formed and can also (if needed) be edited.
 
@@ -105,6 +106,7 @@ In HTML the _unordered_ list is presented with the following tag structure.
 	<li>yet another item</li>
 </ul>
 ```
+
 
 So, `<ul>` is the parent and `<li>` are the list items.
 

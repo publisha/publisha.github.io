@@ -1,9 +1,9 @@
 ---
   title: InDesign to HTML and CSS
   published: false
-  categories: [InDesign, HTML, “Multi-Platform Publishing”]
-  screencast:
-  date: 2017-12-23
+  categories: [InDesign, HTML, "Multi-Platform Publishing"]
+  screencast: [rj2BRNfdsbY]
+  date: 2017-12-24
   blurb: HTML is the language for the web; delivering content for our various types of screens. InDesign is a *page layout* tool; presuming for the printed page, but we can still generate HTML from our content and with some attention to detail, we can can get good HTML markup ready for further styling and attention to a responsive design.
   order: 2
 ---
@@ -49,7 +49,7 @@ Act II
 
 Achieving this structure in InDesign is very easy with styles, however, getting an appropriate structure for HTML is more involved because levels can only be set when the list is *ordered*, ie *numbered*. We can only explain this with the use of images from InDesign. We will use the included styles (TOC Level 1 and TOC level 2) and reformat as a list.
 
-Define a List
+### Define a List
 
 We first have to tell InDesign that we need a list and we do this through the Type > Bullets & Numbering panel:
 
@@ -112,13 +112,6 @@ Because we built this list using the table of Contents feature of InDesign, the 
 	<li class="toc_act"><a href="play.html#_idTextAnchor007">Act III</a>
     <ul><li class="toc_scene"><a href="play.html#_idTextAnchor008">Scene I</a></li>
 	 <li class="toc_scene"><a href="play.html#_idTextAnchor009">Scene II</a></li>
-	 </ul></li>
-	<li class="toc_act"><a href="play.html#_idTextAnchor010">Act IV</a>
-    <ul><li class="toc_scene"><a href="play.html#_idTextAnchor011">Scene I</a></li>
-	 <li class="toc_scene"><a href="play.html#_idTextAnchor012">Scene II</a></li>
-	 </ul></li>
-	<li class="toc_act"><a href="play.html#_idTextAnchor013">Act V</a>
-  <ul><li class="toc_scene"><a href="play.html#_idTextAnchor014">Scene I</a></li>
   </ul></li>
 </ul>
 </nav>
@@ -161,3 +154,13 @@ Styles are applied to HTML Elements with CSS rules
 - Character Styles become inline tags such as `<bold>` and `<span>`
 - Object Styles become box elements such as `<div>` and `<section>`
 - Table styles will become  HTML tables with `<table>`,  `<td>` and `<tr>`
+
+## Not to Forget
+
+Make sure that you set the Export Tagging for each paragraph, character and object styles, so that you can control the CSS styling after exporting.
+
+Use `<li>` for the bulleted lists and use HTML5 tags where appropriate. These tags include `<section>` and `<nav>`.
+
+### Master Page items?
+
+You can ignore whatever is on the master pages; page numbers and running headers will not appear in the HTML export.

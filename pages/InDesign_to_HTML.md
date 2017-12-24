@@ -1,6 +1,6 @@
 ---
   title: InDesign to HTML and CSS
-  published: false
+  published: true
   categories: [InDesign, HTML, "Multi-Platform Publishing"]
   screencast: [rj2BRNfdsbY]
   date: 2017-12-24

@@ -1,4 +1,5 @@
 ---
+  layout: page
   title: InDesign to HTML and CSS
   published: true
   categories: [InDesign, "HTML and CSS", "Multi-Platform Publishing"]
@@ -150,6 +151,8 @@ We can makes this setting for each style in turn or we can use the InDesign pane
 [![Look for Edit All Export Tags... in the paragraph styles menu](/images/Screenshot 2017-12-20 16.18.27.png)](/images/Screenshot 2017-12-20 16.18.27.png)
 
 You can go through all of the styles and make sure that you set an appropriate style and class name. If you leave this to InDesign then you may find that you have problems later when you try to edit the style with `CSS`.
+
+[![Adjust the Export Tags for all styles in one place](/images/Screenshot 2017-12-20 16.18.53.png)](/images/Screenshot 2017-12-20 16.18.53.png)
 
 ### Class names
 

@@ -1,18 +1,29 @@
 ---
   title: InDesign to HTML and CSS
   published: false
-<<<<<<< HEAD
-  categories: [InDesign, HTML, “Multi-Platform Publishing”]
-  screencast: [rj2BRNfdsbY]
-  date: 2017-12-23
-=======
   categories: [InDesign, HTML, "Multi-Platform Publishing"]
   screencast: [rj2BRNfdsbY]
   date: 2017-12-24
->>>>>>> 2598880c4eab1cee9bc705eacf89ebbcc15dc2ce
   blurb: HTML is the language for the web; delivering content for our various types of screens. InDesign is a *page layout* tool; presuming for the printed page, but we can still generate HTML from our content and with some attention to detail, we can can get good HTML markup ready for further styling and attention to a responsive design.
   order: 2
 ---
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
+
+- [Introduction](#introduction)
+- [From Styles to Markup](#from-styles-to-markup)
+- [Two Features we need first](#two-features-we-need-first)
+- [Build the Table of contents](#build-the-table-of-contents)
+- [Interactive TOC](#interactive-toc)
+- [HTML tags](#html-tags)
+- [Export to HTML](#export-to-html)
+- [HTML and CSS](#html-and-css)
+- [InDesign Styles become HTML tags](#indesign-styles-become-html-tags)
+- [Not to Forget](#not-to-forget)
+
+</section><!-- /TOC -->
+
 When we export InDesign to ePub, content is marked-up as HTML and styles are converted to CSS. We can also export to HTML and same thing happens, but what should we do to make sure our HTML and CSS are perfectly formed and can also (if needed) be edited.
 
 ## Introduction

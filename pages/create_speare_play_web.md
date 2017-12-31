@@ -2,9 +2,9 @@
 layout: page
 title: Repository for Shakespeare Play Web page
 published: true
-categories: ["Using GitHub", "Multi-Platform Publishing"]
+categories: ["HTML and CSS", "Multi-Platform Publishing"]
 tags: [Using GitHub]
-date:  2017-12-18
+date:  2017-12-31
 order: 2
 blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 ---
@@ -26,7 +26,9 @@ blurb: We are using GitHub pages to host a web site for the Shakespeare play. Th
 We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 
 ## What to do?
-If you are reading this within your very own copy of this GitHub repository (because you followed the link from the **github classroom**), then read on. If you are reading this offline, then please set up the Github account before you do anything else.
+If you are reading this within your very own copy of this GitHub repository (because you followed the link from the **github classroom**), then read on. If you are reading this offline, then [please set up the Github account][8c08ca4b] before you do anything else.
+
+  [8c08ca4b]: https://github.com "Go to GitHub and create and account or login if you already have one"
 
 Before you do anything with your new GitHub account do this:
 
@@ -61,9 +63,9 @@ Atom is open source, so this means there are lots of packages that can be added 
 > Here are a few packages that will prove useful:
 
 > - Atom HTML Preview
-- toolbar (suda)
+> - toolbar (suda)
 
-> You can also use Atom to update your GitHub repository that is online. 
+> You can also use Atom to update your GitHub repository that is online.
 
 > In the terminal window copy and paste this:
 
@@ -97,8 +99,8 @@ Once you have done this you can now _clone_ the repository that is in your GitHu
 ## What's inside the repository?
 When you download this repository, you will find a variety of files, but the 2 important ones are inside the **docs** folder:
 
-- index.xhtml - this will become the home page for your play. This page will have the cover image.
-- play.xhtml - this is where the text of the play will be. Linked from the home page above.
+- index.html - this will become the home page for your play. This page will have the cover image.
+- play.html - this is where the text of the play will be. Linked from the home page above.
 - styles.css -  this is where you define the styles for the elements in the play
 
 You can also have a look at the sample scene inside the **sampleScene** folder
@@ -114,27 +116,25 @@ Here are the steps to take:
 
 [![The Export tagging panel in the paragraph styles](/images/2017/01/export_tagging.png)](/images/2017/01/export_tagging.png)
 
-- Now run the provided script (export_XHTML). You should see something like this:
+- You can read the help document that I have provided - [InDesign to HTML][2aa24c4b].
+- Follow those instructions to create the interactive table of contents.
+- Export your play InDesign document with settings in the instructions.
+- You will find that you have now got a new file saved wherever your InDesign file was saved. You can drag this file into the `docs` folder of your working copy of the repo that you have open in Atom. This file should be renamed `play.html` and will replace the existing placeholder file.
 
-[![Running the script export to XHTML - you will need to get this from the repo](/images/2017/01/export_toXHTML.png)](/images/2017/01/export_toXHTML.png)
+  [2aa24c4b]: /pages/InDesign_to_HTML/ "read this for a thorough explanation"
 
-- You will find that you have now got a new file saved wherever your InDesign file was saved. You can drag this file into your working copy of the repo that you have open in Atom.
+> **Note:** if you included images in your play, you will need more work to get those into the appropriate location.
 
 ## The Play
 
 In Atom it will look similar to this:
 
-[![XHTML version of the play](/images/2017/01/yourexportedplay.png)](/images/2017/01/yourexportedplay.png)
+[![HTML version of the play](/images/2017/01/yourexportedplay.png)](/images/2017/01/yourexportedplay.png)
 
-- Copy all of the lines including the `<body>` opening and closing tag. You can make this easier by _collapsing_ the body tag:
-
-[![Copy the body tag when collapsed](/images/2017/01/copycollapsedBody_tag.png)](/images/2017/01/copycollapsedBody_tag.png)
-
-- Open the _play.xhtml_ file that is inside the docs folder (that you have from your repository) with **Atom**
-- Paste into this file and overwrite the `<body>` tag as per the instructions in that file.
+- Open the _play.html_ file that is inside the docs folder (that you have from your repository) with **Atom**
 - Now edit the _style.css_ file (again inside the docs folder) to style each of the elements in the play
 - Review in a web browser
-- Validate the XHTML file here: https://validator.w3.org
+- Validate the HTML file here: https://html5.validator.nu
 - Validate the CSS file here: https://jigsaw.w3.org/css-validator/
 
 ## The home page cover
@@ -142,15 +142,15 @@ In Atom it will look similar to this:
 - You can open the PDF of the cover in Photoshop and crop down to the front of the cover. In other words, remove the back and spine.
 - The cover image needs to be 1400 pixels wide, because we need this later for the eBook.
 - save this image as a JPEG in the **images** folder within the **docs** folder in your repository that you downloaded from GitHub.
-- Now edit the index.xhtml file and put the file name of the image where instructed in the markup. Also edit the ALT tag text.
-- When you view this index.xhtml file the image will be very large, so you must edit the styles.css file to change the width of the image.
+- Now edit the index.html file and put the file name of the image where instructed in the markup. Also edit the ALT tag text.
+- When you view this `index.html` file the image will be very large, so you must edit the styles.css file to change the width of the image.
 - when viewed in a browser, this image will be a link to the play.
-- check that these work.
+- check that the link functions correctly.
 
 ## Making the web site work
-**When you are happy** with the look of these web pages then you can:
+**When you are happy** with the look of these web pages (preview the files in a browser) then you can:
 - Upload these new versions of these files to your GitHub repository
-- You do this by using GitHub Desktop and select _Sync_ top right.
+- You do this by using Atom.
 
 Make sure that you 'commit' your changes by writing something like first version in the message box.
 

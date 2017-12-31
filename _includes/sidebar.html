@@ -14,11 +14,11 @@
   </div>
 
   <nav class="sidebar-nav">
-<ul class="navigation">
+<ul class="navigationtoc">
 <li class="header">Pages by Category</li>
 {%- for category in site.categories-list -%}
-  <li class="dropdown"><a title="expand to see all pages about {{ category }}" href="#">{{ category }} <i style="color:white;" class="fa fa-caret-down" aria-hidden="true"></i></a>
-      <ul>
+  <li class="dropdown9"><a title="expand to see all pages about {{ category }}" href="/sections/{{ category }}">{{ category }} <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+      <!-- <ul>
         {%- assign pageitems = site.pages | sort: 'title' -%}
           {%- for page in pageitems -%}
             {%- for cat in page.categories -%}
@@ -27,7 +27,7 @@
               {%- endif -%}
             {%- endfor -%}
           {%- endfor -%}
-      </ul>
+      </ul> -->
   </li>
       {%- endfor -%}
 </ul>

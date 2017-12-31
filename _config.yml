@@ -3,7 +3,7 @@ permalink: pretty
 markdown: kramdown
 timezone: Europe/London
 # relative_permalinks: true
-title:            Digital Publisher Hub
+title:            Digital Publishing Hub
 tagline:          'Help for publishers and students of publishing'
 description:      'tutorials and screencasts about digital publishing and eBook Production'
 url:              https://publisha.github.io
@@ -22,7 +22,7 @@ author:
 
 
 # Custom vars
-version:          0.6
+version:          0.61
 
 github:
   repo:           publisha.github.io
@@ -54,7 +54,7 @@ kramdown:
 
 tag-list: [InDesign, HTML, CSS, Using GitHub]
 
-categories-list: [InDesign, "HTML and CSS", Typography, Using GitHub, XML, ePub, iBooks Author]
+categories-list: [InDesign, "HTML and CSS", Typography, XML, ePub, iBooks Author]
 
 # for Brookes
 

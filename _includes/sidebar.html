@@ -17,7 +17,7 @@
 <ul class="navigationtoc">
 <li class="header">Pages by Category</li>
 {%- for category in site.categories-list -%}
-  <li class="dropdown9"><a title="expand to see all pages about {{ category }}" href="/sections/{{ category }}">{{ category }} <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  <li class="dropdown"><a title="see all pages about {{ category }}" href="/sections/{{ category }}">{{ category }} <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
       <!-- <ul>
         {%- assign pageitems = site.pages | sort: 'title' -%}
           {%- for page in pageitems -%}

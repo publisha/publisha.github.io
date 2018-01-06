@@ -40,3 +40,4 @@ More relative than this—the play's the thing
 Wherein I'll catch the conscience of the King
 
 [^2]: See Book Typography: a designer’s manual, Mitchell and Wightman, 2005
+The Chicago Manual of Style

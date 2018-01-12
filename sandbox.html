@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-gb"><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Sandbox</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/jquery.fancybox.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/guide.css">
+  <link rel="stylesheet" href="/public/css/bigfoot-default.css">
+
+
+  <!-- Fonts -->
+  <!-- can't use google fonts on GitHub unless https -->
+<link href='https://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic' rel='stylesheet'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<!-- Optionally make the images go full width but put this in the page metadata --><style>
+.sideimage img {
+width:auto;
+max-width: 60%;
+float:none;
+clear:both;
+margin-left: 0;
+margin-top:0;
+top:0;
+}
+</style><!-- javascripts for fancybox -->
+<script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
+</script>
+<script type="text/javascript" src="/public/js/jquery.fancybox-media.js">
+</script><!-- for slides on home page -->
+  <script src="/public/js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+
+      $("#pageimage").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: false,
+        speed: 500,
+        timeout: 6000,
+        random: true,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+
+  <link rel="stylesheet" href="/public/css/responsiveslides.css"><!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- javascript for the footnote popups -->
+<title>Home | Sandbox</title>
+<meta property="og:title" content="Home" />
+<meta name="author" content="Chris Jennings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="tutorials and screencasts about digital publishing and eBook Production" />
+<meta property="og:description" content="tutorials and screencasts about digital publishing and eBook Production" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Digital Publishing Hub" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-05-12T00:00:00+01:00" />
+</head>
+<body class="theme-base-0b">
+
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <nav class="sidebar-nav"  style="border-bottom:none !important;">
+    <a href="/"><i class="sidebar-nav-item fa fa-home fa-2x" aria-hidden="true"></i></a>
+  </nav>
+  <div class="sidebar-item" style="padding-top:0;padding-bottom:.5rem;">
+    <p>tutorials and screencasts about digital publishing and eBook Production</p>
+  </div>
+
+  <nav class="sidebar-nav">
+<ul class="navigationtoc">
+<li class="header">Pages by Category</li><li class="dropdown"><a title="see all pages about InDesign" href="/sections/InDesign">InDesign <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li><li class="dropdown"><a title="see all pages about HTML and CSS" href="/sections/HTML and CSS">HTML and CSS <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li><li class="dropdown"><a title="see all pages about Typography" href="/sections/Typography">Typography <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li><li class="dropdown"><a title="see all pages about XML" href="/sections/XML">XML <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+
+  </li><li class="dropdown"><a title="see all pages about ePub" href="/sections/ePub">ePub <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+
+  </li><li class="dropdown"><a title="see all pages about iBooks Author" href="/sections/iBooks Author">iBooks Author <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+      <!-- <ul><li><a href="/pages/iBooksAuthor/">From InDesign to iBooks Author <i class="fa fa-caret-right" aria-hidden="true"></i></a></li></ul> -->
+  </li></ul>
+    <ul class="navigationtoc">
+      <li class="header"><b>Other Items</b></li><li><a title="regular blog articles" class="sidebar-nav-item" href="/blog">Blog Articles <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+     <li><a title="screencasts from the YouTube channel" class="sidebar-nav-item" href="/screencasts/">Screencasts <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li><li><a title="see all contents listed" class="sidebar-nav-item" href="/contents">List all Contents <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <div class="sidebar-item">
+    <p>
+      <b>Note:</b> Images can be enlarged by click or touch
+    </p>
+  </div>
+  <div class="sidebar-item">
+    <p>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.61 2018
+    </p>
+  </div>
+</div>
+<!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
+
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Sandbox</a><br />
+          <small>Trying stuff out</small>
+        </h3>
+      </div>
+    </div>
+
+    <div class="wrap"><div id="callbacks_container">
+
+<ul class="rslides" id="pageimage">
+<script>
+//SET API CALL BASED ON INPUT
+
+// https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=8703fd9d85e590caa23f024664553688&photoset_id=72157687532719080&user_id=55648661%40N00&extras=url_o&format=json&nojsoncallback=1&auth_token=72157662476194677-4b5c507232b9a92f&api_sig=ef69063ef85809a1a72b2eae3f154793
+//
+
+
+
+$(function() {
+  var apiCall =
+  "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=fa38f39c762bdc429a6c2dd7c042f5d1&photoset_id=72157687532719080&user_id=55648661%40N00&extras=url_o&format=json&auth_token=72157692158144495-3d8f327c34c5b9e6&api_sig=478ebcea5acc32853fa2a33b150a4eef";
+      $.getJSON(apiCall, function(data){
+        var items = [];
+        $.each(data.items, function(i,item){
+          document.write("Hello World!");
+          items.push( "<li>" + item.title + "</li>" );
+          // $(item.title);
+          // $("<img/>").attr("src", photo.url_o);
+        });
+      });
+});
+</script>
+</ul>
+
+
+        <!-- <ul class="rslides" id="pageimage">
+            <li><img src="images/homegallery/img_00123.jpg" alt="">
+            </li>
+          <li><img src="images/homegallery/img_00124.jpg" alt="">
+    </li>
+    <li>
+      <img src="images/homegallery/img_00125.jpg" alt="">
+    </li>
+    <li>
+      <img src="images/homegallery/img_00126.jpg" alt="">
+    </li>
+    <li>
+      <img src="images/homegallery/img_00127.jpg" alt="">
+    </li>
+    <li>
+      <img src="images/homegallery/img_1894.jpg" alt="">
+    </li>
+  </ul> -->
+</div><!-- masthead was here -->
+      <div class="container content">
+        <div class="page">
+  <!-- <h1 class="page-title">Home</h1> -->
+  <h1 id="what-is-this-website-about">What works?</h1>
+
+      </div>
+    </div>
+<!--<footer>
+<p><a style="float:right;" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+&#169; Chris Jennings 2018</p>
+</footer>
+-->
+<!-- now follows items that get the menu working should it be fa-chevron-left fa-lg -->
+    <label title="the menu" for="sidebar-checkbox" class="sidebar-toggle fa fa-bars fa-lg" aria-hidden="true"></label>
+<!-- this next item will be shown on small screens -->
+    <div class="contents"><a href="/contents" title="contents"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+    </div>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.fancybox').fancybox();
+        });
+    </script>
+    <script>
+    jQuery(document).ready(function($) {
+    	$("img:not([title])").each(function() {
+    			if($(this).attr("alt") != '') $(this).parent().attr("title", $(this).attr("alt"))
+    			else $(this).parent().attr("title", $(this).attr("src"));
+    	});
+    });
+    </script>
+    <script>
+        $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').attr('class', 'sideimage').fancybox();
+    </script>
+
+    <!-- show a video -->
+
+
+    <script>
+    $(document).ready(function() {
+    	$(".video").fancybox({
+    		maxWidth	: 800,
+    		maxHeight	: 600,
+    		fitToView	: false,
+    		width		: '70%',
+    		height		: '70%',
+    		autoSize	: false,
+    		closeClick	: false,
+    		openEffect	: 'none',
+    		closeEffect	: 'none'
+    	});
+    });
+    </script>
+
+    <!-- navigation -->
+    <script>
+    jQuery(document).ready(function(){
+
+    $(".navigation > li > a").on("click", function(e){
+
+    	if(!$(this).hasClass("active")) {
+
+          // hide any open menus and remove all other classes
+    		$(".navigation li ul").slideUp(350);
+    		$(".navigation li a").removeClass("active");
+
+    		// open our new menu and add the open class
+    		$(this).next("ul").slideDown(350);
+    		$(this).addClass("active");
+
+    	}else if($(this).hasClass("active")) {
+
+    		$(this).removeClass("active");
+    		$(this).next("ul").slideUp(350);
+    	}
+       e.preventDefault();
+    });
+
+    });
+    </script>
+
+
+  </body>
+</html>

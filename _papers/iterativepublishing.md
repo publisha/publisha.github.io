@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Iterative Publishing
-date: 2017-08-09
+date: 2018-01-06
 images: full-width
 Published: true
 annotate: true
@@ -377,8 +377,9 @@ Pierre Thierry July 2013
 https://www.w3.org/2012/12/global-publisher/statements-of-interest/34-vc.pdf
 
 An Introduction to Version Control Using GitHub Desktop
-
 By Daniel van Strien
+
+see Conclave at https://conclave-team.github.io/conclave-site/
 
 http://programminghistorian.org/lessons/getting-started-with-github-desktop
 

@@ -22,21 +22,24 @@
 <link href='https://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic' rel='stylesheet'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-<!-- Optionally make the images go full width but put this in the page metadata --><style>
-.sideimage img {
-width:auto;
-max-width: 60%;
-float:none;
-clear:both;
-margin-left: 0;
-margin-top:0;
-top:0;
-}
-</style><!-- javascripts for fancybox -->
+<!-- Optionally make the images go full width but put this in the page metadata --><!-- javascripts for fancybox -->
 <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
 </script>
 <script type="text/javascript" src="/public/js/jquery.fancybox-media.js">
+</script>
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- javascript for the footnote popups -->
+<script type="text/javascript" src="/public/js/bigfoot.js"></script>
+<script type="text/javascript">
+    $.bigfoot();
 </script><!-- for slides on home page -->
   <script src="/public/js/responsiveslides.min.js"></script>
 <script>
@@ -61,18 +64,7 @@ top:0;
     });
   </script>
 
-  <link rel="stylesheet" href="/public/css/responsiveslides.css"><!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.ico">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-
-  <!-- javascript for the footnote popups -->
-<script type="text/javascript" src="/public/js/bigfoot.js"></script>
-<script type="text/javascript">
-    $.bigfoot();
-</script><!-- Begin Jekyll SEO tag v2.3.0 -->
+  <link rel="stylesheet" href="/public/css/responsiveslides.css"><!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>Home | Digital Publishing Hub</title>
 <meta property="og:title" content="Home" />
 <meta name="author" content="Chris Jennings" />
@@ -83,9 +75,10 @@ top:0;
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Digital Publishing Hub" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-05-12T00:00:00+01:00" />
+<meta property="article:published_time" content="2018-01-14T00:00:00+00:00" />
+<link rel="next" href="http://localhost:4000/page2/">
 <script type="application/ld+json">
-{"name":"Digital Publishing Hub","description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"WebSite","url":"http://localhost:4000/","publisher":null,"image":null,"headline":"Home","dateModified":"2017-05-12T00:00:00+01:00","datePublished":"2017-05-12T00:00:00+01:00","sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+{"name":"Digital Publishing Hub","description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"WebSite","url":"http://localhost:4000/","publisher":null,"image":null,"headline":"Home","dateModified":"2018-01-14T00:00:00+00:00","datePublished":"2018-01-14T00:00:00+00:00","sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 </head>
 <body class="theme-base-0b">
@@ -127,19 +120,27 @@ top:0;
       <li class="header"><b>Other Items</b></li><li><a title="regular blog articles" class="sidebar-nav-item" href="/blog">Blog Articles <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
      </li>
      <li><a title="screencasts from the YouTube channel" class="sidebar-nav-item" href="/screencasts/">Screencasts <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
-     </li><li><a title="see all contents listed" class="sidebar-nav-item" href="/contents">List all Contents <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+     <li><a title="presentations generated from Keynote" class="sidebar-nav-item" href="/presentations/">Presentations <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+     <li><a title="Image galleries from Flickr" class="sidebar-nav-item" href="/galleries/">Images Galleries <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+     <li><a title="Course Sections" class="sidebar-nav-item" href="/sections/">Sections for Teaching <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+      <li><a title="see all contents listed" class="sidebar-nav-item" href="/contents">List all Contents <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
       </li>
     </ul>
   </nav>
-  <div class="sidebar-item">
+  <!-- <div class="sidebar-item">
     <p>
       <b>Note:</b> Images can be enlarged by click or touch
     </p>
-  </div>
+  </div> -->
   <div class="sidebar-item">
     <p>
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.61 2018
-    </p>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.62 2018
+  </p>
+    <p><a href="/pages/about" title="read about this site and how it was made">About this site</a></p>
   </div>
 </div>
 <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
@@ -147,125 +148,404 @@ top:0;
     <div class="masthead">
       <div class="container">
         <h3 class="masthead-title">
-          <a href="/" title="Home">Digital Publishing Hub</a><br />
+          <a href="/" title="Home">Digital Publishing Hub</a>
+          <br />
           <small>Help for publishers and students of publishing</small>
         </h3>
       </div>
     </div>
 
     <div class="wrap"><div id="callbacks_container">
-<!-- <script>
-      $.getJSON("https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=15d0e5a14c22ab06ab29dd73b3610df3&photoset_id=72157687532719080&user_id=55648661%40N00&extras=url_o&format=json&nojsoncallback=1&auth_token=72157689705271104-876233c9aa26a2f3&api_sig=79b454f4e99a94f7c7a0a7a615f4d337", function(data){
-        $.each(data.items, function(i,item){
-          $("<img/>").attr("src", item.url.o).appendTo("#ipageimage")
-            .wrap("<a href='" + item.link + "'></a>");
+
+      <ul class="rslides" id="pageimage">
+        <li><img src="/images/homegallery/img_00123.jpg" alt="">
+        </li>
+      </ul>
+      <script>
+      $(function() {
+        var options = {
+          apiKey: '6a751024fcc480f70610ed1f98220880',
+          flickrId: '55648661@N00',
+          photosetId: '72157687532719080',
+        };
+
+      jsonUrl = "https://api.flickr.com/services/rest/?" + "method=flickr.photosets.getPhotos&" + ("api_key=" + options.apiKey + "&") + ("photoset_id=" + options.photosetId + "&") + ("user_id=" + options.flickrId + "&") + "extras=description,url_sq,url_t,url_s,url_m,url_h&" + "format=json&jsoncallback=?";
+
+      return $.getJSON(jsonUrl, function(data) {
+        $.each(data.photoset.photo, function(index, photo) {
+          if (photo.url_h) {
+                $("<img />").attr({
+                  src: photo.url_h,
+                  alt: "flickr- " + photo.title
+                }).appendTo( "#pageimage" )
+                .wrap("<li>");
+              }
         });
+        $(".rslides").responsiveSlides();
       });
 
-</script> -->
+
+    });
+
+      </script>
 
 
-
-
-
-        <ul class="rslides" id="pageimage">
+        <!-- <ul class="rslides" id="pageimage">
             <li><img src="images/homegallery/img_00123.jpg" alt="">
-          <!-- <p class="caption">This is a caption</p> -->
             </li>
           <li><img src="images/homegallery/img_00124.jpg" alt="">
-      <!-- <p class="caption">This is another caption</p> -->
     </li>
     <li>
       <img src="images/homegallery/img_00125.jpg" alt="">
-      <!-- <p class="caption">The third caption</p> -->
     </li>
     <li>
       <img src="images/homegallery/img_00126.jpg" alt="">
-      <!-- <p class="caption">The third caption</p> -->
     </li>
     <li>
       <img src="images/homegallery/img_00127.jpg" alt="">
-      <!-- <p class="caption">The third caption</p> -->
     </li>
     <li>
       <img src="images/homegallery/img_1894.jpg" alt="">
-      <!-- <p class="caption">The third caption</p> -->
     </li>
-  </ul>
-</div>
-
-        <!-- <div id="pageimage"></div> --><!-- masthead was here -->
+  </ul> -->
+</div><!-- masthead was here -->
       <div class="container content">
         <div class="page">
   <!-- <h1 class="page-title">Home</h1> -->
-  <h1 id="what-is-this-website-about">What is this website about?</h1>
+  <section class="headline">
+<h1>Digital Publishing... What? How? Who?</h1>
 
-<p>You will find here help documents and tutorials (written by @pageboy) <sup id="fnref:2"><a href="#fn:2" class="footnote">1</a></sup> on a range of topics including using Adobe InDesign and Apple iBooks Author, as well as using GitHub to edit documents within a repository.</p>
+<p>More documents are being added and you can find the list within the left hand menu. Just click on the icon <i class="fa fa-bars fa-lg" aria-hidden="true"></i> top left to see and connect to all pages.</p>
 
-<p>More documents are being added and you can find the list within the left hand menu. Just click on the icon top left or <a href="/contents" title="Open the contents page">see the contents page</a>.</p>
+<p><a href="/pages/about" title="read about this site and how it was made">About this site</a></p>
+</section>
+<h1>Blog Posts</h1>
+<div class="posts">
+  
+  <div class="post">
+    <h2 class="post-title">
+      <a href="/html/css/epub/2017/08/14/reading-progress/">
+        Reading Progress Indicator
+      </a>
+    </h2>
 
-<h2 id="how-was-this-web-site-built">How was this web site built?</h2>
+    <span class="post-date">14 Aug 2017</span>
+    <!-- <p>Some time ago I wrote a post over on <a href="http://www.pagetoscreen.net/journal/item/page_numbers" title="read this piece from a while ago">pagetoscreen.net</a> about a progress bar in a fixed-layout eBook. In that article I also made a link to a web site that spoke about implementing the progress bar in HTML5.</p>
 
-<h3 id="jekyll">Jekyll</h3>
-<p>The site is built with Jekyll which you can <a href="https://jekyllrb.com" title="Visit the Jekyll web site" target="_blank">find out about here</a>.</p>
+<p>More recently, I was grateful to have been shared a link to an article by the very same <a href="https://css-tricks.com/reading-position-indicator/" title="Reading Position Indicator">Pankaj Parashar</a>.</p>
 
-<p>It is delivered on a <strong>GitHub</strong> repository with GitHub pages. My preferred writing tool is Atom ‘cos you can customise it! I also use <em>Editorial</em> on my iPad.</p>
+<p>The idea is that when scrolling through a long article in a web browser, the scroll bar on the right is not really a strong enough indicator to the user, as to the amount of text that has been read, and how much remains.</p>
 
-<h3 id="atom">Atom</h3>
-<p>Atom is the free text editor that comes from GitHub. <a href="https://atom.io" title="Get Atom" target="_blank">You can get it here</a>.</p>
+<p>Some discussions do suggest that the usual scroll bar is enough, but, there again, the scrollbar disappears when the current window is not active. Of course, this varies over different browsers and platforms.</p>
 
-<p><a href="/images/atominuse.png"><img src="/images/atominuse.png" alt="Here is Atom in use to edit a markdown page with a preview on the right" /></a></p>
+<p>Pankaj Parashar’s article demonstrates the indicator at the top of the current window, but I agreed with some comments that this might be mistaken for some <em>content still loading</em>, so I have implemented on this web site at the bottom of the window.</p>
 
-<h3 id="workflow">Workflow</h3>
+<p>You will observe this <strong>reading position indicator</strong> on some pages of this web site, although, I suspect, not on the article that you are reading, because it is (after all), rather short. The indicator is made to be very slightly transparent, to show the content underneath. I have also made the colour suitably adjusted to blend nicely with the overall scheme of the site.</p>
+ -->
+    <p>Some time ago I wrote a post over on <a href="http://www.pagetoscreen.net/journal/item/page_numbers" title="read this piece from a while ago">pagetoscreen.net</a> about a progress bar in a fixed-layout eBook. In that article I also made a link to a web site that spoke about implementing the progress bar in HTML5.</p>
 
-<p>If you are lucky enough to own an iPad, then here is a description of my workflow to edit this web site and write a book etc:</p>
 
-<p>On the desktop / laptop I edit text and add images with Atom. Atom needs various packages added in such as <em>Git Plus</em>, <em>Markdown Writer</em>, <em>markdown TOC</em> and a few more. <a href="https://publisha.github.io/markdown/2017/03/03/writing-with-atom/" title="Open up the blog post">Read about my use of Atom in the blog article</a>.</p>
+    <p><a href="/html/css/epub/2017/08/14/reading-progress/">Read more...</a></p>
+  </div>
+  
+  <div class="post">
+    <h2 class="post-title">
+      <a href="/indesign/epub/html/2017/03/31/spread-video-fxl-epub/">
+        Video across a 2 page spread
+      </a>
+    </h2>
 
-<p>If working on the iPad then I use <em>Working Copy</em> to get the assets from the GitHub repository. This is a <a href="https://workingcopyapp.com" title="This is an iOS Apple app">fantastic app</a> from Anders Borum. You can’t do without it if you want to use GitHub repos from your mobile device.</p>
+    <span class="post-date">31 Mar 2017</span>
+    <!-- <p>There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width.</p>
 
-<p><a href="/images/workingcopy.jpg"><img src="/images/workingcopy.jpg" alt="Working Copy allows you to connect to your GitHub respository" /></a></p>
+<h2 id="there-are-really-2-videos-one-on-each-half">There are really 2 videos (one on each half)</h2>
 
-<p>Once you have your repo mirrored on your iPad then you need to edit the content. I have tried a variety of tools which I won’t mention but, in the end the best (IMHO) is <em>Editorial</em> from Ole Zorn. This iOS app is a first class markdown editor, but can be extended through Python scripts. <a href="http://omz-software.com/editorial/">Take a look at the web site for a full description</a>.</p>
+<p><a href="/images/2017/03/videoover2_broke.png"><img src="/images/2017/03/videoover2_broke.png" alt="In iBooks, the video is split" /></a></p>
 
-<p><a href="/images/editorial.jpg"><img src="/images/editorial.jpg" alt="Anything in 'Working Copy' can be edited in 'Editorial', an app on the iPad." /></a></p>
+<p>When you export to the fixed-layout ePub from InDesign – and you choose the <code class="highlighter-rouge">Convert Spread to Landscape</code> option. The process takes the pair of pages and creates one XHTML file (in the ePub package) with a viewport dimension based on the overall width of 2 pages. But, it also creates a 2 divisions with a width obtained from the width of the page. Inside these <code class="highlighter-rouge">&lt;div&gt;</code>s, it puts a copy of the video; there are 2 videos on the ePub page.</p>
+
+<h2 id="can-we-fix">Can we fix?</h2>
+
+<p>Yes, but only by editing the XHTML inside the ePub package!</p>
+
+<p>Before we go ahead and show those changes you are advised to keep the spread where the video sits very simple; remove page numbers and headers and any empty text boxes that are sitting around on those pages.</p>
 
 <blockquote>
-  <p><strong>Note</strong>: This image is taken with an external keyboard attached, so the soft keyboard is not showing</p>
+  <p>Note: When you edit the XHTML inside the ePub package you will lose the ability to <em>round-trip</em> to InDesign, so leave these changes to the last in your workflow.</p>
 </blockquote>
 
-<h3 id="design-of-the-site">Design of the site</h3>
+<h2 id="why-do-we-need-to-edit-the-xhtml">Why do we need to edit the XHTML?</h2>
 
-<p>I based this look and feel on the <a href="http://lanyon.getpoole.com/" title="Lanyon" target="_blank">Lanyon theme from here</a>.</p>
+<p>Blame Adobe! When the ePub is exported to fixed-layout specifying <code class="highlighter-rouge">Convert Spread to Landscape</code> a single XHTML document is created for the pair of pages, however, a <code class="highlighter-rouge">&lt;div&gt;</code> for each page is created with <em>inline styling</em> but <strong>no</strong> id or class name. <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
 
-<p>Images can be enlarged and use a variation of <a href="http://fancybox.net" title="Take a look at Fancybox" target="_blank">Fancybox</a> using jquery.</p>
+<h2 id="here-are-the-steps-then">Here are the steps then.</h2>
 
-<p>Footnotes are turned into popup notes<sup id="fnref:1"><a href="#fn:1" class="footnote">2</a></sup> using ‘Bigfoot’ jquery. You can <a href="http://www.bigfootjs.com" title="Thanks to Chris Sauve for this!">find out about this here</a>.</p>
+<ul>
+  <li>The spread where you have the video needs to be simplified; that is, get rid of page numbers, headers and even empty text frames. The reason for this, is that you will be editing the XHTML, and you want to keep this simple!</li>
+  <li>You will need to unpack the ePub after you have exported.</li>
+  <li>You now need to find the XHTML file that contains the video.</li>
+  <li>You now need to make 2 changes to this file.</li>
+</ul>
 
-<p>The reading position indicator (see the green bar at the top of the page) is a modification of the code from Pankaj Parashar’s version at <a href="https://codepen.io/pankajparashar/pen/towxF" title="Check out this Code.">CodePen</a>.</p>
+<p>Look at this line:</p>
 
-<hr />
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=792,height=594"</span> <span class="nt">/&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<p><a href="/images/2017/01/fromWittenhamClumps.jpg"><img src="/images/2017/01/fromWittenhamClumps.jpg" alt="My shadow bottom right. View from Wittenham Clumps by the Thames at Dorchester." /></a></p>
+<p>Take a note of the width (yours may be different to mine). Now <strong>change</strong> the width on the first <code class="highlighter-rouge">&lt;div&gt;</code>, because this will have a width that is half of the width above; You see that this is an inline CSS - this is why we cannot change in our own CSS.</p>
 
-<p>And to finish off this home page, here is a photo taken by me during a trip on <a href="http://avivaboat.weebly.com" title="AViVA">my boat that plies up and down the Thames</a>.</p>
+<p><a href="/images/2017/03/editHTML2videos.png"><img src="/images/2017/03/editHTML2videos.png" alt="This shows the HTML where the video is displayed across 2 pages" /></a></p>
 
-<p>Project maintained by @Pageboy</p>
+<p>Here is mine:</p>
 
-<p>A lot of my documents are also to found on my legacy site:  <a href="http://www.pagetoscreen.net" title="Lots of useful information">PagetoScreen</a>.</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"position:absolute;
+overflow:hidden;
+left:0px;
+top:0px;
+-webkit-transform:translate(0.00px,0.00px);
+-ms-transform:translate(0.00px,0.00px);
+transform:translate(0.00px,0.00px);
+width:396.00px;
+height:594.00px"</span><span class="nt">&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>The width should be changed from <code class="highlighter-rouge">396.00px</code> to <code class="highlighter-rouge">792px</code></p>
+
+<p>The next change is to hide the second <code class="highlighter-rouge">&lt;div&gt;</code>. Find the second block that also has a width set to half the overall viewport width and add (within the inline style):</p>
+
+<p><code class="highlighter-rouge">;display:none;</code></p>
+
+<h2 id="autoplaying-the-video">Autoplaying the Video</h2>
+
+<p>InDesign does provide a tick box on the media panel to play on page load. This effectively gets the video going straight away. In this situation there is a danger that using the above method to display the video fully across the spread may result in the video playing twice, and with sound this may result in an unpleasant echo.</p>
+
+<p><a href="/images/2017/04/autoplayvideo.png"><img src="/images/2017/04/autoplayvideo.png" alt="The play on page load tick box" /></a></p>
+
+<h3 id="how-to-solve-this">How to solve this?</h3>
+
+<p>By simply adding <code class="highlighter-rouge">display:none;</code> we have hidden the second copy of the video, but it will still play if told to do so with ‘autoplay’.</p>
+
+<p>We could remove the ‘autoplay’ in the HTML for the video.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">&lt;video</span> <span class="na">id=</span><span class="s">"_idVideo000"</span> <span class="na">poster=</span><span class="s">"image/80.png"</span> <span class="na">autoplay=</span><span class="s">"autoplay"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"video/msnd01.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>However, this is not enough, because InDesign has used javascript to start the video <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> and you will need to disable for second video by removing this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nx">data</span><span class="o">-</span><span class="nx">mediaOnPageLoadActions</span><span class="o">=</span><span class="s2">"onMediaStart(selfContainerID,0.00,0);"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>I suppose you might just as well delete all of the last &lt;div&gt; or use HTML comment tags to remove.</p>
+
+<blockquote>
+  <p>Note: Any of these changes will be reversed if you re-export from InDesign, so you should only do this at the end of your workflow or copy this code somewhere and paste back in at the end.</p>
+</blockquote>
 
 <div class="footnotes">
   <ol>
-    <li id="fn:2">
-      <p>@pageboy is Chris Jennings and he teaches Undergraduate and Postgraduate modules on Digital Publishing at Oxford Brookes University. He also is a consultant specialising in eBook production. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
-    </li>
     <li id="fn:1">
-      <p>Thanks to Chris Sauve for this! <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>It may be possible to use javascript to change the markup on the page dynamically and thereby allowing us to change this even if we have made further edits in InDesign. Let me know if you find a way. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>The reason that there is javascript to autoplay the video rather than just using ‘autoplay’ is that Apple iOS devices do not support the HTML5 video autostart attribute. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
 </div>
+ -->
+    <p>There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width.</p>
 
-<!-- We can only show one screencast at the moment --></div><p>This page last edited on: 2017-05-12</p>
+
+    <p><a href="/indesign/epub/html/2017/03/31/spread-video-fxl-epub/">Read more...</a></p>
+  </div>
+  
+  <div class="post">
+    <h2 class="post-title">
+      <a href="/2017/03/30/from-print-to-fixed-layout-epub-page-size/">
+        Page Size Issues in fixed-layout ePub
+      </a>
+    </h2>
+
+    <span class="post-date">30 Mar 2017</span>
+    <!-- <p>Following on from page size in the reflowable eBook, how about the fixed-layout eBook after it has been created as a print book? So you have used InDesign to create a wonderful printed book of a Shakespeare play, and you chose a standard page size (my example is: 216mm x138mm). Now when you make the fixed layout eBook from the spreads there might be a few observable problems.</p>
+
+<h2 id="proportion">Proportion</h2>
+
+<p>Our print book spreads will become landscape in the fixed-layout eBook. So, we will get the following proportions:</p>
+
+<p><code class="highlighter-rouge">width:138 x 2 = 278</code>
+<code class="highlighter-rouge">height = 216</code></p>
+
+<p><code class="highlighter-rouge">Proportion = 216/278 = 0.7777</code></p>
+
+<p>On a computer running Apple iBooks or any other eReader, the proportion is
+not really significant because all computer displays vary in proportion. However, on a tablet such as the iPad the proportion is specifically 6x8 or 0.75. So, we need to modify the size of the pages in the InDesign file very slightly; keeping the width of the pages, we take the width of the spread and multiply by 0.75 and we get 208.5. So we lose about 8mm in the height.</p>
+
+<p><a href="/images/2017/03/ipad_edgerevealed.jpg"><img src="/images/2017/03/ipad_edgerevealed.jpg" alt="Here we see that the page size does not exactly fit on the iPad" /></a></p>
+
+<h2 id="theory-and-practice">Theory and Practice</h2>
+
+<p>The above scenario takes a book designed for print and makes one adjustment in a attempt to resolve the proportion riddle, however, in practise there may still be gaps and mysterious white lines.</p>
+
+<h3 id="its-all-about-the-units">It’s all about the units</h3>
+
+<p>The numbers that we refer to above are in millimetres because in Europe we tend to use metric units to measure page sizes.</p>
+
+<p>When InDesign exports the fixed-layout eBook, it needs to make a conversion from real-world units (millimetres) to pixels. If we take a peak inside the ePub package at one of the <code class="highlighter-rouge">XHTML</code> files we see that:</p>
+
+<p><code class="highlighter-rouge">&lt;meta name="viewport" content="width=782,height=591" /&gt;</code></p>
+
+<p>This tells the ereader that the size is 782x591. The proportion, therefore is <code class="highlighter-rouge">0.755754475703325</code> - very slightly wrong! The height should be: <code class="highlighter-rouge">586.5</code>.</p>
+
+<h3 id="lets-not-edit-the-epub">Let’s not edit the ePub</h3>
+
+<p>We don’t need to edit the XHTML code inside the ePub. No, we just need to adjust the InDesign file to use pixel units. Here’s how:</p>
+<h3 id="unit-preferences">Unit Preferences</h3>
+
+<p>In Indesign, go to the preferences panel and find the <code class="highlighter-rouge">units and increments</code> section. Change the Ruler units for both vertical and horizontal to <strong>pixels</strong>.</p>
+
+<p><a href="/images/2017/03/changetheunitstopixels.png"><img src="/images/2017/03/changetheunitstopixels.png" alt="Change from millimetres to pixels" /></a></p>
+
+<h3 id="page-size">Page size</h3>
+
+<p>Now go to File&gt;Document setup and see that the page size is now an untidy fraction of pixels (391.181 x 591.024). Not nice!</p>
+
+<p>We need to do some adjustment to these numbers to get a 3/4 proportion and hopefully exact pixels numbers. Pixels are tiny little units so this should not impact our designs too much.</p>
+
+<p>The result is a page width of <code class="highlighter-rouge">396 pixels</code> and page height of <code class="highlighter-rouge">594 pixels</code>. When we add 2 pages together the landscape becomes <code class="highlighter-rouge">792 x 594 = 8 x 6</code>.</p>
+
+<h2 id="document-set-up-or-pages-size">Document set up or pages size</h2>
+
+<p>You can go back to the File&gt;Document setup and change the page size. This will work, however, you can use the Page Tool on the tool palette and select all master pages in the Pages panel. You then can control the reference point for the change to happen (choose the centre top).</p>
+
+<p><a href="/images/2017/03/documentsetup.png"><img src="/images/2017/03/documentsetup.png" alt="In the documents setup we now need to adjust to a whole pixel number." /></a></p>
+
+<p>Then you need to apply the master pages to all pages and also set the page size in the document setup panel.</p>
+ -->
+    <p>Following on from page size in the reflowable eBook, how about the fixed-layout eBook after it has been created as a print book? So you have used InDesign to create a wonderful printed book of a Shakespeare play, and you chose a standard page size (my example is: 216mm x138mm). Now when you make the fixed layout eBook from the spreads there might be a few observable problems.</p>
+
+
+    <p><a href="/2017/03/30/from-print-to-fixed-layout-epub-page-size/">Read more...</a></p>
+  </div>
+  
+  <div class="post">
+    <h2 class="post-title">
+      <a href="/indesign/epub/css/2017/03/24/page-size-in-indesign-for-ebook/">
+        Page size in InDesign for eBook?
+      </a>
+    </h2>
+
+    <span class="post-date">24 Mar 2017</span>
+    <!-- <p>We’re creating a <strong>reflowable</strong> eBook in InDesign. We’re not planning a print book at all - just straight to an eBook; what size page should we choose when we use Adobe InDesign?</p>
+
+<h2 id="why-should-you-care">Why should you care?</h2>
+
+<p>When we create an eBook (reflowable) users get to change the font size. This is how it is in all eReader devices although the range of sizes varies considerably.</p>
+
+<p>Let’s use the iPad with Apple’s iOS as an example. Let’s have a look at iBooks (the standard app on the iPad for viewing eBooks).</p>
+
+<h2 id="ibooks">iBooks</h2>
+
+<p>On any MAC with iBooks, a reflowable eBook provides the user with a font size ‘adjuster’ symbolised as a small and large capital <code class="highlighter-rouge">A</code>. You can see the image alongside here.</p>
+
+<p><a href="/images/2017/03/ibooksfontsize.png"><img src="/images/2017/03/ibooksfontsize.png" alt="The appearance controller for iBooks on the MAC" /></a></p>
+
+<p>The range of choices is extreme: There are 11 steps from when the little <code class="highlighter-rouge">A</code> is greyed out to when the large <code class="highlighter-rouge">A</code> is greyed out. As you see from the nest image here, the large size is - well, kind of ridiculous.</p>
+
+<p><a href="/images/2017/03/ibooksenlargedtext.png"><img src="/images/2017/03/ibooksenlargedtext.png" alt="The largest text size with iBooks" /></a></p>
+
+<h2 id="the-target-size-for-the-body-text-font">The target size for the body text font?</h2>
+
+<p>Whatever you think you want, you may not get it! The problem is that the reader may have adjusted the font size when they read another book before yours, so you don’t know what they will see at first.</p>
+
+<p>When you create a reflowable ePub from InDesign, the relationship between the InDesign page and what you see in the ePub (I’m using Apple’s iBooks here) is non existent; that is, the page size in InDesign is not relevant. What is relevant is the font size. Let me explain further by showing some simple sample pages.</p>
+
+<h2 id="point-size-to-css-em">Point size to CSS em</h2>
+
+<p>Let’s focus on the body text. By that I mean the main paragraphs; not the headings or list items or captions. Just the paragraphs.</p>
+
+<p>You must have a point size for this text. InDesign expects you to have a value for the point size. The default point size is <code class="highlighter-rouge">12pts</code>. This is how you should find it if you use the <code class="highlighter-rouge">[Basic Paragraph]</code> style.</p>
+
+<p>When you export to the ePub Reflowable format, the CSS that controls the font size will be:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nt">p</span><span class="nc">.basic-paragraph</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span><span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>In other words the default font size for the HTML element <code class="highlighter-rouge">p</code>.</p>
+
+<h2 id="what-about-the-page-size-then">What about the page size then?</h2>
+
+<p>If you accept that the reflowable ePub will not necessarily look <em>exactly</em> like the InDesign page, then you can make the page size whatever you want, but –— maybe we really want to see the InDesign page layout so that it <em>almost nearly</em> reflects the view that will be seen in the eBook.</p>
+
+<p>To establish this, we need to conduct some experiments.</p>
+
+<h3 id="starting-a-new-indesign-document-beware-of-the-intent-trap">Starting a New InDesign document (beware of the <code class="highlighter-rouge">Intent</code> trap)</h3>
+
+<p>You might be tempted, when creating a new InDesign document to select <code class="highlighter-rouge">Intent</code> and choose <code class="highlighter-rouge">Mobile</code>, and then choose <code class="highlighter-rouge">iPad</code>. Depending on which you choose, you might get a page size of 1024x768 pixels. If you have a body text font size of <code class="highlighter-rouge">12pts</code>, then your text will appear very small, when working with InDesign. See the image to the left.</p>
+
+<p><a href="/images/2017/03/ipadsize12pts.png"><img src="/images/2017/03/ipadsize12pts.png" alt="This portrait page is 768 wide x 1024 tall" /></a></p>
+
+<p>Let’s try something else; if we imagine that the <em>spread</em> needs to be 1024 pixels together then the page should be 768 pixels tall and 512 pixels wide.</p>
+
+<p><a href="/images/2017/03/pagesize768512.png"><img src="/images/2017/03/pagesize768512.png" alt="View in InDesign of 12pt text on 512x768 page" /></a></p>
+
+<p>Now we see what the 12pt text looks like in InDesign. Not bad. Good measure with a manageable page size.</p>
+
+<p>How near is this to the eventual view in the eBook. We need to export as reflowable and then look at this in Apple’s iBooks, but with the text size set one size larger than the smallest.</p>
+
+<p><a href="/images/2017/03/pagesize768512_epub2.png"><img src="/images/2017/03/pagesize768512_epub2.png" alt="Here we compare the eBook with what we see in InDesign." /></a></p>
+
+<p>We can continue to try other options until the best choice is found; let’s just see a different size in InDesign. This time we choose for Web Intent and choose the <code class="highlighter-rouge">640 x 480</code> size.</p>
+
+<p>We have InDesign show us the page at <code class="highlighter-rouge">actual size</code> and we compare this to iBooks (actual size) but enlarge the text up one notch.</p>
+
+<p><a href="/images/2017/03/640480_iBook_2ndstep.png"><img src="/images/2017/03/640480_iBook_2ndstep.png" alt="InDesign actual size and iBooks with text up one notch" /></a></p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>The reflowable eBook should have the default size for for body text (that means 1em or 12pts), so that users can increase the text size if they prefer. In fact, Apple recommends that the there is <strong>no</strong> text size set for the body text, so that it automatically defers to the default size. InDesign does not give us this option, so setting at 12pts is the best choice.</p>
+
+<blockquote>
+  <p>Note: You can, of course post-edit the ePub and remove the font-size CSS from the style rules for your body text.</p>
+</blockquote>
+
+<p>After much experimenting then, we find that in a situation where we are creating a reflowable ePub from InDesign <em>without wanting the print version first</em> then the best page size choice is <strong>480 pixels wide and 640 pixels high after selecting the intent for web</strong>.</p>
+ -->
+    <p>We’re creating a <strong>reflowable</strong> eBook in InDesign. We’re not planning a print book at all - just straight to an eBook; what size page should we choose when we use Adobe InDesign?</p>
+
+
+    <p><a href="/indesign/epub/css/2017/03/24/page-size-in-indesign-for-ebook/">Read more...</a></p>
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page2"><i class="fa fa-caret-left" aria-hidden="true"></i> Older</a>
+  
+  
+    <span class="pagination-item newer">Newer  <i class="fa fa-caret-right" aria-hidden="true"></i></span>
+  
+</div>
+
+<!-- We can only show one screencast at the moment --></div><p>This page last edited on: 2018-01-14</p>
       </div>
     </div>
 <!--<footer>
@@ -355,6 +635,8 @@ top:0;
 
     });
     </script>
+
+
 
     <script src="/public/js/progress.js"></script>
 

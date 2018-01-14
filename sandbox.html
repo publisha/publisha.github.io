@@ -32,32 +32,7 @@ top:0;
 }
 </style><!-- javascripts for fancybox -->
 <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
-</script>
-<script type="text/javascript" src="/public/js/jquery.fancybox-media.js">
-</script><!-- for slides on home page -->
-  <script src="/public/js/responsiveslides.min.js"></script>
-<script>
-    $(function () {
 
-      $("#pageimage").responsiveSlides({
-        auto: true,
-        pager: false,
-        nav: false,
-        speed: 500,
-        timeout: 6000,
-        random: true,
-        namespace: "callbacks",
-        before: function () {
-          $('.events').append("<li>before event fired.</li>");
-        },
-        after: function () {
-          $('.events').append("<li>after event fired.</li>");
-        }
-      });
-
-    });
-  </script>
 
   <link rel="stylesheet" href="/public/css/responsiveslides.css"><!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
@@ -134,32 +109,37 @@ top:0;
       </div>
     </div>
 
-    <div class="wrap"><div id="callbacks_container">
+    <div class="wrap">
+    <div id="callbacks_container">
 
 <ul class="rslides" id="pageimage">
+<!-- images go in here via flickr and jquery -->
+</ul>
 <script>
-//SET API CALL BASED ON INPUT
-
-// https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=8703fd9d85e590caa23f024664553688&photoset_id=72157687532719080&user_id=55648661%40N00&extras=url_o&format=json&nojsoncallback=1&auth_token=72157662476194677-4b5c507232b9a92f&api_sig=ef69063ef85809a1a72b2eae3f154793
-//
-
-
 
 $(function() {
-  var apiCall =
-  "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=fa38f39c762bdc429a6c2dd7c042f5d1&photoset_id=72157687532719080&user_id=55648661%40N00&extras=url_o&format=json&auth_token=72157692158144495-3d8f327c34c5b9e6&api_sig=478ebcea5acc32853fa2a33b150a4eef";
-      $.getJSON(apiCall, function(data){
-        var items = [];
-        $.each(data.items, function(i,item){
-          document.write("Hello World!");
-          items.push( "<li>" + item.title + "</li>" );
-          // $(item.title);
-          // $("<img/>").attr("src", photo.url_o);
+  // create a gallery with custom options
+  var options = {
+    apiKey: '6a751024fcc480f70610ed1f98220880',
+    flickrId: '55648661@N00',
+    photosetId: '72157687532719080',
+    captions: true,
+    small: 'small',
+    large: 'original'
+  };
+
+jsonUrl = "https://api.flickr.com/services/rest/?" + "method=flickr.photosets.getPhotos&" + ("api_key=" + options.apiKey + "&") + ("photoset_id=" + options.photosetId + "&") + ("user_id=" + options.flickrId + "&") + "extras=description,url_sq,url_t,url_s,url_m,url_h&" + "format=json&jsoncallback=?";
+
+return $.getJSON(jsonUrl, function(data) {
+  $.each(data.photoset.photo, function(index, photo) {
+          $("<img/>").attr("src", photo.url_h ).appendTo( "#pageimage" )
+          .wrap("<li class='image'>");
+  });
         });
       });
-});
+
 </script>
-</ul>
+
 
 
         <!-- <ul class="rslides" id="pageimage">
@@ -199,82 +179,8 @@ $(function() {
     <div class="contents"><a href="/contents" title="contents"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
     </div>
 
-    <script>
-      (function(document) {
-        var toggle = document.querySelector('.sidebar-toggle');
-        var sidebar = document.querySelector('#sidebar');
-        var checkbox = document.querySelector('#sidebar-checkbox');
-        document.addEventListener('click', function(e) {
-          var target = e.target;
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
-          checkbox.checked = false;
-        }, false);
-      })(document);
-    </script>
-    <script>
-        $(document).ready(function() {
-            $('.fancybox').fancybox();
-        });
-    </script>
-    <script>
-    jQuery(document).ready(function($) {
-    	$("img:not([title])").each(function() {
-    			if($(this).attr("alt") != '') $(this).parent().attr("title", $(this).attr("alt"))
-    			else $(this).parent().attr("title", $(this).attr("src"));
-    	});
-    });
-    </script>
-    <script>
-        $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').attr('class', 'sideimage').fancybox();
-    </script>
-
-    <!-- show a video -->
 
 
-    <script>
-    $(document).ready(function() {
-    	$(".video").fancybox({
-    		maxWidth	: 800,
-    		maxHeight	: 600,
-    		fitToView	: false,
-    		width		: '70%',
-    		height		: '70%',
-    		autoSize	: false,
-    		closeClick	: false,
-    		openEffect	: 'none',
-    		closeEffect	: 'none'
-    	});
-    });
-    </script>
-
-    <!-- navigation -->
-    <script>
-    jQuery(document).ready(function(){
-
-    $(".navigation > li > a").on("click", function(e){
-
-    	if(!$(this).hasClass("active")) {
-
-          // hide any open menus and remove all other classes
-    		$(".navigation li ul").slideUp(350);
-    		$(".navigation li a").removeClass("active");
-
-    		// open our new menu and add the open class
-    		$(this).next("ul").slideDown(350);
-    		$(this).addClass("active");
-
-    	}else if($(this).hasClass("active")) {
-
-    		$(this).removeClass("active");
-    		$(this).next("ul").slideUp(350);
-    	}
-       e.preventDefault();
-    });
-
-    });
-    </script>
 
 
   </body>

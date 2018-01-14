@@ -15,7 +15,8 @@
     <div class="masthead">
       <div class="container">
         <h3 class="masthead-title">
-          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>{%- if page.layout == "post" -%} | <a class="blogLink" href="{{ site.baseurl }}/blog" title="Blog Articles">Blog</a>{%- endif -%}<br />
+          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+          <br />
           <small>{{ site.tagline }}</small>
         </h3>
       </div>
@@ -25,47 +26,60 @@
 
 {%- if page.title == "Home" -%}
     <div id="callbacks_container">
-<!-- <script>
-      $.getJSON("https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=15d0e5a14c22ab06ab29dd73b3610df3&photoset_id=72157687532719080&user_id=55648661%40N00&extras=url_o&format=json&nojsoncallback=1&auth_token=72157689705271104-876233c9aa26a2f3&api_sig=79b454f4e99a94f7c7a0a7a615f4d337", function(data){
-        $.each(data.items, function(i,item){
-          $("<img/>").attr("src", item.url.o).appendTo("#ipageimage")
-            .wrap("<a href='" + item.link + "'></a>");
+
+      <ul class="rslides" id="pageimage">
+        <li><img src="/images/homegallery/img_00123.jpg" alt="">
+        </li>
+      </ul>
+      <script>
+      $(function() {
+        var options = {
+          apiKey: '6a751024fcc480f70610ed1f98220880',
+          flickrId: '55648661@N00',
+          photosetId: '72157687532719080',
+        };
+
+      jsonUrl = "https://api.flickr.com/services/rest/?" + "method=flickr.photosets.getPhotos&" + ("api_key=" + options.apiKey + "&") + ("photoset_id=" + options.photosetId + "&") + ("user_id=" + options.flickrId + "&") + "extras=description,url_sq,url_t,url_s,url_m,url_h&" + "format=json&jsoncallback=?";
+
+      return $.getJSON(jsonUrl, function(data) {
+        $.each(data.photoset.photo, function(index, photo) {
+          if (photo.url_h) {
+                $("<img />").attr({
+                  src: photo.url_h,
+                  alt: "flickr- " + photo.title
+                }).appendTo( "#pageimage" )
+                .wrap("<li>");
+              }
         });
+        $(".rslides").responsiveSlides();
       });
 
-</script> -->
+
+    });
+
+      </script>
 
 
-
-
-
-        <ul class="rslides" id="pageimage">
+        <!-- <ul class="rslides" id="pageimage">
             <li><img src="images/homegallery/img_00123.jpg" alt="">
-          <!-- <p class="caption">This is a caption</p> -->
             </li>
           <li><img src="images/homegallery/img_00124.jpg" alt="">
-      <!-- <p class="caption">This is another caption</p> -->
     </li>
     <li>
       <img src="images/homegallery/img_00125.jpg" alt="">
-      <!-- <p class="caption">The third caption</p> -->
     </li>
     <li>
       <img src="images/homegallery/img_00126.jpg" alt="">
-      <!-- <p class="caption">The third caption</p> -->
     </li>
     <li>
       <img src="images/homegallery/img_00127.jpg" alt="">
-      <!-- <p class="caption">The third caption</p> -->
     </li>
     <li>
       <img src="images/homegallery/img_1894.jpg" alt="">
-      <!-- <p class="caption">The third caption</p> -->
     </li>
-  </ul>
+  </ul> -->
 </div>
 
-        <!-- <div id="pageimage"></div> -->
 {%- endif -%}
       <!-- masthead was here -->
       <div class="container content">
@@ -155,6 +169,8 @@
 
     });
     </script>
+
+
 
     <script src="{{site.baseurl}}/public/js/progress.js"></script>
 

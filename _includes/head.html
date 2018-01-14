@@ -107,6 +107,19 @@ section.toc {
 <script type="text/javascript" src="{{site.baseurl}}/public/js/jquery.fancybox-media.js">
 </script>
 
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.github.url }}/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="{{ site.github.url }}/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.github.url }}/atom.xml">
+
+  <!-- javascript for the footnote popups -->
+<script type="text/javascript" src="{{site.baseurl}}/public/js/bigfoot.js"></script>
+<script type="text/javascript">
+    $.bigfoot();
+</script>
+
 {%- if page.title == "Home" -%}
 <!-- for slides on home page -->
   <script src="{{site.baseurl}}/public/js/responsiveslides.min.js"></script>
@@ -134,21 +147,6 @@ section.toc {
 
   <link rel="stylesheet" href="{{site.baseurl}}/public/css/responsiveslides.css">
 {%- endif -%}
-
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.github.url }}/public/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="{{ site.github.url }}/public/favicon.ico">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.github.url }}/atom.xml">
-
-  <!-- javascript for the footnote popups -->
-<script type="text/javascript" src="{{site.baseurl}}/public/js/bigfoot.js"></script>
-<script type="text/javascript">
-    $.bigfoot();
-</script>
-
-
 
 {%- if page.annotate == "yes" -%}
 <!-- annotations -->

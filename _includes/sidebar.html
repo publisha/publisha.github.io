@@ -41,22 +41,25 @@
      </li>
      <li><a title="screencasts from the YouTube channel" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/screencasts/">Screencasts <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
      </li>
-{%- comment -%}
      <li><a title="presentations generated from Keynote" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/presentations/">Presentations <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
      </li>
-{%- endcomment -%}
+     <li><a title="Image galleries from Flickr" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/galleries/">Images Galleries <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+     <li><a title="Course Sections" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/sections/">Sections for Teaching <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
       <li><a title="see all contents listed" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/contents">List all Contents <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
       </li>
     </ul>
   </nav>
-  <div class="sidebar-item">
+  <!-- <div class="sidebar-item">
     <p>
       <b>Note:</b> Images can be enlarged by click or touch
     </p>
-  </div>
+  </div> -->
   <div class="sidebar-item">
     <p>
     <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v{{ site.version }} {{ site.time | date: '%Y' }}
-    </p>
+  </p>
+    <p><a href="{{ site.baseurl }}/pages/about" title="read about this site and how it was made">About this site</a></p>
   </div>
 </div>

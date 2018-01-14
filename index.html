@@ -1,9 +1,12 @@
 ---
-layout: default
-title: Blog Articles
-type: blog
+layout: page
+title: Home
+published: true
+date: 2018-01-14
 ---
+{%- include intro.html -%}
 
+<h1>Blog Posts</h1>
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
@@ -23,7 +26,7 @@ type: blog
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="/blog/page{{paginator.next_page}}"><i class="fa fa-caret-left" aria-hidden="true"></i> Older</a>
+    <a class="pagination-item older" href="/page{{paginator.next_page}}"><i class="fa fa-caret-left" aria-hidden="true"></i> Older</a>
   {% else %}
     <span class="pagination-item older"><i class="fa fa-caret-left" aria-hidden="true"></i>Older</span>
   {% endif %}
@@ -31,7 +34,7 @@ type: blog
     {% if paginator.page == 2 %}
       <a class="pagination-item newer" href="/blog">Newer  <i class="fa fa-caret-right" aria-hidden="true"></i></a>
     {% else %}
-      <a class="pagination-item newer" href="/blog/page{{paginator.previous_page}}">Newer  <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer  <i class="fa fa-caret-right" aria-hidden="true"></i></a>
     {% endif %}
   {% else %}
     <span class="pagination-item newer">Newer  <i class="fa fa-caret-right" aria-hidden="true"></i></span>

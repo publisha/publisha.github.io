@@ -7,10 +7,10 @@ permalink: /sections/index.html
 # Here are the available sections
 You can find the various sections here. These are the pages arranged by topic or class.
 
-### [InDesign](/sections/indesign)
+### [InDesign](/sections/InDesign)
 These are all the articles that help you with InDesign
 
-### [ePub](/sections/epub)
+### [ePub](/sections/ePub)
 eBook Production towards the ePub standard
 
 ## For Oxford Brookes module classes

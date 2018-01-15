@@ -580,18 +580,16 @@ a:focus {
     /*padding-bottom: 1.1rem;*/
 }
 
+.pagetitle {
+  display:none;
+}
+
 .code pre, .gutter pre {
   white-space: pre-wrap;
   /*word-break: break-all;*/
 }
 }
 
-@media screen and (max-width: 40rem) {
-  .masthead-title {
-    text-align: right;
-    /*margin-right:-50px;*/
-}
-}
 
 a.video {
 position:relative;
@@ -996,4 +994,29 @@ section.headline {
 
 .headline h1 {
   color:red;
+}
+
+.pagetitle {
+  display:none;
+  position:relative;
+  bottom:52px;
+  left:320px;
+  font-size: .9rem;
+  border:none;
+  color:black;
+  width:280px;
+}
+
+
+@media screen and (max-width: 40rem) {
+  .masthead-title {
+    text-align: right;
+    /*margin-right:-50px;*/
+}
+
+.pagetitle {
+  display:none;
+  left:-1000px;
+}
+
 }

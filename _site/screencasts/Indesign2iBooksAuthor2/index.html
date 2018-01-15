@@ -135,6 +135,7 @@
           <br />
           <small>Help for publishers and students of publishing</small>
         </h3>
+        <h2 class="pagetitle">InDesign to iBooks Author (Part 2)</h2>
       </div>
     </div>
 
@@ -244,9 +245,16 @@ Now we have created seperate IDML files from InDesign we need to import these in
 
     });
     </script>
-
-
-
+<script>
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 200) {
+        $('.pagetitle').fadeIn();
+      } else {
+        $('.pagetitle').fadeOut();
+      }
+    });
+</script>
     <script src="/public/js/progress.js"></script>
 
   </body>

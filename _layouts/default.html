@@ -19,6 +19,7 @@
           <br />
           <small>{{ site.tagline }}</small>
         </h3>
+        <h2 class="pagetitle">{{ page.title }}</h2>
       </div>
     </div>
 
@@ -28,7 +29,7 @@
     <div id="callbacks_container">
 
       <ul class="rslides" id="pageimage">
-        <li><img src="/images/homegallery/img_00123.jpg" alt="">
+        <li><img src="/images/homegallery/img_00123.jpg" alt="images of books in art">
         </li>
       </ul>
       <script>
@@ -169,9 +170,16 @@
 
     });
     </script>
-
-
-
+<script>
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 200) {
+        $('.pagetitle').fadeIn();
+      } else {
+        $('.pagetitle').fadeOut();
+      }
+    });
+</script>
     <script src="{{site.baseurl}}/public/js/progress.js"></script>
 
   </body>

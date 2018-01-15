@@ -125,6 +125,7 @@
           <br />
           <small>Help for publishers and students of publishing</small>
         </h3>
+        <h2 class="pagetitle">Vertical Spacing for text: pBook and eBook</h2>
       </div>
     </div>
 
@@ -328,9 +329,16 @@ The space-before could be 6pts and the space-after 2.5pts. This then computes as
 
     });
     </script>
-
-
-
+<script>
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 200) {
+        $('.pagetitle').fadeIn();
+      } else {
+        $('.pagetitle').fadeOut();
+      }
+    });
+</script>
     <script src="/public/js/progress.js"></script>
 
   </body>

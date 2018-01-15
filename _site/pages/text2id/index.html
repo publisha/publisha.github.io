@@ -125,6 +125,7 @@
           <br />
           <small>Help for publishers and students of publishing</small>
         </h3>
+        <h2 class="pagetitle">Text to InDesign</h2>
       </div>
     </div>
 
@@ -390,9 +391,16 @@
 
     });
     </script>
-
-
-
+<script>
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 200) {
+        $('.pagetitle').fadeIn();
+      } else {
+        $('.pagetitle').fadeOut();
+      }
+    });
+</script>
     <script src="/public/js/progress.js"></script>
 
   </body>

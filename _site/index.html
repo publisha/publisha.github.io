@@ -150,13 +150,14 @@
           <br />
           <small>Help for publishers and students of publishing</small>
         </h3>
+        <h2 class="pagetitle">Home</h2>
       </div>
     </div>
 
     <div class="wrap"><div id="callbacks_container">
 
       <ul class="rslides" id="pageimage">
-        <li><img src="/images/homegallery/img_00123.jpg" alt="">
+        <li><img src="/images/homegallery/img_00123.jpg" alt="images of books in art">
         </li>
       </ul>
       <script>
@@ -633,9 +634,16 @@ not really significant because all computer displays vary in proportion. However
 
     });
     </script>
-
-
-
+<script>
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 200) {
+        $('.pagetitle').fadeIn();
+      } else {
+        $('.pagetitle').fadeOut();
+      }
+    });
+</script>
     <script src="/public/js/progress.js"></script>
 
   </body>

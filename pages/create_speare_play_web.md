@@ -4,7 +4,7 @@ title: Repository for Shakespeare Play Web page
 published: true
 categories: ["HTML and CSS", "Multi-Platform Publishing"]
 tags: [Using GitHub]
-date:  2017-12-31
+date:  2018-01-16
 order: 2
 blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 ---
@@ -34,6 +34,11 @@ Before you do anything with your new GitHub account do this:
 
 - Go to your account settings and put in your full name
 - Add a picture or avatar of yourself
+
+You will now need to click on the link in Moodle and accept the repository.
+
+[![Accept the assignement from classroom](/images/Screen Shot 2018-01-16 at 14.15.41.png)](/images/Screen Shot 2018-01-16 at 14.15.41.png)
+
 - Go to **settings and change the name** of your repo (you can use the name of your play, but this may conflict with others, so include your publisher or surname as well example: _blades-macbeth_)
 
 [![Change the name of your repo](/images/2017/01/changethenameofRepo.png)](/images/2017/01/changethenameofRepo.png)
@@ -41,31 +46,37 @@ Before you do anything with your new GitHub account do this:
 You don't need GitHub.com for the moment but you will need to recall your username and password during the next steps.
 
 ## Your digital tools
+There are 2 free apps that you need to download and install.
+
+### Atom
 You will need a text editor that can show and preview HTML. We now want you to download and install _Atom_. You can find this [free open source editor here][9ef5b049]
 
   [9ef5b049]: https://atom.io "grab Atom"
 
 [![Download Atom](/images/2017/01/downloadAtom.png)](/images/2017/01/downloadAtom.png)
 
-This application will be placed inside your downloads folder, so you need to copy to your _Applications_ folder inside your user account on the MAC. This means that you should try to use the same MAC in the IT suite whenever possible.
+This application will be placed inside your downloads folder, so you need to copy to your _Applications_ folder inside your user account on the MAC.
 
-You can also install this on your own computer at home.
+You can also install _Atom_ on your own computer at home.
 
 [![Finding your Applications folder](/images/2017/01/yourHomefolder.png)](/images/2017/01/yourHomefolder.png)
 
 Your Applications folder is inside your Home folder; find this by selecting _Go_ from the finder menu. You can copy or move the Atom app from the downloads folder.
 
+If there is no Applications folder inside your home folder then create one. Do try to use the same MAC in the IT suite whenever possible, so that you do not need to install this software again.
+
 Atom will now be available but we now need to move to the next stage.
 
 > ### Configuring Atom
-Atom is open source, so this means there are lots of packages that can be added to provide extra functionality. What follows is **rather advanced**, so don't worry if you can't do this; it is only another option.
+Atom is open source, so this means there are lots of packages that can be added to provide extra functionality.
 
-> Here are a few packages that will prove useful:
+> Here are a few packages that will prove useful but one that is highly recommended is:
 
-> - Atom HTML Preview
-> - toolbar (suda)
+> - Open in Browser
 
-> You can also use Atom to update your GitHub repository that is online.
+[![Add this package to Atom](/images/Screen Shot 2018-01-16 at 14.18.42.png)](/images/Screen Shot 2018-01-16 at 14.18.42.png)
+
+> You can also use Atom to update your GitHub repository that is online, but to prevent having to login each time add the following command.
 
 > In the terminal window copy and paste this:
 
@@ -73,19 +84,24 @@ Atom is open source, so this means there are lots of packages that can be added 
 
 > You should now be able to _push_ your updates direct to GitHub and see the results on your web site.
 
-The MACs, in the IT studio, have an application called _GitHub Desktop_. Find this in the launchpad. If you want to install this on your own computer, it is free and [comes from here][c6de3c27]
+
+[![Push your changes to Github](/images/Screen Shot 2018-01-16 at 14.32.21.png)](/images/Screen Shot 2018-01-16 at 14.32.21.png)
+
+## Github Desktop_
+
+You will need this app to make it easy to _clone_ the repository to your computer (use Google drive) so that you can edit offline/
+
+_GitHub Desktop_ is free and [comes from here][c6de3c27]
 
   [c6de3c27]: https://desktop.github.com "grab GithUb Desktop"
+One you download this app, put inside the Applications folder where you have placed _Atom_
 
 - Open the GitHub Desktop APP
-- It will show a tutorial that you can come back to if you wish.
-- You now need to login with your GitHub account
-
-[![Login Details from GitHub are needed to login to GitHub Desktop](/images/2017/01/providetourLoginDetailsfromGitHub.png)](/images/2017/01/providetourLoginDetailsfromGitHub.png)
+- Sign into your GitHub account that you have previously setup
 
 Once you have done this you can now _clone_ the repository that is in your GitHub account online by selecting the **+** sign. All being well you should see something similar to this here:
 
-[![Choose your repo](/images/2017/01/clone.png)](/images/2017/01/clone.png)
+[![You should see your repository once signed in](/images/Screen Shot 2018-01-16 at 14.25.58.png)](/images/Screen Shot 2018-01-16 at 14.25.58.png)
 
 - You will be asked where to put it…. your Google drive is best! Stay in the GitHub desktop app:
 - In the GitHub desktop right-click over the repo name in the left sidebar and select **Open in Atom**
@@ -148,17 +164,17 @@ In Atom it will look similar to this:
 - check that the link functions correctly.
 
 ## Making the web site work
-**When you are happy** with the look of these web pages (preview the files in a browser) then you can:
+You can look at the web pages in the web browser by right clicking over the file and selecting _Open in Browser_. This will only work if you installed the Atom package (see above).
+
+**When you are happy** with the look of these web pages then you can:
 - Upload these new versions of these files to your GitHub repository
-- You do this by using Atom.
+- You do this by using the Atom Git Tab (Packages > GitHub Toggle Git Tab).
+- click Stage All (top right)
+- write a message in the commit box (what did you change)
+- Click commit
+- Click to Up Arrow
+- Click Push
 
-Make sure that you 'commit' your changes by writing something like first version in the message box.
-
-[![Here you see that we have 1 uncomitted change](/images/2017/02/githubdesktop1.png)](/images/2017/02/githubdesktop1.png)
-
-And then make sure that you have highlighted the far right of the timeline. Please see these 2 images.
-
-[![The change has been committed, so we can click the Sync button near top right.](/images/2017/02/githubdesktop2.png)](/images/2017/02/githubdesktop2.png)
 
 - Under GitHub Pages choose the **docs folder** for the source
 

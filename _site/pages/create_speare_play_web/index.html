@@ -51,9 +51,9 @@
 <meta property="og:url" content="http://localhost:4000/pages/create_speare_play_web/" />
 <meta property="og:site_name" content="Digital Publishing Hub" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-12-31T00:00:00+00:00" />
+<meta property="article:published_time" content="2018-01-16T00:00:00+00:00" />
 <script type="application/ld+json">
-{"name":null,"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/pages/create_speare_play_web/","publisher":null,"image":null,"headline":"Repository for Shakespeare Play Web page","dateModified":"2017-12-31T00:00:00+00:00","datePublished":"2017-12-31T00:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/create_speare_play_web/"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/pages/create_speare_play_web/","publisher":null,"image":null,"headline":"Repository for Shakespeare Play Web page","dateModified":"2018-01-16T00:00:00+00:00","datePublished":"2018-01-16T00:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/create_speare_play_web/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 </head>
 <body class="theme-base-0b">
@@ -161,6 +161,13 @@
 <ul>
   <li>Go to your account settings and put in your full name</li>
   <li>Add a picture or avatar of yourself</li>
+</ul>
+
+<p>You will now need to click on the link in Moodle and accept the repository.</p>
+
+<p><a href="/images/Screen Shot 2018-01-16 at 14.15.41.png"><img src="/images/Screen Shot 2018-01-16 at 14.15.41.png" alt="Accept the assignment from classroom" /></a></p>
+
+<ul>
   <li>Go to <strong>settings and change the name</strong> of your repo (you can use the name of your play, but this may conflict with others, so include your publisher or surname as well example: <em>blades-macbeth</em>)</li>
 </ul>
 
@@ -169,65 +176,70 @@
 <p>You don’t need GitHub.com for the moment but you will need to recall your username and password during the next steps.</p>
 
 <h2 id="your-digital-tools">Your digital tools</h2>
+<p>There are 2 free apps that you need to download and install.</p>
+
+<h3 id="atom">Atom</h3>
 <p>You will need a text editor that can show and preview HTML. We now want you to download and install <em>Atom</em>. You can find this <a href="https://atom.io" title="grab Atom">free open source editor here</a></p>
 
 <p><a href="/images/2017/01/downloadAtom.png"><img src="/images/2017/01/downloadAtom.png" alt="Download Atom" /></a></p>
 
-<p>This application will be placed inside your downloads folder, so you need to copy to your <em>Applications</em> folder inside your user account on the MAC. This means that you should try to use the same MAC in the IT suite whenever possible.</p>
+<p>This application will be placed inside your downloads folder, so you need to copy to your <em>Applications</em> folder inside your user account on the MAC.</p>
 
-<p>You can also install this on your own computer at home.</p>
+<p>You can also install <em>Atom</em> on your own computer at home.</p>
 
 <p><a href="/images/2017/01/yourHomefolder.png"><img src="/images/2017/01/yourHomefolder.png" alt="Finding your Applications folder" /></a></p>
 
 <p>Your Applications folder is inside your Home folder; find this by selecting <em>Go</em> from the finder menu. You can copy or move the Atom app from the downloads folder.</p>
 
+<p>If there is no Applications folder inside your home folder then create one. Do try to use the same MAC in the IT suite whenever possible, so that you do not need to install this software again.</p>
+
 <p>Atom will now be available but we now need to move to the next stage.</p>
 
-<blockquote>
-  <h3 id="configuring-atom">Configuring Atom</h3>
-  <p>Atom is open source, so this means there are lots of packages that can be added to provide extra functionality. What follows is <strong>rather advanced</strong>, so don’t worry if you can’t do this; it is only another option.</p>
-</blockquote>
+<h3 id="configuring-atom">Configuring Atom</h3>
+<p>Atom is open source, so this means there are lots of packages that can be added to provide extra functionality.</p>
 
-<blockquote>
-  <p>Here are a few packages that will prove useful:</p>
-</blockquote>
+<p>There are a few packages that will prove useful but one that is highly recommended is:</p>
 
 <blockquote>
   <ul>
-    <li>Atom HTML Preview</li>
-    <li>toolbar (suda)</li>
+    <li>Open in Browser</li>
   </ul>
 </blockquote>
 
-<blockquote>
-  <p>You can also use Atom to update your GitHub repository that is online.</p>
-</blockquote>
+<p><a href="/images/Screen Shot 2018-01-16 at 14.18.42.png"><img src="/images/Screen Shot 2018-01-16 at 14.18.42.png" alt="Add this package to Atom" /></a></p>
 
-<blockquote>
-  <p>In the terminal window copy and paste this:</p>
-</blockquote>
+<p>This will provide you with the ability to <code class="highlighter-rouge">right-click</code> over the file and select <code class="highlighter-rouge">Open in Browser</code>, which will then show you the file in your default web browser.</p>
+
+<h4 id="atom-and-github">Atom and GitHub</h4>
+
+<p>You can also use Atom to update your GitHub repository that is online, but to prevent having to login each time add the following command.</p>
+
+<p>In the terminal window copy and paste this:</p>
 
 <blockquote>
   <p><code class="highlighter-rouge">git config --global credential.helper osxkeychain</code></p>
 </blockquote>
 
-<blockquote>
-  <p>You should now be able to <em>push</em> your updates direct to GitHub and see the results on your web site.</p>
-</blockquote>
+<p>You should now be able to <em>push</em> your updates direct to GitHub and see the results on your web site.</p>
 
-<p>The MACs, in the IT studio, have an application called <em>GitHub Desktop</em>. Find this in the launchpad. If you want to install this on your own computer, it is free and <a href="https://desktop.github.com" title="grab GithUb Desktop">comes from here</a></p>
+<p><a href="/images/Screen Shot 2018-01-16 at 14.32.21.png"><img src="/images/Screen Shot 2018-01-16 at 14.32.21.png" alt="Push your changes to Github" /></a></p>
+
+<h2 id="github-desktop">Github Desktop</h2>
+
+<p>You will need this app to make it easy to <em>clone</em> the repository to your computer (use Google drive) so that you can edit offline/</p>
+
+<p><em>GitHub Desktop</em> is free and <a href="https://desktop.github.com" title="grab GithUb Desktop">comes from here</a></p>
+
+<p>One you download this app, put inside the Applications folder where you have placed <em>Atom</em></p>
 
 <ul>
   <li>Open the GitHub Desktop APP</li>
-  <li>It will show a tutorial that you can come back to if you wish.</li>
-  <li>You now need to login with your GitHub account</li>
+  <li>Sign into your GitHub account that you have previously setup</li>
 </ul>
-
-<p><a href="/images/2017/01/providetourLoginDetailsfromGitHub.png"><img src="/images/2017/01/providetourLoginDetailsfromGitHub.png" alt="Login Details from GitHub are needed to login to GitHub Desktop" /></a></p>
 
 <p>Once you have done this you can now <em>clone</em> the repository that is in your GitHub account online by selecting the <strong>+</strong> sign. All being well you should see something similar to this here:</p>
 
-<p><a href="/images/2017/01/clone.png"><img src="/images/2017/01/clone.png" alt="Choose your repo" /></a></p>
+<p><a href="/images/Screen Shot 2018-01-16 at 14.25.58.png"><img src="/images/Screen Shot 2018-01-16 at 14.25.58.png" alt="You should see your repository once signed in" /></a></p>
 
 <ul>
   <li>You will be asked where to put it…. your Google drive is best! Stay in the GitHub desktop app:</li>
@@ -243,6 +255,7 @@
 <p><a href="/images/2017/01/atom.png"><img src="/images/2017/01/atom.png" alt="Atom editor" /></a></p>
 
 <h2 id="whats-inside-the-repository">What’s inside the repository?</h2>
+
 <p>When you download this repository, you will find a variety of files, but the 2 important ones are inside the <strong>docs</strong> folder:</p>
 
 <ul>
@@ -309,19 +322,24 @@
 </ul>
 
 <h2 id="making-the-web-site-work">Making the web site work</h2>
-<p><strong>When you are happy</strong> with the look of these web pages (preview the files in a browser) then you can:</p>
+<p>You can look at the web pages in the web browser by right clicking over the file and selecting <em>Open in Browser</em>. This will only work if you installed the Atom package (see above).</p>
+
+<p><strong>When you are happy</strong> with the look of these web pages then you can:</p>
 <ul>
   <li>Upload these new versions of these files to your GitHub repository</li>
-  <li>You do this by using Atom.</li>
+  <li>You do this by using the Atom Git Tab (Packages &gt; GitHub Toggle Git Tab).</li>
+  <li>click Stage All (top right)</li>
+  <li>write a message in the commit box (what did you change)</li>
+  <li>Click commit</li>
+  <li>Click the Up Arrow</li>
+  <li>Click Push</li>
 </ul>
 
-<p>Make sure that you ‘commit’ your changes by writing something like first version in the message box.</p>
+<h2 id="back-to-github">Back to GitHub</h2>
 
-<p><a href="/images/2017/02/githubdesktop1.png"><img src="/images/2017/02/githubdesktop1.png" alt="Here you see that we have 1 uncomitted change" /></a></p>
+<p>Now we need make the web site live at github.com</p>
 
-<p>And then make sure that you have highlighted the far right of the timeline. Please see these 2 images.</p>
-
-<p><a href="/images/2017/02/githubdesktop2.png"><img src="/images/2017/02/githubdesktop2.png" alt="The change has been committed, so we can click the Sync button near top right." /></a></p>
+<p>Go there in your browser and login with the credentials that you put in before and find the repository that you have previously renamed.</p>
 
 <ul>
   <li>Under GitHub Pages choose the <strong>docs folder</strong> for the source</li>
@@ -331,10 +349,10 @@
 
 <ul>
   <li>Your web page for the play will be live!</li>
-  <li>When you have finished and are ready then post the URL of your site to the moodle assignment location.</li>
+  <li>When you have finished and are ready then post the URL of your site to the Moodle assignment location.</li>
 </ul>
 
-<!-- We can only show one screencast at the moment --></div><p><b>Filed under:</b> HTML and CSS, Multi-Platform Publishing</p><p>This page last edited on: 2017-12-31</p>
+<!-- We can only show one screencast at the moment --></div><p><b>Filed under:</b> HTML and CSS, Multi-Platform Publishing</p><p>This page last edited on: 2018-01-16</p>
       </div>
     </div>
 <!--<footer>

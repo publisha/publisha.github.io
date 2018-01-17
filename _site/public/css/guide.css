@@ -46,6 +46,11 @@ body {
     width: 70%;
 font-size: 70%;
 }
+
+/* print the url  */
+a[href^="http"]:after {
+  content:" (" attr(href) ")"
+}
 }
 
 .content {

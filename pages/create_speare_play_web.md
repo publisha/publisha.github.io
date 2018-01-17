@@ -37,7 +37,7 @@ Before you do anything with your new GitHub account do this:
 
 You will now need to click on the link in Moodle and accept the repository.
 
-[![Accept the assignement from classroom](/images/Screen Shot 2018-01-16 at 14.15.41.png)](/images/Screen Shot 2018-01-16 at 14.15.41.png)
+[![Accept the assignment from classroom](/images/Screen Shot 2018-01-16 at 14.15.41.png)](/images/Screen Shot 2018-01-16 at 14.15.41.png)
 
 - Go to **settings and change the name** of your repo (you can use the name of your play, but this may conflict with others, so include your publisher or surname as well example: _blades-macbeth_)
 
@@ -67,27 +67,31 @@ If there is no Applications folder inside your home folder then create one. Do t
 
 Atom will now be available but we now need to move to the next stage.
 
-> ### Configuring Atom
+### Configuring Atom
 Atom is open source, so this means there are lots of packages that can be added to provide extra functionality.
 
-> Here are a few packages that will prove useful but one that is highly recommended is:
+There are a few packages that will prove useful but one that is highly recommended is:
 
 > - Open in Browser
 
 [![Add this package to Atom](/images/Screen Shot 2018-01-16 at 14.18.42.png)](/images/Screen Shot 2018-01-16 at 14.18.42.png)
 
-> You can also use Atom to update your GitHub repository that is online, but to prevent having to login each time add the following command.
+This will provide you with the ability to `right-click` over the file and select `Open in Browser`, which will then show you the file in your default web browser.
 
-> In the terminal window copy and paste this:
+#### Atom and GitHub
+
+You can also use Atom to update your GitHub repository that is online, but to prevent having to login each time add the following command.
+
+In the terminal window copy and paste this:
 
 > `git config --global credential.helper osxkeychain`
 
-> You should now be able to _push_ your updates direct to GitHub and see the results on your web site.
+You should now be able to _push_ your updates direct to GitHub and see the results on your web site.
 
 
 [![Push your changes to Github](/images/Screen Shot 2018-01-16 at 14.32.21.png)](/images/Screen Shot 2018-01-16 at 14.32.21.png)
 
-## Github Desktop_
+## Github Desktop
 
 You will need this app to make it easy to _clone_ the repository to your computer (use Google drive) so that you can edit offline/
 
@@ -113,6 +117,7 @@ Once you have done this you can now _clone_ the repository that is in your GitHu
 [![Atom editor](/images/2017/01/atom.png)](/images/2017/01/atom.png)
 
 ## What's inside the repository?
+
 When you download this repository, you will find a variety of files, but the 2 important ones are inside the **docs** folder:
 
 - index.html - this will become the home page for your play. This page will have the cover image.
@@ -172,13 +177,18 @@ You can look at the web pages in the web browser by right clicking over the file
 - click Stage All (top right)
 - write a message in the commit box (what did you change)
 - Click commit
-- Click to Up Arrow
+- Click the Up Arrow
 - Click Push
 
+## Back to GitHub
+
+Now we need make the web site live at github.com
+
+Go there in your browser and login with the credentials that you put in before and find the repository that you have previously renamed.
 
 - Under GitHub Pages choose the **docs folder** for the source
 
 [![You are telling GitHub to run the web site from the docs folder](/images/2017/01/choose_docsfolder.png)](/images/2017/01/choose_docsfolder.png)
 
 - Your web page for the play will be live!
-- When you have finished and are ready then post the URL of your site to the moodle assignment location.
+- When you have finished and are ready then post the URL of your site to the Moodle assignment location.

@@ -216,7 +216,7 @@ Ok, so I know this seems complicated. Let me write out a simple list with the st
 - Clone the Publisha repository that you see in your account
 - Choose a location (use Google Drive please)
 - In GitHub Desktop, find the repository > open in Atom linked
-  - **Note: **You may not need GitHub Desktop again
+  - _You may not need GitHub Desktop again_
 - Add 2 packages to atom
 - [Read the helper document about getting HTML from InDesign][f0f67b5c]
 - Add the files into the local version of the repository and edit the HTML and CSS etc

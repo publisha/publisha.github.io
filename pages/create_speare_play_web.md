@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Repository for Shakespeare Play Web page
+title: Using a Git Repository for Shakespeare Play Web pages
 published: true
 categories: ["HTML and CSS", "Multi-Platform Publishing"]
 tags: [Using GitHub]
-date:  2018-01-16
+date:  2018-01-17
 order: 2
 blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 ---
@@ -70,13 +70,20 @@ Atom will now be available but we now need to move to the next stage.
 ### Configuring Atom
 Atom is open source, so this means there are lots of packages that can be added to provide extra functionality.
 
-There are a few packages that will prove useful but one that is highly recommended is:
+There are a few packages that will prove useful but here are two that are highly recommended:
 
-> - Open in Browser
+**Open in Browser**
 
 [![Add this package to Atom](/images/Screen Shot 2018-01-16 at 14.18.42.png)](/images/Screen Shot 2018-01-16 at 14.18.42.png)
 
 This will provide you with the ability to `right-click` over the file and select `Open in Browser`, which will then show you the file in your default web browser.
+
+**Color Picker**
+
+[![Grab the Color Picker package](/images/Screen Shot 2018-01-10 at 14.33.49.png)](/images/Screen Shot 2018-01-10 at 14.33.49.png)
+
+This plugin makes it easy to select colours for the CSS.
+
 
 #### Atom and GitHub
 
@@ -85,11 +92,6 @@ You can also use Atom to update your GitHub repository that is online, but to pr
 In the terminal window copy and paste this:
 
 > `git config --global credential.helper osxkeychain`
-
-You should now be able to _push_ your updates direct to GitHub and see the results on your web site.
-
-
-[![Push your changes to Github](/images/Screen Shot 2018-01-16 at 14.32.21.png)](/images/Screen Shot 2018-01-16 at 14.32.21.png)
 
 ## Github Desktop
 
@@ -129,14 +131,15 @@ You can also have a look at the sample scene inside the **sampleScene** folder
 - Also inside the resources folder you will find various InDesign scripts. These scripts needs to go into your copy of InDesign. The instructions are found in the readme for that folder.
 
 ## Ok, so what do I do now?
-Here are the steps to take:
+[You should now read the help document here][9bf3210c], that explains how to generate the HTML files from InDesign.
+
+  [9bf3210c]: https://publisha.github.io/pages/InDesign_to_HTML/ "This gives you comprehensive information needed to build the HTML from InDesign."
+
+### Here are the basic steps
 
 - Open InDesign and find your final version of the play (**only the play - not the Introduction**)
 - Make any corrections that you like (consider the comments from the previous assignment)
 - If you created any new styles you will need to go to the style panel and configure the _Export Tags_ feature, making sure that each style will export with an HTML tag.
-
-[![The Export tagging panel in the paragraph styles](/images/2017/01/export_tagging.png)](/images/2017/01/export_tagging.png)
-
 - You can read the help document that I have provided - [InDesign to HTML][2aa24c4b].
 - Follow those instructions to create the interactive table of contents.
 - Export your play InDesign document with settings in the instructions.
@@ -180,9 +183,16 @@ You can look at the web pages in the web browser by right clicking over the file
 - Click the Up Arrow
 - Click Push
 
+You should now be able to _push_ your updates direct to GitHub and see the results on your web site.
+
+[![Push your changes to Github](/images/Screen Shot 2018-01-16 at 14.32.21.png)](/images/Screen Shot 2018-01-16 at 14.32.21.png)
+
+
 ## Back to GitHub
 
-Now we need make the web site live at github.com
+Now we need make the web site live at [github.com][448988fc]
+
+  [448988fc]: https://www.github.com "Login at Github"
 
 Go there in your browser and login with the credentials that you put in before and find the repository that you have previously renamed.
 
@@ -192,3 +202,26 @@ Go there in your browser and login with the credentials that you put in before a
 
 - Your web page for the play will be live!
 - When you have finished and are ready then post the URL of your site to the Moodle assignment location.
+
+## Summary
+
+Ok, so I know this seems complicated. Let me write out a simple list with the steps. Make this into a check list and tick them off as you go!
+
+- [ ] Download Atom and install in **your** Applications folder
+- [ ] Download GitHub Desktop and install in **your** Applications folder
+- [ ] Create an account on [Github.com][fc57320f]
+- [ ] Grab link on Moodle (week 1) for the GitHub repository (**note:** I can't publish this on this public site)
+- [ ] Accept the Digital Shakespeare repository
+- [ ] Run GitHub Desktop and login with your GitHub credentials
+- [ ] Clone the Publisha repository that you see in your account
+- [ ] Choose a location (use Google Drive please)
+- [ ] In GitHub Desktop, find the repository> open in Atom linked
+- [ ] Add 2 packages to atom
+- [ ] Read the helper document about getting HTML from InDesign
+- [ ] Add the files into the local version of the repository and edit the HTML and CSS etc
+- [ ] Check that the site works (home page is the cover image with link to the play)
+- [ ] `push` the files to your GitHub repository
+- [ ] Configure your GitHub repository to use the `docs` folder to deliver the web site
+- [ ] Note the web address and finish
+
+[fc57320f]: https://www.github.com "Create the account"

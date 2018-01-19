@@ -36,6 +36,7 @@ The TOC will follow the copyright page and (for our example) will be accommodate
 [![Numbering and Section options](/images/2017/01/numbering-and-section-options.jpg)](/images/2017/01/numbering-and-section-options.jpg)
 
 ## Page Numbers (or folio)
+
 You will find that publishers actually follow a variety of conventions!
 
 Sometimes you might see small roman numerals for the prelim pages with the first text page with a number 1; sometimes you might find no page numbers displayed until the text begins - and then this will be set with a (1) or possible the number of page counted to that point.
@@ -110,6 +111,7 @@ Whichever type of ePub you are making from InDesign, you still have a choice abo
 ### Options for the Fixed-layout ePub.
 
 For a fixed-layout ePub, you can leave off the table of contents altogether (not recommended by me), and then the reader software will simply use thumbnails of each page as a navigator. If you do choose to include the generated table of contents on the page, then you certainly should include the page numbers, since those will be matched correctly. A better option may be to have the generated TOC in the file, but not exported on the page.
+
 
 ### Options for the Re-flowable ePub.
 

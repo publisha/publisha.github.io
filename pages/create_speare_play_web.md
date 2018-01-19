@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Using a Git Repository for Shakespeare Play Web pages
+title: Using a Git Repository to host your Shakespeare Play Web Site
 published: true
 categories: ["HTML and CSS", "Multi-Platform Publishing"]
 tags: [Using GitHub]
-date:  2018-01-17
+date:  2018-01-19
 order: 2
 blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 ---
@@ -21,7 +21,7 @@ blurb: We are using GitHub pages to host a web site for the Shakespeare play. Th
 
 </section><!-- /TOC -->
 
-# The Repository for your Shakespeare Play Web page
+# Using a Git Repository to host your Shakespeare Play Web Site
 
 We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 
@@ -46,6 +46,9 @@ You will now need to click on the link in Moodle and accept the repository.
 You don't need GitHub.com for the moment but you will need to recall your username and password during the next steps.
 
 ## Your digital tools
+
+We are planning to use a free editor to edit the HTML and CSS for the web site. We prefer to use this method over the _wysiwyg_ software called Dreamweaver. However, it is possible to use Adobe _Dreamweaver_ for this task, and further instructions will be provided.
+
 There are 2 free apps that you need to download and install.
 
 ### Atom
@@ -63,7 +66,7 @@ You can also install _Atom_ on your own computer at home.
 
 Your Applications folder is inside your Home folder; find this by selecting _Go_ from the finder menu. You can copy or move the Atom app from the downloads folder.
 
-If there is no Applications folder inside your home folder then create one. Do try to use the same MAC in the IT suite whenever possible, so that you do not need to install this software again.
+If there is no Applications folder inside your home folder then create one. Do try to use the **same** MAC in the IT suite whenever possible, so that you do not need to install this software again.
 
 Atom will now be available but we now need to move to the next stage.
 
@@ -77,6 +80,11 @@ There are a few packages that will prove useful but here are two that are highly
 [![Add this package to Atom](/images/Screen Shot 2018-01-16 at 14.18.42.png)](/images/Screen Shot 2018-01-16 at 14.18.42.png)
 
 This will provide you with the ability to `right-click` over the file and select `Open in Browser`, which will then show you the file in your default web browser.
+
+**Atom HTML Preview**
+
+This is an alternative to the one above. This package will provide a window to view the HTML just like a browser.
+
 
 **Color Picker**
 

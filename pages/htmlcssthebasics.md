@@ -4,7 +4,7 @@ title: The basics of HTML and CSS
 published: true
 categories: ["HTML and CSS", "Multi-Platform Publishing"]
 tags: ["HTML and CSS"]
-date: 2018-01-02
+date: 2018-01-20
 order: 2
 blurb: This is a very simple explanation of HTML with some examples.
 ---
@@ -69,6 +69,11 @@ Take a look at the `<h1>` tag on line 7 above. This is inside the `body` element
 ## Structure
 
 In the example above, there is another element at the same level as `<body`. This is the `<head>`. The head element can include _metadata_ about the page. In this example, the only element within this is the `<title>`. This is the title for the page. The `<body>` and the `<head>` elements are siblings; their parent is `html`.
+
+### The HTML DOM (Document Object Model)
+When a web page is loaded, the browser creates a _Document Object Model_ of the page. The diagram here represents the structure of the DOM.
+
+[![The Documant Object Model (DOM)](/images/HTML Dom.png)](/images/HTML Dom.png)
 
 ## What does this example of HTML look like in a browser?
 

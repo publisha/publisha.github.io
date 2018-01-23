@@ -4,13 +4,58 @@
  <title>Digital Publishing Hub</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-01-20T15:56:51+00:00</updated>
+ <updated>2018-01-23T18:57:50+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Using Flickr to Generate an Image Gallery</title>
+   <link href="http://localhost:4000/flickr/jquery/2018/01/23/using-flickr-to-generate-an-image-gallery/"/>
+   <updated>2018-01-23T18:57:00+00:00</updated>
+   <id>http://localhost:4000/flickr/jquery/2018/01/23/using-flickr-to-generate-an-image-gallery</id>
+   <content type="html">&lt;p&gt;We should all be very grateful that Flickr exists. This is one of the most popular (free if you want) hosting services that is also very sophisticated in the way that it delivers, and categorises images. But there is more; Flickr has an &lt;strong&gt;API&lt;/strong&gt; that enables you yo pull your hosted pictures down to your own web site. I am doing this here (see the rolling banner on the home page and the galleries).&lt;/p&gt;
+
+&lt;h2 id=&quot;what-got-me-started&quot;&gt;What got me started&lt;/h2&gt;
+
+&lt;p&gt;I have a book in my shelf. It is quite old now. It’s called &lt;em&gt;Flickr Hacks&lt;/em&gt; 2006, O’Reilly Publishers, New York.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/Screenshot 2018-01-14 19.30.52.png&quot;&gt;&lt;img src=&quot;/images/Screenshot 2018-01-14 19.30.52.png&quot; alt=&quot;Flickr Hacks - Bausch and Bumgardner&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This book is an unusual O’Reilly book, in that it does not have an engraving of an animal but rather the slide projector. As you can see, it’s an unbranded Kodak Carousel.&lt;/p&gt;
+
+&lt;h2 id=&quot;flickr&quot;&gt;Flickr&lt;/h2&gt;
+
+&lt;p&gt;Flickr has been around for a long time and was launched in 2004&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. It was taken over by Yahoo and is now owned by them. There are millions of users and there are certainly more than 6 billion public photos.&lt;/p&gt;
+
+&lt;p&gt;Enough of the history. The important thing to note is that it is possible to &lt;em&gt;interogate&lt;/em&gt; flickr’s publically available photo streams and deliver to your own web site.&lt;/p&gt;
+
+&lt;h2 id=&quot;hacking-the-api&quot;&gt;Hacking the API&lt;/h2&gt;
+
+&lt;p&gt;The &lt;em&gt;Flickr Hacks&lt;/em&gt; book is all about mashing-up the content from Flickr. We are very fortunate that the Flickr organisation have made available an API (Application Programming Interface), whereby the photos can be accessed and pushed onto a web page.&lt;/p&gt;
+
+&lt;p&gt;This API was available in 2006 and the book does explore various ways to use images directly from the site, and at the time, I didn’t really exploit the potential; preferring to &lt;a href=&quot;http://www.pagetoscreen.net/lens/category/76&quot; title=&quot;Take a look at some over on pagetoscreen.net&quot;&gt;host photos on my own web site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;jquery--flexbox-css&quot;&gt;jQuery + FlexBox CSS&lt;/h2&gt;
+
+&lt;p&gt;So, now with jQuery at our finger tips we can build a gallery of images using the Flickr API and styling with CSS flexBox.&lt;/p&gt;
+
+&lt;p&gt;I am now going to point you to the gallery I have built on this site, but before you invoke the link and move away from this page, please note the rolling slide show of images on this home page (I mean the open ing page of this site), because those images come from my Flickr account.&lt;/p&gt;
+
+&lt;p&gt;I have 2 galleries in progress at the moment but &lt;a href=&quot;https://publisha.github.io/galleries/bookimages/&quot; title=&quot;Gallery built from Flickr&quot;&gt;please have a look at this one&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Flickr&quot; title=&quot;Have a look at Wikipedia and make a donation while you're there.&quot;&gt;Wikipedia&lt;/a&gt; will give you a brief history. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Reading Progress Indicator</title>

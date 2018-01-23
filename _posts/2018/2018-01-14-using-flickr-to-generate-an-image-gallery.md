@@ -33,7 +33,7 @@ This API was available in 2006 and the book does explore various ways to use ima
 
 So, now with jQuery at our finger tips we can build a gallery of images using the Flickr API and styling with CSS flexBox.
 
-I am now going to point you to the gallery I have built on this site, but before you invoke the link and move away from this page, please note the rolling slide show of images on this home page (I mean the open ing page of this site), because those images come from my Flickr account.
+I am now going to point you to the gallery I have built on this site, but before you invoke the link and move away from this page, please note the rolling slide show of images on this home page (I mean the opening page of this site), because those images come from my Flickr account.
 
 I have 2 galleries in progress at the moment but [please have a look at this one][0fadd0bb].
 

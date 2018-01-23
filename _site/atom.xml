@@ -4,7 +4,7 @@
  <title>Digital Publishing Hub</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-01-23T18:57:50+00:00</updated>
+ <updated>2018-01-23T19:53:33+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
@@ -43,7 +43,7 @@
 
 &lt;p&gt;So, now with jQuery at our finger tips we can build a gallery of images using the Flickr API and styling with CSS flexBox.&lt;/p&gt;
 
-&lt;p&gt;I am now going to point you to the gallery I have built on this site, but before you invoke the link and move away from this page, please note the rolling slide show of images on this home page (I mean the open ing page of this site), because those images come from my Flickr account.&lt;/p&gt;
+&lt;p&gt;I am now going to point you to the gallery I have built on this site, but before you invoke the link and move away from this page, please note the rolling slide show of images on this home page (I mean the opening page of this site), because those images come from my Flickr account.&lt;/p&gt;
 
 &lt;p&gt;I have 2 galleries in progress at the moment but &lt;a href=&quot;https://publisha.github.io/galleries/bookimages/&quot; title=&quot;Gallery built from Flickr&quot;&gt;please have a look at this one&lt;/a&gt;.&lt;/p&gt;
 

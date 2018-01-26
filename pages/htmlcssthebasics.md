@@ -354,7 +354,7 @@ The units that we can use are listed here with an explanation:
  - **em** - The em unit is a relative unit; meaning that it represents the size of the current font. `2em` means twice the size of the font within the parent block of the element.
  - **rem** - The rem is also relative, but this time it represents the value of the font size at the root level of the page. So, if the font size for the body is set at `12px` then `2rem` will be `32px`.
  - **Percentage** - indicated as `%` to create a dimension that is relative to the containing element. So if our menu is 100px wide, the sub menu could be defined as having a width of `70%` - making it `70px` wide.
- -**Viewport-relative Units** - there are units that are defined as a percentage of the viewport width or height. These units are written as `vh` for 1% of viewport (the height of the browser window), `vw` for 1% of the viewport width. There is also `vmax` and `vmin`.
+ - **Viewport-relative Units** - there are units that are defined as a percentage of the viewport width or height. These units are written as `vh` for 1% of viewport (the height of the browser window), `vw` for 1% of the viewport width. There is also `vmax` and `vmin`.
 
 There are many other units that can be used; some are specific for print (such as centimetres and point). Please read [the information here][02888701], for further details.
 

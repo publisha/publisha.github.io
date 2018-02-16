@@ -22,6 +22,8 @@
 
 #gallery ul {
   padding:0;
+  width:100%;
+  border:1px solid green;
 }
 
 #gallery li img {

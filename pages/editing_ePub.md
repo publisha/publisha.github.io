@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Editing inside the ePUB package
+date: 2018-03-01
 published: true
-categories: [ePub]
+categories: ["ePub", "HTML and CSS", "Multi-Platform Publishing"]
 tags: [ePub, InDesign, CSS, "Multi-Platform Publishing"]
 blurb: When we have created a reflowable ePub by exporting from InDesign, we may find that there are some stylistic details that need tidying up, changing or even correcting. Not all aspects of our wonderfully crafted typographic design work will give perfect results in the ePub.
 ---

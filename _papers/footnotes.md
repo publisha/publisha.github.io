@@ -37,7 +37,7 @@ What are the conventions in print publishing to display footnotes, side notes an
 The paper will be divided into 4 parts:
 
 ### 1. Footnotes and other deviations in print, past and present
-A review of footnotes in history and how publishers have implemented in the printed work. We look at the conventions from the past and what standards are adopted in publishing today.
+A review of footnotes in history and how publishers have implemented in the printed work. We look at the conventions from the past and what standards are adopted in the publishing industry today.
 
 ### 2. Out of the flow in Digital products
 In the screen based medium, we can adopt other methods for linking references in the text to footnote content. Of course we can't call them footnotes anymore and they may be _hyperlinks_ or _popups_.

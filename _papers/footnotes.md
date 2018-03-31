@@ -40,7 +40,7 @@ The paper will be divided into 4 parts:
 A review of footnotes in history and how publishers have implemented in the printed work. We look at the conventions from the past and what standards are adopted in the publishing industry today.
 
 ### 2. Out of the flow in Digital products
-In the screen based medium, we can adopt other methods for linking references in the text to footnote content. Of course we can't call them footnotes anymore and they may be _hyperlinks_ or _popups_.
+In the screen based medium, we can adopt other methods for linking references in the text to footnote content. Of course we can't call them footnotes anymore and they may be _hyperlinks_ or _popups_. Hypertext is an essential function in browsing the web with a browser.
 
 ### 3. Beyond the narrative flow: interactivity as a way to supplement the content on the page
 On the pages of some print books (particularly text books), information is structured in panels in a very busy arrangement. Interactive popups can help bring this chaos to order and provide more space for the _root_ information. Glossaries, definitions and asides can all be hidden until needed.

@@ -5,9 +5,9 @@ date: 2018-01-06
 images: full-width
 Published: true
 annotate: true
-version: [0.9]
+version: [1]
 Author: Chris Jennings
-status: [add to conclusion]
+status: [Complete]
 comments: true
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -30,6 +30,8 @@ comments: true
 **Is this the Final Version?**
 
 **Author:** Chris Jennings
+
+Note: An edited version of this article appears in [^22]
 
 [![eBook Available](/images/iterativepublishingMini.jpg)](/resources/iterativepublishing08.epub)
 
@@ -397,3 +399,6 @@ http://programminghistorian.org/lessons/getting-started-with-github-desktop
 
 
 [^21]: https://www.safaribooksonline.com
+
+
+[^22]: Source: DOI: [10.1163/1878-4712-11112140](http://booksandjournals.brillonline.com/content/journals/10.1163/1878-4712-11112140))

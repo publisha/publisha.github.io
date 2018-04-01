@@ -5,9 +5,9 @@ date: 09-10-2017
 images: full-width
 Published: proposal
 annotate: true
-version: [0.9]
+version: [0.91]
 Author: Chris Jennings
-status: [only a proposal]
+status: [developing]
 comments: true
 ---
 # Footnotes and Asides
@@ -70,5 +70,15 @@ Addendum
 
 EBook standards
 
+ted Nelson clip from Lo and Behold
+https://www.youtube.com/watch?v=Bqx6li5dbEY
+
+Edward Tufte
+
+sidenotes or footnotes: https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000ld
+
+jquery / javascript to manipulate footnotes to other forms.
+
+Glossaries /dictionaries linked to contentz
 -->
 [^1]: Chuck Zerby, *The Devil’s Details: A History of Footnotes* (Touchstone 2002)

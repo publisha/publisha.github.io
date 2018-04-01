@@ -31,11 +31,11 @@ comments: true
 
 **Author:** Chris Jennings
 
-Note: An edited version of this article appears in [^22]
+> **Note: **An edited version of this article appears in the journal Logos [^22]
 
 [![eBook Available](/images/iterativepublishingMini.jpg)](/resources/iterativepublishing08.epub)
 
-eBook Version available here
+eBook Version available here (click image for ePub download)
 `cover image uses detail from a fresco in the Museo San Marco, Florence, Italy`
 
 ## Abstract

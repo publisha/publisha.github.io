@@ -32,7 +32,7 @@ We have to work with something. We can’t expect our students to actually creat
 
 ### The Play’s the thing[^2]
 
-The typographic choices when setting a play are really quite interesting, and although there are conventions[^1] we still have a lot of flexibility.  A play includes many different elements which  all need to be 
+The typographic choices when setting a play are really quite interesting, and although there are conventions[^1] we still have a lot of flexibility.  A play includes many different elements which  all need to be styled appropriately. Moreover, there is a need to provide a structure to the form that helps the reader work through the flow of the text.
 
 [^1]: **Hamlet**:
 I'll have grounds

@@ -8,7 +8,33 @@ categories: [InDesign, ePub, "Multi-Platform Publishing"]
 order: 4
 blurb: There are some ways we can creatively enhance the eBook version to provide some interactivity and multimedia that can go beyond the traditional book page.
 ---
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
 
+- [What enhancements we can add beyond text and image?](#what-enhancements-we-can-add-beyond-text-and-image)
+- [Adding Multimedia](#adding-multimedia)
+- [File Size](#file-size)
+- [Placing the Video](#placing-the-video)
+- [Anchoring and Text Wrap](#anchoring-and-text-wrap)
+- [The Result on Export to ePUB (reflowable)](#the-result-on-export-to-epub-reflowable)
+- [Adding Audio](#adding-audio)
+- [Multimedia in the Fixed Layout ePUB](#multimedia-in-the-fixed-layout-epub)
+- [Read Aloud](#read-aloud)
+- [Additions to the package file (content.opf)](#additions-to-the-package-file-contentopf)
+- [Ambient Sound](#ambient-sound)
+- [Audio on Click or Touch](#audio-on-click-or-touch)
+- [Hyperlinked and supplementary Information](#hyperlinked-and-supplementary-information)
+- [Non-Linear Content in a Reflowable ePub](#non-linear-content-in-a-reflowable-epub)
+- [Scrolling Text in the Fixed Layout ePUB](#scrolling-text-in-the-fixed-layout-epub)
+- [How to create a vertical scrolling text field](#how-to-create-a-vertical-scrolling-text-field)
+- [Adding Popup Information with InDesign for fixed-layout ePUB](#adding-popup-information-with-indesign-for-fixed-layout-epub)
+- [Animation](#animation)
+- [Creating a Slide Show in InDesign](#creating-a-slide-show-in-indesign)
+- [Enough Bells and Whistles?](#enough-bells-and-whistles)
+- [ePUB Interactivity Preview](#epub-interactivity-preview)
+
+</section><!-- /TOC -->
 # Enhancing an eBook with interactivity, multimedia and animation
 
 There are some ways we can creatively enhance the eBook version to provide some interactivity and multimedia that can go beyond the traditional book page.

@@ -258,7 +258,7 @@ Select the text field and ‘Paste Into’ this selected text box. You can selec
 
 [![The pasted text box goes to the middle](/images/pastetextboxinto_goestomiddle.png)](/images/pastetextboxinto_goestomiddle.png)
 
-> You will find that InDesign put this text box in the vertical middle and so you won't see the first line of your text or content. To rectify this, you need to use the position box in the InDesign toolbar. Once you see the target circle in the centre of your containing text box, then observe the position number near to the top left. Cahnge this number to `0`. The 2 images here will help you understand this process.
+> You will find that InDesign put this text box in the vertical middle and so you won't see the first line of your text or content. To rectify this, you need to use the position box in the InDesign toolbar. Once you see the target circle in the centre of your containing text box, then observe the position number near to the top left. Change this number to `0`. The 2 images here will help you understand this process.
 
 [![Set the position to 0](/images/setpositiontozero.png)](/images/setpositiontozero.png)
 

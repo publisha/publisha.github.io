@@ -24,7 +24,7 @@ The eBook created with iBooks Author is a proprietary format that does have some
 
 Since our work has involved using InDesign to create eBooks, we will focus on taking content from InDesign and pushing it into the iBooks Author environment. First we must consider the approach that iBooks Author (IBA) takes to developing a design layout, because it is really very different from page layout tools like InDesign. Whereas InDesign expects a page size and proportion to be defined, with content then added and arranged, IBA uses a template system to define the layouts for typical components of the structure; the cover, the start page, the chapter start page, the section pages and so on. The template system also expects the designer to take control of the alternative portrait view of the book, because, the eBook created with IBA is a hybrid format; fixed-layout for the landscape view and reflowable for the portrait view.
 
-![/images/id2ibarecipes/image1.png](/images/id2ibarecipes/image1.png)
+[![Choose from one of the templates](/images/id2ibarecipes/image1.png)](/images/id2ibarecipes/image1.png)
 
 ### The Template
 
@@ -38,7 +38,7 @@ Make a decision first about the orientation that you will give your eBook. You c
 
 If you are confused by this, you should experiment with a few of the template options, to get a better feel for the choices.
 
-![/images/id2ibarecipes/image2.png](/images/id2ibarecipes/image2.png)
+[![The style panel](/images/id2ibarecipes/image2.png)](/images/id2ibarecipes/image2.png)
 
 ### The Styling Options
 
@@ -54,13 +54,13 @@ IBA provides you with a basic structure using the terms ‘Chapters’ and the f
 
 Some books may have sections as the top level with chapters inside those sections. Anything is possible, although in terms of IBA’s automatic construction of the table of contents, you can only have 2 levels, so by default you have Pages within Sections within Chapters although you can dispense with Sections altogether.
 
-![/images/id2ibarecipes/image3.png](/images/id2ibarecipes/image3.png)
+[![The structure of an iBooks Author Document ](/images/id2ibarecipes/image3.png)](/images/id2ibarecipes/image3.png)
 
 In my example book that that I have created for print we can look at the table of contents to try to establish the structure. We do only have 2 levels to work with but this should not be a serious limitation.
 
 The TOC shows that the Heading ‘Introduction’ is at the same level as the Each recipe.
 
-![/images/id2ibarecipes/image4.png](/images/id2ibarecipes/image4.png)
+[![A sample table of contents](/images/id2ibarecipes/image4.png)](/images/id2ibarecipes/image4.png)
 
 We need to equate these headings with the structural items of iBooks Author.
 
@@ -80,7 +80,7 @@ Be aware that we are looking at the thumbnail pages for the landscape view. We w
 
 Before we go ahead and look in detail at the layouts, we will need to consider whether or not to have a full page that announces the top level (ie the Chapter). In my example, I intend to do this, so that (for example), the recipe will have a full page (with an image). This image could be the same for every Chapter start, or I can replace this with a different one for each Chapter.
 
-![/images/id2ibarecipes/image5.png](/images/id2ibarecipes/image5.png)
+[![The layouts panel](/images/id2ibarecipes/image5.png)](/images/id2ibarecipes/image5.png)
 
 ### Layouts = Master Pages
 
@@ -130,7 +130,7 @@ But before going through this process, let me just point out some facts.
 
 The Table of Contents is where IBA gets its information for the structure – you know – Chapters, Sections, Pages etc. So, you really must be sure that the logical TOC, is going to provide that information. Take a look at your beautifully formed reflowable ePUB3 and analyse the TOC, before building the IBA file from it. iBooks Author only transfers 2 levels of the TOC to build the structure.
 
-![/images/id2ibarecipes/image7.png](/images/id2ibarecipes/image7.png)
+[![A template view for the ePub file import](/images/id2ibarecipes/image7.png)](/images/id2ibarecipes/image7.png)
 
 ### Typographic Styles
 
@@ -148,7 +148,7 @@ Apple IBA will take everything that is in the IDML file and put it on its own pa
 
 Since the book you are reading proposes a workflow that retains the print elements and yet successfully produce eBooks, we will simply hide the master page items by putting them on their own layer and hiding that layer.
 
-![/images/id2ibarecipes/image8.png](/images/id2ibarecipes/image8.png)
+[![Hide some elemnts in InDesign by hiding the layer](/images/id2ibarecipes/image8.png)](/images/id2ibarecipes/image8.png)
 
 ### Chapter by chapter
 
@@ -164,7 +164,7 @@ Since you have used the Book Panel then you can easily create all of the IDML fi
 
 With our template open we now need to choose the first of our IDML files and after opting to include text, media and graphics, paragraph and character styles, we select the chapter, because we are entering the chapter in selectively for each.
 
-![/images/id2ibarecipes/image9.png](/images/id2ibarecipes/image9.png)
+[![Choosing the content to import](/images/id2ibarecipes/image9.png)](/images/id2ibarecipes/image9.png)
 
 ## Some broken features
 
@@ -186,7 +186,7 @@ When you see a book in the vertical format on the iPad, the content can be scrol
 
 In the portrait view the users can increase the font size and for this reason it is a worthwhile extra step, to get this looking good.
 
-![/images/id2ibarecipes/image10.png](/images/id2ibarecipes/image10.png)
+[![Layouts in the scrolling viewing](/images/id2ibarecipes/image10.png)](/images/id2ibarecipes/image10.png)
 
 ### The Layouts in Scrolling View
 
@@ -206,11 +206,11 @@ There are 2 kinds of images in our eBook; content (images that subject matter or
 
 We can only decorate the headers for the Chapter and Section start; unlike the landscape layouts where we can use the whole backgrounds.
 
-![/images/id2ibarecipes/image11.png](/images/id2ibarecipes/image11.png)
+[![Images can enlarge](/images/id2ibarecipes/image11.png)](/images/id2ibarecipes/image11.png)
 
 ### Content Images
 
-![/images/id2ibarecipes/image12.png](/images/id2ibarecipes/image12.png)
+[![The scrolling view thumbnails](/images/id2ibarecipes/image12.png)](/images/id2ibarecipes/image12.png)
 
 You could have a shock when you view the Scrolling Pages, because you may not see any images at all. This is because images placed on the pages in the landscape view need to be turned into Widgets. This isn’t really as complicated as it sounds. With an image selected (in the landscape view), find the small widget icon and check the ‘Goes full-screen’ tick box. This will mean that the image in the landscape view can be enlarged, and in the portrait view it will become a thumbnail image in the left margin (Apple calls this the thumbnail track), also available for enlargement.
 
@@ -232,7 +232,7 @@ The image needs to be in portrait orientation and sized precisely as:
 
 If it it has a greater resolution than 72dpi, then you will need to enlarge to fit.
 
-![/images/id2ibarecipes/image14.png](/images/id2ibarecipes/image14.png)
+[![Adding the cover](/images/id2ibarecipes/image14.png)](/images/id2ibarecipes/image14.png)
 
 ### Metadata
 

@@ -9,7 +9,25 @@ date: 2018-04-16
 order: 5
 blurb: An Authoring tool for an *Apple-only* hybrid format eBook. iBooks Author is Apple software for creating _Multi-Touch_ eBooks. We can take the content previously created with InDesign and import into iBooks Author from the IDML files.
 ---
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
 
+- [The iBooks Format](#the-ibooks-format)
+- [The Authoring Environment](#the-authoring-environment)
+- [The iBooks Author Structure](#the-ibooks-author-structure)
+- [The Layouts](#the-layouts)
+- [Typographic Style](#typographic-style)
+- [From InDesign to iBooks Author](#from-indesign-to-ibooks-author)
+- [From ePUB to iBooks Author](#from-epub-to-ibooks-author)
+- [Insert Chapter from InDesign (IDML)](#insert-chapter-from-indesign-idml)
+- [Insert Chapter from IDML file](#insert-chapter-from-idml-file)
+- [Some broken features](#some-broken-features)
+- [Scroll Mode](#scroll-mode)
+- [Further Details](#further-details)
+- [Summary](#summary)
+
+</section><!-- /TOC -->
 # InDesign to iBooks Author (Recipes edition)
 
 iBooks Author was released by Apple in 2012 and is an authoring tool that runs on any Apple computer that operates under MAC OS x 10.9 or later. The software is freely available and has gone through several version changes since first released.

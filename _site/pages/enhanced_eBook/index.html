@@ -51,9 +51,9 @@
 <meta property="og:url" content="http://localhost:4000/pages/enhanced_eBook/" />
 <meta property="og:site_name" content="Digital Publishing Hub" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-12-18T00:00:00+00:00" />
+<meta property="article:published_time" content="2018-04-07T00:00:00+01:00" />
 <script type="application/ld+json">
-{"name":null,"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/pages/enhanced_eBook/","publisher":null,"image":null,"headline":"Enhancing an eBook with interactivity, multimedia and animation","dateModified":"2017-12-18T00:00:00+00:00","datePublished":"2017-12-18T00:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/enhanced_eBook/"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/pages/enhanced_eBook/","publisher":null,"image":null,"headline":"Enhancing an eBook with interactivity, multimedia and animation","dateModified":"2018-04-07T00:00:00+01:00","datePublished":"2018-04-07T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/enhanced_eBook/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 </head>
 <body class="theme-base-0b">
@@ -127,7 +127,37 @@
       <div class="container content">
         <div class="page">
   <!-- <h1 class="page-title">Enhancing an eBook with interactivity, multimedia and animation</h1> -->
-  <h1 id="enhancing-an-ebook-with-interactivity-multimedia-and-animation">Enhancing an eBook with interactivity, multimedia and animation</h1>
+  <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class="toc">
+  <h2 id="on-this-page">On this Page</h2>
+
+  <ul>
+    <li><a href="#what-enhancements-we-can-add-beyond-text-and-image">What enhancements we can add beyond text and image?</a></li>
+    <li><a href="#adding-multimedia">Adding Multimedia</a></li>
+    <li><a href="#file-size">File Size</a></li>
+    <li><a href="#placing-the-video">Placing the Video</a></li>
+    <li><a href="#anchoring-and-text-wrap">Anchoring and Text Wrap</a></li>
+    <li><a href="#the-result-on-export-to-epub-reflowable">The Result on Export to ePUB (reflowable)</a></li>
+    <li><a href="#adding-audio">Adding Audio</a></li>
+    <li><a href="#multimedia-in-the-fixed-layout-epub">Multimedia in the Fixed Layout ePUB</a></li>
+    <li><a href="#read-aloud">Read Aloud</a></li>
+    <li><a href="#additions-to-the-package-file-contentopf">Additions to the package file (content.opf)</a></li>
+    <li><a href="#ambient-sound">Ambient Sound</a></li>
+    <li><a href="#audio-on-click-or-touch">Audio on Click or Touch</a></li>
+    <li><a href="#hyperlinked-and-supplementary-information">Hyperlinked and supplementary Information</a></li>
+    <li><a href="#non-linear-content-in-a-reflowable-epub">Non-Linear Content in a Reflowable ePub</a></li>
+    <li><a href="#scrolling-text-in-the-fixed-layout-epub">Scrolling Text in the Fixed Layout ePUB</a></li>
+    <li><a href="#how-to-create-a-vertical-scrolling-text-field">How to create a vertical scrolling text field</a></li>
+    <li><a href="#adding-popup-information-with-indesign-for-fixed-layout-epub">Adding Popup Information with InDesign for fixed-layout ePUB</a></li>
+    <li><a href="#animation">Animation</a></li>
+    <li><a href="#creating-a-slide-show-in-indesign">Creating a Slide Show in InDesign</a></li>
+    <li><a href="#enough-bells-and-whistles">Enough Bells and Whistles?</a></li>
+    <li><a href="#epub-interactivity-preview">ePUB Interactivity Preview</a></li>
+  </ul>
+
+</section>
+<!-- /TOC -->
+<h1 id="enhancing-an-ebook-with-interactivity-multimedia-and-animation">Enhancing an eBook with interactivity, multimedia and animation</h1>
 
 <p>There are some ways we can creatively enhance the eBook version to provide some interactivity and multimedia that can go beyond the traditional book page.</p>
 
@@ -425,11 +455,19 @@ and so on ….
 
 <p>Paste your long text into a text field on this page.</p>
 
-<p>Make sure there is no overset text. Reduce the size of the text field so that the text just fits. Copy this this text field (not just the contents but the selected object).</p>
+<p>Make sure there is no overset text. Reduce the vertical size of the text field so that the text just fits. Copy this this text field (not just the contents but the selected object).</p>
 
-<p>In your target InDesign file create an empty text field wider that the one you created in the other temporary InDesign document.</p>
+<p>In your target InDesign file create an empty text field wider (by about 20mm) than the one you created in the other temporary InDesign document.</p>
 
-<p>Select the text field and ‘Paste Into’ this selected text box.You can select all of this text and style accordingly.</p>
+<p>Select the text field and ‘Paste Into’ this selected text box. You can select all of this text and style accordingly.</p>
+
+<p><a href="/images/pastetextboxinto_goestomiddle.png"><img src="/images/pastetextboxinto_goestomiddle.png" alt="The pasted text box goes to the middle" /></a></p>
+
+<blockquote>
+  <p>You will find that InDesign put this text box in the vertical middle and so you won’t see the first line of your text or content. To rectify this, you need to use the position box in the InDesign toolbar. Once you see the target circle in the centre of your containing text box, then observe the position number near to the top left. Change this number to <code class="highlighter-rouge">0</code>. The 2 images here will help you understand this process.</p>
+</blockquote>
+
+<p><a href="/images/setpositiontozero.png"><img src="/images/setpositiontozero.png" alt="Set the position to 0" /></a></p>
 
 <p>With the parent text box selected, create an Object Style and set the export tagging for HTML and ePUB to a <code class="highlighter-rouge">&lt;div&gt;</code> with a class of ‘scroller’.</p>
 
@@ -535,7 +573,7 @@ and so on ….
 
 <p><a href="/images/2017/02/enhanced_eBook/image21.png"><img src="/images/2017/02/enhanced_eBook/image21.png" alt="put some text here" /></a></p>
 
-<!-- We can only show one screencast at the moment --></div><p><b>Filed under:</b> InDesign, ePub, Multi-Platform Publishing</p><p>This page last edited on: 2017-12-18</p>
+<!-- We can only show one screencast at the moment --></div><p><b>Filed under:</b> InDesign, ePub, Multi-Platform Publishing</p><p>This page last edited on: 2018-04-07</p>
       </div>
     </div>
 <!--<footer>

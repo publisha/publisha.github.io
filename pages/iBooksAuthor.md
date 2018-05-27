@@ -5,7 +5,7 @@ published: true
 tags: iBooks Author
 categories: [InDesign, "iBooks Author", "Multi-Platform Publishing"]
 screencast: [introducing_iBooksAuthor]
-date: 2017-12-18
+date: 2018-04-18
 order: 5
 blurb: Since the objective of our work is developing a strategy for publishing for both print and eBook, we will focus on taking content from InDesign and pushing it into the iBooks Author environment.
 ---
@@ -148,6 +148,8 @@ Neither of the 2 options described here are without their difficulties, and your
 
 ### From ePUB to iBooks Author
 
+>**Note**: I do not recommend this method if you are working with InDesign.
+
 In our sample project we have already created an ePUB(reflowable), and Apple have kindly added the feature for us to ‘Create New from an ePUB file …’. If you have a correctly structured reflowable ePUB3 with a working logical table of contents, then this will produce the most instant moderately successful iBooks Author file.
 
 You will find this option on the File menu.
@@ -158,13 +160,15 @@ The Table of Contents is where IBA gets its information for the structure – yo
 
 [![Choosing a template when importing the ePub](/images/2017/03/iBooksAuthor/image9.png)](/images/2017/03/iBooksAuthor/image9.png)
 
-## Typographic Styles
+#### Typographic Styles
 
 Creating a new iBooks Author file from an ePUB (reflowable) will bring into the template the correct appearance of the paragraph and character styles, but they will not have the names you gave them in InDesign. They will only have generic names such as heading 1, heading 2, etc. Furthermore, the many other styles that you have in your InDesign file (in my example: verse line, prose, location etc), **will all become Free Form styles**. Now, this may not be a problem, but it will be very difficult to modify these styles.
 
 [![The InDesign styles do not remain with the same names.](/images/2017/03/iBooksAuthor/image10.png)](/images/2017/03/iBooksAuthor/image10.png)
 
 ## Insert Chapter from InDesign (IDML)
+
+>This is the best method to get from InDesign, but does require some processing in InDesign to get appropriate IDML files.
 
 IDML is the published interchange format from Adobe that represents InDesign markup language. It is essentially an XML package that contains all the information to rebuild the assets, structure and layout for the whole document.
 
@@ -184,9 +188,9 @@ IDML files can only be created from the individual InDesign files, not from the 
 
 In order for this work successfully, you really need to break the InDesign documents into their individual chapters and then export one IDML for each of those. The reason for this is that when you move back to iBooks Author, you are only able to insert one chapter at a time to get the correct structure. If you export one IDML file for the whole book (or section within the book), then it will become one chapter in IBA. If your workflow habits involve using the book panel and keeping chapters in individual files, then you are one step ahead of all the other eBook producers![^2]
 
-It is possible to split the InDesign document into smaller files, and there are tools to help with this. Badia Software (*http://exportools.badiasoftware.com*) have a program that is perfect for this, I recommend using this if your budget allows. Since our goal is to produce IDML files for each section (in my case a Scene of the play), Badia Export Tools will do this directly.
+It is possible to split the InDesign document into smaller files, and there are tools to help with this. Badia Software (*http://exportools.badiasoftware.com*) have a program that is perfect for this, I recommend using this if your budget allows. Since our goal is to produce IDML files for each section (in my case a Scene of the play), Badia Export Tools will do this directly but does cost about $70.
 
-On the other hand there are scripts that can work, but you will need to pay particular attention to the way the pages are numbered, how they are threaded and where to split.
+On the other hand there are scripts that can work, but you will need to pay particular attention to the way the pages are numbered, how they are threaded and where to split. You will find the links to the scripts below.
 
 ### Smart Text Flow?
 
@@ -194,7 +198,7 @@ On the other hand there are scripts that can work, but you will need to pay part
 
 If you have this switched on in your preferences, then be sure to disable this before you try to split the long file, otherwise you may end up with lots of overset text in each of the separated files.
 
-If you have not invested in Badia Export Tools, then you can use 2 scripts to get your document split into the appropriate sections. In my Shakespeare play example, I intend to extract every Scene as a separated file, and then export this to the IDML file. (With Badia Tools, you can achieve this in one step).
+If you have not invested in Badia Export Tools, then you can use 2 scripts to get your document split into the appropriate sections. In my Shakespeare play example, I intend to extract every Scene as a separated file, and then export this to the IDML file..
 
 ## Splitting Up; Two Stages
 
@@ -328,6 +332,32 @@ The most significant difficulty is that all styles below Heading 1 and Heading 2
 The results are reasonably good and anomalies are easily edited, since all named styles will correctly translate from InDesign.
 
 You really can only use this technique if you have split a complete InDesign document into constituent parts (such as chapters and sections), because you are only able to add the IDML file into a chapter not a complete book.
+
+## Workflow checklist (from InDesign to iBooks Author)
+
+>**Note**: We are now working with individual InDesign files - **not** the book panel
+
+1. In Indesign preferences turn off `Smart Text Reflow`
+2. Install the 2 scripts provided
+2. Make sure images are anchored and that you can see the text threads
+3. Save the Indesign file as a copy (because you will be making radical changes)
+4. Either remove the master page items (page numbers etc) or hide on a new layer
+5. Set the page numbers to be standard Arabic starting at page 1
+6. Increase the thumbnail image sizes in the pages panel (this helps you see what you are working on)
+7. Go to the page where you want to split the `Story`.
+8. Select the text box where you want to split. For your Shakespeare play this will be the text box where the Act/scene or the scene starts. You are trying to get each scene as a separate `story`.
+9. In the Scripts, User panel, double click the `splitbeforehere` script. Be patient, it takes a moment. Repeat for each place in the document
+10. You should see no line between the end of a scene and the beginning of the next. The story is broken into scenes.
+11. Look carefully at the InDesign document and from the beginning of Act1 (we can deal with the Dramatis Personae later) note the page number here and then the page number for the last in the scene. You can see this page number in the pages panel.
+12. In the Scripts, User panel, double click the `extractpagesandIDML` script. Put the page numbers that you just noted. Choose a place to save.
+13. Repeat for each scene, looking for the start and end pages and using the script each time.
+14. You should find at the end of this process, an IDML and InDesign file named with the page numbers used.
+15. With the iBooks Author template, you can now  `Insert >Insert Chapters From ..>InDesign File (IDML)`
+16. Choose the first IDML file and add to the section under the second chapter
+17. This second chapter needs to be named Act1
+18. repeat the scenes in this Act
+19. for the next Act add a chapter and choose the layout that uses a picture of the globe
+20. We can add the Introduction and the Dramatis Personae after and drag to re-arrange
 
 [^1]: Recent versions of iBooks Author, can create reflowable ePub format eBooks from a particular choice of template
 

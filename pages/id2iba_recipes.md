@@ -5,7 +5,7 @@ published: true
 tags: InDesign, "iBooks Author"
 categories: [InDesign, "iBooks Author", "Digital Product"]
 screencast: [id2iba_recipeBook]
-date: 2018-04-16
+date: 2018-04-18
 order: 5
 blurb: An Authoring tool for an *Apple-only* hybrid format eBook. iBooks Author is Apple software for creating _Multi-Touch_ eBooks. We can take the content previously created with InDesign and import into iBooks Author from the IDML files.
 ---
@@ -140,6 +140,8 @@ Neither of the 2 options described below are without their difficulties, and you
 
 ## From ePUB to iBooks Author
 
+>**Note**: I don’t recommend this method if you are working  from InDesign
+
 In our sample project we have already created an ePUB(reflowable), and Apple have kindly added the feature for us to ‘Create New from an ePUB file …’. If you have a correctly structured reflowable ePUB3 with a working logical table of contents, then this will produce the most instant moderately successful iBooks Author file.
 
 You will find this option on the File menu.
@@ -152,13 +154,15 @@ The Table of Contents is where IBA gets its information for the structure – yo
 
 ### Typographic Styles
 
-Creating a new iBooks Author file from an ePUB (reflowable) will bring into the template the correct appearance of the paragraph and character styles, but they will not have the names you gave them in InDesign. They will only have generic names such as heading 1, heading 2, etc. Furthermore, the many other styles that you have in your InDesign file (in my example: preamble, body text,sectionHeading etc), will all become Free Form styles. Now, this may not be a problem, but it will be very difficult to modify these styles.
+Creating a new iBooks Author file from an ePUB (reflowable) will bring into the template the correct appearance of the paragraph and character styles, but they will not have the names you gave them in InDesign. They will only have generic names such as heading 1, heading 2, etc. Furthermore, the many other styles that you have in your InDesign file (in my example: preamble, body text,sectionHeading etc), will all become **Free Form styles**. Now, this may not be a problem, but it will be impossible to modify these styles for the whole book.
 
 ## Insert Chapter from InDesign (IDML)
 
+> This is the best method, but does require some preparation in InDesign to get robust IDML files
+
 IDML is the published interchange format from Adobe that represents InDesign markup language. It is essentially an XML package that contains all the information to rebuild the assets, structure and layout for the whole document.
 
-Using this technique is far from straightforward but if we are careful we can get good results that will also transfer all of the paragraph and character styles with correct labels. This is significant, because it means we can still modify the styles globally throughout the IBA document.
+Using this technique is far from straightforward but if we are careful we can get good results that will also transfer all of the paragraph and character styles with correct labels. This is significant, because it means we can still **modify the styles globally** throughout the IBA document.
 
 ### What is in the IDML File?
 

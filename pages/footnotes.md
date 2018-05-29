@@ -4,7 +4,7 @@ title: "Footnotes, Endnotes, Sidenotes and Popup Notes"
 published: true
 tags: InDesign
 categories: [InDesign, Typography, ePub, "Design and Production"]
-date: 2017-07-30
+date: 2018-05-29
 blurb: "These need to be separated from the main body of the text, and are best set with a smaller size and possibly event a different typeface and colour. The idea of any notes is that it is supplementary information and it is entirely optional that the reader even bothers to look, so setting in a style that does not distract from the flow of the reading
 experience is important."
 order: 2
@@ -46,7 +46,7 @@ experience is important.
 [![Here we see the example of the first footnote in the chapter and the reference number  in the text.](/images/2017/04/firstfootnoteinchapter.png)](/images/2017/04/firstfootnoteinchapter.png)
 
 Footnotes are best numbered with an outdented figure, although (for
-technical reasons) the numbers are most often aligned to the main text block. These numbers refer to the superscript number within the text itself. Most publishers will favour the numbers to begin again for each chapter, otherwise the numbers could get unwieldy (superscript numbers of more than two digits could look ugly). If there are very few references in the text, symbols can be used instead of numbers (\* or ).
+technical reasons) the numbers are most often aligned to the main text block. These numbers refer to the superscript number within the text itself. Most publishers will favour the numbers to begin again for each chapter, otherwise the numbers could get unwieldy (superscript numbers of more than two digits could look ugly). If there are very few references in the text, symbols can be used instead of numbers (\* or †, ‡, §, ‖,¶).
 
 The listed footnotes will look best when separated from the main body with a partial line; giving the reader a strong clue that these notes are not following on from the text above. Where footnotes are long, they can be split across more than one page, although this will compromise the usability somewhat.
 

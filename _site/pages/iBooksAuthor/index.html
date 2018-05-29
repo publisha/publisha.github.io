@@ -51,9 +51,9 @@
 <meta property="og:url" content="http://localhost:4000/pages/iBooksAuthor/" />
 <meta property="og:site_name" content="Digital Publishing Hub" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-12-18T00:00:00+00:00" />
+<meta property="article:published_time" content="2018-04-18T00:00:00+01:00" />
 <script type="application/ld+json">
-{"name":null,"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/pages/iBooksAuthor/","publisher":null,"image":null,"headline":"From InDesign to iBooks Author","dateModified":"2017-12-18T00:00:00+00:00","datePublished":"2017-12-18T00:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/iBooksAuthor/"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/pages/iBooksAuthor/","publisher":null,"image":null,"headline":"From InDesign to iBooks Author","dateModified":"2018-04-18T00:00:00+01:00","datePublished":"2018-04-18T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/iBooksAuthor/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 </head>
 <body class="theme-base-0b">
@@ -269,6 +269,10 @@
 
 <h3 id="from-epub-to-ibooks-author">From ePUB to iBooks Author</h3>
 
+<blockquote>
+  <p><strong>Note</strong>: I do not recommend this method if you are working with InDesign.</p>
+</blockquote>
+
 <p>In our sample project we have already created an ePUB(reflowable), and Apple have kindly added the feature for us to ‘Create New from an ePUB file …’. If you have a correctly structured reflowable ePUB3 with a working logical table of contents, then this will produce the most instant moderately successful iBooks Author file.</p>
 
 <p>You will find this option on the File menu.</p>
@@ -279,13 +283,17 @@
 
 <p><a href="/images/2017/03/iBooksAuthor/image9.png"><img src="/images/2017/03/iBooksAuthor/image9.png" alt="Choosing a template when importing the ePub" /></a></p>
 
-<h2 id="typographic-styles">Typographic Styles</h2>
+<h4 id="typographic-styles">Typographic Styles</h4>
 
 <p>Creating a new iBooks Author file from an ePUB (reflowable) will bring into the template the correct appearance of the paragraph and character styles, but they will not have the names you gave them in InDesign. They will only have generic names such as heading 1, heading 2, etc. Furthermore, the many other styles that you have in your InDesign file (in my example: verse line, prose, location etc), <strong>will all become Free Form styles</strong>. Now, this may not be a problem, but it will be very difficult to modify these styles.</p>
 
 <p><a href="/images/2017/03/iBooksAuthor/image10.png"><img src="/images/2017/03/iBooksAuthor/image10.png" alt="The InDesign styles do not remain with the same names." /></a></p>
 
 <h2 id="insert-chapter-from-indesign-idml">Insert Chapter from InDesign (IDML)</h2>
+
+<blockquote>
+  <p>This is the best method to get from InDesign, but does require some processing in InDesign to get appropriate IDML files.</p>
+</blockquote>
 
 <p>IDML is the published interchange format from Adobe that represents InDesign markup language. It is essentially an XML package that contains all the information to rebuild the assets, structure and layout for the whole document.</p>
 
@@ -305,9 +313,9 @@
 
 <p>In order for this work successfully, you really need to break the InDesign documents into their individual chapters and then export one IDML for each of those. The reason for this is that when you move back to iBooks Author, you are only able to insert one chapter at a time to get the correct structure. If you export one IDML file for the whole book (or section within the book), then it will become one chapter in IBA. If your workflow habits involve using the book panel and keeping chapters in individual files, then you are one step ahead of all the other eBook producers!<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></p>
 
-<p>It is possible to split the InDesign document into smaller files, and there are tools to help with this. Badia Software (<em>http://exportools.badiasoftware.com</em>) have a program that is perfect for this, I recommend using this if your budget allows. Since our goal is to produce IDML files for each section (in my case a Scene of the play), Badia Export Tools will do this directly.</p>
+<p>It is possible to split the InDesign document into smaller files, and there are tools to help with this. Badia Software (<em>http://exportools.badiasoftware.com</em>) have a program that is perfect for this, I recommend using this if your budget allows. Since our goal is to produce IDML files for each section (in my case a Scene of the play), Badia Export Tools will do this directly but does cost about $70.</p>
 
-<p>On the other hand there are scripts that can work, but you will need to pay particular attention to the way the pages are numbered, how they are threaded and where to split.</p>
+<p>On the other hand there are scripts that can work, but you will need to pay particular attention to the way the pages are numbered, how they are threaded and where to split. You will find the links to the scripts below.</p>
 
 <h3 id="smart-text-flow">Smart Text Flow?</h3>
 
@@ -315,7 +323,7 @@
 
 <p>If you have this switched on in your preferences, then be sure to disable this before you try to split the long file, otherwise you may end up with lots of overset text in each of the separated files.</p>
 
-<p>If you have not invested in Badia Export Tools, then you can use 2 scripts to get your document split into the appropriate sections. In my Shakespeare play example, I intend to extract every Scene as a separated file, and then export this to the IDML file. (With Badia Tools, you can achieve this in one step).</p>
+<p>If you have not invested in Badia Export Tools, then you can use 2 scripts to get your document split into the appropriate sections. In my Shakespeare play example, I intend to extract every Scene as a separated file, and then export this to the IDML file..</p>
 
 <h2 id="splitting-up-two-stages">Splitting Up; Two Stages</h2>
 
@@ -445,6 +453,36 @@
 
 <p>You really can only use this technique if you have split a complete InDesign document into constituent parts (such as chapters and sections), because you are only able to add the IDML file into a chapter not a complete book.</p>
 
+<h2 id="workflow-checklist-from-indesign-to-ibooks-author">Workflow checklist (from InDesign to iBooks Author)</h2>
+
+<blockquote>
+  <p><strong>Note</strong>: We are now working with individual InDesign files - <strong>not</strong> the book panel</p>
+</blockquote>
+
+<ol>
+  <li>In Indesign preferences turn off <code class="highlighter-rouge">Smart Text Reflow</code></li>
+  <li>Install the 2 scripts provided</li>
+  <li>Make sure images are anchored and that you can see the text threads</li>
+  <li>Save the Indesign file as a copy (because you will be making radical changes)</li>
+  <li>Either remove the master page items (page numbers etc) or hide on a new layer</li>
+  <li>Set the page numbers to be standard Arabic starting at page 1</li>
+  <li>Increase the thumbnail image sizes in the pages panel (this helps you see what you are working on)</li>
+  <li>Go to the page where you want to split the <code class="highlighter-rouge">Story</code>.</li>
+  <li>Select the text box where you want to split. For your Shakespeare play this will be the text box where the Act/scene or the scene starts. You are trying to get each scene as a separate <code class="highlighter-rouge">story</code>.</li>
+  <li>In the Scripts, User panel, double click the <code class="highlighter-rouge">splitbeforehere</code> script. Be patient, it takes a moment. Repeat for each place in the document</li>
+  <li>You should see no line between the end of a scene and the beginning of the next. The story is broken into scenes.</li>
+  <li>Look carefully at the InDesign document and from the beginning of Act1 (we can deal with the Dramatis Personae later) note the page number here and then the page number for the last in the scene. You can see this page number in the pages panel.</li>
+  <li>In the Scripts, User panel, double click the <code class="highlighter-rouge">extractpagesandIDML</code> script. Put the page numbers that you just noted. Choose a place to save.</li>
+  <li>Repeat for each scene, looking for the start and end pages and using the script each time.</li>
+  <li>You should find at the end of this process, an IDML and InDesign file named with the page numbers used.</li>
+  <li>With the iBooks Author template, you can now  <code class="highlighter-rouge">Insert &gt;Insert Chapters From ..&gt;InDesign File (IDML)</code></li>
+  <li>Choose the first IDML file and add to the section under the second chapter</li>
+  <li>This second chapter needs to be named Act1</li>
+  <li>repeat the scenes in this Act</li>
+  <li>for the next Act add a chapter and choose the layout that uses a picture of the globe</li>
+  <li>We can add the Introduction and the Dramatis Personae after and drag to re-arrange</li>
+</ol>
+
 <div class="footnotes">
   <ol>
     <li id="fn:1">
@@ -456,7 +494,7 @@
   </ol>
 </div>
 
-<!-- We can only show one screencast at the moment --><p><a href="/screencasts/introducing_iBooksAuthor">There is a Screencast that may help <i style="vertical-align:middle;" title="Show this screencast" class="fa fa-youtube-play fa-2x" aria-hidden="true"> </i></a></p></div><p><b>Filed under:</b> InDesign, iBooks Author, Multi-Platform Publishing</p><p>This page last edited on: 2017-12-18</p>
+<!-- We can only show one screencast at the moment --><p><a href="/screencasts/introducing_iBooksAuthor">There is a Screencast that may help <i style="vertical-align:middle;" title="Show this screencast" class="fa fa-youtube-play fa-2x" aria-hidden="true"> </i></a></p></div><p><b>Filed under:</b> InDesign, iBooks Author, Multi-Platform Publishing</p><p>This page last edited on: 2018-04-18</p>
       </div>
     </div>
 <!--<footer>

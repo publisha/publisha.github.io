@@ -13,7 +13,7 @@ permalink: screencasts/index.html
 <p>You can also subscribe with Apple Podcasts by clicking this image</p>
 <div class="posts">
 {% assign items = site.screencasts | sort: 'date' %}
-  {% for screencast in items reversed limit:50 %}
+  {% for screencast in items reversed limit:45 %}
   <div class="post">
   <a class="video fancybox.iframe" title="{{ screencast.title }}" href="https://www.youtube.com/embed/{{ screencast.YouTube }}?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
   <h2>{{ screencast.title }}</h2>

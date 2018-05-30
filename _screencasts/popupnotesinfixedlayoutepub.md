@@ -8,7 +8,9 @@ categories: [InDesign, ePub]
 ---
 Although the ePub3 format can support popup notes, it is difficult to achieve this in the fixed-layout version from InDesign.
 
-If you have footnotes in your InDesign document, you will need to follow these steps to build a button with the text popup when the reference number is clicked in the text.
+If you have footnotes in your InDesign document, you will need to follow these steps to build a button with the text popup when the reference number is clicked in the text. In this screencast we use the button tool which can be scripted to show or hide other buttons.
+
+In the follow-up screencast, an animation is invoked when a button is clicked or touched.
 
 Please note that this requires a script that can be obtained from the very generous [Peter Kahrel][77e735fb].
 

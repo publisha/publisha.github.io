@@ -1,11 +1,12 @@
 ---
 title: From Footnotes to Popup Notes in Fixed Layout eBook
-date: 2018-05-30
+date: 2018-05-29
 YouTube: g0HQZcLWlFo
 layout: screencast
 published: true
 categories: [InDesign, ePub]
 ---
+
 Although the ePub3 format can support popup notes, it is difficult to achieve this in the fixed-layout version from InDesign.
 
 If you have footnotes in your InDesign document, you will need to follow these steps to build a button with the text popup when the reference number is clicked in the text.

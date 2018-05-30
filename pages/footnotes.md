@@ -106,12 +106,12 @@ endnotes; for this we need a script.
 
 ## Endnotes with a Script
 
-To do this we need to turn to[Peter Kahrel][2502ca9b] who
+To do this we need to turn to [Peter Kahrel][2502ca9b] who
 provides many useful scripts. The one that I use here is called 'convert
 footnotes to (dynamic) endnotes'  meaning that the numbering will
 change if further notes are added.
 
-  [2502ca9b]: www.kahrel.plus.com "see this web site for scripting InDesign"
+  [2502ca9b]: http://http://www.kahrel.plus.com/indesign/footnotes.html "see this web site for scripting InDesign"
 
 As always when using scripts to change content, save your work first!
 Scripts will often run through a long sequence of actions; you can

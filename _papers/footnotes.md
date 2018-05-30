@@ -91,9 +91,9 @@ In this case, symbols are used for general notes and the numbers are used for ci
 
 As we have seen from early manuscripts such as the *Geneva Bible*, side notes were common and possibly are a legacy feature from illuminated manuscripts such as the example here.
 
-[![a page from The Chudleigh Bible](/images/footnotes/image5.jpeg)](/images/footnotes/image5.jpeg)
+[![a page from THE CHUDLEIGH BIBLE](/images/footnotes/image5.jpeg)](/images/footnotes/image5.jpeg)
 
-a page from The Chudleigh Bible \[north-eastern France, c.1220-30\]
+a page from THE CHUDLEIGH BIBLE \[north-eastern France, c.1220-30\]
 
 Sidenotes may not need the reference numbers or symbols as long as they can be near to the context within the text block. Here as a sample spread from *The Book of Barely Imagined Beings*, Casper Henderson.
 
@@ -122,11 +122,11 @@ In Microsoft Word, it is straightforward enough with a choice to go to the botto
 
 For those editors using the Markdown syntax then you would use:
 
-In the text `\[\^2\]`
+In the text \[\^2\]
 
 Then at the bottom of the page for this reference:
 
-`\[\^2\]`: This is the reference for number 2 in the text
+\[\^2\]: This is the reference for number 2 in the text
 
 Of course you may be using fancy editors like _Ulysses_, in which case this will happen automatically.
 
@@ -154,7 +154,7 @@ Because we are now moving into the realm of interactivity, in this paper, we nee
 
 Hypercard on the MAC was able to create linking of pages but also making references and glossary items popup on mouse click as seen here in the Voyager publication on CD-ROM of *Macbeth*[^4].
 
-[![a page from the Hypercard *Macbeth* ](images/footnotes/macbethvoyager.gif)](images/footnotes/macbethvoyager.gif)
+[![a page from the Hypercard *Macbeth* ](/images/footnotes/macbethvoyager.gif)](/images/footnotes/macbethvoyager.gif)
 
 In the screen based medium, we can adopt other methods for linking references in the text to footnote content. Of course we can't call them footnotes anymore and they may be *hyperlinks* or *popups*.
 
@@ -172,9 +172,7 @@ This was the era of the multimedia CD-ROM, and many of these applications involv
 
 The software used in this next example was *Supercard* (Allegiant Technologies, an enhanced version of Hypercard) for the MAC and *Toolbook (*Asymetrix Corporation*)* for the Windows PC.
 
-The Apple Macintosh brought these tools into general use and
-
-[![write something in here](/images/footnotes/tempest.gif)](/images/footnotes/tempest.gif)
+[![Showing popup glossary in a Shakespeare text](/images/footnotes/tempest.gif)](/images/footnotes/tempest.gif)
 
 We can now bring forward a link to the world wide web through a **TED** talk by Ian Ritchie, the owner of Owl Ltd, Edinburgh, who (according to his TED talk[^6]), turned down an approach by Tim Berners-Lee, the inventor of the world wide web.
 
@@ -184,55 +182,55 @@ The early concept of the internet pages and HTML was that it was possible to nav
 
 The image here shows a standard way to show a hypertext link
 
-[![write something in here](/images/footnotes/image13.png)](/images/footnotes/image13.png)
+[![hypertext links on a web site](/images/footnotes/image13.png)](/images/footnotes/image13.png)
 
 The links here would take you to another page and, would always depend on the browser’s ability to provide a back button within the user interface.
 
 A more sophisticated approach is make the link popup the supplementary information, but this depended on using javascript. This was not available until 1995, but, as you can see here, this opened up the possibility to use an overlay of information rather than one information node replacing the other.
 
-[![write something in here](/images/footnotes/image14.png)](/images/footnotes/image14.png)
+[![Popup infomartion in an overlayed window(/images/footnotes/hypertextweb.gif)](/images/footnotes/hypertextweb.gif)
 
 ## Footnotes on the web
 
 Pages on the internet delivered with HTML (Hypertext Markup Language) and CSS (Cascading Style sheets) have no limits to their vertical dimension, so putting footnotes on a long scrolling page will only make sense if a hypertext link is made from the reference (the source anchor) to the footnote (the destination anchor).
 
-## Going back
+### Going back
 
 Once we navigate to that footnote at the bottom of the page, we need to go back to the point that we left off reading (in other words the source anchor). This can be achieved with the browser back button, but also can be provided with a backwards link at the destination point.
 
-## The Anchor source
+### The Anchor source
 
 The reference point in the text could be exactly as you would expect in print; maybe a superscript number and possibly in square brackets like this ^\[4\],^ however, if this is to become a link, over which a mouse cursor needs to be clicked, it may be difficult to target the correct point - and this is even worse, on mobile devices, where, it is the finger that does the interacting.
 
 Here we see an example of a footnote reference leading to the footnote at the bottom of the browser window. Notice that the back link puts the source at the top of the browser wind on return, not where we were reading.
 
-[![write something in here](/images/footnotes/image15.png)](/images/footnotes/image15.png)
+[![The link from the superscript number leads to the bottom of the web page](/images/footnotes/footnotessuperscript.gif)](/images/footnotes/footnotessuperscript.gif)
 
 Once we move into the interactive mode of reading and observing references, then the reference or source anchor no longer needs to be *after* the reference, but can be *within* the reference. So, we then **click** or **touch** the item to be expanded.
 
 In this changed version we see that the whole phrase is the link.
 
-[![write something in here](/images/footnotes/image16.png)](/images/footnotes/image16.png)
+[![Here the link is set to the whole phrase rather than a reference number](/images/footnotes/footnotesrefisphrase.gif)](/images/footnotes/footnotesrefisphrase.gif)
 
 ## Time for the Pop-up box
 
 Clearly, we are now needing a parading shift, putting a little more distance between the the print book and the new interactive world.
 
-With some beautiful javascript we can turn these footnote references into popup links and this means we need never lose our place in the reading flow.
+With some elegant javascript we can turn these footnote references into popup links and this means we need never lose our place in the reading flow.
 
 ### Javascript to the rescue
 
 On my web site (*publisha.github.io*) I use a jQuery plugin generously provided by Chris Sauve. The plugin (available here: *https://github.com/lemonmade/bigfoot* ), converts the footnote into a popup box for the destination but also provides a fallback standard footnote that still appears at the bottom of the web page. You can see this in action here:
 
-[![write something in here](/images/footnotes/image17.png)](/images/footnotes/image17.png)
+[![a footnote becomes a popup not on a web page with javascript](/images/footnotes/bigfoot.gif)](/images/footnotes/bigfoot.gif)
 
-### Tootips or hover ups
+## Tootips or hover ups
 
 Another way to provide supplementary information is via the tooltip. This is a block of text that will appear as the mouse cursor hovers over the reference point in the text.
 
 Normally this will be used to inform the user of what will happen when they click, but potentially more complex information can be delivered.
 
-[![write something in here](/images/footnotes/image18.png)](/images/footnotes/image18.png)
+[![write something in here](/images/footnotes/tooltips.gif)](/images/footnotes/tooltips.gif)
 
 Responsive web sites that work well on mobile devices can’t rely on the hover action to invoke these popups, since *hover* is not an option on devices that use *swipe* as a programmable , and often default action.
 
@@ -244,7 +242,7 @@ Footnotes are no good for reflowable eBooks! You don't actually have a page bott
 
 When you export from InDesign to ePub (reflowable), you have an option to convert your *footnotes* to pop-up notes.
 
-This will take the notes from the foot of the page, wrap them in an HTML tag `&lt;aside&gt;` and add thenecessaryePub3 classes in the XHTML code. In fact you will get an attribute added to the hyperlinked number:
+This will take the notes from the foot of the page, wrap them in an HTML tag &lt;aside&gt; and add thenecessaryePub3 classes in the XHTML code. In fact you will get an attribute added to the hyperlinked number:
 
 [![write something in here](/images/footnotes/image19.png)](/images/footnotes/image19.png)
 
@@ -258,19 +256,17 @@ This magic markup will be at the bottom of the HTML markup, so if you have corre
 
 The pop-up note reference is supported by Apple in their iBooks app for MACs and iOS on tablets etc. It is also documented that later Kobo devices also support pop-up notes. The later versions of the Kindle also support popup notes from footnotes. Adobe Digital Editions 4.5 support popup notes.
 
-Other devices and software that cannot support pop-up notes will simply function as hyperlinks to the list of notes at the end of the chapter or section, however, there is a problem with this currently, since the list numbers are removed from the markup, so the list items do not give a clue as to their context.
+Other devices and software that cannot support pop-up notes will simply function as hyperlinks to the list of notes at the end of the chapter or section, however, there is a problem with this currently, since the list numbers are removed from the markup, so you can’t make good use of this.
 
-### Fixing the ePUB footnotes for all systems
+Fixing the ePUB footnotes for all systems
 
 Solving the backlink problem can be done in 2 ways:
 
 We can export from InDesign as for pop-up notes, and then post edit the ePub file by adding the numbers into the notes list. You will find XHTML markup that looks something like the following:
 
-```html
 &lt;aside id="footnote-003" class="\_idFootnote" epub:type="footnote"&gt;\
 &lt;p class="footnotes"&gt;&lt;a class="\_idFootnoteAnchor \_idGenColorInherit" href="introduction.xhtml\#footnote-003-backlink"&gt;&lt;/a&gt;John Shakespeare’s father, Richard Shakespeare, was a tenant farmer, who was in 1550 renting his little farm at Snitterfield, four miles north of Stratford, from another farmer, Robert Arden of Wilmcote. &lt;/p&gt;\
 &lt;/aside&gt;
-```
 
 If you look carefully, you will see that the link tag ends before any content. It should be wrapping around the number. We can add the number before the &lt;/a&gt; however, this is not a bulleted list and so we need a space as well. This is a solution, although could be rather an onorous task is you have a lot of footnotes.
 
@@ -282,23 +278,23 @@ Editing the ePUB from the Endnotes Version
 
 Once you have unpacked the ePUB (actually I prefer to do this with BBedit – no unpacking required), you can search for:
 
-`&lt;a class="\_idFootnoteLink`
+&lt;a class="\_idFootnoteLink
 
 and replace with:
 
-`&lt;a epub:type="noteref" class="\_idFootnoteLink`
+&lt;a epub:type="noteref" class="\_idFootnoteLink
 
 If you do this then the pop-up will work BUT you will also see that the notes are still listed at the end of the chapter. **Personally I actually prefer this**, because we can get a second chance to read through the notes. If you prefer **not** to see this list of notes, then you will need to wrap each note in the &lt;aside&gt; tag, and we can do this by search and replace but this time using GREP.
 
 Find this:
 
-`&lt;div( id="footnote-.+\\s+.+\\s+)&lt;/div&gt;`
+&lt;div( id="footnote-.+\\s+.+\\s+)&lt;/div&gt;
 
 and replace with
 
-`&lt;aside\\1&lt;/aside&gt;`
+&lt;aside\\1&lt;/aside&gt;
 
-You may also want to remove the horizontal line `&lt;hr&gt;` above the notes list.
+You may also want to remove the horizontal line &lt;hr&gt; above the notes list.
 
 The Fixed-Layout ePub
 

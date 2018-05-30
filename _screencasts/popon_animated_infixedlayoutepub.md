@@ -6,7 +6,7 @@ layout: screencast
 published: true
 categories: [InDesign, ePub]
 ---
-This is the second screencastthat deals with interactive information for the fixed-layout ePub.
+This is the second screencast that deals with interactive information for the fixed-layout ePub.
 
 This time we _animate_ the object onto the screen.
 

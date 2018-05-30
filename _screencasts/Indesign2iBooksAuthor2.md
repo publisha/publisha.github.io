@@ -6,7 +6,7 @@ layout: screencast
 categories: [iBooks Author, InDesign]
 ---
 Part 2 of the 2 part screencast
-Now we have created seperate IDML files from InDesign we need to import these into an iBooks Author template.
+Now we have created separate IDML files from InDesign we need to import these into an iBooks Author template.
 
 We need to understand something about the structure of an iBooks Author file and how this relates to the structure of the content we have in InDesign.
 

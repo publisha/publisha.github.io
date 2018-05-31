@@ -5,7 +5,7 @@ date: 2018-05-31
 images: full-width
 Published: true
 annotate: true
-version: [0.8]
+version: [0.81]
 Author: Chris Jennings
 status: [still developing]
 comments: false
@@ -36,7 +36,6 @@ When Edward Gibbon published his 6 volume *The History of the Decline and Fall o
 
 [![The decline and fall of the Roman Empire by Gibbon, Edward - Warne 1872](/images/footnotes/image2.png)](/images/footnotes/image2.png)
 
-_The decline and fall of the Roman Empire by Gibbon, Edward - Warne 1872_
 
 Footnotes are marvellous things. They can provide extra information that helps to elaborate or to cite sources. Publishers don’t like footnotes[^1]; they prefer endnotes, because they are far easier to manage and encourage buyers to purchase the complete book rather than download a sample.
 
@@ -60,13 +59,10 @@ In medieval Europe, the relationship between the shape of the page and text bloc
 
 [![Liber insularum Archipelagi , Christophorum de Bondelmontibus de Florentia 1422](/images/footnotes/image1.jpeg)](/images/footnotes/image1.jpeg)
 
-_Liber insularum Archipelagi , Christophorum de Bondelmontibus de Florentia 1422_
 
 When a new translation of the bible was publishing in 1568, expensive notes were added to help the reader understand the complex language. Here we see a section of the title page of the, so called Bishops’ bible with the announcement “ With the Most Profitable Annotations upon all the hard places…”
 
 [![Title page detail of the Bishop's Bible or the Geneva Bible](/images/footnotes/image3.png)](/images/footnotes/image3.png)
-
-_Title page detail of the Bishop's Bible or the Geneva Bible_
 
 ## Conventions for Supplementary Content in Print
 
@@ -84,13 +80,9 @@ The convention is to uses these symbols in a particular order on the page as see
 
 [![a page from *Journey to Britain*, Bronwen Riley](/images/footnotes/image3.jpeg)](/images/footnotes/image3.jpeg)
 
-_a page from *Journey to Britain*, Bronwen Riley_
-
 Unusually, both symbols and numbers can be used as in this example from *The Devils Details*, Chuck Zerby
 
 [![a page from *The Devils Details*, Chuck Zerby](/images/footnotes/image4.jpeg)](/images/footnotes/image4.jpeg)
-
-_a page from *The Devils Details*, Chuck Zerby_
 
 In this case, symbols are used for general notes and the numbers are used for citations.
 
@@ -99,8 +91,6 @@ In this case, symbols are used for general notes and the numbers are used for ci
 As we have seen from early manuscripts such as the *Geneva Bible*, side notes were common and possibly are a legacy feature from illuminated manuscripts such as the example here.
 
 [![a page from THE CHUDLEIGH BIBLE](/images/footnotes/image5.jpeg)](/images/footnotes/image5.jpeg)
-
-_a page from THE CHUDLEIGH BIBLE \[north-eastern France, c.1220-30\]_
 
 Sidenotes may not need the reference numbers or symbols as long as they can be near to the context within the text block. Here as a sample spread from *The Book of Barely Imagined Beings*, Casper Henderson.
 
@@ -117,7 +107,6 @@ Robert Bringhurst uses both side notes and footnotes in his *The Elements of Typ
 ## Practicalities
 
 Let’s look at some methods to create footnotes, side notes or endnotes.
-
 
 ### Word Processors
 

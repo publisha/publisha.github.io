@@ -1,15 +1,16 @@
 ---
 layout: paper
 title: Footnotes and other Diversions
-date: 2018-05-30
+date: 2018-05-31
 images: full-width
-Published: false
+Published: true
 annotate: true
-version: [0.91]
+version: [0.8]
 Author: Chris Jennings
-status: [developing]
-comments: true
+status: [still developing]
+comments: false
 ---
+
 # Footnotes and Asides
 **How can footnotes, endnotes, margin notes and other deviations from the narrative flow, work best in a screen based medium?**
 
@@ -17,9 +18,11 @@ comments: true
 
 I start with a quote from Robert Bringhurst in his*The Elements of Typographic Style*:
 
-“...the academic habit of relegating notes to the foot of the page or the end of the book is a mirror of Victorian social and domestic practice, in which the kitchen was kept out of sight and the servants were kept below stairs. If the notes are permitted to move around in the margins – as they were in Renaissance books – they can be present where needed and at the same time enrich the life of the page.”
+> “...the academic habit of relegating notes to the foot of the page or the end of the book is a mirror of Victorian social and domestic practice, in which the kitchen was kept out of sight and the servants were kept below stairs. If the notes are permitted to move around in the margins – as they were in Renaissance books – they can be present where needed and at the same time enrich the life of the page.”
 
-[![The Bible from 1568 (Bishops' Bible)](/images/footnotes/image1.png)](/images/footnotes/image1.png)
+[![The Geneva Bible from 1568 (Bishops' Bible)](/images/footnotes/image1.png)](/images/footnotes/image1.png)
+
+_See here how this page from the Bible has side notes which flood out into the left column of text._
 
 This paper sets out to explore the relationship between the footnote in the printed work and equivalent devices in screen based medium.
 
@@ -33,7 +36,7 @@ When Edward Gibbon published his 6 volume *The History of the Decline and Fall o
 
 [![The decline and fall of the Roman Empire by Gibbon, Edward - Warne 1872](/images/footnotes/image2.png)](/images/footnotes/image2.png)
 
-The decline and fall of the Roman Empire by Gibbon, Edward - Warne 1872
+_The decline and fall of the Roman Empire by Gibbon, Edward - Warne 1872_
 
 Footnotes are marvellous things. They can provide extra information that helps to elaborate or to cite sources. Publishers don’t like footnotes[^1]; they prefer endnotes, because they are far easier to manage and encourage buyers to purchase the complete book rather than download a sample.
 
@@ -57,13 +60,13 @@ In medieval Europe, the relationship between the shape of the page and text bloc
 
 [![Liber insularum Archipelagi , Christophorum de Bondelmontibus de Florentia 1422](/images/footnotes/image1.jpeg)](/images/footnotes/image1.jpeg)
 
-Liber insularum Archipelagi , Christophorum de Bondelmontibus de Florentia 1422
+_Liber insularum Archipelagi , Christophorum de Bondelmontibus de Florentia 1422_
 
 When a new translation of the bible was publishing in 1568, expensive notes were added to help the reader understand the complex language. Here we see a section of the title page of the, so called Bishops’ bible with the announcement “ With the Most Profitable Annotations upon all the hard places…”
 
 [![Title page detail of the Bishop's Bible or the Geneva Bible](/images/footnotes/image3.png)](/images/footnotes/image3.png)
 
-Title page detail of the Bishop's Bible or the Geneva Bible
+_Title page detail of the Bishop's Bible or the Geneva Bible_
 
 ## Conventions for Supplementary Content in Print
 
@@ -81,9 +84,13 @@ The convention is to uses these symbols in a particular order on the page as see
 
 [![a page from *Journey to Britain*, Bronwen Riley](/images/footnotes/image3.jpeg)](/images/footnotes/image3.jpeg)
 
+_a page from *Journey to Britain*, Bronwen Riley_
+
 Unusually, both symbols and numbers can be used as in this example from *The Devils Details*, Chuck Zerby
 
 [![a page from *The Devils Details*, Chuck Zerby](/images/footnotes/image4.jpeg)](/images/footnotes/image4.jpeg)
+
+_a page from *The Devils Details*, Chuck Zerby_
 
 In this case, symbols are used for general notes and the numbers are used for citations.
 
@@ -93,7 +100,7 @@ As we have seen from early manuscripts such as the *Geneva Bible*, side notes we
 
 [![a page from THE CHUDLEIGH BIBLE](/images/footnotes/image5.jpeg)](/images/footnotes/image5.jpeg)
 
-a page from THE CHUDLEIGH BIBLE \[north-eastern France, c.1220-30\]
+_a page from THE CHUDLEIGH BIBLE \[north-eastern France, c.1220-30\]_
 
 Sidenotes may not need the reference numbers or symbols as long as they can be near to the context within the text block. Here as a sample spread from *The Book of Barely Imagined Beings*, Casper Henderson.
 
@@ -230,9 +237,9 @@ Another way to provide supplementary information is via the tooltip. This is a b
 
 Normally this will be used to inform the user of what will happen when they click, but potentially more complex information can be delivered.
 
-[![write something in here](/images/footnotes/tooltips.gif)](/images/footnotes/tooltips.gif)
+[![This shows how tooltips look when hovering over with mouse](/images/footnotes/tooltips.gif)](/images/footnotes/tooltips.gif)
 
-Responsive web sites that work well on mobile devices can’t rely on the hover action to invoke these popups, since *hover* is not an option on devices that use *swipe* as a programmable , and often default action.
+Responsive web sites that work well on mobile devices can’t rely on the hover action to invoke these popups, since *hover* is not an option on devices that use *swipe* as a default action.
 
 ## Footnotes in eBooks
 
@@ -242,83 +249,101 @@ Footnotes are no good for reflowable eBooks! You don't actually have a page bott
 
 When you export from InDesign to ePub (reflowable), you have an option to convert your *footnotes* to pop-up notes.
 
-This will take the notes from the foot of the page, wrap them in an HTML tag &lt;aside&gt; and add thenecessaryePub3 classes in the XHTML code. In fact you will get an attribute added to the hyperlinked number:
+This will take the notes from the foot of the page, wrap them in an HTML tag `<aside>` and add the necessary ePub3 classes in the XHTML code. In fact you will get an attribute added to the hyperlinked number:
 
-[![write something in here](/images/footnotes/image19.png)](/images/footnotes/image19.png)
+[![Export to reflowable ePub from InDesign gives you the popup notes option](/images/footnotes/image19.png)](/images/footnotes/image19.png)
 
-epub:type="noteref"
+`epub:type="noteref"`
 
-and then the footnote reference will be wrapped in the &lt;aside&gt; tag. We need to be grateful for the coming of HTML5 because the &lt;aside&gt; tag was only added for this latest version of HTML.
+and then the footnote reference will be wrapped in the `<aside>` tag. We need to be grateful for the coming of HTML5 because the `<aside>` tag was only added for this latest version of HTML.
 
-This magic markup will be at the bottom of the HTML markup, so if you have correctly split the ePub into the chapters, the list will be at the end of the chapter; otherwise, if your ePub produces one XHTML file, then the note markup will be at the end of the book.
+This magic markup will be at the bottom of the HTML page, so if you have correctly split the ePub into the chapters, the list will be at the end of the chapter; otherwise, if your ePub produces one XHTML file, then the note markup will be at the end of the book.
 
-[![write something in here](/images/footnotes/image20.png)](/images/footnotes/image20.png)
+[![Here is what the popup looks like within Apple iBooks](/images/footnotes/image20.png)](/images/footnotes/image20.png)
 
 The pop-up note reference is supported by Apple in their iBooks app for MACs and iOS on tablets etc. It is also documented that later Kobo devices also support pop-up notes. The later versions of the Kindle also support popup notes from footnotes. Adobe Digital Editions 4.5 support popup notes.
 
 Other devices and software that cannot support pop-up notes will simply function as hyperlinks to the list of notes at the end of the chapter or section, however, there is a problem with this currently, since the list numbers are removed from the markup, so you can’t make good use of this.
 
-Fixing the ePUB footnotes for all systems
+## Fixing the ePUB footnotes for all reading systems
 
-Solving the backlink problem can be done in 2 ways:
+**Solving the backlink problem can be done in 2 ways:
+**
 
-We can export from InDesign as for pop-up notes, and then post edit the ePub file by adding the numbers into the notes list. You will find XHTML markup that looks something like the following:
+We can export from InDesign as for pop-up notes (as above), and then post edit the ePub file by adding the numbers into the notes list. You will find XHTML markup that looks something like the following:
 
-&lt;aside id="footnote-003" class="\_idFootnote" epub:type="footnote"&gt;\
-&lt;p class="footnotes"&gt;&lt;a class="\_idFootnoteAnchor \_idGenColorInherit" href="introduction.xhtml\#footnote-003-backlink"&gt;&lt;/a&gt;John Shakespeare’s father, Richard Shakespeare, was a tenant farmer, who was in 1550 renting his little farm at Snitterfield, four miles north of Stratford, from another farmer, Robert Arden of Wilmcote. &lt;/p&gt;\
-&lt;/aside&gt;
+```html
+<aside id="footnote-003" class="_idFootnote" epub:type="footnote">
+<p class="footnotes"><a class="_idFootnoteAnchor _idGenColorInherit" href="intro.xhtml#footnote-003-backlink"></a>John Shakespeare’s father, Richard Shakespeare, was a tenant farmer, who was in 1550 renting his little farm at Snitterfield.</p>
+</aside>
+```
 
-If you look carefully, you will see that the link tag ends before any content. It should be wrapping around the number. We can add the number before the &lt;/a&gt; however, this is not a bulleted list and so we need a space as well. This is a solution, although could be rather an onorous task is you have a lot of footnotes.
+If you look carefully, you will see that the link tag ends before any content. It should be wrapping around the number. We can add the number before the `</a>` however, this is not a bulleted list and so we need a space as well. This is a solution, although could be rather an onorous task is you have a lot of footnotes.
 
-Best of Both Worlds; popup notes and endnotes
+**Best of Both Worlds; popup notes and endnotes**
 
 Rather than export from InDesign with the pop-up note option, choose the 'End of Section (Endnotes)' option. This will work properly for those systems that do not support pop-up notes. In iBooks (Apple systems), the hyperlinked number will take us to the notes section at the end of the chapter. If we want to get pop-up notes working on those systems that support it we will need to crack open the ePUB and make some changes.
 
-Editing the ePUB from the Endnotes Version
+### Editing the ePUB from the Endnotes Version
 
 Once you have unpacked the ePUB (actually I prefer to do this with BBedit – no unpacking required), you can search for:
 
-&lt;a class="\_idFootnoteLink
+`<a class="_idFootnoteLink`
 
 and replace with:
 
-&lt;a epub:type="noteref" class="\_idFootnoteLink
+`<a epub:type="noteref" class="_idFootnoteLink`
 
-If you do this then the pop-up will work BUT you will also see that the notes are still listed at the end of the chapter. **Personally I actually prefer this**, because we can get a second chance to read through the notes. If you prefer **not** to see this list of notes, then you will need to wrap each note in the &lt;aside&gt; tag, and we can do this by search and replace but this time using GREP.
+If you do this then the pop-up will work BUT you will also see that the notes are still listed at the end of the chapter. **Personally I actually prefer this**, because we can get a second chance to read through the notes. If you prefer **not** to see this list of notes, then you will need to wrap each note in the `<aside>` tag, and we can do this by search and replace but this time using GREP.
 
 Find this:
 
-&lt;div( id="footnote-.+\\s+.+\\s+)&lt;/div&gt;
+`<div( id="footnote-.+\\s+.+\\s+)>/div>`
 
 and replace with
 
-&lt;aside\\1&lt;/aside&gt;
+`<aside\1>/aside>`
 
-You may also want to remove the horizontal line &lt;hr&gt; above the notes list.
+You may also want to remove the horizontal line `<hr>` above the notes list.
 
-The Fixed-Layout ePub
+## The Fixed-Layout ePub
 
 Wile the fixed-layout ePub provides some very sophisticated features, when we export from our InDesign work, there is no automatic way to get notes to be interactive; no conversion of footnotes to popup notes will be found as an option. Footnotes that have been provided for the print version will display in exactly the same way for the fixed-layout ePub. Getting interactive supplementary information to display on the fixed layout ePub page needs extra work and we can use InDesign’s buttons and animation feature to achieve this.
 
 Here is what we can achieve:
 
-[![write something in here](/images/footnotes/image21.png)](/images/footnotes/image21.png)
+[![pages from 'Medea' an interactive eBook](/images/footnotes/medea.gif)](/images/footnotes/medea.gif)
 
-There are instruction for making popup text in the fixed layout eBook from InDesign on my screencast channel.
+There are instruction for making popup text in the fixed layout eBook from InDesign [on my screencast channel][f15e7388].
 
-iBooks Author
+  [f15e7388]: https://publisha.github.io/screencasts/ "look in the list of screencasts"
+
+## iBooks Author
 
 This Apple only authoring tool creates, what Apple call multi-touch books. There are many features that make it possible to add supplementary content.
 
-For this toolset I shall show some of my student’s work on their Shakespeare
+For this toolset I shall show some of my student’s work on their Shakespeare plays that demonstrate these features.
 
-[![write something in here](/images/footnotes/image22.png)](/images/footnotes/image22.png)plays that demonstrate these features.
+[![iBooks Author can produce popup glossary](/images/footnotes/popupgloss.gif)](/images/footnotes/popupgloss.gif)
 
-[![write something in here](/images/footnotes/image23.png)](/images/footnotes/image23.png)
+_Here we see the glossary used to provide extra information for these geographical locations within the play “The Comedy of Errors”._
 
-Here we see the glossary used to provide extra information for these places within the play “The Comedy of Errors”.
+[![both glossary and popup notes](/images/footnotes/iba_gloss_poups.gif)](/images/footnotes/iba_gloss_poups.gif)
 
-In this version of ‘Twefth Night’ the student has used both glossary and popup notes.
+_In this version of ‘Twelfth Night’ the student has used both glossary and popup notes._
+
+## Summary
+
+Supplementary information in the form of footnotes and margin notes has been used in documents for centuries and even before Gutenberg's printing processes, illuminated manuscripts used the margins to add details.
+
+We have seen how in _The Geneva Bible_, there were so many annotations in the margins that the pages often became overcrowded and hard to read.
+
+We noted that Edward Gibbon used his footnotes so extensively, that to read an abridged edition (without footnotes) would be to miss out on so much detail.
+
+Footnotes and Endnotes are a burden for the reader, and with our screen reading experience, the hyperlink and popup note makes navigating this supplementary information so much more usable and compelling.
+
+It is essential that publishers of digital content do convert their _out of the flow_ content to interactive through click or touch.
+
 
 [^1]: Chuck Zerby, *The Devil’s Details: A History of Footnotes* (Touchstone 2002)
 

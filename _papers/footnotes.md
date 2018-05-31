@@ -184,7 +184,7 @@ The links here would take you to another page and, would always depend on the br
 
 A more sophisticated approach is make the link popup the supplementary information, but this depended on using javascript. This was not available until 1995, but, as you can see here, this opened up the possibility to use an overlay of information rather than one information node replacing the other.
 
-[![Popup infomartion in an overlayed window(/images/footnotes/hypertextweb.gif)](/images/footnotes/hypertextweb.gif)
+[![Popup information in an overlayed window](/images/footnotes/hypertextweb.gif)](/images/footnotes/hypertextweb.gif)
 
 ## Footnotes on the web
 

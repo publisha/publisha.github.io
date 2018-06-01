@@ -1,13 +1,13 @@
 ---
 layout: paper
 title: Footnotes and other Diversions
-date: 2018-05-31
+date: 2018-06-01
 images: full-width
 Published: true
 annotate: true
-version: [0.81]
+version: [0.9]
 Author: Chris Jennings
-status: [still developing]
+status: [under review]
 comments: false
 ---
 
@@ -118,13 +118,15 @@ In Microsoft Word, it is straightforward enough with a choice to go to the botto
 
 For those editors using the Markdown syntax then you would use:
 
-In the text \[\^2\]
+In the text `[^2]`
 
 Then at the bottom of the page for this reference:
 
-\[\^2\]: This is the reference for number 2 in the text
+`[^2]`: This is the reference for number 2 in the text
 
-Of course you may be using fancy editors like _Ulysses_, in which case this will happen automatically.
+Of course you may be using fancy editors like _Ulysses_ or _Scrivener_ in which case this will happen automatically.
+
+**Markdown** has become a format preferred by writers for the internet since it is relatively easy to convert to HTML.
 
 ### Page Layout
 
@@ -144,7 +146,7 @@ Thee are no direct options for creating side notes in InDesign, because this wou
 
 All of the above can (and has been) presented on the screen as in print with the ubiquitous PDF, but we expect more!
 
-Because we are now moving into the realm of interactivity, in this paper, we need to show something in a more dynamic format. The images here are animated GIFs.
+> Because we are now moving into the realm of interactivity, in this article, we need to provide evidence in a more dynamic format. Many of the images beyond here are animated GIFs.
 
 **Before the internet there was Hypercard**
 
@@ -196,7 +198,7 @@ Once we navigate to that footnote at the bottom of the page, we need to go back 
 
 ### The Anchor source
 
-The reference point in the text could be exactly as you would expect in print; maybe a superscript number and possibly in square brackets like this ^\[4\],^ however, if this is to become a link, over which a mouse cursor needs to be clicked, it may be difficult to target the correct point - and this is even worse, on mobile devices, where, it is the finger that does the interacting.
+The reference point in the text could be exactly as you would expect in print; maybe a superscript number and possibly in square brackets like this ^[4],^ however, if this is to become a link, over which a mouse cursor needs to be clicked, it may be difficult to target the correct point - and this is even worse, on mobile devices, where, it is the finger that does the interacting.
 
 Here we see an example of a footnote reference leading to the footnote at the bottom of the browser window. Notice that the back link puts the source at the top of the browser wind on return, not where we were reading.
 
@@ -208,9 +210,15 @@ In this changed version we see that the whole phrase is the link.
 
 [![Here the link is set to the whole phrase rather than a reference number](/images/footnotes/footnotesrefisphrase.gif)](/images/footnotes/footnotesrefisphrase.gif)
 
+## Building web page Side notes with Javascript
+
+Andrew Clark has created a very elegant way to convert your footnotes into side notes when the width of the page allows for it. Although the side notes are converted the footnotes still remain.
+
+[![Andrew Clark's web site](/images/footnotes/jquery_sidenotes.gif)](/images/footnotes/jquery_sidenotes.gif)
+
 ## Time for the Pop-up box
 
-Clearly, we are now needing a parading shift, putting a little more distance between the the print book and the new interactive world.
+Clearly, we are now needing a paradigmn shift, putting a little more distance between the the print book and the new interactive world.
 
 With some elegant javascript we can turn these footnote references into popup links and this means we need never lose our place in the reading flow.
 
@@ -229,6 +237,10 @@ Normally this will be used to inform the user of what will happen when they clic
 [![This shows how tooltips look when hovering over with mouse](/images/footnotes/tooltips.gif)](/images/footnotes/tooltips.gif)
 
 Responsive web sites that work well on mobile devices can’t rely on the hover action to invoke these popups, since *hover* is not an option on devices that use *swipe* as a default action.
+
+## One more thing. **_Medium_**
+
+This fantastic platform for writers and storytellers, does not support interactive footnotes on it's site and I am very disappointed. Aren't you?
 
 ## Footnotes in eBooks
 
@@ -283,7 +295,7 @@ and replace with:
 
 `<a epub:type="noteref" class="_idFootnoteLink`
 
-If you do this then the pop-up will work BUT you will also see that the notes are still listed at the end of the chapter. **Personally I actually prefer this**, because we can get a second chance to read through the notes. If you prefer **not** to see this list of notes, then you will need to wrap each note in the `<aside>` tag, and we can do this by search and replace but this time using GREP.
+If you do this then the pop-up will work BUT you will also see that the notes are still listed at the end of the chapter. **Personally I actually prefer this**, because we can get a second chance to read through the notes. If you prefer **not** to see this list of notes, then you will need to wrap each note in the `<aside>` tag, and we can do this by search and replace but this time using **GREP**.
 
 Find this:
 
@@ -315,11 +327,11 @@ For this toolset I shall show some of my student’s work on their Shakespeare p
 
 [![iBooks Author can produce popup glossary](/images/footnotes/popupgloss.gif)](/images/footnotes/popupgloss.gif)
 
-_Here we see the glossary used to provide extra information for these geographical locations within the play “The Comedy of Errors”._
+_Here we see the glossary used to provide extra information for these geographical locations within the play “The Comedy of Errors” created by MA student Sam Ashcroft_
 
 [![both glossary and popup notes](/images/footnotes/iba_gloss_poups.gif)](/images/footnotes/iba_gloss_poups.gif)
 
-_In this version of ‘Twelfth Night’ the student has used both glossary and popup notes._
+_In this version of ‘Twelfth Night’ MA student Alicia Ballard has used both glossary and popup notes._
 
 ## Summary
 
@@ -331,7 +343,7 @@ We noted that Edward Gibbon used his footnotes so extensively, that to read an a
 
 Footnotes and Endnotes are a burden for the reader, and with our screen reading experience, the hyperlink and popup note makes navigating this supplementary information so much more usable and compelling.
 
-It is essential that publishers of digital content do convert their _out of the flow_ content to interactive through click or touch.
+It is essential that publishers of digital content do convert their _out of the flow_ content to be interactive through click or touch.
 
 
 [^1]: Chuck Zerby, *The Devil’s Details: A History of Footnotes* (Touchstone 2002)

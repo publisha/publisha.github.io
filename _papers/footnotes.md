@@ -212,7 +212,7 @@ In this changed version we see that the whole phrase is the link.
 
 ## Building web page Side notes with Javascript
 
-Andrew Clark has created a very elegant way to convert your footnotes into side notes when the width of the page allows for it. Although the side notes are converted the footnotes still remain.
+Andrew Clark has created a very elegant way to convert your footnotes into side notes when the width of the page allows for it. Although the side notes are converted the footnotes still remain. [^7]
 
 [![Andrew Clark's web site](/images/footnotes/jquery_sidenotes.gif)](/images/footnotes/jquery_sidenotes.gif)
 
@@ -357,3 +357,5 @@ It is essential that publishers of digital content do convert their _out of the 
 [^5]: see Jacob Nielsen’s web site for a history of hypertext: https://www.nngroup.com/articles/hypertext-history/
 
 [^6]: https://www.ted.com/talks/ian\_ritchie\_the\_day\_i\_turned\_down\_tim\_berners\_lee
+
+[^7]: https://acdlite.github.io/jquery.sidenotes/

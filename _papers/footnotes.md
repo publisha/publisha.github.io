@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Footnotes and other Diversions
-date: 2018-06-01
+date: 2018-06-02
 images: full-width
 Published: true
 annotate: true
@@ -16,9 +16,9 @@ comments: false
 
 **Author:** Chris Jennings
 
-I start with a quote from Robert Bringhurst in his*The Elements of Typographic Style*:
+I start with a quote from Robert Bringhurst in his *The Elements of Typographic Style*:
 
-> “...the academic habit of relegating notes to the foot of the page or the end of the book is a mirror of Victorian social and domestic practice, in which the kitchen was kept out of sight and the servants were kept below stairs. If the notes are permitted to move around in the margins – as they were in Renaissance books – they can be present where needed and at the same time enrich the life of the page.”
+> “_...the academic habit of relegating notes to the foot of the page or the end of the book is a mirror of Victorian social and domestic practice, in which the kitchen was kept out of sight and the servants were kept below stairs. If the notes are permitted to move around in the margins – as they were in Renaissance books – they can be present where needed and at the same time enrich the life of the page._”
 
 [![The Geneva Bible from 1568 (Bishops' Bible)](/images/footnotes/image1.png)](/images/footnotes/image1.png)
 

@@ -1,10 +1,12 @@
 ---
 layout: "post"
 title: "Video across a 2 page spread"
-date: "2017-03-31 23:30"
+date: "2018-04-09 18:02"
 published: true
 categories: [InDesign, ePub, HTML]
 ---
+**Updated with a javascript solution**
+
 There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width.
 
 ## There are really 2 videos (one on each half)
@@ -44,7 +46,7 @@ Take a note of the width (yours may be different to mine). Now **change** the wi
 
 Here is mine:
 
-```html
+```CSS
 <div style="position:absolute;
 overflow:hidden;
 left:0px;
@@ -53,13 +55,14 @@ top:0px;
 -ms-transform:translate(0.00px,0.00px);
 transform:translate(0.00px,0.00px);
 width:396.00px;
-height:594.00px">
+height:594.00px;">
 ```
+
 The width should be changed from `396.00px` to `792px`
 
 The next change is to hide the second `<div>`. Find the second block that also has a width set to half the overall viewport width and add (within the inline style):
 
-`;display:none;`
+`display:none;`
 
 ## Autoplaying the Video
 

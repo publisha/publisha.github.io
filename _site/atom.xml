@@ -4,7 +4,7 @@
  <title>Digital Publishing Hub</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-05-30T21:10:23+01:00</updated>
+ <updated>2018-06-02T09:19:59+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
@@ -138,30 +138,13 @@ https://www.flickr.com/services/api/explore/flickr.photosets.getPhotos&lt;/p&gt;
  </entry>
  
  <entry>
-   <title>Reading Progress Indicator</title>
-   <link href="http://localhost:4000/html/css/epub/2017/08/14/reading-progress/"/>
-   <updated>2017-08-14T17:07:00+01:00</updated>
-   <id>http://localhost:4000/html/css/epub/2017/08/14/reading-progress</id>
-   <content type="html">&lt;p&gt;Some time ago I wrote a post over on &lt;a href=&quot;http://www.pagetoscreen.net/journal/item/page_numbers&quot; title=&quot;read this piece from a while ago&quot;&gt;pagetoscreen.net&lt;/a&gt; about a progress bar in a fixed-layout eBook. In that article I also made a link to a web site that spoke about implementing the progress bar in HTML5.&lt;/p&gt;
-
-&lt;p&gt;More recently, I was grateful to have been shared a link to an article by the very same &lt;a href=&quot;https://css-tricks.com/reading-position-indicator/&quot; title=&quot;Reading Position Indicator&quot;&gt;Pankaj Parashar&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The idea is that when scrolling through a long article in a web browser, the scroll bar on the right is not really a strong enough indicator to the user, as to the amount of text that has been read, and how much remains.&lt;/p&gt;
-
-&lt;p&gt;Some discussions do suggest that the usual scroll bar is enough, but, there again, the scrollbar disappears when the current window is not active. Of course, this varies over different browsers and platforms.&lt;/p&gt;
-
-&lt;p&gt;Pankaj Parashar’s article demonstrates the indicator at the top of the current window, but I agreed with some comments that this might be mistaken for some &lt;em&gt;content still loading&lt;/em&gt;, so I have implemented on this web site at the bottom of the window.&lt;/p&gt;
-
-&lt;p&gt;You will observe this &lt;strong&gt;reading position indicator&lt;/strong&gt; on some pages of this web site, although, I suspect, not on the article that you are reading, because it is (after all), rather short. The indicator is made to be very slightly transparent, to show the content underneath. I have also made the colour suitably adjusted to blend nicely with the overall scheme of the site.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
    <title>Video across a 2 page spread</title>
-   <link href="http://localhost:4000/indesign/epub/html/2017/03/31/spread-video-fxl-epub/"/>
-   <updated>2017-03-31T23:30:00+01:00</updated>
-   <id>http://localhost:4000/indesign/epub/html/2017/03/31/spread-video-fxl-epub</id>
-   <content type="html">&lt;p&gt;There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width.&lt;/p&gt;
+   <link href="http://localhost:4000/indesign/epub/html/2018/04/09/spread-video-fxl-epub/"/>
+   <updated>2018-04-09T18:02:00+01:00</updated>
+   <id>http://localhost:4000/indesign/epub/html/2018/04/09/spread-video-fxl-epub</id>
+   <content type="html">&lt;p&gt;&lt;strong&gt;Updated with a javascript solution&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width.&lt;/p&gt;
 
 &lt;h2 id=&quot;there-are-really-2-videos-one-on-each-half&quot;&gt;There are really 2 videos (one on each half)&lt;/h2&gt;
 
@@ -204,16 +187,7 @@ https://www.flickr.com/services/api/explore/flickr.photosets.getPhotos&lt;/p&gt;
 
 &lt;p&gt;Here is mine:&lt;/p&gt;
 
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;position:absolute;
+&lt;pre&gt;&lt;code class=&quot;language-CSS&quot;&gt;&amp;lt;div style=&quot;position:absolute;
 overflow:hidden;
 left:0px;
 top:0px;
@@ -221,13 +195,14 @@ top:0px;
 -ms-transform:translate(0.00px,0.00px);
 transform:translate(0.00px,0.00px);
 width:396.00px;
-height:594.00px&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+height:594.00px;&quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;The width should be changed from &lt;code class=&quot;highlighter-rouge&quot;&gt;396.00px&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;792px&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;The next change is to hide the second &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;. Find the second block that also has a width set to half the overall viewport width and add (within the inline style):&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;;display:none;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;display:none;&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;autoplaying-the-video&quot;&gt;Autoplaying the Video&lt;/h2&gt;
 
@@ -270,6 +245,25 @@ height:594.00px&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Reading Progress Indicator</title>
+   <link href="http://localhost:4000/html/css/epub/2017/08/14/reading-progress/"/>
+   <updated>2017-08-14T17:07:00+01:00</updated>
+   <id>http://localhost:4000/html/css/epub/2017/08/14/reading-progress</id>
+   <content type="html">&lt;p&gt;Some time ago I wrote a post over on &lt;a href=&quot;http://www.pagetoscreen.net/journal/item/page_numbers&quot; title=&quot;read this piece from a while ago&quot;&gt;pagetoscreen.net&lt;/a&gt; about a progress bar in a fixed-layout eBook. In that article I also made a link to a web site that spoke about implementing the progress bar in HTML5.&lt;/p&gt;
+
+&lt;p&gt;More recently, I was grateful to have been shared a link to an article by the very same &lt;a href=&quot;https://css-tricks.com/reading-position-indicator/&quot; title=&quot;Reading Position Indicator&quot;&gt;Pankaj Parashar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The idea is that when scrolling through a long article in a web browser, the scroll bar on the right is not really a strong enough indicator to the user, as to the amount of text that has been read, and how much remains.&lt;/p&gt;
+
+&lt;p&gt;Some discussions do suggest that the usual scroll bar is enough, but, there again, the scrollbar disappears when the current window is not active. Of course, this varies over different browsers and platforms.&lt;/p&gt;
+
+&lt;p&gt;Pankaj Parashar’s article demonstrates the indicator at the top of the current window, but I agreed with some comments that this might be mistaken for some &lt;em&gt;content still loading&lt;/em&gt;, so I have implemented on this web site at the bottom of the window.&lt;/p&gt;
+
+&lt;p&gt;You will observe this &lt;strong&gt;reading position indicator&lt;/strong&gt; on some pages of this web site, although, I suspect, not on the article that you are reading, because it is (after all), rather short. The indicator is made to be very slightly transparent, to show the content underneath. I have also made the colour suitably adjusted to blend nicely with the overall scheme of the site.&lt;/p&gt;
 </content>
  </entry>
  

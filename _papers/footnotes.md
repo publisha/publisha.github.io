@@ -20,9 +20,9 @@ I start with a quote from Robert Bringhurst in his *The Elements of Typographic 
 
 > “_...the academic habit of relegating notes to the foot of the page or the end of the book is a mirror of Victorian social and domestic practice, in which the kitchen was kept out of sight and the servants were kept below stairs. If the notes are permitted to move around in the margins – as they were in Renaissance books – they can be present where needed and at the same time enrich the life of the page._”
 
-[![The Geneva Bible from 1568 (Bishops' Bible)](/images/footnotes/image1.png)](/images/footnotes/image1.png)
+In medieval Europe, the relationship between the shape of the page and text block provided space for notes in the margin. In fact, even before printing margin notes are used to elaborate or further explain details. In this illustration we see a spread from the Liber insularum Archipelagi. with notes in the site margins
 
-_See here how this page from the Bible has side notes which flood out into the left column of text._
+[![Liber insularum Archipelagi , Christophorum de Bondelmontibus de Florentia 1422](/images/footnotes/image1.jpeg)](/images/footnotes/image1.jpeg)
 
 This paper sets out to explore the relationship between the footnote in the printed work and equivalent devices in screen based medium.
 
@@ -55,14 +55,14 @@ Can authors be creative with the interactive note in the eBook? What can the pop
 
 A review of footnotes in history and how publishers have implemented in the printed work. We look at the conventions from the past and what standards are adopted in publishing today.
 
-In medieval Europe, the relationship between the shape of the page and text block provided space for notes in the margin. In fact, even before printing margin notes are used to elaborate or further explain details. In this illustration we see a spread from the Liber insularum Archipelagi. with notes in the site margins
-
-[![Liber insularum Archipelagi , Christophorum de Bondelmontibus de Florentia 1422](/images/footnotes/image1.jpeg)](/images/footnotes/image1.jpeg)
-
-
 When a new translation of the bible was publishing in 1568, expensive notes were added to help the reader understand the complex language. Here we see a section of the title page of the, so called Bishops’ bible with the announcement “ With the Most Profitable Annotations upon all the hard places…”
 
 [![Title page detail of the Bishop's Bible or the Geneva Bible](/images/footnotes/image3.png)](/images/footnotes/image3.png)
+
+_See here how this page from the Bible has side notes which flood out into the left column of text._
+
+[![The Geneva Bible from 1568 (Bishops' Bible)](/images/footnotes/image1.png)](/images/footnotes/image1.png)
+
 
 ## Conventions for Supplementary Content in Print
 
@@ -72,7 +72,7 @@ Wherever the note is deposited it needs a reference within the text and where en
 
 ### Footnotes
 
-Where the notes are footnotes then superscripted numbers can also be used, but some publishers use the less than useful range of symbols in the order set out here. \* or †, ‡, §, ‖,¶
+Where the notes are footnotes then superscripted numbers can also be used, but some publishers use the less than useful range of symbols in the order set out here. \* †, ‡, §, ‖,¶
 
 [![Symbols and their order for footnote References](/images/footnotes/image2.jpeg)](/images/footnotes/image2.jpeg)
 
@@ -90,7 +90,7 @@ In this case, symbols are used for general notes and the numbers are used for ci
 
 As we have seen from early manuscripts such as the *Geneva Bible*, side notes were common and possibly are a legacy feature from illuminated manuscripts such as the example here.
 
-[![a page from THE CHUDLEIGH BIBLE](/images/footnotes/image5.jpeg)](/images/footnotes/image5.jpeg)
+[![a page from The Chudleigh Bible](/images/footnotes/image5.jpeg)](/images/footnotes/image5.jpeg)
 
 Sidenotes may not need the reference numbers or symbols as long as they can be near to the context within the text block. Here as a sample spread from *The Book of Barely Imagined Beings*, Casper Henderson.
 
@@ -268,14 +268,15 @@ Other devices and software that cannot support pop-up notes will simply function
 
 ## Fixing the ePUB footnotes for all reading systems
 
-**Solving the backlink problem can be done in 2 ways:
-**
+**Solving the backlink problem can be done in 2 ways:**
 
 We can export from InDesign as for pop-up notes (as above), and then post edit the ePub file by adding the numbers into the notes list. You will find XHTML markup that looks something like the following:
 
 ```html
 <aside id="footnote-003" class="_idFootnote" epub:type="footnote">
-<p class="footnotes"><a class="_idFootnoteAnchor _idGenColorInherit" href="intro.xhtml#footnote-003-backlink"></a>John Shakespeare’s father, Richard Shakespeare, was a tenant farmer, who was in 1550 renting his little farm at Snitterfield.</p>
+<p class="footnotes">
+<a class="_idFootnoteAnchor _idGenColorInherit" href="intro.xhtml#footnote-003-backlink">
+</a>John Shakespeare’s father, Richard Shakespeare, was a tenant farmer, who was in 1550 renting his little farm at Snitterfield.</p>
 </aside>
 ```
 

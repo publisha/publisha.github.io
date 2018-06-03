@@ -20,9 +20,9 @@ I start with a quote from Robert Bringhurst in his *The Elements of Typographic 
 
 > “_...the academic habit of relegating notes to the foot of the page or the end of the book is a mirror of Victorian social and domestic practice, in which the kitchen was kept out of sight and the servants were kept below stairs. If the notes are permitted to move around in the margins – as they were in Renaissance books – they can be present where needed and at the same time enrich the life of the page._”
 
-[![The Geneva Bible from 1568 (Bishops' Bible)](/images/footnotes/image1.png)](/images/footnotes/image1.png)
+In medieval Europe, the relationship between the shape of the page and text block provided space for notes in the margin. In fact, even before printing margin notes are used to elaborate or further explain details. In this illustration we see a spread from the Liber insularum Archipelagi. with notes in the site margins
 
-_See here how this page from the Bible has side notes which flood out into the left column of text._
+[![Liber insularum Archipelagi , Christophorum de Bondelmontibus de Florentia 1422](/images/footnotes/image1.jpeg)](/images/footnotes/image1.jpeg)
 
 This paper sets out to explore the relationship between the footnote in the printed work and equivalent devices in screen based medium.
 
@@ -55,10 +55,9 @@ Can authors be creative with the interactive note in the eBook? What can the pop
 
 A review of footnotes in history and how publishers have implemented in the printed work. We look at the conventions from the past and what standards are adopted in publishing today.
 
-In medieval Europe, the relationship between the shape of the page and text block provided space for notes in the margin. In fact, even before printing margin notes are used to elaborate or further explain details. In this illustration we see a spread from the Liber insularum Archipelagi. with notes in the site margins
+[![The Geneva Bible from 1568 (Bishops' Bible)](/images/footnotes/image1.png)](/images/footnotes/image1.png)
 
-[![Liber insularum Archipelagi , Christophorum de Bondelmontibus de Florentia 1422](/images/footnotes/image1.jpeg)](/images/footnotes/image1.jpeg)
-
+_See here how this page from the Bible has side notes which flood out into the left column of text._
 
 When a new translation of the bible was publishing in 1568, expensive notes were added to help the reader understand the complex language. Here we see a section of the title page of the, so called Bishops’ bible with the announcement “ With the Most Profitable Annotations upon all the hard places…”
 
@@ -311,9 +310,18 @@ You may also want to remove the horizontal line `<hr>` above the notes list.
 
 Wile the fixed-layout ePub provides some very sophisticated features, when we export from our InDesign work, there is no automatic way to get notes to be interactive; no conversion of footnotes to popup notes will be found as an option. Footnotes that have been provided for the print version will display in exactly the same way for the fixed-layout ePub. Getting interactive supplementary information to display on the fixed layout ePub page needs extra work and we can use InDesign’s buttons and animation feature to achieve this.
 
-Here is what we can achieve:
+### Here is what we can achieve with fixed-layout ePub.
+
+Here is the ePub version of _Medea, a performance history_ for the [APGRD][cf20f734]
+
+  [cf20f734]: http://www.apgrd.ox.ac.uk/learning/medea-a-performance-history "The Archive of Performances of Greek and Roman Drama"
 
 [![pages from 'Medea' an interactive eBook](/images/footnotes/medea.gif)](/images/footnotes/medea.gif)
+
+
+One of my MA students created this enhanced eBook of Mozart's _Magic Flute_. The eBook included music and narrated popup notes.
+
+[![an enhanced eBook of the Magic Flute by MA student Maria Block ](/images/footnotes/magicflute.gif)](/images/footnotes/magicflute.gif)
 
 There are instruction for making popup text in the fixed layout eBook from InDesign [on my screencast channel][f15e7388].
 

@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Footnotes and other Diversions
-date: 2018-06-02
+date: 2018-06-03
 images: full-width
 Published: true
 annotate: true
@@ -34,7 +34,7 @@ There has always been a need to add extra explanatory information to certain tex
 
 When Edward Gibbon published his 6 volume *The History of the Decline and Fall of the Roman Empire* towards the end of the 18th Century, he included almost 8,000 footnotes and asides. He wasn’t the first to incorporate supplementary information but Gibbon’s work established the standard for academic publications.
 
-[![The decline and fall of the Roman Empire by Gibbon, Edward - Warne 1872](/images/footnotes/image2.png)](/images/footnotes/image2.png)
+[![The History of the Decline and Fall of the Roman Empire by Gibbon, Edward - Warne 1872](/images/footnotes/image2.png)](/images/footnotes/image2.png)
 
 
 Footnotes are marvellous things. They can provide extra information that helps to elaborate or to cite sources. Publishers don’t like footnotes[^1]; they prefer endnotes, because they are far easier to manage and encourage buyers to purchase the complete book rather than download a sample.
@@ -90,7 +90,7 @@ In this case, symbols are used for general notes and the numbers are used for ci
 
 As we have seen from early manuscripts such as the *Geneva Bible*, side notes were common and possibly are a legacy feature from illuminated manuscripts such as the example here.
 
-[![a page from THE CHUDLEIGH BIBLE](/images/footnotes/image5.jpeg)](/images/footnotes/image5.jpeg)
+[![a leaf from the Chudleigh Bible, in Latin, illuminated manuscript on vellum - north-eastern France, c.1220-30](/images/footnotes/image5.jpeg)](/images/footnotes/image5.jpeg)
 
 Sidenotes may not need the reference numbers or symbols as long as they can be near to the context within the text block. Here as a sample spread from *The Book of Barely Imagined Beings*, Casper Henderson.
 

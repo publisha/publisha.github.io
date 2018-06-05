@@ -1,11 +1,11 @@
 ---
 layout: paper
 title: Footnotes and other Diversions
-date: 2018-06-03
+date: 2018-06-05
 images: full-width
 Published: true
 annotate: true
-version: [0.9]
+version: [0.91]
 Author: Chris Jennings
 status: [under review]
 comments: false
@@ -35,7 +35,6 @@ There has always been a need to add extra explanatory information to certain tex
 When Edward Gibbon published his 6 volume *The History of the Decline and Fall of the Roman Empire* towards the end of the 18th Century, he included almost 8,000 footnotes and asides. He wasn’t the first to incorporate supplementary information but Gibbon’s work established the standard for academic publications.
 
 [![The History of the Decline and Fall of the Roman Empire by Gibbon, Edward - Warne 1872](/images/footnotes/image2.png)](/images/footnotes/image2.png)
-
 
 Footnotes are marvellous things. They can provide extra information that helps to elaborate or to cite sources. Publishers don’t like footnotes[^1]; they prefer endnotes, because they are far easier to manage and encourage buyers to purchase the complete book rather than download a sample.
 
@@ -132,7 +131,7 @@ Of course you may be using fancy editors like _Ulysses_ or _Scrivener_ in which 
 
 InDesign has a footnote feature and it will also correctly import (Place) text from Word with footnotes. It also has a sophisticated set of configurations for the way the footnotes are displayed as well as the references within the text.
 
-[![Configuring footnotes in Adobe InDesign](/images/footnotes/image8.png)](/images/footnotes/image8.png)
+[![Configuring footnotes in Adobe InDesign](/images/footnotes/indesignfootnotes.gif)](/images/footnotes/indesignfootnotes.gif)
 
 There are similar configuration options for endnotes.
 
@@ -140,7 +139,7 @@ There are similar configuration options for endnotes.
 
 There are no direct options for creating side notes in InDesign, because this would require space in the margins to accommodate them. However, Peter Kahrel has created a set of InDesign scripts that will take footnotes and put them wherever you decide, and however you like them to appear.[^3]
 
-[![footnotes have been transformed into side notes with a script](/images/footnotes/image10.png)](/images/footnotes/image10.png)
+[![footnotes have been transformed into side notes with a script](/images/footnotes/indesigntosidenotes.gif)](/images/footnotes/indesigntosidenotes.gif)
 
 ## Screen Based Media
 

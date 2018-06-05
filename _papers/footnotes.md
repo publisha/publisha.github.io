@@ -130,7 +130,7 @@ Of course you may be using fancy editors like _Ulysses_ or _Scrivener_ in which 
 
 InDesign has a footnote feature and it will also correctly import (Place) text from Word with footnotes. It also has a sophisticated set of configurations for the way the footnotes are displayed as well as the references within the text.
 
-[![Configuring footnotes in Adobe InDesign](/images/footnotes/image8.png)](/images/footnotes/image8.png)
+[![Configuring footnotes in Adobe InDesign](/images/footnotes/indesignfootnotes.gif)](/images/footnotes/indesignfootnotes.gif)
 
 There are similar configuration options for endnotes.
 
@@ -138,7 +138,7 @@ There are similar configuration options for endnotes.
 
 There are no direct options for creating side notes in InDesign, because this would require space in the margins to accommodate them. However, Peter Kahrel has created a set of InDesign scripts that will take footnotes and put them wherever you decide, and however you like them to appear.[^3]
 
-[![footnotes have been transformed into side notes with a script](/images/footnotes/image10.png)](/images/footnotes/image10.png)
+[![footnotes have been transformed into side notes with a script](/images/footnotes/indesigntosidenotes.gif)](/images/footnotes/indesigntosidenotes.gif)
 
 ## Screen Based Media
 

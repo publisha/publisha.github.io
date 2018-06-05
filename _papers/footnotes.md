@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Footnotes and other Diversions
-date: 2018-06-02
+date: 2018-06-03
 images: full-width
 Published: true
 annotate: true
@@ -34,7 +34,7 @@ There has always been a need to add extra explanatory information to certain tex
 
 When Edward Gibbon published his 6 volume *The History of the Decline and Fall of the Roman Empire* towards the end of the 18th Century, he included almost 8,000 footnotes and asides. He wasn’t the first to incorporate supplementary information but Gibbon’s work established the standard for academic publications.
 
-[![The decline and fall of the Roman Empire by Gibbon, Edward - Warne 1872](/images/footnotes/image2.png)](/images/footnotes/image2.png)
+[![The History of the Decline and Fall of the Roman Empire by Gibbon, Edward - Warne 1872](/images/footnotes/image2.png)](/images/footnotes/image2.png)
 
 
 Footnotes are marvellous things. They can provide extra information that helps to elaborate or to cite sources. Publishers don’t like footnotes[^1]; they prefer endnotes, because they are far easier to manage and encourage buyers to purchase the complete book rather than download a sample.
@@ -68,17 +68,17 @@ _See here how this page from the Bible has side notes which flood out into the l
 
 Notes can be on the page where the reference occurs or as endnotes. On-page notes can be set as footnotes or as side notes (sometimes called margin notes). Endnotes can be at the end of the book or at the end of the chapter or section.
 
-Wherever the note is deposited it needs a reference within the text and where endnotes are used the references will be numbers set in superscript to the right of the last word in reference context. The numbers are most often set to start at 1 at the beginning of each chapter. When endnotes are displayed at the end of the book, they are grouped according to the chapter in which the references are found.
+Wherever the note is deposited it needs a number or symbol reference set as **superscript** within the text and where endnotes are used the references will be numbers set in superscript to the right of the last word in reference context. The numbers are most often set to start at 1 at the beginning of each chapter. When endnotes are displayed at the end of the book, they are grouped according to the chapter in which the references are found.
 
 ### Footnotes
 
-Where the notes are footnotes then superscripted numbers can also be used, but some publishers use the less than useful range of symbols in the order set out here. \* †, ‡, §, ‖,¶
+Where the notes are footnotes then superscripted numbers can also be used, but some publishers use the less than useful range of symbols in the order set out here. \*, †, ‡, §, ‖,¶
 
 [![Symbols and their order for footnote References](/images/footnotes/image2.jpeg)](/images/footnotes/image2.jpeg)
 
 The convention is to uses these symbols in a particular order on the page as seen in this example, *Journey to Britain*, Bronwen Riley
 
-[![a page from *Journey to Britain*, Bronwen Riley](/images/footnotes/image3.jpeg)](/images/footnotes/image3.jpeg)
+[![part of a page from *Journey to Britain*, Bronwen Riley](/images/footnotes/image3.jpeg)](/images/footnotes/image3.jpeg)
 
 Unusually, both symbols and numbers can be used as in this example from *The Devils Details*, Chuck Zerby
 
@@ -90,11 +90,11 @@ In this case, symbols are used for general notes and the numbers are used for ci
 
 As we have seen from early manuscripts such as the *Geneva Bible*, side notes were common and possibly are a legacy feature from illuminated manuscripts such as the example here.
 
-[![a page from The Chudleigh Bible](/images/footnotes/image5.jpeg)](/images/footnotes/image5.jpeg)
+[![a leaf from the Chudleigh Bible, in Latin, illuminated manuscript on vellum - north-eastern France, c.1220-30](/images/footnotes/image5.jpeg)](/images/footnotes/image5.jpeg)
 
 Sidenotes may not need the reference numbers or symbols as long as they can be near to the context within the text block. Here as a sample spread from *The Book of Barely Imagined Beings*, Casper Henderson.
 
-[![a page from *The Book of Barely Imagined Beings*, Casper Henderson](/images/footnotes/image4.png)](/images/footnotes/image4.png)
+[![a double page spread from *The Book of Barely Imagined Beings*, Casper Henderson](/images/footnotes/image4.png)](/images/footnotes/image4.png)
 
 On the other hand Edward R. Tufte[^2] is well known for his beautifully designed books about the display of information and we can see in this example from _Visual Explanations_, that he uses numbers for the margin notes.
 
@@ -104,7 +104,7 @@ Robert Bringhurst uses both side notes and footnotes in his *The Elements of Typ
 
 [![a spread from *The Elements of Typographic Style*](/images/footnotes/image6.png)](/images/footnotes/image6.png)
 
-## Practicalities
+## Practical Methods
 
 Let’s look at some methods to create footnotes, side notes or endnotes.
 
@@ -138,7 +138,7 @@ There are similar configuration options for endnotes.
 
 **Side or Margin Notes in InDesign**
 
-Thee are no direct options for creating side notes in InDesign, because this would require space in the margins to accommodate them. However, Peter Kahrel has created a set of InDesign scripts that will take footnotes and put them wherever you decide, and however you like them to appear.[^3]
+There are no direct options for creating side notes in InDesign, because this would require space in the margins to accommodate them. However, Peter Kahrel has created a set of InDesign scripts that will take footnotes and put them wherever you decide, and however you like them to appear.[^3]
 
 [![footnotes have been transformed into side notes with a script](/images/footnotes/image10.png)](/images/footnotes/image10.png)
 
@@ -148,7 +148,7 @@ All of the above can (and has been) presented on the screen as in print with the
 
 > Because we are now moving into the realm of interactivity, in this article, we need to provide evidence in a more dynamic format. Many of the images beyond here are animated GIFs.
 
-**Before the internet there was Hypercard**
+### Before the internet there was Hypercard
 
 Hypercard on the MAC was able to create linking of pages but also making references and glossary items popup on mouse click as seen here in the Voyager publication on CD-ROM of *Macbeth*[^4].
 
@@ -178,7 +178,7 @@ We can now bring forward a link to the world wide web through a **TED** talk by 
 
 The early concept of the internet pages and HTML was that it was possible to navigate between content through hypertext links. The text was styled (the standard was a blue underline) to show that it was, itself an anchor, and would lead to a destination, that could be elsewhere on that page or, to another web page altogether.
 
-The image here shows a standard way to show a hypertext link
+The image here shows the initial standard way to show a hypertext link
 
 [![hypertext links on a web site](/images/footnotes/image13.png)](/images/footnotes/image13.png)
 
@@ -200,7 +200,7 @@ Once we navigate to that footnote at the bottom of the page, we need to go back 
 
 The reference point in the text could be exactly as you would expect in print; maybe a superscript number and possibly in square brackets like this ^[4],^ however, if this is to become a link, over which a mouse cursor needs to be clicked, it may be difficult to target the correct point - and this is even worse, on mobile devices, where, it is the finger that does the interacting.
 
-Here we see an example of a footnote reference leading to the footnote at the bottom of the browser window. Notice that the back link puts the source at the top of the browser wind on return, not where we were reading.
+Here we see an example of a footnote reference leading to the footnote at the bottom of the browser window. Notice that the back link puts the source at the top of the browser window on return, not where we were reading.
 
 [![The link from the superscript number leads to the bottom of the web page](/images/footnotes/footnotessuperscript.gif)](/images/footnotes/footnotessuperscript.gif)
 
@@ -210,7 +210,7 @@ In this changed version we see that the whole phrase is the link.
 
 [![Here the link is set to the whole phrase rather than a reference number](/images/footnotes/footnotesrefisphrase.gif)](/images/footnotes/footnotesrefisphrase.gif)
 
-## Building web page Side notes with Javascript
+### Side notes with Javascript
 
 Andrew Clark has created a very elegant way to convert your footnotes into side notes when the width of the page allows for it. Although the side notes are converted the footnotes still remain. [^7]
 
@@ -218,7 +218,7 @@ Andrew Clark has created a very elegant way to convert your footnotes into side 
 
 ## Time for the Pop-up box
 
-Clearly, we are now needing a paradigmn shift, putting a little more distance between the the print book and the new interactive world.
+Clearly, we are now needing a paradigm shift, putting a little more distance between the the print book and the new interactive world.
 
 With some elegant javascript we can turn these footnote references into popup links and this means we need never lose our place in the reading flow.
 
@@ -248,7 +248,7 @@ Footnotes are no good for reflowable eBooks! You don't actually have a page bott
 
 ### For the reflowable eBook
 
-When you export from InDesign to ePub (reflowable), you have an option to convert your *footnotes* to pop-up notes.
+The reflowable ePub3 format does support popup notes. When you export from InDesign to ePub (reflowable), you have an option to convert your *footnotes* to pop-up notes.
 
 This will take the notes from the foot of the page, wrap them in an HTML tag `<aside>` and add the necessary ePub3 classes in the XHTML code. In fact you will get an attribute added to the hyperlinked number:
 
@@ -312,9 +312,18 @@ You may also want to remove the horizontal line `<hr>` above the notes list.
 
 Wile the fixed-layout ePub provides some very sophisticated features, when we export from our InDesign work, there is no automatic way to get notes to be interactive; no conversion of footnotes to popup notes will be found as an option. Footnotes that have been provided for the print version will display in exactly the same way for the fixed-layout ePub. Getting interactive supplementary information to display on the fixed layout ePub page needs extra work and we can use InDesign’s buttons and animation feature to achieve this.
 
-Here is what we can achieve:
+### Here is what we can achieve with fixed-layout ePub.
+
+Here is the ePub version of _Medea, a performance history_ for the [APGRD][cf20f734]
+
+  [cf20f734]: http://www.apgrd.ox.ac.uk/learning/medea-a-performance-history "The Archive of Performances of Greek and Roman Drama"
 
 [![pages from 'Medea' an interactive eBook](/images/footnotes/medea.gif)](/images/footnotes/medea.gif)
+
+
+One of my MA students created this enhanced eBook of Mozart's _Magic Flute_. The eBook included music and narrated popup notes.
+
+[![an enhanced eBook of the Magic Flute by MA student Maria Hock ](/images/footnotes/magicflute.gif)](/images/footnotes/magicflute.gif)
 
 There are instruction for making popup text in the fixed layout eBook from InDesign [on my screencast channel][f15e7388].
 

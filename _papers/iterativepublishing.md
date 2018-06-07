@@ -8,6 +8,7 @@ annotate: true
 version: [1]
 Author: Chris Jennings
 status: [Complete]
+blurb: Books like other created artefacts go through a number of iterations before being ready for public display. The question is, can we observe and record what those changes are and when they happened, and by whom?
 comments: true
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -26,6 +27,7 @@ comments: true
 - [Notes](#notes)
 
 </section><!-- /TOC -->
+
 # Iterative Publishing
 **Is this the Final Version?**
 

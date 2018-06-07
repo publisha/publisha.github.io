@@ -5,9 +5,10 @@ date: 2018-06-05
 images: full-width
 Published: true
 annotate: true
-version: [0.91]
+version: [0.92]
 Author: Chris Jennings
 status: [under review]
+blurb: How can footnotes, endnotes, margin notes and other deviations from the narrative flow, work best in a screen based medium?
 comments: false
 ---
 

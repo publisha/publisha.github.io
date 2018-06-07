@@ -9,6 +9,7 @@ version: [0.1]
 Author: Chris Jennings
 status: [just started]
 comments: true
+blurb: Using Shakespeare’s plays (content in the public domain) helps me, as the tutor for these students,  provide all the experience necessary to build wonderful publishable artefacts.
 ---
 
 # How Shakespeare Helps me Teach Multi-Platform Publishing

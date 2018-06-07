@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: Footnotes and other Diversions
-date: 2018-06-05
+date: 2018-06-07
 images: full-width
 Published: true
 annotate: true
@@ -11,6 +11,26 @@ status: [under review]
 blurb: How can footnotes, endnotes, margin notes and other deviations from the narrative flow, work best in a screen based medium?
 comments: false
 ---
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
+
+- [Abstract](#abstract)
+- [Footnotes and other deviations in print, past and present](#footnotes-and-other-deviations-in-print-past-and-present)
+- [Conventions for Supplementary Content in Print](#conventions-for-supplementary-content-in-print)
+- [Practical Methods](#practical-methods)
+- [Screen Based Media](#screen-based-media)
+- [Footnotes on the web](#footnotes-on-the-web)
+- [Time for the Pop-up box](#time-for-the-pop-up-box)
+- [Tootips or hover ups](#tootips-or-hover-ups)
+- [One more thing. **_Medium_**](#one-more-thing-medium)
+- [Footnotes in eBooks](#footnotes-in-ebooks)
+- [Fixing the ePUB footnotes for all reading systems](#fixing-the-epub-footnotes-for-all-reading-systems)
+- [The Fixed-Layout ePub](#the-fixed-layout-epub)
+- [iBooks Author](#ibooks-author)
+- [Summary](#summary)
+
+</section><!-- /TOC -->
 
 # Footnotes and Asides
 **How can footnotes, endnotes, margin notes and other deviations from the narrative flow, work best in a screen based medium?**

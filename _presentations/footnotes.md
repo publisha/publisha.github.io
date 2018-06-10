@@ -3,7 +3,7 @@ layout: presentation
 title: Footnotes and other Diversions
 published: true
 date: 2018-06-10
-folder: footnotes
+folder: Footnotes
 categories: [Publishing, InDesign, Typography]
 images: none
 image: /images/footnotes/slide1.001.jpeg

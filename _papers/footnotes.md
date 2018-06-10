@@ -9,7 +9,7 @@ version: [0.95]
 Author: Chris Jennings
 status: [under review]
 blurb: How can footnotes, endnotes, margin notes and other deviations from the narrative flow, work best in a screen based medium?
-comments: false
+comments: true
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>

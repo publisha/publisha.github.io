@@ -399,6 +399,42 @@ local_slide( {
         ],
         "accessibility" : [
           {
+            "text" : "Text Editors",
+            "targetRectangle" : {
+              "y" : 34.890031814575195,
+              "x" : 27.219125747680664,
+              "width" : 197.57400000000001,
+              "height" : 36
+            }
+          },
+          {
+            "text" : "In Microsoft Word, it is straightforward enough with a choice to go to the bottom of the page, below the text, end of document or end of section.",
+            "targetRectangle" : {
+              "y" : 106.8900318145752,
+              "x" : 27.219125747680664,
+              "width" : 256.334,
+              "height" : 288
+            }
+          },
+          {
+            "text" : "￼",
+            "targetRectangle" : {
+              "y" : 687,
+              "x" : 644,
+              "width" : 19.936000000000035,
+              "height" : 36
+            }
+          },
+          {
+            "text" : "The settings dialogue for Microsoft Word",
+            "targetRectangle" : {
+              "y" : 589.5878301858902,
+              "x" : 315.44888305664062,
+              "width" : 371.35500000000002,
+              "height" : 36
+            }
+          },
+          {
             "text" : "For those editors using the Markdown syntax then you would use:",
             "targetRectangle" : {
               "y" : 34.890022277832031,
@@ -459,42 +495,6 @@ local_slide( {
               "x" : 313.05838012695312,
               "width" : 404.22293090820312,
               "height" : 561.2923583984375
-            }
-          },
-          {
-            "text" : "The settings dialogue for Microsoft Word",
-            "targetRectangle" : {
-              "y" : 589.5878301858902,
-              "x" : 315.44888305664062,
-              "width" : 371.35500000000002,
-              "height" : 36
-            }
-          },
-          {
-            "text" : "￼",
-            "targetRectangle" : {
-              "y" : 687,
-              "x" : 644,
-              "width" : 19.936000000000035,
-              "height" : 36
-            }
-          },
-          {
-            "text" : "Text Editors",
-            "targetRectangle" : {
-              "y" : 34.890031814575195,
-              "x" : 27.219125747680664,
-              "width" : 197.57400000000001,
-              "height" : 36
-            }
-          },
-          {
-            "text" : "In Microsoft Word, it is straightforward enough with a choice to go to the bottom of the page, below the text, end of document or end of section.",
-            "targetRectangle" : {
-              "y" : 106.8900318145752,
-              "x" : 27.219125747680664,
-              "width" : 256.334,
-              "height" : 288
             }
           }
         ],

@@ -1,5 +1,118 @@
 {
   "assets" : {
+    "27F467EAD12D2365A33EB6989D1C80AF" : {
+      "type" : "texture",
+      "index" : 8,
+      "assetRequest" : {
+        "type" : "slide",
+        "state" : "contents",
+        "slide" : "none"
+      },
+      "url" : {
+        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
+      },
+      "width" : 1280,
+      "height" : 720
+    },
+    "F7536EC248E3FD0349AD679CAB3ABA51" : {
+      "type" : "texture",
+      "index" : 3,
+      "assetRequest" : {
+        "type" : "slide",
+        "state" : "contents",
+        "slide" : "none"
+      },
+      "url" : {
+        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
+      },
+      "width" : 969,
+      "height" : 410
+    },
+    "2F02F0C77F8F15244453071F240333F3" : {
+      "type" : "texture",
+      "index" : 0,
+      "assetRequest" : {
+        "type" : "slide",
+        "state" : "contents",
+        "slide" : "none"
+      },
+      "url" : {
+        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
+      },
+      "width" : 1280,
+      "height" : 720
+    },
+    "6824649BAFD39E41E622E72E6284AD98" : {
+      "type" : "texture",
+      "index" : 5,
+      "assetRequest" : {
+        "type" : "slide",
+        "state" : "contents",
+        "slide" : "none"
+      },
+      "url" : {
+        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
+      },
+      "width" : 969,
+      "height" : 410
+    },
+    "25F320A5D25B5E5DF5BB5AA19FAC1192" : {
+      "type" : "texture",
+      "index" : 4,
+      "assetRequest" : {
+        "type" : "slide",
+        "state" : "contents",
+        "slide" : "none"
+      },
+      "url" : {
+        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
+      },
+      "width" : 635,
+      "height" : 102
+    },
+    "bigfoot.gif-0.0000-19.8000" : {
+      "type" : "video",
+      "index" : 0,
+      "assetRequest" : {
+        "type" : "slide",
+        "state" : "contents",
+        "slide" : "none"
+      },
+      "url" : {
+        "web" : "assets\/bigfoot.gif-0.0000-19.8000.gif",
+        "native" : "assets\/bigfoot.gif-0.0000-19.8000.gif"
+      },
+      "width" : 846,
+      "height" : 356
+    },
+    "A6C689824F586123B6010411710503D2" : {
+      "type" : "texture",
+      "index" : 1,
+      "assetRequest" : {
+        "type" : "slide",
+        "state" : "contents",
+        "slide" : "none"
+      },
+      "url" : {
+        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
+      },
+      "width" : 20,
+      "height" : 15
+    },
+    "DED747521194E8C504EF8A5BE091E0D2" : {
+      "type" : "texture",
+      "index" : 2,
+      "assetRequest" : {
+        "type" : "slide",
+        "state" : "contents",
+        "slide" : "none"
+      },
+      "url" : {
+        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
+      },
+      "width" : 272,
+      "height" : 414
+    },
     "8A1A11C3A7AE14F22DECED002D085A1D" : {
       "url" : {
         "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
@@ -29,119 +142,7 @@
       "width" : 969,
       "height" : 410
     },
-    "6824649BAFD39E41E622E72E6284AD98" : {
-      "type" : "texture",
-      "index" : 5,
-      "assetRequest" : {
-        "type" : "slide",
-        "state" : "contents",
-        "slide" : "none"
-      },
-      "url" : {
-        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
-      },
-      "width" : 969,
-      "height" : 410
-    },
-    "74ACF1B9D3E31167E63AA024A6F7B8B4" : {
-      "type" : "texture",
-      "index" : 4,
-      "assetRequest" : {
-        "type" : "slide",
-        "state" : "contents",
-        "slide" : "none"
-      },
-      "url" : {
-        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
-      },
-      "width" : 635,
-      "height" : 102
-    },
-    "A6C689824F586123B6010411710503D2" : {
-      "type" : "texture",
-      "index" : 1,
-      "assetRequest" : {
-        "type" : "slide",
-        "state" : "contents",
-        "slide" : "none"
-      },
-      "url" : {
-        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
-      },
-      "width" : 20,
-      "height" : 15
-    },
-    "2F02F0C77F8F15244453071F240333F3" : {
-      "type" : "texture",
-      "index" : 0,
-      "assetRequest" : {
-        "type" : "slide",
-        "state" : "contents",
-        "slide" : "none"
-      },
-      "url" : {
-        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
-      },
-      "width" : 1280,
-      "height" : 720
-    },
-    "25F320A5D25B5E5DF5BB5AA19FAC1192" : {
-      "type" : "texture",
-      "index" : 8,
-      "assetRequest" : {
-        "type" : "slide",
-        "state" : "contents",
-        "slide" : "none"
-      },
-      "url" : {
-        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
-      },
-      "width" : 635,
-      "height" : 102
-    },
-    "DED747521194E8C504EF8A5BE091E0D2" : {
-      "type" : "texture",
-      "index" : 2,
-      "assetRequest" : {
-        "type" : "slide",
-        "state" : "contents",
-        "slide" : "none"
-      },
-      "url" : {
-        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
-      },
-      "width" : 272,
-      "height" : 414
-    },
-    "F7536EC248E3FD0349AD679CAB3ABA51" : {
-      "type" : "texture",
-      "index" : 3,
-      "assetRequest" : {
-        "type" : "slide",
-        "state" : "contents",
-        "slide" : "none"
-      },
-      "url" : {
-        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
-      },
-      "width" : 969,
-      "height" : 410
-    },
     "66FE7F9BD2C477702A36F4A8FCE31CE8" : {
-      "type" : "texture",
-      "index" : 10,
-      "assetRequest" : {
-        "type" : "slide",
-        "state" : "contents",
-        "slide" : "none"
-      },
-      "url" : {
-        "native" : "assets\/8214B389-BC61-43DA-BE12-4D08DA526C54.pdf"
-      },
-      "width" : 1280,
-      "height" : 720
-    },
-    "27F467EAD12D2365A33EB6989D1C80AF" : {
       "type" : "texture",
       "index" : 9,
       "assetRequest" : {
@@ -154,21 +155,6 @@
       },
       "width" : 1280,
       "height" : 720
-    },
-    "bigfoot.gif-0.0000-19.8000" : {
-      "type" : "video",
-      "index" : 0,
-      "assetRequest" : {
-        "type" : "slide",
-        "state" : "contents",
-        "slide" : "none"
-      },
-      "url" : {
-        "web" : "assets\/bigfoot.gif-0.0000-19.8000.gif",
-        "native" : "assets\/bigfoot.gif-0.0000-19.8000.gif"
-      },
-      "width" : 846,
-      "height" : 356
     }
   },
   "events" : [
@@ -682,24 +668,6 @@
       ],
       "accessibility" : [
         {
-          "text" : "Popup Notes",
-          "targetRectangle" : {
-            "y" : 38.177120208740234,
-            "x" : 27.219125747680664,
-            "width" : 161.38199999999998,
-            "height" : 36
-          }
-        },
-        {
-          "text" : "With some elegant javascript we can turn these footnote references into popup links and this means we need never lose our place in the reading flow.",
-          "targetRectangle" : {
-            "y" : 110.17712020874023,
-            "x" : 27.219125747680664,
-            "width" : 250.17200000000003,
-            "height" : 288
-          }
-        },
-        {
           "text" : "￼",
           "targetRectangle" : {
             "y" : 687,
@@ -715,6 +683,24 @@
             "x" : 314.25201416015625,
             "width" : 636.8180000000001,
             "height" : 108
+          }
+        },
+        {
+          "text" : "Popup Notes",
+          "targetRectangle" : {
+            "y" : 38.177120208740234,
+            "x" : 27.219125747680664,
+            "width" : 161.38199999999998,
+            "height" : 36
+          }
+        },
+        {
+          "text" : "With some elegant javascript we can turn these footnote references into popup links and this means we need never lose our place in the reading flow.",
+          "targetRectangle" : {
+            "y" : 110.17712020874023,
+            "x" : 27.219125747680664,
+            "width" : 250.17200000000003,
+            "height" : 288
           }
         }
       ],
@@ -1743,7 +1729,7 @@
                         "pointY" : 0.5
                       }
                     },
-                    "texture" : "74ACF1B9D3E31167E63AA024A6F7B8B4"
+                    "texture" : "25F320A5D25B5E5DF5BB5AA19FAC1192"
                   }
                 ]
               }
@@ -2035,24 +2021,6 @@
       ],
       "accessibility" : [
         {
-          "text" : "Popup Notes",
-          "targetRectangle" : {
-            "y" : 38.177120208740234,
-            "x" : 27.219125747680664,
-            "width" : 161.38199999999998,
-            "height" : 36
-          }
-        },
-        {
-          "text" : "With some elegant javascript we can turn these footnote references into popup links and this means we need never lose our place in the reading flow.",
-          "targetRectangle" : {
-            "y" : 110.17712020874023,
-            "x" : 27.219125747680664,
-            "width" : 250.17200000000003,
-            "height" : 288
-          }
-        },
-        {
           "text" : "￼",
           "targetRectangle" : {
             "y" : 687,
@@ -2068,6 +2036,24 @@
             "x" : 314.25201416015625,
             "width" : 636.8180000000001,
             "height" : 108
+          }
+        },
+        {
+          "text" : "Popup Notes",
+          "targetRectangle" : {
+            "y" : 38.177120208740234,
+            "x" : 27.219125747680664,
+            "width" : 161.38199999999998,
+            "height" : 36
+          }
+        },
+        {
+          "text" : "With some elegant javascript we can turn these footnote references into popup links and this means we need never lose our place in the reading flow.",
+          "targetRectangle" : {
+            "y" : 110.17712020874023,
+            "x" : 27.219125747680664,
+            "width" : 250.17200000000003,
+            "height" : 288
           }
         }
       ],

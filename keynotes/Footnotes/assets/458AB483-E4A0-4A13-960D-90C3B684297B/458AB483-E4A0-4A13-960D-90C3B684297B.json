@@ -369,15 +369,6 @@
       ],
       "accessibility" : [
         {
-          "text" : "image4.png",
-          "targetRectangle" : {
-            "y" : 64.08197021484375,
-            "x" : 457.86013793945312,
-            "width" : 773.76806640625,
-            "height" : 591.8360595703125
-          }
-        },
-        {
           "text" : "Sidenotes may not need the reference numbers or symbols as long as they can be near to the context within the text block. ",
           "targetRectangle" : {
             "y" : 72.392097473144531,
@@ -393,6 +384,15 @@
             "x" : 28.537353515625,
             "width" : 367.76999999999998,
             "height" : 108
+          }
+        },
+        {
+          "text" : "image4.png",
+          "targetRectangle" : {
+            "y" : 64.08197021484375,
+            "x" : 457.86013793945312,
+            "width" : 773.76806640625,
+            "height" : 591.8360595703125
           }
         },
         {

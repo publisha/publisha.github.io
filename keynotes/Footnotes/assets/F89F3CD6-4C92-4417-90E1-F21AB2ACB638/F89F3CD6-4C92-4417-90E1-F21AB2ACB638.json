@@ -383,33 +383,6 @@
       ],
       "accessibility" : [
         {
-          "text" : "image6.png",
-          "targetRectangle" : {
-            "y" : 40.15692138671875,
-            "x" : 470.44577026367188,
-            "width" : 758.47503662109375,
-            "height" : 639.6861572265625
-          }
-        },
-        {
-          "text" : "61C+aVo1+eL.jpg",
-          "targetRectangle" : {
-            "y" : 275.19863891601562,
-            "x" : 176.65414428710938,
-            "width" : 234.79273986816406,
-            "height" : 400.60992431640625
-          }
-        },
-        {
-          "text" : "￼",
-          "targetRectangle" : {
-            "y" : 687,
-            "x" : 644,
-            "width" : 19.936000000000035,
-            "height" : 36
-          }
-        },
-        {
           "text" : "Robert Bringhurst uses both side notes and footnotes.",
           "targetRectangle" : {
             "y" : 47.792995452880859,
@@ -425,6 +398,33 @@
             "x" : 33.63243293762207,
             "width" : 349.41399999999999,
             "height" : 72
+          }
+        },
+        {
+          "text" : "￼",
+          "targetRectangle" : {
+            "y" : 687,
+            "x" : 644,
+            "width" : 19.936000000000035,
+            "height" : 36
+          }
+        },
+        {
+          "text" : "image6.png",
+          "targetRectangle" : {
+            "y" : 40.15692138671875,
+            "x" : 470.44577026367188,
+            "width" : 758.47503662109375,
+            "height" : 639.6861572265625
+          }
+        },
+        {
+          "text" : "61C+aVo1+eL.jpg",
+          "targetRectangle" : {
+            "y" : 275.19863891601562,
+            "x" : 176.65414428710938,
+            "width" : 234.79273986816406,
+            "height" : 400.60992431640625
           }
         }
       ],

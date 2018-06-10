@@ -394,15 +394,6 @@ local_slide( {
             }
           },
           {
-            "text" : "Print",
-            "targetRectangle" : {
-              "y" : 6.2973060607910156,
-              "x" : 21.358800172805786,
-              "width" : 148.09765625,
-              "height" : 77.1318359375
-            }
-          },
-          {
             "text" : "part of a page from The Geneva Bible from 1568 (Bishops' Bible)",
             "targetRectangle" : {
               "y" : 103.51671600341797,
@@ -445,6 +436,15 @@ local_slide( {
               "x" : 376.82681274414062,
               "width" : 928.01812744140625,
               "height" : 721.196533203125
+            }
+          },
+          {
+            "text" : "Print",
+            "targetRectangle" : {
+              "y" : 6.2973060607910156,
+              "x" : 21.358800172805786,
+              "width" : 148.09765625,
+              "height" : 77.1318359375
             }
           }
         ],

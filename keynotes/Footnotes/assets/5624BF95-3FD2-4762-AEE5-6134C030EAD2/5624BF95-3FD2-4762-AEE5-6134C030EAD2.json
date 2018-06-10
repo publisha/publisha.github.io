@@ -355,21 +355,21 @@
       ],
       "accessibility" : [
         {
-          "text" : "Footnotes on the Web",
-          "targetRectangle" : {
-            "y" : 303.86546325683594,
-            "x" : 318.8652341067791,
-            "width" : 642.2695317864418,
-            "height" : 85
-          }
-        },
-        {
           "text" : "￼",
           "targetRectangle" : {
             "y" : 687,
             "x" : 644,
             "width" : 19.936000000000035,
             "height" : 36
+          }
+        },
+        {
+          "text" : "Footnotes on the Web",
+          "targetRectangle" : {
+            "y" : 303.86546325683594,
+            "x" : 318.8652341067791,
+            "width" : 642.2695317864418,
+            "height" : 85
           }
         }
       ],

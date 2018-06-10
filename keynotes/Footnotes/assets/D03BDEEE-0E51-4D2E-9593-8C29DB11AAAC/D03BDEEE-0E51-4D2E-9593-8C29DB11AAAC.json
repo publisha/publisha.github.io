@@ -559,6 +559,15 @@
       ],
       "accessibility" : [
         {
+          "text" : "￼",
+          "targetRectangle" : {
+            "y" : 687,
+            "x" : 644,
+            "width" : 19.936000000000035,
+            "height" : 36
+          }
+        },
+        {
           "text" : "The Era of the \\u2028Multimedia CD-ROM",
           "targetRectangle" : {
             "y" : 33.264801025390625,
@@ -583,15 +592,6 @@
             "x" : 29.855583190917969,
             "width" : 353.80799999999994,
             "height" : 216
-          }
-        },
-        {
-          "text" : "￼",
-          "targetRectangle" : {
-            "y" : 687,
-            "x" : 644,
-            "width" : 19.936000000000035,
-            "height" : 36
           }
         }
       ],
@@ -1725,6 +1725,15 @@
       ],
       "accessibility" : [
         {
+          "text" : "￼",
+          "targetRectangle" : {
+            "y" : 687,
+            "x" : 644,
+            "width" : 19.936000000000035,
+            "height" : 36
+          }
+        },
+        {
           "text" : "The Era of the \\u2028Multimedia CD-ROM",
           "targetRectangle" : {
             "y" : 33.264801025390625,
@@ -1749,15 +1758,6 @@
             "x" : 29.855583190917969,
             "width" : 353.80799999999994,
             "height" : 216
-          }
-        },
-        {
-          "text" : "￼",
-          "targetRectangle" : {
-            "y" : 687,
-            "x" : 644,
-            "width" : 19.936000000000035,
-            "height" : 36
           }
         }
       ],

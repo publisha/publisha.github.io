@@ -42,6 +42,20 @@
       "width" : 1280,
       "height" : 720
     },
+    "F170DB8CCBB09AC770AEAD101E2D6E99" : {
+      "type" : "texture",
+      "index" : 1,
+      "assetRequest" : {
+        "type" : "slide",
+        "state" : "contents",
+        "slide" : "none"
+      },
+      "url" : {
+        "native" : "assets\/C49FBD90-0EFC-44A6-930C-6308F9438A65.pdf"
+      },
+      "width" : 451,
+      "height" : 83
+    },
     "DE59C288C298CCBC5C8DC4B3272F70AB" : {
       "type" : "texture",
       "index" : 5,
@@ -69,20 +83,6 @@
       },
       "width" : 878,
       "height" : 444
-    },
-    "8975801D3A448190475F874010F70BEF" : {
-      "type" : "texture",
-      "index" : 1,
-      "assetRequest" : {
-        "type" : "slide",
-        "state" : "contents",
-        "slide" : "none"
-      },
-      "url" : {
-        "native" : "assets\/C49FBD90-0EFC-44A6-930C-6308F9438A65.pdf"
-      },
-      "width" : 451,
-      "height" : 83
     }
   },
   "events" : [
@@ -378,6 +378,15 @@
           }
         },
         {
+          "text" : "Concluding",
+          "targetRectangle" : {
+            "y" : 55.666666626930237,
+            "x" : 413.80859375,
+            "width" : 452.3828125,
+            "height" : 99.9765625
+          }
+        },
+        {
           "text" : "Supplementary information has been used in documents for centuries and even before Gutenberg",
           "targetRectangle" : {
             "y" : 212.46817016601562,
@@ -402,15 +411,6 @@
             "x" : 236.59999879335101,
             "width" : 838.28593749999982,
             "height" : 97.178203206062335
-          }
-        },
-        {
-          "text" : "Concluding",
-          "targetRectangle" : {
-            "y" : 55.666666626930237,
-            "x" : 413.80859375,
-            "width" : 452.3828125,
-            "height" : 99.9765625
           }
         }
       ],
@@ -832,7 +832,7 @@
                         "pointY" : 0.5
                       }
                     },
-                    "texture" : "8975801D3A448190475F874010F70BEF"
+                    "texture" : "F170DB8CCBB09AC770AEAD101E2D6E99"
                   }
                 ]
               }

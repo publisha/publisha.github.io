@@ -369,6 +369,15 @@
       ],
       "accessibility" : [
         {
+          "text" : "￼",
+          "targetRectangle" : {
+            "y" : 687,
+            "x" : 644,
+            "width" : 19.936000000000035,
+            "height" : 36
+          }
+        },
+        {
           "text" : "The fixed-layout eBook",
           "targetRectangle" : {
             "y" : 55.666666626930237,
@@ -411,15 +420,6 @@
             "x" : 234.79999823218895,
             "width" : 837.02718750000008,
             "height" : 93.124647929668413
-          }
-        },
-        {
-          "text" : "￼",
-          "targetRectangle" : {
-            "y" : 687,
-            "x" : 644,
-            "width" : 19.936000000000035,
-            "height" : 36
           }
         }
       ],

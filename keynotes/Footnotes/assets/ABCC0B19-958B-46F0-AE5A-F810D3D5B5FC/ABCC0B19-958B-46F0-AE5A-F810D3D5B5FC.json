@@ -369,6 +369,15 @@
       ],
       "accessibility" : [
         {
+          "text" : "Liber insularum Archipelagi.jpg",
+          "targetRectangle" : {
+            "y" : 94.230987548828125,
+            "x" : 484.41781616210938,
+            "width" : 775.43994140625,
+            "height" : 531.53802490234375
+          }
+        },
+        {
           "text" : "￼",
           "targetRectangle" : {
             "y" : 687,
@@ -384,15 +393,6 @@
             "x" : 27.240493774414062,
             "width" : 425.33399999999995,
             "height" : 360
-          }
-        },
-        {
-          "text" : "Liber insularum Archipelagi.jpg",
-          "targetRectangle" : {
-            "y" : 94.230987548828125,
-            "x" : 484.41781616210938,
-            "width" : 775.43994140625,
-            "height" : 531.53802490234375
           }
         }
       ],

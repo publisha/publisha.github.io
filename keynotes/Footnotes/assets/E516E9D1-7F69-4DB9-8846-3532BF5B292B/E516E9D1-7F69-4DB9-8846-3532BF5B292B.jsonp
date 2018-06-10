@@ -385,15 +385,6 @@ local_slide( {
         ],
         "accessibility" : [
           {
-            "text" : "image20.png",
-            "targetRectangle" : {
-              "y" : 33.091529846191406,
-              "x" : 470.0498046875,
-              "width" : 758.84027099609375,
-              "height" : 557.17352294921875
-            }
-          },
-          {
             "text" : "The reflowable eBook",
             "targetRectangle" : {
               "y" : 40.264793395996094,
@@ -445,6 +436,15 @@ local_slide( {
               "x" : 644,
               "width" : 19.936000000000035,
               "height" : 36
+            }
+          },
+          {
+            "text" : "image20.png",
+            "targetRectangle" : {
+              "y" : 33.091529846191406,
+              "x" : 470.0498046875,
+              "width" : 758.84027099609375,
+              "height" : 557.17352294921875
             }
           },
           {

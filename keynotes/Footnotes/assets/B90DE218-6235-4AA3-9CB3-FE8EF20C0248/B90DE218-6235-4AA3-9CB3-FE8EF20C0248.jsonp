@@ -656,21 +656,21 @@ local_slide( {
         ],
         "accessibility" : [
           {
-            "text" : "In this version of Twelfth Night MA student Alicia Ballard has used both glossary and popup notes.",
-            "targetRectangle" : {
-              "y" : 40.264804840087891,
-              "x" : 29.855583190917969,
-              "width" : 273.23399999999998,
-              "height" : 216
-            }
-          },
-          {
             "text" : "￼",
             "targetRectangle" : {
               "y" : 687,
               "x" : 644,
               "width" : 19.936000000000035,
               "height" : 36
+            }
+          },
+          {
+            "text" : "In this version of Twelfth Night MA student Alicia Ballard has used both glossary and popup notes.",
+            "targetRectangle" : {
+              "y" : 40.264804840087891,
+              "x" : 29.855583190917969,
+              "width" : 273.23399999999998,
+              "height" : 216
             }
           }
         ],
@@ -1804,21 +1804,21 @@ local_slide( {
         ],
         "accessibility" : [
           {
-            "text" : "In this version of Twelfth Night MA student Alicia Ballard has used both glossary and popup notes.",
-            "targetRectangle" : {
-              "y" : 40.264804840087891,
-              "x" : 29.855583190917969,
-              "width" : 273.23399999999998,
-              "height" : 216
-            }
-          },
-          {
             "text" : "￼",
             "targetRectangle" : {
               "y" : 687,
               "x" : 644,
               "width" : 19.936000000000035,
               "height" : 36
+            }
+          },
+          {
+            "text" : "In this version of Twelfth Night MA student Alicia Ballard has used both glossary and popup notes.",
+            "targetRectangle" : {
+              "y" : 40.264804840087891,
+              "x" : 29.855583190917969,
+              "width" : 273.23399999999998,
+              "height" : 216
             }
           }
         ],

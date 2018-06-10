@@ -369,15 +369,6 @@
       ],
       "accessibility" : [
         {
-          "text" : "￼",
-          "targetRectangle" : {
-            "y" : 687,
-            "x" : 644,
-            "width" : 19.936000000000035,
-            "height" : 36
-          }
-        },
-        {
           "text" : "For the reflowable eBook",
           "targetRectangle" : {
             "y" : 36.264791488647461,
@@ -420,6 +411,15 @@
             "x" : 485.57028198242188,
             "width" : 708.54296875,
             "height" : 632.3555908203125
+          }
+        },
+        {
+          "text" : "￼",
+          "targetRectangle" : {
+            "y" : 687,
+            "x" : 644,
+            "width" : 19.936000000000035,
+            "height" : 36
           }
         }
       ],

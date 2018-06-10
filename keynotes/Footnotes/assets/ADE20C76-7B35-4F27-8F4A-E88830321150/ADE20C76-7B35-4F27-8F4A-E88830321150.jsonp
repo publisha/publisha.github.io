@@ -2,9 +2,9 @@ local_slide( {
   "name" : "ADE20C76-7B35-4F27-8F4A-E88830321150",
   "json" : {
     "assets" : {
-      "ADA0B0B75FE9E4798D5DF2ED877E96AD" : {
+      "CA17C8DDEE1C1D827B6B12567324F43A" : {
         "type" : "texture",
-        "index" : 5,
+        "index" : 0,
         "assetRequest" : {
           "type" : "slide",
           "state" : "contents",
@@ -86,9 +86,9 @@ local_slide( {
         "width" : 1148,
         "height" : 786
       },
-      "2F02F0C77F8F15244453071F240333F3" : {
+      "ADA0B0B75FE9E4798D5DF2ED877E96AD" : {
         "type" : "texture",
-        "index" : 0,
+        "index" : 5,
         "assetRequest" : {
           "type" : "slide",
           "state" : "contents",
@@ -385,24 +385,6 @@ local_slide( {
         ],
         "accessibility" : [
           {
-            "text" : "Unusually, both symbols and numbers can be used as in this example",
-            "targetRectangle" : {
-              "y" : 72.392097473144531,
-              "x" : 28.537353515625,
-              "width" : 366.70400000000001,
-              "height" : 108
-            }
-          },
-          {
-            "text" : "image4.jpeg",
-            "targetRectangle" : {
-              "y" : -65.361480712890625,
-              "x" : 442.25473022460926,
-              "width" : 1144.9187165586191,
-              "height" : 783.31301907915622
-            }
-          },
-          {
             "text" : "￼",
             "targetRectangle" : {
               "y" : 687,
@@ -427,6 +409,24 @@ local_slide( {
               "x" : 25.177665710449219,
               "width" : 385.02200000000005,
               "height" : 108
+            }
+          },
+          {
+            "text" : "Unusually, both symbols and numbers can be used as in this example",
+            "targetRectangle" : {
+              "y" : 72.392097473144531,
+              "x" : 28.537353515625,
+              "width" : 366.70400000000001,
+              "height" : 108
+            }
+          },
+          {
+            "text" : "image4.jpeg",
+            "targetRectangle" : {
+              "y" : -65.361480712890625,
+              "x" : 442.25473022460926,
+              "width" : 1144.9187165586191,
+              "height" : 783.31301907915622
             }
           }
         ],
@@ -661,7 +661,7 @@ local_slide( {
                           "pointY" : 0.5
                         }
                       },
-                      "texture" : "2F02F0C77F8F15244453071F240333F3"
+                      "texture" : "CA17C8DDEE1C1D827B6B12567324F43A"
                     }
                   ]
                 }

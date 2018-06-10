@@ -17,9 +17,9 @@ local_slide( {
         },
         "index" : 5
       },
-      "05D4B148AA4B5632D01B9B673C2E3C3C" : {
+      "2F02F0C77F8F15244453071F240333F3" : {
         "type" : "texture",
-        "index" : 7,
+        "index" : 0,
         "assetRequest" : {
           "type" : "slide",
           "state" : "contents",
@@ -73,6 +73,20 @@ local_slide( {
         "width" : 288,
         "height" : 450
       },
+      "0250043D8332BB433D84F097F55EA0E2" : {
+        "type" : "texture",
+        "index" : 7,
+        "assetRequest" : {
+          "type" : "slide",
+          "state" : "contents",
+          "slide" : "none"
+        },
+        "url" : {
+          "native" : "assets\/20217505-49C8-41D1-93A7-6C2BFE99BD16.pdf"
+        },
+        "width" : 1280,
+        "height" : 720
+      },
       "E572C2E70D3F5ECD9FF1A174343D8E32" : {
         "type" : "texture",
         "index" : 1,
@@ -105,20 +119,6 @@ local_slide( {
       "F170DB8CCBB09AC770AEAD101E2D6E99" : {
         "type" : "texture",
         "index" : 6,
-        "assetRequest" : {
-          "type" : "slide",
-          "state" : "contents",
-          "slide" : "none"
-        },
-        "url" : {
-          "native" : "assets\/20217505-49C8-41D1-93A7-6C2BFE99BD16.pdf"
-        },
-        "width" : 1280,
-        "height" : 720
-      },
-      "2F02F0C77F8F15244453071F240333F3" : {
-        "type" : "texture",
-        "index" : 0,
         "assetRequest" : {
           "type" : "slide",
           "state" : "contents",
@@ -575,6 +575,15 @@ local_slide( {
         ],
         "accessibility" : [
           {
+            "text" : "￼",
+            "targetRectangle" : {
+              "y" : 687,
+              "x" : 644,
+              "width" : 19.936000000000035,
+              "height" : 36
+            }
+          },
+          {
             "text" : "Here we see the glossary used to provide extra information for these geographical locations within the play The Comedy of Errors.",
             "targetRectangle" : {
               "y" : 40.264804840087891,
@@ -590,15 +599,6 @@ local_slide( {
               "x" : 29.855583190917969,
               "width" : 185.666,
               "height" : 108
-            }
-          },
-          {
-            "text" : "￼",
-            "targetRectangle" : {
-              "y" : 687,
-              "x" : 644,
-              "width" : 19.936000000000035,
-              "height" : 36
             }
           }
         ],
@@ -1711,7 +1711,7 @@ local_slide( {
                           "pointY" : 0.5
                         }
                       },
-                      "texture" : "05D4B148AA4B5632D01B9B673C2E3C3C"
+                      "texture" : "0250043D8332BB433D84F097F55EA0E2"
                     }
                   ]
                 }
@@ -1732,6 +1732,15 @@ local_slide( {
         ],
         "accessibility" : [
           {
+            "text" : "￼",
+            "targetRectangle" : {
+              "y" : 687,
+              "x" : 644,
+              "width" : 19.936000000000035,
+              "height" : 36
+            }
+          },
+          {
             "text" : "Here we see the glossary used to provide extra information for these geographical locations within the play The Comedy of Errors.",
             "targetRectangle" : {
               "y" : 40.264804840087891,
@@ -1747,15 +1756,6 @@ local_slide( {
               "x" : 29.855583190917969,
               "width" : 185.666,
               "height" : 108
-            }
-          },
-          {
-            "text" : "￼",
-            "targetRectangle" : {
-              "y" : 687,
-              "x" : 644,
-              "width" : 19.936000000000035,
-              "height" : 36
             }
           }
         ],

@@ -668,6 +668,15 @@
       ],
       "accessibility" : [
         {
+          "text" : "￼",
+          "targetRectangle" : {
+            "y" : 687,
+            "x" : 644,
+            "width" : 19.936000000000035,
+            "height" : 36
+          }
+        },
+        {
           "text" : "Responsive web sites that work well on mobile devices can’t rely on the hover action to invoke these popups, since hover is not an option on devices that use swipe as a default action.",
           "targetRectangle" : {
             "y" : 48.722957611083984,
@@ -692,15 +701,6 @@
             "x" : 31.173810958862305,
             "width" : 378.09199999999998,
             "height" : 144
-          }
-        },
-        {
-          "text" : "￼",
-          "targetRectangle" : {
-            "y" : 687,
-            "x" : 644,
-            "width" : 19.936000000000035,
-            "height" : 36
           }
         }
       ],
@@ -2073,6 +2073,15 @@
       ],
       "accessibility" : [
         {
+          "text" : "￼",
+          "targetRectangle" : {
+            "y" : 687,
+            "x" : 644,
+            "width" : 19.936000000000035,
+            "height" : 36
+          }
+        },
+        {
           "text" : "Responsive web sites that work well on mobile devices can’t rely on the hover action to invoke these popups, since hover is not an option on devices that use swipe as a default action.",
           "targetRectangle" : {
             "y" : 48.722957611083984,
@@ -2097,15 +2106,6 @@
             "x" : 31.173810958862305,
             "width" : 378.09199999999998,
             "height" : 144
-          }
-        },
-        {
-          "text" : "￼",
-          "targetRectangle" : {
-            "y" : 687,
-            "x" : 644,
-            "width" : 19.936000000000035,
-            "height" : 36
           }
         }
       ],

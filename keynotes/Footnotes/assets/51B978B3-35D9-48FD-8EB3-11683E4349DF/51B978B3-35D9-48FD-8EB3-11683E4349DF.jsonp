@@ -357,21 +357,21 @@ local_slide( {
         ],
         "accessibility" : [
           {
-            "text" : "￼",
-            "targetRectangle" : {
-              "y" : 687,
-              "x" : 644,
-              "width" : 19.936000000000035,
-              "height" : 36
-            }
-          },
-          {
             "text" : "Practical Methods - \\u2028or how can authors and editors add notes",
             "targetRectangle" : {
               "y" : 218.86546325683594,
               "x" : 133.31992141902447,
               "width" : 1029.0058603137732,
               "height" : 255
+            }
+          },
+          {
+            "text" : "￼",
+            "targetRectangle" : {
+              "y" : 687,
+              "x" : 644,
+              "width" : 19.936000000000035,
+              "height" : 36
             }
           }
         ],

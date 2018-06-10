@@ -2,9 +2,9 @@ local_slide( {
   "name" : "357D9CBE-A459-40A1-8D49-C9A5ACE596DE",
   "json" : {
     "assets" : {
-      "CA17C8DDEE1C1D827B6B12567324F43A" : {
+      "C5B67A75080F5CD141241465F4C1FF7B" : {
         "type" : "texture",
-        "index" : 7,
+        "index" : 1,
         "assetRequest" : {
           "type" : "slide",
           "state" : "contents",
@@ -13,8 +13,8 @@ local_slide( {
         "url" : {
           "native" : "assets\/357D9CBE-A459-40A1-8D49-C9A5ACE596DE.pdf"
         },
-        "width" : 1280,
-        "height" : 720
+        "width" : 22,
+        "height" : 15
       },
       "C4C66982FD26EFCF4618A95181896173" : {
         "type" : "texture",
@@ -58,6 +58,20 @@ local_slide( {
         "width" : 393,
         "height" : 342
       },
+      "CA17C8DDEE1C1D827B6B12567324F43A" : {
+        "type" : "texture",
+        "index" : 7,
+        "assetRequest" : {
+          "type" : "slide",
+          "state" : "contents",
+          "slide" : "none"
+        },
+        "url" : {
+          "native" : "assets\/357D9CBE-A459-40A1-8D49-C9A5ACE596DE.pdf"
+        },
+        "width" : 1280,
+        "height" : 720
+      },
       "C719A6DA9A900D4AE95D3CCDEEF85F3A" : {
         "type" : "texture",
         "index" : 5,
@@ -85,20 +99,6 @@ local_slide( {
         },
         "width" : 1280,
         "height" : 720
-      },
-      "3250C832C130B5A713275C71F8492C6C" : {
-        "type" : "texture",
-        "index" : 1,
-        "assetRequest" : {
-          "type" : "slide",
-          "state" : "contents",
-          "slide" : "none"
-        },
-        "url" : {
-          "native" : "assets\/357D9CBE-A459-40A1-8D49-C9A5ACE596DE.pdf"
-        },
-        "width" : 22,
-        "height" : 15
       },
       "2F02F0C77F8F15244453071F240333F3" : {
         "type" : "texture",
@@ -399,33 +399,6 @@ local_slide( {
         ],
         "accessibility" : [
           {
-            "text" : "Wherever the note is deposited it needs a number or symbol reference set as superscript within the text and where endnotes are used the references will be numbers set in superscript to the right of the last word in reference context. Like this5",
-            "targetRectangle" : {
-              "y" : 28.298885345458984,
-              "x" : 28.537353515625,
-              "width" : 369.45999999999998,
-              "height" : 324
-            }
-          },
-          {
-            "text" : "The convention is to use these symbols in a particular order on the page as seen in this example.",
-            "targetRectangle" : {
-              "y" : 542.55829000473022,
-              "x" : 451.40359497070312,
-              "width" : 505.23199999999997,
-              "height" : 108
-            }
-          },
-          {
-            "text" : "part of a page from Journey to Britain, Bronwen Riley",
-            "targetRectangle" : {
-              "y" : 650.55829000473022,
-              "x" : 451.40359497070312,
-              "width" : 472.2639999999999,
-              "height" : 36
-            }
-          },
-          {
             "text" : "￼",
             "targetRectangle" : {
               "y" : 687,
@@ -450,6 +423,33 @@ local_slide( {
               "x" : 448.42938243853598,
               "width" : 832.72892759152444,
               "height" : 534.35475180221692
+            }
+          },
+          {
+            "text" : "Wherever the note is deposited it needs a number or symbol reference set as superscript within the text and where endnotes are used the references will be numbers set in superscript to the right of the last word in reference context. Like this5",
+            "targetRectangle" : {
+              "y" : 28.298885345458984,
+              "x" : 28.537353515625,
+              "width" : 369.45999999999998,
+              "height" : 324
+            }
+          },
+          {
+            "text" : "The convention is to use these symbols in a particular order on the page as seen in this example.",
+            "targetRectangle" : {
+              "y" : 542.55829000473022,
+              "x" : 451.40359497070312,
+              "width" : 505.23199999999997,
+              "height" : 108
+            }
+          },
+          {
+            "text" : "part of a page from Journey to Britain, Bronwen Riley",
+            "targetRectangle" : {
+              "y" : 650.55829000473022,
+              "x" : 451.40359497070312,
+              "width" : 472.2639999999999,
+              "height" : 36
             }
           }
         ],
@@ -871,7 +871,7 @@ local_slide( {
                           "pointY" : 0.5
                         }
                       },
-                      "texture" : "3250C832C130B5A713275C71F8492C6C"
+                      "texture" : "C5B67A75080F5CD141241465F4C1FF7B"
                     }
                   ]
                 }

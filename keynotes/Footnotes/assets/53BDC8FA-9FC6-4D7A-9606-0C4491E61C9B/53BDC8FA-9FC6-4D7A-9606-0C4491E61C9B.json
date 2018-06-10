@@ -369,6 +369,15 @@
       ],
       "accessibility" : [
         {
+          "text" : "￼",
+          "targetRectangle" : {
+            "y" : 687,
+            "x" : 644,
+            "width" : 9.9679999999999609,
+            "height" : 36
+          }
+        },
+        {
           "text" : "The History of the Decline and Fall of the Roman Empire by Gibbon, Edward - Warne 1872",
           "targetRectangle" : {
             "y" : 72.392097473144531,
@@ -402,15 +411,6 @@
             "x" : 424.19265747070312,
             "width" : 840.3123779296875,
             "height" : 597.600830078125
-          }
-        },
-        {
-          "text" : "￼",
-          "targetRectangle" : {
-            "y" : 687,
-            "x" : 644,
-            "width" : 9.9679999999999609,
-            "height" : 36
           }
         }
       ],

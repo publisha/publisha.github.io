@@ -31,20 +31,6 @@ local_slide( {
         },
         "index" : 5
       },
-      "ED4E6CD4D6AB8A929D9302EE98CAFFEB" : {
-        "type" : "texture",
-        "index" : 1,
-        "assetRequest" : {
-          "type" : "slide",
-          "state" : "contents",
-          "slide" : "none"
-        },
-        "url" : {
-          "native" : "assets\/F06A4767-472A-4B83-A0B3-BF28A083061E.pdf"
-        },
-        "width" : 22,
-        "height" : 15
-      },
       "FB84401335A8F5BA7ECC19837071EA44" : {
         "type" : "texture",
         "index" : 4,
@@ -74,20 +60,6 @@ local_slide( {
         "width" : 1000,
         "height" : 740
       },
-      "1D119E734C2DE58EA83C9CAE02BD0FCA" : {
-        "type" : "texture",
-        "index" : 6,
-        "assetRequest" : {
-          "type" : "slide",
-          "state" : "contents",
-          "slide" : "none"
-        },
-        "url" : {
-          "native" : "assets\/F06A4767-472A-4B83-A0B3-BF28A083061E.pdf"
-        },
-        "width" : 22,
-        "height" : 15
-      },
       "BC76312AEC1721063810056A260E604E" : {
         "type" : "texture",
         "index" : 3,
@@ -104,7 +76,7 @@ local_slide( {
       },
       "9A0B31101B32A301A616ADEA77B155B1" : {
         "type" : "texture",
-        "index" : 8,
+        "index" : 7,
         "assetRequest" : {
           "type" : "slide",
           "state" : "contents",
@@ -116,9 +88,23 @@ local_slide( {
         "width" : 1280,
         "height" : 720
       },
+      "1D119E734C2DE58EA83C9CAE02BD0FCA" : {
+        "type" : "texture",
+        "index" : 1,
+        "assetRequest" : {
+          "type" : "slide",
+          "state" : "contents",
+          "slide" : "none"
+        },
+        "url" : {
+          "native" : "assets\/F06A4767-472A-4B83-A0B3-BF28A083061E.pdf"
+        },
+        "width" : 22,
+        "height" : 15
+      },
       "9BBEC3473DCD18459A971CACE28744B6" : {
         "type" : "texture",
-        "index" : 7,
+        "index" : 6,
         "assetRequest" : {
           "type" : "slide",
           "state" : "contents",
@@ -589,15 +575,6 @@ local_slide( {
         ],
         "accessibility" : [
           {
-            "text" : "￼",
-            "targetRectangle" : {
-              "y" : 687,
-              "x" : 644,
-              "width" : 19.936000000000035,
-              "height" : 36
-            }
-          },
-          {
             "text" : "One of my MA students created this enhanced eBook of Mozart's Magic Flute.",
             "targetRectangle" : {
               "y" : 40.264808654785156,
@@ -613,6 +590,15 @@ local_slide( {
               "x" : 29.855583190917969,
               "width" : 249.86000000000001,
               "height" : 180
+            }
+          },
+          {
+            "text" : "￼",
+            "targetRectangle" : {
+              "y" : 687,
+              "x" : 644,
+              "width" : 19.936000000000035,
+              "height" : 36
             }
           }
         ],
@@ -1033,7 +1019,7 @@ local_slide( {
                           "pointY" : 0.5
                         }
                       },
-                      "texture" : "ED4E6CD4D6AB8A929D9302EE98CAFFEB"
+                      "texture" : "1D119E734C2DE58EA83C9CAE02BD0FCA"
                     }
                   ]
                 }
@@ -1746,15 +1732,6 @@ local_slide( {
         ],
         "accessibility" : [
           {
-            "text" : "￼",
-            "targetRectangle" : {
-              "y" : 687,
-              "x" : 644,
-              "width" : 19.936000000000035,
-              "height" : 36
-            }
-          },
-          {
             "text" : "One of my MA students created this enhanced eBook of Mozart's Magic Flute.",
             "targetRectangle" : {
               "y" : 40.264808654785156,
@@ -1770,6 +1747,15 @@ local_slide( {
               "x" : 29.855583190917969,
               "width" : 249.86000000000001,
               "height" : 180
+            }
+          },
+          {
+            "text" : "￼",
+            "targetRectangle" : {
+              "y" : 687,
+              "x" : 644,
+              "width" : 19.936000000000035,
+              "height" : 36
             }
           }
         ],

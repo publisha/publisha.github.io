@@ -2,6 +2,20 @@ local_slide( {
   "name" : "F3C94DC1-C4E2-4EF8-ABC9-624DEF516B76",
   "json" : {
     "assets" : {
+      "991A9DEBC2FA0127BA1935A639E9C250" : {
+        "type" : "texture",
+        "index" : 1,
+        "assetRequest" : {
+          "type" : "slide",
+          "state" : "contents",
+          "slide" : "none"
+        },
+        "url" : {
+          "native" : "assets\/F3C94DC1-C4E2-4EF8-ABC9-624DEF516B76.pdf"
+        },
+        "width" : 452,
+        "height" : 596
+      },
       "462A205C67FB8A15CFC02F15A59A5221" : {
         "type" : "texture",
         "index" : 3,
@@ -30,20 +44,6 @@ local_slide( {
         "width" : 1008,
         "height" : 175
       },
-      "35257BBE6FEE11853306CBD582CA32B1" : {
-        "type" : "texture",
-        "index" : 1,
-        "assetRequest" : {
-          "type" : "slide",
-          "state" : "contents",
-          "slide" : "none"
-        },
-        "url" : {
-          "native" : "assets\/F3C94DC1-C4E2-4EF8-ABC9-624DEF516B76.pdf"
-        },
-        "width" : 452,
-        "height" : 596
-      },
       "2F02F0C77F8F15244453071F240333F3" : {
         "type" : "texture",
         "index" : 0,
@@ -58,9 +58,9 @@ local_slide( {
         "width" : 1280,
         "height" : 720
       },
-      "5F4AE72EA0BC60D15B82A84F58182F0B" : {
+      "20220524BA6C113743D63F47A9486659" : {
         "type" : "texture",
-        "index" : 4,
+        "index" : 5,
         "assetRequest" : {
           "type" : "slide",
           "state" : "contents",
@@ -72,9 +72,9 @@ local_slide( {
         "width" : 1280,
         "height" : 720
       },
-      "20220524BA6C113743D63F47A9486659" : {
+      "5F4AE72EA0BC60D15B82A84F58182F0B" : {
         "type" : "texture",
-        "index" : 5,
+        "index" : 4,
         "assetRequest" : {
           "type" : "slide",
           "state" : "contents",
@@ -380,21 +380,21 @@ local_slide( {
             }
           },
           {
-            "text" : "Footnotes & other deviations in print - past & present",
-            "targetRectangle" : {
-              "y" : 244.86546325683594,
-              "x" : 134.81153080314397,
-              "width" : 1028.9953251443803,
-              "height" : 202
-            }
-          },
-          {
             "text" : "￼",
             "targetRectangle" : {
               "y" : 687,
               "x" : 644,
               "width" : 9.9679999999999609,
               "height" : 36
+            }
+          },
+          {
+            "text" : "Footnotes & other deviations in print - past & present",
+            "targetRectangle" : {
+              "y" : 244.86546325683594,
+              "x" : 134.81153080314397,
+              "width" : 1028.9953251443803,
+              "height" : 202
             }
           }
         ],
@@ -810,7 +810,7 @@ local_slide( {
                           "pointY" : 0.5
                         }
                       },
-                      "texture" : "35257BBE6FEE11853306CBD582CA32B1"
+                      "texture" : "991A9DEBC2FA0127BA1935A639E9C250"
                     }
                   ]
                 }

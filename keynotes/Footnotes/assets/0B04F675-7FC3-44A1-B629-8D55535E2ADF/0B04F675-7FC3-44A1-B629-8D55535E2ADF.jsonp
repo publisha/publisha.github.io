@@ -371,12 +371,12 @@ local_slide( {
         ],
         "accessibility" : [
           {
-            "text" : "a leaf from the Chudleigh Bible, in Latin, illuminated manuscript on vellum - north-eastern France, c.1220-30",
+            "text" : "image5.jpeg",
             "targetRectangle" : {
-              "y" : 103.51671600341797,
-              "x" : 27.240493774414062,
-              "width" : 532.84399999999994,
-              "height" : 108
+              "y" : 1.1015094969479833e-07,
+              "x" : 636.69183349609375,
+              "width" : 498.82501220703125,
+              "height" : 720
             }
           },
           {
@@ -389,12 +389,12 @@ local_slide( {
             }
           },
           {
-            "text" : "image5.jpeg",
+            "text" : "a leaf from the Chudleigh Bible, in Latin, illuminated manuscript on vellum - north-eastern France, c.1220-30",
             "targetRectangle" : {
-              "y" : 1.1015094969479833e-07,
-              "x" : 636.69183349609375,
-              "width" : 498.82501220703125,
-              "height" : 720
+              "y" : 103.51671600341797,
+              "x" : 27.240493774414062,
+              "width" : 532.84399999999994,
+              "height" : 108
             }
           }
         ],

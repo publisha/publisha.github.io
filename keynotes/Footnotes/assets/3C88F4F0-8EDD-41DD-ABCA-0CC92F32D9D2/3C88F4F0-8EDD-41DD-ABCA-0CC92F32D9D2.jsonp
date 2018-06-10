@@ -30,7 +30,21 @@ local_slide( {
         "width" : 415,
         "height" : 59
       },
-      "2F02F0C77F8F15244453071F240333F3" : {
+      "4C1BD19B4354380B287EA7304E8C81A5" : {
+        "type" : "texture",
+        "index" : 2,
+        "assetRequest" : {
+          "type" : "slide",
+          "state" : "contents",
+          "slide" : "none"
+        },
+        "url" : {
+          "native" : "assets\/3C88F4F0-8EDD-41DD-ABCA-0CC92F32D9D2.pdf"
+        },
+        "width" : 997,
+        "height" : 497
+      },
+      "31E3E60389DDF117FD208098B4B45327" : {
         "type" : "texture",
         "index" : 0,
         "assetRequest" : {
@@ -71,20 +85,6 @@ local_slide( {
         },
         "width" : 1280,
         "height" : 720
-      },
-      "4C1BD19B4354380B287EA7304E8C81A5" : {
-        "type" : "texture",
-        "index" : 2,
-        "assetRequest" : {
-          "type" : "slide",
-          "state" : "contents",
-          "slide" : "none"
-        },
-        "url" : {
-          "native" : "assets\/3C88F4F0-8EDD-41DD-ABCA-0CC92F32D9D2.pdf"
-        },
-        "width" : 997,
-        "height" : 497
       }
     },
     "events" : [
@@ -398,6 +398,15 @@ local_slide( {
         ],
         "accessibility" : [
           {
+            "text" : "Introduction",
+            "targetRectangle" : {
+              "y" : 50.666667938232422,
+              "x" : 429.8639198129963,
+              "width" : 420.2721603740074,
+              "height" : 97.027574462890641
+            }
+          },
+          {
             "text" : "Footnotes & other deviations in print - past & present",
             "targetRectangle" : {
               "y" : 187.64973449707031,
@@ -476,15 +485,6 @@ local_slide( {
               "x" : 222.02196884155273,
               "width" : 238.15625,
               "height" : 27.200001060962677
-            }
-          },
-          {
-            "text" : "Introduction",
-            "targetRectangle" : {
-              "y" : 50.666667938232422,
-              "x" : 429.8639198129963,
-              "width" : 420.2721603740074,
-              "height" : 97.027574462890641
             }
           },
           {
@@ -728,7 +728,7 @@ local_slide( {
                           "pointY" : 0.5
                         }
                       },
-                      "texture" : "2F02F0C77F8F15244453071F240333F3"
+                      "texture" : "31E3E60389DDF117FD208098B4B45327"
                     }
                   ]
                 }

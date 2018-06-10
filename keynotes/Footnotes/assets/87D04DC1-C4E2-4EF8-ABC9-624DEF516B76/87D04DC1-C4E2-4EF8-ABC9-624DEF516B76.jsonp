@@ -100,20 +100,6 @@ local_slide( {
         "width" : 191,
         "height" : 37
       },
-      "DE59C288C298CCBC5C8DC4B3272F70AB" : {
-        "type" : "texture",
-        "index" : 6,
-        "assetRequest" : {
-          "type" : "slide",
-          "state" : "contents",
-          "slide" : "none"
-        },
-        "url" : {
-          "native" : "assets\/87D04DC1-C4E2-4EF8-ABC9-624DEF516B76.pdf"
-        },
-        "width" : 132,
-        "height" : 171
-      },
       "7FD96FD65160E41977E3C562FFAC604F" : {
         "type" : "texture",
         "index" : 11,
@@ -127,6 +113,20 @@ local_slide( {
         },
         "width" : 1280,
         "height" : 720
+      },
+      "B8542E476EF405F44E8AEEDC9B9F5B97" : {
+        "type" : "texture",
+        "index" : 6,
+        "assetRequest" : {
+          "type" : "slide",
+          "state" : "contents",
+          "slide" : "none"
+        },
+        "url" : {
+          "native" : "assets\/87D04DC1-C4E2-4EF8-ABC9-624DEF516B76.pdf"
+        },
+        "width" : 132,
+        "height" : 171
       },
       "4C31F5E473426697010B144672B07BAB" : {
         "type" : "texture",
@@ -466,15 +466,6 @@ local_slide( {
         "automaticPlay" : false,
         "hyperlinks" : [
           {
-            "url" : "https:\/\/publisha.github.io\/papers\/footnotes\/",
-            "targetRectangle" : {
-              "y" : 582.58161282539368,
-              "x" : 884.75274658203125,
-              "width" : 330.44400215148926,
-              "height" : 41.498029232025146
-            }
-          },
-          {
             "url" : "http:\/\/publisha.github.io",
             "targetRectangle" : {
               "y" : 585.83062744140625,
@@ -482,16 +473,25 @@ local_slide( {
               "width" : 188.60599999999999,
               "height" : 36
             }
+          },
+          {
+            "url" : "https:\/\/publisha.github.io\/papers\/footnotes\/",
+            "targetRectangle" : {
+              "y" : 582.58161282539368,
+              "x" : 884.75274658203125,
+              "width" : 330.44400215148926,
+              "height" : 41.498029232025146
+            }
           }
         ],
         "accessibility" : [
           {
-            "text" : "@pageboy",
+            "text" : "ebooktypography.jpg",
             "targetRectangle" : {
-              "y" : 621.7020263671875,
-              "x" : 608.96405029296875,
-              "width" : 101.41999999999996,
-              "height" : 36
+              "y" : 405.28387451171875,
+              "x" : 585.94891357421875,
+              "width" : 128.39089965820312,
+              "height" : 167.8109130859375
             }
           },
           {
@@ -504,15 +504,6 @@ local_slide( {
             }
           },
           {
-            "text" : "Chris Jennings 2018",
-            "targetRectangle" : {
-              "y" : 335.39154052734375,
-              "x" : 504.24473144531248,
-              "width" : 265.51029296875004,
-              "height" : 32.039999485015869
-            }
-          },
-          {
             "text" : "Thank You",
             "targetRectangle" : {
               "y" : 155.39154052734375,
@@ -522,11 +513,20 @@ local_slide( {
             }
           },
           {
-            "text" : "publisha.github.io\/papers\/footnotes\/",
+            "text" : "@pageboy",
             "targetRectangle" : {
-              "y" : 586.58161282539368,
-              "x" : 888.75274658203125,
-              "width" : 321.44399999999996,
+              "y" : 621.7020263671875,
+              "x" : 608.96405029296875,
+              "width" : 101.41999999999996,
+              "height" : 36
+            }
+          },
+          {
+            "text" : "publisha.github.io",
+            "targetRectangle" : {
+              "y" : 585.83062744140625,
+              "x" : 561.96405029296875,
+              "width" : 188.60599999999999,
               "height" : 36
             }
           },
@@ -540,12 +540,21 @@ local_slide( {
             }
           },
           {
-            "text" : "publishapodcasts.psd",
+            "text" : "Chris Jennings 2018",
             "targetRectangle" : {
-              "y" : 434.403564453125,
-              "x" : 427.4150390625,
-              "width" : 109.57154083251953,
-              "height" : 109.57154083251953
+              "y" : 335.39154052734375,
+              "x" : 504.24473144531248,
+              "width" : 265.51029296875004,
+              "height" : 32.039999485015869
+            }
+          },
+          {
+            "text" : "publisha.github.io\/papers\/footnotes\/",
+            "targetRectangle" : {
+              "y" : 586.58161282539368,
+              "x" : 888.75274658203125,
+              "width" : 321.44399999999996,
+              "height" : 36
             }
           },
           {
@@ -558,21 +567,12 @@ local_slide( {
             }
           },
           {
-            "text" : "ebooktypography.jpg",
+            "text" : "publishapodcasts.psd",
             "targetRectangle" : {
-              "y" : 405.28387451171875,
-              "x" : 585.94891357421875,
-              "width" : 128.39089965820312,
-              "height" : 167.8109130859375
-            }
-          },
-          {
-            "text" : "publisha.github.io",
-            "targetRectangle" : {
-              "y" : 585.83062744140625,
-              "x" : 561.96405029296875,
-              "width" : 188.60599999999999,
-              "height" : 36
+              "y" : 434.403564453125,
+              "x" : 427.4150390625,
+              "width" : 109.57154083251953,
+              "height" : 109.57154083251953
             }
           }
         ],
@@ -1923,7 +1923,7 @@ local_slide( {
                           "pointY" : 0.5
                         }
                       },
-                      "texture" : "DE59C288C298CCBC5C8DC4B3272F70AB"
+                      "texture" : "B8542E476EF405F44E8AEEDC9B9F5B97"
                     }
                   ]
                 }

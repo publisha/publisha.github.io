@@ -1,11 +1,11 @@
 ---
 layout: paper
 title: Footnotes and other Diversions
-date: 2018-06-07
+date: 2018-06-10
 images: full-width
 Published: true
 annotate: true
-version: [0.92]
+version: [0.95]
 Author: Chris Jennings
 status: [under review]
 blurb: How can footnotes, endnotes, margin notes and other deviations from the narrative flow, work best in a screen based medium?
@@ -265,6 +265,8 @@ This fantastic platform for writers and storytellers, does not support interacti
 ## Footnotes in eBooks
 
 Footnotes are no good for reflowable eBooks! You don't actually have a page bottom. There are various choices for eBooks depending on the type, the proposed platform and the pBook to eBook workflow.
+
+> **Note:** You can't use _ibid_ any more.
 
 ### For the reflowable eBook
 

@@ -1,15 +1,15 @@
 ---
 layout: paper
 title: Footnotes and other Diversions
-date: 2018-06-10
+date: 2018-06-17
 images: full-width
 Published: true
 annotate: true
-version: [0.95]
+version: [0.96]
 Author: Chris Jennings
-status: [under review]
+status: [readable]
 blurb: How can footnotes, endnotes, margin notes and other deviations from the narrative flow, work best in a screen based medium?
-comments: false
+comments: true
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
@@ -49,7 +49,7 @@ This paper sets out to explore the relationship between the footnote in the prin
 
 What are the conventions in print publishing to display footnotes, side notes and other forms of deviations from the narrative flow? We will look at some examples of the way information is cross linked and where this information is typically displayed in the printed work.
 
-## Abstract
+## Introduction
 
 There has always been a need to add extra explanatory information to certain texts. When the bible was collaboratively translated by editors in Geneva and published in 1560, it used extensive margin not to help explain the text. This edition of the bible was the first to use a roman typeface rather than the gothic blackletter form. The margin notes were so extensive that they often are seen to overflow into the bottom of the text column.
 
@@ -73,11 +73,7 @@ Can authors be creative with the interactive note in the eBook? What can the pop
 
 ## Footnotes and other deviations in print, past and present
 
-A review of footnotes in history and how publishers have implemented in the printed work. We look at the conventions from the past and what standards are adopted in publishing today.
-
-When a new translation of the bible was publishing in 1568, expensive notes were added to help the reader understand the complex language. Here we see a section of the title page of the, so called Bishops’ bible with the announcement “ With the Most Profitable Annotations upon all the hard places…”
-
-[![Title page detail of the Bishop's Bible or the Geneva Bible](/images/footnotes/image3.png)](/images/footnotes/image3.png)
+When a new translation of the bible was published in 1568, extensive notes were added to help the reader understand the complex language. The title page included the announcement “ With the Most Profitable Annotations upon all the hard places…”
 
 _See here how this page from the Bible has side notes which flood out into the left column of text._
 
@@ -88,15 +84,17 @@ _See here how this page from the Bible has side notes which flood out into the l
 
 Notes can be on the page where the reference occurs or as endnotes. On-page notes can be set as footnotes or as side notes (sometimes called margin notes). Endnotes can be at the end of the book or at the end of the chapter or section.
 
-Wherever the note is deposited it needs a number or symbol reference set as **superscript** within the text and where endnotes are used the references will be numbers set in superscript to the right of the last word in reference context. The numbers are most often set to start at 1 at the beginning of each chapter. When endnotes are displayed at the end of the book, they are grouped according to the chapter in which the references are found.
+Wherever the note is deposited it needs a number or symbol reference set as **superscript** within the text. Where endnotes are used the references will be numbers set in superscript to the right of the last word in reference context. The numbers are most often set to start at 1 at the beginning of each chapter. When endnotes are displayed at the end of the book, they are grouped according to the chapter in which the references are found.
 
 ### Footnotes
 
-Where the notes are footnotes then superscripted numbers can also be used, but some publishers use the less than useful range of symbols in the order set out here. \*, †, ‡, §, ‖,¶
+Where the notes are displayed as footnotes then superscripted numbers can also be used, but some publishers use the less than useful range of symbols in the order set out here. \*, †, ‡, §, ‖,¶. Once all of these symbols are used on the page, then the continuation uses the same but doubled up like §§.
+
+> **Note**: These symbols can look very different with different typefaces.
 
 [![Symbols and their order for footnote References](/images/footnotes/image2.jpeg)](/images/footnotes/image2.jpeg)
 
-The convention is to uses these symbols in a particular order on the page as seen in this example, *Journey to Britain*, Bronwen Riley
+The convention is to use these symbols in a particular order on the page as seen in this example, *Journey to Britain*, Bronwen Riley
 
 [![part of a page from *Journey to Britain*, Bronwen Riley](/images/footnotes/image3.jpeg)](/images/footnotes/image3.jpeg)
 
@@ -166,8 +164,6 @@ There are no direct options for creating side notes in InDesign, because this wo
 
 All of the above can (and has been) presented on the screen as in print with the ubiquitous PDF, but we expect more!
 
-> Because we are now moving into the realm of interactivity, in this article, we need to provide evidence in a more dynamic format. Many of the images beyond here are animated GIFs.
-
 ### Before the internet there was Hypercard
 
 Hypercard on the MAC was able to create linking of pages but also making references and glossary items popup on mouse click as seen here in the Voyager publication on CD-ROM of *Macbeth*[^4].
@@ -180,15 +176,15 @@ Hypercard on the MAC propagated many ‘Stacks’ (the term for a Hypercard appl
 
 ### Hypertext
 
-The term hypertext was coined first by Ted Nelson in 1963. The idea was further developed and the term adopted by many. For a history of hypertext see Jacob Nielsen’s book, _Hypertext and Hypermedia_ (later re-issued as Multimedia and Hypertext: The Internet and Beyond, Morgan Kaufmann Publishers, 1995.[^5]
+The term hypertext was coined first by Ted Nelson in 1963. The idea was further developed and the term adopted by many. For a history of hypertext see Jacob Nielsen’s book, _Hypertext and Hypermedia_ (later re-issued as _Multimedia and Hypertext: The Internet and Beyond_, Morgan Kaufmann Publishers, 1995.[^5]
 
-[![a definition of Hypertext in a Hypercard Stacks](/images/footnotes/image1.gif)](/images/footnotes/image1.gif)
+[![a definition of Hypertext in a Hypercard Stack](/images/footnotes/image1.gif)](/images/footnotes/image1.gif)
 
-Although Hypercard had a great following it came after a hypertext authoring system called *Guide* created by the software company Owl (an Edinburgh based organisation). In this system, an *anchor* was created and led, through a mouse click to a destination or a popup.
+Although Hypercard had a great following it came after a hypertext authoring system called *Guide* created by the software company Owl (an Edinburgh based organisation). In this system, an *anchor* was created and led, through a mouse click, to a destination or a popup.
 
-This was the era of the multimedia CD-ROM, and many of these applications involved linking and referencing; in other words interactive notes of supplementary information. In this interactive Shakespeare CD-ROM you can see how the references and glossary terms are popped up through a mouse click.
+This was the era of the multimedia CD-ROM, and many of these applications involved linking and referencing; in other words interactive notes of supplementary information. In this example of an interactive Shakespeare play on  CD-ROM you can see how the references and glossary terms are popped up through a mouse click.
 
-The software used in this next example was *Supercard* (Allegiant Technologies, an enhanced version of Hypercard) for the MAC and *Toolbook (*Asymetrix Corporation*)* for the Windows PC.
+The software used in this example was *Supercard* (Allegiant Technologies, an enhanced version of Hypercard) for the MAC and *Toolbook (*Asymetrix Corporation*)* for the Windows PC.
 
 [![Showing popup glossary in a Shakespeare text](/images/footnotes/tempest.gif)](/images/footnotes/tempest.gif)
 
@@ -196,9 +192,9 @@ We can now bring forward a link to the world wide web through a **TED** talk by 
 
 ### The World Wide Web
 
-The early concept of the internet pages and HTML was that it was possible to navigate between content through hypertext links. The text was styled (the standard was a blue underline) to show that it was, itself an anchor, and would lead to a destination, that could be elsewhere on that page or, to another web page altogether.
+The early concept of the internet pages and HTML was that it was possible to navigate around content through hypertext links. The text was styled (the standard was a blue underline) to show that it was, itself an anchor, and would lead to a destination, that could be elsewhere on that page or, to another web page altogether.
 
-The image here shows the initial standard way to show a hypertext link
+The image here shows the initial standard way to show a hypertext link.
 
 [![hypertext links on a web site](/images/footnotes/image13.png)](/images/footnotes/image13.png)
 
@@ -266,15 +262,15 @@ This fantastic platform for writers and storytellers, does not support interacti
 
 Footnotes are no good for reflowable eBooks! You don't actually have a page bottom. There are various choices for eBooks depending on the type, the proposed platform and the pBook to eBook workflow.
 
-> **Note:** You can't use _ibid_ any more.
+> **Note:** You can't use _ibid_ any more. (`Meaning: in the same source`)
 
 ### For the reflowable eBook
 
 The reflowable ePub3 format does support popup notes. When you export from InDesign to ePub (reflowable), you have an option to convert your *footnotes* to pop-up notes.
 
-This will take the notes from the foot of the page, wrap them in an HTML tag `<aside>` and add the necessary ePub3 classes in the XHTML code. In fact you will get an attribute added to the hyperlinked number:
-
 [![Export to reflowable ePub from InDesign gives you the popup notes option](/images/footnotes/image19.png)](/images/footnotes/image19.png)
+
+This will take the notes from the foot of the page, wrap them in an HTML tag `<aside>` and add the necessary ePub3 classes in the XHTML code. In fact you will get an attribute added to the hyperlinked number:
 
 `epub:type="noteref"`
 
@@ -307,6 +303,8 @@ If you look carefully, you will see that the link tag ends before any content. I
 **Best of Both Worlds; popup notes and endnotes**
 
 Rather than export from InDesign with the pop-up note option, choose the 'End of Section (Endnotes)' option. This will work properly for those systems that do not support pop-up notes. In iBooks (Apple systems), the hyperlinked number will take us to the notes section at the end of the chapter. If we want to get pop-up notes working on those systems that support it we will need to crack open the ePUB and make some changes.
+
+Let me explain.
 
 ### Editing the ePUB from the Endnotes Version
 

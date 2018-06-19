@@ -41,7 +41,7 @@ I start with a quote from Robert Bringhurst in his *The Elements of Typographic 
 
 > “*...the academic habit of relegating notes to the foot of the page or the end of the book is a mirror of Victorian social and domestic practice, in which the kitchen was kept out of sight and the servants were kept below stairs. If the notes are permitted to move around in the margins – as they were in Renaissance books – they can be present where needed and at the same time enrich the life of the page.*”
 
-In medieval Europe, the relationship between the shape of the page and text block provided space for notes in the margin. In fact, even before printing margin notes are used to elaborate or further explain details. In this illustration we see a spread from the Liber insularum Archipelagi. with notes in the site margins
+In medieval Europe, the relationship between the shape of the page and text block provided space for notes in the margin. In fact, even before printing margin notes are used to elaborate or further explain details. In this illustration we see a spread from the _Liber insularum Archipelagi_ with notes in the site margins
 
 [![Liber insularum Archipelagi , Christophorum de Bondelmontibus de Florentia 1422](/images/footnotes/image1.jpeg)](/images/footnotes/image1.jpeg)
 
@@ -120,7 +120,7 @@ On the other hand Edward R. Tufte[^2] is well known for his beautifully designed
 
 Robert Bringhurst uses both side notes and footnotes in his *The Elements of Typographic Style*:
 
-[![a spread from *The Elements of Typographic Style*](/images/footnotes/image6.png)](/images/footnotes/image6.png)
+[![a spread from *The Elements of Typographic Style*, Robert Bringhurst](/images/footnotes/image6.png)](/images/footnotes/image6.png)
 
 ## Practical Methods
 
@@ -168,7 +168,7 @@ All of the above can (and has been) presented on the screen as in print with the
 
 Hypercard on the MAC was able to create linking of pages but also making references and glossary items popup on mouse click as seen here in the Voyager publication on CD-ROM of *Macbeth*[^4].
 
-[![a page from the Hypercard *Macbeth* ](/images/footnotes/macbethvoyager.gif)](/images/footnotes/macbethvoyager.gif)
+[![a page from the Hypercard *Macbeth*, a Voyager CD-ROM ](/images/footnotes/macbethvoyager.gif)](/images/footnotes/macbethvoyager.gif)
 
 In the screen based medium, we can adopt other methods for linking references in the text to footnote content. Of course we can't call them footnotes anymore and they may be *hyperlinks* or *popups*.
 
@@ -186,7 +186,7 @@ This was the era of the multimedia CD-ROM, and many of these applications involv
 
 The software used in this example was *Supercard* (Allegiant Technologies, an enhanced version of Hypercard) for the MAC and *Toolbook (*Asymetrix Corporation*)* for the Windows PC.
 
-[![Showing popup glossary in a Shakespeare text](/images/footnotes/tempest.gif)](/images/footnotes/tempest.gif)
+[![Showing popup glossary in a Shakespeare text. _The Tempest_ CD-ROM, BBC/HarperCollins](/images/footnotes/tempest.gif)](/images/footnotes/tempest.gif)
 
 We can now bring forward a link to the world wide web through a **TED** talk by Ian Ritchie, the owner of Owl Ltd, Edinburgh, who (according to his TED talk[^6]), turned down an approach by Tim Berners-Lee, the inventor of the world wide web.
 
@@ -365,13 +365,10 @@ _In this version of ‘Twelfth Night’ MA student Alicia Ballard has used both 
 
 ## Summary
 
-Supplementary information in the form of footnotes and margin notes has been used in documents for centuries and even before Gutenberg's printing processes, illuminated manuscripts used the margins to add details.
-
-We have seen how in _The Geneva Bible_, there were so many annotations in the margins that the pages often became overcrowded and hard to read.
-
-We noted that Edward Gibbon used his footnotes so extensively, that to read an abridged edition (without footnotes) would be to miss out on so much detail.
-
-Footnotes and Endnotes are a burden for the reader, and with our screen reading experience, the hyperlink and popup note makes navigating this supplementary information so much more usable and compelling.
+- Supplementary information in the form of footnotes and margin notes has been used in documents for centuries and even before Gutenberg's printing processes, illuminated manuscripts used the margins to add details.
+- We have seen how in _The Geneva Bible_, there were so many annotations in the margins that the pages often became overcrowded and hard to read.
+- We noted that Edward Gibbon used his footnotes so extensively, that to read an abridged edition (without footnotes) would be to miss out on so much detail.
+- Footnotes and Endnotes are a burden for the reader, and with our screen reading experience, the hyperlink and popup note makes navigating this supplementary information so much more usable and compelling.
 
 It is essential that publishers of digital content do convert their _out of the flow_ content to be interactive through click or touch.
 

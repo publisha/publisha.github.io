@@ -11,7 +11,7 @@ I just think that [Atom][86aa3b11] is a brilliant text editor, and I now use it 
 
 ## Markdown
 
-You need to learn it. But so easy. And anyway Atom can help.
+You need to learn it. But it is so easy. And anyway Atom can help.
 
 I won't repeat here what you can find online about Markdown, like who invented it ([John Gruber][6028e808]) and what it [actually means][ee933fd6], and [who loves it][41bd7e97].
 
@@ -33,7 +33,7 @@ OK, so you want to see the results? Again, just add the Markdown previewer to At
 
 ## OK. But what else can I do with the text?
 
-Alight, I know. Your publisher wants a Word file.
+Alright, I know. Your publisher wants a Word file.
 
 No problem. Just follow these steps and all will be well with the world:
 
@@ -64,6 +64,9 @@ You can change the theme and get an entirely different environment.
 
 Well that a whole different story, but this web site is entirely created and edited with Atom. I use a static web generator called Jekyll; Atom can directly create content and load up to the site repository when ready.
 
-Like now!
+## And Medium.com
+
+Yes! You can post to Medium once you have installed the package _Medium Editor_. Currently this does not support image upload, so consider another way. You can use Atom to create your web page and then import this to Medium.
+
 
 Thanks for reading...

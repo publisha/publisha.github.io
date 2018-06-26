@@ -1,11 +1,11 @@
 ---
 layout: paper
 title: How Shakespeare Helps me Teach Multi-Platform Publishing
-date: 2017-12-17
+date: 2018-06-26
 images: full-width
-Published: false
+published: false
 annotate: true
-version: [0.1]
+version: [0.2]
 Author: Chris Jennings
 status: [just started]
 comments: true

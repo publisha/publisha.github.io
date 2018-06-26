@@ -14,8 +14,10 @@ excerpt_separator: <!--more-->
 [![The first frame of the presentation](/images/footnotes/slide1.001.jpeg)](/images/footnotes/slide1.001.jpeg)
 
 <!--more-->
+How can footnotes, endnotes, margin notes and other deviations from the narrative flow, work best in a screen based medium?
 
 This presentation explores the relationship between the footnote in the printed work and equivalent devices in screen based medium.
+
 What are the conventions in print publishing to display footnotes, side notes and other forms of deviations from the narrative flow?
 
 We look at some examples of the way information is cross linked and where this information is typically displayed in the printed work.

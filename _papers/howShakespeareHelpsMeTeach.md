@@ -1,11 +1,11 @@
 ---
 layout: paper
 title: How Shakespeare Helps me Teach Multi-Platform Publishing
-date: 2017-12-17
+date: 2018-06-26
 images: full-width
-Published: false
+published: false
 annotate: true
-version: [0.1]
+version: [0.2]
 Author: Chris Jennings
 status: [just started]
 comments: true
@@ -45,7 +45,7 @@ There will be some prelims such as the title page but thereafter we will need:
 
 This is where the characters are listed. This is often presented as a list with the character name followed by their role. We are likely to consider the whole line as one entity and then the `role` inside this. It could be presented as a table. The facsimile (from where the public domain text has come from) may use `ditto` where the role is repeated. [we can look at examples]
 
-The last line of the Dramatis Personae will announce the general location of the play. 
+The last line of the Dramatis Personae will announce the general location of the play.
 
 #### The Play
 
@@ -73,11 +73,11 @@ add the MindNode diagram here.
 
 The words spoken in the play will be preceded by the name of the character and the method of displaying this is our first  structure and presentation conundrum.
 
-To explain the issue we should look at how the character name is presented in print versions of the play, and we might look first at a page from the `first folio` of Shakespeare’s works. The image below shows the opening page of a _Midsummer Night’s Dream_ 
+To explain the issue we should look at how the character name is presented in print versions of the play, and we might look first at a page from the `first folio` of Shakespeare’s works. The image below shows the opening page of a _Midsummer Night’s Dream_
 
 image here
 
-You will notice that the character name is abbreviated. We don’t want our modern version to emulate this. Some public domain texts (from which we work) also abbreviate the character name. We will need to use `search/replace` to 
+You will notice that the character name is abbreviated. We don’t want our modern version to emulate this. Some public domain texts (from which we work) also abbreviate the character name. We will need to use `search/replace` to
 change these. While we are here, we should observe also that the abbreviated character name is *on the same line* as the first line of the speech. More on this in a moment.
 
 In the image below is a modern version of *A Midsummer Nights’s Dream*.
@@ -85,9 +85,9 @@ In the image below is a modern version of *A Midsummer Nights’s Dream*.
 image here
 
 
-We are most likely to be working from a public domain text that has been scanned from print 
- 
- 
+We are most likely to be working from a public domain text that has been scanned from print
+
+
 [^1]: **Hamlet**:
 I'll have grounds
 More relative than this—the play's the thing

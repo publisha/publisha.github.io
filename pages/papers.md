@@ -8,6 +8,10 @@ permalink: papers/index.html
 
 <p>Articles and Conference papers</p>
 
+<p><i>These articles (and more) are published on my <b>Medium</b> publication at:</i></p>
+
+<p><a href="https://medium.com/publisha" title="go to the medium space to view">medium.com/publisha</a></p>
+
 <div class="posts">
 
 {%- assign items = site.papers | sort: 'date' -%}

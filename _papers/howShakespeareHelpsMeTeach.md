@@ -35,6 +35,10 @@ We have to work with something. We can’t expect our students to actually creat
 
 The typographic choices when setting a play are really quite interesting, and although there are conventions[^2] we still have a lot of flexibility.  A play includes many different elements which  all need to be styled appropriately. Moreover, there is a need to provide a structure to the form that helps the reader work through the flow of the text.
 
+**Public Domain**
+
+The text for all of Shakespeare’s plays are in the public domain. The texts have been converted to a digital form and can be found in various locations such as the Gutenberg project. Not only is the text available to us, there are many images that we can use to illustrate the plays.
+
 ## The structure of a play
 
 Let’s go through the details of a Shakespeare play and consider the structure.

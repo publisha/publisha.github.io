@@ -12,7 +12,7 @@ comments: true
 blurb: Using Shakespeare’s plays (content in the public domain) helps me, as the tutor for these students,  provide all the experience necessary to build wonderful publishable artefacts.
 ---
 
-# How Shakespeare Helps me Teach Multi-Platform Publishing
+# How Shakespeare Helps me Teach Digital Publishing
 **Using public domain texts and other resources**
 
 **Author:** Chris Jennings
@@ -20,7 +20,7 @@ blurb: Using Shakespeare’s plays (content in the public domain) helps me, as t
 ## Abstract
 Masters students in the Oxford International Centre for Publishing  (OICP) at Oxford Brookes University get a chance to design and produce a book of one of Shakespeare’s plays and then further develop this as a web site and various eBook  formats.
 
-Using Shakespeare’s plays (content in the public domain) helps me, as the tutor for these students,  provide all the experience necessary to build wonderful publishable artefacts. They can choose any of Shakespeare’s plays apart from A Midsummer Night’s Dream; this is the play that I use to demonstrate the various assignments.
+Using Shakespeare’s plays (content in the public domain) helps me, as the tutor for these students,  provide all the experience necessary to build wonderful publishable artefacts. They can choose from any of Shakespeare’s plays apart from *A Midsummer Night’s Dream*; this is the play that I use to demonstrate the various assignments.
 
 ## Introduction
 I have been teaching digital publishing at Oxford Brookes University since 1995, and, un-surprisingly, I have needed to change focus and digital tools many times. From CD-ROM to web, from Macromedia Director to InDesign— you know what I mean. We talked of SGML and Aldus Pagemaker, now we talk of POD (Print On Demand), ePub and XML.
@@ -121,7 +121,7 @@ Scanned texts that are converted to digital text will have the presentation on p
 
 Some printed versions of the plays will include line numbers, usually ranged to the right of the line. There are some advantages to display the page number in an educational environment, because they can be a way to navigate to particular locations within the text as in `Act 2, Scene 3. line 45`. Not every line number is labelled, only every 10 lines typically.
 
-> more on this
+> The public domain sources that we use for our projects do not include the line numbers and so we don’t incorporate them in our work. However, this may be considered in the future.
 
 #### Stage directions
 
@@ -131,7 +131,7 @@ There are also directions within the text. An inline indicator such as `[Whisper
 
 ## Analysis of the raw text source
 
-One of the first tasks for the students is to look closely at the public domain text that has been provided. As mentioned above, this will have been converted from a printed text.
+One of the first tasks for the students is to look closely at the public domain text that has been provided. As mentioned above, this will have been converted (by scanning) from a printed text.
 
 > We can use a text editor to make global changes to the text.  We can use `search and replace` or even pattern matching with `GREP` however, there is a good reason to leave this process until we have the text in **InDesign**.
 

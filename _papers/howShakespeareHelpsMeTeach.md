@@ -67,6 +67,8 @@ The **Scenes**, likewise may be as:
 
 The conventions dictate the first of these in each case, but we are looking at the possible options and encourage new choices.
 
+> Note that in the First Folio .....
+
 Each scene label is normally followed by a **location** for that scene.
 
 #### Location

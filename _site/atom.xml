@@ -4,7 +4,7 @@
  <title>Digital Publishing Hub</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-06-10T10:49:45+01:00</updated>
+ <updated>2018-06-26T09:58:06+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
@@ -424,7 +424,7 @@ not really significant because all computer displays vary in proportion. However
 
 &lt;h2 id=&quot;markdown&quot;&gt;Markdown&lt;/h2&gt;
 
-&lt;p&gt;You need to learn it. But so easy. And anyway Atom can help.&lt;/p&gt;
+&lt;p&gt;You need to learn it. But it is so easy. And anyway Atom can help.&lt;/p&gt;
 
 &lt;p&gt;I won’t repeat here what you can find online about Markdown, like who invented it (&lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot; title=&quot;Take a look here&quot;&gt;John Gruber&lt;/a&gt;) and what it &lt;a href=&quot;http://commonmark.org/help/&quot; title=&quot;Get the lowdown&quot;&gt;actually means&lt;/a&gt;, and &lt;a href=&quot;https://www.google.co.uk/?gfe_rd=cr&amp;amp;ei=aYy5WJfXMIOFaIP7pqAM#q=love+markdown&quot; title=&quot;Google helps here&quot;&gt;who loves it&lt;/a&gt;.&lt;/p&gt;
 
@@ -442,7 +442,7 @@ not really significant because all computer displays vary in proportion. However
 
 &lt;h2 id=&quot;ok-but-what-else-can-i-do-with-the-text&quot;&gt;OK. But what else can I do with the text?&lt;/h2&gt;
 
-&lt;p&gt;Alight, I know. Your publisher wants a Word file.&lt;/p&gt;
+&lt;p&gt;Alright, I know. Your publisher wants a Word file.&lt;/p&gt;
 
 &lt;p&gt;No problem. Just follow these steps and all will be well with the world:&lt;/p&gt;
 
@@ -472,7 +472,9 @@ not really significant because all computer displays vary in proportion. However
 
 &lt;p&gt;Well that a whole different story, but this web site is entirely created and edited with Atom. I use a static web generator called Jekyll; Atom can directly create content and load up to the site repository when ready.&lt;/p&gt;
 
-&lt;p&gt;Like now!&lt;/p&gt;
+&lt;h2 id=&quot;and-mediumcom&quot;&gt;And Medium.com&lt;/h2&gt;
+
+&lt;p&gt;Yes! You can post to Medium once you have installed the package &lt;em&gt;Medium Editor&lt;/em&gt;. Currently this does not support image upload, so consider another way. You can use Atom to create your web page and then import this to Medium.&lt;/p&gt;
 
 &lt;p&gt;Thanks for reading…&lt;/p&gt;
 </content>

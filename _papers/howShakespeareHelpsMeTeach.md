@@ -53,7 +53,7 @@ The last line of the Dramatis Personae will announce the general location of the
 
 ### The Play
 
-The structure may be simply several scenes inside an Act. Possibly 5 Acts with 3 or 4 scenes in each. Some plays have a prologue and even an epilogue. [check the range of structures]
+The structure may be simply several scenes inside an Act. Possibly 5 Acts with 3 or 4 scenes in each. Some plays have a prologue and even an epilogue. In _The Taming of the Shrew_, the play starts with an `Induction`.
 
 The **Act** is the top level in the play structure. The title of this may be simply at the top of the first page or may even have a page (recto in print) dedicate to it. The number could be uppercase roman, Arabic or even a word. So we might depict as:
 
@@ -67,42 +67,53 @@ The **Scenes**, likewise may be as:
 
 The conventions dictate the first of these in each case, but we are looking at the possible options and encourage new choices.
 
-> Note that in the First Folio .....
+> Note that in the First Folio no Scenes are constructed and the acts are labelled thus: _Actus Secundus_
+
+[![Actus Secundus in A Midusmmer Night's Dream of the First Folio](/images/msndactus_secondus.jpg)](/images/msndactus_secondus.jpg)
 
 Each scene label is normally followed by a **location** for that scene.
 
 #### Location
 
-This is where the scene takes place and is an element in its own line. 
+This is where the scene takes place and is an element in its own line.
 
 Now follows the first **stage direction**.
 
-add the MindNode diagram here.
+[![This diagram represents the structure of a typical play](/images/ShakespearePlay.png)](/images/ShakespearePlay.png)
 
 **To be or not to Be**
 
 #### The character name
 
-The words spoken in the play will be preceded by the name of the character and the method of displaying this is our first  structure and presentation conundrum.
+The words spoken in the play will be preceded by the name of the character and the method of displaying this is our first structure and presentation conundrum.
 
-To explain the issue we should look at how the character name is presented in print versions of the play, and we might look first at a page from the `first folio` of Shakespeare’s works. The image below shows the opening page of a _Midsummer Night’s Dream_
+To explain the issue we should look at how the character name is presented in print versions of the play, and we might look first at detail from a page from the `first folio` of Shakespeare’s works. The image below shows the a page of _A Midsummer Night’s Dream_
 
-image here
+[![detail of a page from the first folio. First Foilo 1623. This copy in the Bodiean Library, Oxford](/images/dreamdetail_firstfolio.jpg)](/images/dreamdetail_firstfolio.jpg)
 
-You will notice that the character name is abbreviated. We don’t want our modern version to emulate this. Some public domain texts (from which we work) also abbreviate the character name. We will need to use `search/replace` to
-change these. While we are here, we should observe also that the abbreviated character name is *on the same line* as the first line of the speech. More on this in a moment. We will want to have as much stylistic control of this character name as possible, so we should avoid capitalised letters; use title case. We can style as uppercase if we need, but, remember, if the digital text is using capital letters, then we cannot reverse this with a style setting.
+You will notice that the character name is abbreviated. We don’t want our modern version to emulate this. Some public domain texts (from which we work) also abbreviate the character name. We will need to use `search/replace` to change these. While we are here, we should observe also that the abbreviated character name is *on the same line* as the first line of the speech. More on this in a moment.
 
-In the image below is a modern version of *A Midsummer Nights’s Dream*.
+Other print editions also abbreviate the character name as in this school edition from the 1960's.
 
-image here of the Alexander edition
+[![Thomas Nelson School edition possibly 1960  - No date on imprint page](/images/42911615624_2da9acaf0b_k.jpg)](/images/42911615624_2da9acaf0b_k.jpg)
+
+In the image below is a later educational edition of *A Midsummer Nights’s Dream*.
+
+[![a page from Collins Educational 1972 - The Alexander Shakespeare](/images/43581596022_32f18b0537_k.jpg)](/images/43581596022_32f18b0537_k.jpg)
 
 In this example, we see that the character name is generally above the first line of the speech, however the typesetter in this case has put the character name on same line _when the line is short_.
 
 I suspect that this must be a legacy detail when the text was set with lead type.  We would find this detail difficult to style with a style rule. The reason for this relates to how we decide to structure the verse lines; are they to be separate paragraphs or will they be separated as lines within a paragraph? The speech block can be a paragraph with individual verse lines separated by a forced line break. If this is the case then the speech block can be styled as a block with space above and below.
 
+We will want to have as much presentation control of this character name as possible, so we should also avoid capitalised letters; we should use use title case. We can style as uppercase if we need, but, remember, if the digital text is using capital letters, then we cannot reverse this with a style setting.
+
+In this recent edition of _A Midsummer Night's Dream_, the character name is on the first verse line of the speech or the same line as the start of the prose speech.
+
+[![a spread from A Midsummer Night's Dream, Macmillan / RSC Edition 2008](/images/29759296558_fd9904e0aa_k.jpg)](/images/29759296558_fd9904e0aa_k.jpg)
+
 We may prefer to keep each line in the speech block as a paragraph with a paragraph break at the end of each line.
 
-Going back then to the structure and presentation of the character name, it will help us if this is a separate paragraph too,  and not attached to the first line of the speech.
+Going back then to the structure and presentation of the character name, it will help us if this is a separate paragraph too, and not attached to the first line of the speech.
 
 > How would we achieve this?
 
@@ -111,17 +122,22 @@ Going back then to the structure and presentation of the character name, it will
 Some of Shakespeare plays use mostly verse spoken by the characters, whereas others use mostly prose. What is the difference from a presentation perspective?
 
 **Prose** flows across the page and breaks when it runs out of space. It should only break to the next line if the speech ends.
+
 **Verse** is deliberately broken at the end of the line and the next line will start with an uppercase letter. Verse may break before the end of the verse line if there is no more space; this usually only happens when the line is long or the font size is large.
 
 **Our text source**
 
 We are most likely to be working from a public domain text that has been scanned from print and there will be some changes to be made if this is the way we receive our public domain text. Here follows some issues that we will need to resolve.
 
-Scanned texts that are converted to digital text will have the presentation on paper reproduced in a digital form with lines breaking where the line breaks occur in the printed version. This means that we will need to remove these breaks otherwise we cannot guarantee that the text will flow properly and be responsive to different screen sizes. 
+Scanned texts that are converted to digital text will have the presentation on paper reproduced in a digital form with lines breaking where the line breaks occur in the printed version. This means that we will need to remove these breaks otherwise we cannot guarantee that the text will flow properly and be responsive to different screen sizes.
+
+Here is a screen image of a typical downloaded version of _A Midsummer Night's Dream_.
+
+[![The text editor shows the hidden characters.](/images/Screen Shot 2018-07-27 at 14.46.53.png)](/images/Screen Shot 2018-07-27 at 14.46.53.png)
 
 #### Line numbers
 
-Some printed versions of the plays will include line numbers, usually ranged to the right of the line. There are some advantages to display the page number in an educational environment, because they can be a way to navigate to particular locations within the text as in `Act 2, Scene 3. line 45`. Not every line number is labelled, only every 10 lines typically.
+Some printed versions of the plays will include line numbers (see images above), usually ranged to the right of the line. There are some advantages to display the page number in an educational environment, because they can be a way to navigate to particular locations within the text as in `Act 2, Scene 3. line 45`. Not every line number is labelled, only every 5 or 10 lines typically.
 
 > The public domain sources that we use for our projects do not include the line numbers and so we don’t incorporate them in our work. However, this may be considered in the future.
 
@@ -157,7 +173,28 @@ We can create a DTD that represents the rule set of the Shakespeare play. Let’
 * or - a number of song likes that’s follow a character name
 * an inline stage direction within a verse line or within a prose paragraph
 
-> Add the dtd in here as code
+```XML
+<!ELEMENT shakespeareplay (dramatis_personae?,play?)>
+<!ELEMENT dramatis_personae (dramatis_head?,charactername+,play_location?)>
+<!ELEMENT charactername (#PCDATA | character_role)*>
+<!ELEMENT character_role (#PCDATA)>
+<!ELEMENT play ((act,(((firstscene|scene)+,location?,(stage_directions|stage_action|character|prose|verseline|song)+))*)*)>
+<!ELEMENT location (#PCDATA | scene_image)*>
+<!ELEMENT dramatis_head (#PCDATA)>
+<!ELEMENT play_location (#PCDATA)>
+<!ELEMENT act (#PCDATA)>
+<!ELEMENT firstscene (#PCDATA)>
+<!ELEMENT scene (#PCDATA)>
+<!ELEMENT stage_directions (#PCDATA)>
+<!ELEMENT stage_action (#PCDATA)>
+<!ELEMENT character (#PCDATA)>
+<!ELEMENT prose (#PCDATA)>
+<!ELEMENT verseline (#PCDATA)>
+<!ELEMENT song (#PCDATA)>
+<!ELEMENT scene_image (#PCDATA)>
+<!ATTLIST scene_image href CDATA #REQUIRED>
+<!ATTLIST shakespeareplay title CDATA #REQUIRED>
+```
 
 ## What use the DTD?
 

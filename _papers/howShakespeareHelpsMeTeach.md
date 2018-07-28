@@ -99,8 +99,7 @@ Other print editions also abbreviate the character name as in this school editio
 
 In the image below is a later educational edition of *A Midsummer Nights’s Dream*.
 
-[![a page from Collins Educational 1972 - The Alexander Shakespeare](/images/43581596022_32f18b0537_k.jpg)](/images/43581596022_32f18b0537_k.jpg)
-
+[![a page from Collins Educational 1972 - The Alexander Shakespeare](/images/28799629347_6610ca9024_o.jpg)](/images/28799629347_6610ca9024_o.jpg)
 In this example, we see that the character name is generally above the first line of the speech, however the typesetter in this case has put the character name on same line _when the line is short_.
 
 I suspect that this must be a legacy detail when the text was set with lead type.  We would find this detail difficult to style with a style rule. The reason for this relates to how we decide to structure the verse lines; are they to be separate paragraphs or will they be separated as lines within a paragraph? The speech block can be a paragraph with individual verse lines separated by a forced line break. If this is the case then the speech block can be styled as a block with space above and below.
@@ -157,21 +156,25 @@ Our objective is to markup the text and we can achieve this by using InDesign to
 
 ## Marking up the structure
 
-Before we consider how the text will be styled we use the understanding of the elements just described to add markup to the text.
+Before we consider how the text will be styled we use the understanding of the elements just described to add markup to the text. A good way to understand the structure of the play is to consider each element and its relationship to the other elements.
+
+Let’s describe the rules for the play in simple English first:
+
+* A list of characters in the play (dramatis personae)
+  - role in the play described
+* A number of Acts
+  - A number of scenes in each act
+    - One location in each scene
+    - a number of stage directions in each scene
+    - a number character names in each scene that can be repeated
+    - a number of verse lines that follow a character name
+    - or - a number of prose paragraphs that follow a character name
+    - or - a number of song lines that’s follow a character name
+      - an inline stage direction within a verse line or within a prose paragraph
 
 ### The DTD (Document Type Definition)
 
-We can create a DTD that represents the rule set of the Shakespeare play. Let’s describe the rules for the play in English first:
-
-* A number of Acts
-* A number of scenes in each act
-* One location in each scene
-* a number of stage directions in each scene
-* a number character names in each scene that can be repeated
-* a number of verse lines that follow a character name
-* or - a number of prose paragraphs that follow a character name
-* or - a number of song likes that’s follow a character name
-* an inline stage direction within a verse line or within a prose paragraph
+We can create a DTD that represents the rule set of the Shakespeare play.
 
 ```XML
 <!ELEMENT shakespeareplay (dramatis_personae?,play?)>
@@ -196,11 +199,31 @@ We can create a DTD that represents the rule set of the Shakespeare play. Let’
 <!ATTLIST shakespeareplay title CDATA #REQUIRED>
 ```
 
-## What use the DTD?
+## Why use the DTD?
 
 The reason we use a DTD is that we can import this into InDesign and it will automatically create all of the elements as `tags`.
 
-> can we make those into style names auto? I can’t remember...
+[![The tags in InDesign after importing the DTD](/images/Screen Shot 2018-07-28 at 13.04.27.png)](/images/Screen Shot 2018-07-28 at 13.04.27.png)
+
+Once we have the tags in InDesign we need to create the paragraph and character styles to match these tag names.
+
+There is no automatic way to create styles in InDesign from tag names, so we provide a template that includes these styles. These are in name only and the template is deliberately set up to use primary colours and basic fonts, so that the students will need to use their own judgement and design skills to build attractive settings for their chosen play.
+
+The template includes placeholder text for all of the elements needed.
+
+[![InDesign template with tags and matching styles](/images/Screen Shot 2018-07-28 at 15.23.29.png)](/images/Screen Shot 2018-07-28 at 15.23.29.png)
+
+The template is setup with 2 text boxes, one for the dramatis personae and the other for the play itself. In other words these text boxes are not joined or threaded.
+
+The template provides the agreed page size for this book: 129mm x 198mm (B format) with a bleed of 3mm. Although the margins are set, the students can alter these before placing the text.
+
+## Placing the text
+
+The texts that we use are all generated originally from print versions and so have a similar raw state.
+
+[![hidden characters reveal how the text would have appeared.](/images/Screen Shot 2018-07-27 at 14.46.53.png)](/images/Screen Shot 2018-07-27 at 14.46.53.png)
+
+Although we could edit this text before we place in InDesign to remove unwanted spaces and paragraph breaks, it is better to leave these features in and use the repeated **patterns** to help in match these in search and replace techniques *within* InDesign.
 
 
 

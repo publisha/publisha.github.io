@@ -225,7 +225,25 @@ The texts that we use are all generated originally from print versions and so ha
 
 Although we could edit this text before we place in InDesign to remove unwanted spaces and paragraph breaks, it is better to leave these features in and use the repeated **patterns** to help in match these in search and replace techniques *within* InDesign.
 
+### Attaching the styles to the text
 
+One we have placed the text into InDesign then we can analyse the patterns and use this in formation to make changes and *at the same time* select the appropriate style. We can also use GREP in our search and replace.
+
+add image of InDesign search / replace with GREP
+
+### Pattern matching strategies
+
+You can see from the image below how the text is presented when unstyled; we should always turn on `show hidden characters`. See how the character name before the speech has 2 spaces at the beginning, is a run of capital letter, followed by a period and a space. This we can use to locate every one of these and thereby add a paragraph break after and apply the appropriate style.
+
+**There are some issues and disappointments**
+
+1. We cannot change the case of the found text with this technique (we can only do this with a script) - solution described later.
+2. When we add a paragraph break and change the paragraph style of the found text, it will also be applied to the following paragraph (the first line of the speech). Resolving this is achieved by using 2 stages.
+3. We need to look carefully at our play text to see if there are characters that have more than one word like ‘First messenger’.
+
+### GREP (Globally Search a Regular Expression and Print)
+
+Certainly the most challenging aspect of this for our students is understanding the concepts and syntax of regular expressions. InDesign is very helpful in this regard, because choices can be made by selecting for the comprehensive menus. I do provide some ‘ready-made’ code to add to the search field, because nesting repeats and using multiple stages is hard to understand at first. But these are our tools and we must learn how to use them!
 
 [^1]: **Hamlet**:
 I'll have grounds

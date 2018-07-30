@@ -227,13 +227,17 @@ Although we could edit this text before we place in InDesign to remove unwanted 
 
 ### Attaching the styles to the text
 
-One we have placed the text into InDesign then we can analyse the patterns and use this in formation to make changes and *at the same time* select the appropriate style. We can also use GREP in our search and replace.
+One we have placed the text into InDesign then we can analyse the patterns and use this in formation to make changes and *at the same time* select the appropriate style.
 
-add image of InDesign search / replace with GREP
+We can also use GREP in our search and replace.
+
+[![InDesign can use GREP to search](/images/InDesign Grep search.jpg)](/images/InDesign Grep search.jpg)
 
 ### Pattern matching strategies
 
 You can see from the image below how the text is presented when unstyled; we should always turn on `show hidden characters`. See how the character name before the speech has 2 spaces at the beginning, is a run of capital letter, followed by a period and a space. This we can use to locate every one of these and thereby add a paragraph break after and apply the appropriate style.
+
+[![The text in InDesign showing spaces with show hidden characters switched on](/images/Raw text from Shakespeare play.jpg)](/images/Raw text from Shakespeare play.jpg)
 
 **There are some issues and disappointments**
 
@@ -244,6 +248,66 @@ You can see from the image below how the text is presented when unstyled; we sho
 ### GREP (Globally Search a Regular Expression and Print)
 
 Certainly the most challenging aspect of this for our students is understanding the concepts and syntax of regular expressions. InDesign is very helpful in this regard, because choices can be made by selecting for the comprehensive menus. I do provide some ‘ready-made’ code to add to the search field, because nesting repeats and using multiple stages is hard to understand at first. But these are our tools and we must learn how to use them!
+
+Consider the steps to deal with the character name before the speech (as seen in the image above).
+
+#### The Search
+
+The GREP search will look for the following broken down into these steps:
+
+1. The beginning of the paragraph
+2. one or more spaces
+3. an uppercase letter
+4. another uppercase letter (this insures that we don't pick up `I` or `A`)
+5. a repeat of this one or more times
+6. a period
+7. a space
+
+The GREP (InDesign syntax) for this looks like:
+
+`^  \u\u+\.\s`
+
+This works for character names that have one word, but what if we have 'First Messenger' or 'Second Witch'? Here is a better solution to capture those as well:
+
+`^  [\u\u+ ?]+\.\s`
+
+This will capture names with more than one word with a space between (notice the square brackets).
+
+#### The Change to ...
+
+Ideally we want to:
+
+1. Remove the space at the beginning
+2. remove the period and the space at the end
+3. add a paragraph break at the ends
+4. change the style to the appropriate paragraph style
+5. change to title case from uppercase
+
+Number 5 cannot be done here, we need a script for this; but since we want to change all uppercase words to title case, this can be done globally later.
+
+Number 4 cannot be done in the first step, because in adding the paragraph break we will accidentally change the following line also.
+
+> **Note:** This seems to be a bug in InDesign because if you find and change one item, the following line does not get restyled, but with `Change All` the following line will be changed as well.
+
+Our find and change dialogue in InDesign should look like this:
+
+[![Find/Change using GREP](/images/find and change step 1.jpg)](/images/find and change step 1.jpg)
+
+The change to field has this:
+
+`%$1\r`
+
+Add a percentage sign, add the found text in the standard brackets, add a paragraph break.
+
+By adding the `%` we can now use find a change again and this time change the style at the same time.
+
+[![Now we can change the style of the character name before the speech](/images/find and change step 2.jpg)](/images/find and change step 2.jpg)
+
+#### More fun with the GREP
+
+We now will need to analyse the other patterns and work out strategies for the stage directions, the Act and Scene headings and devote some time to the Dramatis Personae. Our objective is to apply the named styles to the various elements throughout the play and also to remove empty space
+
+ 
 
 [^1]: **Hamlet**:
 I'll have grounds

@@ -3,14 +3,30 @@ layout: paper
 title: How Shakespeare Helps me Teach Multi-Platform Publishing
 date: 2018-07-30
 images: full-width
-published: false
+published: true
 annotate: true
 version: [0.9]
 Author: Chris Jennings
 status: [almost ready]
 comments: true
-blurb: Using Shakespeare’s plays (content in the public domain) helps me, as the tutor for these students,  provide all the experience necessary to build wonderful publishable artefacts.
+blurb: Using Shakespeare’s plays (content in the public domain) helps me, as the tutor for these students,  provide all the experience necessary to build compelling publishable artefacts.
 ---
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
+
+- [Abstract](#abstract)
+- [Introduction](#introduction)
+- [The structure of a play](#the-structure-of-a-play)
+- [Analysis of the raw text source](#analysis-of-the-raw-text-source)
+- [Reviewing the structure](#reviewing-the-structure)
+- [The DTD (Document Type Definition)](#the-dtd-document-type-definition)
+- [Placing the text](#placing-the-text)
+- [InDesign and XML](#indesign-and-xml)
+- [Related documents on my site](#related-documents-on-my-site)
+- [Further Reading](#further-reading)
+
+</section><!-- /TOC -->
 
 # How Shakespeare Helps me Teach Digital Publishing
 **Using public domain texts and other resources**
@@ -371,7 +387,8 @@ By evaluating the XML we can be sure that the InDesign document conforms to the 
 
 ## Further Reading
 
-Shakespeare and the book
+Kastan, D. S. (2001a) _Shakespeare and the book_. Cambridge: Cambridge University Press.
+
 
 
 

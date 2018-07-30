@@ -192,9 +192,10 @@ We can create a DTD that represents the rule set of the Shakespeare play.
 <!ELEMENT scene (#PCDATA)>
 <!ELEMENT stage_directions (#PCDATA)>
 <!ELEMENT stage_action (#PCDATA)>
-<!ELEMENT character (#PCDATA)>
-<!ELEMENT prose (#PCDATA)>
-<!ELEMENT verseline (#PCDATA)>
+<!ELEMENT character (#PCDATA | stage_directions_inline)*>
+<!ELEMENT prose (#PCDATA | stage_directions_inline)*>
+<!ELEMENT stage_directions_inline (#PCDATA)>
+<!ELEMENT verseline (#PCDATA | stage_directions_inline)*>
 <!ELEMENT song (#PCDATA)>
 <!ELEMENT scene_image (#PCDATA)>
 <!ATTLIST scene_image href CDATA #REQUIRED>
@@ -367,6 +368,10 @@ By evaluating the XML we can be sure that the InDesign document conforms to the 
   Screencast: [Structure, Tagging and Export to XML][f2970721]
 
   [f2970721]: https://publisha.github.io/screencasts/id2xml1/ "see this screencast"
+
+## Further Reading
+
+Shakespeare and the book
 
 
 

@@ -1,13 +1,13 @@
 ---
 layout: paper
-title: How Shakespeare Helps me Teach Multi-Platform Publishing
+title: How Shakespeare Helps me Teach Digital Publishing
 date: 2018-07-30
 images: full-width
 published: true
 annotate: true
 version: [0.9]
 Author: Chris Jennings
-status: [almost ready]
+status: [readable]
 comments: true
 blurb: Using Shakespeare’s plays (content in the public domain) helps me, as the tutor for these students,  provide all the experience necessary to build compelling publishable artefacts.
 ---

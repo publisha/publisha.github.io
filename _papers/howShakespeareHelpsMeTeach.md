@@ -156,7 +156,7 @@ One of the first tasks for the students is to look closely at the public domain 
 
 Our objective is to markup the text and we can achieve this by using InDesign to attach styles and then match these styles to the equivalent tags. We can use the search and replace with `GREP` function in InDesign to achieve this but first we need to create the styles that will ‘wrap’ the elements in the play. Make the style names as if they are valid XML tag names and our work is easier because we can match by name.
 
-## Marking up the structure
+## Reviewing the structure
 
 Before we consider how the text will be styled we use the understanding of the elements just described to add markup to the text. A good way to understand the structure of the play is to consider each element and its relationship to the other elements.
 
@@ -174,7 +174,7 @@ Let’s describe the rules for the play in simple English first:
     - or - a number of song lines that’s follow a character name
       - an inline stage direction within a verse line or within a prose paragraph
 
-### The DTD (Document Type Definition)
+## The DTD (Document Type Definition)
 
 We can create a DTD that represents the rule set of the Shakespeare play.
 
@@ -201,7 +201,7 @@ We can create a DTD that represents the rule set of the Shakespeare play.
 <!ATTLIST shakespeareplay title CDATA #REQUIRED>
 ```
 
-## Why use the DTD?
+### Why use the DTD?
 
 The reason we use a DTD is that we can import this into InDesign and it will automatically create all of the elements as `tags`.
 
@@ -251,7 +251,7 @@ Certainly the most challenging aspect of this for our students is understanding 
 
 Consider the steps to deal with the character name before the speech (as seen in the image above).
 
-#### The Search
+### The Search
 
 The GREP search will look for the following broken down into these steps:
 
@@ -273,7 +273,7 @@ This works for character names that have one word, but what if we have 'First Me
 
 This will capture names with more than one word with a space between (notice the square brackets).
 
-#### The Change to ...
+### The Change to ...
 
 Ideally we want to:
 
@@ -309,9 +309,17 @@ By adding the `%` we can now use find a change again and this time change the st
 
 [![Now we can change the style of the character name before the speech](/images/find and change step 2.jpg)](/images/find and change step 2.jpg)
 
-#### More fun with the GREP
+### More fun with the GREP
 
-We now will need to analyse the other patterns and work out strategies for the stage directions, the Act and Scene headings and devote some time to the Dramatis Personae. Our objective is to apply the named styles to the various elements throughout the play and also to remove empty space
+We now will need to analyse the other patterns and work out strategies for the stage directions, the Act and Scene headings and devote some time to the Dramatis Personae. Our objective is to apply the named styles to the various elements throughout the play and also to remove empty space.
+
+### From uppercase to titlecase
+
+To change the uppercase words into we need to use a script. I should give credit to Peter Kahrel for providing this script:
+
+[Change case][1f11e6fa]
+
+  [1f11e6fa]: http://www.kahrel.plus.com/indesign/grep_change_case.html "You can download the script here"
 
 ## InDesign and XML
 
@@ -321,7 +329,7 @@ Exporting the XML from the Shakespeare play is one of the early assignments and 
 
 1. Everything must be marked up with no text left outside tags
 2. There should be no empty tags (this will indicate empty paragraphs)
-3. The structure should be clear from the root through to inline TagS
+3. The structure should be clear from the root through to inline tags.
 
 ### How do we get XML out?
 
@@ -345,6 +353,20 @@ By evaluating the XML we can be sure that the InDesign document conforms to the 
   table of contents
 4. extent adjusted to be divisible by 16
 5. PDF output ready for print with crop marks
+
+## Related documents on my site
+
+[Text to InDesign][9dd4a10b]
+
+  [9dd4a10b]: https://publisha.github.io/pages/text2id/ "Help on Publisha site"
+
+[Create XML from InDesign][8dd0c27f]
+
+  [8dd0c27f]: https://publisha.github.io/pages/id2xml/ "help on Publisha"
+
+  Screencast: [Structure, Tagging and Export to XML][f2970721]
+
+  [f2970721]: https://publisha.github.io/screencasts/id2xml1/ "see this screencast"
 
 
 

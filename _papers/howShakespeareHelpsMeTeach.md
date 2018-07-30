@@ -1,13 +1,13 @@
 ---
 layout: paper
 title: How Shakespeare Helps me Teach Multi-Platform Publishing
-date: 2018-06-26
+date: 2018-07-30
 images: full-width
 published: false
 annotate: true
-version: [0.2]
+version: [0.9]
 Author: Chris Jennings
-status: [just started]
+status: [almost ready]
 comments: true
 blurb: Using Shakespeare’s plays (content in the public domain) helps me, as the tutor for these students,  provide all the experience necessary to build wonderful publishable artefacts.
 ---
@@ -102,7 +102,7 @@ In the image below is a later educational edition of *A Midsummer Nights’s Dre
 [![a page from Collins Educational 1972 - The Alexander Shakespeare](/images/28799629347_6610ca9024_o.jpg)](/images/28799629347_6610ca9024_o.jpg)
 In this example, we see that the character name is generally above the first line of the speech, however the typesetter in this case has put the character name on same line _when the line is short_.
 
-I suspect that this must be a legacy detail when the text was set with lead type.  We would find this detail difficult to style with a style rule. The reason for this relates to how we decide to structure the verse lines; are they to be separate paragraphs or will they be separated as lines within a paragraph? The speech block can be a paragraph with individual verse lines separated by a forced line break. If this is the case then the speech block can be styled as a block with space above and below.
+I suspect that this must be a legacy detail when the text was set with lead type.  We would find this detail difficult to style with a style rule in digital typesetting. The reason for this relates to how we decide to structure the verse lines; are they to be separate paragraphs or will they be separated as lines within a paragraph? The speech block can be a paragraph with individual verse lines separated by a forced line break. If this is the case then the speech block can be styled as a block with space above and below.
 
 We will want to have as much presentation control of this character name as possible, so we should also avoid capitalised letters; we should use use title case. We can style as uppercase if we need, but, remember, if the digital text is using capital letters, then we cannot reverse this with a style setting.
 
@@ -123,6 +123,8 @@ Some of Shakespeare plays use mostly verse spoken by the characters, whereas oth
 **Prose** flows across the page and breaks when it runs out of space. It should only break to the next line if the speech ends.
 
 **Verse** is deliberately broken at the end of the line and the next line will start with an uppercase letter. Verse may break before the end of the verse line if there is no more space; this usually only happens when the line is long or the font size is large.
+
+> Note: in eBook or web publishing text must be allowed to flow naturally when space runs out for the line. When this happens we want to see that the wrapped line is set in from the left edge.
 
 **Our text source**
 
@@ -231,8 +233,6 @@ One we have placed the text into InDesign then we can analyse the patterns and u
 
 We can also use GREP in our search and replace.
 
-[![InDesign can use GREP to search](/images/InDesign Grep search.jpg)](/images/InDesign Grep search.jpg)
-
 ### Pattern matching strategies
 
 You can see from the image below how the text is presented when unstyled; we should always turn on `show hidden characters`. See how the character name before the speech has 2 spaces at the beginning, is a run of capital letter, followed by a period and a space. This we can use to locate every one of these and thereby add a paragraph break after and apply the appropriate style.
@@ -289,9 +289,15 @@ Number 4 cannot be done in the first step, because in adding the paragraph break
 
 > **Note:** This seems to be a bug in InDesign because if you find and change one item, the following line does not get restyled, but with `Change All` the following line will be changed as well.
 
+`^  \<([\u\u+? ]+)\. `
+
 Our find and change dialogue in InDesign should look like this:
 
-[![Find/Change using GREP](/images/find and change step 1.jpg)](/images/find and change step 1.jpg)
+[![Find/Change using GREP](/images/Find change stage 1.jpg)](/images/Find change stage 1.jpg)
+
+We can type in the GREP code although InDesign helps you by providing the menu choices like this:
+
+[![Speeded up GIF of the menus in operation](/images/grepmenus.gif)](/images/grepmenus.gif)
 
 The change to field has this:
 
@@ -307,7 +313,40 @@ By adding the `%` we can now use find a change again and this time change the st
 
 We now will need to analyse the other patterns and work out strategies for the stage directions, the Act and Scene headings and devote some time to the Dramatis Personae. Our objective is to apply the named styles to the various elements throughout the play and also to remove empty space
 
- 
+## InDesign and XML
+
+Publishing students need a basic understanding of XML and marking up a logical structure of a Shakespeare play provides a good introduction. The relationship between XML and InDesign[^3] is not ideal, but for us we can export XML after having applied the styles at object, paragraph and character level correctly and use the XML output as a way to check the correct use of these styles.
+
+Exporting the XML from the Shakespeare play is one of the early assignments and is assessed with the following in mind:
+
+1. Everything must be marked up with no text left outside tags
+2. There should be no empty tags (this will indicate empty paragraphs)
+3. The structure should be clear from the root through to inline TagS
+
+### How do we get XML out?
+
+If we follow along with the processes described above then all text will have the styles applied (even though the presentation is not what we want yet). The trick now is to match the styles with the tags and we do this with `Map Styles to Tags`.
+
+We then export the XML and this a small snippet of the result.
+
+[![The XML viewed in Safari](/images/dreamxml.jpg)](/images/dreamxml.jpg)
+
+By evaluating the XML we can be sure that the InDesign document conforms to the structure and everything is set with a style. Now the students need to hone their design and typography skills to present the play in the best way; styles now need refined attention to detail and visual clarity applied.
+
+### Final steps
+
+1. images are added
+2. an introduction added from the Life of Shakespeare (public domain text is used)
+3. prelims added
+  half title
+  frontispiece
+  title page
+  imprint page
+  table of contents
+4. extent adjusted to be divisible by 16
+5. PDF output ready for print with crop marks
+
+
 
 [^1]: **Hamlet**:
 I'll have grounds
@@ -316,3 +355,6 @@ Wherein I'll catch the conscience of the King
 
 [^2]: See Book Typography: a designer’s manual, Mitchell and Wightman, 2005
 The Chicago Manual of Style
+
+
+[^3]: Maivald, J. J. and Palmer, C. (2008) A designer’s guide to Adobe InDesign and XML: harness the power of XML to automate your print and web workflows. Berkeley, Calif: Adobe.

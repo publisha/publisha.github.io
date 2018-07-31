@@ -1,4 +1,4 @@
-z---
+---
 layout: paper
 title: How Shakespeare Helps me Teach Digital Publishing
 date: 2018-07-31

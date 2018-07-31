@@ -1,11 +1,11 @@
----
+z---
 layout: paper
 title: How Shakespeare Helps me Teach Digital Publishing
-date: 2018-07-30
+date: 2018-07-31
 images: full-width
 published: true
 annotate: true
-version: [0.9]
+version: [0.91]
 Author: Chris Jennings
 status: [readable]
 comments: true
@@ -34,14 +34,14 @@ blurb: Using Shakespeare’s plays (content in the public domain) helps me, as t
 **Author:** Chris Jennings
 
 ## Abstract
-Masters students in the Oxford International Centre for Publishing  (OICP) at Oxford Brookes University get a chance to design and produce a book of one of Shakespeare’s plays and then further develop this as a web site and various eBook  formats.
+Masters students in the Oxford International Centre for Publishing  (OICP) at Oxford Brookes University get a chance to design and produce a book of one of Shakespeare’s plays and then further develop (to be described in a second article) this as a web site and various eBook formats.
 
 Using Shakespeare’s plays (content in the public domain) helps me, as the tutor for these students,  provide all the experience necessary to build wonderful publishable artefacts. They can choose from any of Shakespeare’s plays apart from *A Midsummer Night’s Dream*; this is the play that I use to demonstrate the various assignments.
 
 ## Introduction
 I have been teaching digital publishing at Oxford Brookes University since 1995, and, un-surprisingly, I have needed to change focus and digital tools many times. From CD-ROM to web, from Macromedia Director to InDesign— you know what I mean. We talked of SGML and Aldus Pagemaker, now we talk of POD (Print On Demand), ePub and XML.
 
-Anyway, we are always re-inventing what we believe the students need to know.  My students are studying on an  MA Publishing programme and expect to move into the publishing industry. We listen to our `Industry Advisory Board` when they say that their new recruits need more knowledge of  digital technologies.
+Anyway, we are always re-inventing what we believe the students need to know.  My students are studying on an  MA Publishing programme and expect to move into the publishing industry.
 
 **Content is King (Lear)**
 
@@ -53,7 +53,7 @@ The typographic choices when setting a play are really quite interesting, and al
 
 **Public Domain**
 
-The text for all of Shakespeare’s plays are in the public domain. The texts have been converted to a digital form and can be found in various locations such as the Gutenberg project. Not only is the text available to us, there are many images that we can use to illustrate the plays.
+The text for all of Shakespeare’s plays are in the public domain. The texts have been converted to a digital form and can be found in various locations such as the Gutenberg project. Not only is the text available to us, there are many images that we can use to illustrate the plays [^3].
 
 ## The structure of a play
 
@@ -63,7 +63,9 @@ There will be some prelims such as the title page but thereafter we will need:
 
 ### Dramatis Personae
 
-This is where the characters are listed. This is often presented as a list with the character name followed by their role. We are likely to consider the whole line as one entity and then the `role` inside this. It could be presented as a table. The facsimile (from where the public domain text has come from) may use `ditto` where the role is repeated. [we can look at examples]
+This is where the characters are listed. This is often presented as a list with the character name followed by their role. We are likely to consider the whole line as one entity and then the `role` inside this. It could be presented as a table. The facsimile (from where the public domain text has come from) may use `ditto` or long vertical braces where the role is repeated.
+
+[![Dramatis Personae from A Midsummer Night's Dream, England - Oxford - 1743 1743](/images/dramatispersonae1743.jpg)](/images/dramatispersonae1743.jpg)
 
 The last line of the Dramatis Personae will announce the general location of the play.
 
@@ -130,7 +132,7 @@ We may prefer to keep each line in the speech block as a paragraph with a paragr
 
 Going back then to the structure and presentation of the character name, it will help us if this is a separate paragraph too, and not attached to the first line of the speech.
 
-> How would we achieve this?
+> We explore later how we use Find/Change in InDesign to put the character name on its own line.
 
 #### Prose or Verse
 
@@ -282,11 +284,11 @@ The GREP search will look for the following broken down into these steps:
 
 The GREP (InDesign syntax) for this looks like:
 
-`^  \u\u+\.\s`
+`^  (\u\u+)\.\s`
 
 This works for character names that have one word, but what if we have 'First Messenger' or 'Second Witch'? Here is a better solution to capture those as well:
 
-`^  [\u\u+ ?]+\.\s`
+`^  \<([\u\u+? ]+)\. `
 
 This will capture names with more than one word with a space between (notice the square brackets).
 
@@ -305,8 +307,6 @@ Number 5 cannot be done here, we need a script for this; but since we want to ch
 Number 4 cannot be done in the first step, because in adding the paragraph break we will accidentally change the following line also.
 
 > **Note:** This seems to be a bug in InDesign because if you find and change one item, the following line does not get restyled, but with `Change All` the following line will be changed as well.
-
-`^  \<([\u\u+? ]+)\. `
 
 Our find and change dialogue in InDesign should look like this:
 
@@ -340,7 +340,7 @@ To change the uppercase words into we need to use a script. I should give credit
 
 ## InDesign and XML
 
-Publishing students need a basic understanding of XML and marking up a logical structure of a Shakespeare play provides a good introduction. The relationship between XML and InDesign[^3] is not ideal, but for us we can export XML after having applied the styles at object, paragraph and character level correctly and use the XML output as a way to check the correct use of these styles.
+Publishing students need a basic understanding of XML and marking up a logical structure of a Shakespeare play provides a good introduction. The relationship between XML and InDesign[^4] is not ideal, but for us we can export XML after having applied the styles at object, paragraph and character level correctly and use the XML output as a way to check the correct use of these styles.
 
 Exporting the XML from the Shakespeare play is one of the early assignments and is assessed with the following in mind:
 
@@ -389,8 +389,9 @@ By evaluating the XML we can be sure that the InDesign document conforms to the 
 
 Kastan, D. S. (2001a) _Shakespeare and the book_. Cambridge: Cambridge University Press.
 
+Bringhurst, R. (2012) _The elements of typographic style_. Fourth edition (version 4.0), Twentieth anniversary edition. Seattle: Hartley & Marks, Publishers.
 
-
+Peter Kahrel (2006) Automating InDesign with regular expressions. [Sebastopol, Calif.]: O’Reilly.
 
 [^1]: **Hamlet**:
 I'll have grounds
@@ -398,7 +399,7 @@ More relative than this—the play's the thing
 Wherein I'll catch the conscience of the King
 
 [^2]: See Book Typography: a designer’s manual, Mitchell and Wightman, 2005
-The Chicago Manual of Style
 
+[^3]: Folger image collection is a good source. https://luna.folger.edu
 
-[^3]: Maivald, J. J. and Palmer, C. (2008) A designer’s guide to Adobe InDesign and XML: harness the power of XML to automate your print and web workflows. Berkeley, Calif: Adobe.
+[^4]: Maivald, J. J. and Palmer, C. (2008) A designer’s guide to Adobe InDesign and XML: harness the power of XML to automate your print and web workflows. Berkeley, Calif: Adobe.

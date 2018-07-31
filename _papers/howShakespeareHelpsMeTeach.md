@@ -371,6 +371,8 @@ By evaluating the XML we can be sure that the InDesign document conforms to the 
 4. extent adjusted to be divisible by 16
 5. PDF output ready for print with crop marks
 
+**In the next article we will be looking at how the students take this content and deliver as a web site and then various eBook formats.**
+
 ## Related documents on my site
 
 [Text to InDesign][9dd4a10b]
@@ -393,10 +395,7 @@ Bringhurst, R. (2012) _The elements of typographic style_. Fourth edition (versi
 
 Peter Kahrel (2006) Automating InDesign with regular expressions. [Sebastopol, Calif.]: O’Reilly.
 
-[^1]: **Hamlet**:
-I'll have grounds
-More relative than this—the play's the thing
-Wherein I'll catch the conscience of the King
+[^1]: Hamlet
 
 [^2]: See Book Typography: a designer’s manual, Mitchell and Wightman, 2005
 

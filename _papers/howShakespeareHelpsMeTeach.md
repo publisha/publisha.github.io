@@ -1,11 +1,11 @@
 ---
 layout: paper
 title: How Shakespeare Helps me Teach Digital Publishing
-date: 2018-07-31
+date: 2018-08-09
 images: full-width
 published: true
 annotate: true
-version: [0.91]
+version: [0.92]
 Author: Chris Jennings
 status: [readable]
 comments: true
@@ -65,7 +65,7 @@ There will be some prelims such as the title page but thereafter we will need:
 
 This is where the characters are listed. This is often presented as a list with the character name followed by their role. We are likely to consider the whole line as one entity and then the `role` inside this. It could be presented as a table. The facsimile (from where the public domain text has come from) may use `ditto` or long vertical braces where the role is repeated.
 
-[![Dramatis Personae from A Midsummer Night's Dream, England - Oxford - 1743 1743](/images/dramatispersonae1743.jpg)](/images/dramatispersonae1743.jpg)
+[![Dramatis Personae from A Midsummer Night's Dream, England - Oxford - 1743](/images/dramatispersonae1743.jpg)](/images/dramatispersonae1743.jpg)
 
 The last line of the Dramatis Personae will announce the general location of the play.
 
@@ -85,7 +85,7 @@ The **Scenes**, likewise may be as:
 
 The conventions dictate the first of these in each case, but we are looking at the possible options and encourage new choices.
 
-> Note that in the First Folio no Scenes are constructed and the acts are labelled thus: _Actus Secundus_
+> Note that in the First Folio[^4] no Scenes are constructed and the acts are labelled thus: _Actus Secundus_
 
 [![Actus Secundus in A Midusmmer Night's Dream of the First Folio](/images/msndactus_secondus.jpg)](/images/msndactus_secondus.jpg)
 
@@ -142,7 +142,7 @@ Some of Shakespeare plays use mostly verse spoken by the characters, whereas oth
 
 **Verse** is deliberately broken at the end of the line and the next line will start with an uppercase letter. Verse may break before the end of the verse line if there is no more space; this usually only happens when the line is long or the font size is large.
 
-> Note: in eBook or web publishing text must be allowed to flow naturally when space runs out for the line. When this happens we want to see that the wrapped line is set in from the left edge.
+> Note: in eBook or web publishing text must be allowed to flow naturally when space runs out for the line. When this happens in a line of verse we want to see that the wrapped line is set in from the left edge.
 
 **Our text source**
 
@@ -340,7 +340,7 @@ To change the uppercase words into we need to use a script. I should give credit
 
 ## InDesign and XML
 
-Publishing students need a basic understanding of XML and marking up a logical structure of a Shakespeare play provides a good introduction. The relationship between XML and InDesign[^4] is not ideal, but for us we can export XML after having applied the styles at object, paragraph and character level correctly and use the XML output as a way to check the correct use of these styles.
+Publishing students need a basic understanding of XML and marking up a logical structure of a Shakespeare play provides a good introduction. The relationship between XML and InDesign[^5] is not ideal, but for us we can export XML after having applied the styles at object, paragraph and character level correctly and use the XML output as a way to check the correct use of these styles.
 
 Exporting the XML from the Shakespeare play is one of the early assignments and is assessed with the following in mind:
 
@@ -395,10 +395,13 @@ Bringhurst, R. (2012) _The elements of typographic style_. Fourth edition (versi
 
 Peter Kahrel (2006) Automating InDesign with regular expressions. [Sebastopol, Calif.]: O’Reilly.
 
+
 [^1]: Hamlet
 
 [^2]: See Book Typography: a designer’s manual, Mitchell and Wightman, 2005
 
 [^3]: Folger image collection is a good source. https://luna.folger.edu
 
-[^4]: Maivald, J. J. and Palmer, C. (2008) A designer’s guide to Adobe InDesign and XML: harness the power of XML to automate your print and web workflows. Berkeley, Calif: Adobe.
+[^4]: The Bodleian First Folio - http://firstfolio.bodleian.ox.ac.uk
+
+[^5]: Maivald, J. J. and Palmer, C. (2008) A designer’s guide to Adobe InDesign and XML: harness the power of XML to automate your print and web workflows. Berkeley, Calif: Adobe.

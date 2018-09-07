@@ -8,5 +8,5 @@
 ehthumbs.db
 Thumbs.db
 *.icloud
-_site/
+_site/*.*
 sandbox.html

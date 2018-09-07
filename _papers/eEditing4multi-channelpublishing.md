@@ -5,7 +5,7 @@ date: 2018-09-07
 images: full-width
 published: true
 annotate: true
-version: [0.6]
+version: [0.61]
 Author: Chris Jennings
 status: [needs checking]
 comments: true
@@ -98,6 +98,14 @@ I show here an example of _Editorial_ in use.
 There are other apps,  that use markdown for both iOS and desktop computers.
 
 [![Ulysses, a writing app](/images/IMG_0067.png)](/images/IMG_0067.png)
+
+I should also give a big mention to `Atom` a free editor for desktop computers. Below you see a screenshot with the `markdown` on the left and a preview on the right.
+
+[![Atom  a feee text and code editor](/images/Screenshot 2018-09-07 16.19.03.png)](/images/Screenshot 2018-09-07 16.19.03.png)
+
+Atom is available from [atom.io][332bd3a3]
+
+  [332bd3a3]: https://atom.io "you can download the software from here"
 
 ### Conversion to other formats
 

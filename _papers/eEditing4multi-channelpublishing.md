@@ -1,13 +1,13 @@
 ---
 layout: paper
 title: eEditing for multi-channel publishing
-date: 2018-09-07
+date: 2018-09-09
 images: full-width
 published: true
 annotate: true
-version: [0.61]
+version: [0.62]
 Author: Chris Jennings
-status: [needs checking]
+status: [early release]
 comments: true
 blurb: When content is edited in a browser and shared on a web server, there is a potential to convert this text and image in combination to a variety of formats. These formats can then be used in both print and digital product outputs.
 ---
@@ -41,6 +41,12 @@ However, we want to focus on entirely different approaches and so we should look
 Since our objective is to provide documents that will eventually, serve multiple formats we want our text to be logically structured.
 
 The problem of word processing software, is that it is too easy to select styling that only visually enhance the text but does not adhere to any structural conformance. A word processed document that looks good, may not lend itself to being the basis for formats such as HTML and ePub. Since we know that web pages and ePub (also formed from HTML) keeping the structure as simple as the basic markup
+
+### What do we mean by Multi-channels?
+
+This is best illustrated by this diagram of the different types of file that can be output from the same content.
+
+[![ from editing in the cloud to multiple outputs](/images/eEdit forMulti-platform.png)](/images/eEdit forMulti-platform.png)
 
 ### What do I mean by structuring the text?
 

@@ -9,7 +9,7 @@ images: none
 image: /images/eEditing_in_Browser.001.jpeg
 excerpt_separator: <!--more-->
 ---
-### eEditing in the Browser
+### Browser based systems for editing books and output to multiple formats
 
 [![The first frame of the presentation](/images/eEditing_in_Browser.001.jpeg)](/images/eEditing_in_Browser.001.jpeg)
 

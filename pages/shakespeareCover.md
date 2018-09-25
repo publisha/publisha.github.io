@@ -4,7 +4,7 @@ title: Using Photoshop and InDesign to Create a Cover for Print
 published: true
 tags: [InDesign, Photoshop]
 categories: [InDesign, Typography, "Design and Production"]
-date: 2017-07-27
+date: 2018-09-25
 blurb: We need a print ready PDF of the full cover for a paperback book with image (optional) and title on the front and some blurb on the back.
 order: 1
 ---
@@ -34,25 +34,25 @@ We need a print ready PDF of the full cover for a paperback book with image (opt
 
 We will need some assets, such as images and text and we will use Photoshop to modify any images that we intend to use. We will use InDesign to prepare the PDF ready for print.
 
-> **Note**: It is presumed that you have downloaded the files from the [GitHub repository here](https://github.com/publisha/shakespeare_repo).
+> **Note:** It is presumed that you have downloaded the files from the [GitHub repository here](https://github.com/publisha/shakespeare_repo).
 
 Your task (once you decide on the play to use) is to design a cover with the following steps:
 
-- Use a blank Photoshop file with the size 198mm x 129mm (portrait and 300dpi)
+- Use a new blank Photoshop file with the size 198mm x 129mm (portrait and 300dpi)
 - Arrange in that space the title of the play
 - Keep it simple at first and use layers to try different versions
 - Try colour for the text
 - Possibly add an image on another layer
 - Make sure that there is enough contrast between the image and the text
 - Optionally add further text (Shakespeare, quotes from the play etc)
-- Add this image to the InDesign template for the whole Cover
-- Add spine text
-- Add text for blurb on back of Cover
-- Add images etc.
+
+Once you have some clear idea for your design you can now use the provided template that represents the full cover (back, spine and front). You can use this to further develop your ideas for the whole cover that might include an image that goes around the spine and the back.
 
 ## Our page size
 
-For this exercise we are proposing a book page size of 198mm x 129mm. We need to double this and add a spine (for this book we will choose a spine of 12mm) and a bleed of 3mm. We need a bleed because the image on the cover will go right to the edge and be trimmed.
+### Some maths
+
+We are using a book page size of 198mm x 129mm. We need to double this and add a spine (for this book we will choose a spine of 12mm) and a bleed of 3mm. We need a bleed because the image on the cover will go right to the edge and be trimmed.
 
 Ultimately we need an InDesign document for the complete cover, and we provide a template for this, using these dimensions. If you want to mock up the cover using Photoshop (because you want to use images or painterly techniques) then you need a template with the following dimensions.
 
@@ -64,8 +64,8 @@ Making the calculations we get:
 
 These are the dimensions we use in Photoshop so that we can simulate the full document that we use in InDesign.
 
-You will find a Photoshop template in the module repository for this.
-
+**You will find a Photoshop template in the module repository for this.
+**
 > **Note: **Optionally you can create a Photoshop blank just for the front of the cover. This needs to be 198mm x 129mm in 300DPI.
 
 Here are some images that show how you can use the suggested Photoshop blank to try different options for your play title typography.
@@ -88,7 +88,7 @@ Units & Rulers - use millimetres for the rulers and points for type
 
 ## Open the Photoshop template file (FullShakepeareCover.psd)
 
-The downloaded image can be opened in another Photoshop window and after selecting all, copy and paste into the newly opened file. This gives us a new layer.
+The image downloaded from Folger can be opened in another Photoshop window and after selecting all, copy and paste into the newly opened file. This gives us a new layer.
 
 Because this image is too small (only 72dpi), we need to enlarge (use Edit&gt;Transform&gt;Scale). This would not be required if we were to purchase the higher resolution version! Photoshop does a reasonable job of keeping the image sharp after enlargement.
 
@@ -102,7 +102,7 @@ We can create further layers in Photoshop to add tints or blends.
 
 The more layers that you use the more flexibility in the design you will have. Create a new layer by clicking the Create New Layer icon at the bottom right of the layer panel. Lets create a gradient or blend of colours in that layer. The gradient tool is in the centre of the tools panel. You need to decide on a direction for the blend. You can either go from the foreground to the background colour or from the foreground to transparent.
 
-Save the Photoshop document so far.
+Save the Photoshop document so far. Now we move on to:
 
 ## InDesign
 

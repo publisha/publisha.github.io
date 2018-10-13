@@ -40,7 +40,7 @@ Entering and editing text in a web browser will rely on a friendly interface tha
 
 Since our objective is to provide documents that will eventually, serve multiple formats we want our text to be logically structured.
 
-The problem of word processing software, is that it is too easy to select styling that only visually enhances the text but does not adhere to any structural conformance. A word processed document that looks good, may not lend itself to being the basis for formats such as HTML and ePub (also formed form HTML). 
+The problem of word processing software, is that it is too easy to select styling that only visually enhances the text but does not adhere to any structural conformance. A word processed document that looks good, may not lend itself to being the basis for formats such as HTML and ePub (also formed form HTML).
 
 ### What do we mean by Multi-channels?
 
@@ -178,6 +178,11 @@ You will notice from this screen image that `Prose` also includes a row of icons
 
 Not all systems use `Markdown` as the basis for text input and there are many plugins that web developers can use to build user text input. Popular systems such as TinyMCE and CKEditor can be seen in use on many blogging systems. These systems can be customised to control a limited set of options for the authors and editors.
 
+[![Here showing the CKEditor in use for a text entry field.](/images/ckeditor.png)](/images/ckeditor.png)
+
+[Read more about the CKEditor here][227e8bf1].
+
+  [227e8bf1]: https://ckeditor.com "The CKEdotor web site"
 
 ### Booktype
 
@@ -189,7 +194,7 @@ I have now built an editing system based on this software here: [booktype.publis
 
 Here it is in action.
 
-[![Animated scren view of ePublsha](/images/usingbooktype.gif)](/images/usingbooktype.gif)
+[![Animated screen view of BookType.Publisha](/images/usingbooktype.gif)](/images/usingbooktype.gif)
 
 You can see from the image below that there are a variety of formats available for export.
 

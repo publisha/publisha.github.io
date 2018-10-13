@@ -5,7 +5,7 @@ date: 2018-10-13
 images: full-width
 published: true
 annotate: true
-version: [0.7]
+version: [0.72]
 Author: Chris Jennings
 status: [early release]
 comments: true
@@ -176,7 +176,7 @@ You will notice from this screen image that `Prose` also includes a row of icons
 
 ## Other text input systems
 
-Not all systems use `Markdown` as the basis for text input and there are many plugins that web developers can use to build user text input. Popular systems such as TinyMCE and CKEditor can be seen in use on many blogging systems. These systems can be customised to control a limited set of options for the authors and editors.
+Not all systems use `Markdown` as the basis for text input and there are many plugins that web developers can use to build user text input systems. Popular products such as _TinyMCE_ and _CKEditor_ can be seen in use on many blogging systems. These systems can be customised to control a limited set of options for the authors and editors.
 
 [![Here showing the CKEditor in use for a text entry field.](/images/ckeditor.png)](/images/ckeditor.png)
 

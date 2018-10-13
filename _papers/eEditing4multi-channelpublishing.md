@@ -1,11 +1,11 @@
 ---
 layout: paper
 title: eEditing for multi-channel publishing
-date: 2018-09-09
+date: 2018-10-13
 images: full-width
 published: true
 annotate: true
-version: [0.62]
+version: [0.7]
 Author: Chris Jennings
 status: [early release]
 comments: true
@@ -34,13 +34,13 @@ The are are now several systems available that make use of web browsers (Google 
 
 Authors use word processors to write text. This is a truism. Although there are many word processing programs on the market, Microsoft Word is the most common and although the format is propriety, files can be converted and edited with other tools.  LibreOffice Office is a good alternative to Word and for Apple users there is Pages that can open Word files and export back to the Word format.
 
-However, we want to focus on entirely different approaches and so we should look at another phenomenon that makes use of another way of entering and formatting text. This takes the form of a markup format that is both machine and human readable– `Markdown`.
+Entering and editing text in a web browser will rely on a friendly interface that provides a limited set of options for structure and style and these may be based on a browser plugin or use a `Markdown` toolset.
 
 ## Structure rather than Style
 
 Since our objective is to provide documents that will eventually, serve multiple formats we want our text to be logically structured.
 
-The problem of word processing software, is that it is too easy to select styling that only visually enhance the text but does not adhere to any structural conformance. A word processed document that looks good, may not lend itself to being the basis for formats such as HTML and ePub. Since we know that web pages and ePub (also formed from HTML) keeping the structure as simple as the basic markup
+The problem of word processing software, is that it is too easy to select styling that only visually enhances the text but does not adhere to any structural conformance. A word processed document that looks good, may not lend itself to being the basis for formats such as HTML and ePub (also formed form HTML). 
 
 ### What do we mean by Multi-channels?
 
@@ -48,7 +48,7 @@ This is best illustrated by this diagram of the different types of file that can
 
 [![ from editing in the cloud to multiple outputs](/images/eEdit forMulti-platform.png)](/images/eEdit forMulti-platform.png)
 
-### What do I mean by structuring the text?
+### What do we mean by structuring the text?
 
 First of all we have the `blocks` of text; these can be paragraphs, headings, lists or blockquotes. Headings can have different levels that head up divisions and help guide the reader through the sections. The headings need to be nested properly; so a sub heading will follow a top level heading, not the other way around. Paragraphs  are the basic blocks of text and are usually all of the same, although we might define a different type of paragraph that follows a heading. Blockquotes are paragraphs that may be set differently; drawing attention to themselves.
 
@@ -171,6 +171,13 @@ GitBook uses a repository held in GitHub as the source files. It is possible to 
 **Prose.io** is a server based *markdown* tool that can be used to edit text held in a GitHub repository. While this system is effective and very easy to uses, the prime focus is editing for a web site, rather than for other platforms. [^13]
 
 [![Prose.io](/images/iterativePublishing.044.jpeg)](/images/iterativePublishing.044.jpeg)
+
+You will notice from this screen image that `Prose` also includes a row of icons that make the process of entering *markdown* a lot easier for the user if they have little knowledge of the required markup. This set of icons leads us on to look at other input systems providing a more user friendly approach to browser based editing.
+
+## Other text input systems
+
+Not all systems use `Markdown` as the basis for text input and there are many plugins that web developers can use to build user text input. Popular systems such as TinyMCE and CKEditor can be seen in use on many blogging systems. These systems can be customised to control a limited set of options for the authors and editors.
+
 
 ### Booktype
 

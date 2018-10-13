@@ -19,7 +19,7 @@
         <p class="editor"><strong>Page status:</strong> {{page.status}}
         {%- endif -%}
         {%- if page.date != null -%}
-        {%- if page.version != null -%}<span class="version"><strong>Version:</strong> {{page.version}}{%- endif -%} | {{ page.date | date: '%B %d, %Y' }}</span>
+        {%- if page.version != null -%}<span class="version"><strong>Version:</strong> {{page.version}}{%- endif -%}  | {{ page.date | date: '%B %d, %Y' }}</span>
         </p>
         {%- endif -%}
         {{ content }}

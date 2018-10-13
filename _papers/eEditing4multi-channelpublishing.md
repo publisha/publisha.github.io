@@ -5,7 +5,7 @@ date: 2018-10-13
 images: full-width
 published: true
 annotate: true
-version: [0.72]
+version: [0.73]
 Author: Chris Jennings
 status: [early release]
 comments: true
@@ -131,6 +131,10 @@ $ pandoc --wrap=none --extract-media=images somefile.docx
  -o mynewfile.md
 
  Since **Pandoc** can be utilised on a web server, it can also be used by online tools to form publishing options.
+
+ [More about Pandoc here][852da9ef].
+
+  [852da9ef]: http://pandoc.org "Go to the Pandoc web site"
 
  Let us now explore some online systems that can provide multi-format export after editing in the browser.  Many of these systems also provide collaborative editing.
 

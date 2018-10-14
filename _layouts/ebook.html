@@ -1,0 +1,25 @@
+---
+layout: default
+type: ebook
+---
+
+<div class="post">
+<h1>{{ page.title }}</h1>
+<span class="post-date">{{ page.date | date_to_string }}</span>
+<img class="fullsize" src="{{ page.coverimage }}" {%- if page.covercaption == null -%}alt="eBook Cover"{% else %}alt="{{ page.covercaption }}"{%- endif -%} />
+  {{ content }}
+  <p><a href="{{ site.baseurl }}/eBooks/"><i class="fa fa-chevron-left" aria-hidden="true"></i> See all eBooks</a></p>
+</div>
+
+
+<!-- here follows a script to put the alt tag to a caption under the images -->
+
+<script>
+$(".content img").each(function() {
+    var imageCaption = $(this).attr("alt");
+    if (imageCaption != '') {
+        $("<span class='caption'><em>" + imageCaption +
+            "</em></span>").insertAfter(this);
+    }
+});
+</script>

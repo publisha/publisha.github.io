@@ -22,7 +22,7 @@ author:
 
 
 # Custom vars
-version:          0.62
+version:          0.7
 
 github:
   repo:           publisha.github.io
@@ -97,6 +97,13 @@ collections:
     title: 'Images from Flickr'
     defaults:
       layout: flickr
+
+  eBooks:
+    output: true
+    title: 'eBooks Created Here'
+    defaults:
+      layout: ebook
+      excerpt_separator: <!--more-->
 
 
 # for prose

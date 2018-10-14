@@ -87,9 +87,9 @@ background:#a2a2a2;
 <meta property="og:url" content="http://localhost:4000/papers/eEditing4multi-channelpublishing/" />
 <meta property="og:site_name" content="Digital Publishing Hub" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-09-09T00:00:00+01:00" />
+<meta property="article:published_time" content="2018-10-13T00:00:00+01:00" />
 <script type="application/ld+json">
-{"name":null,"description":"On this Page","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/papers/eEditing4multi-channelpublishing/","publisher":null,"image":null,"headline":"eEditing for multi-channel publishing","dateModified":"2018-09-09T00:00:00+01:00","datePublished":"2018-09-09T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/papers/eEditing4multi-channelpublishing/"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"On this Page","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/papers/eEditing4multi-channelpublishing/","publisher":null,"image":null,"headline":"eEditing for multi-channel publishing","dateModified":"2018-10-13T00:00:00+01:00","datePublished":"2018-10-13T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/papers/eEditing4multi-channelpublishing/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 </head>
 <title>
@@ -103,7 +103,7 @@ background:#a2a2a2;
     </div>
     </progress>
     <div class="wrap">
-      <div class="container content"><p class="editor"><strong>Page status:</strong> early release<span class="version"><strong>Version:</strong> 0.62| September 09, 2018</span>
+      <div class="container content"><p class="editor"><strong>Page status:</strong> early release<span class="version"><strong>Version:</strong> 0.73| October 13, 2018</span>
         </p><!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class="toc">
   <h2 id="on-this-page">On this Page</h2>
@@ -130,13 +130,13 @@ background:#a2a2a2;
 
 <p>Authors use word processors to write text. This is a truism. Although there are many word processing programs on the market, Microsoft Word is the most common and although the format is propriety, files can be converted and edited with other tools.  LibreOffice Office is a good alternative to Word and for Apple users there is Pages that can open Word files and export back to the Word format.</p>
 
-<p>However, we want to focus on entirely different approaches and so we should look at another phenomenon that makes use of another way of entering and formatting text. This takes the form of a markup format that is both machine and human readable– <code class="highlighter-rouge">Markdown</code>.</p>
+<p>Entering and editing text in a web browser will rely on a friendly interface that provides a limited set of options for structure and style and these may be based on a browser plugin or use a <code class="highlighter-rouge">Markdown</code> toolset.</p>
 
 <h2 id="structure-rather-than-style">Structure rather than Style</h2>
 
 <p>Since our objective is to provide documents that will eventually, serve multiple formats we want our text to be logically structured.</p>
 
-<p>The problem of word processing software, is that it is too easy to select styling that only visually enhance the text but does not adhere to any structural conformance. A word processed document that looks good, may not lend itself to being the basis for formats such as HTML and ePub. Since we know that web pages and ePub (also formed from HTML) keeping the structure as simple as the basic markup</p>
+<p>The problem of word processing software, is that it is too easy to select styling that only visually enhances the text but does not adhere to any structural conformance. A word processed document that looks good, may not lend itself to being the basis for formats such as HTML and ePub (also formed form HTML).</p>
 
 <h3 id="what-do-we-mean-by-multi-channels">What do we mean by Multi-channels?</h3>
 
@@ -144,7 +144,7 @@ background:#a2a2a2;
 
 <p><a href="/images/eEdit forMulti-platform.png"><img src="/images/eEdit forMulti-platform.png" alt=" from editing in the cloud to multiple outputs" /></a></p>
 
-<h3 id="what-do-i-mean-by-structuring-the-text">What do I mean by structuring the text?</h3>
+<h3 id="what-do-we-mean-by-structuring-the-text">What do we mean by structuring the text?</h3>
 
 <p>First of all we have the <code class="highlighter-rouge">blocks</code> of text; these can be paragraphs, headings, lists or blockquotes. Headings can have different levels that head up divisions and help guide the reader through the sections. The headings need to be nested properly; so a sub heading will follow a top level heading, not the other way around. Paragraphs  are the basic blocks of text and are usually all of the same, although we might define a different type of paragraph that follows a heading. Blockquotes are paragraphs that may be set differently; drawing attention to themselves.</p>
 
@@ -241,6 +241,8 @@ A paragraph of text looks like this and simply continues <span class="gs">**alth
 
 <p>Since <strong>Pandoc</strong> can be utilised on a web server, it can also be used by online tools to form publishing options.</p>
 
+<p><a href="http://pandoc.org" title="Go to the Pandoc web site">More about Pandoc here</a>.</p>
+
 <p>Let us now explore some online systems that can provide multi-format export after editing in the browser.  Many of these systems also provide collaborative editing.</p>
 
 <h2 id="working-files-in-the-cloud">Working Files in the Cloud</h2>
@@ -283,6 +285,16 @@ A paragraph of text looks like this and simply continues <span class="gs">**alth
 
 <p><a href="/images/iterativePublishing.044.jpeg"><img src="/images/iterativePublishing.044.jpeg" alt="Prose.io" /></a></p>
 
+<p>You will notice from this screen image that <code class="highlighter-rouge">Prose</code> also includes a row of icons that make the process of entering <em>markdown</em> a lot easier for the user if they have little knowledge of the required markup. This set of icons leads us on to look at other input systems providing a more user friendly approach to browser based editing.</p>
+
+<h2 id="other-text-input-systems">Other text input systems</h2>
+
+<p>Not all systems use <code class="highlighter-rouge">Markdown</code> as the basis for text input and there are many plugins that web developers can use to build user text input systems. Popular products such as <em>TinyMCE</em> and <em>CKEditor</em> can be seen in use on many blogging systems. These systems can be customised to control a limited set of options for the authors and editors.</p>
+
+<p><a href="/images/ckeditor.png"><img src="/images/ckeditor.png" alt="Here showing the CKEditor in use for a text entry field." /></a></p>
+
+<p><a href="https://ckeditor.com" title="The CKEdotor web site">Read more about the CKEditor here</a>.</p>
+
 <h3 id="booktype">Booktype</h3>
 
 <p>BookType is OpenSource software that can be installed on your own web server or as a paid for service.</p>
@@ -291,7 +303,7 @@ A paragraph of text looks like this and simply continues <span class="gs">**alth
 
 <p>Here it is in action.</p>
 
-<p><a href="/images/usingbooktype.gif"><img src="/images/usingbooktype.gif" alt="Animated scren view of ePublsha" /></a></p>
+<p><a href="/images/usingbooktype.gif"><img src="/images/usingbooktype.gif" alt="Animated screen view of BookType.Publisha" /></a></p>
 
 <p>You can see from the image below that there are a variety of formats available for export.</p>
 

@@ -48,8 +48,8 @@ Take a note of the width (yours may be different to mine). Now **change** the wi
 
 Here is mine:
 
-```css
-<div style='position:absolute;
+```html
+<div style="position:absolute;
 overflow:hidden;
 left:0px;
 top:0px;
@@ -57,7 +57,7 @@ top:0px;
 -ms-transform:translate(0.00px,0.00px);
 transform:translate(0.00px,0.00px);
 width:396.00px;
-height:594.00px;'>
+height:594.00px;">
 ```
 
 The width should be changed from `396.00px` to `792px`

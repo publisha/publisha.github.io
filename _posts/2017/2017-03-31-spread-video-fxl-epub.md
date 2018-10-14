@@ -1,11 +1,13 @@
 ---
 layout: "post"
 title: "Video across a 2 page spread"
-date: "2018-04-09 18:02"
+date: "2018-10-14 19:31"
 published: true
 categories: [InDesign, ePub, HTML]
 ---
 **Updated with a javascript solution**
+
+>Read-on for an explanation of the problem, but then you will find a better solution at the end using javascript.
 
 There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width.
 
@@ -91,8 +93,29 @@ I suppose you might just as well delete all of the last <div> or use HTML commen
 
 > Note: Any of these changes will be reversed if you re-export from InDesign, so you should only do this at the end of your workflow or copy this code somewhere and paste back in at the end.
 
+## The Javascript resolution
 
-[^1]: It may be possible to use javascript to change the markup on the page dynamically and thereby allowing us to change this even if we have made further edits in InDesign. Let me know if you find a way.
+When exporting from InDesign, add the following script
+
+```javascript
+// run this once the page has loaded
+window.onload = function(){
+  // find out if there is more than one video over the spread
+ videos = document.getElementsByTagName("video").length;
+ if (videos > 1) {
+   var css = document.createElement("style");
+   css.type = "text/css";
+   // hide the second main div of the body
+   // make the width of the first main div the same as the viewport
+   css.innerHTML = "body > div:nth-child(2) {display:none;} body > div:nth-child(1) {width:732px !important;}"
+   // write this css to the head of the page
+   document.body.appendChild(css);
+ }
+ };
+ ```
+
+
+[^1]: It may be possible to use javascript to change the markup on the page dynamically and thereby allowing us to change this even if we have made further edits in InDesign. Let me know if you find a way. **Done**
 
 
 [^2]: The reason that there is javascript to autoplay the video rather than just using 'autoplay' is that Apple iOS devices do not support the HTML5 video autostart attribute.

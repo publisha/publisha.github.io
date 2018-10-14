@@ -5,6 +5,9 @@ date: "2018-10-14 19:31"
 published: true
 categories: [InDesign, ePub, HTML]
 ---
+
+### In a fixed-layout ePub exported from Indesign
+
 **Updated with a javascript solution**
 
 >Read-on for an explanation of the problem, but then you will find a better solution at the end using javascript.

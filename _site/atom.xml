@@ -4,13 +4,169 @@
  <title>Digital Publishing Hub</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2018-10-14T15:43:29+01:00</updated>
+ <updated>2018-10-14T19:50:26+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Chris Jennings</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Video across a 2 page spread (updated)</title>
+   <link href="http://localhost:4000/indesign/epub/html/2018/10/14/spread-video-fxl-epub/"/>
+   <updated>2018-10-14T19:31:00+01:00</updated>
+   <id>http://localhost:4000/indesign/epub/html/2018/10/14/spread-video-fxl-epub</id>
+   <content type="html">&lt;p&gt;There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width. &lt;strong&gt;Updated with a javascript solution&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Read-on for an explanation of the problem, but then you will find a better solution at the end using javascript.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;there-are-really-2-videos-one-on-each-half&quot;&gt;There are really 2 videos (one on each half)&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/videoover2_broke.png&quot;&gt;&lt;img src=&quot;/images/2017/03/videoover2_broke.png&quot; alt=&quot;In iBooks, the video is split&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;When you export to the fixed-layout ePub from InDesign – and you choose the &lt;code class=&quot;highlighter-rouge&quot;&gt;Convert Spread to Landscape&lt;/code&gt; option. The process takes the pair of pages and creates one XHTML file (in the ePub package) with a viewport dimension based on the overall width of 2 pages. But, it also creates a 2 divisions with a width obtained from the width of the page. Inside these &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;s, it puts a copy of the video; there are 2 videos on the ePub page.&lt;/p&gt;
+
+&lt;h2 id=&quot;can-we-fix&quot;&gt;Can we fix?&lt;/h2&gt;
+
+&lt;p&gt;Yes, but only by editing the XHTML inside the ePub package!&lt;/p&gt;
+
+&lt;p&gt;Before we go ahead and show those changes you are advised to keep the spread where the video sits very simple; remove page numbers and headers and any empty text boxes that are sitting around on those pages.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: When you edit the XHTML inside the ePub package you will lose the ability to &lt;em&gt;round-trip&lt;/em&gt; to InDesign, so leave these changes to the last in your workflow.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;why-do-we-need-to-edit-the-xhtml&quot;&gt;Why do we need to edit the XHTML?&lt;/h2&gt;
+
+&lt;p&gt;Blame Adobe! When the ePub is exported to fixed-layout specifying &lt;code class=&quot;highlighter-rouge&quot;&gt;Convert Spread to Landscape&lt;/code&gt; a single XHTML document is created for the pair of pages, however, a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; for each page is created with &lt;em&gt;inline styling&lt;/em&gt; but &lt;strong&gt;no&lt;/strong&gt; id or class name. &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;here-are-the-steps-then&quot;&gt;Here are the steps then.&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The spread where you have the video needs to be simplified; that is, get rid of page numbers, headers and even empty text frames. The reason for this, is that you will be editing the XHTML, and you want to keep this simple!&lt;/li&gt;
+  &lt;li&gt;You will need to unpack the ePub after you have exported.&lt;/li&gt;
+  &lt;li&gt;You now need to find the XHTML file that contains the video.&lt;/li&gt;
+  &lt;li&gt;You now need to make 2 changes to this file.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Look at this line:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;viewport&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;width=792,height=594&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Take a note of the width (yours may be different to mine). Now &lt;strong&gt;change&lt;/strong&gt; the width on the first &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, because this will have a width that is half of the width above; You see that this is an inline CSS - this is why we cannot change in our own CSS.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/03/editHTML2videos.png&quot;&gt;&lt;img src=&quot;/images/2017/03/editHTML2videos.png&quot; alt=&quot;This shows the HTML where the video is displayed across 2 pages&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is mine:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;position:absolute;
+overflow:hidden;
+left:0px;
+top:0px;
+-webkit-transform:translate(0.00px,0.00px);
+-ms-transform:translate(0.00px,0.00px);
+transform:translate(0.00px,0.00px);
+width:396.00px;
+height:594.00px;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The width should be changed from &lt;code class=&quot;highlighter-rouge&quot;&gt;396.00px&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;792px&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The next change is to hide the second &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;. Find the second block that also has a width set to half the overall viewport width and add (within the inline style):&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;display:none;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;autoplaying-the-video&quot;&gt;Autoplaying the Video&lt;/h2&gt;
+
+&lt;p&gt;InDesign does provide a tick box on the media panel to play on page load. This effectively gets the video going straight away. In this situation there is a danger that using the above method to display the video fully across the spread may result in the video playing twice, and with sound this may result in an unpleasant echo.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/2017/04/autoplayvideo.png&quot;&gt;&lt;img src=&quot;/images/2017/04/autoplayvideo.png&quot; alt=&quot;The play on page load tick box&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-solve-this&quot;&gt;How to solve this?&lt;/h3&gt;
+
+&lt;p&gt;By simply adding &lt;code class=&quot;highlighter-rouge&quot;&gt;display:none;&lt;/code&gt; we have hidden the second copy of the video, but it will still play if told to do so with ‘autoplay’.&lt;/p&gt;
+
+&lt;p&gt;We could remove the ‘autoplay’ in the HTML for the video.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;video&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;_idVideo000&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;poster=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image/80.png&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;autoplay=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;autoplay&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;source&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;video/msnd01.mp4&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;video/mp4&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/video&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;However, this is not enough, because InDesign has used javascript to start the video &lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and you will need to disable for second video by removing this:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mediaOnPageLoadActions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;onMediaStart(selfContainerID,0.00,0);&quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I suppose you might just as well delete all of the last &amp;lt;div&amp;gt; or use HTML comment tags to remove.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note: Any of these changes will be reversed if you re-export from InDesign, so you should only do this at the end of your workflow or copy this code somewhere and paste back in at the end.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;the-javascript-resolution&quot;&gt;The Javascript resolution&lt;/h2&gt;
+
+&lt;p&gt;When exporting from InDesign, add the following script&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;// run this once the page has loaded&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onload&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// find out if there is more than one video over the spread&lt;/span&gt;
+ &lt;span class=&quot;nx&quot;&gt;videos&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementsByTagName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;video&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;videos&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;css&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;style&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+   &lt;span class=&quot;nx&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;text/css&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;// hide the second main div of the body&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;// make the width of the first main div the same as the viewport&lt;/span&gt;
+   &lt;span class=&quot;nx&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;body &amp;gt; div:nth-child(2) {display:none;} body &amp;gt; div:nth-child(1) {width:732px !important;}&quot;&lt;/span&gt;
+   &lt;span class=&quot;c1&quot;&gt;// write this css to the head of the page&lt;/span&gt;
+   &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;appendChild&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;It may be possible to use javascript to change the markup on the page dynamically and thereby allowing us to change this even if we have made further edits in InDesign. Let me know if you find a way. &lt;strong&gt;Done&lt;/strong&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;The reason that there is javascript to autoplay the video rather than just using ‘autoplay’ is that Apple iOS devices do not support the HTML5 video autostart attribute. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Using Booktype to create a book in multiple formats</title>
@@ -163,117 +319,6 @@ https://www.flickr.com/services/api/explore/flickr.photosets.getPhotos&lt;/p&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot;&gt;
       &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Flickr&quot; title=&quot;Have a look at Wikipedia and make a donation while you're there.&quot;&gt;Wikipedia&lt;/a&gt; will give you a brief history. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Video across a 2 page spread</title>
-   <link href="http://localhost:4000/indesign/epub/html/2018/04/09/spread-video-fxl-epub/"/>
-   <updated>2018-04-09T18:02:00+01:00</updated>
-   <id>http://localhost:4000/indesign/epub/html/2018/04/09/spread-video-fxl-epub</id>
-   <content type="html">&lt;p&gt;&lt;strong&gt;Updated with a javascript solution&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;There is an issue when video in a fixed layout ePub spans across 2 pages. This situation arises when you have 2 page spreads and you are converting to landscape. What happens is the video only really plays one half, even though, at first the video appears to be available full width.&lt;/p&gt;
-
-&lt;h2 id=&quot;there-are-really-2-videos-one-on-each-half&quot;&gt;There are really 2 videos (one on each half)&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/2017/03/videoover2_broke.png&quot;&gt;&lt;img src=&quot;/images/2017/03/videoover2_broke.png&quot; alt=&quot;In iBooks, the video is split&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;When you export to the fixed-layout ePub from InDesign – and you choose the &lt;code class=&quot;highlighter-rouge&quot;&gt;Convert Spread to Landscape&lt;/code&gt; option. The process takes the pair of pages and creates one XHTML file (in the ePub package) with a viewport dimension based on the overall width of 2 pages. But, it also creates a 2 divisions with a width obtained from the width of the page. Inside these &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;s, it puts a copy of the video; there are 2 videos on the ePub page.&lt;/p&gt;
-
-&lt;h2 id=&quot;can-we-fix&quot;&gt;Can we fix?&lt;/h2&gt;
-
-&lt;p&gt;Yes, but only by editing the XHTML inside the ePub package!&lt;/p&gt;
-
-&lt;p&gt;Before we go ahead and show those changes you are advised to keep the spread where the video sits very simple; remove page numbers and headers and any empty text boxes that are sitting around on those pages.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Note: When you edit the XHTML inside the ePub package you will lose the ability to &lt;em&gt;round-trip&lt;/em&gt; to InDesign, so leave these changes to the last in your workflow.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;why-do-we-need-to-edit-the-xhtml&quot;&gt;Why do we need to edit the XHTML?&lt;/h2&gt;
-
-&lt;p&gt;Blame Adobe! When the ePub is exported to fixed-layout specifying &lt;code class=&quot;highlighter-rouge&quot;&gt;Convert Spread to Landscape&lt;/code&gt; a single XHTML document is created for the pair of pages, however, a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; for each page is created with &lt;em&gt;inline styling&lt;/em&gt; but &lt;strong&gt;no&lt;/strong&gt; id or class name. &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;here-are-the-steps-then&quot;&gt;Here are the steps then.&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;The spread where you have the video needs to be simplified; that is, get rid of page numbers, headers and even empty text frames. The reason for this, is that you will be editing the XHTML, and you want to keep this simple!&lt;/li&gt;
-  &lt;li&gt;You will need to unpack the ePub after you have exported.&lt;/li&gt;
-  &lt;li&gt;You now need to find the XHTML file that contains the video.&lt;/li&gt;
-  &lt;li&gt;You now need to make 2 changes to this file.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Look at this line:&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;viewport&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;width=792,height=594&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Take a note of the width (yours may be different to mine). Now &lt;strong&gt;change&lt;/strong&gt; the width on the first &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;, because this will have a width that is half of the width above; You see that this is an inline CSS - this is why we cannot change in our own CSS.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/2017/03/editHTML2videos.png&quot;&gt;&lt;img src=&quot;/images/2017/03/editHTML2videos.png&quot; alt=&quot;This shows the HTML where the video is displayed across 2 pages&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Here is mine:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-CSS&quot;&gt;&amp;lt;div style=&quot;position:absolute;
-overflow:hidden;
-left:0px;
-top:0px;
--webkit-transform:translate(0.00px,0.00px);
--ms-transform:translate(0.00px,0.00px);
-transform:translate(0.00px,0.00px);
-width:396.00px;
-height:594.00px;&quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The width should be changed from &lt;code class=&quot;highlighter-rouge&quot;&gt;396.00px&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;792px&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The next change is to hide the second &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;. Find the second block that also has a width set to half the overall viewport width and add (within the inline style):&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;display:none;&lt;/code&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;autoplaying-the-video&quot;&gt;Autoplaying the Video&lt;/h2&gt;
-
-&lt;p&gt;InDesign does provide a tick box on the media panel to play on page load. This effectively gets the video going straight away. In this situation there is a danger that using the above method to display the video fully across the spread may result in the video playing twice, and with sound this may result in an unpleasant echo.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/2017/04/autoplayvideo.png&quot;&gt;&lt;img src=&quot;/images/2017/04/autoplayvideo.png&quot; alt=&quot;The play on page load tick box&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;how-to-solve-this&quot;&gt;How to solve this?&lt;/h3&gt;
-
-&lt;p&gt;By simply adding &lt;code class=&quot;highlighter-rouge&quot;&gt;display:none;&lt;/code&gt; we have hidden the second copy of the video, but it will still play if told to do so with ‘autoplay’.&lt;/p&gt;
-
-&lt;p&gt;We could remove the ‘autoplay’ in the HTML for the video.&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;video&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;_idVideo000&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;poster=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image/80.png&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;autoplay=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;autoplay&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;source&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;video/msnd01.mp4&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;video/mp4&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/video&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;However, this is not enough, because InDesign has used javascript to start the video &lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and you will need to disable for second video by removing this:&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;codehilite&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mediaOnPageLoadActions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;onMediaStart(selfContainerID,0.00,0);&quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;I suppose you might just as well delete all of the last &amp;lt;div&amp;gt; or use HTML comment tags to remove.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Note: Any of these changes will be reversed if you re-export from InDesign, so you should only do this at the end of your workflow or copy this code somewhere and paste back in at the end.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;It may be possible to use javascript to change the markup on the page dynamically and thereby allowing us to change this even if we have made further edits in InDesign. Let me know if you find a way. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;The reason that there is javascript to autoplay the video rather than just using ‘autoplay’ is that Apple iOS devices do not support the HTML5 video autostart attribute. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;

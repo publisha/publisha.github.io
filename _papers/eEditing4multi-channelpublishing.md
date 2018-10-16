@@ -1,11 +1,11 @@
 ---
 layout: paper
 title: eEditing for multi-channel publishing
-date: 2018-10-13
+date: 2018-10-16
 images: full-width
 published: true
 annotate: true
-version: [0.73]
+version: [0.75]
 Author: Chris Jennings
 status: [early release]
 comments: true
@@ -30,9 +30,11 @@ blurb: When content is edited in a browser and shared on a web server, there is 
 
 ## Introduction
 
-The are are now several systems available that make use of web browsers (Google Chrome, Safari etc)  to provide editing capability.  Maybe we have become used to  tools that provide wysiwyg text inputting for blogging platforms such as blogger.com or wordpress.  I will explore in this article editing systems where the content is actually stored (much like blogging content) on a remote server.
+The are are now several systems available that make use of web browsers (Google Chrome, Safari etc) to provide editing capability.  Maybe we have become used to  tools that provide wysiwyg text inputting for blogging platforms such as blogger.com or wordpress.  I will explore in this article editing systems where the content is actually stored (much like blogging content) on a remote server.
 
-Authors use word processors to write text. This is a truism. Although there are many word processing programs on the market, Microsoft Word is the most common and although the format is propriety, files can be converted and edited with other tools.  LibreOffice Office is a good alternative to Word and for Apple users there is Pages that can open Word files and export back to the Word format.
+### Authors use word processors to write text
+
+Although there are many word processing programs on the market, Microsoft Word is the most common and although the format is propriety, files can be converted and edited with other tools.  LibreOffice Office is a good alternative to Word and for Apple users there is Pages that can open Word files and export back to the Word format.
 
 Entering and editing text in a web browser will rely on a friendly interface that provides a limited set of options for structure and style and these may be based on a browser plugin or use a `Markdown` toolset.
 
@@ -203,3 +205,13 @@ Here it is in action.
 You can see from the image below that there are a variety of formats available for export.
 
 [![Booktype can export a number of formats](/images/Screenshot 2018-09-07 16.00.59.png)](/images/Screenshot 2018-09-07 16.00.59.png)
+
+### Collaborative Editing
+
+I have written [elsewhere][c42c03c9] about editing collaboratively in the article on Iterative Publishing, but it is important to point out the difference between the systems mentioned above.
+
+  [c42c03c9]: https://publisha.github.io/papers/iterativepublishing/ "check this article"
+
+In systems that use Git as the basic versioning engine (Penflip, Prose, GitBook), each author/editor has ownership of **their own** version and when a commit is made the changes are then merged into the original or master copy. This means that editors can be working on the same document simultaneously.
+
+With Booktype however, the document is effectively checked-out for the editor and cannot be edited by anyone else until those edits are saved. Changes are not part of the final document until the changes are accepted by the admin or chief editor.

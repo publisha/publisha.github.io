@@ -2,15 +2,15 @@
 layout: book
 title: Chapter 2 - Publishers' Choices
 published: true
-date: 2017-06-14
-version: 0.4
+date: 2018-10-15
+version: 0.5
 status: [expand]
 images: medium
 order: 4
 ---
 # Chapter 2 - Publishers' Choices
 
-## I'm a Publisher; what kind of eBooks should I make?
+## I'm a Publisher, what kind of eBooks should I make?
 
 And the answer is: _well that depends_ on all sorts of things.
 
@@ -58,7 +58,7 @@ It is very difficult to advise anyone which is the best approach for publishing 
 
  - If the content needs lots of illustrations, embedded in the text, with specific layout requirements (such as double page spreads, or full screen images), then you have to decide between iBooks Author (simple to use free software), that will only deliver to the Apple devices — or a fixed-layout ePub that has limited support on devices other than the Apple tablets, but can (with limitations) be converted to the Kindle KF8 format (for Kindle Fire). You may need to consider your existing workflow and ‘in house’ skills when making this choice. The fixed-layout ePub3 (rather than the iBooks Author iBook) is likely to be the best choice if you are publishing to print as well as eBook from the same (InDesign) file.
 
- - If there is a need to add significant amounts of multimedia, interactivity and even quizzes or multiple choice questions, then iBooks Author may be your best option. I will be looking at APP solutions such as Mag+, Adobe Digital Publishing Suite and even HTML5/CSS/javascript frameworks, but APPs are very much tied to their target platform. Please note also that vendors such as Apple may not accept ‘book APPs’ unless they can show a significant reason to be outside the iBooks environment
+ - If there is a need to add significant amounts of multimedia, interactivity and even quizzes or multiple choice questions, then iBooks Author may be your best option. In a later chapter I will be looking at APP solutions such as Mag+, and HTML5/CSS/javascript frameworks, but APPs are very much tied to their target platform. Please note also that vendors such as Apple may not accept ‘book APPs’ unless they can show a significant reason to be outside the iBooks environment.
 
 ## A summary of decisions to be made
 

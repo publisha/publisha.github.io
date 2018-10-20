@@ -2,8 +2,8 @@
 layout: book
 title: Chapter 2 - Publishers' Choices
 published: true
-date: 2018-10-15
-version: 0.5
+date: 2018-10-20
+version: 0.6
 status: [expand]
 images: medium
 order: 4

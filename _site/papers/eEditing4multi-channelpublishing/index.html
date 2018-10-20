@@ -87,9 +87,9 @@ background:#a2a2a2;
 <meta property="og:url" content="http://localhost:4000/papers/eEditing4multi-channelpublishing/" />
 <meta property="og:site_name" content="Digital Publishing Hub" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-10-13T00:00:00+01:00" />
+<meta property="article:published_time" content="2018-10-16T00:00:00+01:00" />
 <script type="application/ld+json">
-{"name":null,"description":"On this Page","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/papers/eEditing4multi-channelpublishing/","publisher":null,"image":null,"headline":"eEditing for multi-channel publishing","dateModified":"2018-10-13T00:00:00+01:00","datePublished":"2018-10-13T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/papers/eEditing4multi-channelpublishing/"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"On this Page","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/papers/eEditing4multi-channelpublishing/","publisher":null,"image":null,"headline":"eEditing for multi-channel publishing","dateModified":"2018-10-16T00:00:00+01:00","datePublished":"2018-10-16T00:00:00+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/papers/eEditing4multi-channelpublishing/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 </head>
 <title>
@@ -103,7 +103,7 @@ background:#a2a2a2;
     </div>
     </progress>
     <div class="wrap">
-      <div class="container content"><p class="editor"><strong>Page status:</strong> early release<span class="version"><strong>Version:</strong> 0.73| October 13, 2018</span>
+      <div class="container content"><p class="editor"><strong>Page status:</strong> early release<span class="version"><strong>Version:</strong> 0.75| October 16, 2018</span>
         </p><!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class="toc">
   <h2 id="on-this-page">On this Page</h2>
@@ -126,9 +126,11 @@ background:#a2a2a2;
 
 <h2 id="introduction">Introduction</h2>
 
-<p>The are are now several systems available that make use of web browsers (Google Chrome, Safari etc)  to provide editing capability.  Maybe we have become used to  tools that provide wysiwyg text inputting for blogging platforms such as blogger.com or wordpress.  I will explore in this article editing systems where the content is actually stored (much like blogging content) on a remote server.</p>
+<p>The are are now several systems available that make use of web browsers (Google Chrome, Safari etc) to provide editing capability.  Maybe we have become used to  tools that provide wysiwyg text inputting for blogging platforms such as blogger.com or wordpress.  I will explore in this article editing systems where the content is actually stored (much like blogging content) on a remote server.</p>
 
-<p>Authors use word processors to write text. This is a truism. Although there are many word processing programs on the market, Microsoft Word is the most common and although the format is propriety, files can be converted and edited with other tools.  LibreOffice Office is a good alternative to Word and for Apple users there is Pages that can open Word files and export back to the Word format.</p>
+<h3 id="authors-use-word-processors-to-write-text">Authors use word processors to write text</h3>
+
+<p>Although there are many word processing programs on the market, Microsoft Word is the most common and although the format is propriety, files can be converted and edited with other tools.  LibreOffice Office is a good alternative to Word and for Apple users there is Pages that can open Word files and export back to the Word format.</p>
 
 <p>Entering and editing text in a web browser will rely on a friendly interface that provides a limited set of options for structure and style and these may be based on a browser plugin or use a <code class="highlighter-rouge">Markdown</code> toolset.</p>
 
@@ -308,6 +310,14 @@ A paragraph of text looks like this and simply continues <span class="gs">**alth
 <p>You can see from the image below that there are a variety of formats available for export.</p>
 
 <p><a href="/images/Screenshot 2018-09-07 16.00.59.png"><img src="/images/Screenshot 2018-09-07 16.00.59.png" alt="Booktype can export a number of formats" /></a></p>
+
+<h3 id="collaborative-editing">Collaborative Editing</h3>
+
+<p>I have written <a href="https://publisha.github.io/papers/iterativepublishing/" title="check this article">elsewhere</a> about editing collaboratively in the article on Iterative Publishing, but it is important to point out the difference between the systems mentioned above.</p>
+
+<p>In systems that use Git as the basic versioning engine (Penflip, Prose, GitBook), each author/editor has ownership of <strong>their own</strong> version and when a commit is made the changes are then merged into the original or master copy. This means that editors can be working on the same document simultaneously.</p>
+
+<p>With Booktype however, the document is effectively checked-out for the editor and cannot be edited by anyone else until those edits are saved. Changes are not part of the final document until the changes are accepted by the admin or chief editor.</p>
 <div id="disqus_thread"></div>
 <script>
 

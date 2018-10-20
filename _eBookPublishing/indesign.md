@@ -23,16 +23,20 @@ status: [add overview]
 + You are not creating a print version but just a fixed-layout ePub
 
 ### Turn on hidden characters
+
 Keep this on to show you where you might have empty paragraphs, double spaces, space at the end of a paragraph/heading, tabs, and soft-breaks.
 Some of these things you might want to be rid of, but some, just may not convert to the ePub.{check on where to find hidden characters}
 
 ### Create a root paragraph style for the major part of the content
+
 This makes sense if you have a lot of text that needs a style applying. Use select-all and then style with that body text style. The headings can then be styled afterwards.
 
 ### Use a  'Next-Style' as a rule for the headings
+
 Headings will be  followed by a special first paragraph in the chapter or sub-section.
 
 ### Make a style for every category of content that you will have in your publication
+
 These styles get converted to HTML mark-up in the ePub.
 Make sure everything is styled with a style definition. If you use bespoke styles (by selecting attributes directly), your ePub may contain hard-to-edit, complex markup.
 

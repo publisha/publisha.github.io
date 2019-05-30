@@ -2,8 +2,8 @@
 layout: book
 title: Chapter 4 - eBook Production with InDesign
 published: false
-date: 2017-06-14
-version: 0.11
+date: 2019-05-29
+version: 0.12
 images: medium
 order: 6
 status: [add overview]

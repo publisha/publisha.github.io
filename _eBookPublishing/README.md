@@ -12,4 +12,4 @@ This book describes our choices and strategies and then the workflow that leads 
 
 This book is under development on GitHub.
 
-Chris Jennings 2017
+Chris Jennings 2019

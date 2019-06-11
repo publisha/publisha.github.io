@@ -24,7 +24,7 @@ rights: © 2007 John Smith, CC BY-NC
 ---
 
 
-The following fields are recognized:
+The following fields are recognised:
 
 identifier
 Either a string value or an object with fields text and scheme. Valid values for scheme are ISBN-10, GTIN-13, UPC, ISMN-10, DOI, LCCN, GTIN-14, ISBN-13, Legal deposit number, URN, OCLC, ISMN-13, ISBN-A, JP, OLCC.

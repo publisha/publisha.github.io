@@ -50,6 +50,7 @@ frontMatter: """
 layout: "{layout}"
 title: "{title}"
 date: "{date}"
+publshed: false
 ---
 """
 

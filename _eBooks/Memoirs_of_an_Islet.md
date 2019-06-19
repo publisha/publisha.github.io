@@ -2,7 +2,7 @@
 layout: ebook
 title: Memoirs of an Islet
 published: true
-date: 2018-10-13
+date: 2019-06-19
 categories: [Production, Publishing]
 coverimage: /images/isletcover.jpg
 images: full-width
@@ -45,6 +45,9 @@ The image itself is marked up with HTML thus:
 ```html
 <img src="images/balfourbaypano_large.jpg" style="height:100%;width:3000px;" alt="balfourbay"/>
 ```
+
+[![See the panorama in action](/images/islet.gif)](/images/islet.gif)
+
 
 ### Pictures
 

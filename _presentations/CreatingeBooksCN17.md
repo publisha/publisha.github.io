@@ -1,7 +1,7 @@
 ---
 layout: presentation
 title: eBook Production, Platforms and Workflow
-published: true
+published: false
 date: 2017-09-27
 folder: creatingeBooksPubCN_17
 categories: [Publishing, eBooks]

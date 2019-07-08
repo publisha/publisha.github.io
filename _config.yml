@@ -66,10 +66,10 @@ collections:
     output: true
     layout: screencast
 
-  eBookPublishing:
+  multi-platform-Publishing:
     output: true
-    title: 'eBook Publishing'
-    description: 'Workflow and techniques for designing, creating and publishing eBooks'
+    title: 'Multi-platform Publshing'
+    description: 'Workflow and techniques for designing, creating and publishing for page and device'
     defaults:
       layout: book
 

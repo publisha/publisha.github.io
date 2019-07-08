@@ -8,7 +8,7 @@
     <a href="{{site.baseurl}}/eBookPublishing"><i class="sidebar-nav-item fa fa-home fa-2x" aria-hidden="true"></i></a>
   </nav>
   <div class="sidebar-item" style="padding-top:0;padding-bottom:.5rem;">
-    <p>All about digital techniques for creating all kinds of eBooks</p>
+    <p>All about publishing for different platforms from the same content</p>
   </div>
 
   <nav class="sidebar-nav">
@@ -20,7 +20,7 @@
 
 <ul class="booknavigation">
 <li class="header">Chapters</li>
-{%- assign items = site.eBookPublishing | sort: 'order' -%}
+{%- assign items = site.multi-platform-Publishing | sort: 'order' -%}
 {%- for chapter in items limit:30 -%}
 {%- if chapter.title != "About" -%}
 <li class="ur_here{{chapter.order}}"><a class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}{{ chapter.url }}">{{ chapter.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>

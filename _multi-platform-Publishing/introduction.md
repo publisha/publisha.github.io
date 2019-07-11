@@ -10,7 +10,9 @@ status: [change subject]
 ---
 # Introduction
 
-This book describes our choices and strategies and then the workflow that leads through the process towards the final production of an eBook that can be delivered on a number of devices.
+Book publishers need to be able to deliver their content over a range of outputs as well as print. This book describes efficient processes that can deliver the same content to multiple platforms without the need for multiple workflows.
+
+This book describes our choices and strategies and then the workflow that leads through the process towards the final production of a print book, a web site and an eBook from the same content.
 
 Before we begin with the Choices chapter, there are some aspects that I need to draw to your attention.
 

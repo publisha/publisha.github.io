@@ -8,7 +8,7 @@ date: 2019-05-29
 ---
 # About this Book
 
-This book describes our choices and strategies and then the workflow that leads through the process towards the final delivery of content that can be delivered for print and on a screen devices.
+Book publishers need to be able to deliver their content over a range of outputs as well as print. This book describes efficient processes that can deliver the same content to multiple platforms without the need for multiple workflows.
 
 This book is under development on GitHub.
 

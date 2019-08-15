@@ -20,7 +20,9 @@
   <!-- Fonts -->
   <!-- can't use google fonts on GitHub unless https -->
 <link href='https://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic' rel='stylesheet'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+
+<script src="https://use.fontawesome.com/a89dad011b.js"></script>
 
 <!-- Optionally make the images go full width but put this in the page metadata --><!-- javascripts for fancybox -->
 <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
@@ -40,8 +42,9 @@
 <script type="text/javascript" src="/public/js/bigfoot.js"></script>
 <script type="text/javascript">
     $.bigfoot();
-</script><!-- Begin Jekyll SEO tag v2.3.0 -->
+</script><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Digital Product | Digital Publishing Hub</title>
+<meta name="generator" content="Jekyll v3.8.6" />
 <meta property="og:title" content="Digital Product" />
 <meta name="author" content="Chris Jennings" />
 <meta property="og:locale" content="en_US" />
@@ -51,7 +54,7 @@
 <meta property="og:url" content="http://localhost:4000/sections/digitalproduct/" />
 <meta property="og:site_name" content="Digital Publishing Hub" />
 <script type="application/ld+json">
-{"name":null,"description":"Digital Product","author":{"@type":"Person","name":"Chris Jennings"},"@type":"WebPage","url":"http://localhost:4000/sections/digitalproduct/","publisher":null,"image":null,"headline":"Digital Product","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+{"description":"Digital Product","author":{"@type":"Person","name":"Chris Jennings"},"@type":"WebPage","url":"http://localhost:4000/sections/digitalproduct/","headline":"Digital Product","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 </head>
 <body class="theme-base-0b">
@@ -171,6 +174,19 @@
     <script>
         $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').attr('class', 'sideimage').fancybox();
     </script>
+
+
+    <!-- here follows a script to put the alt tag to a caption under the images -->
+
+<script>
+$(".page img").each(function() {
+var imageCaption = $(this).attr("alt");
+if (imageCaption != '') {
+    $("<span class='caption'>" + imageCaption +
+        "</span>").insertAfter(this);
+}
+});
+</script>
 
     <!-- show a video -->
 

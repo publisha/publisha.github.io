@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en-gb"><head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>How to Build Your Web Site with GitHub Pages</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/jquery.fancybox.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/guide.css">
+  <link rel="stylesheet" href="/public/css/bigfoot-default.css">
+  <link rel="stylesheet" href="/public/css/progressbar.css">
+
+
+  <!-- Fonts -->
+  <!-- can't use google fonts on GitHub unless https -->
+<link href='https://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic' rel='stylesheet'>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+
+<script src="https://use.fontawesome.com/a89dad011b.js"></script>
+
+<!-- Optionally make the images go full width but put this in the page metadata --><style>
+.sideimage img {
+width:auto;
+max-width: 100%;
+float:none;
+clear:both;
+margin-left: auto;
+margin-right: auto;
+margin-top:0;
+margin-bottom: 0;
+top:0;
+max-height:400px;
+}
+.caption {
+  display:block;
+  font-style: italic;
+  text-align: center;
+  margin-top:0;
+  padding-top:0;
+  font-size: .9em;
+}
+</style><!-- javascripts for fancybox -->
+<script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
+</script>
+<script type="text/javascript" src="/public/js/jquery.fancybox-media.js">
+</script>
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- javascript for the footnote popups -->
+<script type="text/javascript" src="/public/js/bigfoot.js"></script>
+<script type="text/javascript">
+    $.bigfoot();
+</script><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>How to Build Your Web Site with GitHub Pages | Digital Publishing Hub</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="How to Build Your Web Site with GitHub Pages" />
+<meta name="author" content="Chris Jennings" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="tutorials and screencasts about digital publishing and eBook Production" />
+<meta property="og:description" content="tutorials and screencasts about digital publishing and eBook Production" />
+<link rel="canonical" href="http://localhost:4000/pages/createyourownblog/" />
+<meta property="og:url" content="http://localhost:4000/pages/createyourownblog/" />
+<meta property="og:site_name" content="Digital Publishing Hub" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-15T00:00:00+01:00" />
+<script type="application/ld+json">
+{"description":"tutorials and screencasts about digital publishing and eBook Production","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/pages/createyourownblog/","headline":"How to Build Your Web Site with GitHub Pages","dateModified":"2019-08-15T00:00:00+01:00","datePublished":"2019-08-15T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/createyourownblog/"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+<body class="theme-base-0b">
+    <progress value="0" id="progressBar">
+  <div class="progress-container">
+    <span class="progress-bar"></span>
+  </div>
+</progress><!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+
+
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <nav class="sidebar-nav"  style="border-bottom:none !important;">
+    <a href="/"><i class="sidebar-nav-item fa fa-home fa-2x" aria-hidden="true"></i></a>
+  </nav>
+  <div class="sidebar-item" style="padding-top:0;padding-bottom:.5rem;">
+    <p>tutorials and screencasts about digital publishing and eBook Production</p>
+  </div>
+
+  <nav class="sidebar-nav">
+<ul class="navigationtoc">
+<li class="header">Pages by Category</li><li class="dropdown"><a title="see all pages about InDesign" href="/sections/InDesign">InDesign <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li><li class="dropdown"><a title="see all pages about HTML and CSS" href="/sections/HTML and CSS">HTML and CSS <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li><li class="dropdown"><a title="see all pages about Typography" href="/sections/Typography">Typography <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li><li class="dropdown"><a title="see all pages about XML" href="/sections/XML">XML <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li><li class="dropdown"><a title="see all pages about ePub" href="/sections/ePub">ePub <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li><li class="dropdown"><a title="see all pages about iBooks Author" href="/sections/iBooks Author">iBooks Author <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li></ul>
+    <ul class="navigationtoc">
+      <li class="header"><b>Other Items</b></li><li><a title="screencasts from the YouTube channel" class="sidebar-nav-item" href="/screencasts/">Screencasts <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+     <li><a title="presentations generated from Keynote" class="sidebar-nav-item" href="/presentations/">Presentations <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+     <li><a title="Image galleries from Flickr" class="sidebar-nav-item" href="/galleries/">Images Galleries <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+     <li><a title="eBooks" class="sidebar-nav-item" href="/eBooks/">eBooks <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+     <li><a title="Course Sections" class="sidebar-nav-item" href="/sections/">Sections and Categories <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+      <li><a title="see all contents listed" class="sidebar-nav-item" href="/contents">List all Contents <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- <div class="sidebar-item">
+    <p>
+      <b>Note:</b> Images can be enlarged by click or touch
+    </p>
+  </div> -->
+  <div class="sidebar-item">
+    <p>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.7 2019 | <a href="/pages/about" title="read about this site and how it was made">About</a>
+  </p>
+  </div>
+</div>
+<!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
+
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Digital Publishing Hub</a>
+          <br />
+          <small>Help for publishers and students of publishing</small>
+        </h3>
+        <h2 class="pagetitle">How to Build Your Web Site with GitHub Pages</h2>
+      </div>
+    </div>
+
+    <div class="wrap"><!-- masthead was here -->
+      <div class="container content">
+        <div class="page">
+  <!-- <h1 class="page-title">How to Build Your Web Site with GitHub Pages</h1> -->
+  <h1 id="how-to-build-your-web-site-with-github-pages">How to Build Your Web Site with GitHub Pages</h1>
+
+<p>Writing to your blog involves using the <code class="highlighter-rouge">Markdown</code> language and this will then be automatically be converted to <code class="highlighter-rouge">HTML</code> for the web site. You can learn about <code class="highlighter-rouge">Markdown</code> by viewing the <a href="https://www.markdownguide.org" title="Take a look at this">Markdown Guide on the web</a>. There are many writing apps that use <code class="highlighter-rouge">Markdown</code> but we will use a free tool called <em>Atom</em> that will give you the means to write and update your live web site.</p>
+
+<h2 id="getting-the-software-required">Getting the software required</h2>
+
+<p>You will only need the application called <em>Atom</em> and to help you get the correct settings I am <a href="http://www.publisha.org/resources/atom.zip" title="Get this zip file and unpack">providing you with a distribution</a> package as a <code class="highlighter-rouge">zip</code> file. This will create an <code class="highlighter-rouge">atom</code> folder which you need to place inside your <code class="highlighter-rouge">Home</code> folder.</p>
+
+<p><a href="/images/getintoyourhomefolder.png"><img src="/images/getintoyourhomefolder.png" alt="To find your Home folder use the Go menu item." /></a></p>
+
+<p>From the Finder use <code class="highlighter-rouge">Go</code> to find your Home folder. Read the <code class="highlighter-rouge">readme.md</code> file that comes inside this zip file.</p>
+
+<p><a href="/images/Screenshot 2019-08-15 12.47.22.png"><img src="/images/Screenshot 2019-08-15 12.47.22.png" alt="It will help if you show the extensions for the files (.app. .zip)" /></a></p>
+
+<blockquote>
+  <p><strong>Note:</strong> If you use Safari as your browser then the zip file will unpack into your downloads folder. <strong>Now take the following steps</strong>:</p>
+</blockquote>
+
+<ol>
+  <li>In your Home folder (remember use <code class="highlighter-rouge">Go &gt; Home</code>) create a new folder and name it <code class="highlighter-rouge">Applications</code> (note the capital <strong>A</strong>).</li>
+  <li>Drag the <code class="highlighter-rouge">Atom.app</code> into this Applications folder.</li>
+  <li>Drag the <code class="highlighter-rouge">for_home_folder.zip</code> file into the home folder</li>
+  <li>Double click this file to unpack - this creates a <em>hidden</em> folder called <code class="highlighter-rouge">.atom</code>. You can view hidden files by using <code class="highlighter-rouge">SHIFT-CMD full-stop</code> on the keyboard.</li>
+</ol>
+
+<p>The <code class="highlighter-rouge">Atom</code> program comes ready built with the following packages that will help you write posts for your blog.</p>
+
+<ul>
+  <li>tool-bar</li>
+  <li>markdown-writer</li>
+  <li>toolbar-markdown-writer</li>
+  <li>zen (this will provide a distraction free interface)</li>
+</ul>
+
+<p>Now that you have the software installed you can register for the free web site at github.</p>
+
+<h2 id="setup-github">Setup Github<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></h2>
+
+<h3 id="create-a-free-account-on-githubcom">Create a free account on Github.com</h3>
+
+<p>You do not need to use your Brookes credentials nor your Brookes email address because this web site and account is yours forever should you wish to continue using it after your course.</p>
+
+<blockquote>
+  <p>Naming the account (<strong>your username</strong>) is important (although you can change later) because this will become part of your website URL.</p>
+</blockquote>
+
+<blockquote>
+  <p>For example, if you name the account <code class="highlighter-rouge">MyLoveofBooks</code>then the web site will become <code class="highlighter-rouge">myloveofbooks.github.io</code>. Not all names will be available and yours may be rejected if it is already taken.</p>
+</blockquote>
+
+<p>Please remember your username and password or keep somewhere safe.</p>
+
+<p>Choose a <strong>Free</strong> account and go through the various steps although you can skip the questions about your interests. You will also need to verify your email address. Optionally you can edit your profile and add an avatar image.</p>
+
+<h3 id="logged-into-github">Logged into GitHub</h3>
+
+<p>Once you are logged in to Github, go to the following URL:</p>
+
+<p><a href="https://github.com/publisha/student_site/" title="Get this template">https://github.com/publisha/student_site/</a></p>
+
+<p><a href="/images/templategrab.png"><img src="/images/templategrab.png" alt="Click the green button to grab the template" /></a></p>
+
+<p>Use the template link to receive the repository in your own github account. Make sure that you choose the <code class="highlighter-rouge">Public</code> option. You will be asked to name the repository.</p>
+
+<blockquote>
+  <p><strong>This is important</strong>: You need to name the repository <em>username.github.io</em> where <em>username</em> is the name of your username <em>but in lowercase letters</em>.</p>
+</blockquote>
+
+<p><a href="/images/nametherepo.png"><img src="/images/nametherepo.png" alt="Name the repository using lowercase letters but use the same as your GitHub owner name." /></a></p>
+
+<blockquote>
+  <p>You should now have a copy of the template web site in your github account.</p>
+</blockquote>
+
+<p>This will be the URL of your site.</p>
+
+<p>Although it is always possible to edit the files directly on the github site, there is a much better way!</p>
+
+<h2 id="getting-a-local-copy">Getting a local copy</h2>
+
+<p>Select the repository just created and locate the button labelled <code class="highlighter-rouge">Clone or download</code>. Once you click this, you need to copy the URL (the button to the right of the URL field will copy this for you).</p>
+
+<p><a href="/images/copythelink.png"><img src="/images/copythelink.png" alt="You need this link and so this will copy the link for you." /></a></p>
+
+<h3 id="now-open-atom">Now open Atom</h3>
+
+<p>You should see a set of icons at the bottom of the window. The icon at the far right end looks like this:</p>
+
+<p><i class="fab fa-git-alt fa-2x"></i></p>
+
+<p>Click this and a window appears. Paste into the top box.</p>
+
+<p><a href="/images/clonerepo.png"><img src="/images/clonerepo.png" alt="Here is the clone window. Paste into the top box. You can move the repository later." /></a></p>
+
+<p><strong>Note</strong>: Before you finish setting up, you should move the complete web site folder out of the <code class="highlighter-rouge">github</code> folder to your <code class="highlighter-rouge">Creative Cloud</code> folder. That way, you can find it on any of the computers that you are signed into.</p>
+
+<h3 id="configuring-your-site">Configuring your site</h3>
+
+<p>Before you make your web site live and post new articles, you need to edit the configuration file with your own details. The file you must edit is:</p>
+
+<p><code class="highlighter-rouge">_config.yml</code></p>
+
+<p><a href="/images/configchanges.png"><img src="/images/configchanges.png" alt="Here is a view of the site open in Atom. Changes to be made to the config file first." /></a></p>
+
+<p>The file itself has comments so it should be self explanatory but here are the important changes that you must make:</p>
+
+<h3 id="site-configuration">Site configuration</h3>
+
+<p>Configure as your own website in <code class="highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>  <span class="na">baseurl</span><span class="pi">:</span> <span class="s1">'</span><span class="s">'</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://username.github.io"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Change <em>username</em> to the name you chose for your site.</p>
+
+<p>Please configure this before using the student blog.</p>
+
+<h3 id="meta-and-branding">Meta and Branding</h3>
+
+<p>Meta variables hold basic information about your site which will be used throughout the site and as meta properties for search engines, browsers, and the site’s RSS feed.</p>
+
+<p>Change these variables in <code class="highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="na">title</span><span class="pi">:</span> <span class="s">My Student Blog</span>       <span class="c1"># Name of website will appear top left on your pages</span>
+<span class="na">avatar</span><span class="pi">:</span> <span class="s">assets/img/face.png</span>     <span class="c1"># Path of avatar image, to be displayed in the site header (you can create a logo do make an image of yourself)</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">My blog posts</span>             <span class="c1"># Short description, primarily used by search engines</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="customizing-text">Customizing text</h3>
+
+<h4 id="footer-and-headers-text">Footer and Header’s text</h4>
+
+<p>Customize your site header/footer with these variables in <code class="highlighter-rouge">_config.yml</code>:
+You should create a different image to replace the picture of Headington Hill Hall. This image needs to be <strong>no</strong> smaller than 1800 pixels wide.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>    <span class="na">header_text</span><span class="pi">:</span> <span class="s">Welcome to my Student blog</span>
+    <span class="na">header_feature_image</span><span class="pi">:</span> <span class="s">images/hhh.jpg</span>
+    <span class="na">footer_text</span><span class="pi">:</span> <span class="s">Copyright </span><span class="m">2019</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="adding-and-editing-content">Adding and Editing Content</h2>
+
+<p>There are 2 types of pages in your site:</p>
+
+<h3 id="posts">Posts</h3>
+
+<p>You can post articles or blog posts and these will be dated so that they appear in date order, on the home page, the latest at the top.</p>
+
+<p>Each post has it’s own page but the extract will appear on the home page.</p>
+
+<p>The number of post extracts that appear on the home page can be configured in the <code class="highlighter-rouge">_config.yml</code> file (the default is 5 posts with a link to the previous 5 etc.)</p>
+
+<p>The posts themselves are files that will automatically be generated inside the <code class="highlighter-rouge">_posts</code>folder.</p>
+
+<h3 id="pages">Pages</h3>
+
+<p>You can create other pages for special (non-dated) content and, as long as you save them inside the <code class="highlighter-rouge">pages</code> folder, they will automatically generate a menu item at the top right of your site.</p>
+
+<p>Apart from the <strong>About</strong> page described below, you can also create any page that you like to add to your site and, thus, a menu item. Examples could be a CV, or a Project page, or even a gallery of your photos.</p>
+
+<h4 id="the-about-page">The About page</h4>
+
+<p>This is the one page ready for you to edit. This page needs to be edited to contain information about yourself or what you want this site to do!</p>
+
+<p>Editing this page will be a good way for you to get used to the way to edit and create pages using <code class="highlighter-rouge">Markdown</code>.</p>
+
+<p>If you want to create another page, you can duplicate the <em>About</em> page so that you can see what the structure needs to be.</p>
+
+<h3 id="markdown">Markdown</h3>
+
+<p>Markdown is a way to write for a web site that uses simple structure and markup that will then be converted to <code class="highlighter-rouge">HTML</code>. It is useful to understand how <code class="highlighter-rouge">Markdown</code> works, but actually, when we use <strong>Atom</strong> with the added package, the elements can be selected from a toolbar.</p>
+
+<p>Here are some examples of what the Markdown syntax means.</p>
+
+<pre><code class="language-Markdown">## Heading level 2
+### Heading level 3
+
+This is **bold** text.
+
+This is *italic* text
+</code></pre>
+
+<h3 id="yaml-metadata"><code class="highlighter-rouge">YAML</code> metadata</h3>
+
+<p>At the top of each page or post there will always need to be some metadata to control certain aspects of the page when it is converted to <code class="highlighter-rouge">HTML</code> and then included in your site.</p>
+
+<p>This metadata is enclosed within the 2 groups of hyphens.</p>
+
+<pre><code class="language-YAML">    ---
+    metadata goes here
+    ---
+</code></pre>
+
+<blockquote>
+  <p>Some of this metadata is generated automatically when you create a new post (the date for example).</p>
+</blockquote>
+
+<p>You will also need to edit this metadata to confirm that the post is ready to be published; change from <code class="highlighter-rouge">published:false</code> to <code class="highlighter-rouge">published:true</code>. When the page is set to <code class="highlighter-rouge">published:false</code> it won’t appear on your live site.</p>
+
+<h4 id="page-image">Page image</h4>
+
+<p>We will describe how you can add images to your posts and pages later, but all content can also have a <code class="highlighter-rouge">page image</code> and this image will appear at the top of the page, withe the post heading set against it. You will need to place this image into your <code class="highlighter-rouge">images</code> folder and then provide the link to it in your metadata.</p>
+
+<blockquote>
+  <p><strong>Tip</strong> you can drag images into the images folder (make sure that they do <em>not</em> have spaces in the file name) and then <code class="highlighter-rouge">right-click</code> over the image and copy the path. Then paste and edit this path into the metadata for <code class="highlighter-rouge">image: pathtoimage</code>.</p>
+</blockquote>
+
+<h2 id="adding-images-to-a-page">Adding images to a page</h2>
+
+<p>This is done through the image icon on the <code class="highlighter-rouge">markdown</code> toolbar at the bottom of the active Atom window. <i class="fas fa-image fa-2x"></i></p>
+
+<p>You will get a popup window and you need to select and image from somewhere on your system. Make sure to click the box <code class="highlighter-rouge">Copy to ...</code></p>
+
+<p><a href="/images/addimage.png"><img src="/images/addimage.png" alt="Pay careful attention to this box. You need to enter the title (ALT tag). This becomes the caption." /></a></p>
+
+<h3 id="previewing-your-page">Previewing your page</h3>
+
+<p>You can simulate the appearance of your page by clicking the icon near tot eh bottom left. This looks like this: <i class="fab fa-markdown fa-2x"></i></p>
+
+<p><a href="/images/preview.png"><img src="/images/preview.png" alt="The preview opens in another tab" /></a></p>
+
+<h2 id="getting-the-new-content-up-to-the-web">Getting the new content up to the web</h2>
+
+<p>Atom interacts with your <code class="highlighter-rouge">github</code> site, so once you have made changes or added a post, you will need to open the <code class="highlighter-rouge">Git</code> pane (bottom right) and then notice the changed or added files up at the right. These are <code class="highlighter-rouge">Unstaged Changes</code>.</p>
+
+<p><a href="/images/stagingandpushing.gif"><img src="/images/stagingandpushing.gif" alt="Here we see the changed files being pushed to the Github repository" /></a></p>
+
+<blockquote>
+  <p>Now click <code class="highlighter-rouge">Stage All</code> and these will move down to the <code class="highlighter-rouge">Staged Changes</code> pane. You need to write something in the commit box, so that the changes will have a meaning to you later. You can now <code class="highlighter-rouge">Push</code> these changes to Github but for the first time you will need to add your credentials (please tick the remember box so that you only do this for the first time).</p>
+</blockquote>
+
+<p><a href="/images/signingin.png"><img src="/images/signingin.png" alt="We will need to use our GitHub credentials for the first time. Select remember so that you won't need to do this again on this computer." /></a></p>
+
+<h2 id="your-first-look-at-your-new-site">Your first look at your new site</h2>
+
+<p>Your site is available now at <code class="highlighter-rouge">username.github.io</code>. Change <em>username</em> of course.</p>
+
+<p>You should now be able to write blog posts and and add further pages. You can customise your site by changing the title, the main image and the avatar through the <code class="highlighter-rouge">_config</code> file.</p>
+
+<p>For further changes to the appearance you will need to make changes to the <code class="highlighter-rouge">CSS</code>. This is the subject of future advanced sessions.</p>
+
+<h2 id="further-reading">Further reading</h2>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>GitHub is a free code hosting platform for collaboration and version control. GitHub lets you (and others) work together on projects. We use GitHub pages to host our web site. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+<!-- We can only show one screencast at the moment --></div><p><b>Filed under:</b> Web, HTML, CSS, Using GitHub</p><p>This page last edited on: 2019-08-15</p>
+      </div>
+    </div>
+<!--<footer>
+<p><a style="float:right;" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
+&#169; Chris Jennings 2019</p>
+</footer>
+-->
+<!-- now follows items that get the menu working should it be fa-chevron-left fa-lg -->
+    <label title="the menu" for="sidebar-checkbox" class="sidebar-toggle fa fa-bars fa-lg" aria-hidden="true"></label>
+<!-- this next item will be shown on small screens -->
+    <div class="contents"><a href="/contents" title="contents"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+    </div>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.fancybox').fancybox();
+        });
+    </script>
+    <script>
+    jQuery(document).ready(function($) {
+    	$("img:not([title])").each(function() {
+    			if($(this).attr("alt") != '') $(this).parent().attr("title", $(this).attr("alt"))
+    			else $(this).parent().attr("title", $(this).attr("src"));
+    	});
+    });
+    </script>
+    <script>
+        $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').attr('class', 'sideimage').fancybox();
+    </script>
+
+
+    <!-- here follows a script to put the alt tag to a caption under the images -->
+
+<script>
+$(".page img").each(function() {
+var imageCaption = $(this).attr("alt");
+if (imageCaption != '') {
+    $("<span class='caption'>" + imageCaption +
+        "</span>").insertAfter(this);
+}
+});
+</script>
+
+    <!-- show a video -->
+
+
+    <script>
+    $(document).ready(function() {
+    	$(".video").fancybox({
+    		maxWidth	: 800,
+    		maxHeight	: 600,
+    		fitToView	: false,
+    		width		: '70%',
+    		height		: '70%',
+    		autoSize	: false,
+    		closeClick	: false,
+    		openEffect	: 'none',
+    		closeEffect	: 'none'
+    	});
+    });
+    </script>
+
+    <!-- navigation -->
+    <script>
+    jQuery(document).ready(function(){
+
+    $(".navigation > li > a").on("click", function(e){
+
+    	if(!$(this).hasClass("active")) {
+
+          // hide any open menus and remove all other classes
+    		$(".navigation li ul").slideUp(350);
+    		$(".navigation li a").removeClass("active");
+
+    		// open our new menu and add the open class
+    		$(this).next("ul").slideDown(350);
+    		$(this).addClass("active");
+
+    	}else if($(this).hasClass("active")) {
+
+    		$(this).removeClass("active");
+    		$(this).next("ul").slideUp(350);
+    	}
+       e.preventDefault();
+    });
+
+    });
+    </script>
+<script>
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 200) {
+        $('.pagetitle').fadeIn();
+      } else {
+        $('.pagetitle').fadeOut();
+      }
+    });
+</script>
+    <script src="/public/js/progress.js"></script>
+
+  </body>
+</html>

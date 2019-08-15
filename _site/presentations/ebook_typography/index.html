@@ -20,7 +20,9 @@
   <!-- Fonts -->
   <!-- can't use google fonts on GitHub unless https -->
 <link href='https://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic' rel='stylesheet'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+
+<script src="https://use.fontawesome.com/a89dad011b.js"></script>
 
 <!-- Optionally make the images go full width but put this in the page metadata --><style>
 .sideimage img {
@@ -44,8 +46,9 @@ display:none;
 <script type="text/javascript" src="/public/js/bigfoot.js"></script>
 <script type="text/javascript">
     $.bigfoot();
-</script><!-- Begin Jekyll SEO tag v2.3.0 -->
+</script><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>eBook Typography - InDesign and CSS | Digital Publishing Hub</title>
+<meta name="generator" content="Jekyll v3.8.6" />
 <meta property="og:title" content="eBook Typography - InDesign and CSS" />
 <meta name="author" content="Chris Jennings" />
 <meta property="og:locale" content="en_US" />
@@ -58,7 +61,7 @@ display:none;
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-01-20T00:00:00+00:00" />
 <script type="application/ld+json">
-{"name":null,"description":"Typographic style as it applies to eBook production.","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/presentations/ebook_typography/","publisher":null,"image":"http://localhost:4000/images/eBookTypography.001.jpeg","headline":"eBook Typography - InDesign and CSS","dateModified":"2018-01-20T00:00:00+00:00","datePublished":"2018-01-20T00:00:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/presentations/ebook_typography/"},"@context":"http://schema.org"}</script>
+{"description":"Typographic style as it applies to eBook production.","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/presentations/ebook_typography/","image":"http://localhost:4000/images/eBookTypography.001.jpeg","headline":"eBook Typography - InDesign and CSS","dateModified":"2018-01-20T00:00:00+00:00","datePublished":"2018-01-20T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/presentations/ebook_typography/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 </head>
 <body class="theme-base-0b">
@@ -200,6 +203,19 @@ display:none;
     <script>
         $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').attr('class', 'sideimage').fancybox();
     </script>
+
+
+    <!-- here follows a script to put the alt tag to a caption under the images -->
+
+<script>
+$(".page img").each(function() {
+var imageCaption = $(this).attr("alt");
+if (imageCaption != '') {
+    $("<span class='caption'>" + imageCaption +
+        "</span>").insertAfter(this);
+}
+});
+</script>
 
     <!-- show a video -->
 

@@ -20,7 +20,9 @@
   <!-- Fonts -->
   <!-- can't use google fonts on GitHub unless https -->
 <link href='https://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic' rel='stylesheet'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+
+<script src="https://use.fontawesome.com/a89dad011b.js"></script>
 
 <!-- Optionally make the images go full width but put this in the page metadata --><!-- javascripts for fancybox -->
 <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
@@ -40,8 +42,9 @@
 <script type="text/javascript" src="/public/js/bigfoot.js"></script>
 <script type="text/javascript">
     $.bigfoot();
-</script><!-- Begin Jekyll SEO tag v2.3.0 -->
+</script><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Validation | Digital Publishing Hub</title>
+<meta name="generator" content="Jekyll v3.8.6" />
 <meta property="og:title" content="Validation" />
 <meta name="author" content="Chris Jennings" />
 <meta property="og:locale" content="en_US" />
@@ -53,7 +56,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-02-05T15:39:00+00:00" />
 <script type="application/ld+json">
-{"name":null,"description":"Everything needs to be perfect for it to work in the digital domain. Or does it? Can our screens forgive our little markup errors?","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/html/2017/02/05/validation/","publisher":null,"image":null,"headline":"Validation","dateModified":"2017-02-05T15:39:00+00:00","datePublished":"2017-02-05T15:39:00+00:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/html/2017/02/05/validation/"},"@context":"http://schema.org"}</script>
+{"description":"Everything needs to be perfect for it to work in the digital domain. Or does it? Can our screens forgive our little markup errors?","author":{"@type":"Person","name":"Chris Jennings"},"@type":"BlogPosting","url":"http://localhost:4000/html/2017/02/05/validation/","headline":"Validation","dateModified":"2017-02-05T15:39:00+00:00","datePublished":"2017-02-05T15:39:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/html/2017/02/05/validation/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 </head>
 <body class="theme-base-0b">
@@ -225,17 +228,17 @@
 
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="rouge-code"><pre><span class="gp">$</span> <span class="nb">cd</span> /Applications/Utilities/ebook_tools/epubcheck-4.0.2
-<span class="gp">$</span> java <span class="nt">-jar</span> pubcheck-4.0.2 &lt;path to the ePub file&gt;
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> /Applications/Utilities/ebook_tools/epubcheck-4.0.2
+<span class="gp">$</span><span class="w"> </span>java <span class="nt">-jar</span> pubcheck-4.0.2 &lt;path to the ePub file&gt;
 </pre></td></tr></tbody></table></code></pre></div></div>
 <p>You should see something like this:</p>
 
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="rouge-code"><pre><span class="gp">$</span> Validating using EPUB version 3.0.1 rules.
-<span class="gp">$</span> No errors or warnings detected.
-<span class="gp">$</span> epubcheck completed
+</pre></td><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>Validating using EPUB version 3.0.1 rules.
+<span class="gp">$</span><span class="w"> </span>No errors or warnings detected.
+<span class="gp">$</span><span class="w"> </span>epubcheck completed
 </pre></td></tr></tbody></table></code></pre></div></div>
 <p>All sorts of code will need validating and by <a href="http://codebeautify.org" title="This is very useful indeed" target="_blank">going to CodeBeautify</a> you are bound to find exactly what you need.</p>
 
@@ -317,6 +320,19 @@
     <script>
         $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').attr('class', 'sideimage').fancybox();
     </script>
+
+
+    <!-- here follows a script to put the alt tag to a caption under the images -->
+
+<script>
+$(".page img").each(function() {
+var imageCaption = $(this).attr("alt");
+if (imageCaption != '') {
+    $("<span class='caption'>" + imageCaption +
+        "</span>").insertAfter(this);
+}
+});
+</script>
 
     <!-- show a video -->
 

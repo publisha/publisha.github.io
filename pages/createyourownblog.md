@@ -243,8 +243,31 @@ You should now be able to write blog posts and and add further pages. You can cu
 
 For further changes to the appearance you will need to make changes to the `CSS`. This is the subject of future advanced sessions.
 
+## Adding to and Editing your site Online
+
+Although we recommend using `Atom` as the way to write posts and edit your site (you certainly need to use for editing the config file and changing the appearance of your site), you can optionally use an online tool from anywhere with an internet connection to post articles.
+
+### Using Prose
+
+Go to the web site [prose.io][fdc8fec9] and authorize with your GitHub credentials.
+
+[fdc8fec9]: https://prose.io "Prose is an online editor"
+
+You should now see your repository available.
+
+[![Here you see your web site repository](/images/prosescreen1.png)](/images/prosescreen1.png)
+
+Once you go into the repository, you can edit the posts or create new posts directly.
+
+[![Here we see a post being entered into prose.](/images/prosescreen2.png)](/images/prosescreen2.png)
+
 ## Further reading
+[Creating Blogs with Jekyll][68777208]
 
+  [68777208]: https://learning.oreilly.com/library/view/creating-blogs-with/9781484214640/ "see this book on O'Reilly Online"
 
+[Working with Static Sites][c0190ded]
+
+  [c0190ded]: https://learning.oreilly.com/library/view/working-with-static/9781491960936/ "See this book on O'Reilly Online"
 
 [^1]: GitHub is a free code hosting platform for collaboration and version control. GitHub lets you (and others) work together on projects. We use GitHub pages to host our web site.

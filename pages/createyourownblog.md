@@ -135,7 +135,7 @@ description: My blog posts             # Short description, primarily used by se
 
 ### Customizing text
 
-#### Footer and Header's text
+#### Footer and Header text
 
 Customize your site header/footer with these variables in `_config.yml`:
 You should create a different image to replace the picture of Headington Hill Hall. This image needs to be **no** smaller than 1800 pixels wide.
@@ -181,12 +181,12 @@ Markdown is a way to write for a web site that uses simple structure and markup 
 Here are some examples of what the Markdown syntax means.
 
 ```Markdown
-## Heading level 2
-### Heading level 3
+  ## Heading level 2
+  ### Heading level 3
 
-This is **bold** text.
+  This is **bold** text.
 
-This is *italic* text
+  This is *italic* text
 ```
 
 ### `YAML` metadata
@@ -243,6 +243,20 @@ You should now be able to write blog posts and and add further pages. You can cu
 
 For further changes to the appearance you will need to make changes to the `CSS`. This is the subject of future advanced sessions.
 
+## How does all of this work?
+
+### Github Pages
+
+GitHub provides for free github pages. [You can read more about this here][d89d9da3]. Basically anyone can host web pages here but we are using a static site generation system called `Jekyll` which is also supported in GithUb pages.
+
+  [d89d9da3]: https://pages.github.com "Go to the Github site for an explanation"
+
+### Jekyll
+
+This software operates your site, converting the `markdown` files into `HTML` when you _push_ your files up to the GitHub repository. The Jekyll site that you have created from the provided template includes all of the files necessary to build the live pages including the stylesheets (CSS) and some javascript. There is also a system of logic that builds the menus and pagination. This logic engine is called `Liquid` and [you can explore this further here][c324856c].
+
+  [c324856c]: https://shopify.github.io/liquid/ "Go to the shopify site"
+
 ## Adding to and Editing your site Online
 
 Although we recommend using `Atom` as the way to write posts and edit your site (you certainly need to use for editing the config file and changing the appearance of your site), you can optionally use an online tool from anywhere with an internet connection to post articles.
@@ -261,12 +275,16 @@ Once you go into the repository, you can edit the posts or create new posts dire
 
 [![Here we see a post being entered into prose.](/images/prosescreen2.png)](/images/prosescreen2.png)
 
+### Synchronising
+
+Be aware that if you use `prose.io` to edit your site then your local copy (edited with Atom) will not be the same. If this is the case then you will need to find the `Fetch` link at the bottom right of the Atom window to **pull** the changes to your local space.
+
 ## Further reading
-[Creating Blogs with Jekyll][68777208]
+[Creating Blogs with Jekyll][68777208], Vikram Dhillon, 2016, APRESS
 
   [68777208]: https://learning.oreilly.com/library/view/creating-blogs-with/9781484214640/ "see this book on O'Reilly Online"
 
-[Working with Static Sites][c0190ded]
+[Working with Static Sites][c0190ded], by Raymond Rinaldi | 20 Mar 2017, O'Reilly Press
 
   [c0190ded]: https://learning.oreilly.com/library/view/working-with-static/9781491960936/ "See this book on O'Reilly Online"
 

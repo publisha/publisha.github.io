@@ -10,6 +10,23 @@ blurb: GithUb provides a way to use a free web site. Here is a simple way to get
 order: 4
 ---
 
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
+
+- [Getting the software required](#getting-the-software-required)
+- [Setup Github[^1]](#setup-github1)
+- [Getting a local copy](#getting-a-local-copy)
+- [Adding and Editing Content](#adding-and-editing-content)
+- [Adding images to a page](#adding-images-to-a-page)
+- [Getting the new content up to the web](#getting-the-new-content-up-to-the-web)
+- [Your first look at your new site](#your-first-look-at-your-new-site)
+- [How does all of this work?](#how-does-all-of-this-work)
+- [Adding to and Editing your site Online](#adding-to-and-editing-your-site-online)
+- [Further reading](#further-reading)
+
+</section><!-- /TOC -->
+
 # How to Build Your Web Site with GitHub Pages
 
 Writing to your blog involves using the `Markdown` language and this will then be automatically be converted to `HTML` for the web site. You can learn about `Markdown` by viewing the [Markdown Guide on the web][47a5cbc0]. There are many writing apps that use `Markdown` but we will use a free tool called _Atom_ that will give you the means to write and update your live web site.

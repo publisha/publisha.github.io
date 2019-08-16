@@ -48,9 +48,9 @@ Now that you have the software installed you can register for the free web site 
 
 ### Create a free account on Github.com
 
-You do not need to use your Brookes credentials nor your Brookes email address because this web site and account is yours forever should you wish to continue using it after your course.
+<!-- You do not need to use your Brookes credentials nor your Brookes email address because this web site and account is yours forever should you wish to continue using it after your course. -->
 
-> Naming the account (**your username**) is important (although you can change later) because this will become part of your website URL.
+Naming the account (**your username**) is important (although you can change later) because this will become part of your website URL.
 
 > For example, if you name the account `MyLoveofBooks`then the web site will become `myloveofbooks.github.io`. Not all names will be available and yours may be rejected if it is already taken.
 

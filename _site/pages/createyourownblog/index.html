@@ -27,7 +27,7 @@
 <!-- Optionally make the images go full width but put this in the page metadata --><style>
 .sideimage img {
 width:auto;
-max-width: 100%;
+max-width: 90%;
 float:none;
 clear:both;
 margin-left: auto;
@@ -35,7 +35,7 @@ margin-right: auto;
 margin-top:0;
 margin-bottom: 0;
 top:0;
-max-height:400px;
+max-height:420px;
 }
 .caption {
   display:block;
@@ -152,7 +152,27 @@ max-height:400px;
       <div class="container content">
         <div class="page">
   <!-- <h1 class="page-title">How to Build Your Web Site with GitHub Pages</h1> -->
-  <h1 id="how-to-build-your-web-site-with-github-pages">How to Build Your Web Site with GitHub Pages</h1>
+  <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class="toc">
+  <h2 id="on-this-page">On this Page</h2>
+
+  <ul>
+    <li><a href="#getting-the-software-required">Getting the software required</a></li>
+    <li><a href="#setup-github1">Setup Github</a></li>
+    <li><a href="#getting-a-local-copy">Getting a local copy</a></li>
+    <li><a href="#adding-and-editing-content">Adding and Editing Content</a></li>
+    <li><a href="#adding-images-to-a-page">Adding images to a page</a></li>
+    <li><a href="#getting-the-new-content-up-to-the-web">Getting the new content up to the web</a></li>
+    <li><a href="#your-first-look-at-your-new-site">Your first look at your new site</a></li>
+    <li><a href="#how-does-all-of-this-work">How does all of this work?</a></li>
+    <li><a href="#adding-to-and-editing-your-site-online">Adding to and Editing your site Online</a></li>
+    <li><a href="#further-reading">Further reading</a></li>
+  </ul>
+
+</section>
+<!-- /TOC -->
+
+<h1 id="how-to-build-your-web-site-with-github-pages">How to Build Your Web Site with GitHub Pages</h1>
 
 <p>Writing to your blog involves using the <code class="highlighter-rouge">Markdown</code> language and this will then be automatically be converted to <code class="highlighter-rouge">HTML</code> for the web site. You can learn about <code class="highlighter-rouge">Markdown</code> by viewing the <a href="https://www.markdownguide.org" title="Take a look at this">Markdown Guide on the web</a>. There are many writing apps that use <code class="highlighter-rouge">Markdown</code> but we will use a free tool called <em>Atom</em> that will give you the means to write and update your live web site.</p>
 
@@ -188,15 +208,13 @@ max-height:400px;
 
 <p>Now that you have the software installed you can register for the free web site at github.</p>
 
-<h2 id="setup-github">Setup Github<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></h2>
+<h2 id="setup-github">Setup Github</h2>
 
-<h3 id="create-a-free-account-on-githubcom">Create a free account on Github.com</h3>
+<h3 id="create-a-free-account-on-githubcom">Create a free account on Github.com<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></h3>
 
-<p>You do not need to use your Brookes credentials nor your Brookes email address because this web site and account is yours forever should you wish to continue using it after your course.</p>
+<!-- You do not need to use your Brookes credentials nor your Brookes email address because this web site and account is yours forever should you wish to continue using it after your course. -->
 
-<blockquote>
-  <p>Naming the account (<strong>your username</strong>) is important (although you can change later) because this will become part of your website URL.</p>
-</blockquote>
+<p>Naming the account (<strong>your username</strong>) is important (although you can change later) because this will become part of your website URL.</p>
 
 <blockquote>
   <p>For example, if you name the account <code class="highlighter-rouge">MyLoveofBooks</code>then the web site will become <code class="highlighter-rouge">myloveofbooks.github.io</code>. Not all names will be available and yours may be rejected if it is already taken.</p>
@@ -288,7 +306,7 @@ max-height:400px;
 
 <h3 id="customizing-text">Customizing text</h3>
 
-<h4 id="footer-and-headers-text">Footer and Header’s text</h4>
+<h4 id="footer-and-header-text">Footer and Header text</h4>
 
 <p>Customize your site header/footer with these variables in <code class="highlighter-rouge">_config.yml</code>:
 You should create a different image to replace the picture of Headington Hill Hall. This image needs to be <strong>no</strong> smaller than 1800 pixels wide.</p>
@@ -335,12 +353,12 @@ You should create a different image to replace the picture of Headington Hill Ha
 
 <p>Here are some examples of what the Markdown syntax means.</p>
 
-<pre><code class="language-Markdown">## Heading level 2
-### Heading level 3
+<pre><code class="language-Markdown">  ## Heading level 2
+  ### Heading level 3
 
-This is **bold** text.
+  This is **bold** text.
 
-This is *italic* text
+  This is *italic* text
 </code></pre>
 
 <h3 id="yaml-metadata"><code class="highlighter-rouge">YAML</code> metadata</h3>
@@ -402,7 +420,55 @@ This is *italic* text
 
 <p>For further changes to the appearance you will need to make changes to the <code class="highlighter-rouge">CSS</code>. This is the subject of future advanced sessions.</p>
 
+<h2 id="how-does-all-of-this-work">How does all of this work?</h2>
+
+<h3 id="github-pages">Github Pages</h3>
+
+<p>GitHub provides for free github pages. <a href="https://pages.github.com" title="Go to the Github site for an explanation">You can read more about this here</a>. Basically anyone can host web pages here but we are using a static site generation system called <code class="highlighter-rouge">Jekyll</code> which is also supported in GithUb pages.</p>
+
+<h3 id="jekyll">Jekyll</h3>
+
+<p>This software operates your site, converting the <code class="highlighter-rouge">markdown</code> files into <code class="highlighter-rouge">HTML</code> when you <em>push</em> your files up to the GitHub repository. The Jekyll site that you have created from the provided template includes all of the files necessary to build the live pages including the stylesheets (CSS) and some javascript. There is also a system of logic that builds the menus and pagination. This logic engine is called <code class="highlighter-rouge">Liquid</code> and <a href="https://shopify.github.io/liquid/" title="Go to the shopify site">you can explore this further here</a>.</p>
+
+<h2 id="adding-to-and-editing-your-site-online">Adding to and Editing your site Online</h2>
+
+<p>Although we recommend using <code class="highlighter-rouge">Atom</code> as the way to write posts and edit your site (you certainly need to use for editing the config file and changing the appearance of your site), you can optionally use an online tool from anywhere with an internet connection to post articles.</p>
+
+<h3 id="using-prose">Using Prose</h3>
+
+<p>Go to the web site <a href="https://prose.io" title="Prose is an online editor">prose.io</a> and authorize with your GitHub credentials.</p>
+
+<p>You should now see your repository available.</p>
+
+<p><a href="/images/prosescreen1.png"><img src="/images/prosescreen1.png" alt="Here you see your web site repository" /></a></p>
+
+<p>Once you go into the repository, you can edit the posts or create new posts directly.</p>
+
+<p><a href="/images/prosescreen2.png"><img src="/images/prosescreen2.png" alt="Here we see a post being entered into prose." /></a></p>
+
+<h3 id="synchronising">Synchronising</h3>
+
+<p>Be aware that if you use <code class="highlighter-rouge">prose.io</code> to edit your site then your local copy (edited with Atom) will not be the same. If this is the case then you will need to find the <code class="highlighter-rouge">Fetch</code> link at the bottom right of the Atom window to <strong>pull</strong> the changes to your local space.</p>
+
 <h2 id="further-reading">Further reading</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://learning.oreilly.com/library/view/creating-blogs-with/9781484214640/" title="see this book on O'Reilly Online">Creating Blogs with Jekyll</a>, Vikram Dhillon</td>
+      <td>2016, APRESS</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://learning.oreilly.com/library/view/working-with-static/9781491960936/" title="See this book on O'Reilly Online">Working with Static Sites</a>, by Raymond Rinaldi</td>
+      <td>20 Mar 2017, O’Reilly Press</td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="footnotes">
   <ol>

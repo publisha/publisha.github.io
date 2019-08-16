@@ -15,7 +15,7 @@ order: 4
 ## On this Page
 
 - [Getting the software required](#getting-the-software-required)
-- [Setup Github[^1]](#setup-github1)
+- [Setup Github](#setup-github1)
 - [Getting a local copy](#getting-a-local-copy)
 - [Adding and Editing Content](#adding-and-editing-content)
 - [Adding images to a page](#adding-images-to-a-page)
@@ -61,9 +61,9 @@ The `Atom` program comes ready built with the following packages that will help 
 
 Now that you have the software installed you can register for the free web site at github.
 
-## Setup Github[^1]
+## Setup Github
 
-### Create a free account on Github.com
+### Create a free account on Github.com[^1]
 
 <!-- You do not need to use your Brookes credentials nor your Brookes email address because this web site and account is yours forever should you wish to continue using it after your course. -->
 
@@ -297,12 +297,17 @@ Once you go into the repository, you can edit the posts or create new posts dire
 Be aware that if you use `prose.io` to edit your site then your local copy (edited with Atom) will not be the same. If this is the case then you will need to find the `Fetch` link at the bottom right of the Atom window to **pull** the changes to your local space.
 
 ## Further reading
-[Creating Blogs with Jekyll][68777208], Vikram Dhillon, 2016, APRESS
+
+[Creating Blogs with Jekyll][68777208], Vikram Dhillon | 2016, APRESS
 
   [68777208]: https://learning.oreilly.com/library/view/creating-blogs-with/9781484214640/ "see this book on O'Reilly Online"
 
 [Working with Static Sites][c0190ded], by Raymond Rinaldi | 20 Mar 2017, O'Reilly Press
 
   [c0190ded]: https://learning.oreilly.com/library/view/working-with-static/9781491960936/ "See this book on O'Reilly Online"
+
+[The Atom Flight Manual][b2bb191a] | How to Use Atom in great detail
+  
+  [b2bb191a]: https://flight-manual.atom.io "Read this online"
 
 [^1]: GitHub is a free code hosting platform for collaboration and version control. GitHub lets you (and others) work together on projects. We use GitHub pages to host our web site.

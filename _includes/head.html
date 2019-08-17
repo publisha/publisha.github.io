@@ -4,15 +4,12 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <title>
-    {%- if page.title == "Home" -%}
-      {{ site.title }}
-    {%- else -%}
-      {{ page.title }}
-    {%- endif -%}
-  </title>
-  {%- seo -%}
 
+  {%- seo title=false -%}
+
+  <title>
+      {{ page.title }}
+  </title>
   <!-- CSS -->
   <link rel="stylesheet" href="{{site.baseurl}}/public/css/poole.css">
   <link rel="stylesheet" href="{{site.baseurl}}/public/css/lanyon.css">
@@ -137,7 +134,7 @@ section.toc {
     $.bigfoot();
 </script>
 
-{%- if page.title == "Home" -%}
+{%- if page.title == "Digital Publishing Hub" -%}
 <!-- for slides on home page -->
   <script src="{{site.baseurl}}/public/js/responsiveslides.min.js"></script>
 <script>

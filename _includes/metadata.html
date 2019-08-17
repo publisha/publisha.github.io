@@ -1,13 +1,20 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:image" content="{{site:image}}">
+{%- if page.excerpt != null -%}
+<meta property="og:description" content="{{page.excerpt | strip_html}}">
+{%- endif -%}
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="{{site.url}}">
 <meta name="twitter:site" content="@{{site.twitter_username}}">
 <meta name="twitter:title" content="{{page.title}}">
+{%- if page.excerpt != null -%}
+<meta name="twitter:description" content="{{page.excerpt | strip_html}}">
+{%- else -%}
 <meta name="twitter:description" content="{{site.description}}">
+{%- endif -%}
 <meta name="twitter:image" content="{{site.image}}">
 <meta name="twitter:creator" content="@{{site.twitter_username}}">
 <meta name="twitter:image:alt" content="Book in the hands of a monk">

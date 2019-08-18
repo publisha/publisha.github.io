@@ -8,7 +8,7 @@ tagline:          'Help for publishers and students of publishing'
 description:      'tutorials and screencasts about digital publishing and eBook Production'
 url:              https://publisha.github.io
 baseurl: ''
-image: https://publisha.github.io/images/homegallery/img_00127.jpg
+image: /images/homegallery/img_00127.jpg
 twitter_username: pageboy
 lang: en_gb
 logo: https://publisha.github.io/images/publisha_logo.jpg

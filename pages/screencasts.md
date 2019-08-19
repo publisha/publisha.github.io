@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Screencasts from the PagetoScreen YouTube Channel
+title: Screencasts from the Publisha YouTube Channel
 published: true
 permalink: screencasts/index.html
 ---
@@ -16,7 +16,7 @@ permalink: screencasts/index.html
   {% for screencast in items reversed limit:45 %}
   <div class="post">
   <a class="video fancybox.iframe" title="{{ screencast.title }}" href="https://www.youtube.com/embed/{{ screencast.YouTube }}?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
-  <h2>{{ screencast.title }}</h2>
+  <h2><a href="{{ site.baseurl }}{{ screencast.url }}">{{ screencast.title }}</a></h2>
   <span class="post-date">{{ screencast.date | date_to_string }}</span>
   {{ screencast.content }}
   {% if screencast.categories != null %}

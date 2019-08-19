@@ -4,6 +4,7 @@ title: How to Build Your Web Site with GitHub Pages
 published: true
 images: full-width
 tags: [Using GitHub]
+screencast: [7NF2oedwkxQ]
 categories: [Web, HTML, CSS, Using GitHub]
 date: 2019-08-15
 blurb: GithUb provides a way to use a free web site. Here is a simple way to get started with a provided template that you can change later.
@@ -307,7 +308,7 @@ Be aware that if you use `prose.io` to edit your site then your local copy (edit
   [c0190ded]: https://learning.oreilly.com/library/view/working-with-static/9781491960936/ "See this book on O'Reilly Online"
 
 [The Atom Flight Manual][b2bb191a] | How to Use Atom in great detail
-  
+
   [b2bb191a]: https://flight-manual.atom.io "Read this online"
 
 [^1]: GitHub is a free code hosting platform for collaboration and version control. GitHub lets you (and others) work together on projects. We use GitHub pages to host our web site.

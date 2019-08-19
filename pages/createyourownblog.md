@@ -4,7 +4,7 @@ title: How to Build Your Web Site with GitHub Pages
 published: true
 images: full-width
 tags: [Using GitHub]
-screencast: [7NF2oedwkxQ]
+screencast: [blogwithgithub]
 categories: [Web, HTML, CSS, Using GitHub]
 date: 2019-08-15
 blurb: GithUb provides a way to use a free web site. Here is a simple way to get started with a provided template that you can change later.

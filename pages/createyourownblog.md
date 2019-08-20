@@ -6,7 +6,7 @@ images: full-width
 tags: [Using GitHub]
 screencast: [blogwithgithub]
 categories: [Web, HTML, CSS, Using GitHub]
-date: 2019-08-15
+date: 2019-08-20
 blurb: GithUb provides a way to use a free web site. Here is a simple way to get started with a provided template that you can change later.
 order: 4
 ---
@@ -299,15 +299,15 @@ Be aware that if you use `prose.io` to edit your site then your local copy (edit
 
 ## Further reading
 
-[Creating Blogs with Jekyll][68777208], Vikram Dhillon | 2016, APRESS
+| Title                                                     	| Type of resource 	|                                 	|
+|-----------------------------------------------------------	|------------------	|---------------------------------	|
+| [Creating Blogs with Jekyll][68777208], Vikram Dhillon    	| Book             	| 2016, APRESS                    	|
+| [Working with Static Sites][c0190ded], by Raymond Rinaldi 	| Book             	| 20 Mar 2017, O'Reilly Press     	|
+| [The Atom Flight Manual][b2bb191a]                        	| web site         	| How to Use Atom in great detail 	|
 
   [68777208]: https://learning.oreilly.com/library/view/creating-blogs-with/9781484214640/ "see this book on O'Reilly Online"
 
-[Working with Static Sites][c0190ded], by Raymond Rinaldi | 20 Mar 2017, O'Reilly Press
-
   [c0190ded]: https://learning.oreilly.com/library/view/working-with-static/9781491960936/ "See this book on O'Reilly Online"
-
-[The Atom Flight Manual][b2bb191a] | How to Use Atom in great detail
 
   [b2bb191a]: https://flight-manual.atom.io "Read this online"
 

@@ -5,7 +5,7 @@ published: true
 images: full-width
 tags: [Using GitHub]
 screencast: [blogwithgithub]
-categories: [Web, HTML, CSS, Using GitHub]
+categories: [Web, HTML]
 date: 2019-08-20
 blurb: GithUb provides a way to use a free web site. Here is a simple way to get started with a provided template that you can change later.
 order: 4

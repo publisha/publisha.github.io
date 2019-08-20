@@ -2,8 +2,8 @@
 layout: page
 title: Using a Git Repository to host your Shakespeare Play Web Site
 published: true
-categories: ["HTML and CSS", "Multi-Platform Publishing"]
-tags: [Using GitHub]
+categories: ["HTML and CSS", "Multi-Platform Publishing", GitHub]
+tags: [GitHub, HTML, CSS]
 date:  2018-01-19
 order: 2
 blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.

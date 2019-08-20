@@ -57,7 +57,7 @@ kramdown:
 
 tag-list: [InDesign, HTML, CSS, Using GitHub]
 
-categories-list: [InDesign, "HTML and CSS", Typography, XML, ePub, iBooks Author]
+categories-list: [InDesign, HTML and CSS, Typography, XML, ePub, iBooks Author]
 
 # for Brookes
 
@@ -71,7 +71,7 @@ collections:
 
   multi-platform-Publishing:
     output: true
-    title: 'Multi-platform Publshing'
+    title: 'Multi-platform Publishing'
     description: 'Workflow and techniques for designing, creating and publishing for page and device'
     defaults:
       layout: book

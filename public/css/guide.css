@@ -1052,3 +1052,8 @@ section.headline {
 }
 
 }
+
+
+th {
+  text-align: left;
+}

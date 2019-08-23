@@ -32,7 +32,7 @@ order: 4
 
 Writing to your blog involves using the `Markdown` language and this will then be automatically be converted to `HTML` for the web site. You can learn about `Markdown` by viewing the [Markdown Guide on the web][47a5cbc0]. There are many writing apps that use `Markdown` but we will use a free tool called _Atom_ that will give you the means to write and update your live web site.
 
-  [47a5cbc0]: https://www.markdownguide.org "Take a look at this"
+  [47a5cbc0]: https://www.markdownguide.org "Take a look at this helpful site"
 
 ## Getting the software required
 
@@ -44,14 +44,16 @@ From the Finder use `Go` to find your Home folder. Read the `readme.md` file tha
 
 [61862e36]: http://www.publisha.org/resources/atom.zip "Get this zip file and unpack"
 
-[![It will help if you show the extensions for the files (.app. .zip)](/images/Screenshot 2019-08-15 12.47.22.png)](/images/Screenshot 2019-08-15 12.47.22.png)
+[![It will help if you show the extensions for the files](/images/showfileextension.png)](/images/showfileextension.png)
 
 > **Note:** If you use Safari as your browser then the zip file will unpack into your downloads folder. **Now take the following steps**:
 
 1. In your Home folder (remember use `Go > Home`) create a new folder and name it `Applications` (note the capital **A**).
 2. Drag the `Atom.app` into this Applications folder.
 3. Drag the `for_home_folder.zip` file into the home folder
-4. Double click this file to unpack - this creates a _hidden_ folder called `.atom`. You can view hidden files by using `SHIFT-CMD full-stop` on the keyboard.
+4. Double click this file to unpack - this creates a _hidden_ folder called `.atom` (**but you won't see it**).
+
+> You can view hidden files by using `SHIFT-CMD full-stop` on the keyboard.
 
 The `Atom` program comes ready built with the following packages that will help you write posts for your blog.
 
@@ -60,13 +62,13 @@ The `Atom` program comes ready built with the following packages that will help 
 -   toolbar-markdown-writer
 -   zen (this will provide a distraction free interface)
 
-Now that you have the software installed you can register for the free web site at github.
+Now that you have the software installed you can sign up for the free web site at github.
 
 ## Setup Github
 
-### Create a free account on Github.com[^1]
+### Create a free account on [Github.com][a260d92e][^1]
 
-<!-- You do not need to use your Brookes credentials nor your Brookes email address because this web site and account is yours forever should you wish to continue using it after your course. -->
+  [a260d92e]: https://github.com/ "Sign up for an account on GitHub"
 
 Naming the account (**your username**) is important (although you can change later) because this will become part of your website URL.
 
@@ -76,9 +78,9 @@ Please remember your username and password or keep somewhere safe.
 
 Choose a **Free** account and go through the various steps although you can skip the questions about your interests. You will also need to verify your email address. Optionally you can edit your profile and add an avatar image.
 
-### Logged into GitHub
+### Signed in to GitHub
 
-Once you are logged in to Github, go to the following URL:
+Once you are signed in to Github, go to the following URL:
 
 [https://github.com/publisha/student_site/][fc1ed271]
 
@@ -128,16 +130,16 @@ The file itself has comments so it should be self explanatory but here are the i
 
 ### Site configuration
 
-Configure as your own website in `_config.yml`:
+Please make these changes before using the student blog.
+
+Configure as your own website in the file called `_config.yml`:
 
 ```yml
   baseurl: ''
   url: "https://username.github.io"
 ```
 
-Change _username_ to the name you chose for your site.
-
-Please configure this before using the student blog.
+Change _username_ to the username you chose for GitHub. In other words, the url will be the repository name prefixed with `https://`
 
 ### Meta and Branding
 
@@ -209,13 +211,18 @@ Here are some examples of what the Markdown syntax means.
 
 ### `YAML` metadata
 
-At the top of each page or post there will always need to be some metadata to control certain aspects of the page when it is converted to `HTML` and then included in your site.
+At the top of each page or post there will always need to be some metadata to control certain aspects of the page when it is converted to `HTML` and then included in your site. When you create a post with Atom, the metadata is added automatically, but you need to edit this/
 
-This metadata is enclosed within the 2 groups of hyphens.
+This metadata is enclosed within the 2 groups of hyphens. Here is an example.
 
 ```YAML
     ---
-    metadata goes here
+    layout: post
+    title: Here is a sample blog post
+    date: 2019-08-06
+    published: false
+    header_feature_image: images/2019/07/tomatoes.jpg
+    caption: "I love tomatoes"
     ---
 ```
 
@@ -225,9 +232,9 @@ You will also need to edit this metadata to confirm that the post is ready to be
 
 #### Page image
 
-We will describe how you can add images to your posts and pages later, but all content can also have a `page image` and this image will appear at the top of the page, withe the post heading set against it. You will need to place this image into your `images` folder and then provide the link to it in your metadata.
+We will describe how you can add images to your posts and pages later, but all content can also have a `header_feature_image` and this image will appear at the top of the page, with the post heading set against it. You will need to place this image into your `images` folder and then provide the link to it in your metadata.
 
-> **Tip** you can drag images into the images folder (make sure that they do _not_ have spaces in the file name) and then `right-click` over the image and copy the path. Then paste and edit this path into the metadata for `image: pathtoimage`.
+> **Tip** you can drag images into the images folder (make sure that they do _not_ have spaces in the file name) and then `right-click` over the image and copy the path. Then paste and edit this path into the metadata for `header_feature_image: pathtoimage`.
 
 ## Adding images to a page
 
@@ -239,7 +246,7 @@ You will get a popup window and you need to select and image from somewhere on y
 
 ### Previewing your page
 
-You can simulate the appearance of your page by clicking the icon near tot eh bottom left. This looks like this: <i class="fab fa-markdown fa-2x"></i>
+You can preview the appearance of your page by clicking the icon near to the bottom left. The icon appears like this: <i class="fab fa-markdown fa-2x"></i>
 
 [![The preview opens in another tab](/images/preview.png)](/images/preview.png)
 
@@ -277,7 +284,7 @@ This software operates your site, converting the `markdown` files into `HTML` wh
 
 ## Adding to and Editing your site Online
 
-Although we recommend using `Atom` as the way to write posts and edit your site (you certainly need to use for editing the config file and changing the appearance of your site), you can optionally use an online tool from anywhere with an internet connection to post articles.
+Although we recommend using `Atom` as the way to write posts and edit your site (you certainly need to use it for editing the config file and changing the appearance of your site), you can optionally use an online tool from anywhere with an internet connection to post articles.
 
 ### Using Prose
 

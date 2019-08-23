@@ -184,7 +184,7 @@ max-height:420px;
 
 <h1 id="how-to-build-your-web-site-with-github-pages">How to Build Your Web Site with GitHub Pages</h1>
 
-<p>Writing to your blog involves using the <code class="highlighter-rouge">Markdown</code> language and this will then be automatically be converted to <code class="highlighter-rouge">HTML</code> for the web site. You can learn about <code class="highlighter-rouge">Markdown</code> by viewing the <a href="https://www.markdownguide.org" title="Take a look at this">Markdown Guide on the web</a>. There are many writing apps that use <code class="highlighter-rouge">Markdown</code> but we will use a free tool called <em>Atom</em> that will give you the means to write and update your live web site.</p>
+<p>Writing to your blog involves using the <code class="highlighter-rouge">Markdown</code> language and this will then be automatically be converted to <code class="highlighter-rouge">HTML</code> for the web site. You can learn about <code class="highlighter-rouge">Markdown</code> by viewing the <a href="https://www.markdownguide.org" title="Take a look at this helpful site">Markdown Guide on the web</a>. There are many writing apps that use <code class="highlighter-rouge">Markdown</code> but we will use a free tool called <em>Atom</em> that will give you the means to write and update your live web site.</p>
 
 <h2 id="getting-the-software-required">Getting the software required</h2>
 
@@ -194,7 +194,7 @@ max-height:420px;
 
 <p>From the Finder use <code class="highlighter-rouge">Go</code> to find your Home folder. Read the <code class="highlighter-rouge">readme.md</code> file that comes inside this zip file.</p>
 
-<p><a href="/images/Screenshot 2019-08-15 12.47.22.png"><img src="/images/Screenshot 2019-08-15 12.47.22.png" alt="It will help if you show the extensions for the files (.app. .zip)" /></a></p>
+<p><a href="/images/showfileextension.png"><img src="/images/showfileextension.png" alt="It will help if you show the extensions for the files" /></a></p>
 
 <blockquote>
   <p><strong>Note:</strong> If you use Safari as your browser then the zip file will unpack into your downloads folder. <strong>Now take the following steps</strong>:</p>
@@ -204,8 +204,12 @@ max-height:420px;
   <li>In your Home folder (remember use <code class="highlighter-rouge">Go &gt; Home</code>) create a new folder and name it <code class="highlighter-rouge">Applications</code> (note the capital <strong>A</strong>).</li>
   <li>Drag the <code class="highlighter-rouge">Atom.app</code> into this Applications folder.</li>
   <li>Drag the <code class="highlighter-rouge">for_home_folder.zip</code> file into the home folder</li>
-  <li>Double click this file to unpack - this creates a <em>hidden</em> folder called <code class="highlighter-rouge">.atom</code>. You can view hidden files by using <code class="highlighter-rouge">SHIFT-CMD full-stop</code> on the keyboard.</li>
+  <li>Double click this file to unpack - this creates a <em>hidden</em> folder called <code class="highlighter-rouge">.atom</code> (<strong>but you won’t see it</strong>).</li>
 </ol>
+
+<blockquote>
+  <p>You can view hidden files by using <code class="highlighter-rouge">SHIFT-CMD full-stop</code> on the keyboard.</p>
+</blockquote>
 
 <p>The <code class="highlighter-rouge">Atom</code> program comes ready built with the following packages that will help you write posts for your blog.</p>
 
@@ -216,13 +220,11 @@ max-height:420px;
   <li>zen (this will provide a distraction free interface)</li>
 </ul>
 
-<p>Now that you have the software installed you can register for the free web site at github.</p>
+<p>Now that you have the software installed you can sign up for the free web site at github.</p>
 
 <h2 id="setup-github">Setup Github</h2>
 
-<h3 id="create-a-free-account-on-githubcom">Create a free account on Github.com<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></h3>
-
-<!-- You do not need to use your Brookes credentials nor your Brookes email address because this web site and account is yours forever should you wish to continue using it after your course. -->
+<h3 id="create-a-free-account-on-githubcom">Create a free account on <a href="https://github.com/" title="Sign up for an account on GitHub">Github.com</a><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></h3>
 
 <p>Naming the account (<strong>your username</strong>) is important (although you can change later) because this will become part of your website URL.</p>
 
@@ -234,9 +236,9 @@ max-height:420px;
 
 <p>Choose a <strong>Free</strong> account and go through the various steps although you can skip the questions about your interests. You will also need to verify your email address. Optionally you can edit your profile and add an avatar image.</p>
 
-<h3 id="logged-into-github">Logged into GitHub</h3>
+<h3 id="signed-in-to-github">Signed in to GitHub</h3>
 
-<p>Once you are logged in to Github, go to the following URL:</p>
+<p>Once you are signed in to Github, go to the following URL:</p>
 
 <p><a href="https://github.com/publisha/student_site/" title="Get this template">https://github.com/publisha/student_site/</a></p>
 
@@ -288,7 +290,9 @@ max-height:420px;
 
 <h3 id="site-configuration">Site configuration</h3>
 
-<p>Configure as your own website in <code class="highlighter-rouge">_config.yml</code>:</p>
+<p>Please make these changes before using the student blog.</p>
+
+<p>Configure as your own website in the file called <code class="highlighter-rouge">_config.yml</code>:</p>
 
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -296,9 +300,7 @@ max-height:420px;
   <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://username.github.io"</span>
 </pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>Change <em>username</em> to the name you chose for your site.</p>
-
-<p>Please configure this before using the student blog.</p>
+<p>Change <em>username</em> to the username you chose for GitHub. In other words, the url will be the repository name prefixed with <code class="highlighter-rouge">https://</code></p>
 
 <h3 id="meta-and-branding">Meta and Branding</h3>
 
@@ -373,12 +375,17 @@ You should create a different image to replace the picture of Headington Hill Ha
 
 <h3 id="yaml-metadata"><code class="highlighter-rouge">YAML</code> metadata</h3>
 
-<p>At the top of each page or post there will always need to be some metadata to control certain aspects of the page when it is converted to <code class="highlighter-rouge">HTML</code> and then included in your site.</p>
+<p>At the top of each page or post there will always need to be some metadata to control certain aspects of the page when it is converted to <code class="highlighter-rouge">HTML</code> and then included in your site. When you create a post with Atom, the metadata is added automatically, but you need to edit this/</p>
 
-<p>This metadata is enclosed within the 2 groups of hyphens.</p>
+<p>This metadata is enclosed within the 2 groups of hyphens. Here is an example.</p>
 
 <pre><code class="language-YAML">    ---
-    metadata goes here
+    layout: post
+    title: Here is a sample blog post
+    date: 2019-08-06
+    published: false
+    header_feature_image: images/2019/07/tomatoes.jpg
+    caption: "I love tomatoes"
     ---
 </code></pre>
 
@@ -390,10 +397,10 @@ You should create a different image to replace the picture of Headington Hill Ha
 
 <h4 id="page-image">Page image</h4>
 
-<p>We will describe how you can add images to your posts and pages later, but all content can also have a <code class="highlighter-rouge">page image</code> and this image will appear at the top of the page, withe the post heading set against it. You will need to place this image into your <code class="highlighter-rouge">images</code> folder and then provide the link to it in your metadata.</p>
+<p>We will describe how you can add images to your posts and pages later, but all content can also have a <code class="highlighter-rouge">header_feature_image</code> and this image will appear at the top of the page, with the post heading set against it. You will need to place this image into your <code class="highlighter-rouge">images</code> folder and then provide the link to it in your metadata.</p>
 
 <blockquote>
-  <p><strong>Tip</strong> you can drag images into the images folder (make sure that they do <em>not</em> have spaces in the file name) and then <code class="highlighter-rouge">right-click</code> over the image and copy the path. Then paste and edit this path into the metadata for <code class="highlighter-rouge">image: pathtoimage</code>.</p>
+  <p><strong>Tip</strong> you can drag images into the images folder (make sure that they do <em>not</em> have spaces in the file name) and then <code class="highlighter-rouge">right-click</code> over the image and copy the path. Then paste and edit this path into the metadata for <code class="highlighter-rouge">header_feature_image: pathtoimage</code>.</p>
 </blockquote>
 
 <h2 id="adding-images-to-a-page">Adding images to a page</h2>
@@ -406,7 +413,7 @@ You should create a different image to replace the picture of Headington Hill Ha
 
 <h3 id="previewing-your-page">Previewing your page</h3>
 
-<p>You can simulate the appearance of your page by clicking the icon near tot eh bottom left. This looks like this: <i class="fab fa-markdown fa-2x"></i></p>
+<p>You can preview the appearance of your page by clicking the icon near to the bottom left. The icon appears like this: <i class="fab fa-markdown fa-2x"></i></p>
 
 <p><a href="/images/preview.png"><img src="/images/preview.png" alt="The preview opens in another tab" /></a></p>
 
@@ -442,7 +449,7 @@ You should create a different image to replace the picture of Headington Hill Ha
 
 <h2 id="adding-to-and-editing-your-site-online">Adding to and Editing your site Online</h2>
 
-<p>Although we recommend using <code class="highlighter-rouge">Atom</code> as the way to write posts and edit your site (you certainly need to use for editing the config file and changing the appearance of your site), you can optionally use an online tool from anywhere with an internet connection to post articles.</p>
+<p>Although we recommend using <code class="highlighter-rouge">Atom</code> as the way to write posts and edit your site (you certainly need to use it for editing the config file and changing the appearance of your site), you can optionally use an online tool from anywhere with an internet connection to post articles.</p>
 
 <h3 id="using-prose">Using Prose</h3>
 
@@ -612,5 +619,15 @@ if (imageCaption != '') {
 </script>
     <script src="/public/js/progress.js"></script>
 
+
+<script>
+jQuery(document).ready(function($) {
+	$('a')
+		.filter('[href^="http"], [href^="//"]')
+		.not('[href*="' + window.location.host + '"]')
+		.attr('rel', 'noopener noreferrer')
+		.attr('target', '_blank');
+});
+</script>
   </body>
 </html>

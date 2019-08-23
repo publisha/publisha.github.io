@@ -421,5 +421,15 @@ if (imageCaption != '') {
 </script>
     <script src="/public/js/progress.js"></script>
 
+
+<script>
+jQuery(document).ready(function($) {
+	$('a')
+		.filter('[href^="http"], [href^="//"]')
+		.not('[href*="' + window.location.host + '"]')
+		.attr('rel', 'noopener noreferrer')
+		.attr('target', '_blank');
+});
+</script>
   </body>
 </html>

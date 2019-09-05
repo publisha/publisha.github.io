@@ -10,11 +10,11 @@ Very often we want to share a web page to our social media locations such as Twi
 
 [![A recent blog post was shared on Twitter](/images/twittershared.jpg)](/images/twittershared.jpg)
 
-With a Jekyll site (that’s what this is) we can use the _[^1]liquid_ logic to populate the correct metadata in the page, so that anyone who shares that page will be able to make a compelling  post in their Facebook timeline or for a Twitter tweet.
+With a Jekyll site (that’s what this is) we can use the [^1]_liquid_ logic to populate the correct metadata in the page, so that anyone who shares that page will be able to make a compelling  post in their Facebook timeline or for a Twitter tweet.
 
 ## The adopted standards for *FaceBook*
 
-The basic metadata that needs to be added to each web page uses `OpenGraph` to provide the various components that will then populate a Facebook post correctly. You can read all about *Open Graph* on this web site: https://ogp.me
+The basic metadata that needs to be added to each web page uses `OpenGraph` to provide the various components that will then populate a Facebook post correctly. You can read all about *Open Graph* on this web site: [https://ogp.me](https://ogp.me/ "The Open Graph protocol")
 
 Open Graph is essentially a set of metadata tags that `Facebook` will recognise and be able to use the data to display the link in the timeline.
 

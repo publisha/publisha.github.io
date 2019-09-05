@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sharing to Facebook and Twitter
-published: true
+published: false
 date: 2019-09-05
 tags: social, code, blog, metadata
 ---

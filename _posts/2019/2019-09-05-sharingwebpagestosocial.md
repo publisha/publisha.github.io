@@ -2,7 +2,7 @@
 layout: post
 title: Sharing to Facebook and Twitter
 published: true
-date: 2019-09-05
+date: 2019-09-06
 tags: social, code, blog, metadata
 ---
 
@@ -53,6 +53,8 @@ Here we see the code that I am using to get the correct tags in both Facebook an
 {% endraw %}
 
 ## Stand out with a fine picture
+
+[![A recent blog post was shared on Facebook](/images/facebookpost.jpg)](/images/facebookpost.jpg)
 
 You will see from the code block above that both `OpenGraph` and `TwitterCard` expect an image to display.  In this case we use an image that has a path set out in the `YAML` config. In other words you need to commit to an image for your site. There are other options. You can give each page or blog post on your site an image; in this case the code snippet above might go something like:
 

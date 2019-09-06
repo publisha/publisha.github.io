@@ -84,6 +84,15 @@ Here is snippet for the `TwitterCard` that will get that right:
 ```
 {% endraw %}
 
+## Validation
+
+You should check that you have the correct meta tags working on your page by using the validation tools for the different platforms.
+
+For Twitter go here: [https://cards-dev.twitter.com/validator](https://cards-dev.twitter.com/validator)
+
+For Facebook go here: [https://developers.facebook.com/tools/debug/](https://developers.facebook.com/tools/debug)
+
+You will need to be signed in to the respective accounts to work with these tools.
 
 [^1]: Liquid is the coding language used by GitHub pages and Jekyll. The language is developed by `Shopify` and can be explored here: https://shopify.github.io/liquid/basics/introduction/
 

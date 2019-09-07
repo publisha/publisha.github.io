@@ -5,7 +5,9 @@ date: "2018-10-14 14:58"
 published: true
 categories: [Publishing, Editing, OpenSource]
 ---
-Booktype is web based, single-source publishing software for creating  books. The software is open-source so you can (expertise needed) install on your own server and create and edit books and then, export to a number of formats. [More information on the Booktype page][7c7006d7].
+Booktype is web based, single-source publishing software for creating  books. The software is open-source so you can (expertise needed) install on your own server and create and edit books and then, export to a number of formats. 
+
+[More information on the Booktype page][7c7006d7].
 
   [7c7006d7]: https://booktype.pro "find out more"
 

@@ -5,6 +5,8 @@
 <meta property="og:image" content="{{site.url}}{{site.image}}">
 {%- if page.blurb != null -%}
 <meta property="og:description" content="{{page.blurb}}">
+{%- else -%}
+<meta name="og:description" content="{{page.excerpt}}">
 {%- endif -%}
 
 <!-- Twitter -->
@@ -15,7 +17,7 @@
 {%- if page.blurb != null -%}
 <meta name="twitter:description" content="{{page.blurb}}">
 {%- else -%}
-<meta name="twitter:description" content="{{site.description}}">
+<meta name="twitter:description" content="{{page.excerpt}}">
 {%- endif -%}
 <meta name="twitter:image" content="{{site.url}}{{site.image}}">
 <meta name="twitter:creator" content="@{{site.twitter_username}}">

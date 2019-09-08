@@ -81,10 +81,12 @@ Here is snippet for the `TwitterCard` that will get that right:
 {%- if page.blurb != null -%}
 <meta name="twitter:description" content="{{page.blurb}}">
 {%- else -%}
-<meta name="twitter:description" content="{{site.description}}">
+<meta name="twitter:description" content="{{page.excerpt | strip_html}}">
 {%- endif -%}
 ```
 {% endraw %}
+
+The `excerpt` in the code above simply takes the first paragraph of your post. The description will be truncated to 2 lines. **Note**: do not include links in this description otherwise the meta tag will be broken (you could strip the HTML from this with the `strip_html` code.
 
 ## Validation
 

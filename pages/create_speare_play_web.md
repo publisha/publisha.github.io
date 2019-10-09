@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Using a Git Repository to host your Shakespeare Play Web Site
-published: true
+published: false
 categories: ["HTML and CSS", "Multi-Platform Publishing", GitHub]
 tags: [GitHub, HTML, CSS]
-date:  2018-01-19
+date:  2019-10-08
 order: 2
 blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 ---
@@ -25,118 +25,67 @@ blurb: We are using GitHub pages to host a web site for the Shakespeare play. Th
 
 We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 
-## What to do?
-If you are reading this within your very own copy of this GitHub repository (because you followed the link from the **github classroom**), then read on. If you are reading this offline, then [please set up the Github account][8c08ca4b] before you do anything else.
+## You will need Atom software
+
+> **Note: **If you have already grabbed a copy of Atom previously then you can skip this step.
+
+You will only need the application called _Atom_ and to help you get the correct settings I am [providing you with a distribution][61862e36] package as a `zip` file. This will create an `atom` folder which you need to place inside your `Home` folder.
+
+[![To find your Home folder use the Go menu item.](/images/getintoyourhomefolder.png)](/images/getintoyourhomefolder.png)
+
+From the Finder use `Go` to find your Home folder. Read the `readme.md` file that comes inside this zip file.
+
+[61862e36]: http://www.publisha.org/resources/atom.zip "Get this zip file and unpack"
+
+[![It will help if you show the extensions for the files](/images/showfileextension.png)](/images/showfileextension.png)
+
+> **Note:** If you use Safari as your browser then the zip file will unpack into your downloads folder. **Now take the following steps**:
+
+1. In your Home folder (remember use `Go > Home`) create a new folder and name it `Applications` (note the capital **A**).
+2. Drag the `Atom.app` into this Applications folder.
+3. Drag the `for_home_folder.zip` file into the home folder
+4. Double click this file to unpack - this creates a _hidden_ folder called `.atom` (**but you won't see it**).
+
+> You can view hidden files by using `SHIFT-CMD full-stop` on the keyboard.
+
+The `Atom` program comes ready built with the following packages that will help you write posts for your blog.
+
+-   tool-bar
+-   markdown-writer
+-   toolbar-markdown-writer
+-   zen (this will provide a distraction free interface)
+
+## Now we need to create the Github repository
+
+Here are the steps:
+
+[Create a Github Account][8c08ca4b] (if you do not already have one) and login to the account.
+
+If you already have an account then login at [github.com](https://github.com)
 
   [8c08ca4b]: https://github.com "Go to GitHub and create and account or login if you already have one"
 
-Before you do anything with your new GitHub account do this:
+Now go to this page (put this into the URL box): https://github.com/publisha/shakespeareplay
 
-- Go to your account settings and put in your full name
-- Add a picture or avatar of yourself
+You will see the green button _Use this Template_
 
-You will now need to click on the link in Moodle and accept the repository.
+[![Click the green button to grab the template](/images/templategrab.png)](/images/templategrab.png)
 
-[![Accept the assignment from classroom](/images/Screen Shot 2018-01-16 at 14.15.41.png)](/images/Screen Shot 2018-01-16 at 14.15.41.png)
+Use the template link to receive the repository in your own github account. Make sure that you choose the `Public` option. You will be asked to name the repository.
 
-- Go to **settings and change the name** of your repo (you can use the name of your play, but this may conflict with others, so include your publisher or surname as well example: _blades-macbeth_)
+- Go to **settings and change the name** of your repo (you should use the name of your play.
 
 [![Change the name of your repo](/images/2017/01/changethenameofRepo.png)](/images/2017/01/changethenameofRepo.png)
 
-You don't need GitHub.com for the moment but you will need to recall your username and password during the next steps.
-
-## Your digital tools
-
-We are planning to use a free editor to edit the HTML and CSS for the web site. We prefer to use this method over the _wysiwyg_ software called Dreamweaver. However, it is possible to use Adobe _Dreamweaver_ for this task, and further instructions will be provided.
-
-There are 2 free apps that you need to download and install.
-
-### Atom
-You will need a text editor that can show and preview HTML. We now want you to download and install _Atom_. You can find this [free open source editor here][9ef5b049]
-
-  [9ef5b049]: https://atom.io "grab Atom"
-
-[![Download Atom](/images/2017/01/downloadAtom.png)](/images/2017/01/downloadAtom.png)
-
-This application will be placed inside your downloads folder, so you need to copy to your _Applications_ folder inside your user account on the MAC.
-
-You can also install _Atom_ on your own computer at home.
-
-[![Finding your Applications folder](/images/2017/01/yourHomefolder.png)](/images/2017/01/yourHomefolder.png)
-
-Your Applications folder is inside your Home folder; find this by selecting _Go_ from the finder menu. You can copy or move the Atom app from the downloads folder.
-
-If there is no Applications folder inside your home folder then create one. Do try to use the **same** MAC in the IT suite whenever possible, so that you do not need to install this software again.
-
-Atom will now be available but we now need to move to the next stage.
-
-### Configuring Atom
-Atom is open source, so this means there are lots of packages that can be added to provide extra functionality.
-
-There are a few packages that will prove useful but here are two that are highly recommended:
-
-**Open in Browser**
-
-[![Add this package to Atom](/images/Screen Shot 2018-01-16 at 14.18.42.png)](/images/Screen Shot 2018-01-16 at 14.18.42.png)
-
-This will provide you with the ability to `right-click` over the file and select `Open in Browser`, which will then show you the file in your default web browser.
-
-**Atom HTML Preview**
-
-This is an alternative to the one above. This package will provide a window to view the HTML just like a browser.
-
-
-**Color Picker**
-
-[![Grab the Color Picker package](/images/Screen Shot 2018-01-10 at 14.33.49.png)](/images/Screen Shot 2018-01-10 at 14.33.49.png)
-
-This plugin makes it easy to select colours for the CSS.
-
-
-#### Atom and GitHub
-
-You can also use Atom to update your GitHub repository that is online, but to prevent having to login each time add the following command.
-
-In the terminal window copy and paste this:
-
-> `git config --global credential.helper osxkeychain`
-
-## Github Desktop
-
-You will need this app to make it easy to _clone_ the repository to your computer (use Google drive) so that you can edit offline/
-
-_GitHub Desktop_ is free and [comes from here][c6de3c27]
-
-  [c6de3c27]: https://desktop.github.com "grab GithUb Desktop"
-One you download this app, put inside the Applications folder where you have placed _Atom_
-
-- Open the GitHub Desktop APP
-- Sign into your GitHub account that you have previously setup
-
-Once you have done this you can now _clone_ the repository that is in your GitHub account online by selecting the **+** sign. All being well you should see something similar to this here:
-
-[![You should see your repository once signed in](/images/Screen Shot 2018-01-16 at 14.25.58.png)](/images/Screen Shot 2018-01-16 at 14.25.58.png)
-
-- You will be asked where to put it…. your Google drive is best! Stay in the GitHub desktop app:
-- In the GitHub desktop right-click over the repo name in the left sidebar and select **Open in Atom**
-
-[![Open in the repo in Atom for editing](/images/2017/01/openyourrepoinAtom.png)](/images/2017/01/openyourrepoinAtom.png)
-
-- You should see something like this:
-
-[![Atom editor](/images/2017/01/atom.png)](/images/2017/01/atom.png)
-
 ## What's inside the repository?
 
-When you download this repository, you will find a variety of files, but the 2 important ones are inside the **docs** folder:
+When you download this repository, you will find a variety of files, but the 3 important ones are inside the **docs** folder:
 
 - index.html - this will become the home page for your play. This page will have the cover image.
 - play.html - this is where the text of the play will be. Linked from the home page above.
 - styles.css -  this is where you define the styles for the elements in the play
 
-You can also have a look at the sample scene inside the **sampleScene** folder
-
-- Also inside the resources folder you will find various InDesign scripts. These scripts needs to go into your copy of InDesign. The instructions are found in the readme for that folder.
+You can also have a look at the sample scene inside the **sampleScene** folder.
 
 ## Ok, so what do I do now?
 [You should now read the help document here][9bf3210c], that explains how to generate the HTML files from InDesign.
@@ -148,7 +97,7 @@ You can also have a look at the sample scene inside the **sampleScene** folder
 - Open InDesign and find your final version of the play (**only the play - not the Introduction**)
 - Make any corrections that you like (consider the comments from the previous assignment)
 - If you created any new styles you will need to go to the style panel and configure the _Export Tags_ feature, making sure that each style will export with an HTML tag.
-- You can read the help document that I have provided - [InDesign to HTML][2aa24c4b].
+- As stated above - read the help document that I have provided - [InDesign to HTML][2aa24c4b].
 - Follow those instructions to create the interactive table of contents.
 - Export your play InDesign document with settings in the instructions.
 - You will find that you have now got a new file saved wherever your InDesign file was saved. You can drag this file into the `docs` folder of your working copy of the repo that you have open in Atom. This file should be renamed `play.html` and will replace the existing placeholder file.

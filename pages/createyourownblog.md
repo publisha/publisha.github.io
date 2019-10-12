@@ -40,7 +40,7 @@ You will only need the application called _Atom_ and to help you get the correct
 
 [![To find your Home folder use the Go menu item.](/images/getintoyourhomefolder.png)](/images/getintoyourhomefolder.png)
 
-From the Finder use `Go` to find your Home folder. Read the `readme.md` file that comes inside this zip file.
+From the Finder use `Go` to find your Home folder. Read the `readme.txt` file that comes inside this zip file.
 
 [61862e36]: http://www.publisha.org/resources/atom.zip "Get this zip file and unpack"
 

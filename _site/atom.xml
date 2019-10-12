@@ -4,13 +4,108 @@
  <title>Digital Publishing Hub</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2019-08-30T14:40:54+01:00</updated>
+ <updated>2019-10-12T12:12:45+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Sharing to Facebook and Twitter</title>
+   <link href="http://localhost:4000/2019/09/06/sharingwebpagestosocial/"/>
+   <updated>2019-09-06T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2019/09/06/sharingwebpagestosocial</id>
+   <content type="html">&lt;p&gt;Very often we want to share a web page to our social media locations such as Twitter and Facebook. How do we do this properly to get a good looking post in those platforms?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/twittershared.jpg&quot;&gt;&lt;img src=&quot;/images/twittershared.jpg&quot; alt=&quot;A recent blog post was shared on Twitter&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;With a Jekyll site (that’s what this is) we can use the &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;em&gt;liquid&lt;/em&gt; logic to populate the correct metadata in the page, so that anyone who shares that page will be able to make a compelling  post in their Facebook timeline or for a Twitter tweet.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-adopted-standards-for-facebook&quot;&gt;The adopted standards for &lt;em&gt;FaceBook&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;The basic metadata that needs to be added to each web page uses &lt;code class=&quot;highlighter-rouge&quot;&gt;OpenGraph&lt;/code&gt; to provide the various components that will then populate a Facebook post correctly. You can read all about &lt;em&gt;Open Graph&lt;/em&gt; on this web site: &lt;a href=&quot;https://ogp.me/&quot; title=&quot;The Open Graph protocol&quot;&gt;https://ogp.me&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Open Graph is essentially a set of metadata tags that &lt;code class=&quot;highlighter-rouge&quot;&gt;Facebook&lt;/code&gt; will recognise and be able to use the data to display the link in the timeline.&lt;/p&gt;
+
+&lt;h2 id=&quot;twitter-has-its-own&quot;&gt;&lt;em&gt;Twitter&lt;/em&gt; has it’s Own&lt;/h2&gt;
+
+&lt;p&gt;If you want your page referrals in &lt;code class=&quot;highlighter-rouge&quot;&gt;Twitter&lt;/code&gt;to look good too you have some further options.&lt;/p&gt;
+
+&lt;h2 id=&quot;adding-the-code-with-liquid&quot;&gt;Adding the Code with Liquid&lt;/h2&gt;
+
+&lt;p&gt;Here we see the code that I am using to get the correct tags in both Facebook and Twitter.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;!-- Open Graph --&amp;gt;
+&amp;lt;meta property=&quot;og:type&quot; content=&quot;website&quot;&amp;gt;
+&amp;lt;meta property=&quot;og:image&quot; content=&quot;{{site.url}}{{site.image}}&quot;&amp;gt;
+{%- if page.blurb != null -%}
+&amp;lt;meta property=&quot;og:description&quot; content=&quot;{{page.blurb}}&quot;&amp;gt;
+{%- endif -%}
+
+&amp;lt;!-- Twitter --&amp;gt;
+&amp;lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot;&amp;gt;
+&amp;lt;meta property=&quot;twitter:url&quot; content=&quot;{{site.url}}{{page.url}}&quot;&amp;gt;
+&amp;lt;meta name=&quot;twitter:site&quot; content=&quot;@{{site.twitter_username}}&quot;&amp;gt;
+&amp;lt;meta name=&quot;twitter:title&quot; content=&quot;{{page.title}}&quot;&amp;gt;
+{%- if page.blurb != null -%}
+&amp;lt;meta name=&quot;twitter:description&quot; content=&quot;{{page.blurb}}&quot;&amp;gt;
+{%- else -%}
+&amp;lt;meta name=&quot;twitter:description&quot; content=&quot;{{site.description}}&quot;&amp;gt;
+{%- endif -%}
+&amp;lt;meta name=&quot;twitter:image&quot; content=&quot;{{site.url}}{{site.image}}&quot;&amp;gt;
+&amp;lt;meta name=&quot;twitter:creator&quot; content=&quot;@{{site.twitter_username}}&quot;&amp;gt;
+&amp;lt;meta name=&quot;twitter:image:alt&quot; content=&quot;Book in the hands of a monk&quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;stand-out-with-a-fine-picture&quot;&gt;Stand out with a fine picture&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/facebookpost.jpg&quot;&gt;&lt;img src=&quot;/images/facebookpost.jpg&quot; alt=&quot;A recent blog post was shared on Facebook&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You will see from the code block above that both &lt;code class=&quot;highlighter-rouge&quot;&gt;OpenGraph&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;TwitterCard&lt;/code&gt; expect an image to display.  In this case we use an image that has a path set out in the &lt;code class=&quot;highlighter-rouge&quot;&gt;YAML&lt;/code&gt; config. In other words you need to commit to an image for your site. There are other options. You can give each page or blog post on your site an image; in this case the code snippet above might go something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;{%- if page.image != null -%}
+&amp;lt;meta property=&quot;og:image&quot; content=&quot;{{site.url}}{{page.image}}&quot;&amp;gt;
+{%- else -%}
+&amp;lt;meta property=&quot;og:image&quot; content=&quot;{{site.url}}{{site.image}}&quot;&amp;gt;
+{%- endif -%}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;a-good-description-is-going-to-help&quot;&gt;A good description is going to help&lt;/h2&gt;
+
+&lt;p&gt;Facebook and Twitter want some honest info to display. The question is; do you want info about the web site or about the individual page or post being shared.&lt;/p&gt;
+
+&lt;p&gt;Here is snippet for the &lt;code class=&quot;highlighter-rouge&quot;&gt;TwitterCard&lt;/code&gt; that will get that right:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;{%- if page.blurb != null -%}
+&amp;lt;meta name=&quot;twitter:description&quot; content=&quot;{{page.blurb}}&quot;&amp;gt;
+{%- else -%}
+&amp;lt;meta name=&quot;twitter:description&quot; content=&quot;{{page.excerpt | strip_html}}&quot;&amp;gt;
+{%- endif -%}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;excerpt&lt;/code&gt; in the code above simply takes the first paragraph of your post. The description will be truncated to 2 lines. &lt;strong&gt;Note&lt;/strong&gt;: do not include links in this description otherwise the meta tag will be broken (you could strip the HTML from this with the &lt;code class=&quot;highlighter-rouge&quot;&gt;strip_html&lt;/code&gt; code).&lt;/p&gt;
+
+&lt;h2 id=&quot;validation&quot;&gt;Validation&lt;/h2&gt;
+
+&lt;p&gt;You should check that you have the correct meta tags working on your page by using the validation tools for the different platforms.&lt;/p&gt;
+
+&lt;p&gt;For Twitter go here: &lt;a href=&quot;https://cards-dev.twitter.com/validator&quot;&gt;https://cards-dev.twitter.com/validator&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;For Facebook go here: &lt;a href=&quot;https://developers.facebook.com/tools/debug&quot;&gt;https://developers.facebook.com/tools/debug/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You will need to be signed in to the respective accounts to work with these tools.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Liquid is the coding language used by GitHub pages and Jekyll. The language is developed by &lt;code class=&quot;highlighter-rouge&quot;&gt;Shopify&lt;/code&gt; and can be explored here: https://shopify.github.io/liquid/basics/introduction/ &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Video across a 2 page spread (updated)</title>
@@ -173,7 +268,9 @@ height:594.00px;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;
    <link href="http://localhost:4000/publishing/editing/opensource/2018/10/14/using-booktype-to-create-a-book-in-multiple-formats/"/>
    <updated>2018-10-14T14:58:00+01:00</updated>
    <id>http://localhost:4000/publishing/editing/opensource/2018/10/14/using-booktype-to-create-a-book-in-multiple-formats</id>
-   <content type="html">&lt;p&gt;Booktype is web based, single-source publishing software for creating  books. The software is open-source so you can (expertise needed) install on your own server and create and edit books and then, export to a number of formats. &lt;a href=&quot;https://booktype.pro&quot; title=&quot;find out more&quot;&gt;More information on the Booktype page&lt;/a&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Booktype is web based, single-source publishing software for creating  books. The software is open-source so you can (expertise needed) install on your own server and create and edit books and then, export to a number of formats.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://booktype.pro&quot; title=&quot;find out more&quot;&gt;More information on the Booktype page&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;here-is-what-i-have-done&quot;&gt;Here is what I have done&lt;/h2&gt;
 

@@ -30,6 +30,11 @@ order: 4
 
 # How to Build Your Web Site with GitHub Pages
 
+This document explains all of the steps to take when creating a static web site using the free hosting at Github.Pages.
+The site that we build can be a blog or just an information web site. We will use a template that styles the site making sure that it is responsive to different screen and device sizes.
+
+You will learn how to set the site up and configure with your own branding. Further, more complex styling can be achieved, but for this we need to have some knowledge of HTML and CSS.
+
 Writing to your blog involves using the `Markdown` language and this will then be automatically be converted to `HTML` for the web site. You can learn about `Markdown` by viewing the [Markdown Guide on the web][47a5cbc0]. There are many writing apps that use `Markdown` but we will use a free tool called _Atom_ that will give you the means to write and update your live web site.
 
   [47a5cbc0]: https://www.markdownguide.org "Take a look at this helpful site"
@@ -147,24 +152,16 @@ Meta variables hold basic information about your site which will be used through
 
 Change these variables in `_config.yml`:
 
-```yml
-title: My Student Blog       # Name of website will appear top left on your pages
-avatar: assets/img/face.png     # Path of avatar image, to be displayed in the site header (you can create a logo do make an image of yourself)
-description: My blog posts             # Short description, primarily used by search engines
-```
-
-### Customizing text
-
-#### Footer and Header text
-
-Customize your site header/footer with these variables in `_config.yml`:
-You should create a different image to replace the picture of Headington Hill Hall. This image needs to be **no** smaller than 1800 pixels wide.
-
-```yml
-    header_text: Welcome to my Student blog
-    header_feature_image: images/hhh.jpg
-    footer_text: Copyright 2019
-```
+Variable|Placeholder|Make Yours
+--|---|--
+url|https://yoursite.github.io | Change this to your url
+title|My name or organisation  |Name of website will appear top left on your pages
+description|A website with blog posts and pages |Name of website will appear top left on your pages
+avatar|assets/img/face.jpg |This can be changed to your own picture optionally
+favicon|assets/favicon.ico  |Change to reflect your brand
+header_text|Me and my blog|Yours to change
+header_feature_image|/images/hhh.jpg |You should create a different image to replace the picture of Headington Hill Hall. This image needs to be no smaller than 1800 pixels wide.
+footer_text|Copyright 2019 My name |Put your name or organisation in here
 
 ## Adding and Editing Content
 
@@ -265,6 +262,8 @@ Atom interacts with your `github` site, so once you have made changes or added a
 Your site is available now at `username.github.io`. Change _username_ of course.
 
 You should now be able to write blog posts and and add further pages. You can customise your site by changing the title, the main image and the avatar through the `_config` file.
+
+[![Web site with changes](/images/postadded.png)](/images/postadded.png)
 
 For further changes to the appearance you will need to make changes to the `CSS`. This is the subject of future advanced sessions.
 

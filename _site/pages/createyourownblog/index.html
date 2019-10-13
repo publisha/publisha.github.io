@@ -4,8 +4,8 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<meta name="generator" content="Jekyll v3.8.6" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="How to Build Your Web Site with GitHub Pages" />
 <meta property="og:locale" content="en_gb" />
 <meta name="description" content="tutorials and screencasts about digital publishing and eBook Production" />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-08-20T00:00:00+01:00" />
 <script type="application/ld+json">
-{"description":"tutorials and screencasts about digital publishing and eBook Production","@type":"BlogPosting","url":"http://localhost:4000/pages/createyourownblog/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://publisha.github.io/images/publisha_logo.jpg"}},"headline":"How to Build Your Web Site with GitHub Pages","dateModified":"2019-08-20T00:00:00+01:00","datePublished":"2019-08-20T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/createyourownblog/"},"@context":"https://schema.org"}</script>
+{"description":"tutorials and screencasts about digital publishing and eBook Production","@type":"BlogPosting","url":"http://localhost:4000/pages/createyourownblog/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://publisha.github.io/images/publisha_logo.jpg"}},"headline":"How to Build Your Web Site with GitHub Pages","dateModified":"2019-08-20T00:00:00+01:00","datePublished":"2019-08-20T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pages/createyourownblog/"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -79,11 +79,11 @@ max-height:420px;
 </script>
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://github.com/pages/publisha/publisha.github.io/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://github.com/pages/publisha/publisha.github.io/public/favicon.ico">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://github.com/pages/publisha/publisha.github.io/atom.xml">
 
   <!-- javascript for the footnote popups -->
 <script type="text/javascript" src="/public/js/bigfoot.js"></script>
@@ -183,6 +183,11 @@ max-height:420px;
 <!-- /TOC -->
 
 <h1 id="how-to-build-your-web-site-with-github-pages">How to Build Your Web Site with GitHub Pages</h1>
+
+<p>This document explains all of the steps to take when creating a static web site using the free hosting at Github.Pages.
+The site that we build can be a blog or just an information web site. We will use a template that styles the site making sure that it is responsive to different screen and device sizes.</p>
+
+<p>You will learn how to set the site up and configure with your own branding. Further, more complex styling can be achieved, but for this we need to have some knowledge of HTML and CSS.</p>
 
 <p>Writing to your blog involves using the <code class="highlighter-rouge">Markdown</code> language and this will then be automatically be converted to <code class="highlighter-rouge">HTML</code> for the web site. You can learn about <code class="highlighter-rouge">Markdown</code> by viewing the <a href="https://www.markdownguide.org" title="Take a look at this helpful site">Markdown Guide on the web</a>. There are many writing apps that use <code class="highlighter-rouge">Markdown</code> but we will use a free tool called <em>Atom</em> that will give you the means to write and update your live web site.</p>
 
@@ -308,28 +313,57 @@ max-height:420px;
 
 <p>Change these variables in <code class="highlighter-rouge">_config.yml</code>:</p>
 
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre><span class="na">title</span><span class="pi">:</span> <span class="s">My Student Blog</span>       <span class="c1"># Name of website will appear top left on your pages</span>
-<span class="na">avatar</span><span class="pi">:</span> <span class="s">assets/img/face.png</span>     <span class="c1"># Path of avatar image, to be displayed in the site header (you can create a logo do make an image of yourself)</span>
-<span class="na">description</span><span class="pi">:</span> <span class="s">My blog posts</span>             <span class="c1"># Short description, primarily used by search engines</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<h3 id="customizing-text">Customizing text</h3>
-
-<h4 id="footer-and-header-text">Footer and Header text</h4>
-
-<p>Customize your site header/footer with these variables in <code class="highlighter-rouge">_config.yml</code>:
-You should create a different image to replace the picture of Headington Hill Hall. This image needs to be <strong>no</strong> smaller than 1800 pixels wide.</p>
-
-<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="codehilite"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre>    <span class="na">header_text</span><span class="pi">:</span> <span class="s">Welcome to my Student blog</span>
-    <span class="na">header_feature_image</span><span class="pi">:</span> <span class="s">images/hhh.jpg</span>
-    <span class="na">footer_text</span><span class="pi">:</span> <span class="s">Copyright </span><span class="m">2019</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Placeholder</th>
+      <th>Make Yours</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>url</td>
+      <td>https://yoursite.github.io</td>
+      <td>Change this to your url</td>
+    </tr>
+    <tr>
+      <td>title</td>
+      <td>My name or organisation</td>
+      <td>Name of website will appear top left on your pages</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>A website with blog posts and pages</td>
+      <td>Name of website will appear top left on your pages</td>
+    </tr>
+    <tr>
+      <td>avatar</td>
+      <td>assets/img/face.jpg</td>
+      <td>This can be changed to your own picture optionally</td>
+    </tr>
+    <tr>
+      <td>favicon</td>
+      <td>assets/favicon.ico</td>
+      <td>Change to reflect your brand</td>
+    </tr>
+    <tr>
+      <td>header_text</td>
+      <td>Me and my blog</td>
+      <td>Yours to change</td>
+    </tr>
+    <tr>
+      <td>header_feature_image</td>
+      <td>/images/hhh.jpg</td>
+      <td>You should create a different image to replace the picture of Headington Hill Hall. This image needs to be no smaller than 1800 pixels wide.</td>
+    </tr>
+    <tr>
+      <td>footer_text</td>
+      <td>Copyright 2019 My name</td>
+      <td>Put your name or organisation in here</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="adding-and-editing-content">Adding and Editing Content</h2>
 
@@ -434,6 +468,8 @@ You should create a different image to replace the picture of Headington Hill Ha
 <p>Your site is available now at <code class="highlighter-rouge">username.github.io</code>. Change <em>username</em> of course.</p>
 
 <p>You should now be able to write blog posts and and add further pages. You can customise your site by changing the title, the main image and the avatar through the <code class="highlighter-rouge">_config</code> file.</p>
+
+<p><a href="/images/postadded.png"><img src="/images/postadded.png" alt="Web site with changes" /></a></p>
 
 <p>For further changes to the appearance you will need to make changes to the <code class="highlighter-rouge">CSS</code>. This is the subject of future advanced sessions.</p>
 

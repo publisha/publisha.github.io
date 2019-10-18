@@ -4,9 +4,9 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-  {%- include metadata.html -%}
-
+  {%- if page.type != presentation -%}
+    {%- include metadata.html -%}
+  {%- endif -%}
   <title>
       {{ page.title }}
   </title>

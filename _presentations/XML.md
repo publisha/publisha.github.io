@@ -13,8 +13,6 @@ An introduction to XML and how it applies to our Shakespeare play
 
 [![First slide](/images/XML2017.001.jpeg)](/images/XML2017.001.jpeg)
 
-<!--more-->
-
 - what is XML
 - XML in publishing
 - The structure of our Shakespeare play

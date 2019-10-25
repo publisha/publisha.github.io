@@ -1,1 +1,43 @@
-var kOrientationChangedEvent="OrientationController:OrientationChangedEvent";var OrientationController=Class.create({initialize:function(){if(gDevice==kDeviceMobile){Event.observe(window,"orientationchange",this.handleDeviceOrientationChangeEvent.bind(this));this.handleDeviceOrientationChangeEvent()}this.orientation=kOrientationUnknown},handleDeviceOrientationChangeEvent:function(b){var c=window.orientation;var a=kOrientationUnknown;if((c===0)||(c===180)){a=kOrientationPortrait}else{a=kOrientationLandscape}this.changeOrientation(a)},changeOrientation:function(a){this.orientation=a;document.fire(kOrientationChangedEvent,{orientation:this.orientation})}});
+/*
+ * OrientationController.js
+ * Keynote HTML Player
+ * 
+ * Responsibility: Tungwei Cheng
+ * Copyright (c) 2009-2013 Apple Inc. All rights reserved.
+ */
+
+var kOrientationChangedEvent = "OrientationController:OrientationChangedEvent";
+
+var OrientationController = Class.create({
+    initialize: function() {
+        var platform = navigator.platform;
+
+        // observe orientationchange event
+        if (platform === "iPad" || platform === "iPhone" || platform === "iPod") {
+            Event.observe(window, "orientationchange", this.handleDeviceOrientationChangeEvent.bind(this));
+            this.handleDeviceOrientationChangeEvent();
+        }
+
+        this.orientation = kOrientationUnknown;
+    },
+
+    handleDeviceOrientationChangeEvent: function(event) {
+        var orientationInDegrees = window.orientation;
+        var newOrientation = kOrientationUnknown;
+
+        if ((orientationInDegrees === 90) || (orientationInDegrees === -90)) {
+            newOrientation = kOrientationLandscape;
+        } else {
+            newOrientation = kOrientationPortrait;
+        }
+        this.changeOrientation(newOrientation);
+    },
+
+    changeOrientation: function(newOrientation) {
+        this.orientation = newOrientation;
+
+        document.fire(kOrientationChangedEvent, {
+            orientation: this.orientation
+        });
+    }
+});

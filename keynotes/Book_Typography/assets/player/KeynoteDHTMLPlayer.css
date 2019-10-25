@@ -19,26 +19,15 @@ body
 {
     body
     {
-        background-color: #1C4D0B;
+        background-color: black;
     }
 }
 
-div.bigBlackSquare
-{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 1024px;
-    height: 1024px;
-    visibility: hidden;
-    background-color: #1C4D0B;
-}
-
 /* Debug Status Display */
-
+   
 div#statisticsDisplay
 {
-    position: absolute;
+    position: absolute; 
     color : white;
     background-color: grey;
     visibility: hidden;
@@ -48,14 +37,14 @@ div#statisticsDisplay
 
 div#stageArea
 {
-    position: absolute;
+    position: absolute; 
     visibility: hidden;
     overflow: hidden;
 }
 
 div.stage
 {
-    position: absolute;
+    position: absolute; 
     top: 0;
     left: 0;
     overflow: visible;
@@ -73,67 +62,6 @@ div.hyperlink
 {
     position: absolute;
     cursor: pointer;
-}
-
-/* iPhone Controls Section */
-
-div#previousButton
-{
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center center;
-    visibility: hidden;
-    width: 22px;
-    height: 27px;
-}
-
-div.previousButtonEnabled
-{
-    background-image: url('left_arrow_mobile_n.png');
-    background-size: 22px 27px;
-    width: 22px;
-    height: 27px;
-}
-
-div.previousButtonDisabled
-{
-    background-image: url('left_arrow_mobile_d.png');
-    background-size: 22px 27px;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -moz-tap-highlight-color: rgba(0,0,0,0);
-    -ms-tap-highlight-color: rgba(0,0,0,0);
-    width: 22px;
-    height: 27px;
-}
-
-div#nextButton
-{
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center center;
-    visibility: hidden;
-    background-size: 22px 27px;
-    width: 22px;
-    height: 27px;
-}
-
-div.nextButtonEnabled
-{
-    background-image: url('right_arrow_mobile_n.png');
-    background-size: 22px 27px;
-    width: 22px;
-    height: 27px;
-}
-
-div.nextButtonDisabled
-{
-    background-image: url('right_arrow_mobile_d.png');
-    background-size: 22px 27px;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -moz-tap-highlight-color: rgba(0,0,0,0);
-    -ms-tap-highlight-color: rgba(0,0,0,0);
-    width: 22px;
-    height: 27px;
 }
 
 /* Navigator */
@@ -240,7 +168,7 @@ div.navigatorThumbnailItemCanvasContainer {
     -moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
     -ms-box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
     background-color: #444;
-    width: 88px;
+    width: 88px;    
     height: 66px;
 }
 
@@ -340,7 +268,7 @@ div#helpPlacard {
 div.helpPlacardTitleBar {
     /*position:absolute;*/
     font-size: 22px;
-    color: rgba(120,120,120,1);
+    color: rgba(120,120,120,1);    
     font-family: Helvetica, Arial, sans-serif;
     width: 822px;
     height: 40px;
@@ -359,7 +287,7 @@ div.helpPlacardTitle {
 div.helpPlacardCloseButton {
     cursor:default;
     top:10px;
-    left:10px;
+    left:10px;    
     position:absolute;
     background:url('close_n@2x.png') no-repeat 0 0;
     background-size: 21px 21px;
@@ -383,7 +311,7 @@ div.helpPlacardContentPanel {
 }
 
 div.helpPlacardHeader {
-    color: rgba(255,255,255,1);
+    color: rgba(255,255,255,1);    
     font-weight: bold;
     width:822px;
     height:40px;
@@ -391,7 +319,7 @@ div.helpPlacardHeader {
 }
 
 div.helpPlacardHeader {
-    color: rgba(255,255,255,1);
+    color: rgba(255,255,255,1);    
     font-weight: bold;
     width:822px;
     height:40px;
@@ -406,14 +334,14 @@ div.helpPlacardItem {
 
 div.helpPlacardLeftHeaderItem {
     /*position:absolute;*/
-    color: white;
+    color: white;    
     text-align:right;
     float:left;
     width:400px;
 }
 
 div.helpPlacardLeftItem {
-    color: rgba(120,120,120,1);
+    color: rgba(120,120,120,1);    
     text-align:right;
     float:left;
     width:400px;
@@ -464,105 +392,6 @@ div.helpPlacardAcknowledgementsButton:active {
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-}
-
-
-/* iPad assets */
-
-@media all and (min-device-width: 481px) and (max-device-width: 1024px) {
-    div#previousButton
-    {
-        background-size: 44px 54px;
-        width: 44px;
-        height: 54px;
-    }
-
-    div#nextButton
-    {
-        background-size: 44px 54px;
-        width: 44px;
-        height: 54px;
-    }
-
-    div.previousButtonEnabled
-    {
-        background-size: 44px 54px;
-        width: 44px;
-        height: 54px;
-        background-image: static_url('left_arrow_mobile_n-hd.png');
-    }
-
-    div.previousButtonDisabled
-    {
-        background-size: 44px 54px;
-        width: 44px;
-        height: 54px;
-        background-image: static_url('left_arrow_mobile_d-hd.png');
-    }
-
-    div.nextButtonEnabled
-    {
-        background-size: 44px 54px;
-        width: 44px;
-        height: 54px;
-        background-image: static_url('right_arrow_mobile_n-hd.png');
-    }
-
-    div.nextButtonDisabled
-    {
-        background-size: 44px 54px;
-        width: 44px;
-        height: 54px;
-        background-image: static_url('right_arrow_mobile_d-hd.png');
-    }
-}
-
-/* Retina display assets */
-
-@media all and (-webkit-min-device-pixel-ratio:2) {
-    div.previousButtonEnabled
-    {
-        background-image: static_url('left_arrow_mobile_n-hd.png');
-    }
-
-    div.previousButtonDisabled
-    {
-        background-image: static_url('left_arrow_mobile_d-hd.png');
-    }
-
-    div.nextButtonEnabled
-    {
-        background-image: static_url('right_arrow_mobile_n-hd.png');
-    }
-
-    div.nextButtonDisabled
-    {
-        background-image: static_url('right_arrow_mobile_d-hd.png');
-    }
-}
-
-div#slideCounter
-{
-    position: absolute;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    font-family: Helvetica;
-    font-size: 23px;
-    color: #FFFFFF;
-    text-shadow: 0.0em 0.2em #000000;
-    visibility: hidden;
-}
-
-#helpText
-{
-    position: absolute;
-    text-align: center;
-    font-family: Helvetica;
-    font-size: 13px;
-    color: #838383;
-    text-shadow: 0.0em 0.2em #000000;
-    visibility: hidden;
 }
 
 /* Waiting Indicator */
@@ -813,7 +642,7 @@ div#waitingIndicator
 
 div#waitingSpinner
 {
-    position: absolute;
+    position: absolute; 
     visibility: visible;
     top: 27px;
     left: 33px;

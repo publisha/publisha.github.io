@@ -6,7 +6,7 @@ images: full-width
 tags: [Using GitHub]
 screencast: [blogwithgithub]
 categories: [Web, HTML]
-date: 2019-08-20
+date: 2019-10-29
 blurb: GitHub provides a way to use a free web site. Here is a simple way to get started with a provided template that you can change later.
 order: 4
 ---
@@ -22,16 +22,15 @@ order: 4
 - [Adding images to a page](#adding-images-to-a-page)
 - [Getting the new content up to the web](#getting-the-new-content-up-to-the-web)
 - [Your first look at your new site](#your-first-look-at-your-new-site)
-- [How does all of this work?](#how-does-all-of-this-work)
 - [Adding to and Editing your site Online](#adding-to-and-editing-your-site-online)
+- [How does all of this work?](#how-does-all-of-this-work)
 - [Further reading](#further-reading)
 
 </section><!-- /TOC -->
 
 # How to Build Your Web Site with GitHub Pages
 
-This document explains all of the steps to take when creating a static web site using the free hosting at Github.Pages.
-The site that we build can be a blog or just an information web site. We will use a template that styles the site making sure that it is responsive to different screen and device sizes.
+This document explains all of the steps to take when creating a static web site using the free hosting at Github.Pages. The site that we build can be a blog or just an information web site. We will use a template that styles the site making sure that it is responsive to different screen and device sizes.
 
 You will learn how to set the site up and configure with your own branding. Further, more complex styling can be achieved, but for this we need to have some knowledge of HTML and CSS.
 
@@ -51,7 +50,9 @@ From the Finder use `Go` to find your Home folder. Read the `readme.txt` file th
 
 [![It will help if you show the extensions for the files](/images/showfileextension.png)](/images/showfileextension.png)
 
-> **Note:** If you use Safari as your browser then the zip file will unpack into your downloads folder. **Now take the following steps**:
+> **Note:** If you use Safari as your browser then the zip file will unpack into your downloads folder.
+
+### Installing Atom
 
 1. In your Home folder (remember use `Go > Home`) create a new folder and name it `Applications` (note the capital **A**).
 2. Drag the `Atom.app` into this Applications folder.
@@ -121,7 +122,9 @@ Click this and a window appears. Paste into the top box.
 
 [![Here is the clone window. Paste into the top box. You can move the repository later.](/images/clonerepo.png)](/images/clonerepo.png)
 
-**Note**: Before you finish setting up, you should move the complete web site folder out of the `github` folder to your `Creative Cloud` folder. That way, you can find it on any of the computers that you are signed into.
+**Note**: Before you finish setting up, you should move the complete web site folder out of the `github` folder to your `Creative Cloud` folder or your Google Drive. That way, you can find it on any of the computers that you are signed into.
+
+Close the Atom window and locate the github folder inside your Home folder. Now drag the folder called yoursite.github.io to a location on your _Google Drive_ or your _Creative Cloud_ space.
 
 ### Configuring your site
 
@@ -152,18 +155,32 @@ Meta variables hold basic information about your site which will be used through
 
 Change these variables in `_config.yml`:
 
-Variable|Placeholder|Make Yours
---|---|--
-url|https://yoursite.github.io | Change this to your url
-title|My name or organisation  |Name of website will appear top left on your pages
-description|A website with blog posts and pages |Name of website will appear top left on your pages
-avatar|assets/img/face.jpg |This can be changed to your own picture optionally
-favicon|assets/favicon.ico  |Change to reflect your brand
-header_text|Me and my blog|Yours to change
-header_feature_image|/images/hhh.jpg |You should create a different image to replace the picture of Headington Hill Hall. This image needs to be no smaller than 1800 pixels wide.
-footer_text|Copyright 2019 My name |Put your name or organisation in here
+Variable             | Placeholder                         | Make Yours
+---------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------
+url                  | https://yoursite.github.io          | Change this to your url
+title                | My name or organisation             | Name of website will appear top left on your pages
+description          | A website with blog posts and pages | Name of website will appear top left on your pages
+avatar               | assets/img/face.jpg                 | This can be changed to your own picture optionally
+favicon              | assets/favicon.ico                  | Change to reflect your brand
+header_text          | Me and my blog                      | Yours to change
+header_feature_image | /images/hhh.jpg                     | You should create a different image to replace the picture of Headington Hill Hall. This image needs to be no smaller than 1800 pixels wide.
+footer_text          | Copyright 2019 My name              | Put your name or organisation in here  |   |
+
+You can also add your social media links such as Instagram, Twitter, Facebook etc.
+
+There are other settings in the `_config.yml` file such as the configuration of prose. This is used if you use prose.io to edit and post to your site (see the section ‘Step 7. Adding and Editing your site online).
+
+You will need to edit the `siteurl` in the prose section of the `_config.yml` file.
+
+You also need to edit the placeholder tags url in the file called `_mdwriter.cson`. This is at line 34 in that file. This will make it easier to select and re-use tags for your posts.
+urlForTags: 'https://yoursite.github.io/tags.json
+
 
 ## Adding and Editing Content
+
+Writing to your blog involves using the Markdown language and this will then be automatically be converted to HTML for the web site. You can learn about Markdown by viewing the Markdown Guide on the web. (see Further Reading).
+
+There are many writing apps that use Markdown but we are using Atom with a user-friendly toolbar that makes structuring your content easy..
 
 There are 2 types of pages in your site:
 
@@ -215,13 +232,18 @@ This metadata is enclosed within the 2 groups of hyphens. Here is an example.
 ```YAML
     ---
     layout: post
-    title: Here is a sample blog post
-    date: 2019-08-06
-    published: false
+ title: Here is a sample blog post 
+    date: 2019-10-19
+ published: true 
     header_feature_image: images/2019/07/tomatoes.jpg
-    caption: "I love tomatoes"
+ caption: "Juicy Tomatoes" 
+    tags: 
+      - Journalism 
+      - Life 
+      - Food
     ---
 ```
+Notice that the `header_feature_image` does NOT have the leading slash.
 
 >Some of this metadata is generated automatically when you create a new post (the date for example).
 
@@ -267,19 +289,6 @@ You should now be able to write blog posts and and add further pages. You can cu
 
 For further changes to the appearance you will need to make changes to the `CSS`. This is the subject of future advanced sessions.
 
-## How does all of this work?
-
-### Github Pages
-
-GitHub provides for free github pages. [You can read more about this here][d89d9da3]. Basically anyone can host web pages here but we are using a static site generation system called `Jekyll` which is also supported in GithUb pages.
-
-  [d89d9da3]: https://pages.github.com "Go to the Github site for an explanation"
-
-### Jekyll
-
-This software operates your site, converting the `markdown` files into `HTML` when you _push_ your files up to the GitHub repository. The Jekyll site that you have created from the provided template includes all of the files necessary to build the live pages including the stylesheets (CSS) and some javascript. There is also a system of logic that builds the menus and pagination. This logic engine is called `Liquid` and [you can explore this further here][c324856c].
-
-  [c324856c]: https://shopify.github.io/liquid/ "Go to the shopify site"
 
 ## Adding to and Editing your site Online
 
@@ -302,6 +311,20 @@ Once you go into the repository, you can edit the posts or create new posts dire
 ### Synchronising
 
 Be aware that if you use `prose.io` to edit your site then your local copy (edited with Atom) will not be the same. If this is the case then you will need to find the `Fetch` link at the bottom right of the Atom window to **pull** the changes to your local space.
+
+## How does all of this work?
+
+### Github Pages
+
+GitHub provides for free github pages. [You can read more about this here][d89d9da3]. Basically anyone can host web pages here but we are using a static site generation system called `Jekyll` which is also supported in GithUb pages.
+
+  [d89d9da3]: https://pages.github.com "Go to the Github site for an explanation"
+
+### Jekyll
+
+This software operates your site, converting the `markdown` files into `HTML` when you _push_ your files up to the GitHub repository. The Jekyll site that you have created from the provided template includes all of the files necessary to build the live pages including the stylesheets (CSS) and some javascript. There is also a system of logic that builds the menus and pagination. This logic engine is called `Liquid` and [you can explore this further here][c324856c].
+
+  [c324856c]: https://shopify.github.io/liquid/ "Go to the shopify site"
 
 ## Further reading
 

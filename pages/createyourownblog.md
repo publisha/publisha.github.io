@@ -38,6 +38,10 @@ Writing to your blog involves using the `Markdown` language and this will then b
 
   [47a5cbc0]: https://www.markdownguide.org "Take a look at this helpful site"
 
+Note: [There is a PDF of this document available here][7f29443a].
+
+  [7f29443a]: /resources/createyourownblog.pdf "Grab this PDF"
+
 ## Getting the software required
 
 You will only need the application called _Atom_ and to help you get the correct settings I am [providing you with a distribution][61862e36] package as a `zip` file. This will create an `atom` folder which you need to place inside your `Home` folder.

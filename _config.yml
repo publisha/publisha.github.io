@@ -5,7 +5,7 @@ timezone: Europe/London
 # relative_permalinks: true
 title:            Digital Publishing Hub
 tagline:          'Help for publishers and students of publishing'
-description:      'tutorials and screencasts about digital publishing and eBook Production'
+description:      'Tutorials and screencasts about digital publishing and eBook Production'
 url:              https://publisha.github.io
 baseurl: ''
 image: /images/homegallery/img_00127.jpg

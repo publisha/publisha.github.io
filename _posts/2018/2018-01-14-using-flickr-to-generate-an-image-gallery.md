@@ -1,5 +1,5 @@
 ---
-layout: "post"
+layout: post
 title: "Using Flickr to Generate an Image Gallery"
 date: "2018-05-27 13:00"
 published: true

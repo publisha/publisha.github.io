@@ -1,5 +1,5 @@
 ---
-layout: "post"
+layout: post
 title: "HTML, XHTML, HTML5 or XHTML5"
 date: "2017-02-03 11:00"
 published: true

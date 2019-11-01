@@ -1,5 +1,5 @@
 ---
-layout: "post"
+layout: post
 title: "Page size in InDesign for eBook?"
 date: 2017-03-24 15:48
 published: true

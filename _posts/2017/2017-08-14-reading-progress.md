@@ -1,5 +1,5 @@
 ---
-layout: "post"
+layout: post
 title: "Reading Progress Indicator"
 date: "2017-08-14 17:07"
 published: true

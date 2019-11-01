@@ -1,5 +1,5 @@
 ---
-layout: "post"
+layout: post
 title: "Page Size Issues in fixed-layout ePub"
 date: "2017-03-30 11:37"
 published: true

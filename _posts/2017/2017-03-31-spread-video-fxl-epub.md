@@ -1,5 +1,5 @@
 ---
-layout: "post"
+layout: post
 title: "Video across a 2 page spread (updated)"
 date: "2018-10-14 19:31"
 published: true

@@ -1,5 +1,5 @@
 ---
-layout: "post"
+layout: post
 title: "From Apple's Pages to Markdown"
 date: "2017-02-10 11:40"
 published: true

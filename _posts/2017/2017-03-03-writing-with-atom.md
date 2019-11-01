@@ -1,5 +1,5 @@
 ---
-layout: "post"
+layout: post
 title: "Writing with Atom"
 date: "2017-03-03 15:25"
 published: true

@@ -1,12 +1,13 @@
 {%- seo title=false -%}
-
+{%- if page.layout != "ebook" -%}
+{%- if page.title != "Sections" -%}
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:image" content="{{site.url}}{{site.image}}">
 {%- if page.blurb != null -%}
 <meta property="og:description" content="{{page.blurb}}">
 {%- else -%}
-<meta name="og:description" content="{{page.excerpt}}">
+<meta name="og:description" content="{{page.excerpt | strip_html }}">
 {%- endif -%}
 
 <!-- Twitter -->
@@ -17,8 +18,10 @@
 {%- if page.blurb != null -%}
 <meta name="twitter:description" content="{{page.blurb}}">
 {%- else -%}
-<meta name="twitter:description" content="{{page.excerpt}}">
+<meta name="twitter:description" content="{{page.excerpt | strip_html }}">
 {%- endif -%}
 <meta name="twitter:image" content="{{site.url}}{{site.image}}">
 <meta name="twitter:creator" content="@{{site.twitter_username}}">
 <meta name="twitter:image:alt" content="Book in the hands of a monk">
+{%- endif -%}
+{%- endif -%}

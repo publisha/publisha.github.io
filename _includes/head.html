@@ -138,34 +138,6 @@ section.toc {
     $.bigfoot();
 </script>
 
-{%- if page.title == "qDigital Publishing Hub" -%}
-<!-- for slides on home page -->
-  <script src="{{site.baseurl}}/public/js/responsiveslides.min.js"></script>
-<script>
-    $(function () {
-
-      $("#pageimage").responsiveSlides({
-        auto: true,
-        pager: false,
-        nav: false,
-        speed: 500,
-        timeout: 6000,
-        random: true,
-        namespace: "callbacks",
-        before: function () {
-          $('.events').append("<li>before event fired.</li>");
-        },
-        after: function () {
-          $('.events').append("<li>after event fired.</li>");
-        }
-      });
-
-    });
-  </script>
-
-  <link rel="stylesheet" href="{{site.baseurl}}/public/css/responsiveslides.css">
-{%- endif -%}
-
 {%- if page.annotate == "yes" -%}
 <!-- annotations -->
 <script type="application/json" class="js-hypothesis-config">

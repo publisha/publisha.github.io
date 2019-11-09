@@ -66,31 +66,7 @@
 <script type="text/javascript" src="/public/js/bigfoot.js"></script>
 <script type="text/javascript">
     $.bigfoot();
-</script><!-- for slides on home page -->
-  <script src="/public/js/responsiveslides.min.js"></script>
-<script>
-    $(function () {
-
-      $("#pageimage").responsiveSlides({
-        auto: true,
-        pager: false,
-        nav: false,
-        speed: 500,
-        timeout: 6000,
-        random: true,
-        namespace: "callbacks",
-        before: function () {
-          $('.events').append("<li>before event fired.</li>");
-        },
-        after: function () {
-          $('.events').append("<li>after event fired.</li>");
-        }
-      });
-
-    });
-  </script>
-
-  <link rel="stylesheet" href="/public/css/responsiveslides.css"></head>
+</script></head>
 <body class="theme-base-0b">
     <progress value="0" id="progressBar">
   <div class="progress-container">
@@ -125,8 +101,8 @@
      </li>
      <li><a title="presentations generated from Keynote" class="sidebar-nav-item" href="/presentations/">Presentations <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
      </li>
-     <li><a title="Image galleries from Flickr" class="sidebar-nav-item" href="/galleries/">Images Galleries <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
-     </li>
+     <!-- <li><a title="Image galleries from Flickr" class="sidebar-nav-item" href="/galleries/">Images Galleries <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li> -->
      <li><a title="eBooks" class="sidebar-nav-item" href="/eBooks/">eBooks <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
      </li>
      <li><a title="Course Sections" class="sidebar-nav-item" href="/sections/">Sections and Categories <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
@@ -159,13 +135,14 @@
       </div>
     </div>
 
-    <div class="wrap"><a href="https://publisha.github.io/galleries/bookimages/" title="Take a look at this gallery of images">
+    <div class="wrap"><!-- <a href="https://publisha.github.io/galleries/bookimages/" title="Take a look at this gallery of images"> -->
     <div id="callbacks_container">
       <ul class="rslides" id="pageimage">
-        <li class="first"><img src="/images/homegallery/img_00123.jpg" alt="images of books in art">
+        <li class="first" style="padding:0;">
+          <!-- <img style="width:100%;" src="/images/homegallery/img_00124.jpg" alt="images of books in art"> -->
         </li>
       </ul>
-      <script>
+      <!-- <script>
       $(function() {
         var options = {
           apiKey: '6a751024fcc480f70610ed1f98220880',
@@ -191,10 +168,9 @@
 
     });
 
-      </script>
+      </script> -->
 
 </div>
-</a>
 <!-- end of the callbacks container --><!-- masthead was here -->
       <div class="container content">
         <div class="page">

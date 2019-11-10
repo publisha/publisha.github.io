@@ -10,7 +10,6 @@
   </div>
 </progress>
     {%- include sidebar.html -%}
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
 
     <div class="masthead">
       <div class="container">
@@ -25,51 +24,14 @@
 
     <div class="wrap">
 {%- if page.title == "Digital Publishing Hub" -%}
-<!-- <a href="https://publisha.github.io/galleries/bookimages/" title="Take a look at this gallery of images"> -->
-    <div id="callbacks_container">
-      <ul class="rslides" id="pageimage">
-        <li class="first" style="padding:0;">
-          <!-- <img style="width:100%;" src="/images/homegallery/img_00124.jpg" alt="images of books in art"> -->
-        </li>
-      </ul>
-      <!-- <script>
-      $(function() {
-        var options = {
-          apiKey: '6a751024fcc480f70610ed1f98220880',
-          flickrId: '55648661@N00',
-          photosetId: '72157687532719080',
-        };
-
-      jsonUrl = "https://api.flickr.com/services/rest/?" + "method=flickr.photosets.getPhotos&" + ("api_key=" + options.apiKey + "&") + ("photoset_id=" + options.photosetId + "&") + ("user_id=" + options.flickrId + "&") + "extras=description,url_sq,url_t,url_s,url_m,url_h&" + "format=json&jsoncallback=?";
-
-      return $.getJSON(jsonUrl, function(data) {
-        $.each(data.photoset.photo, function(index, photo) {
-          if (photo.url_h) {
-                $("<img />").attr({
-                  src: photo.url_h,
-                  alt: "flickr- " + photo.title
-                }).appendTo( "#pageimage" )
-                .wrap("<li>");
-              }
-        });
-        $(".rslides").delay(1000).responsiveSlides();
-      });
-
-
-    });
-
-      </script> -->
-
-</div>
-<!-- end of the callbacks container -->
+    <div id="pageimage">
+    </div>
 {%- endif -%}
       <!-- masthead was here -->
       <div class="container content">
         {{ content }}
       </div>
     </div>
-<!-- {%- include footer.html -%} -->
-<!-- now follows items that get the menu working should it be fa-chevron-left fa-lg -->
     <label title="the menu" for="sidebar-checkbox" class="sidebar-toggle fa fa-bars fa-lg" aria-hidden="true"></label>
 <!-- this next item will be shown on small screens -->
     <div class="contents"><a href="/contents" title="contents"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
@@ -164,6 +126,7 @@ if (imageCaption != '') {
 
     });
     </script>
+    {%- if page.title != "Digital Publishing Hub" -%}
 <script>
     $(document).scroll(function() {
       var y = $(this).scrollTop();
@@ -174,6 +137,7 @@ if (imageCaption != '') {
       }
     });
 </script>
+{%- endif -%}
     <script src="{{site.baseurl}}/public/js/progress.js"></script>
 
 

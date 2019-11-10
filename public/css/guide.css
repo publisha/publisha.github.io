@@ -846,68 +846,14 @@ width:50%;
 /*large image on home page*/
 
 #pageimage {
-  display:block;
-  height:200px;
+  height:150px;
   width:100%;
-  /* max-width:1000px; */
   margin: 0 auto;
-  background-image: url("/images/homegallery/frontpage.jpg");
+  background-image: url(/images/homegallery/frontpage.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-  background-size:cover;
-}
-
-#pageimage img {
-min-height:300px;
-/* background-image:url("/images/homegallery/img_00127.jpg");
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center;
-background-size: 100%;
-background-color: silver; */
-width:100%;
-}
-
-/*centre the rolling images*/
-
-  #callbacks_container {
-    /*display:inline-block;*/
-      margin:0 auto 8px auto;
-      max-height:300px;
-      overflow: hidden;
-      /* display:flex;
-      align-items:center;
-      justify-content:center; */
-      width:100%;
-      /* max-width:1300px; */
-      background-color: #5b6662;
-  }
-
-#pageimage li {
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  position:relative;
-  width:100%;
-  margin:0;
-  padding:0;
-}
-
-#pageimage li img {
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-}
-
-/* put the first placeholder image in the middle */
-
-#pageimage li.first img {
-  top:0%;
-  left:0%;
-  transform: translate(0, 0);
-  margin:0;
-  display:block;
+  background-position: center top;
+  background-size: contain;
 }
 
   @media screen and (max-width: 40rem) {
@@ -927,7 +873,7 @@ section.headline {
   background-color: rgba(204, 222, 221, 0.65);
   /* position:absolute; */
   /* top:40px; */
-  margin:0 auto;
+  margin:10px auto 0 10px;
   z-index:1200;
   padding:2px 12px 2px 12px;
   max-width: 36rem;

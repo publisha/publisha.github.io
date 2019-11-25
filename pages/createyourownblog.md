@@ -6,7 +6,7 @@ images: full-width
 tags: [Using GitHub]
 screencast: [blogwithgithub]
 categories: [Web, HTML]
-date: 2019-10-29
+date: 2019-11-29
 blurb: GitHub provides a way to use a free web site. Here is a simple way to get started with a provided template that you can change later.
 order: 4
 ---
@@ -126,9 +126,9 @@ Click this and a window appears. Paste into the top box.
 
 [![Here is the clone window. Paste into the top box. You can move the repository later.](/images/clonerepo.png)](/images/clonerepo.png)
 
-**Note**: Before you finish setting up, you should move the complete web site folder out of the `github` folder to your `Creative Cloud` folder or your Google Drive. That way, you can find it on any of the computers that you are signed into.
+**Note**: Before you finish setting up, you can move the complete web site folder out of the `github` folder to your `Creative Cloud` folder (do _not_ use Google Drive). That way, you can find it on any of the computers that you are signed into. If you are using your own computer then there is no need to move the site out of your own home>github folder.
 
-Close the Atom window and locate the github folder inside your Home folder. Now drag the folder called yoursite.github.io to a location on your _Google Drive_ or your _Creative Cloud_ space.
+Close the Atom window and locate the github folder inside your Home folder. Now drag the folder called yoursite.github.io to a location on your Creative Cloud folder.
 
 ### Configuring your site
 

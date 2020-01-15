@@ -27,7 +27,7 @@ We are using GitHub pages to host a web site for the Shakespeare play. This page
 
 ## You will need Atom software
 
-> **Note: **If you have already grabbed a copy of Atom previously then you can skip this step.
+> **Note: **Even if you have already grabbed a copy of Atom previously I still recommend that you get a fresh updated copy as in these instructions.
 
 You will only need the application called _Atom_ and to help you get the correct settings I am [providing you with a distribution][61862e36] package as a `zip` file. This will create an `atom` folder which you need to place inside your `Home` folder.
 
@@ -47,13 +47,6 @@ From the Finder use `Go` to find your Home folder. Read the `readme.md` file tha
 4. Double click this file to unpack - this creates a _hidden_ folder called `.atom` (**but you won't see it**).
 
 > You can view hidden files by using `SHIFT-CMD full-stop` on the keyboard.
-
-The `Atom` program comes ready built with the following packages that will help you write posts for your blog.
-
--   tool-bar
--   markdown-writer
--   toolbar-markdown-writer
--   zen (this will provide a distraction free interface)
 
 ## Now we need to create the Github repository
 
@@ -165,16 +158,10 @@ Go there in your browser and login with the credentials that you put in before a
 Ok, so I know this seems complicated. Let me write out a simple list with the steps. Make this into a check list and tick them off as you go!
 
 - [Download Atom][aea13298] and install in **your** Applications folder
-- [Download GitHub Desktop][d032ef0e] and install in **your** Applications folder
 - Create an account on [Github.com][fc57320f]
-- Grab link on Moodle (week 1) for the GitHub repository (**note:** I can't publish this on this public site)
-- Accept the Digital Shakespeare repository
-- Run GitHub Desktop and login with your GitHub credentials
-- Clone the Publisha repository that you see in your account
-- Choose a location (use Google Drive please)
-- In GitHub Desktop, find the repository > open in Atom linked
-  - _You may not need GitHub Desktop again_
-- Add 2 packages to atom
+- Grab link on Moodle (week 1) for the GitHub template
+- Copy the link next to the Clone button
+- In Atom, use the icon bottom right to clone and use the window to paste in the link
 - [Read the helper document about getting HTML from InDesign][f0f67b5c]
 - Add the files into the local version of the repository and edit the HTML and CSS etc
 - Check that the site works (home page is the cover image with link to the play)
@@ -184,5 +171,4 @@ Ok, so I know this seems complicated. Let me write out a simple list with the st
 
 [fc57320f]: https://www.github.com "Create the account"
   [aea13298]: https://atom.io "Grab Atom"
-  [d032ef0e]: https://desktop.github.com "Grab GitHub Desktop"
   [f0f67b5c]: https://publisha.github.io/pages/InDesign_to_HTML/ "Read this"

@@ -4,7 +4,7 @@
   published: true
   categories: [InDesign, XML, "HTML and CSS", "Multi-Platform Publishing"]
   screencast: [id2html]
-  date: 2017-12-24
+  date: 2020-01-15
   blurb: HTML is the language for the web; delivering content for our various types of screens. InDesign is a *page layout* tool; presuming for the printed page, but we can still generate HTML from our content and with some attention to detail, we can can get good HTML markup ready for further styling and attention to a responsive design.
   order: 2
 ---
@@ -37,16 +37,6 @@ In this detailed description, we are going to use our Shakespeare play to create
 
 Of course we have developed good habits and have made sure that all content has styles attached. we avoid overrides and adjusting appearance with bespoke settings. We also avoid adding empty paragraphs to achieve space. Once we have our styles applied (paragraph, character and objects) we then need to instruct InDesign what HTML tags to apply to those elements on export.
 
-## Two Features we need first
-
-- If you have already mapped your styles to tags by name and have an XML structure then this will be a marvellous benefit.
-- If you have a table of contents then we can use this to generate a friendly menu for navigation.
-
-### Check your XML structure
-
-We will generate the HTML *based on the XML Structure* so only those elements will appear in the HTML. You *can* base the export on the layout but this may give some unwanted elements.
-
->**Note**: There are other options to use for the layout of the exported HTML; you can use the *existing layout*, however, there is a degree of unpredictability in the order of the components, with stories arranged according to order of creation. Content can also be arranged with *Articles*, and export to HTML can use this feature too.
 
 ## Build the Table of contents
 
@@ -68,29 +58,9 @@ Act II
 	Scene III
 ```
 
-Achieving this structure in InDesign is very easy with styles, however, getting an appropriate structure for HTML is more involved because levels can only be set when the list is *ordered*, ie *numbered*. We can only explain this with the use of images from InDesign. We will use the included styles (TOC Level 1 and TOC level 2) and reformat as a list.
-
-### Define a List
-
-We first have to tell InDesign that we need a list and we do this through the Type > Bullets & Numbering panel:
-
-[![Define the list](/images/Screenshot 2017-12-23 13.12.47.png)](/images/Screenshot 2017-12-23 13.12.47.png)
-
-[![Define a list - here we create one called 'Contents'](/images/Screenshot 2017-12-23 12.47.55.png)](/images/Screenshot 2017-12-23 12.47.55.png)
-
-Now we can set the paragraph styles to use this list. We first need to set this as a Numbered list (only this way can we select the previously created list.)
-
->**Note**: We can also Define a new list directly from the paragraph style panel within the Bullets & Numbering section.
-
-[![Use the Numbers list and choose the previously created List](/images/Screenshot 2017-12-23 13.26.33.png)](/images/Screenshot 2017-12-23 13.26.33.png)
-
-Once we have chosen the previously defined list then we can set the list type back to 'Bullets'. We don't need to display bullets on the page if we don't want to, but we do need to select the correct HTML tag for this style under the 'Export Tagging' panel option.
+We can achieve this structure by making sure that the Act is set at level 1 and the `scene` (also `firstscene`) is set at level 2.
 
 [![Here is a view of our table of contents on the page in InDesign](/images/Screenshot 2017-12-23 12.36.38.png)](/images/Screenshot 2017-12-23 12.36.38.png)
-
-[![Under Export Tagging we can add the tag name `li`.](/images/Screenshot 2017-12-23 13.30.00.png)](/images/Screenshot 2017-12-23 13.30.00.png)
-
-InDesign provides a list of block level HTML tags to use but the `<li>` is not amongst them- we need to type this in ourselves. We can also provide a class name (or more than one) to help in the later styling of the web oage with `CSS`.
 
 When we export to HTML (File > Export > HTML), we need to be sure that our lists are exported as HTML lists.
 
@@ -110,6 +80,25 @@ In HTML the _unordered_ list is presented with the following tag structure.
 
 
 So, `<ul>` is the parent and `<li>` are the list items.
+
+Because the Scenes are one level below Acts, the structure should look like this:
+
+```html
+<ul class="contents">
+  <li>Act 1
+    <ul>
+      <li>Scene 1</li>
+      <li>Scene 2</li>
+    </ul>
+  </li>
+  <li>Act 2
+    <ul>
+      <li>Scene 1</li>
+      <li>Scene 2</li>
+    </ul>
+  </li>
+</ul>
+```
 
 Here is what our HTML list looks like in it's *raw* state.
 

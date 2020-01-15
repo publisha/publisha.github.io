@@ -1,7 +1,7 @@
 ---
 title: InDesign to HTML
 date: 2017-12-23
-YouTube: rj2BRNfdsbY
+YouTube: Pp83YSOmUjw
 layout: screencast
 categories: [InDesign,HTML]
 ---
@@ -12,4 +12,6 @@ We can also build an interactive table of contents that gives us a navigation bl
 
 [![The table of contents](/images/Screenshot 2017-12-23 12.36.38.png)](/images/Screenshot 2017-12-23 12.36.38.png)
 
-In this screencast we also make use of the XML structure that we have previously created.
+In this screencast we use the Articles panel to select the components for the HTML.
+
+> **Note: **This is an updated screencast from one posted some months ago!

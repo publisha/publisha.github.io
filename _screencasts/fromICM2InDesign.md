@@ -1,5 +1,5 @@
 ---
-title: From the Converted ICML file we Place int InDesign
+title: From the Converted ICML file we Place into InDesign
 date: 2020-01-19
 YouTube: fs6cNksohW0
 layout: screencast

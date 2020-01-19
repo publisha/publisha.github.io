@@ -1,6 +1,6 @@
 ---
 title: InDesign to HTML
-date: 2017-12-23
+date: 2020-01-19
 YouTube: Pp83YSOmUjw
 layout: screencast
 categories: [InDesign,HTML]

@@ -3,7 +3,7 @@ layout: page
 title: InDesign to iBooks Author (Recipes edition)
 published: true
 tags: InDesign, "iBooks Author"
-categories: [InDesign, "iBooks Author", "Digital Product"]
+categories: [InDesign, "iBooks Author"]
 screencast: [id2iba_recipeBook]
 date: 2018-04-18
 order: 5

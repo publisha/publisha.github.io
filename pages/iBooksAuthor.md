@@ -3,7 +3,7 @@ layout: page
 title: From InDesign to iBooks Author
 published: true
 tags: iBooks Author
-categories: [InDesign, "iBooks Author", "Multi-Platform Publishing"]
+categories: [InDesign, "iBooks Author"]
 screencast: [introducing_iBooksAuthor]
 date: 2018-04-18
 order: 5

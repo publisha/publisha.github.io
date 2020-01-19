@@ -3,7 +3,7 @@ title: Get Atom Software and Install on a MAC
 date: 2020-01-18
 YouTube: Mb1DRhBOMWI
 layout: screencast
-categories: [Software]
+categories: [Software, "Digital Product", "Multi-Platform"]
 ---
 
 This screencasts explains how to install Atom from an instance that I provide. Although **Atom** is free to download, I have installed all of the various packages to help write blog posts with `markdown`.

@@ -14,4 +14,4 @@ We can also build an interactive table of contents that gives us a navigation bl
 
 In this screencast we use the Articles panel to select the components for the HTML.
 
-> **Note: ** This is an updated screencast from one posted some months ago!
+> **Note:**  This is an updated screencast from one posted some months ago!

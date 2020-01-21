@@ -4,7 +4,7 @@ date: 2016-03-20
 YouTube: tdjNXbmY6s0
 layout: screencast
 published: true
-categories: [InDesign, ePub]
+categories: [InDesign, ePub, "Multi-Platform Publishing"]
 ---
 **This is a 3 part screencast (please view parts 1 and 2 first)**
 

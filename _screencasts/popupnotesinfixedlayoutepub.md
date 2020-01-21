@@ -4,7 +4,7 @@ date: 2018-05-29
 YouTube: g0HQZcLWlFo
 layout: screencast
 published: true
-categories: [InDesign, ePub]
+categories: [InDesign, ePub, "Multi-Platform Publishing"]
 ---
 
 Although the ePub3 format can support popup notes, it is difficult to achieve this in the fixed-layout version from InDesign.

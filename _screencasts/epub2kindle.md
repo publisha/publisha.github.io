@@ -3,8 +3,8 @@ title: Converting the reflowable ePub to a Kindle Version
 date: 2016-04-01
 YouTube: l5p4-SAd8ko
 layout: screencast
-publshed: true
-categories: [InDesign,ePub,Kindle]
+published: false
+categories: [InDesign, ePub, Kindle, "Multi-Platform Publishing"]
 ---
 Our eBook production workflow involves perfecting for the ePub3 format first by exporting from InDesign and then making minimal adjustments through our own CSS file. Once we have everything ready to go, we can then convert this ePub to the MOBI file for the Amazon Kindle.
 

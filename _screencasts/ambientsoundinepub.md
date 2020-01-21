@@ -4,9 +4,9 @@ date: 2017-04-05
 YouTube: tdZT2DkI8Rk
 layout: screencast
 published: true
-categories: [InDesign,ePub]
+categories: [InDesign, ePub, "Multi-Platform Publishing"]
 ---
-**Just for Apple iBooks**
+**Just for Apple Books**
 
 When we place audio on the page of a fixed-layout eBook, we cannot expect it to continue to play when the page is turned. Each page is a new XHTML document, so audio (or any media) will stop on leaving that page.
 
@@ -14,7 +14,7 @@ If we want to get audio to continue to play as we turn the pages, we need to mod
 
 ### Further Details
 
-ibooks on Apple devices supports this ambient sound feature and we need to add a reference to the iBooks extensions in the HTML tag at the top of the pages that need this audio. We also need to modify the audio tag inside the HTML markup.
+Books on Apple devices supports this ambient sound feature and we need to add a reference to the iBooks extensions in the HTML tag at the top of the pages that need this audio. We also need to modify the audio tag inside the HTML markup.
 
 We can use InDesign to add the audio file (we can do this on the master pages), but there are some very specific issues to be aware of:
 

@@ -4,18 +4,33 @@ published: true
 title: ePub format eBooks
 ---
 <h1>{{ page.title }}</h1>
-
-        {%- assign pageitems = site.pages | sort: 'title' -%}
-          {%- for item in pageitems -%}
-              {%- if item.categories contains "ePub" -%}
-              <article class="snippet">
-                <h2><a href="{{ item.url }}" title="read this document">{{ item.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></h2>
-                  {%- if item.blurb !=null -%}
-                    <p>{{ item.blurb }}</p>
-                  {%- endif -%}
-                  {%- if item.date != null -%}
-                  <p class="details">This document last edited on: {{item.date}}</p>
-                  {%- endif -%}
-              </article>
-              {%- endif -%}
-          {%- endfor -%}
+          <h2>Help Pages</h2>
+                  {%- assign pageitems = site.pages | sort: 'title' -%}
+                    {%- for item in pageitems -%}
+                        {%- if item.categories contains "ePub" -%}
+                        <article class="snippet">
+                          <h3><a href="{{ item.url }}" title="read this document">{{ item.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></h3>
+                            {%- if item.blurb !=null -%}
+                              <p>{{ item.blurb }}</p>
+                            {%- endif -%}
+                            {%- if item.date != null -%}
+                            <p class="details">This document last edited on:
+                              {{ item.date | date: "%-d %B %Y" }}</p>
+                            {%- endif -%}
+                        </article>
+                        {%- endif -%}
+                    {%- endfor -%}
+          <h2>Screencasts</h2>
+                    {% assign items = site.screencasts | sort: 'title' %}
+                      {% for screencast in items reversed limit:45 %}
+                      {%- if screencast.categories contains "ePub" -%}
+                      <article class="snippet">
+                      <h3><a href="{{ site.baseurl }}{{ screencast.url }}" title="see this screencast">{{ screencast.title }} <i class="fa fa-caret-right" aria-hidden="true"></i></a></h3>
+                      {{ screencast.excerpt }}
+                      {%- if screencast.date != null -%}
+                      <p class="details">This document last edited on:
+                        {{ screencast.date | date: "%-d %B %Y" }}</p>
+                      {%- endif -%}
+                    </article>
+                    {%- endif -%}
+                    {% endfor %}

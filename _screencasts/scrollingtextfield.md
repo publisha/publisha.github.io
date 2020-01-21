@@ -3,7 +3,7 @@ title: Scrolling Text Frame in Fixed-Layout ePub
 date: 2017-03-31
 YouTube: zFQJ8rLFnWo
 layout: screencast
-categories: [InDesign,ePub]
+categories: [InDesign, ePub, "Multi-Platform Publishing"]
 ---
 First things: I am not using the overlays feature of InDesign.
 

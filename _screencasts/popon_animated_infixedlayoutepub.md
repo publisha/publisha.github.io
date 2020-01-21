@@ -4,7 +4,7 @@ date: 2018-05-30
 YouTube: t2H7qojMAWQ
 layout: screencast
 published: true
-categories: [InDesign, ePub]
+categories: [InDesign, ePub, "Multi-Platform Publishing"]
 ---
 This is the second screencast that deals with interactive information for the fixed-layout ePub.
 

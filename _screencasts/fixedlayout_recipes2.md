@@ -4,7 +4,7 @@ date: 2017-03-05
 YouTube: iPmusyTpfEM
 layout: screencast
 published: true
-categories: [InDesign, ePub]
+categories: [InDesign, ePub, "Digital Product"]
 ---
 **This is a 2 part screencast**
 

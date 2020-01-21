@@ -3,7 +3,7 @@ title: InDesign to HTML
 date: 2020-01-19
 YouTube: Pp83YSOmUjw
 layout: screencast
-categories: [InDesign,HTML]
+categories: [InDesign,HTML, "Multi-Platform Publishing"]
 ---
 
 We can generate good quality, sensible HTML(5) markup from InDesign so long as we make some adjustments to the way the HTML tags are mapped from our styles.

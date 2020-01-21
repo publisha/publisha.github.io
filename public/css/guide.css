@@ -812,7 +812,7 @@ border-bottom:1px solid #287e4a;
 margin-bottom:2px;
 }
 .snippet h3 {
-   font-size:99%;
+   /* font-size:100%; */
    margin-top:3px;
 }
 

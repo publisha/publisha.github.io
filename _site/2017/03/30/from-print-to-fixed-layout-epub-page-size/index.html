@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-gb"><head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Page Size Issues in fixed-layout ePub" />
+<meta property="og:locale" content="en_gb" />
+<meta name="description" content="Following on from page size in the reflowable eBook, how about the fixed-layout eBook after it has been created as a print book? So you have used InDesign to create a wonderful printed book of a Shakespeare play, and you chose a standard page size (my example is: 216mm x138mm). Now when you make the fixed layout eBook from the spreads there might be a few observable problems." />
+<meta property="og:description" content="Following on from page size in the reflowable eBook, how about the fixed-layout eBook after it has been created as a print book? So you have used InDesign to create a wonderful printed book of a Shakespeare play, and you chose a standard page size (my example is: 216mm x138mm). Now when you make the fixed layout eBook from the spreads there might be a few observable problems." />
+<link rel="canonical" href="http://localhost:4000/2017/03/30/from-print-to-fixed-layout-epub-page-size/" />
+<meta property="og:url" content="http://localhost:4000/2017/03/30/from-print-to-fixed-layout-epub-page-size/" />
+<meta property="og:site_name" content="Digital Publishing Hub" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-03-30T11:37:00+01:00" />
+<script type="application/ld+json">
+{"description":"Following on from page size in the reflowable eBook, how about the fixed-layout eBook after it has been created as a print book? So you have used InDesign to create a wonderful printed book of a Shakespeare play, and you chose a standard page size (my example is: 216mm x138mm). Now when you make the fixed layout eBook from the spreads there might be a few observable problems.","@type":"BlogPosting","url":"http://localhost:4000/2017/03/30/from-print-to-fixed-layout-epub-page-size/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://publisha.github.io/images/publisha_logo.jpg"}},"headline":"Page Size Issues in fixed-layout ePub","dateModified":"2017-03-30T11:37:00+01:00","datePublished":"2017-03-30T11:37:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/03/30/from-print-to-fixed-layout-epub-page-size/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://localhost:4000/images/homegallery/img_00127.jpg"><meta name="og:description" content="Following on from page size in the reflowable eBook, how about the fixed-layout eBook after it has been created as a print book? So you have used InDesign to create a wonderful printed book of a Shakespeare play, and you chose a standard page size (my example is: 216mm x138mm). Now when you make the fixed layout eBook from the spreads there might be a few observable problems.
+
+"><!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://localhost:4000/2017/03/30/from-print-to-fixed-layout-epub-page-size/">
+<meta name="twitter:site" content="@pageboy">
+<meta name="twitter:title" content="Page Size Issues in fixed-layout ePub"><meta name="twitter:description" content="Following on from page size in the reflowable eBook, how about the fixed-layout eBook after it has been created as a print book? So you have used InDesign to create a wonderful printed book of a Shakespeare play, and you chose a standard page size (my example is: 216mm x138mm). Now when you make the fixed layout eBook from the spreads there might be a few observable problems.
+
+"><meta name="twitter:image" content="http://localhost:4000/images/homegallery/img_00127.jpg">
+<meta name="twitter:creator" content="@pageboy">
+<meta name="twitter:image:alt" content="Book in the hands of a monk"><title>
+      Page Size Issues in fixed-layout ePub
+  </title>
+
+  <meta name="description" content="Help for publishers and students of publishing | Tutorials and screencasts about digital publishing and eBook Production">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="/public/css/jquery.fancybox.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/guide.css">
+  <link rel="stylesheet" href="/public/css/bigfoot-default.css">
+  <link rel="stylesheet" href="/public/css/progressbar.css">
+  <link rel="stylesheet" href="/public/css/all.css">
+
+
+  <!-- Fonts -->
+  <!-- can't use google fonts on GitHub unless https -->
+<link href='https://fonts.googleapis.com/css?family=Cantarell:regular,italic,bold,bolditalic' rel='stylesheet'>
+
+
+<!-- Optionally make the images go full width but put this in the page metadata --><!-- javascripts for fancybox -->
+<script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/public/js/jquery.fancybox.pack.js">
+</script>
+<script type="text/javascript" src="/public/js/jquery.fancybox-media.js">
+</script>
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- javascript for the footnote popups -->
+<script type="text/javascript" src="/public/js/bigfoot.js"></script>
+<script type="text/javascript">
+    $.bigfoot();
+</script></head>
+<body class="theme-base-0b">
+    <progress value="0" id="progressBar">
+  <div class="progress-container">
+    <span class="progress-bar"></span>
+  </div>
+</progress><!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+
+
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <nav class="sidebar-nav"  style="border-bottom:none !important;">
+    <a href="/"><i class="sidebar-nav-item fa fa-home fa-2x" aria-hidden="true"></i></a>
+  </nav>
+  <div class="sidebar-item" style="padding-top:0;padding-bottom:.5rem;">
+    <p>Tutorials and screencasts about digital publishing and eBook Production</p>
+  </div>
+
+  <nav class="sidebar-nav">
+<ul class="navigationtoc">
+<li class="header">Pages by Category</li><li class="dropdown"><a title="see all pages about InDesign" href="/sections/InDesign">InDesign <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li><li class="dropdown"><a title="see all pages about HTML and CSS" href="/sections/HTML and CSS">HTML and CSS <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li><li class="dropdown"><a title="see all pages about Typography" href="/sections/Typography">Typography <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li><li class="dropdown"><a title="see all pages about XML" href="/sections/XML">XML <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li><li class="dropdown"><a title="see all pages about ePub" href="/sections/ePub">ePub <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li><li class="dropdown"><a title="see all pages about iBooks Author" href="/sections/iBooks Author">iBooks Author <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+  </li></ul>
+    <ul class="navigationtoc">
+      <li class="header"><b>Other Items</b></li><li><a title="screencasts from the YouTube channel" class="sidebar-nav-item" href="/screencasts/">Screencasts <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+     <li><a title="presentations generated from Keynote" class="sidebar-nav-item" href="/presentations/">Presentations <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+     <!-- <li><a title="Image galleries from Flickr" class="sidebar-nav-item" href="/galleries/">Images Galleries <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li> -->
+     <li><a title="eBooks" class="sidebar-nav-item" href="/eBooks/">eBooks <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+     <li><a title="Course Sections" class="sidebar-nav-item" href="/sections/">Sections and Categories <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+     </li>
+      <li><a title="see all contents listed" class="sidebar-nav-item" href="/contents">List all Contents <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- <div class="sidebar-item">
+    <p>
+      <b>Note:</b> Images can be enlarged by click or touch
+    </p>
+  </div> -->
+  <div class="sidebar-item">
+    <p>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v0.96 2020 | <a href="/pages/about" title="read about this site and how it was made">About</a>
+  </p>
+  </div>
+</div>
+<div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">Digital Publishing Hub</a>
+          <br />
+          <small>Help for publishers and students of publishing</small>
+        </h3>
+        <h2 class="pagetitle">Page Size Issues in fixed-layout ePub</h2>
+      </div>
+    </div>
+
+    <div class="wrap"><!-- masthead was here -->
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Page Size Issues in fixed-layout ePub</h1>
+  <span class="post-date">30 Mar 2017</span>
+  <p>Following on from page size in the reflowable eBook, how about the fixed-layout eBook after it has been created as a print book? So you have used InDesign to create a wonderful printed book of a Shakespeare play, and you chose a standard page size (my example is: 216mm x138mm). Now when you make the fixed layout eBook from the spreads there might be a few observable problems.</p>
+
+<h2 id="proportion">Proportion</h2>
+
+<p>Our print book spreads will become landscape in the fixed-layout eBook. So, we will get the following proportions:</p>
+
+<p><code class="highlighter-rouge">width:138 x 2 = 278</code>
+<code class="highlighter-rouge">height = 216</code></p>
+
+<p><code class="highlighter-rouge">Proportion = 216/278 = 0.7777</code></p>
+
+<p>On a computer running Apple iBooks or any other eReader, the proportion is
+not really significant because all computer displays vary in proportion. However, on a tablet such as the iPad the proportion is specifically 6x8 or 0.75. So, we need to modify the size of the pages in the InDesign file very slightly; keeping the width of the pages, we take the width of the spread and multiply by 0.75 and we get 208.5. So we lose about 8mm in the height.</p>
+
+<p><a href="/images/2017/03/ipad_edgerevealed.jpg"><img src="/images/2017/03/ipad_edgerevealed.jpg" alt="Here we see that the page size does not exactly fit on the iPad" /></a></p>
+
+<h2 id="theory-and-practice">Theory and Practice</h2>
+
+<p>The above scenario takes a book designed for print and makes one adjustment in a attempt to resolve the proportion riddle, however, in practise there may still be gaps and mysterious white lines.</p>
+
+<h3 id="its-all-about-the-units">It’s all about the units</h3>
+
+<p>The numbers that we refer to above are in millimetres because in Europe we tend to use metric units to measure page sizes.</p>
+
+<p>When InDesign exports the fixed-layout eBook, it needs to make a conversion from real-world units (millimetres) to pixels. If we take a peak inside the ePub package at one of the <code class="highlighter-rouge">XHTML</code> files we see that:</p>
+
+<p><code class="highlighter-rouge">&lt;meta name="viewport" content="width=782,height=591" /&gt;</code></p>
+
+<p>This tells the ereader that the size is 782x591. The proportion, therefore is <code class="highlighter-rouge">0.755754475703325</code> - very slightly wrong! The height should be: <code class="highlighter-rouge">586.5</code>.</p>
+
+<h3 id="lets-not-edit-the-epub">Let’s not edit the ePub</h3>
+
+<p>We don’t need to edit the XHTML code inside the ePub. No, we just need to adjust the InDesign file to use pixel units. Here’s how:</p>
+<h3 id="unit-preferences">Unit Preferences</h3>
+
+<p>In Indesign, go to the preferences panel and find the <code class="highlighter-rouge">units and increments</code> section. Change the Ruler units for both vertical and horizontal to <strong>pixels</strong>.</p>
+
+<p><a href="/images/2017/03/changetheunitstopixels.png"><img src="/images/2017/03/changetheunitstopixels.png" alt="Change from millimetres to pixels" /></a></p>
+
+<h3 id="page-size">Page size</h3>
+
+<p>Now go to File&gt;Document setup and see that the page size is now an untidy fraction of pixels (391.181 x 591.024). Not nice!</p>
+
+<p>We need to do some adjustment to these numbers to get a 3/4 proportion and hopefully exact pixels numbers. Pixels are tiny little units so this should not impact our designs too much.</p>
+
+<p>The result is a page width of <code class="highlighter-rouge">396 pixels</code> and page height of <code class="highlighter-rouge">594 pixels</code>. When we add 2 pages together the landscape becomes <code class="highlighter-rouge">792 x 594 = 8 x 6</code>.</p>
+
+<h2 id="document-set-up-or-pages-size">Document set up or pages size</h2>
+
+<p>You can go back to the File&gt;Document setup and change the page size. This will work, however, you can use the Page Tool on the tool palette and select all master pages in the Pages panel. You then can control the reference point for the change to happen (choose the centre top).</p>
+
+<p><a href="/images/2017/03/documentsetup.png"><img src="/images/2017/03/documentsetup.png" alt="In the documents setup we now need to adjust to a whole pixel number." /></a></p>
+
+<p>Then you need to apply the master pages to all pages and also set the page size in the document setup panel.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts"><li>
+        <h3>
+          <a href="/2019/09/06/sharingwebpagestosocial/">
+            Sharing to Facebook and Twitter
+            <small>06 Sep 2019</small>
+          </a>
+        </h3>
+      </li><li>
+        <h3>
+          <a href="/indesign/epub/html/2018/10/14/spread-video-fxl-epub/">
+            Video across a 2 page spread (updated)
+            <small>14 Oct 2018</small>
+          </a>
+        </h3>
+      </li><li>
+        <h3>
+          <a href="/publishing/editing/opensource/2018/10/14/using-booktype-to-create-a-book-in-multiple-formats/">
+            Using Booktype to create a book in multiple formats
+            <small>14 Oct 2018</small>
+          </a>
+        </h3>
+      </li></ul>
+</div>
+      </div>
+    </div>
+    <label title="the menu" for="sidebar-checkbox" class="sidebar-toggle fa fa-bars fa-lg" aria-hidden="true"></label>
+<!-- this next item will be shown on small screens -->
+    <div class="contents"><a href="/contents" title="contents"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+    </div>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.fancybox').fancybox();
+        });
+    </script>
+    <script>
+    jQuery(document).ready(function($) {
+    	$("img:not([title])").each(function() {
+    			if($(this).attr("alt") != '') $(this).parent().attr("title", $(this).attr("alt"))
+    			else $(this).parent().attr("title", $(this).attr("src"));
+    	});
+    });
+    </script>
+    <script>
+        $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').attr('class', 'sideimage').fancybox();
+    </script>
+
+
+    <!-- here follows a script to put the alt tag to a caption under the images -->
+
+<script>
+$(".page img").each(function() {
+var imageCaption = $(this).attr("alt");
+if (imageCaption != '') {
+    $("<span class='caption'>" + imageCaption +
+        "</span>").insertAfter(this);
+}
+});
+</script>
+
+    <!-- show a video -->
+
+
+    <script>
+    $(document).ready(function() {
+    	$(".video").fancybox({
+    		maxWidth	: 800,
+    		maxHeight	: 600,
+    		fitToView	: false,
+    		width		: '70%',
+    		height		: '70%',
+    		autoSize	: false,
+    		closeClick	: false,
+    		openEffect	: 'none',
+    		closeEffect	: 'none'
+    	});
+    });
+    </script>
+
+    <!-- navigation -->
+    <script>
+    jQuery(document).ready(function(){
+
+    $(".navigation > li > a").on("click", function(e){
+
+    	if(!$(this).hasClass("active")) {
+
+          // hide any open menus and remove all other classes
+    		$(".navigation li ul").slideUp(350);
+    		$(".navigation li a").removeClass("active");
+
+    		// open our new menu and add the open class
+    		$(this).next("ul").slideDown(350);
+    		$(this).addClass("active");
+
+    	}else if($(this).hasClass("active")) {
+
+    		$(this).removeClass("active");
+    		$(this).next("ul").slideUp(350);
+    	}
+       e.preventDefault();
+    });
+
+    });
+    </script><script>
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 200) {
+        $('.pagetitle').fadeIn();
+      } else {
+        $('.pagetitle').fadeOut();
+      }
+    });
+</script><script src="/public/js/progress.js"></script>
+
+
+<script>
+jQuery(document).ready(function($) {
+	$('a')
+		.filter('[href^="http"], [href^="//"]')
+		.not('[href*="' + window.location.host + '"]')
+		.attr('rel', 'noopener noreferrer')
+		.attr('target', '_blank');
+});
+</script>
+  </body>
+</html>

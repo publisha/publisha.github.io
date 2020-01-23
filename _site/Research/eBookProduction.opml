@@ -1,0 +1,73 @@
+<opml version="2.0">
+  <head>
+    <title>eBookProduction</title>
+    <expansionState>1,2,6,10,14</expansionState>
+  </head>
+  <body>
+    <outline id="QJefv1ZUFG" text="eBookProduction">
+      <outline id="mkuu1-Utf" text="Preamble">
+        <outline id="mJzzP1bUFG" text="Introduction"/>
+        <outline id="XyVMw1ZLtM" text="What does this book cover?"/>
+        <outline id="QkBGPkW8FM" text="A Little History">
+          <outline id="my8MwJWLYz" text="History"/>
+          <outline id="Q1DGw1bLYz" text="Devices"/>
+        </outline>
+      </outline>
+      <outline id="m1_YfiX7KG" text="Publishers’ Choices and Strategy">
+        <outline id="QkXYfimXFG" text="What Form can an eBook take?">
+          <outline id="QkEKGi7mtM" text="Re-flowable"/>
+          <outline id="mkBYfjQ7YG" text="Fixed layout"/>
+          <outline id="myUFGjmmtG" text="iBooks Author"/>
+          <outline id="XJT8cMwtG" text="Kindle"/>
+        </outline>
+        <outline id="X1bxYGsX7Kz" text="Workflow">
+          <outline id="XkzetGj7XYz" text="From Print Production"/>
+          <outline id="XJ7eKfjQ7KG" text="Conversion"/>
+          <outline id="XJ4xtGjQXtf" text="Validation"/>
+          <outline id="mJSxtziQ7tM" text="Testing"/>
+        </outline>
+        <outline id="QJIgtfiQ7Ff" text="Distribution"/>
+      </outline>
+      <outline id="XyWMv1Z8Yf" text="Creating eBooks">
+        <outline id="myklzPybUtG" text="eBook standards"/>
+        <outline id="m1T-iGvKf" text="ePub"/>
+        <outline id="QyHfsfDKM" text="Kindle / MOBI / KF8"/>
+        <outline id="mke-fvkb8YG" text="Tools">
+          <outline id="XJWZGv1bLFf" text="Adobe InDesign"/>
+          <outline id="Qy8lKbIKG" text="Apple iBooks Author"/>
+          <outline id="Qkm-GP1W8FG" text="Code Editors"/>
+          <outline id="XksfKZItz" text="Dreamweaver"/>
+          <outline id="myk7YbIYf" text="BBedit / Textwrangler"/>
+          <outline id="Qk7mYbLFM" text="Atom"/>
+        </outline>
+        <outline id="myFGwJW8YG" text="eBook Typography">
+          <outline id="my1wXZ8YM" text="Fonts"/>
+        </outline>
+        <outline id="mJqzvkZLFG" text="Content Management Systems">
+          <outline id="XyhGDJWLYf" text="Collaborative Editing">
+            <outline id="Qy6zwJ-Utz" text="Alfresco"/>
+            <outline id="QyCGvy-IFz" text="Google docs"/>
+            <outline id="QJK_XbLKz" text="GitHub"/>
+            <outline id="mybZrGDFM" text="Penflip"/>
+          </outline>
+        </outline>
+        <outline id="my52QWLtf" text="Workflow"/>
+        <outline id="mkc-GDJ-IKz" text="Creating a reflow-able eBook with Indesign"/>
+        <outline id="X1obzPyWIFG" text="Creating a fixed-layout eBook with Indesign"/>
+        <outline id="myKEizwtG" text="Cretaing "/>
+        <outline id="myyZfwyW8YG" text="Assets"/>
+        <outline id="XyNWGwy-8Kf" text="Enhancements"/>
+        <outline id="Q1H-fDJ-LtM" text="Metadata">
+          <outline id="Xy8bMwJ-8Kz" text="DOI"/>
+          <outline id="mJD-fwy-UYf" text="Onix"/>
+          <outline id="Q1ubfDJ-IYz" text="ISBN"/>
+        </outline>
+      </outline>
+      <outline id="Xkn-zwkb8Kf" text="Examples">
+        <outline id="m1a-zPJ-UFM" text="Memoirs of an Islet"/>
+        <outline id="X10Wzw1bItG" text="A Midsummer Night’s Dream"/>
+        <outline id="QJJGzD1bLFG" text="Poetry"/>
+      </outline>
+    </outline>
+  </body>
+</opml>

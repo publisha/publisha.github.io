@@ -131,6 +131,10 @@ Click this and a window appears. Paste into the top box.
 
 Close the Atom window and locate the github folder inside your Home folder. Now drag the folder called yoursite.github.io to a location on your Creative Cloud folder.
 
+Here is an annotated image of the Atom screen:
+
+[![The Atom Workspace](/images/atomworkspace.png)](/images/atomworkspace.png)
+
 ### Configuring your site
 
 Before you make your web site live and post new articles, you need to edit the configuration file with your own details. The file you must edit is:

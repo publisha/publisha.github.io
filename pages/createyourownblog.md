@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How to Build Your Web Site with GitHub Pages
-published: true
+published: false
 images: full-width
 tags: [Using GitHub]
 screencast: [blogwithgithub]

@@ -1,14 +1,14 @@
 ---
 title: Fixed Layout eBook Part 1
-date: 2016-03-16
-YouTube: PJqcMhrjzzo
+date: 2020-03-15 16:04
+YouTube: Esd4jbBBbWY
 layout: screencast
 published: true
 categories: [InDesign, ePub, "Multi-Platform Publishing"]
 ---
-**This is a 3 part screencast**
+**This is a Multi part screencast**
 
-In this first part of the 3 screencasts we look at the basic issues when creating a Fixed-layout ePub3 from an InDesign book that is already set up for print.
+In this first part of multiple screencasts in a Youtube Playlist. In this episode I will show you the finished (actually a work in progress) so you can see what kind of features we can add to this version of the eBook.
 
 - What happens to our double page spreads?
 - What shall we do with the half-title page?

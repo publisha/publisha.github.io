@@ -243,3 +243,5 @@ Here is an annotated image of the Atom screen:
 Remember to select `Stage All` and then put a message in the `Commit message` box. Then you can `Push` the changes.
 
 <hr />
+
+In the next document we look at adding multimedia and some other ways to enhance the viewing of images.

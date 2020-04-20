@@ -241,7 +241,7 @@ This will make _those_ images only 60% wide and centered.
 
 Look at the following YouTube video for other examples.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CNIuvybUnqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CNIuvybUnqY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <hr />
 

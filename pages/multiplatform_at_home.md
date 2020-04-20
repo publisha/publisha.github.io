@@ -202,10 +202,10 @@ To be certain that you are editing the correct CSS file look in the head section
 
 ```html
 <head>
-		<meta charset="utf-8" />
-		<title>A Midsummer Night's Dream</title>
-		<link href="css/play.css" rel="stylesheet" type="text/css" />
-	</head>
+<meta charset="utf-8" />
+<title>A Midsummer Night's Dream</title>
+<link href="css/play.css" rel="stylesheet" type="text/css" />
+</head>
   ```
 ### The IMG tag
 
@@ -237,7 +237,7 @@ margin:12px auto;
 }
 ```
 
-This will make _those_ images only 60% wide and centered.
+This will make _those_ images only 60% wide and centred.
 
 Look at the following YouTube video for other examples.
 
@@ -246,7 +246,7 @@ Look at the following YouTube video for other examples.
 <hr />
 
 
-## Pushing your changes up to GitHub
+## Pushing your changes up to your GitHub repository
 
 Although you may not have finished your work on this, it may be wise to push your changes up to GitHub.
 

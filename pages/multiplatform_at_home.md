@@ -108,6 +108,8 @@ _This would be the username on GitHub_
 
 **Now you should have Atom installed on your PC and we can now follow the instructions for both MAC and PC users.**
 
+<hr />
+
 ## Getting your play repository on to your computer
 
 Go to Github.com and sign in with your credentials.

@@ -9,6 +9,20 @@ order: 2
 images: full-width
 blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains everything to get working on this at home.
 ---
+
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
+
+- [For MAC users](#for-mac-users)
+- [For PC users](#for-pc-users)
+- [Getting your play repository on to your computer](#getting-your-play-repository-on-to-your-computer)
+- [Editing your play and adding images](#editing-your-play-and-adding-images)
+- [Styling the Images](#styling-the-images)
+- [Pushing your changes up to GitHub](#pushing-your-changes-up-to-github)
+
+</section><!-- /TOC -->
+
 # How to work on your Shakespeare play web site at home.
 
 These instructions help you work on your play web site at home. The idea is that you will add some content (images and video or audio) to the play web site to enhance it and make it more compelling.

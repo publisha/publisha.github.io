@@ -75,7 +75,7 @@ Once you have downloaded the configuration file from the link above you can then
 
 Go to [https://atom.io](https://atom.io) and install atom for your PC
 
-If you have successfully dowloaded the configuration file above, you should see the toolbar along the bottom of the Atom window. If not, you will need to install the packages yourself. Here are the instructions for doing that:
+If you have successfully dowloaded the configuration file above, you should see the toolbar along the bottom of the Atom window. If not, you _may_* install the packages yourself. Here are the instructions for doing that:
 
 Locate the `Packages` menu and scroll down to `Settings View > Install packages/themes`
 
@@ -84,6 +84,8 @@ In the Install box for Packages you need to find the following and install them 
 - tool-bar
 - markdown-writer
 - toolbar-markdown-writer
+
+> **Please note:** The packages added above are only to help write markdown. If you are not using Atom to write blog posts then this will not be needed.
 
 **Close Atom**
 

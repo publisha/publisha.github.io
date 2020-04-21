@@ -258,6 +258,9 @@ Here is an annotated image of the Atom screen:
 
 Remember to select `Stage All` and then put a message in the `Commit message` box. Then you can `Push` the changes.
 
+Here is a YouTube screencast that demonstrates<iframe width="560" height="315" src="https://www.youtube.com/embed/ZPv5FOdFr0A?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> this.
+
+
 <hr />
 
 In the next document we look at adding multimedia and some other ways to enhance the viewing of images.

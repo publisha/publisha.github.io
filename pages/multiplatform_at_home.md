@@ -124,7 +124,11 @@ Select the **play** repository and locate the button labelled `Clone or download
 
 ### Run Atom again.
 
-**If you have a MAC** and you have installed as per instructions you should see a set of icons at the bottom of the window. The icon at the far right end looks like this:
+**If you have a MAC** you will probably need to install the shell commands.
+
+[![Install shell commands](/images/Screenshot 2020-04-22 16.01.15.png)](/images/Screenshot 2020-04-22 16.01.15.png)
+
+If you have installed as per instructions you should see a set of icons at the bottom of the window. The icon at the far right end looks like this:
 
 <i class="fab fa-git-alt fa-2x"></i>
 

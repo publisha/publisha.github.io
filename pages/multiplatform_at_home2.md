@@ -97,8 +97,10 @@ For the Windows/PC you can try 4kdownload from here:  [https://www.4kdownload.co
 
 You may not be able to download any video, since it may be protected.
 
-You may be able to find other videos for your play not on YouTube, howver even the Folger Shakespeare library host their videos on YouTube, so the `embed` method may be preferable in any case.
+You may be able to find other videos for your play not on YouTube, however even the Folger Shakespeare library hosts their videos on YouTube, so the `embed` method may be preferable in any case.
 
 #### Adding video code to HTML
 
 So, how do we attach a video file to the HTML?
+
+The `video` tag in HTML is similar to the `img` tag, so first of all you will need to add the video file itself to your project space. I suggest that you create a folder named _assets_ and put the mp4 file inside that folder. Read about the video tag on w3 schools:

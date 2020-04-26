@@ -103,4 +103,17 @@ You may be able to find other videos for your play not on YouTube, however even 
 
 So, how do we attach a video file to the HTML?
 
-The `video` tag in HTML is similar to the `img` tag, so first of all you will need to add the video file itself to your project space. I suggest that you create a folder named _assets_ and put the mp4 file inside that folder. Read about the video tag on w3 schools:
+The `video` tag in HTML is similar to the `img` tag, so first of all you will need to add the video file itself to your project space. I suggest that you create a folder named _assets_ and put the mp4 file inside that folder. Read about the video tag on [w3 schools][932911ab].
+
+  [932911ab]: https://www.w3schools.com/tags/tag_video.asp "w3Schools"
+
+So here is a sample:
+
+```html
+<video width="320" height="240" controls>
+	<source src="assets/msnd01.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+</video>
+```
+
+If you compare to the information you may find elsewhere you will notice 2 things:

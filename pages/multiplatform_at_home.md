@@ -4,7 +4,7 @@ title: Final Assignment at Home
 published: true
 categories: ["HTML and CSS", "Multi-Platform Publishing", GitHub]
 tags: [GitHub, HTML, CSS]
-date:  2019-10-08
+date:  2020-04-20 14:44
 order: 2
 images: full-width
 blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains everything to get working on this at home.

@@ -78,7 +78,11 @@ The screencast at the end of this section will provide a detailed explanation of
 
 So if you add this `CSS` to your own CSS file for the play, then the video will resize automatically for different window sizes.
 
-**Waiting for screencast in here**
+
+<div class="video-box">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_3ERrqdIXNg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 
 ### Adding Video by file
 
@@ -272,3 +276,13 @@ I don't know why it is called that, but you may find your play here. Finding the
 Once you have located the file you can open in browser and then `save as source`.
 
 **Waiting for screencast in here**
+
+## Music
+
+I should mention finally that as another option you could add music to enhance the web page, but there are some issues to consider.
+
+You can only have one music file playing on the web page for the play. Only if you split the HTML into several sections (separate HTML files) can you incorporate different music for different Acts.
+
+Don't play the audio automatically; give the user the opportunity to play the music if they are so inclined.
+
+To this end, you will need to provide audio buttons (use the method above for the `button` code) and style this block of buttons so that they display in a fixed position as the page scrolls.

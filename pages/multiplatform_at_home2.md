@@ -7,7 +7,7 @@ tags: [GitHub, HTML, CSS]
 date:  2020-04-27 11:55
 order: 2
 images: full-width
-blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains how to add vide and audio to the web page.
+blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains how to add video and audio to the web page.
 ---
 
 # Adding Multimedia to your Shakespeare play web site.
@@ -166,7 +166,7 @@ Apparently, Audacity does not officially support MAC OS Catalina, however the wo
 
   [9b8e4fd5]: https://forum.audacityteam.org/viewtopic.php?t=107162 "Catalina workaraound"
 
-[![Editting audio in Audacity](//images/audacity.png)](//images/audacity.png)
+[![Editting audio in Audacity](/images/audacity.png)](/images/audacity.png)
 
 Using `Audacity` is fairly simple, but if you are trying to extract a short clip from a very long file, just select the clip, copy - and then make a new file and past this in.
 

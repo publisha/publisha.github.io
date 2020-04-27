@@ -146,7 +146,10 @@ Paste into here the link above and Clone onto your PC.
 
 **Note:** I have created a screencast on YouTube that goes through the process described above.
 
+<div class="video-box">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GSlEFCqLYmA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 
 <hr />
 
@@ -196,7 +199,9 @@ You will need this at least 12 times choosing appropriate locations.
 
 **Note:** I have created a screencast on YouTube that goes through the process described above.
 
+<div class="video-box">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ARayXHh2oSQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <hr />
 
@@ -247,7 +252,9 @@ This will make _those_ images only 60% wide and centred.
 
 Look at the following YouTube video for other examples.
 
+<div class="video-box">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CNIuvybUnqY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <hr />
 

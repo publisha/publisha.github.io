@@ -75,7 +75,10 @@ The screencast at the end of this section will provide a detailed explanation of
 }
 ```
 
+
 So if you add this `CSS` to your own CSS file for the play, then the video will resize automatically for different window sizes.
+
+**Waiting for screencast in here**
 
 ### Adding Video by file
 

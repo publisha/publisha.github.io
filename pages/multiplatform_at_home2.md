@@ -187,7 +187,7 @@ Apparently, Audacity does not officially support MAC OS Catalina, however the wo
 
   [9b8e4fd5]: https://forum.audacityteam.org/viewtopic.php?t=107162 "Catalina workaraound"
 
-[![Editting audio in Audacity](/images/audacity.png)](/images/audacity.png)
+[![Editing audio in Audacity](/images/audacity.png)](/images/audacity.png)
 
 Using `Audacity` is fairly simple, but if you are trying to extract a short clip from a very long file, just select the clip, copy - and then make a new file and past this in.
 
@@ -300,8 +300,6 @@ I don't know why it is called that, but you may find your play here. Finding the
 [![Here you see I have found the actual MP3 file for Act 1 Scene 2](/images/shakes5.png)](/images/shakes5.png)
 
 Once you have located the file you can open in browser and then `save as source`.
-
-**Waiting for screencast in here**
 
 ## Music
 

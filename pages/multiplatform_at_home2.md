@@ -157,14 +157,14 @@ Make sure that the poster image is in the same proportions as the video.
 
 If you have downloaded a video that needs some editing then you will need software to do this. If you are fortunate in having access to Adobe Creative cloud then you can use Premiere Rush or Premiere Pro.
 
-If you have a MAC you can use iMovie or even just Apple Quicktime player, if you just want to trim the video (remove some frames at the beginning or end).
+If you have a MAC you can use iMovie or even just **Apple Quicktime** player, if you just want to trim the video (remove some frames at the beginning or end).
 
-You could also try the open source software [ShotCut][a7e4ded6]. This is availbale for MAC and PC.
+You could also try the open source software [ShotCut][a7e4ded6]. This is available for MAC and PC.
 
   [a7e4ded6]: https://shotcut.org/download/ "Get ShotCut here for MAC or PC"
 
 <div class="video-box">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/T-tNjnoXFFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T-tNjnoXFFQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <hr />

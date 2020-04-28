@@ -27,7 +27,7 @@ In this second document we explore the ways to add multimedia content to the Sha
 
 ## Video
 
-There are 2 ways to add video to the HTML and whichever of these 2 ways, you will also need to add some CSS to styles the way it is presented.
+There are 2 ways to add video to the HTML and whichever of these 2 ways, you will also need to add some CSS to style the way it is presented.
 
 We will start with the easiest way even though this will have certain disadvantages.
 

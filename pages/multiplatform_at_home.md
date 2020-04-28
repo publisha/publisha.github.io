@@ -279,3 +279,7 @@ Here is a YouTube screencast that demonstrate this.
 <hr />
 
 In the next document we look at adding multimedia and some other ways to enhance the viewing of images.
+
+[Read the next document][a3d8140e].
+
+  [a3d8140e]: https://publisha.github.io/pages/multiplatform_at_home2/ "Adding Video and Audio"

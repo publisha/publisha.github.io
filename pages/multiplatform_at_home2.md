@@ -153,7 +153,21 @@ Before the video plays there is a static image in its place. By default, this is
 
 Make sure that the poster image is in the same proportions as the video.
 
-**Waiting for screencast in here**
+### Editing the video
+
+If you have downloaded a video that needs some editing then you will need software to do this. If you are fortunate in having access to Adobe Creative cloud then you can use Premiere Rush or Premiere Pro.
+
+If you have a MAC you can use iMovie or even just Apple Quicktime player, if you just want to trim the video (remove some frames at the beginning or end).
+
+You could also try the open source software [ShotCut][a7e4ded6]. This is availbale for MAC and PC.
+
+  [a7e4ded6]: https://shotcut.org/download/ "Get ShotCut here for MAC or PC"
+
+<div class="video-box">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T-tNjnoXFFQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<hr />
 
 ## Audio
 
@@ -257,6 +271,18 @@ Try it!
 
 [![Here are the audio buttons coloured](/images/audiobuttons.png)](/images/audiobuttons.png)
 
+> **Note**: The above CSS will not provide a good result on narrow screens (mobile) so you should add the following to stop the float when the window is narrow.
+
+```css
+@media only screen and (max-width: 720px) {
+  button {
+    float:none;
+  }
+}
+```
+
+This will put the buttons across the page rather than to the right.
+
 ## Possible sources
 
 Of course you may want to record your own audio by reading a speech from your Shakespeare play! That would be great. However, if you want to look for recordings of your play try these:
@@ -285,4 +311,4 @@ You can only have one music file playing on the web page for the play. Only if y
 
 Don't play the audio automatically; give the user the opportunity to play the music if they are so inclined.
 
-To this end, you will need to provide audio buttons (use the method above for the `button` code) and style this block of buttons so that they display in a fixed position as the page scrolls.
+To this end, you will need to provide audio buttons (use the method above for the `button` code) and style this block of buttons so that they display in a fixed position as the page scrolls. It may be desirable to add these buttons to the menu at the top of the screen if yours is set to be fixed.

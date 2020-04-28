@@ -10,6 +10,17 @@ images: full-width
 blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains how to add video and audio to the web page.
 ---
 
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+<section class='toc'>
+## On this Page
+
+- [Video](#video)
+- [Audio](#audio)
+- [Possible sources](#possible-sources)
+- [Music](#music)
+
+</section><!-- /TOC -->
+
 # Adding Multimedia to your Shakespeare play web site.
 
 In this second document we explore the ways to add multimedia content to the Shakespeare play web page.

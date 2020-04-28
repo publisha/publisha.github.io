@@ -56,7 +56,7 @@ From the Finder use `Go` to find your Home folder. Read the `readme.md` file tha
 
 **Note:** I have created a screencast on YouTube that goes through the process described above.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Mb1DRhBOMWI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mb1DRhBOMWI?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## For PC users
 
@@ -147,7 +147,7 @@ Paste into here the link above and Clone onto your PC.
 **Note:** I have created a screencast on YouTube that goes through the process described above.
 
 <div class="video-box">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GSlEFCqLYmA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GSlEFCqLYmA?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
@@ -200,7 +200,7 @@ You will need this at least 12 times choosing appropriate locations.
 **Note:** I have created a screencast on YouTube that goes through the process described above.
 
 <div class="video-box">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ARayXHh2oSQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ARayXHh2oSQ?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <hr />
@@ -273,7 +273,7 @@ Remember to select `Stage All` and then put a message in the `Commit message` bo
 
 Here is a YouTube screencast that demonstrate this.
 <div class="video-box">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZPv5FOdFr0A?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZPv5FOdFr0A?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <hr />

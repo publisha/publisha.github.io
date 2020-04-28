@@ -179,7 +179,7 @@ One thing to be aware of though; often you will be downloading the full version 
 
 As mentioned above, you will need to use an extract rather than a complete recording and to do this, you need to use an audio editor.
 
-If you have access to Adobe Creative Cloud that you _can_ use Audition. but this is really quite complex for the simple task of extracting a clip. A better solution is to download the free software _Audacity_ from [here][8b45ed15].
+If you have access to Adobe Creative Cloud then you _can_ use Audition. but this is really quite complex for the simple task of extracting a clip. A better solution is to download the free software _Audacity_ from [here][8b45ed15].
 
   [8b45ed15]: https://www.audacityteam.org "Get audacity"
 

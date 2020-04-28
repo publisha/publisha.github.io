@@ -51,6 +51,9 @@ The copy button will take the code and put into your computer memory so that you
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XL2-MbVniR4?start=6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
 
+> **Note:** It turns out that the attribute `frameborder="0"` is obselete and will break validation when you use the online validator. You can remove `frameborder="0" ` from the code.
+
+
 You can place this code into somewhere in your play `HTML`.
 
 As you can see the `iframe` has a width and height set and this will cause some problems if you want to make sure that your site is responsive, because the size of the video will always be fixed. To get round this, we need to wrap the `iframe` code inside a `div` and then some CSS to control the size of the video.
@@ -61,7 +64,7 @@ The screencast at the end of this section will provide a detailed explanation of
 
 ```html
 <div class="video-box">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XL2-MbVniR4?start=6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XL2-MbVniR4?start=6" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 ```
 
@@ -91,7 +94,7 @@ So if you add this `CSS` to your own CSS file for the play, then the video will 
 
 
 <div class="video-box">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_3ERrqdIXNg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_3ERrqdIXNg?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
@@ -175,7 +178,7 @@ You could also try the open source software [ShotCut][a7e4ded6]. This is availab
   [a7e4ded6]: https://shotcut.org/download/ "Get ShotCut here for MAC or PC"
 
 <div class="video-box">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/T-tNjnoXFFQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T-tNjnoXFFQ?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <hr />

@@ -1,7 +1,7 @@
 ---
 title: Details of the Fixed-Layout ePub (Part 2)
 date: 2020-06-08 16:07
-YouTube: bPyEDMCZCcA
+YouTube: nZsXvmVU5ms
 layout: screencast
 published: true
 categories: [HTML, CSS, ePub, "Multi-Platform Publishing"]

@@ -15,7 +15,7 @@ permalink: screencasts/index.html
 {% assign items = site.screencasts | sort: 'date' %}
   {% for screencast in items reversed limit:45 %}
   <div class="post">
-  <a class="video fancybox.iframe" title="{{ screencast.title }}" href="https://www.youtube.com/embed/{{ screencast.YouTube }}?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
+  <a class="video" title="{{ screencast.title }}" href="https://www.youtube.com/embed/{{ screencast.YouTube }}?autoplay=1;rel=0&amp;showinfo=0"><i title="Show this screencast" class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a>
   <h2><a href="{{ site.baseurl }}{{ screencast.url }}">{{ screencast.title }}</a></h2>
   <span class="post-date">{{ screencast.date | date_to_string }}</span>
   {{ screencast.content }}

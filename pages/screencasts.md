@@ -9,8 +9,8 @@ permalink: screencasts/index.html
 
 <p>These screencasts are pulled in from my <a href="https://www.youtube.com/channel/UCk1bhTLPDzbqm-tEMBYId1w">YouTube channel</a></p>
 
-<a href="https://itunes.apple.com/gb/podcast/publisha-digital-publishing-hub/id1355521737?mt=2" title="subscribe at Apple"><img style="width:180px;" src="/images/publishapodcasts.jpg"></a>
-<p>You can also subscribe with Apple Podcasts by clicking this image</p>
+<!-- <a href="https://itunes.apple.com/gb/podcast/publisha-digital-publishing-hub/id1355521737?mt=2" title="subscribe at Apple"><img style="width:180px;" src="/images/publishapodcasts.jpg"></a>
+<p>You can also subscribe with Apple Podcasts by clicking this image</p> -->
 <div class="posts">
 {% assign items = site.screencasts | sort: 'date' %}
   {% for screencast in items reversed limit:45 %}

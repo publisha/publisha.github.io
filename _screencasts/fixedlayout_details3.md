@@ -8,4 +8,4 @@ categories: [HTML, CSS, ePub, InDesign, "Multi-Platform Publishing"]
 ---
 **This is a Multi-part screencast**
 
-In this third episode we use InDesign tot create the Fixed layout ePub.
+In this third episode we use InDesign to create the Fixed layout ePub.

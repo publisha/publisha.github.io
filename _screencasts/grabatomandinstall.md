@@ -25,4 +25,4 @@ The installation instructions are for a MAC, but if you want to install on a Win
 
 PC users can download a ready made [version from here][96e0bc23].
 
-  [96e0bc23]: www.publisha.org/resources/forwindows/atom.zip "download and unpack in the user folder"
+  [96e0bc23]: http://www.publisha.org/resources/forwindows/atom.zip "download and unpack in the user folder"

@@ -4,8 +4,9 @@ title: The basics of HTML and CSS
 published: true
 categories: ["HTML and CSS", "Multi-Platform Publishing"]
 tags: ["HTML and CSS"]
-date: 2018-01-26
+date: 2020-08-31
 order: 2
+screencast: [htmlandcssbasics]
 blurb: This is a very simple explanation of HTML with some examples.
 ---
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
@@ -31,10 +32,6 @@ blurb: This is a very simple explanation of HTML with some examples.
 
 # The basics of HTML and CSS
 This is meant as a very simple introduction to the markup and styling languages for the web.
-
-[There is a Scrimba Screencast for this here][b13aba9c].
-
-  [b13aba9c]: https://scrimba.com/c/cyz7ztG "Scrimba"
 
 ## What is HTML?
 

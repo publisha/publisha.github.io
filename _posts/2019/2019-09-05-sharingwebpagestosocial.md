@@ -28,7 +28,7 @@ Here we see the code that I am using to get the correct tags in both Facebook an
 
 {% raw %}
 
-```HTML
+```html
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:image" content="{{site.url}}{{site.image}}">
@@ -71,7 +71,7 @@ You will see from the code block above that both `OpenGraph` and `TwitterCard` e
 
 ## A good description is going to help
 
-Facebook and Twitter want some honest info to display. The question is; do you want info about the web site or about the individual page or post being shared. 
+Facebook and Twitter want some honest info to display. The question is; do you want info about the web site or about the individual page or post being shared.
 
 Here is snippet for the `TwitterCard` that will get that right:
 
@@ -99,4 +99,3 @@ For Facebook go here: [https://developers.facebook.com/tools/debug/](https://dev
 You will need to be signed in to the respective accounts to work with these tools.
 
 [^1]: Liquid is the coding language used by GitHub pages and Jekyll. The language is developed by `Shopify` and can be explored here: https://shopify.github.io/liquid/basics/introduction/
-

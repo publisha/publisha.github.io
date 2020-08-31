@@ -17,3 +17,7 @@ layout: default
 {%- if page.date != null -%}
 <p>This page last edited on: {{page.date}}</p>
 {%- endif -%}
+
+{%- if page.comments -%}
+  {%- include disqus.html -%}
+{%- endif -%}

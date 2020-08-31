@@ -6,6 +6,7 @@ categories: ["HTML and CSS", "Multi-Platform Publishing", GitHub]
 tags: [GitHub, HTML, CSS]
 date:  2020-04-27 11:55
 order: 2
+comments: true
 images: full-width
 blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains how to add video and audio to the web page.
 ---

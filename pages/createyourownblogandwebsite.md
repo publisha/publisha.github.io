@@ -43,7 +43,8 @@ You may find it easier to watch the videos that I have made available on YouTube
 ### In Github
 
 * Create an account on [GitHub][a907770f]
-* After creating an account on GitHub, you first need to create new repository by cloning this template: https://github.com/publisha/blogbldr
+* After creating an account on GitHub, you first need to create new repository by cloning this template: 
+* [**https://github.com/publisha/blogbldr**](https://github.com/publisha/blogbldr)
 * You will now have a name for the repository and your GitHub username.
 * Keep the GitHub window open in your browser (because we will need to come back to this in a short while)
 

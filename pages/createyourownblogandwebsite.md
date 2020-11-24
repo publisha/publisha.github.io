@@ -1,346 +1,138 @@
 ---
 layout: page
-title: How to Build Your Web Site with GitHub Pages (Digital Product edition)
+title: How to build a website with GitHub and Netlify
 published: true
 images: full-width
 tags: [Using GitHub]
-screencast: [blogwithgithub]
-categories: [Web, HTML, "Digital Product"]
-date: 2020-01-19
-blurb: GitHub provides a way to use a free web site. Here is a simple way to get started with a provided template that you can change later.
+categories: [Web, HTML]
+date: 2020-11-24
+blurb: Template for a web site and blog using Jekyll and NetlifyCMS
 order: 4
 ---
-
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
+
 ## On this Page
+- [Usage](#usage)
+- [Steps to get working with this template](#steps-to-get-working-with-this-template)
+- [Saving and Publishing](#saving-and-publishing)
+- [The Settings](#the-settings)
+</section>
+<!-- /TOC -->
 
-- [Getting the software required](#getting-the-software-required)
-- [Setup Github](#setup-github1)
-- [Getting a local copy](#getting-a-local-copy)
-- [Adding and Editing Content](#adding-and-editing-content)
-- [Adding images to a page](#adding-images-to-a-page)
-- [Getting the new content up to the web](#getting-the-new-content-up-to-the-web)
-- [Your first look at your new site](#your-first-look-at-your-new-site)
-- [Adding to and Editing your site Online](#adding-to-and-editing-your-site-online)
-- [How does all of this work?](#how-does-all-of-this-work)
-- [Further reading](#further-reading)
+## Usage
 
-</section><!-- /TOC -->
+This is a template set up for anyone to begin their own web site. The template is created by Chris Jennings and is based on various Jekyll themes.
 
-# How to Build Your Web Site with GitHub Pages
+`Jekyll` is a system for building and editing static web sites; meaning that it does not need a database for the content. Content can be added with a simple text language called `Markdown`. [You can explore and learn **Markdown** here][087362d3].
 
-This document explains all of the steps to take when creating a static web site using the free hosting at Github.Pages. The site that we build can be a blog or just an information web site. We will use a template that styles the site making sure that it is responsive to different screen and device sizes.
+  [087362d3]: https://commonmark.org/help/tutorial/ "Go to commonmark"
 
-You will learn how to set the site up and configure with your own branding. Further, more complex styling can be achieved, but for this we need to have some knowledge of HTML and CSS.
 
-Writing to your blog involves using the `Markdown` language and this will then be automatically be converted to `HTML` for the web site. You can learn about `Markdown` by viewing the [Markdown Guide on the web][47a5cbc0]. There are many writing apps that use `Markdown` but we will use a free tool called _Atom_ that will give you the means to write and update your live web site.
+Although the main content is built with markdown and converted to HTML automatically, you won't need to actually write in markdown, unless you want to. The site is set up to use a content management system (CMS) so that posting new content and setting up the site can be done through a web interface.
 
-  [47a5cbc0]: https://www.markdownguide.org "Take a look at this helpful site"
+### Watch the YouTube playlist
 
-Note: [There is a PDF of this document available here][7f29443a].
+You may find it easier to watch the videos that I have made available on YouTube:
 
-  [7f29443a]: /resources/createyourownsiteandrecipes.pdf "Grab this PDF"
+[Go to YouTube](https://www.youtube.com/playlist?list=PL45AD0XX_t1JSPP-PjTZJ9f9Q2Cb87i5C)
 
-## Getting the software required
 
-You will only need the application called _Atom_ and to help you get the correct settings I am [providing you with a distribution][61862e36] package as a `zip` file. This will create an `atom` folder which you need to place inside your `Home` folder.
+## Steps to get working with this template
 
-[![To find your Home folder use the Go menu item.](/images/getintoyourhomefolder.png)](/images/getintoyourhomefolder.png)
+### In Github
 
-From the Finder use `Go` to find your Home folder. Read the `readme.txt` file that comes inside this zip file.
+* Create an account on [GitHub][a907770f]
+* After creating an account on GitHub, you first need to create new repository by cloning this template: https://github.com/publisha/blogbldr
+* You will now have a name for the repository and your GitHub username.
+* Keep the GitHub window open in your browser (because we will need to come back to this in a short while)
 
-[61862e36]: http://www.publisha.org/resources/atom.zip "Get this zip file and unpack"
+  [a907770f]: https://github.com "Go to the Github web site"
 
-[![It will help if you show the extensions for the files](/images/showfileextension.png)](/images/showfileextension.png)
 
-> **Note:** If you use Safari as your browser then the zip file will unpack into your downloads folder.
+### Netlify is where we build your site
 
-### Installing Atom
+* In another browser tab, go to [netlify.com](https://www.netlify.com)
+* **Login** with your GitHub credentials
+* create a `New Site with Git`
+* put in the name of the GitHub repository that you created above.
+* Your GitHub repository will be built as a web site with a randomly chosen URL. Something like `wiggly_eel.netlify.app`.
+* Now change the first part of this URL to something that you want. In other words, the wiggly_eel part can change to something that has not been taken (eg: *mylifeintext.netlify.app*)
+* Keep the Netlify window open and do not sign out
 
-1. In your Home folder (remember use `Go > Home`) create a new folder and name it `Applications` (note the capital **A**).
-2. Drag the `Atom.app` into this Applications folder.
-3. Drag the `for_home_folder.zip` file into the home folder
-4. Double click this file to unpack - this creates a _hidden_ folder called `.atom` (**but you won't see it**).
+### GitHub is where the files are located and updated.
 
-> You can view hidden files by using `SHIFT-CMD full-stop` on the keyboard.
+Netlify needs to have permission to take your files from GitHub and build the site every time you make changes. Netlify needs 2  codes - an ID and a secret.
 
-The `Atom` program comes ready built with the following packages that will help you write posts for your blog.
+Now in Github, go to your GitHub account and on the left side at the bottom find Developer settings and then see `OAuth Apps`. In here you need to add a new app and after putting in the details you should be provided with a **Client ID** and a **Client Secret**. We need these 2 items in Netlify. Now go back to the Netlify window.
 
--   tool-bar
--   markdown-writer
--   toolbar-markdown-writer
--   zen (this will provide a distraction free interface)
--   pandoc converter (to convert to ICML for InDesign)
+You will also need to enter the `callback` term in the last box. This should be this:
 
-Now that you have the software installed you can sign up for the free web site at github.
+`https://api.netlify.com/auth/done`
 
-## Setup Github
+[![Here is what that page will look like after you enter the details.](/images/oauth.png)](/images/oauth.png)
 
-### Create a free account on [Github.com][a260d92e][^1]
+### In Netlify
 
-  [a260d92e]: https://github.com/ "Sign up for an account on GitHub"
+I hope you can see why I suggested keeping the 2 browser windows / tabs open now.
 
-Naming the account (**your username**) is important (although you can change later) because this will become part of your website URL.
+* Go to Site Settings > Access control > Scroll to the bottom and select OAuth > GitHub.
+* Paste in here the 2 codes from GitHub, **Client ID** and **Client Secret**. Once you have entered these codes we need to go back to GitHub to make some essential settings so that the system knows about your chosen URL / web site name. So back to the GitHub window then.
 
-> For example, if you name the account `MyLoveofBooks`then the web site will become `myloveofbooks.github.io`. Not all names will be available and yours may be rejected if it is already taken.
+[![Grabbing the Clint ID and Client secret from your Github account](/images/clientidandsecret.png)](/images/clientidandsecret.png)
 
-Please remember your username and password or keep somewhere safe.
+### Back in Github you can now make some basic edits
 
-Choose a **Free** account and go through the various steps although you can skip the questions about your interests. You will also need to verify your email address. Optionally you can edit your profile and add an avatar image.
+You can edit a few settings directly in GitHub so we can begin using the CMS for the other settings. The minimum settings that need changing are in 2 files:
 
-### Signed in to GitHub
+#### In the Admin folder
 
-Once you are signed in to Github, go to the following URL:
+In the *admin* folder find `config.yml` You need to edit some lines in this file.
 
-[https://github.com/publisha/digitalproduct/][fc1ed271]
+```yaml
+backend:
+  name: github
+  repo: githubusername/yourrepositoryname # Path to your GitHub repository
+  branch: master # Branch to update (master by default)
+  site_domain: yoursite.netlify.app #Your site on netlify
+  use_graphql: true
 
-  [fc1ed271]: https://github.com/publisha/digitalproduct/ "Get this template"
-
-[![Click the green button to grab the template](/images/templategrab.png)](/images/templategrab.png)
-
-Use the template link to receive the repository in your own github account. Make sure that you choose the `Public` option. You will be asked to name the repository.
-
->**This is important**: You need to name the repository _username.github.io_ where _username_ is the name of your username _but in lowercase letters_.
-
-[![Name the repository using lowercase letters but use the same as your GitHub owner name.](/images/nametherepo.png)](/images/nametherepo.png)
-
-> You should now have a copy of the template web site in your github account.
-
-This will be the URL of your site.
-
-Although it is always possible to edit the files directly on the github site, there is a much better way!
-
-## Getting a local copy
-
-Select the repository just created and locate the button labelled `Clone or download`. Once you click this, you need to copy the URL (the button to the right of the URL field will copy this for you).
-
-[![You need this link and so this will copy the link for you.](/images/copythelink.png)](/images/copythelink.png)
-
-### Now open Atom
-
-You should see a set of icons at the bottom of the window. The icon at the far right end looks like this:
-
-<i class="fab fa-git-alt fa-2x"></i>
-
-Click this and a window appears. Paste into the top box.
-
-[![Here is the clone window. Paste into the top box. You can move the repository later.](/images/clonerepo.png)](/images/clonerepo.png)
-
-**Note**: Before you finish setting up, you can move the complete web site folder out of the `github` folder to your `Creative Cloud` folder (do _not_ use Google Drive). That way, you can find it on any of the computers that you are signed into. If you are using your own computer then there is no need to move the site out of your own home>github folder.
-
-Close the Atom window and locate the github folder inside your Home folder. Now drag the folder called yoursite.github.io to a location on your Creative Cloud folder.
-
-Here is an annotated image of the Atom screen:
-
-[![The Atom Workspace](/images/atomworkspace.png)](/images/atomworkspace.png)
-
-### Configuring your site
-
-Before you make your web site live and post new articles, you need to edit the configuration file with your own details. The file you must edit is:
-
-`_config.yml`
-
-[![Here is a view of the site open in Atom. Changes to be made to the config file first.](/images/configchanges.png)](/images/configchanges.png)
-
-The file itself has comments so it should be self explanatory but here are the important changes that you must make:
-
-### Site configuration
-
-Please make these changes before using the student blog.
-
-Configure as your own website in the file called `_config.yml`:
-
-```yml
-  baseurl: ''
-  url: "https://username.github.io"
+publish_mode: editorial_workflow
+show_preview_links: true
+display_url: https://yoursite.netlify.app
+logo_url: https://yoursite.netlify.app/uploads/logo.jpg
 ```
 
-Change _username_ to the username you chose for GitHub. In other words, the url will be the repository name prefixed with `https://`
+Wherever you see `yoursite` change to the name of your site created on Netlify.
 
-### Meta and Branding
+Also on line 3 change the repo path. This will be the GitHub username followed by your repository name.
 
-Meta variables hold basic information about your site which will be used throughout the site and as meta properties for search engines, browsers, and the site's RSS feed.
+#### In the root of the code list
 
-Change these variables in `_config.yml`:
+Next look for the file called `_config.yml`. In this file you need to edit The URL by changing `yoursite` again, and the repository username and repository name.
 
-Variable             | Placeholder                         | Make Yours
----------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------
-url                  | https://yoursite.github.io          | Change this to your url
-title                | My name or organisation             | Name of website will appear top left on your pages
-description          | A website with blog posts and pages | Name of website will appear top left on your pages
-avatar               | assets/img/face.jpg                 | This can be changed to your own picture optionally
-favicon              | assets/favicon.ico                  | Change to reflect your brand
-header_text          | Me and my blog                      | Yours to change
-header_feature_image | /_uploads/pages.jpg                 | You should create a different image to replace this one. This image needs to be no smaller than 1800 pixels wide.
-recipe_book_cover    | /_uploads/bookcover.jpg             | Replace this with your own book cover
-footer_text          | Copyright 2020 My name              | Put your name or organisation in here  |   |
-
-You can also add your social media links such as Instagram, Twitter, Facebook etc.
-
-There are other settings in the `_config.yml` file such as the configuration of prose. This is used if you use prose.io to edit and post to your site (see the section ‘Step 7. Adding and Editing your site online).
-
-You also need to edit the placeholder tags url in the file called `_mdwriter.cson`. This is at line 34 in that file. This will make it easier to select and re-use tags for your posts.
-urlForTags: 'https://yoursite.github.io/tags.json
-
-
-## Adding and Editing Content
-
-Writing to your blog involves using the Markdown language and this will then be automatically be converted to HTML for the web site. You can learn about Markdown by viewing the Markdown Guide on the web. (see Further Reading).
-
-There are many writing apps that use Markdown but we are using Atom with a user-friendly toolbar that makes structuring your content easy..
-
-There are 2 types of pages in your site:
-
-### Posts
-
-You can post articles or blog posts and these will be dated so that they appear in date order, on the home page, the latest at the top.
-
-Each post has it’s own page but the extract will appear on the home page.
-
-The number of post extracts that appear on the home page can be configured in the `_config.yml` file (the default is 5 posts with a link to the previous 5 etc.)
-
-The posts themselves are files that will automatically be generated inside the `_posts`folder.
-
-### Pages
-
-You can create other pages for special (non-dated) content and, as long as you save them inside the `pages` folder, they will automatically generate a menu item at the top right of your site.
-
-Apart from the **About** page described below, you can also create any page that you like to add to your site and, thus, a menu item. Examples could be a CV, or a Project page, or even a gallery of your photos.
-
-#### The About page
-
-This is the one page ready for you to edit. This page needs to be edited to contain information about yourself or what you want this site to do!
-
-Editing this page will be a good way for you to get used to the way to edit and create pages using `Markdown`.
-
-If you want to create another page, you can duplicate the _About_ page so that you can see what the structure needs to be.
-
-### Markdown
-
-Markdown is a way to write for a web site that uses simple structure and markup that will then be converted to `HTML`. It is useful to understand how `Markdown` works, but actually, when we use **Atom** with the added package, the elements can be selected from a toolbar.
-
-Here are some examples of what the Markdown syntax means.
-
-```Markdown
-  ## Heading level 2
-  ### Heading level 3
-
-  This is **bold** text.
-
-  This is *italic* text
+```yaml
+url: "https://yoursite.netlify.app"
+repository: yourusername/yourrepository
 ```
 
-### `YAML` metadata
+### Using the CMS to add more Settings
 
-At the top of each page or post there will always need to be some metadata to control certain aspects of the page when it is converted to `HTML` and then included in your site. When you create a post with Atom, the metadata is added automatically, but you need to edit this/
+Once these changes have been made in Github, you can now go to your new site and begin to add some further details through the CMS.
 
-This metadata is enclosed within the 2 groups of hyphens. Here is an example.
+At the top right in the navigation bar of your site you should see a pencil icon. Click this and after authenticating (just for one time) you should then see the editor user interface. You need to select the item labelled *Settings* under the **Collections** heading on the left. The important settings are found under the *General Settings for your web site* heading. Go ahead and dig into here, because this is where you name your site and put in the banner image and logo. You will come back this, but right now you need to understand how the changes are saves and published.
 
-```YAML
-    ---
-    layout: post
- title: Here is a sample blog post 
-    date: 2019-10-19
- published: true 
-    header_feature_image: /_uploads/2019/07/tomatoes.jpg
- caption: "Juicy Tomatoes" 
-    tags: 
-      - Journalism 
-      - Life 
-      - Food
-    ---
-```
+[![Make some important changes to the settings](/images/settingsineditor.png)](/images/settingsineditor.png)
+## Saving and Publishing
 
->Some of this metadata is generated automatically when you create a new post (the date for example).
+When adding or editing any content through the CMS you will see the `Save` button in the control bar at the top of the editor page. This will save the new entry or setting but it will not be published to the web site yet. To confirm the change, you need to `Set Status` to `Ready` and then use the `Publish` button. For the Settings, this isn't very useful, but when you are posting a new article to your blog, you can save and then come back later to finish the article before finalising. You will notice a `View Preview` link; this gives you the ability to see the post before it goes live to your site.
 
-You will also need to edit this metadata to confirm that the post is ready to be published; change from `published:false` to `published:true`. When the page is set to `published:false` it won't appear on your live site.
+### Workflow
 
-#### Page image
+When changes have been made you will see a `Workflow` item in the top bar. From here you can see items that are *Draft*, *In Review* or *Ready*. The interface allows for you to **drag** the items across to make those changes.
 
-We will describe how you can add images to your posts and pages later, but all content can also have a `header_feature_image` and this image will appear at the top of the page, with the post heading set against it. You will need to place this image into your `images` folder and then provide the link to it in your metadata.
+[![With the workflow window you can leave files ready for publishing later](/images/workflow.png)](/images/workflow.png)
 
-> **Tip** you can drag images into the images folder (make sure that they do _not_ have spaces in the file name) and then `right-click` over the image and copy the path. Then paste and edit this path into the metadata for `header_feature_image: pathtoimage`.
+## The Settings
 
-## Adding images to a page
-
-This is done through the image icon on the `markdown` toolbar at the bottom of the active Atom window. <i class="fas fa-image fa-2x"></i>
-
-You will get a popup window and you need to select and image from somewhere on your system. Make sure to click the box `Copy to ...`
-
-[![Pay careful attention to this box. You need to enter the title (ALT tag). This becomes the caption.](/images/addimage.png)](/images/addimage.png)
-
-### Previewing your page
-
-You can preview the appearance of your page by clicking the icon near to the bottom left. The icon appears like this: <i class="fab fa-markdown fa-2x"></i>
-
-[![The preview opens in another tab](/images/preview.png)](/images/preview.png)
-
-## Getting the new content up to the web
-
-Atom interacts with your `github` site, so once you have made changes or added a post, you will need to open the `Git` pane (bottom right) and then notice the changed or added files up at the right. These are `Unstaged Changes`.
-
-[![Here we see the changed files being pushed to the Github repository](/images/stagingandpushing.gif)](/images/stagingandpushing.gif)
-
->   Now click `Stage All` and these will move down to the `Staged Changes` pane. You need to write something in the commit box, so that the changes will have a meaning to you later. You can now `Push` these changes to Github but for the first time you will need to add your credentials (please tick the remember box so that you only do this for the first time).
-
-[![We will need to use our GitHub credentials for the first time. Select remember so that you won't need to do this again on this computer.](/images/signingin.png)](/images/signingin.png)
-
-## Your first look at your new site
-
-Your site is available now at `username.github.io`. Change _username_ of course.
-
-You should now be able to write blog posts and and add further pages. You can customise your site by changing the title, the main image and the avatar through the `_config` file.
-
-[![Web site with changes](/images/postadded.png)](/images/postadded.png)
-
-For further changes to the appearance you will need to make changes to the `CSS`. This is the subject of future advanced sessions.
-
-
-## Adding to and Editing your site Online
-
-Although we recommend using `Atom` as the way to write posts and edit your site (you certainly need to use it for editing the config file and changing the appearance of your site), you can optionally use an online tool from anywhere with an internet connection to post articles.
-
-### Using Prose
-
-Although we recommend using Atom as the way to write posts and edit your site (you certainly need to use it for editing the config file and changing the appearance of your site), you can optionally use an online tool from anywhere with an internet connection to post articles.
-Using Siteleaf.
-
-Go to the web site https://www.siteleaf.com and signup with your GitHub credentials.
-
-You should now see your repository available. Once you go into the repository, you can edit the posts or create new posts directly.
-You will need to select the developer account soon after setting up.
-
-### Synchronising
-
-Be aware that if you use Siteleaf to edit your site then your local copy (edited with Atom) will not be the same. If this is the case then you will need to find the Fetch link at the bottom right of the Atom window to pull the changes to your local space.
-
-## How does all of this work?
-
-### Github Pages
-
-GitHub provides for free github pages. [You can read more about this here][d89d9da3]. Basically anyone can host web pages here but we are using a static site generation system called `Jekyll` which is also supported in GithUb pages.
-
-  [d89d9da3]: https://pages.github.com "Go to the Github site for an explanation"
-
-### Jekyll
-
-This software operates your site, converting the `markdown` files into `HTML` when you _push_ your files up to the GitHub repository. The Jekyll site that you have created from the provided template includes all of the files necessary to build the live pages including the stylesheets (CSS) and some javascript. There is also a system of logic that builds the menus and pagination. This logic engine is called `Liquid` and [you can explore this further here][c324856c].
-
-  [c324856c]: https://shopify.github.io/liquid/ "Go to the shopify site"
-
-## Further reading
-
-| Title                                                     	| Type of resource 	|                                 	|
-|-----------------------------------------------------------	|------------------	|---------------------------------	|
-| [Creating Blogs with Jekyll][68777208], Vikram Dhillon    	| Book             	| 2016, APRESS                    	|
-| [Working with Static Sites][c0190ded], by Raymond Rinaldi 	| Book             	| 20 Mar 2017, O'Reilly Press     	|
-| [The Atom Flight Manual][b2bb191a]                        	| web site         	| How to Use Atom in great detail 	|
-
-  [68777208]: https://learning.oreilly.com/library/view/creating-blogs-with/9781484214640/ "see this book on O'Reilly Online"
-
-  [c0190ded]: https://learning.oreilly.com/library/view/working-with-static/9781491960936/ "See this book on O'Reilly Online"
-
-  [b2bb191a]: https://flight-manual.atom.io "Read this online"
-
-[^1]: GitHub is a free code hosting platform for collaboration and version control. GitHub lets you (and others) work together on projects. We use GitHub pages to host our web site.
+The settings available are self explanatory, so it would be wise to try these things and see what changes are made. be aware that it does take up to 10 minutes for changes to work their way through to the live site.

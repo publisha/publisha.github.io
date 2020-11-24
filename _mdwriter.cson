@@ -54,6 +54,18 @@ publshed: false
 ---
 """
 
+# Table of content (TOC) default options
+toc:
+
+  # Depth from/to, Number between 1-6
+  depthFrom: 1
+  depthTo: 2
+  # Insert anchor link
+  insertAnchor: true
+  # Chose Anchor method, one of: "github.com", "bitbucket.org", "ghost.org", "gitlab.com"
+  anchorMode: "github.com"
+
+
 # file extension of posts/drafts
 fileExtension: ".md"
 # file slug separator

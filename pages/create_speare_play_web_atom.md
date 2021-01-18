@@ -25,11 +25,28 @@ blurb: We are using GitHub pages to host a web site for the Shakespeare play. Th
 
 We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 
-## You will need VS Code software
+## You will need Atom software
 
-You will only need the application called _VS Code_ and [this free software is available for your platform here][deb319f2].
+> **Note: **Even if you have already grabbed a copy of Atom previously I still recommend that you get a fresh updated copy as in these instructions.
 
-  [deb319f2]: https://code.visualstudio.com/download "Grab VS code"
+You will only need the application called _Atom_ and to help you get the correct settings I am [providing you with a distribution][61862e36] package as a `zip` file. This will create an `atom` folder which you need to place inside your `Home` folder.
+
+[![To find your Home folder use the Go menu item.](/images/getintoyourhomefolder.png)](/images/getintoyourhomefolder.png)
+
+From the Finder use `Go` to find your Home folder. Read the `readme.md` file that comes inside this zip file.
+
+[61862e36]: http://www.publisha.org/resources/atom.zip "Get this zip file and unpack"
+
+[![It will help if you show the extensions for the files](/images/showfileextension.png)](/images/showfileextension.png)
+
+> **Note:** If you use Safari as your browser then the zip file will unpack into your downloads folder. **Now take the following steps**:
+
+1. In your Home folder (remember use `Go > Home`) create a new folder and name it `Applications` (note the capital **A**).
+2. Drag the `Atom.app` into this Applications folder.
+3. Drag the `for_home_folder.zip` file into the home folder
+4. Double click this file to unpack - this creates a _hidden_ folder called `.atom` (**but you won't see it**).
+
+> You can view hidden files by using `SHIFT-CMD full-stop` on the keyboard.
 
 ## Now we need to create the Github repository
 
@@ -84,11 +101,11 @@ You can also have a look at the sample scene inside the **sampleScene** folder.
 
 ## The Play
 
-In VS Code it will look similar to this:
+In Atom it will look similar to this:
 
 [![HTML version of the play](/images/2017/01/yourexportedplay.png)](/images/2017/01/yourexportedplay.png)
 
-- Open the _play.html_ file that is inside the docs folder (that you have from your repository) with **VS Code**
+- Open the _play.html_ file that is inside the docs folder (that you have from your repository) with **Atom**
 - Now edit the _style.css_ file (again inside the docs folder) to style each of the elements in the play
 - Review in a web browser
 - Validate the HTML file here: https://html5.validator.nu
@@ -105,11 +122,11 @@ In VS Code it will look similar to this:
 - check that the link functions correctly.
 
 ## Making the web site work
-You can look at the web pages in the web browser by right clicking over the file and selecting _Reveal in Finder_ and then double click the HTML file to open in your default browser. There is an extension for VS Code called _Open Browser Preview_ which can make this easier.
+You can look at the web pages in the web browser by right clicking over the file and selecting _Open in Browser_. This will only work if you installed the Atom package (see above).
 
 **When you are happy** with the look of these web pages then you can:
 - Upload these new versions of these files to your GitHub repository
-- You do this by using the VS Code.
+- You do this by using the Atom Git Tab (Packages > GitHub Toggle Git Tab).
 - click Stage All (top right)
 - write a message in the commit box (what did you change)
 - Click commit
@@ -118,8 +135,7 @@ You can look at the web pages in the web browser by right clicking over the file
 
 You should now be able to _push_ your updates direct to GitHub and see the results on your web site.
 
-
-![Push your changes to Github](/images/Screen Shot 2018-01-16 at 14.32.21.png)
+[![Push your changes to Github](/images/Screen Shot 2018-01-16 at 14.32.21.png)](/images/Screen Shot 2018-01-16 at 14.32.21.png)
 
 
 ## Back to GitHub
@@ -141,7 +157,7 @@ Go there in your browser and login with the credentials that you put in before a
 
 Ok, so I know this seems complicated. Let me write out a simple list with the steps. Make this into a check list and tick them off as you go!
 
-- [Download VS Code](https://code.visualstudio.com/download) and install in **your** Applications folder
+- [Download Atom][aea13298] and install in **your** Applications folder
 - Create an account on [Github.com][fc57320f]
 - Grab link on Moodle (week 1) for the GitHub template
 - Copy the link next to the Clone button
@@ -154,4 +170,5 @@ Ok, so I know this seems complicated. Let me write out a simple list with the st
 - Note the web address and finish
 
 [fc57320f]: https://www.github.com "Create the account"
+  [aea13298]: https://atom.io "Grab Atom"
   [f0f67b5c]: https://publisha.github.io/pages/InDesign_to_HTML/ "Read this"

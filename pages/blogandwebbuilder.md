@@ -159,16 +159,16 @@ Meta variables hold basic information about your site which will be used through
 
 Change these variables in `_config.yml`:
 
-Variable             | Placeholder                         | Make Yours
----------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------
-url                  | https://yoursite.github.io          | Change this to your url
-title                | My name or organisation             | Name of website will appear top left on your pages
-description          | A website with blog posts and pages | Name of website will appear top left on your pages
-avatar               | assets/img/face.jpg                 | This can be changed to your own picture optionally
-favicon              | assets/favicon.ico                  | Change to reflect your brand
-header_text          | Me and my blog                      | Yours to change
-header_feature_image | /images/hhh.jpg                     | You should create a different image to replace the picture of Headington Hill Hall. This image needs to be no smaller than 1800 pixels wide.
-footer_text          | Copyright 2019 My name              | Put your name or organisation in here  |   |
+| Variable             | Placeholder                         | Make Yours                                                                                                                                   |
+| -------------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| url                  | https://yoursite.github.io          | Change this to your url                                                                                                                      |
+| title                | My name or organisation             | Name of website will appear top left on your pages                                                                                           |
+| description          | A website with blog posts and pages | Name of website will appear top left on your pages                                                                                           |
+| avatar               | assets/img/face.jpg                 | This can be changed to your own picture optionally                                                                                           |
+| favicon              | assets/favicon.ico                  | Change to reflect your brand                                                                                                                 |
+| header_text          | Me and my blog                      | Yours to change                                                                                                                              |
+| header_feature_image | /images/hhh.jpg                     | You should create a different image to replace the picture of Headington Hill Hall. This image needs to be no smaller than 1800 pixels wide. |
+| footer_text          | Copyright 2019 My name              | Put your name or organisation in here                                                                                                        |  |
 
 You can also add your social media links such as Instagram, Twitter, Facebook etc.
 
@@ -236,14 +236,14 @@ This metadata is enclosed within the 2 groups of hyphens. Here is an example.
 ```YAML
     ---
     layout: post
- title: Here is a sample blog post 
+title: Here is a sample blog post
     date: 2019-10-19
- published: true 
+published: true
     header_feature_image: images/2019/07/tomatoes.jpg
- caption: "Juicy Tomatoes" 
-    tags: 
-      - Journalism 
-      - Life 
+caption: "Juicy Tomatoes"
+    tags:
+      - Journalism
+      - Life
       - Food
     ---
 ```

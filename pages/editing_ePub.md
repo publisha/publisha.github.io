@@ -36,6 +36,7 @@ blurb: When we have created a reflowable ePub by exporting from InDesign, we may
 - [Summary](#summary)
 
 </section><!-- /TOC -->
+
 # Editing inside the ePUB package
 
 When we have created a reflowable ePub by exporting from InDesign, we may find that there are some stylistic details that need tidying up, changing or even correcting. Not all aspects of our wonderfully crafted typographic design work will give perfect results in the ePub.

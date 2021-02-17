@@ -95,7 +95,7 @@ So if you add this `CSS` to your own CSS file for the play, then the video will 
 
 
 <div class="video-box">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_3ERrqdIXNg?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LoPq13JnaVg?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 

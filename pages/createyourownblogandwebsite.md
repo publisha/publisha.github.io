@@ -20,7 +20,7 @@ order: 4
 </section>
 <!-- /TOC -->
 
-## Usage
+# Template for a web site and blog using Jekyll and NetlifyCMS
 
 This is a template set up for anyone to begin their own web site. The template is created by Chris Jennings and is based on various Jekyll themes.
 
@@ -28,6 +28,7 @@ This is a template set up for anyone to begin their own web site. The template i
 
   [087362d3]: https://commonmark.org/help/tutorial/ "Go to commonmark"
 
+## Usage
 
 Although the main content is built with markdown and converted to HTML automatically, you won't need to actually write in markdown, unless you want to. The site is set up to use a content management system (CMS) so that posting new content and setting up the site can be done through a web interface.
 

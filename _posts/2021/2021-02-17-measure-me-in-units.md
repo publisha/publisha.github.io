@@ -1,10 +1,9 @@
 ---
 layout: "post"
 title: "Measure me in Units"
-date: "2021-02-17 19:01"
-publshed: false
+date: 17-02-2021 19:11
+published: true
 ---
-
 What units of measure can we use in our CSS to provide such things as font size, margins, padding and widths. There are many, including px, em, rem, vh, vw and even %. What does it all mean and how should we use these units?
 
 ## The structure of an \`HTML\` page; the hierarchy of the elements.

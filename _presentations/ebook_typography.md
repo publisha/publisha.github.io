@@ -2,7 +2,7 @@
 layout: presentation
 title: eBook Typography - InDesign and CSS
 published: true
-date: 2018-01-20
+date: 2021-01-20
 folder: eBookTypography
 categories: [Typography, Design, InDesign, ePub]
 images: none

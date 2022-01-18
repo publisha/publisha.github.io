@@ -3,7 +3,7 @@ title: Push the Files up to GitHub from Atom
 date: 2020-01-28 19:59
 YouTube: 3MW5UCIREDU
 layout: screencast
-published: true
+published: false
 categories: [Markdown, HTML, GitHub, "Digital Product"]
 ---
 

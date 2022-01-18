@@ -3,6 +3,7 @@ title: Get Atom Software and Install on a MAC
 date: 2020-08-31
 YouTube: Mb1DRhBOMWI
 layout: screencast
+published: false
 categories: [Software, "Digital Product", "Multi-Platform Publishing"]
 ---
 

@@ -5,7 +5,7 @@ date: 2018-01-06
 images: full-width
 Published: true
 annotate: true
-version: [1]
+version: [1.1]
 Author: Chris Jennings
 status: [Complete]
 blurb: Books like other created artefacts go through a number of iterations before being ready for public display. The question is, can we observe and record what those changes are and when they happened, and by whom?
@@ -15,16 +15,33 @@ comments: true
 <section class='toc'>
 ## Contents
 
-- [Abstract](#abstract)
-- [Introduction](#introduction)
-- [Part 1: Public Facing Versions](#part-1-public-facing-versions)
-- [Part 2: Workflow Versioning](#part-2-workflow-versioning)
-- [Part 3: Publishing Incrementally](#part-3-publishing-incrementally)
-- [Part 4: Editing Incrementally](#part-4-editing-incrementally)
-- [Part 5: Collaborative Editing](#part-5-collaborative-editing)
-- [Some Further Options under consideration](#some-further-options-under-consideration)
-- [Conclusion](#conclusion)
-- [Notes](#notes)
+- [Iterative Publishing](#iterative-publishing)
+  - [Abstract](#abstract)
+  - [Introduction](#introduction)
+    - [Semantic Versioning](#semantic-versioning)
+    - [Apple's Rules for eBook Versions](#apples-rules-for-ebook-versions)
+  - [Part 1: Public Facing Versions](#part-1-public-facing-versions)
+    - [Definition of Terms](#definition-of-terms)
+    - [In Print](#in-print)
+    - [Imprint pages (title page verso)](#imprint-pages-title-page-verso)
+  - [Part 2: Workflow Versioning](#part-2-workflow-versioning)
+    - [Digital Tools](#digital-tools)
+      - [eBook Editing](#ebook-editing)
+      - [Editing in the the cloud](#editing-in-the-the-cloud)
+  - [Part 3: Publishing Incrementally](#part-3-publishing-incrementally)
+    - [In Progress Publishing](#in-progress-publishing)
+    - [Authoring Incrementally](#authoring-incrementally)
+      - [eBooks Only](#ebooks-only)
+      - [In Print](#in-print-1)
+  - [Part 4: Editing Incrementally](#part-4-editing-incrementally)
+    - [Versioning for Software Code](#versioning-for-software-code)
+  - [Part 5: Collaborative Editing](#part-5-collaborative-editing)
+    - [Student Example with _The Student Guide to Oxford_](#student-example-with-the-student-guide-to-oxford)
+  - [Some Further Options under consideration](#some-further-options-under-consideration)
+    - [Social Reading and Annotation](#social-reading-and-annotation)
+    - [Version Control Systems](#version-control-systems)
+  - [Conclusion](#conclusion)
+  - [Notes](#notes)
 
 </section><!-- /TOC -->
 
@@ -270,6 +287,8 @@ In terms of the actual workflow and details of the process, the text is edited w
 [![Workflow from Penflip - output to Pandoc to ICML to InDesign](/images/iterativePublishing.042.jpeg)](/images/iterativePublishing.042.jpeg)
 
 Once the edit process was complete (a milestone previously set) the text was converted to `ICML` for InDesign using Pandoc.[^12]
+
+_Please note that Penflip is no longer operating_ - January 2022
 
 ## Some Further Options under consideration
 

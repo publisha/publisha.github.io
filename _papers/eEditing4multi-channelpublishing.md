@@ -5,9 +5,9 @@ date: 2018-10-16
 images: full-width
 published: true
 annotate: true
-version: [0.75]
+version: [0.8]
 Author: Chris Jennings
-status: [early release]
+status: [edited - 18.01.22]
 comments: true
 blurb: When content is edited in a browser and shared on a web server, there is a potential to convert this text and image in combination to a variety of formats. These formats can then be used in both print and digital product outputs.
 ---
@@ -144,24 +144,6 @@ $ pandoc --wrap=none --extract-media=images somefile.docx
 
 In an article I wrote recently about version control, (link here)  I mentioned a few systems for collaborative editing and a significant development elaborated there was the use of `Git` as a repository for files. Here is not the place to go into details about Git, but the system offers great potential for editing and exporting documents in a variety of formats.
 
-### Penflip
-
-I have used this system with my students to edit a guidebook to Oxford for new students. You can see in the image here, that we are able to export the content into a number of formats; in this image, I show how we take the exported files and convert to `ICML` for input to InDesign.
-
-[![Penflip](/images/iterativePublishing.041.jpeg)](/images/iterativePublishing.041.jpeg)
-
-You can see in the images here that the complexity of having a lot of editors is handled perfectly by this kind of system.
-
-In terms of the actual workflow and details of the process, the text is edited with *markdown*
-
-[![Workflow from Penflip - output to Pandoc to ICML to InDesign](/images/iterativePublishing.042.jpeg)](/images/iterativePublishing.042.jpeg)
-
-Here is an animated GIF showing Penflip in use.
-
-[![Using Penflip to edit](/images/penflip1.gif)](/images/penflip1.gif)
-
-Penflip works well, but I cannot recommend it for serious work, since the support has fallen off, and may not be developed further.
-
 ### GitBook
 
 GitBook uses a repository held in GitHub as the source files. It is possible to use this collaboratively, but export can only be done from GitHub or some other method such Atom to convert the markdown into Word or ICML via Pandoc.
@@ -192,6 +174,8 @@ Not all systems use `Markdown` as the basis for text input and there are many pl
 
 ### Booktype
 
+**Note: Booktype is no longer supported.**
+
 BookType is OpenSource software that can be installed on your own web server or as a paid for service.
 
 I have now built an editing system based on this software here: [booktype.publisha.org][e5abacf4]
@@ -212,6 +196,6 @@ I have written [elsewhere][c42c03c9] about editing collaboratively in the articl
 
   [c42c03c9]: https://publisha.github.io/papers/iterativepublishing/ "check this article"
 
-In systems that use Git as the basic versioning engine (Penflip, Prose, GitBook), each author/editor has ownership of **their own** version and when a commit is made the changes are then merged into the original or master copy. This means that editors can be working on the same document simultaneously.
+In systems that use Git as the basic versioning engine (Prose, GitBook), each author/editor has ownership of **their own** version and when a commit is made the changes are then merged into the original or master copy. This means that editors can be working on the same document simultaneously.
 
 With Booktype however, the document is effectively checked-out for the editor and cannot be edited by anyone else until those edits are saved. Changes are not part of the final document until the changes are accepted by the admin or chief editor.

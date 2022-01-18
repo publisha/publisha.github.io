@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Final Assignment at Home
-published: true
+published: false
 categories: ["HTML and CSS", "Multi-Platform Publishing", GitHub]
 tags: [GitHub, HTML, CSS]
 date:  2020-04-20 14:44
@@ -14,12 +14,20 @@ blurb: We are using GitHub pages to host a web site for the Shakespeare play. Th
 <section class='toc'>
 ## On this Page
 
-- [For MAC users](#for-mac-users)
-- [For PC users](#for-pc-users)
-- [Getting your play repository on to your computer](#getting-your-play-repository-on-to-your-computer)
-- [Editing your play and adding images](#editing-your-play-and-adding-images)
-- [Styling the Images](#styling-the-images)
-- [Pushing your changes up to GitHub](#pushing-your-changes-up-to-github)
+- [How to work on your Shakespeare play web site at home.](#how-to-work-on-your-shakespeare-play-web-site-at-home)
+- [You will need Atom software](#you-will-need-atom-software)
+  - [For MAC users](#for-mac-users)
+  - [For PC users](#for-pc-users)
+  - [Getting your play repository on to your computer](#getting-your-play-repository-on-to-your-computer)
+    - [Run Atom again.](#run-atom-again)
+  - [Editing your play and adding images](#editing-your-play-and-adding-images)
+    - [Getting the Images](#getting-the-images)
+      - [How to unpack the ePUB](#how-to-unpack-the-epub)
+    - [Putting the images into the project folder](#putting-the-images-into-the-project-folder)
+    - [Adding Images to the play HTML5](#adding-images-to-the-play-html5)
+  - [Styling the Images](#styling-the-images)
+    - [The IMG tag](#the-img-tag)
+  - [Pushing your changes up to your GitHub repository](#pushing-your-changes-up-to-your-github-repository)
 
 </section><!-- /TOC -->
 

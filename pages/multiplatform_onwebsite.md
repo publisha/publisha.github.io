@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Final Assignment at Home - add Multimedia
+title: Add Multimedia to Your web site
 published: true
 categories: ["HTML and CSS", "Multi-Platform Publishing", GitHub]
 tags: [GitHub, HTML, CSS]

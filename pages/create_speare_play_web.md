@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Using a Git Repository to host your Shakespeare Play Web Site
-published: false
+published: true
 categories: ["HTML and CSS", "Multi-Platform Publishing", GitHub]
 tags: [GitHub, HTML, CSS]
 date:  2019-10-08
@@ -11,13 +11,17 @@ blurb: We are using GitHub pages to host a web site for the Shakespeare play. Th
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
 ## On this Page
-- [What to do?](#what-to-do)
-- [Your digital tools](#your-digital-tools)
-- [What's inside the repository?](#whats-inside-the-repository)
-- [Ok, so what do I do now?](#ok-so-what-do-i-do-now)
-- [The Play](#the-play)
-- [The home page cover](#the-home-page-cover)
-- [Making the web site work](#making-the-web-site-work)
+- [Using a Git Repository to host your Shakespeare Play Web Site](#using-a-git-repository-to-host-your-shakespeare-play-web-site)
+  - [You will need VS Code software](#you-will-need-vs-code-software)
+  - [Now we need to create the Github repository](#now-we-need-to-create-the-github-repository)
+  - [What's inside the repository?](#whats-inside-the-repository)
+  - [Ok, so what do I do now?](#ok-so-what-do-i-do-now)
+    - [Here are the basic steps](#here-are-the-basic-steps)
+  - [The Play](#the-play)
+  - [The home page cover](#the-home-page-cover)
+  - [Making the web site work](#making-the-web-site-work)
+  - [Back to GitHub](#back-to-github)
+  - [Summary](#summary)
 
 </section><!-- /TOC -->
 

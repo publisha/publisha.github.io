@@ -25,9 +25,7 @@ blurb: We are using GitHub pages to host a web site for the Shakespeare play. Th
 
 We are using GitHub pages to host a web site for the Shakespeare play. This page explains what we are going to do to get started.
 
-## You will need Atom software
-
-> **Note: **Even if you have already grabbed a copy of Atom previously I still recommend that you get a fresh updated copy as in these instructions.
+## You will need VSCode software
 
 You will only need the application called _Atom_ and to help you get the correct settings I am [providing you with a distribution][61862e36] package as a `zip` file. This will create an `atom` folder which you need to place inside your `Home` folder.
 

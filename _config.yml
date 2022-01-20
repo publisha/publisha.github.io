@@ -3,16 +3,16 @@ permalink: pretty
 markdown: kramdown
 timezone: Europe/London
 # relative_permalinks: true
-title:            Digital Publishing Hub
-tagline:          'Help for publishers and students of publishing'
-description:      'Tutorials and screencasts about digital publishing and eBook Production'
-url:              https://publisha.github.io
-baseurl: ''
+title: Digital Publishing Hub
+tagline: "Help for publishers and students of publishing"
+description: "Tutorials and screencasts about digital publishing and eBook Production"
+url: https://publisha.github.io
+baseurl: ""
 image: /images/homegallery/img_00127.jpg
 twitter_username: pageboy
 lang: en_gb
 logo: https://publisha.github.io/images/publisha_logo.jpg
-github_username:  pageboy
+github_username: pageboy
 flickr_key: 6a751024fcc480f70610ed1f98220880
 flickr_id: 55648661@N00
 # permalink: /:categories/:title/
@@ -25,17 +25,16 @@ includes:
 #
 
 # Custom vars
-version:          0.97
+version: 0.97
 
 github:
-  repo:           publisha.github.io
+  repo: publisha.github.io
 
   # Gems
 plugins: [jekyll-paginate, jekyll-gist, jekyll-sitemap, jekyll-seo-tag]
 
-paginate:         8
-paginate_path: '/page:num/'
-
+paginate: 8
+paginate_path: "/page:num/"
 
 kramdown:
   input: GFM
@@ -46,7 +45,7 @@ kramdown:
   # span, block element options fall back to global
   syntax_highlighter_opts:
     # Rouge Options › https://github.com/jneen/rouge#full-options
-    css_class: 'codehilite'
+    css_class: "codehilite"
     # span:
     #   line_numbers: false
     block:
@@ -57,11 +56,11 @@ kramdown:
 
 tag-list: [InDesign, HTML, CSS, Using GitHub]
 
-categories-list: [InDesign, HTML and CSS, Typography, XML, ePub, iBooks Author]
+categories-list: [InDesign, HTML and CSS, Typography, XML, ePub]
 
 # for Brookes
 
-class-list: ["Design and Production", "Multi-Platform Publishing", "Digital Product"]
+class-list: ["Design and Production", "Multi-Platform Publishing"]
 
 # collections
 collections:
@@ -71,39 +70,39 @@ collections:
 
   multi-platform-Publishing:
     output: true
-    title: 'Multi-platform Publishing'
-    description: 'Workflow and techniques for designing, creating and publishing for page and device'
+    title: "Multi-platform Publishing"
+    description: "Workflow and techniques for designing, creating and publishing for page and device"
     defaults:
       layout: book
 
   papers:
     output: true
-    title: 'Articles and Conference papers'
+    title: "Articles and Conference papers"
     defaults:
       layout: paper
 
   sections:
     output: true
-    title: 'Arranged by Topic'
+    title: "Arranged by Topic"
     defaults:
       layout: page
 
   presentations:
     output: true
-    title: 'Presentations from Apple Keynote'
+    title: "Presentations from Apple Keynote"
     defaults:
       layout: presentation
       excerpt_separator: <!--more-->
 
   galleries:
     output: true
-    title: 'Images from Flickr'
+    title: "Images from Flickr"
     defaults:
       layout: flickr
 
   eBooks:
     output: true
-    title: 'eBooks Created Here'
+    title: "eBooks Created Here"
     defaults:
       layout: ebook
       excerpt_separator: <!--more-->

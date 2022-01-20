@@ -11,7 +11,7 @@ Keep this on to show you where you might have empty paragraphs, double spaces, s
 Some of these things you might want to be rid of, but some, just may not convert to the ePub.{check on where to find hidden characters}
 
 ### Create a root paragraph style for the major part of the content
-This makes sense if you have a lot of text that needs a style applying. Use select-all and then style with that body text style. The headings can then be styled afterwards.
+This makes sense if you have a lot of text that needs a style applying. Use select-all and then style with that body text style. The headings can then be styled afterwards.
 
 ### Use a  'Next-Style' as a rule for the headings
 Headings will be  followed by a special first paragraph in the chapter or sub-section.
@@ -20,7 +20,7 @@ Headings will be  followed by a special first paragraph in the chapter or sub-se
 These styles get converted to HTML mark-up in the ePub.
 Make sure everything is styled with a style definition. If you use bespoke styles (by selecting attributes directly), your ePub may contain hard-to-edit, complex markup.
 
-### Give names to your styles that make sense for the kind of content that belongs there
+### Give names to your styles that make sense for the kind of content that belongs there
 For paragraphs and headings use names that can easily be identified. An example might be 'first paragraph after the title', or 'author name'.
 Character styles need names like 'citation' or 'name of country', or 'latin name'. Not 'italic' nor 'red underlined'!
 
@@ -49,12 +49,12 @@ Images that are not anchored will probably appear at the end of your eBook.
 You should anchor at a paragraph break, even if, your print version has the image right after a particular line of text.
 
 ### Group the images with their captions and anchor those grouped objects
-In your print version, you may have captions appearing in a variety of places. Try to use a consistent location in the eBook. This will make your life easier. 
+In your print version, you may have captions appearing in a variety of places. Try to use a consistent location in the eBook. This will make your life easier. 
 
 ### Name the object styles that you use
 Objects such as images or groups will be tagged with a `<div>` name that matches the name of the object style; like this one: `<div class=”figure”>`
 
-### Use the Table of Contents feature to create your table of contents
+### Use the Table of Contents feature to create your table of contents
 The TOC needs to be interactive. InDesign will export the correctly formatted TOC for the ePub only if you have used the correct auto-generated TOC.
 You may want more sophisticated control and style for the print version, but you can always create a different TOC style for the eBook version.
 
@@ -83,7 +83,7 @@ If you want text in uppercase, do not type as *THAT* but rather create a style t
 ### Spreads in a re-flowable eBook
 
 If you intend that the print book becomes a re-flowable ebook as well then avoid putting image captions on the opposite page to the image in a spread.
-Although you can attempt to get content to start on a new page, you don't know if this will be verso or recto.
+Although you can attempt to get content to start on a new page, you don't know if this will be verso or recto.
 
 ### Page Size
 
@@ -91,9 +91,9 @@ If we are starting the production of an eBook without even considering print, th
 
 ### Orientation and spreads
 
-Re-flowable eBooks are normally viewed portrait. Although the iPad does give us a side-by-side view in landscape mode, this is not the same as spreads that you may see in your InDesign view. You can use spreads in your InDesign file for your print /PDF purposes, but these spreads will not result in a spread view. If your print book is designed as landscape pages, you can leave alone, but your eBook will look nothing like the print version unless you build a fixed-layout eBook.
+Re-flowable eBooks are normally viewed portrait. Although the iPad does give us a side-by-side view in landscape mode, this is not the same as spreads that you may see in your InDesign view. You can use spreads in your InDesign file for your print /PDF purposes, but these spreads will not result in a spread view. If your print book is designed as landscape pages, you can leave alone, but your eBook will look nothing like the print version unless you build a fixed-layout eBook.
 
-Conclusion: Leave as is - spreads can stay, the exported ePub will show in portrait. Spreads in InDesign are ignored on export.
+Conclusion: Leave as is - spreads can stay, the exported ePub will show in portrait. Spreads in InDesign are ignored on export.
 
 The ebook cover
 The cover of the eBook can be any shape that you like, although a landscape shaped cover will probably be shrunk down very small in a typical eBook library thumbnail view.
@@ -104,16 +104,17 @@ Remember, covers are often seen in thumbnail views, so make sure the title can b
 
 You will need a large version of the cover for marketing purposes when you deliver through the Apple iBooks. This needs to be 1400pixels on the short side.
 
-Conclusion: Some changes may be required, but the cover is often not included in the main InDesign file for print; it is more likely to be printed separately.
+Conclusion: Some changes may be required, but the cover is often not included in the main InDesign file for print; it is more likely to be printed separately.
 
-### Master pages
+### Master pages / Parent Pages
 
 When you export to ePub, all of the master page items are ignored. headers, footers, page numbers etc. They won't get exported.
-Conclusion: leave your master page items alone.
+
+Conclusion: leave your master page items alone.
 
 ### Pagination
 
-Probably the most difficult of all, is dealing with page beginnings and ends. Book designers will often have finely crafted their InDesign files to get an exact number of pages (book extent) and will have adjusted leading and font spacing to remove orphans and widows. Since many of these adjustments will be ignored, they can stay, but some old habits need to be expunged! For example, if a soft break has been added near the bottom of a page (to remove a paragraph widow), then this will be a disaster in the eBook. It could result in a sudden break in the middle of a line. It is essential that the book design uses a different technique in InDesign. I advise using the keep together options in the paragraph style rules. This should tackle your orphan and widow problems for the print version and will be delivered as CSS rules in the ePub3 file (orphan and widow control has very limited support in eBook readers).
+Probably the most difficult of all, is dealing with page beginnings and ends. Book designers will often have finely crafted their InDesign files to get an exact number of pages (book extent) and will have adjusted leading and font spacing to remove orphans and widows. Since many of these adjustments will be ignored, they can stay, but some old habits need to be expunged! For example, if a soft break has been added near the bottom of a page (to remove a paragraph widow), then this will be a disaster in the eBook. It could result in a sudden break in the middle of a line. It is essential that the book design uses a different technique in InDesign. I advise using the keep together options in the paragraph style rules. This should tackle your orphan and widow problems for the print version and will be delivered as CSS rules in the ePub3 file (orphan and widow control has very limited support in eBook readers).
 
 ### Page start
 
@@ -132,13 +133,13 @@ Not all font types are supported in the exported ePub, and - further, not all de
 
 ### Typography
 
-There are many sophisticated typographic controls available in Adobe InDesign, and you may have been using baseline shift, hyphenation and justification fine controls, and even `Align to Grid`. All of these attributes will be ignored on export to ePub. Not all of your fine controls will work in the ePub, but, no-matter, in most cases you can ignore, but be careful with alignment to the baseline grid, since you may think you have good spacing, but this will disappear in the re-flowable ePub version.
+There are many sophisticated typographic controls available in Adobe InDesign, and you may have been using baseline shift, hyphenation and justification fine controls, and even `Align to Grid`. All of these attributes will be ignored on export to ePub. Not all of your fine controls will work in the ePub, but, no-matter, in most cases you can ignore, but be careful with alignment to the baseline grid, since you may think you have good spacing, but this will disappear in the re-flowable ePub version.
 
 ### Illustrations
 
 If you have photographs or other images in the book for print, then you must be sure to anchor these images, so that they will be closely tied the place in the text, when exporting to ePub. It may be that an image is moved on to a facing page, because it does not fit in with the layout concept of the book. This should not be a problem. A picture can be on a previous page but anchored to the text on the opposite page. You will need to use 'Anchored Object Options' with a Custom Position that allows you to manually arrange.
 
-When you export to ePub, you have a range of options for images, but if you opt to Use the Original Image, then you will need to convert those images yourself to RGB jpegs or PNG files. A better option is to use Preserve Appearance from Layout and Relative to Text Flow.
+When you export to ePub, you have a range of options for images, but if you opt to Use the Original Image, then you will need to convert those images yourself to RGB jpegs or PNG files. A better option is to use Preserve Appearance from Layout and Relative to Text Flow.
 
 It is a good practice to include alternative text for images within the ePub file. You can get this to work most efficiently if you use metadata within the images themselves. Use Photoshop to add metadata (title, description etc). You can pull this metadata into your alternative text automatically, and, even use in the captions.
 
@@ -151,7 +152,7 @@ For the best results for the simplest of books, is to be sure that all text if t
 Change your approach. Anchor those text boxes at the appropriate places in the main text, but please get out of the habit of creating headings with separate text boxes and drag/dropping them onto the page. This simply has to stop! Include the text in the structure. Not only will this give the better ePub results, but you also need to think about the table of contents (next section).
 Conclusion: Text threading and structure of content does impact significantly on the resulting ePubs. Do try to keep your text threading simple with objects anchored inside those text frames. Multiple stories are possible, and you can use these stories as a way of ordering your 'articles' - which in turn can be used as the Content Order when exporting. Threading and content order should not change the PDF output.
 
-Table of Contents
+### Table of Contents
 
 You may (indeed are likely to) have a table of contents as part of your front matter in the print book. In the eBook version this needs to be interactive, so that users can navigate to their chosen section or chapter. This interactivity will only work if you have used InDesign's clever way of creating this TOC from the heading styles. You must use Layout > Table of Contents to build this TOC.
 
@@ -160,7 +161,7 @@ Technically, there is no need to have the TOC displayed on the page at all, so y
 If you do use a Table of Contents on the page then leave off the page numbers, since they are dynamically changing.
 Conclusion: There are some changes that may be required when building the TOC. InDesign CC does have the feature of saving versions of the TOC, so you can have alternatives to choose from when you export to ePub.
 
-Post Editing after Export from InDesign
+### Post Editing after Export from InDesign
 
 Avoid, at all costs editing the XHTML files inside the ePub package, otherwise you make it difficult to 'round-trip' to InDesign.
 

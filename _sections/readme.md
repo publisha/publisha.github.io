@@ -20,5 +20,3 @@ This is an chronological list of all the help documents and screencasts for this
 ### [Multi-Platform Publishing](/sections/multiplatform)
 This is an alphabetical list of all the help documents and screencasts for the second semester **MA** module.
 
-### [Digital Product](/sections/digitalproduct)
-This is an alphabetical list of all the help documents and screencasts for the second semester **BA** module, where we create recipe eBooks .

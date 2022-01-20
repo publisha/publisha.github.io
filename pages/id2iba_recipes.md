@@ -1,7 +1,7 @@
 ---
 layout: page
 title: InDesign to iBooks Author (Recipes edition)
-published: true
+published: false
 tags: InDesign, "iBooks Author"
 categories: [InDesign, "iBooks Author"]
 screencast: [id2iba_recipeBook]
@@ -13,19 +13,41 @@ blurb: An Authoring tool for an *Apple-only* hybrid format eBook. iBooks Author 
 <section class='toc'>
 ## On this Page
 
-- [The iBooks Format](#the-ibooks-format)
-- [The Authoring Environment](#the-authoring-environment)
-- [The iBooks Author Structure](#the-ibooks-author-structure)
-- [The Layouts](#the-layouts)
-- [Typographic Style](#typographic-style)
-- [From InDesign to iBooks Author](#from-indesign-to-ibooks-author)
-- [From ePUB to iBooks Author](#from-epub-to-ibooks-author)
-- [Insert Chapter from InDesign (IDML)](#insert-chapter-from-indesign-idml)
-- [Insert Chapter from IDML file](#insert-chapter-from-idml-file)
-- [Some broken features](#some-broken-features)
-- [Scroll Mode](#scroll-mode)
-- [Further Details](#further-details)
-- [Summary](#summary)
+- [InDesign to iBooks Author (Recipes edition)](#indesign-to-ibooks-author-recipes-edition)
+  - [The iBooks Format](#the-ibooks-format)
+  - [The Authoring Environment](#the-authoring-environment)
+    - [The Template](#the-template)
+    - [Orientation Options](#orientation-options)
+    - [The Styling Options](#the-styling-options)
+  - [The iBooks Author Structure](#the-ibooks-author-structure)
+  - [The Layouts](#the-layouts)
+    - [Full Page Chapter Headings?](#full-page-chapter-headings)
+    - [Layouts = Master Pages](#layouts--master-pages)
+    - [Adding Layouts](#adding-layouts)
+    - [Saving the Template](#saving-the-template)
+  - [Typographic Style](#typographic-style)
+  - [From InDesign to iBooks Author](#from-indesign-to-ibooks-author)
+  - [From ePUB to iBooks Author](#from-epub-to-ibooks-author)
+    - [Typographic Styles](#typographic-styles)
+  - [Insert Chapter from InDesign (IDML)](#insert-chapter-from-indesign-idml)
+    - [What is in the IDML File?](#what-is-in-the-idml-file)
+    - [Chapter by chapter](#chapter-by-chapter)
+    - [Export as IDML](#export-as-idml)
+  - [Insert Chapter from IDML file](#insert-chapter-from-idml-file)
+  - [Some broken features](#some-broken-features)
+  - [Scroll Mode](#scroll-mode)
+    - [What Is Portrait Orientation / scrolling view?](#what-is-portrait-orientation--scrolling-view)
+    - [The Layouts in Scrolling View](#the-layouts-in-scrolling-view)
+    - [The Typographic Styles](#the-typographic-styles)
+    - [Images in the scrolling view](#images-in-the-scrolling-view)
+    - [Decorative Images](#decorative-images)
+    - [Content Images](#content-images)
+  - [Further Details](#further-details)
+    - [The Cover](#the-cover)
+    - [Metadata](#metadata)
+  - [Summary](#summary)
+    - [InDesign &gt; ePub(reflowable) &gt; iBooks Author](#indesign--epubreflowable--ibooks-author)
+    - [InDesign &gt; IDML &gt; iBooks Author &gt; Chapter](#indesign--idml--ibooks-author--chapter)
 
 </section><!-- /TOC -->
 # InDesign to iBooks Author (Recipes edition)

@@ -1,43 +1,119 @@
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
 
-
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" />
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  <nav class="sidebar-nav"  style="border-bottom:none !important;">
-    <a href="{{site.baseurl}}/"><i class="sidebar-nav-item fa fa-home fa-2x" aria-hidden="true"></i></a>
+  <nav class="sidebar-nav" style="border-bottom: none !important">
+    <a href="{{site.baseurl}}/"
+      ><i class="sidebar-nav-item fa fa-home fa-2x" aria-hidden="true"></i
+    ></a>
   </nav>
-  <div class="sidebar-item" style="padding-top:0;padding-bottom:.5rem;">
+  <div class="sidebar-item" style="padding-top: 0; padding-bottom: 0.5rem">
     <p>{{ site.description }}</p>
   </div>
 
   <nav class="sidebar-nav">
-<ul class="navigationtoc">
-<li class="header">Pages by Category</li>
-{%- for category in site.categories-list -%}
-  <li class="dropdown"><a title="see all pages about {{ category }}" href="/sections/{{ category }}">{{ category }} <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
-  </li>
+    <ul class="navigationtoc">
+      <li class="header">Pages by Category</li>
+      {%- for category in site.categories-list -%}
+      <li class="dropdown">
+        <a
+          title="see all pages about {{ category }}"
+          href="/sections/{{ category }}"
+          >{{ category }}
+          <i
+            style="color: white"
+            class="fa fa-caret-right"
+            aria-hidden="true"
+          ></i
+        ></a>
+      </li>
       {%- endfor -%}
-</ul>
+    </ul>
     <ul class="navigationtoc">
       <li class="header"><b>Other Items</b></li>
-    {%- comment -%}
-    <li><a class="sidebar-nav-item" href="{{ site.github.url }}archive/v{{ site.version }}.zip">Download</a></li>
-    <li><a class="sidebar-nav-item" href="{{ site.github.url }}">GitHub project</a></li>
-     {%- endcomment -%}
-     <li><a title="screencasts from the YouTube channel" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/screencasts/">Screencasts <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
-     </li>
-     <li><a title="presentations generated from Keynote" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/presentations/">Presentations <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
-     </li>
-     <!-- <li><a title="Image galleries from Flickr" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/galleries/">Images Galleries <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+      {%- comment -%}
+      <li>
+        <a
+          class="sidebar-nav-item"
+          href="{{ site.github.url }}archive/v{{ site.version }}.zip"
+          >Download</a
+        >
+      </li>
+      <li>
+        <a class="sidebar-nav-item" href="{{ site.github.url }}"
+          >GitHub project</a
+        >
+      </li>
+      {%- endcomment -%}
+      <li>
+        <a
+          title="screencasts from the YouTube channel"
+          class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}"
+          href="{{ site.baseurl }}/screencasts/"
+          >Screencasts
+          <i
+            style="color: white"
+            class="fa fa-caret-right"
+            aria-hidden="true"
+          ></i
+        ></a>
+      </li>
+      <li>
+        <a
+          title="presentations generated from Keynote"
+          class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}"
+          href="{{ site.baseurl }}/presentations/"
+          >Presentations
+          <i
+            style="color: white"
+            class="fa fa-caret-right"
+            aria-hidden="true"
+          ></i
+        ></a>
+      </li>
+      <!-- <li><a title="Image galleries from Flickr" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/galleries/">Images Galleries <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
      </li> -->
-     <li><a title="eBooks" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/eBooks/">eBooks <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
-     </li>
-     <li><a title="Course Sections" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/sections/">Sections and Categories <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
-     </li>
-      <li><a title="see all contents listed" class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}" href="{{ site.baseurl }}/contents">List all Contents <i style="color:white;" class="fa fa-caret-right" aria-hidden="true"></i></a>
+      <li>
+        <a
+          title="eBooks"
+          class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}"
+          href="{{ site.baseurl }}/eBooks/"
+          >eBooks
+          <i
+            style="color: white"
+            class="fa fa-caret-right"
+            aria-hidden="true"
+          ></i
+        ></a>
+      </li>
+      <li>
+        <a
+          title="Course Sections"
+          class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}"
+          href="{{ site.baseurl }}/sections/"
+          >Sections and Categories
+          <i
+            style="color: white"
+            class="fa fa-caret-right"
+            aria-hidden="true"
+          ></i
+        ></a>
+      </li>
+      <li>
+        <a
+          title="see all contents listed"
+          class="sidebar-nav-item{%- if page.url == node.url -%} active{%- endif -%}"
+          href="{{ site.baseurl }}"
+          >List all Contents
+          <i
+            style="color: white"
+            class="fa fa-caret-right"
+            aria-hidden="true"
+          ></i
+        ></a>
       </li>
     </ul>
   </nav>
@@ -48,7 +124,15 @@
   </div> -->
   <div class="sidebar-item">
     <p>
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a> | v{{ site.version }} {{ site.time | date: '%Y' }} | <a href="{{ site.baseurl }}/pages/about" title="read about this site and how it was made">About</a>
-  </p>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"
+        ><i class="fa fa-copyright" aria-hidden="true"></i> Chris Jennings</a
+      >
+      | v{{ site.version }} {{ site.time | date: '%Y' }} |
+      <a
+        href="{{ site.baseurl }}/pages/about"
+        title="read about this site and how it was made"
+        >About</a
+      >
+    </p>
   </div>
 </div>

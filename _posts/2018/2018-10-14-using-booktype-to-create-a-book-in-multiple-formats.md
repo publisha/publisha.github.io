@@ -2,7 +2,7 @@
 layout: post
 title: "Using Booktype to create a book in multiple formats"
 date: "2018-10-14 14:58"
-published: true
+published: false
 categories: [Publishing, Editing, OpenSource]
 ---
 Booktype is web based, single-source publishing software for creating  books. The software is open-source so you can (expertise needed) install on your own server and create and edit books and then, export to a number of formats.

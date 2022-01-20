@@ -12,13 +12,15 @@ order: 3
 <section class='toc'>
 ## On this Page
 
-- [The Pages Panel](#the-pages-panel)
-- [Page Numbers](#page-numbers)
-- [Different Page Number Styles](#different-page-number-styles)
-- [Headers](#headers)
-- [Running Header](#running-header)
-- [Overriding Master Page Items](#overriding-master-page-items)
-- [Using the Book Panel](#using-the-book-panel)
+- [Master Pages in InDesign](#master-pages-in-indesign)
+  - [The Pages Panel](#the-pages-panel)
+  - [Page Numbers](#page-numbers)
+  - [Different Page Number Styles](#different-page-number-styles)
+  - [Headers](#headers)
+  - [Running Header](#running-header)
+    - [Multiple Running Headers](#multiple-running-headers)
+  - [Overriding Master Page Items](#overriding-master-page-items)
+  - [Using the Book Panel](#using-the-book-panel)
 
 </section><!-- /TOC -->
 # Master Pages in InDesign
@@ -28,6 +30,7 @@ order: 3
 
 The Pages panel will show you the pages in your document as thumbnails. You can configure the way this displays through the Panel Options from the context menu in the Pages panel.
 
+> Note: In recent versions of InDesign *master* pages has been renamed to *parent* pages.
 
 [![Configure the pages panel to suit your needs](/images/2017/04/masterpages/image2.png)](/images/2017/04/masterpages/image2.png)
 

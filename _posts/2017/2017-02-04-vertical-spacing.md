@@ -31,7 +31,7 @@ You will see from the first images here that we can interrupt the flow of the bo
 
 ## What about the reflowable eBook?
 
-InDesign can help us by providing this 'align to grid' feature, but eBooks (being HTML and CSS) do **not** understand 'align to grid'. eBooks need to use 'line-height' (leading) and margins to achieve this vertical alignment. In transferring vertical spacing from InDesign to the eBook export, leading becomes line-height and space-before and space-after becomes margin-bottom and margin-top in the CSS.
+InDesign can help us by providing this 'align to grid' feature, but eBooks (being HTML and CSS) do **not** understand 'align to grid'. eBooks need to use 'line-height' (leading) and margins to achieve this vertical alignment. In transferring vertical spacing from InDesign to the eBook export, leading becomes line-height and space-before and space-after becomes margin-bottom and margin-top in the CSS.
 
 ### Maths, but don't panic.
 

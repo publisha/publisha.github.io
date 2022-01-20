@@ -6,12 +6,12 @@ timezone: Europe/London
 title: Digital Publishing Hub
 tagline: "Help for publishers and students of publishing"
 description: "Tutorials and screencasts about digital publishing and eBook Production"
-url: https://publisha.github.io
+url: https://www.publisha.org
 baseurl: ""
 image: /images/homegallery/img_00127.jpg
 twitter_username: pageboy
 lang: en_gb
-logo: https://publisha.github.io/images/publisha_logo.jpg
+logo: https://www.publisha.org/images/publisha_logo.jpg
 github_username: pageboy
 flickr_key: 6a751024fcc480f70610ed1f98220880
 flickr_id: 55648661@N00

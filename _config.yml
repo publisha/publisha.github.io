@@ -25,7 +25,7 @@ includes:
 #
 
 # Custom vars
-version: 0.97
+version: 0.98
 
 github:
   repo: publisha.github.io

@@ -12,7 +12,6 @@ order: 3
 <section class='toc'>
 ## On this Page
 
-- [Master Pages in InDesign](#master-pages-in-indesign)
   - [The Pages Panel](#the-pages-panel)
   - [Page Numbers](#page-numbers)
   - [Different Page Number Styles](#different-page-number-styles)

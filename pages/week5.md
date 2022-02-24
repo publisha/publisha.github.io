@@ -5,7 +5,7 @@ published: true
 categories: ["HTML and CSS", "Multi-Platform Publishing", GitHub]
 tags: [GitHub, HTML, CSS]
 date:  2022-02-24
-order: [2]
+order: 2
 images: full-width
 blurb: We are using GitHub pages to host a web site for the Shakespeare play. This page explains everything to get working on this at home.
 ---
@@ -33,7 +33,7 @@ Not good that clicking the links does not hide the menu - can only be sorted wit
 ```javascript
     <script>
       function hidemenu() {
-        document.getElementById(“toggle”).checked = false;
+        document.getElementById("toggle").checked = false;
       }
     </script>
 ```
@@ -41,7 +41,7 @@ Not good that clicking the links does not hide the menu - can only be sorted wit
 Give the ul an ID and then:
 
 ```html
-<ul id=“menu” onclick=“hidemenu()”>
+<ul id="menu" onclick="hidemenu()">
 ```
 
 
@@ -52,7 +52,7 @@ Give the ul an ID and then:
 * add a hyperlink to the play file
 
 ```html
-<p class=“readplay”><a href=“play4web.html”>Read the play</a></p>
+<p class="readplay"><a href="play4web.html">Read the play</a></p>
 ```
 
 * ditto on the cover image
@@ -63,8 +63,8 @@ Give the ul an ID and then:
 * add a **back to top** with position fixed and > id on body
 
 ```html
-<div class=“backtotop”>
-<a title=“go back to the top of the page” href=“#play4web”>&#x25B2;</a>
+<div class="backtotop">
+<a title="go back to the top of the page" href="#play4web">&#x25B2;</a>
 </div>
 
 see the id on the body for your ow link
@@ -77,7 +77,7 @@ Put this as a `li` at the top of the navigation `ul`. Give it a class name of �
 Here is what this should look like:
 
 ```html
- <li class=“home”><a href=“index.html”>Home</a></li>
+ <li class="home"><a href="index.html">Home</a></li>
 ```
 
 
@@ -86,7 +86,7 @@ Here is what this should look like:
 * Add an audio clip
 
 ```html
-<audio controls src=“/media/act1scene1_clip01.mp3”></audio>
+<audio controls src="/media/act1scene1_clip01.mp3"></audio>
 ```
 
 - - - -

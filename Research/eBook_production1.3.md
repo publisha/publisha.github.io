@@ -232,11 +232,11 @@ eBooks can be read / used on computers or portable devices. Software is availabl
 
 The portable delivery platforms can be divided into 3 types:
 
-eInk devices these are dedicated readers. They are not likely to be used for anything other than reading eBooks. They are black and white (currently) and some are backlit as well as front lit.
+eInk devicesthese are dedicated readers. They are not likely to be used for anything other than reading eBooks. They are black and white (currently) and some are backlit as well as front lit.
 
-Tablets These are backlit coloured devices that can be used for a variety if activities such as browsing the web or playing games. They usually come with eReader software.
+TabletsThese are backlit coloured devices that can be used for a variety if activities such as browsing the web or playing games. They usually come with eReader software.
 
-Smartphones. Some recent smartphones are quite large and offer a comfortable reading experience, but generally the small footprint phones are not a great way to read an eBook.
+Smartphones.Some recent smartphones are quite large and offer a comfortable reading experience, but generally the small footprint phones are not a great way to read an eBook.
 
 Hardware Platforms
 
@@ -276,15 +276,15 @@ When we buy our eBooks through our digital accounts, our eBooks belong to us onl
 
 Some of these stores are listed here:
 
-Apple iBooks The iBooks distribution channel is available from within the Apple iBooks app on iOS on your iPad. This is deliberately convenient of course. From your library you go to the 'Store' where the latest books are displayed for your pleasure and purchase! eBooks can be synchronised across other devices and read within iBooks on the MAC itself.
+Apple iBooksThe iBooks distribution channel is available from within the Apple iBooks app on iOS on your iPad. This is deliberately convenient of course. From your library you go to the 'Store' where the latest books are displayed for your pleasure and purchase! eBooks can be synchronised across other devices and read within iBooks on the MAC itself.
 
-GooglePlay Books This platform is supported on the Android operation system for many portable devices. You can also see here that eBooks can be viewed in the Google Chrome web browser.
+GooglePlay BooksThis platform is supported on the Android operation system for many portable devices. You can also see here that eBooks can be viewed in the Google Chrome web browser.
 
-Kobo Store The Kobo range of devices includes eInk and tablets and they support the ePUB standard
+Kobo StoreThe Kobo range of devices includes eInk and tablets and they support the ePUB standard
 
-Barnes & Noble The Nook devices are used to deliver from the Barnes and Noble store. Strangely, they seem to now use the Samsung range of eReaders and Tablets rather than their own.
+Barnes & NobleThe Nook devices are used to deliver from the Barnes and Noble store. Strangely, they seem to now use the Samsung range of eReaders and Tablets rather than their own.
 
-And so on... Several other distributers are also creating their own apps for reading eBooks. Even some supermarkets like Sainsbury’s have their own.
+And so on...Several other distributers are also creating their own apps for reading eBooks. Even some supermarkets like Sainsbury’s have their own.
 
 Many of these systems on portable devices use the Adobe Toolkit to display their eBooks—this is the same as is used in the Adobe Digital Editions application for computers. Some systems are not kept up to date and use earlier versions of this eBook display engine.
 
@@ -318,11 +318,11 @@ Cloud Services such as Google Docs and Adobe Creative Cloud for teams can be use
 
 It is worth noting that some phrases used in discussing various technologies can be confusing, since there is not always agreement about these terms. I will try to make it clear here what we mean and why we use these expressions:
 
-Content Management System (CMS) Sometimes we use this term to refer to software that can manage all types of content, however, it usually means web based systems that manage, author and edit web content. Many web sites are created and maintained with such systems. Examples are Drupal, DotNetNuke and Typo3. For clarity, some commentators have started to use the term Web Content Management System (WCMS). This distinguishes it from:
+Content Management System (CMS)Sometimes we use this term to refer to software that can manage all types of content, however, it usually means web based systems that manage, author and edit web content. Many web sites are created and maintained with such systems. Examples are Drupal, DotNetNuke and Typo3. For clarity, some commentators have started to use the term Web Content Management System (WCMS). This distinguishes it from:
 
-Enterprise Content Management Systems (ECMS) These systems are put in place to manage an organisation’s documents and other content that are used in the processes of that organisation. Some systems will also provide web authoring services (possibly at an intranet level). ECM systems usually include records management and workflow management.
+Enterprise Content Management Systems (ECMS)These systems are put in place to manage an organisation’s documents and other content that are used in the processes of that organisation. Some systems will also provide web authoring services (possibly at an intranet level). ECM systems usually include records management and workflow management.
 
-Digital Asset management Systems (DAMS). This systems may fulfil some part of (2) above, but in the creative industries, they are often focussed on the management of image and multimedia assets.
+Digital Asset management Systems (DAMS).This systems may fulfil some part of (2) above, but in the creative industries, they are often focussed on the management of image and multimedia assets.
 
 Content Management is becoming an umbrella term to cover all of the above, but I have found that when discussing these technologies, the term does not mean the same to all parties! One often needs to distinguish between the different systems.
 
@@ -588,7 +588,7 @@ XML is eXtensible Markup Language and is a non-proprietary format that can be us
 
 Here is a sample of some XML of ‘A Midsummer Night’s Dream’:
 
-<stage_directions>Enter Egeus</stage_directions> <character>Egeus</character> <verseline>Happy be Theseus, our renowned Duke!</verseline>
+<stage_directions>Enter Egeus</stage_directions><character>Egeus</character><verseline>Happy be Theseus, our renowned Duke!</verseline>
 
 Tags
 
@@ -742,7 +742,7 @@ GREP
 
 GREP is a technique available within InDesign that uses regular expressions to find patterns within the text. Looking at my text with hidden characters showing I can see that if I search for 4 blank spaces followed by an uppercase character, this will capture the line of verse. Then I can remove the spaces and also apply my style throughout.
 
-In the screen image opposite, I have searched for: ^\s\s\s\s(\u) and I replaced with $1 (the contents of the bracket in the Find what box). I also changed to the paragraph style required.
+In the screen image opposite, I have searched for:^\s\s\s\s(\u) and I replaced with $1 (the contents of the bracket in the Find what box). I also changed to the paragraph style required.
 
 More GREP is used to locate and change the stage directions, ACT and scene. The unwanted spaces that are within my text help me identify these patterns even though I plan to be rid of them!
 
@@ -768,7 +768,7 @@ If you want to type the pattern matching codes into the Find/Change dialogue box
 
 There are many good books on Regular Expressions. I suggest reading about InDesign and GREP in:
 
-GREP in InDesign - By Peter Kahrel Publisher: O'Reilly Media Released: October 2008
+GREP in InDesign - By Peter KahrelPublisher: O'Reilly MediaReleased: October 2008
 
 Choosing GREP terms from the InDesign Find/Change menus
 
@@ -1146,7 +1146,7 @@ This InDesign style setting will prevent orphans (fragments of text left on thei
 
 CSS does have these terms available for paged-media (when a web page is printed), and InDesign will add the following to the stylesheet when exported to reflowable ePUB:
 
-widows: 2; orphans: 2;
+widows: 2;orphans: 2;
 
 There is no support for these values in an eReader.
 
@@ -1174,7 +1174,7 @@ There are circumstances where this is not enough. You really need to achieve a c
 
 When we post process the CSS we need to hide this content with the following rule for this paragraph.
 
-p.splitpage { display:none; }
+p.splitpage {display:none;}
 
 You can read more about how we edit the inside of the ePUB package in a later chapter.
 
@@ -1502,25 +1502,25 @@ What features are lost when we export the reflowable ePUB?
 
 There are some aspects of our work for the print version of this book, that will not be carried over to the reflowable ePUB. I am going to list them here with a little explanation.
 
-Master pages Anything on the master pages such as the page numbers and the headers will be ignored.
+Master pagesAnything on the master pages such as the page numbers and the headers will be ignored.
 
-Margins If you have set different margins for left and right pages in a spread, these are ignored. The eBook will be created so that each page is the same.
+MarginsIf you have set different margins for left and right pages in a spread, these are ignored. The eBook will be created so that each page is the same.
 
-Columns These will be ignored. The reflowable eBook can only have one column.
+ColumnsThese will be ignored. The reflowable eBook can only have one column.
 
-Alignment to the Baseline Grid This will be ignored, so you are advised to be sure to set leading for all of your paragraph styles and test these by turning off the Align to Grid option temporarily. The line spacing (leading) in the ePUB will only come from the leading setting NOT to the baseline grid.
+Alignment to the Baseline GridThis will be ignored, so you are advised to be sure to set leading for all of your paragraph styles and test these by turning off the Align to Grid option temporarily. The line spacing (leading) in the ePUB will only come from the leading setting NOT to the baseline grid.
 
-Advanced Character Formats Any settings for the character or paragraph styles here will be ignored, so if you have set a Baseline Shift, then you may be disappointed that this is not available in the ePUB. It may be possible later to add some CSS style rules to simulate this.
+Advanced Character FormatsAny settings for the character or paragraph styles here will be ignored, so if you have set a Baseline Shift, then you may be disappointed that this is not available in the ePUB. It may be possible later to add some CSS style rules to simulate this.
 
-Paragraph Rules If you are using a line above or below (or in any other place), this will be ignored in the ePUB. We can add this back in using a border in the CSS. More on this later. If you use the underline rather than rule, this will appear in the ePUB, but without any offset or colour change.
+Paragraph RulesIf you are using a line above or below (or in any other place), this will be ignored in the ePUB. We can add this back in using a border in the CSS. More on this later. If you use the underline rather than rule, this will appear in the ePUB, but without any offset or colour change.
 
-Footnotes This won’t be ignored and we can use these to create ‘popup’ notes by selecting the correct option in one of the Export panels.
+FootnotesThis won’t be ignored and we can use these to create ‘popup’ notes by selecting the correct option in one of the Export panels.
 
-Orphans and Widows These are controlled using the Keep Options and they will not be ignored, however, the concept of orphans and widows is not supported by any eReader software that we know currently. The Keep Options panel also controls when a style starts on a new page. This will be used to force a new page, but not all systems support this feature. More on this later.
+Orphans and WidowsThese are controlled using the Keep Options and they will not be ignored, however, the concept of orphans and widows is not supported by any eReader software that we know currently. The Keep Options panel also controls when a style starts on a new page. This will be used to force a new page, but not all systems support this feature. More on this later.
 
-Text wrap If you have text wrapping around a shaped object, then this feature will be lost. In my book I have a portrait of Shakespeare in an oval shape with the edge of the text following the curve. Our eBook version simply stops the text either side of this image.
+Text wrapIf you have text wrapping around a shaped object, then this feature will be lost. In my book I have a portrait of Shakespeare in an oval shape with the edge of the text following the curve. Our eBook version simply stops the text either side of this image.
 
-And more…. I am sure there will be other aspects that will surprise you such as any tabs that will disappear in the ePUB!
+And more….I am sure there will be other aspects that will surprise you such as any tabs that will disappear in the ePUB!
 
 Prepare the Styles for Export
 
@@ -1580,9 +1580,9 @@ The Object Section
 
 You might prefer to experiment with some of these settings for yourself, but here are my suggestions
 
-Use preserve Appearance from Layout, so the images will take on the style and approximate size that you have given them. When you view your eBook in some software and devices, you can enlarge the image by double tapping. The image file inside the ePUB needs to be big enough for this to work, so make sure that your originals are at least 1200pixels wide or tall.
+Use preserve Appearance from Layout, so the images will take on the style and approximate size that you have given them.When you view your eBook in some software and devices, you can enlarge the image by double tapping. The image file inside the ePUB needs to be big enough for this to work, so make sure that your originals are at least 1200pixels wide or tall.
 
-Use ‘Relative to Text Flow’ What this really means is - resize to fit the space; if we view the eBook in a smaller device or window, then the image should be smaller relative to the overall space. The alternative is ‘Fixed’ and this may give us display problems on some devices.
+Use ‘Relative to Text Flow’What this really means is - resize to fit the space; if we view the eBook in a smaller device or window, then the image should be smaller relative to the overall space.The alternative is ‘Fixed’ and this may give us display problems on some devices.
 
 We can Align the images left, right or Centred. However, when aligning left or right, the text will flow around the image and—in some situations this can restrict the text to very narrow widths and produce awkward spacing.
 
@@ -1610,9 +1610,9 @@ Do you remember, that we have set the Export Tagging for each style? This is whe
 
 As you will notice you can also turn on or off the local overrides; if you have specifically selected some text and made the style different without applying a style, then InDesign will create a new tag and CSS to try to match your design style. I suggest that you try to avoid using overrides, but this is where you get a second chance to turn them off!
 
-Embedding Fonts This is whole topic that deserves a separate chapter, but you can opt to include embeddable fonts in the ePUB. Some font vendors disable the ability to embed fonts, so you may get a warning if embedding is prevented.
+Embedding FontsThis is whole topic that deserves a separate chapter, but you can opt to include embeddable fonts in the ePUB. Some font vendors disable the ability to embed fonts, so you may get a warning if embedding is prevented.
 
-Additional CSS Optionally we can add our own CSS file. The idea here is that this will be linked in the head of each XHTML file in the ePUB3 package. InDesign puts this file after the InDesign generated one so you can override some of the style rules that InDesign creates.
+Additional CSSOptionally we can add our own CSS file. The idea here is that this will be linked in the head of each XHTML file in the ePUB3 package. InDesign puts this file after the InDesign generated one so you can override some of the style rules that InDesign creates.
 
 The Javascript Panel
 
@@ -1764,7 +1764,7 @@ Anything to Hide?
 
 Remember in our section ‘The Page Ends and Begins’ in the Chapter “Attention to Detail”, we added a paragraph before and after an image that we wanted to be on the page by itself? Well, now is the time to add the following to the CSS:
 
-p.splitpage { display:none; }
+p.splitpage {display:none;}
 
 This will make this content disappear.
 
@@ -1776,7 +1776,7 @@ In our eBook version we can opt for the footnotes to become popup notes (support
 
 In the CSS we need to edit these lines to the rule for the reference element:
 
-span.reference { color:#cc071e; font-variant:normal; text-transform:none; vertical-align:super; /* changes below */ font-size:1.6em; color:white; background:#cc071e; padding:3px; font-weight:bold; }Typography
+span.reference {color:#cc071e;font-variant:normal;text-transform:none;vertical-align:super;/* changes below */font-size:1.6em;color:white;background:#cc071e;padding:3px;font-weight:bold;}Typography
 
 In our print book we have 2 columns in the introduction text and we have set this to be justified.
 
@@ -1832,7 +1832,7 @@ The spine section of the content.opf file gives the reading order. This will hav
 
 You can modify this order; let’s say you have a colophon and you would rather have this at the back of the book, then you can move the appropriate line to your choice in the sequence, although you probably want to avoid this kind of editing.
 
-<spine toc=“ncx"> <itemref idref="cover" linear="no" /> <itemref idref="frontmatter" /> <itemref idref="dream_preface" /> <itemref idref="dream" /> <itemref idref="dream-1" /> <itemref idref="dream-2" /> <itemref idref="dream-3" /> <itemref idref="dream-4" /> <itemref idref="dream-5" /> <itemref idref="dream-6" /> </spine>
+<spine toc=“ncx"><itemref idref="cover" linear="no" /><itemref idref="frontmatter" /><itemref idref="dream_preface" /><itemref idref="dream" /><itemref idref="dream-1" /><itemref idref="dream-2" /><itemref idref="dream-3" /><itemref idref="dream-4" /><itemref idref="dream-5" /><itemref idref="dream-6" /></spine>
 
 The Guide Section
 
@@ -1842,13 +1842,13 @@ The Guide Section of the package OPF file provides a similar function to the Lan
 
 There is some advantage to adding some items here if you plan to export to the Kindle/MOBI format for Amazon devices; especially if you wish to support earlier versions of these devices. Kindle software does have a drop down menu that can be populated with some items. Here is my Guide section built by InDesign on export:
 
-<guide> <reference type="cover" href="cover.xhtml" title="Cover" /> <reference type="text" href="dream_preface.xhtml#_idContainer005" title="Beginning" /> </guide>
+<guide><reference type="cover" href="cover.xhtml" title="Cover" /><reference type="text" href="dream_preface.xhtml#_idContainer005" title="Beginning" /></guide>
 
 I want to add the Table of Contents in here because Amazon recommend that the TOC should display on the page; this is at odds with the ePUB3 format, where we would rather use the logical version in the eReader interface. So, how can we add an XHTML version of the TOC?
 
 We have one already, because the ePUB3 export has given us - toc.xhtml - the Table of Contents that is perfectly formed to be displayable. So we use this. Add this line to the <guide> section to become:
 
-<guide> <reference type="TOC" href="toc.xhtml" title=“Table of Contents" /> <reference type="cover" href="cover.xhtml" title="Cover" /> <reference type="text" href="dream_preface.xhtml#_idContainer005" title="Beginning" /> </guide>
+<guide><reference type="TOC" href="toc.xhtml" title=“Table of Contents" /><reference type="cover" href="cover.xhtml" title="Cover" /><reference type="text" href="dream_preface.xhtml#_idContainer005" title="Beginning" /></guide>
 
 This change will not effect the ePUB3, but is useful for the Kindle version.
 
@@ -1920,7 +1920,7 @@ The second item (Title-Page) is slightly more complex, and you will need to refe
 
 As you see in the following image, the epub:type is set to title page and this is what provides the item in Landmarks section.The Landmarks section may include ‘cover’, ‘titlepage’, ‘bibliography’ etc. Here is an example:
 
-<nav epub:type="landmarks"> <ol> <li><a href="cover.xhtml" epub:type="cover">Cover</a></li> <li><a href="titlepage.xhtml" epub:type="titlepage">Title Page</a></li> <li><a href="introduction.xhtml" epub:type="bodymatter">Introduction</a></li> </ol> </nav>
+<nav epub:type="landmarks"><ol><li><a href="cover.xhtml" epub:type="cover">Cover</a></li><li><a href="titlepage.xhtml" epub:type="titlepage">Title Page</a></li><li><a href="introduction.xhtml" epub:type="bodymatter">Introduction</a></li></ol></nav>
 
 This mark-up can be be added to the toc.xhtml file or you might prefer to set this up in InDesign by setting the Object Export Options for particular text frames. This feature only seems to work for individual single objects on a page and not threaded text frames over a number of pages.
 
@@ -2016,7 +2016,7 @@ You will notice that we have 2 class names. This is perfectly correct.
 
 Now we need to add to our own CSS file the following:
 
-h2.balance-text { text-wrap: balanced; }
+h2.balance-text {text-wrap: balanced;}
 
 Then we add the following javascript files at the time we export the ePUB3:
 
@@ -2030,11 +2030,11 @@ jQuery also gives us an easy way to add content to pages.
 
 For example, suppose we want to take a heading and the first paragraph  that follows it, and wrap this in a <div> so that we can apply a style to the whole block. We can create a javascript  file that includes the following:
 
-$(document).ready(function(){ $(".subhead").each(function() {     $(this).next('p').andSelf().wrapAll('<div class="staytogether" />'); }); }); //]]>
+$(document).ready(function(){$(".subhead").each(function() {    $(this).next('p').andSelf().wrapAll('<div class="staytogether" />');});});//]]>
 
 We then add some style to the CSS like this:
 
-div.staytogether { page-break-inside:avoid; }
+div.staytogether {page-break-inside:avoid;}
 
 Adding Content with CSS
 
@@ -2044,7 +2044,7 @@ In this example we are going to add a flourish before and after the scene name i
 
 The CSS we need is:
 
-.scene::before, .scene::after { font-family:ZapfDingbatsITC; content:'✣'; font-weight:normal; font-size:1em; vertical-align:middle; color:#6bc77e; margin:0 10px; }
+.scene::before, .scene::after {font-family:ZapfDingbatsITC;content:'✣';font-weight:normal;font-size:1em;vertical-align:middle;color:#6bc77e;margin:0 10px;}
 
 Summary
 
@@ -2264,7 +2264,7 @@ Making this addition inside the head tag of each page can be done be using a Sea
 
 Replace with:
 
-<meta name="viewport" content="width=600,height=900" /> </head>
+<meta name="viewport" content="width=600,height=900" /></head>
 
 Using Dreamweaver is a very good solution because you can select the entire site to make these changes.
 
@@ -2274,7 +2274,7 @@ Edit the CSS
 
 If you already prepared your own copy of the CSS file, and this has linked on Export from InDesign to ePUB, then you need to make some further changes to this file. First you need to give the body element a width and height equivalent to same settings for the viewport above.
 
-body { width:600px; height:900px; }
+body {width:600px;height:900px;}
 
 We will come back to the CSS editing in a moment, but now we should make some important changes to file called content.opf.
 
@@ -2304,15 +2304,15 @@ More CSS Editing
 
 If you have named the header text frame that appears at the top of the page, and it is called ‘header’, then your CSS will look like this:
 
-header.top { }
+header.top {}
 
 The header element may have a dark border. No style rules are applied. Change this to:
 
-header.top { border:none; }
+header.top {border:none;}
 
 If you don’t want to show the header at all then use:
 
-header.top { display:none; }
+header.top {display:none;}
 
 In other words, hide this block. No content will appear.
 
@@ -2322,15 +2322,15 @@ If every page has a block enclosing the content; mine is:
 
 Then you can add a margin to this block in the CSS like this:
 
-div.play { margin:30px 40px 0 40px; }
+div.play {margin:30px 40px 0 40px;}
 
 In fact because we are using the book panel and we have named the text blocks differently, I am using the following to provide a margin for all major blocks:
 
-div.play, div.prefacetext, div.dramatis, div.figure { margin:40px 50px 0 50px; }
+div.play, div.prefacetext, div.dramatis, div.figure {margin:40px 50px 0 50px;}
 
 Your overall font-size maybe too small and you can change this globally through a rule on the body of all pages like this:
 
-body { font-size:110%; }
+body {font-size:110%;}
 
 Background Images
 
@@ -2350,7 +2350,7 @@ Inside the manifest section add another line below the references to picture ass
 
 To get this image on every page, we must add to the CSS. For completeness, here is the whole body section:
 
-body { width:600px; height:900px; font-size:110%; background-image:url(../image/paper_texture.jpg); background-position:top center; background-repeat:no-repeat; background-size:100% 100%; }
+body {width:600px;height:900px;font-size:110%;background-image:url(../image/paper_texture.jpg);background-position:top center;background-repeat:no-repeat;background-size:100% 100%;}
 
 So, you see, we can very easily add the same image to every page. However, if we need to provide different images to different pages, then we need to observe what ID InDesign has given to the <body> for each page.
 
@@ -2362,7 +2362,7 @@ If you have a look at a typical XHTML document inside your ePUB package then you
 
 This is the markup for page 102 and if we want to apply a different style (background, in this case) for this page then we need to use:
 
-body#dream-102 { background-image:url(../image/pale_texture.jpg); background-position:top center; background-repeat:no-repeat; background-size:100% 100%; }
+body#dream-102 {background-image:url(../image/pale_texture.jpg);background-position:top center;background-repeat:no-repeat;background-size:100% 100%;}
 
 If you want to have different styles throughout the eBook, with occasional  positioning rules or background images or colours, then you have a number of options. So far, we have always used an external stylesheet to apply the CSS rules. This is certainly the best approach, because you can then make the changes in one place. However, as described above, you will need to be able to identify individual pages within the book by adding a class name to the body tag like this:
 
@@ -2404,7 +2404,7 @@ So, in the final page we need to have a look at the destination references and w
 
 We need to add the <aside> block inside the list item like this:
 
-<li class="footnotes-numbered"><a id="_idTextAnchor032"></a> <aside id="footnote-001" epub:type=“footnote">
+<li class="footnotes-numbered"><a id="_idTextAnchor032"></a><aside id="footnote-001" epub:type=“footnote">
 
 Not forgetting to close the </aside> tag before the </li>
 
@@ -2478,7 +2478,7 @@ Editing in Dreamweaver
 
 Once you have unpacked the ePUB, then you can create a Dreamweaver local site and edit the content. Once you begin the process of editing the XHTML files, then you will not be able to ‘round-trip’ to InDesign.
 
-add <meta name="viewport" content="width=600,height=900" /> </head> to every XHTML document
+add <meta name="viewport" content="width=600,height=900" /></head> to every XHTML document
 
 add this same height and width to body CSS
 
@@ -2766,15 +2766,15 @@ eBooks do offer some extra benefits including portability, and there are some wa
 
 What enhancements we can add beyond text and image?
 
-Multimedia We can add audio and video inline with the text Audio can be used to provide a soundtrack (music and sound while we read) Audio can be used to synchronise with text (fixed-layout only)
+MultimediaWe can add audio and video inline with the textAudio can be used to provide a soundtrack (music and sound while we read)Audio can be used to synchronise with text (fixed-layout only)
 
-Aside and non-linear content Meaning items that are not in the flow of the text but will appear on on a hyperlink
+Aside and non-linear contentMeaning items that are not in the flow of the text but will appear on on a hyperlink
 
-Popup notes We can convert footnotes into popup notes. We can also show and hide objects that include text and image
+Popup notesWe can convert footnotes into popup notes. We can also show and hide objects that include text and image
 
-Animation InDesign has some inbuilt features that can deliver move and deliver objects dynamically, on page open or activated by interaction with buttons
+AnimationInDesign has some inbuilt features that can deliver move and deliver objects dynamically, on page open or activated by interaction with buttons
 
-Read Aloud Although complex to build and implement, it is possible to have text synchronised with and audio narration.
+Read AloudAlthough complex to build and implement, it is possible to have text synchronised with and audio narration.
 
 Review of the Techniques
 
@@ -2836,9 +2836,9 @@ Here we see that the audio section that we will use start ‘Four nights …’ 
 
 We now need to construct a SMIL file that uses the following syntax:
 
-<smil xmlns="http://www.w3.org/ns/SMIL" xmlns:epub="http://www.idpf.org/2007/ops" version="3.0"> <body> <seq id="s000001" epub:textref="dream-05.xhtml"> <par id="par1"> <text src="dream-05.xhtml#_idTextSpan207"/> <audio src="audio/act1scene1_clip01.mp3" clipBegin="0.000000s" clipEnd="2.214817s" /> </par> <par id="par2"> <text src="dream-05.xhtml#_idTextSpan208"/> <audio src="audio/act1scene1_clip01.mp3" clipBegin="2.214817s" clipEnd="4.062584s" /> </par> <par id="par3"> <text src=“dream-05.xhtml#_idTextSpan209”/>
+<smil xmlns="http://www.w3.org/ns/SMIL" xmlns:epub="http://www.idpf.org/2007/ops" version="3.0"><body><seq id="s000001" epub:textref="dream-05.xhtml"><par id="par1"><text src="dream-05.xhtml#_idTextSpan207"/><audio src="audio/act1scene1_clip01.mp3" clipBegin="0.000000s" clipEnd="2.214817s" /></par><par id="par2"><text src="dream-05.xhtml#_idTextSpan208"/><audio src="audio/act1scene1_clip01.mp3" clipBegin="2.214817s" clipEnd="4.062584s" /></par><par id="par3"><text src=“dream-05.xhtml#_idTextSpan209”/>
 
-and so on …. </seq> </body> </smil>
+and so on ….</seq></body></smil>
 
 You might consider using regular expressions to help with this task. My strategy would be to duplicate the XHTML file (dream-05.xhtml), and then strip out all of the style information. I can then use this base file to reconstruct the SMIL tags.
 
@@ -2848,11 +2848,11 @@ Audacity can help us build a clip sequence by using a label track:
 
 Then we can export the labels and we get:
 
-3.051281	3.379623	Four 3.375440	3.549022	Nights 3.546931	3.820898	will 3.818807	4.172245	quickly 4.170154	4.448303	dream 4.446212	4.596789	away 4.590515	4.747366	the 4.747366	5.238834	time
+3.051281	3.379623	Four3.375440	3.549022	Nights3.546931	3.820898	will3.818807	4.172245	quickly4.170154	4.448303	dream4.446212	4.596789	away4.590515	4.747366	the4.747366	5.238834	time
 
 and then we build the SMIL file with some GREP, giving us this:
 
-<smil xmlns="http://www.w3.org/ns/SMIL" xmlns:epub="http://www.idpf.org/2007/ops" version="3.0"> <body> <seq id="s000001" epub:textref="dream-05.xhtml"> <par id="par1"> <text src=“dream-05.xhtml#_idTextSpan207"/> <audio src="audio/act1scene1_clip01.mp3" clipBegin="0.000000s" clipEnd="2.214817s" /> </par> <par id="par2"> <text src="dream-05.xhtml#_idTextSpan208"/> <audio src="audio/act1scene1_clip01.mp3" clipBegin="2.214817s" clipEnd="4.062584s" /> </par> <par id="par3"> <text src="dream-05.xhtml#_idTextSpan209"/> <audio src="audio/act1scene1_clip01.mp3" clipBegin="4.062584s" clipEnd="6.006284s" /> </par> <par id="par4"> <text src="dream-05.xhtml#_idTextSpan210"/> <audio src="audio/act1scene1_clip01.mp3" clipBegin="6.006284s" clipEnd="7.403579s" /> </par> </seq> </body> </smil>
+<smil xmlns="http://www.w3.org/ns/SMIL" xmlns:epub="http://www.idpf.org/2007/ops" version="3.0"><body><seq id="s000001" epub:textref="dream-05.xhtml"><par id="par1"><text src=“dream-05.xhtml#_idTextSpan207"/><audio src="audio/act1scene1_clip01.mp3" clipBegin="0.000000s" clipEnd="2.214817s" /></par><par id="par2"><text src="dream-05.xhtml#_idTextSpan208"/><audio src="audio/act1scene1_clip01.mp3" clipBegin="2.214817s" clipEnd="4.062584s" /></par><par id="par3"><text src="dream-05.xhtml#_idTextSpan209"/><audio src="audio/act1scene1_clip01.mp3" clipBegin="4.062584s" clipEnd="6.006284s" /></par><par id="par4"><text src="dream-05.xhtml#_idTextSpan210"/><audio src="audio/act1scene1_clip01.mp3" clipBegin="6.006284s" clipEnd="7.403579s" /></par></seq></body></smil>
 
 Finally we need to add the audio and the SMIL file into the ePUB package and then make sure that they are both included in the manifest section of the package.opf document.
 
@@ -2868,7 +2868,7 @@ and then for each XHTML file where audio is played you should edit to be like th
 
 the metadata section should have this:
 
-<meta property="media:duration" refines="#act1scene1_clip01">0:00:53.320</meta> <meta property=“media:duration">0:02:37.970</meta>
+<meta property="media:duration" refines="#act1scene1_clip01">0:00:53.320</meta><meta property=“media:duration">0:02:37.970</meta>
 
 Further Reading
 
@@ -2970,7 +2970,7 @@ Select the text field and ‘Paste Into’ this selected text box.You can select
 
 Create a CSS file with the following:
 
-div.scroller { position: relative; border:1px solid silver; } div.scroller > div { overflow: auto; overflow-y:scroll; overflow: scroll; overflow-x:hidden; -webkit-overflow-scrolling:touch; }
+div.scroller {position: relative;border:1px solid silver;}div.scroller > div {overflow: auto;overflow-y:scroll;overflow: scroll;overflow-x:hidden;-webkit-overflow-scrolling:touch;}
 
 Add this CSS file into the CSS panel when you export.
 

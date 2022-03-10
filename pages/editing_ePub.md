@@ -51,7 +51,7 @@ These days I use ~~Atom~~ *Vscode* as my text editor and so, although you can vi
 >Edit: *Atom* and *Vscode* are very similar
 
 ## Unpacking and repacking
-For this I recommend downloading eCanCrusher available here: https://www.docdataflow.com/ecancrusher/
+For this I recommend downloading eCanCrusher available here: [https://www.docdataflow.com/ecancrusher/](https://www.docdataflow.com/ecancrusher/)
 
 
 ## Can we Edit?

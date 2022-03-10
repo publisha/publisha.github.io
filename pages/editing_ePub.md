@@ -7,17 +7,48 @@ categories: ["ePub", "HTML and CSS", "Multi-Platform Publishing"]
 tags: [ePub, InDesign, CSS, "Multi-Platform Publishing"]
 blurb: When we have created a reflowable ePub by exporting from InDesign, we may find that there are some stylistic details that need tidying up, changing or even correcting. Not all aspects of our wonderfully crafted typographic design work will give perfect results in the ePub.
 ---
+
 # Editing inside the ePUB package
+
+
+- [Unpacking and repacking](#unpacking-and-repacking)
+- [Can we Edit?](#can-we-edit)
+  - [What Can We edit?](#what-can-we-edit)
+  - [How many CSS files do we have?](#how-many-css-files-do-we-have)
+  - [Our First Correction](#our-first-correction)
+- [Test and View Our Changes](#test-and-view-our-changes)
+  - [Roundtrip to InDesign](#roundtrip-to-indesign)
+- [Changes to the CSS.](#changes-to-the-css)
+  - [The page breaks](#the-page-breaks)
+- [Footnote References](#footnote-references)
+- [Typography](#typography)
+- [The OPF Package Document](#the-opf-package-document)
+- [The Cover](#the-cover)
+- [The Spine](#the-spine)
+- [The Guide Section](#the-guide-section)
+- [The Metadata Block](#the-metadata-block)
+  - [Let me offer an example.](#let-me-offer-an-example)
+- [Orientation and Spreads](#orientation-and-spreads)
+- [The Navigation Document (toc.xhtml)](#the-navigation-document-tocxhtml)
+- [Landmarks](#landmarks)
+- [How can the Landmarks help in the way the eBook is read?](#how-can-the-landmarks-help-in-the-way-the-ebook-is-read)
+- [Pages Outside the Flow](#pages-outside-the-flow)
+- [Non-Linear Content](#non-linear-content)
+- [Displaying the Table of Contents as a Page](#displaying-the-table-of-contents-as-a-page)
+- [Adding Javascript](#adding-javascript)
+- [Adding Content with Javascript](#adding-content-with-javascript)
+- [Adding Content with CSS](#adding-content-with-css)
+- [Summary](#summary)
 
 When we have created a reflowable ePub by exporting from InDesign, we may find that there are some stylistic details that need tidying up, changing or even correcting. Not all aspects of our wonderfully crafted typographic design work will give perfect results in the ePub.
 
 Some text editors have the functionality to edit the components of the ePUB package even without unpacking. BBedit is the one I have used, but Oxygen XML will also give you that ability. Oxygen is more sophisticated and expensive; it will allow you to remove and add files into the package, so if you wanted replace a picture, Oxygen will do it!
 
-These days I use ~*Atom*~ *Vscode* as my text editor and so, although you can view the insides of the ePub package, you need to unpack before editing.
+These days I use ~~Atom~~ *Vscode* as my text editor and so, although you can view the insides of the ePub package, you need to unpack before editing.
 
 [![Here we see the files within the ePub package using Atom](/images/2017/02/editing_ePub/atomfilelist.png)](/images/2017/02/editing_ePub/atomfilelist.png)
 
-Edit: *Atom* and *Vscode* are very similar
+>Edit: *Atom* and *Vscode* are very similar
 
 ## Unpacking and repacking
 For this I recommend downloading eCanCrusher available here: https://www.docdataflow.com/ecancrusher/

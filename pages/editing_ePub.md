@@ -10,7 +10,9 @@ blurb: When we have created a reflowable ePub by exporting from InDesign, we may
 
 # Editing inside the ePUB package
 
+<section class='toc'>
 
+## On this Page
 - [Unpacking and repacking](#unpacking-and-repacking)
 - [Can we Edit?](#can-we-edit)
   - [What Can We edit?](#what-can-we-edit)
@@ -39,6 +41,8 @@ blurb: When we have created a reflowable ePub by exporting from InDesign, we may
 - [Adding Content with Javascript](#adding-content-with-javascript)
 - [Adding Content with CSS](#adding-content-with-css)
 - [Summary](#summary)
+
+</section>
 
 When we have created a reflowable ePub by exporting from InDesign, we may find that there are some stylistic details that need tidying up, changing or even correcting. Not all aspects of our wonderfully crafted typographic design work will give perfect results in the ePub.
 

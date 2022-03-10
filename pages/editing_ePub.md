@@ -1,50 +1,12 @@
 ---
 layout: page
 title: Editing inside the ePUB package
-date: 2018-03-01
+date: 2022-03-10
 published: true
 categories: ["ePub", "HTML and CSS", "Multi-Platform Publishing"]
 tags: [ePub, InDesign, CSS, "Multi-Platform Publishing"]
 blurb: When we have created a reflowable ePub by exporting from InDesign, we may find that there are some stylistic details that need tidying up, changing or even correcting. Not all aspects of our wonderfully crafted typographic design work will give perfect results in the ePub.
 ---
-<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
-<section class='toc'>
-## On this Page
-
-- [Editing inside the ePUB package](#editing-inside-the-epub-package)
-  - [Unpacking](#unpacking)
-  - [Repacking](#repacking)
-    - [MAC Users](#mac-users)
-  - [Can we Edit?](#can-we-edit)
-    - [What Can We edit?](#what-can-we-edit)
-    - [How many CSS files do we have?](#how-many-css-files-do-we-have)
-    - [Our First Correction](#our-first-correction)
-  - [Test and View Our Changes](#test-and-view-our-changes)
-    - [Roundtrip to InDesign](#roundtrip-to-indesign)
-  - [Changes to the CSS.](#changes-to-the-css)
-    - [The page breaks](#the-page-breaks)
-  - [Footnote References](#footnote-references)
-  - [Typography](#typography)
-  - [The OPF Package Document](#the-opf-package-document)
-  - [The Cover](#the-cover)
-  - [The Spine](#the-spine)
-  - [The Guide Section](#the-guide-section)
-  - [The Metadata Block](#the-metadata-block)
-    - [Let me offer an example.](#let-me-offer-an-example)
-  - [Orientation and Spreads](#orientation-and-spreads)
-  - [The Navigation Document (toc.xhtml)](#the-navigation-document-tocxhtml)
-  - [Landmarks](#landmarks)
-  - [How can the Landmarks help in the way the eBook is read?](#how-can-the-landmarks-help-in-the-way-the-ebook-is-read)
-  - [Pages Outside the Flow](#pages-outside-the-flow)
-  - [Non-Linear Content](#non-linear-content)
-  - [Displaying the Table of Contents as a Page](#displaying-the-table-of-contents-as-a-page)
-  - [Adding Javascript](#adding-javascript)
-  - [Adding Content with Javascript](#adding-content-with-javascript)
-  - [Adding Content with CSS](#adding-content-with-css)
-  - [Summary](#summary)
-
-</section><!-- /TOC -->
-
 # Editing inside the ePUB package
 
 When we have created a reflowable ePub by exporting from InDesign, we may find that there are some stylistic details that need tidying up, changing or even correcting. Not all aspects of our wonderfully crafted typographic design work will give perfect results in the ePub.
@@ -57,25 +19,9 @@ These days I use ~*Atom*~ *Vscode* as my text editor and so, although you can vi
 
 Edit: *Atom* and *Vscode* are very similar
 
-## Unpacking
+## Unpacking and repacking
+For this I recommend downloading eCanCrusher available here: https://www.docdataflow.com/ecancrusher/
 
-A more flexible approach is to unpack the ePUB package and get access to all of the components, make your changes and then repack. If you have access to Adobe Dreamweaver, then you can use this web design tool to make your edits. If you are a web developer, then you will be familiar with the relationship between the files that display the ePUB — namely the HTML, CSS and image files.
-
-The ePUB file created on export from InDesign is actually a package of files wrapped up in a ZIP file. You probably have come across ZIP files before; they are useful when you want to send someone a bunch of files or when you want to save some disk space by compressing large files. If you are a MAC user then you may have used the 'compress' utility found when you right-click over a folder or file. PC users may have used other ZIP utilities for compressing or unzipping files. The ePUB file that you now have from InDesign is actually a ZIP but the file extension is .epub.
-
-There are some particular features of the way this file is compressed into a package, and this is what makes it slightly different from a regular ZIP file. We can easily unpack the file by renaming as a .zip file and using an unzip utility. The problem comes when we want to re-pack into the ePUB file, because one of the files inside this package needs to uncompressed and first in the order.
-
-## Repacking
-
-To achieve this re-packing correctly we need to use a script that will add items back into a new ePUB package. If you are working within the MAC environment then I suggest downloading *ePub Zip/Unzip* - a script that will, not only, unpack the ePUB but repackage after editing. On a PC (Windows), this is slightly more complex; you will need first to rename the file, with .zip instead of .epub. Then use an unzip utility, to extract the files. You can then edit the components, but to repack, you cannot simply re-ZIP. Windows users need to download a utility called *ePubPack.*
-
-### MAC Users
-
-If you are a MAC user I recommend that you grab a copy of the ePUB Zip/Unzip Applescript, because you can add this to your Finder toolbar and then simply drag the ePUB file onto the icon. This will create the folder of files.
-
-[![Here is the icon for the script to unpack the ePub package.](/images/2017/02/editing_ePub/image2.png)](/images/2017/02/editing_ePub/image2.png)
-
-Once you have completed your editing tasks and are ready to test, simply drag the folder onto the icon and the script will repack the folder into the ePUB, with the same name (warning you that it will overwrite the original).
 
 ## Can we Edit?
 

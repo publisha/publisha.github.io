@@ -80,7 +80,7 @@ You can also have a look at the sample scene inside the **sampleScene** folder.
 - As stated above - read the help document that I have provided - [InDesign to HTML][2aa24c4b].
 - Follow those instructions to create the interactive table of contents.
 - Export your play InDesign document with settings in the instructions.
-- You will find that you have now got a new file saved wherever your InDesign file was saved. You can drag this file into the `docs` folder of your working copy of the repo that you have open in Atom. This file should be renamed `play.html` and will replace the existing placeholder file.
+- You will find that you have now got a new file saved wherever your InDesign file was saved. You can drag this file into the `docs` folder of your working copy of the repo that you have open in Visual Studio Code (vscode). This file should be renamed `play.html` and will replace the existing placeholder file.
 
   [2aa24c4b]: /pages/InDesign_to_HTML/ "read this for a thorough explanation"
 
@@ -149,7 +149,7 @@ Ok, so I know this seems complicated. Let me write out a simple list with the st
 - Create an account on [Github.com][fc57320f]
 - Grab link on Moodle (week 1) for the GitHub template
 - Copy the link next to the Clone button
-- In Atom, use the icon bottom right to clone and use the window to paste in the link
+- In vscode, use the icon bottom right to clone and use the window to paste in the link
 - [Read the helper document about getting HTML from InDesign][f0f67b5c]
 - Add the files into the local version of the repository and edit the HTML and CSS etc
 - Check that the site works (home page is the cover image with link to the play)
@@ -158,4 +158,4 @@ Ok, so I know this seems complicated. Let me write out a simple list with the st
 - Note the web address and finish
 
 [fc57320f]: https://www.github.com "Create the account"
-  [f0f67b5c]: https://publisha.github.io/pages/InDesign_to_HTML/ "Read this"
+  [f0f67b5c]: https://publisha.org/pages/InDesign_to_HTML/ "Read this"

@@ -34,11 +34,26 @@ You will only need the application called _VS Code_ and [this free software is a
 
   [deb319f2]: https://code.visualstudio.com/download "Grab VS code"
 
+### VSCode Extensions
+
+You need 3 extensions to help with this work.
+
+- Live server
+- Prettier
+- Github Pull Requests
+
+
 ## Now we need to create the Github repository
 
 Here are the steps:
 
 [Create a Github Account][8c08ca4b] (if you do not already have one) and login to the account.
+
+The final URL of your web site will include your username so be careful when choosing this name.
+
+Here is an example:
+
+> Let's say your username is *unicorn*, then the URL of your web site will be `unicorn.github.io` . Your username may also be referred to as the owner name of your account.
 
 If you already have an account then login at [github.com](https://github.com)
 
@@ -52,19 +67,40 @@ You will see the green button _Use this Template_
 
 Use the template link to receive the repository in your own github account. Make sure that you choose the `Public` option. You will be asked to name the repository.
 
-- Go to **settings and change the name** of your repo (you should use the name of your play.
+You now need to name the repository as follows:
 
-[![Change the name of your repo](/images/2017/01/changethenameofRepo.png)](/images/2017/01/changethenameofRepo.png)
+It should be formed from your username and I will use the example from above...
+
+The name of the repository when *unicorn* is the username would be `unicorn.github.io`.
+
+[![name of your repo](/images/reponame.jpg)](/images/reponame.jpg)
 
 ## What's inside the repository?
 
-When you download this repository, you will find a variety of files, but the 3 important ones are inside the **docs** folder:
+When you download this repository, you will find a variety of files, but the important ones are inside the **docs** folder:
 
 - index.html - this will become the home page for your play. This page will have the cover image.
-- play.html - this is where the text of the play will be. Linked from the home page above.
-- styles.css -  this is where you define the styles for the elements in the play
+- styles.css -  this is where you define the styles for the elements in the play. This is inside a folder called `css`.
 
 You can also have a look at the sample scene inside the **sampleScene** folder.
+
+## Editing the home page
+
+Now that we are set up on GitHub, we need to start editing our web site offline, so we now need to **clone** the repository onto to our computer; this involves using vscode that you should now have available from the earlier step.
+
+Go back to the `code` list and touch the green button, then copy the link.
+
+[![get the code](/images/getthecode.png)](/images/getthecode.png)
+
+### Vscode
+
+Open vscode and click the top left icon. This will then take you to an empty page like this.
+
+[![clone the repo](/images/clone.png)](/images/clone.png)
+
+When you select `clone` you will need to paste the previously copied link into the box. The code will arrive from GitHub and you need to select a project folder where you would like it to go. Once done then open the window.
+
+We can now use *vscode* to edit the HTML (index.html)  and the CSS (css/styles.css).
 
 ## Ok, so what do I do now?
 [You should now read the help document here][9bf3210c], that explains how to generate the HTML files from InDesign.
@@ -112,18 +148,13 @@ You can look at the web pages in the web browser by right clicking over the file
 
 **When you are happy** with the look of these web pages then you can:
 - Upload these new versions of these files to your GitHub repository
-- You do this by using the VS Code.
-- click Stage All (top right)
+- You can do this by using the VS Code.
+- click the 3rd icon from the top left
 - write a message in the commit box (what did you change)
 - Click commit
-- Click the Up Arrow
-- Click Push
+- Click the synch button
 
-You should now be able to _push_ your updates direct to GitHub and see the results on your web site.
-
-
-![Push your changes to Github](/images/Screen Shot 2018-01-16 at 14.32.21.png)
-
+Your web site will be updated (it could take a few minutes)
 
 ## Back to GitHub
 
@@ -145,6 +176,7 @@ Go there in your browser and login with the credentials that you put in before a
 Ok, so I know this seems complicated. Let me write out a simple list with the steps. Make this into a check list and tick them off as you go!
 
 - [Download VS Code](https://code.visualstudio.com/download) and install in **your** Applications folder
+- add 3 extensions
 - Create an account on [Github.com][fc57320f]
 - Grab link on Moodle (week 1) for the GitHub template
 - Copy the link next to the Clone button

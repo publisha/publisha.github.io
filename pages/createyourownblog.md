@@ -236,14 +236,14 @@ This metadata is enclosed within the 2 groups of hyphens. Here is an example.
 ```YAML
     ---
     layout: post
- title: Here is a sample blog post 
+title: Here is a sample blog post
     date: 2019-10-19
- published: true 
+published: true
     header_feature_image: images/2019/07/tomatoes.jpg
- caption: "Juicy Tomatoes" 
-    tags: 
-      - Journalism 
-      - Life 
+caption: "Juicy Tomatoes"
+    tags:
+      - Journalism
+      - Life
       - Food
     ---
 ```

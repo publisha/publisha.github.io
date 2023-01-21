@@ -172,7 +172,7 @@ Styles are applied to HTML Elements with CSS rules
 
 Make sure that you set the Export Tagging for each paragraph, character and object styles, so that you can control the CSS styling after exporting.
 
-Use `<li>` for the bulleted lists and use HTML5 tags where appropriate. These tags include `<section>` and `<nav>`.
+The table of contents should be in it's own text frame and this should be exported with `nav` as the export tag. Yhe list items in the TOV should use toc styles but set the tags for those as `<li>`.
 
 ### Master Page items?
 

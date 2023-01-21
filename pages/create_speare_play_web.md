@@ -11,7 +11,6 @@ blurb: We are using GitHub pages to host a web site for the Shakespeare play. Th
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 <section class='toc'>
 ## On this Page
-- [Using a Git Repository to host your Shakespeare Play Web Site](#using-a-git-repository-to-host-your-shakespeare-play-web-site)
   - [You will need VS Code software](#you-will-need-vs-code-software)
   - [Now we need to create the Github repository](#now-we-need-to-create-the-github-repository)
   - [What's inside the repository?](#whats-inside-the-repository)

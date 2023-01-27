@@ -1,7 +1,7 @@
 ---
   layout: page
   title: Making an eBook of Recipes
-  published: true
+  published: false
   categories: [InDesign, ePub, "Digital Product"]
   blurb: From text and pictures, we are going to create an InDesign document, export for ePub3 (reflowable) and then 'break open' the ePub file, check out the CSS and then make our own stylesheet to go into the ePub package.
 ---

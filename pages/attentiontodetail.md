@@ -32,9 +32,11 @@ order: 9
 </section><!-- /TOC -->
 
 # Attention to Detail in Typography with InDesign
-**Pages, Grids, Typography, Spacing and Alignment**
+
 
 ## Introduction
+
+**Pages, Grids, Typography, Spacing and Alignment**
 
 InDesign is a brilliant tool to design the display of type on a page. We have every possible control over the letters, the words, the lines, the paragraphs and how the blocks of type are shaped, spaced and aligned.
 

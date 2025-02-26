@@ -149,7 +149,7 @@ OK, let's now try to build a list of the choices
  - Stylesheet can be added for further control of specific elements
  - Other edits to ePub package are possible but *roundtrip* to InDesign may be broken by this
 
-### Post Editing  - Front matter
+### Post Editing - Front matter
  - If landscape is the intent, remove blanks pages and half title
  - Optionally add cover image as frontispiece
 

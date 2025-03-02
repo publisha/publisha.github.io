@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteRule .* https://notes.chrisjennings.net/? [R=301,L]
